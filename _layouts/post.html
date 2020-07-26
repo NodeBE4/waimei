@@ -8,14 +8,14 @@ layout: default
   {% if page.previous.url %}
     <span class="prev" >
         <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-          上一篇
+          前一篇
         </a>
     </span>
   {% endif %}
   {% if page.next.url %}
     <span class="next" >
         <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-          下一篇
+          后一篇
         </a>
     </span>
   {% endif %}
@@ -62,6 +62,10 @@ layout: default
             MD: <a href="https://hackmd.io/{{ page.hackmd }}?view"  style="font-size: $small-font-size;">逐段点评</a>
         </span>
     {% endif %}
+    
+    <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u={{ page.from | url_encode }}&t={{ page.title | url_encode }}&d={{ page.date | slice: 0, 10 }}&e={{ page.content | strip_html }}" target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span>
 
     <span style="float: right;" title="提交到BE4新闻站">
       <a style="color: #5CBA66; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/submit?u={{ page.from | url_encode }}&t={{ page.title | url_encode }}" target="_blank">🐍</a>
@@ -78,14 +82,14 @@ layout: default
     {% if page.previous.url %}
       <span class="prev" >
           <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-            上一篇：{{ page.previous.title }}
+            前一篇：{{ page.previous.title }}
           </a>
       </span>
     {% endif %}
     {% if page.next.url %}
       <span class="next" >
           <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-            下一篇：{{ page.next.title }}
+            后一篇：{{ page.next.title }}
           </a>
       </span>
     {% endif %}
