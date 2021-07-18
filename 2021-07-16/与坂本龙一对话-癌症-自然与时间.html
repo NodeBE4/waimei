@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>与坂本龙一对话：癌症、自然与时间 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+与坂本龙一对话：癌症、自然与时间
+——
+" />
+    <meta property="og:description" content="
+与坂本龙一对话：癌症、自然与时间
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="与坂本龙一对话：癌症、自然与时间" />
+    <meta property="twitter:title" content="与坂本龙一对话：癌症、自然与时间" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5328)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210716%2Fryuichi-sakamoto-time%2F&t=%E4%B8%8E%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80%E5%AF%B9%E8%AF%9D%EF%BC%9A%E7%99%8C%E7%97%87%E3%80%81%E8%87%AA%E7%84%B6%E4%B8%8E%E6%97%B6%E9%97%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210716%2Fryuichi-sakamoto-time%2F&t=%E4%B8%8E%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80%E5%AF%B9%E8%AF%9D%EF%BC%9A%E7%99%8C%E7%97%87%E3%80%81%E8%87%AA%E7%84%B6%E4%B8%8E%E6%97%B6%E9%97%B4&d=2021-07-16&e=
+与坂本龙一对话：癌症、自然与时间
+——
+
+
+  
+SADIE REBECCA STARNES
+  
+  2021年7月16日
+  
+    坂本龙一正在东京度过夏日雨季。这位奥斯卡获奖作曲家在纽约居住了30多年，自去年11月以来一直在日本——不是因为疫情，而是因为他在接受数年喉癌治疗，病情好转不久后，又被诊断出患有直肠癌。
+    尽管存在健康问题，坂本还是一如既往地多产，他参加音乐会和展览，以及最近创作了歌剧《时间》(Time)，该剧上个月在荷兰艺术节上首演。
+          
+
+    《时间》是坂本不断探索的“异步性”音乐的一部分，也就是不按传统时间结构编配的音乐。他在2017年的专辑《异步》(async)中提出了这个概念，这是在他第一次患癌症后的康复过程中构思的——他说，这次经历重新磨炼了他的耳朵，去聆听日常声音的美感，无论是自然的还是人工的，无论是日光浴还是颂钵。
+ ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210716%2Fryuichi-sakamoto-time%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/&text=与坂本龙一对话：癌症、自然与时间&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/&title=与坂本龙一对话：癌症、自然与时间" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/&title=与坂本龙一对话：癌症、自然与时间" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=与坂本龙一对话：癌症、自然与时间&body=
+与坂本龙一对话：癌症、自然与时间
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/&title=与坂本龙一对话：癌症、自然与时间&caption=
+与坂本龙一对话：癌症、自然与时间
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=与坂本龙一对话：癌症、自然与时间&url=https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>与坂本龙一对话：癌症、自然与时间</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-16
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210716%2Fryuichi-sakamoto-time%2F&t=%E4%B8%8E%E5%9D%82%E6%9C%AC%E9%BE%99%E4%B8%80%E5%AF%B9%E8%AF%9D%EF%BC%9A%E7%99%8C%E7%97%87%E3%80%81%E8%87%AA%E7%84%B6%E4%B8%8E%E6%97%B6%E9%97%B4&d=2021-07-16&e=
+与坂本龙一对话：癌症、自然与时间
+——
+
+
+  
+SADIE REBECCA STARNES
+  
+  2021年7月16日
+  
+    坂本龙一正在东京度过夏日雨季。这位奥斯卡获奖作曲家在纽约居住了30多年，自去年11月以来一直在日本——不是因为疫情，而是因为他在接受数年喉癌治疗，病情好转不久后，又被诊断出患有直肠癌。
+    尽管存在健康问题，坂本还是一如既往地多产，他参加音乐会和展览，以及最近创作了歌剧《时间》(Time)，该剧上个月在荷兰艺术节上首演。
+          
+
+    《时间》是坂本不断探索的“异步性”音乐的一部分，也就是不按传统时间结构编配的音乐。他在2017年的专辑《异步》(async)中提出了这个概念，这是在他第一次患癌症后的康复过程中构思的——他说，这次经历重新磨炼了他的耳朵，去聆听日常声音的美感，无论是自然的还是人工的，无论是日光浴还是颂钵。
+ ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fculture%2F20210716%2Fryuichi-sakamoto-time%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626428222000-->
+<p><a href="https://cn.nytimes.com/culture/20210716/ryuichi-sakamoto-time/">与坂本龙一对话：癌症、自然与时间</a>
+——</p>
+
+<div>
+  <address>
+SADIE REBECCA STARNES
+  </address>
+  <time pudate="2021-07-16 03:53:26" datetime="2021-07-16 03:53:26">2021年7月16日</time>
+  <section class="article-body">
+    <p>坂本龙一正在东京度过夏日雨季。这位奥斯卡获奖作曲家在纽约居住了30多年，自去年11月以来一直在日本——不是因为疫情，而是因为他在接受数年喉癌治疗，病情好转不久后，又被诊断出患有直肠癌。</p>
+    <p>尽管存在健康问题，坂本还是一如既往地多产，他参加音乐会和展览，以及最近创作了歌剧《时间》(Time)，该剧<a rel="noopener noreferrer" target="_blank" href="https://www.hollandfestival.nl/en/program/2021/time/">上个月在荷兰艺术节上首演</a>。</p>
+    <p>      <iframe frameborder="0" scrolling="0" allowfullscreen="true" width="600" height="358" src="https://www.youtube.com/embed/9SLMHy8v1aw"></iframe>
+</p>
+    <p>《时间》是坂本不断探索的“异步性”音乐的一部分，也就是不按传统时间结构编配的音乐。他在<a rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/album/2OKN3NwlITzfVpDJecA4Z3">2017年的专辑《异步》</a>(async)中提出了这个概念，这是在他第一次患癌症后的康复过程中构思的——他说，这次经历重新磨炼了他的耳朵，去聆听日常声音的美感，无论是自然的还是人工的，无论是日光浴还是颂钵。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/14/arts/14sakamoto-2/merlin_190593747_e3a5b3a1-3e21-4612-a6ea-447c97b6e276-master1050.jpg" /><small style="color: #999;">《时间》在一个充满水的舞台上展开，还有一个屏幕，显示天气系统、城市和空旷的空间。</small></p>
+    <p>《时间》没有指挥或节奏标记，是一部“梦幻能剧”(Mugen Noh)，也就是一种基于梦境的能剧。舞台上的梦幻场景是与视觉艺术家高谷史郎(Shiro Takatani)合作创作的，在一个铺满水的舞台上展开，还有一块屏幕，显示着天气系统、城市和空旷的空间。</p>
+    <p>宫田麻由美(Mayumi Miyata)带着笙（一种古老的日本管乐器）在舞台上来回穿梭，代表着自然。舞蹈家兼演员田中泯(Min Tanaka)则是人类脆弱的象征，他努力修建一条横跨水面的道路。“时间”——正如我们的新世纪——呈现出一种预感，感觉也像一种记忆：在时间的尽头，我们都将回到同一片大海。</p>
+    <p>坂本在最近的一次视频通话中谈到了这部作品。以下是经过编辑的谈话节选。</p>
+    <p><strong>在《时间》的制作过程中，你是什么时候发现癌症复发了？</strong></p>
+    <p>在《异步》之后，我在《时间》上花费了四年，去年我被诊出患有直肠癌。这是一个漫长的治疗过程。我现在正处于中间阶段，秋天就会回医院做手术。我离开纽约已经一年了；我不知道什么时候能回来。</p>
+    <p><strong>你原本打算在这部歌剧中演出吗?</strong></p>
+    <p>我想过为它做一个原创的乐器。我打算把这个想法留给将来。</p>
+    <p>一开始我用的是歌剧这个词，但现在我不再这么说了。它是一种装置和表演的结合——一个戏剧作品。</p>
+    <p><strong>这似乎和《异步》有很深的联系。</strong></p>
+    <p>《异步》背后的概念是我对同步的怀疑，这让我想到了时间本身。如果你知道我过去的作品，就会发现我前进的过程是迂回的。但我从《异步》中得到的东西实在太大，我不想失去它们。我真的很想发展它们。那张专辑非常空间化，就像为装置创作的音乐，所以把它发展下去，就是一种有表演者参与的装置。这就是《时间》的初衷。</p>
+    <p><strong>《时间》是一部“梦幻能剧”——它没有节奏——所以似乎确实是探索这些想法的完美景观。</strong></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/15/arts/14sakamoto-3/merlin_190593735_d9ade435-947b-4720-966d-82098cd66738-master1050.jpg" /><small style="color: #999;">宫田麻由美带着笙——一种古老的日本管乐器——在舞台上来回穿梭，她代表了自然。</small></p>
+    <p>时间对我们的社会来说太自然了，我们并不怀疑它。但因为我是一个音乐家，我一直在和时间打交道。当我们作曲时，我们必须考虑如何在时间当中处理声音。</p>
+    <p><strong>除了笙，舞台上没有任何乐器。</strong></p>
+    <p>只有笙，在我还是个大学生的时候就对它非常着迷了。我不喜欢其他日本传统音乐，甚至包括花道(kado)或茶道(sado)这些传统。除了雅乐(gagaku)之外的一切我都很讨厌，它在我听来就像是外星人音乐。</p>
+    <p><strong>宫田代表了自然，轻而易举就能穿过水面，而田中——即“人类”——却如此弱小。</strong></p>
+    <p>女人和笙，她们代表了自然。田中想在水中创造一条笔直的路——及时——到达彼岸，但他失败了。他发了疯，最终死在了水里。</p>
+    <p><strong>人想在路的尽头求得什么？</strong></p>
+    <p>这是人的天性。有点像西西弗斯(Sisyphus)：就是一种天生的开辟道路、征服自然的激情。</p>
+    <p><strong>开路的场景插入了一系列故事：作家夏目漱石作品里的梦，传统能剧，《庄子》中的蝴蝶梦。你是如何选出这些故事的？</strong></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/15/arts/14sakamoto-4/merlin_190593750_7759160d-9273-4358-980b-8fc1bad647bf-master1050.jpg" /><small style="color: #999;">舞蹈家兼演员田中泯是人类虚弱的幻象，在水面上艰难地建造一条道路。</small></p>
+    <p>在梦境里，时间的所有属性都被摧毁了。在能剧故事<a rel="noopener noreferrer" target="_blank" href="https://www.the-noh.com/en/plays/data/program_059.html">《邯郸》(Kantan)</a>里，一个正在寻找觉悟的男人打了个盹。他只睡了五分钟，但在他的梦里过了50年。哪边才是现实？五分钟还是50年？然后在蝴蝶梦里，我们见到了哲学家庄周。是蝴蝶梦见自己是庄周，还是庄周梦见自己是蝴蝶？我们分辨不清。</p>
+    <p><strong>通过在音乐上解放了时间，你是否感觉到它慢了下来？</strong></p>
+    <p>《时间》的主题是坚持时间并不存在，而不是缓缓流逝。在观看流媒体首映时，我感觉一小时好像只有一分钟，或是一些片刻出现了反复。至少我能感受到另一种尺度上的时间。</p>
+    <p><strong>你也曾在陶瓷片上作画</strong><strong>（<a rel="noopener noreferrer" target="_blank" href="https://shop.mu-mo.net/st/special/rsartboxproject2020/">《2020S》</a>）</strong><strong>，利用遗失物品，制作装置作品（<a rel="noopener noreferrer" target="_blank" href="https://www.ntticc.or.jp/en/archive/works/is-your-time/">《你的时间》[Is Your Time]</a>），目前你还在北京办了<a rel="noopener noreferrer" target="_blank" href="https://www.mwoods.org/Ryuichi-Sakamoto-seeing-sound-hearing-time">一场大型回顾展</a>，包含了很多视觉作品。是什么促使你转向了视觉艺术？</strong></p>
+    <p>也许转折时刻是<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=LpUP0IulULU">我在1999年创作的歌剧《生命》(Life)</a>。它包括了视觉图像、动态影像和一些文本——这些视觉元素是那部歌剧的主角。</p>
+    <p><strong>那是你第一次与高谷合作？</strong></p>
+    <p>是的，而那之后我们所做的就是解构《生命》。我们解构了所有的视觉影像以及声音，在2007年创造了一个装置作品。那是一个重要时刻。</p>
+    <p><strong>我想你一直都在参与视觉艺术——你和电影制作人在配乐上有过非常密切的合作。</strong></p>
+    <p>奇怪的是，我并没想过电影的形式。电影更具叙事性和线性。不幸的是，线性结构存在于时间之中；它有开头、中间和结尾。我不想再回到这种形式。这就是为什么我对装置艺术如此着迷。装置不需要开始或结束。我认为最好的装置就是聆听雨声。</p>
+    <p><strong>在《时间》的结尾有一场大暴雨，接着是海浪撞击的慢镜头。你在想的是什么海？</strong></p>
+    <p>人想征服自然——亦即是水——但他必须失败，所以他必须死于水。我需要一场巨大的洪水，也许是海啸，来代表水的猛烈力量。而且，几乎所有民族都对大洪水留有一些记忆。也许我们都有一些在洪水中幸存的深刻记忆。</p>
+    <p><strong>我想很多人会好奇，这部歌剧的主题是否与气候变化相关。</strong></p>
+    <p>气候变化是人与自然之间最鲜明的冲突，所以它当然也包括在内。但它不是重点。我想要创造一则关于人与自然的神话。</p>
+    <p><strong>这与夏目漱石的梦非常相似，在他的梦里，一个女人变成了一朵从自己的坟墓上开出的花。我读过一些阐释。有些人认为，它代表了</strong><strong>夏目漱石</strong><strong>在现代世界的挣扎。</strong></p>
+    <p>这是我对轮回的信仰。因为她承诺会在100年后回来，就作为一朵花回来了。你知道，我一直想被埋在地下，这样我的身体就可以成为其他生物的营养。而在夏目漱石的故事中，女人变成了花。真的很美。</p>
+    <p><strong>我喜欢你的解读。</strong></p>
+    <p>很浪漫，不是吗？</p>
+  </section>
+  <footer class="author-info">
+    <p>翻译：Harry Wong、晋其角</p>
+    <p><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/07/14/arts/music/ryuichi-sakamoto-time.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-16/%E5%BD%93-%E6%88%98%E7%8B%BC-%E4%B8%BB%E5%AF%BC%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%A4%96%E4%BA%A4%E5%A3%B0%E9%9F%B3-%E4%B8%AD-%E8%B5%B5%E7%AB%8B%E5%9D%9A%E5%A6%82%E4%BD%95%E5%9C%A8%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%88%90%E4%B8%BATwitter-%E7%BD%91%E7%BA%A2">
+          当“战狼”主导中国的外交声音（中）：赵立坚如何在巴基斯坦成为Twitter“网红”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-16/%E9%87%91%E6%98%9F-LGBTQ%E5%85%88%E9%94%8B%E4%BA%BA%E7%89%A9%E8%BF%98%E6%98%AF%E6%80%A7%E5%88%AB%E4%BF%9D%E5%AE%88%E6%B4%BE">
+          金星：LGBTQ先锋人物还是性别保守派？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-16/%E7%BE%8E%E5%9B%BD%E7%9A%84%E4%BF%A1%E5%BF%B5%E5%8D%B1%E6%9C%BA">
+          美国的信念危机
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-16/%E5%A5%BD%E6%9C%8B%E5%8F%8B%E4%B9%9F%E4%BC%9A%E6%9C%89%E5%88%86%E6%AD%A7-%E6%8B%9C%E7%99%BB%E9%BB%98%E5%85%8B%E5%B0%94%E4%BC%9A%E9%9D%A2-%E7%BE%8E%E5%BE%B7%E5%85%B3%E7%B3%BB%E5%9B%9E%E6%9A%96">
+          “好朋友也会有分歧”：拜登默克尔会面，美德关系回暖
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-16/%E6%B8%AF%E8%AD%A6%E8%AA%BF%E6%9F%A5%E6%B8%AF%E5%A4%A7%E5%AD%B8%E7%94%9F%E6%9C%83-%E7%96%91%E6%B6%89%E4%B8%83%E4%B8%80%E5%88%BA%E8%AD%A6%E6%A1%88">
+            前一篇：港警調查港大學生會 疑涉七一刺警案
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-16/%E4%B8%9C%E5%A5%A5%E5%B0%86%E8%87%B3COVID-19%E7%A1%AE%E8%AF%8A%E6%94%80%E5%8D%87-%E6%97%A5%E8%82%A1%E8%BF%9E3%E9%BB%91-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            后一篇：东奥将至COVID-19确诊攀升 日股连3黑 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-16/%E6%B8%AF%E8%AD%A6%E8%AA%BF%E6%9F%A5%E6%B8%AF%E5%A4%A7%E5%AD%B8%E7%94%9F%E6%9C%83-%E7%96%91%E6%B6%89%E4%B8%83%E4%B8%80%E5%88%BA%E8%AD%A6%E6%A1%88'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-16/%E4%B8%9C%E5%A5%A5%E5%B0%86%E8%87%B3COVID-19%E7%A1%AE%E8%AF%8A%E6%94%80%E5%8D%87-%E6%97%A5%E8%82%A1%E8%BF%9E3%E9%BB%91-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-16/%E9%87%91%E6%98%9F-LGBTQ%E5%85%88%E9%94%8B%E4%BA%BA%E7%89%A9%E8%BF%98%E6%98%AF%E6%80%A7%E5%88%AB%E4%BF%9D%E5%AE%88%E6%B4%BE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-16/%E7%BE%8E%E5%9B%BD%E7%9A%84%E4%BF%A1%E5%BF%B5%E5%8D%B1%E6%9C%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-16/%E6%B8%AF%E8%AD%A6%E8%AA%BF%E6%9F%A5%E6%B8%AF%E5%A4%A7%E5%AD%B8%E7%94%9F%E6%9C%83-%E7%96%91%E6%B6%89%E4%B8%83%E4%B8%80%E5%88%BA%E8%AD%A6%E6%A1%88">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-16/%E4%B8%9C%E5%A5%A5%E5%B0%86%E8%87%B3COVID-19%E7%A1%AE%E8%AF%8A%E6%94%80%E5%8D%87-%E6%97%A5%E8%82%A1%E8%BF%9E3%E9%BB%91-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-16/%E9%87%91%E6%98%9F-LGBTQ%E5%85%88%E9%94%8B%E4%BA%BA%E7%89%A9%E8%BF%98%E6%98%AF%E6%80%A7%E5%88%AB%E4%BF%9D%E5%AE%88%E6%B4%BE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-16/%E7%BE%8E%E5%9B%BD%E7%9A%84%E4%BF%A1%E5%BF%B5%E5%8D%B1%E6%9C%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

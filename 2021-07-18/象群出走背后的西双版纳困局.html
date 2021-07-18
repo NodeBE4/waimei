@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>象群出走背后的西双版纳困局 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+象群出走背后的西双版纳困局
+——
+" />
+    <meta property="og:description" content="
+象群出走背后的西双版纳困局
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="象群出走背后的西双版纳困局" />
+    <meta property="twitter:title" content="象群出走背后的西双版纳困局" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5328)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%25B1%25A1%25E7%25BE%25A4%25E5%2587%25BA%25E8%25B5%25B0%25E8%2583%258C%25E5%2590%258E%25E7%259A%2584%25E8%25A5%25BF%25E5%258F%258C%25E7%2589%2588%25E7%25BA%25B3%25E5%259B%25B0%25E5%25B1%2580%2Fa-58279470&t=%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%25B1%25A1%25E7%25BE%25A4%25E5%2587%25BA%25E8%25B5%25B0%25E8%2583%258C%25E5%2590%258E%25E7%259A%2584%25E8%25A5%25BF%25E5%258F%258C%25E7%2589%2588%25E7%25BA%25B3%25E5%259B%25B0%25E5%25B1%2580%2Fa-58279470&t=%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80&d=2021-07-18&e=
+象群出走背后的西双版纳困局
+——
+
+
+  
+2021-07-18T07:03:45.252Z
+  
+  
+野象家族为何出走西双版纳？
+  
+  （德国之声中文网）2020年3月，17头（后有2头折返）野生亚洲象组成的象群从勐养至普洱之间的"老家"开始北迁一路走到昆明；而另一群17头野生亚洲象象群也从去年开始从这里出发南下，由于幼象在5月下旬无法渡过罗梭江，辗转进入并滞留在中国科学院西双版纳热带植物园；今年6月3日，野外监控系统发现，又有10头野象象群离开保护区进入西双版纳景洪市景讷乡曼窝村取食。
+  对此，有"太阳磁暴说"，还有"迷路说"，"食物短缺说"，"大象种群数量增多说"，"原始森林保护得太好导致食物减少说"，"栖息地破坏说"等众说纷纭的关于亚洲象出走原因的解释。
+  "从90年代开始，亚洲象就开始少量地从保护区外迁，每过几年又走出一点。"中国云南省的亚洲象保护协会专家，西双..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%25B1%25A1%25E7%25BE%25A4%25E5%2587%25BA%25E8%25B5%25B0%25E8%2583%258C%25E5%2590%258E%25E7%259A%2584%25E8%25A5%25BF%25E5%258F%258C%25E7%2589%2588%25E7%25BA%25B3%25E5%259B%25B0%25E5%25B1%2580%2Fa-58279470" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470&text=象群出走背后的西双版纳困局&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470&title=象群出走背后的西双版纳困局" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470&title=象群出走背后的西双版纳困局" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=象群出走背后的西双版纳困局&body=
+象群出走背后的西双版纳困局
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470&title=象群出走背后的西双版纳困局&caption=
+象群出走背后的西双版纳困局
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=象群出走背后的西双版纳困局&url=https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>象群出走背后的西双版纳困局</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%25B1%25A1%25E7%25BE%25A4%25E5%2587%25BA%25E8%25B5%25B0%25E8%2583%258C%25E5%2590%258E%25E7%259A%2584%25E8%25A5%25BF%25E5%258F%258C%25E7%2589%2588%25E7%25BA%25B3%25E5%259B%25B0%25E5%25B1%2580%2Fa-58279470&t=%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80&d=2021-07-18&e=
+象群出走背后的西双版纳困局
+——
+
+
+  
+2021-07-18T07:03:45.252Z
+  
+  
+野象家族为何出走西双版纳？
+  
+  （德国之声中文网）2020年3月，17头（后有2头折返）野生亚洲象组成的象群从勐养至普洱之间的"老家"开始北迁一路走到昆明；而另一群17头野生亚洲象象群也从去年开始从这里出发南下，由于幼象在5月下旬无法渡过罗梭江，辗转进入并滞留在中国科学院西双版纳热带植物园；今年6月3日，野外监控系统发现，又有10头野象象群离开保护区进入西双版纳景洪市景讷乡曼窝村取食。
+  对此，有"太阳磁暴说"，还有"迷路说"，"食物短缺说"，"大象种群数量增多说"，"原始森林保护得太好导致食物减少说"，"栖息地破坏说"等众说纷纭的关于亚洲象出走原因的解释。
+  "从90年代开始，亚洲象就开始少量地从保护区外迁，每过几年又走出一点。"中国云南省的亚洲象保护协会专家，西双..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E8%25B1%25A1%25E7%25BE%25A4%25E5%2587%25BA%25E8%25B5%25B0%25E8%2583%258C%25E5%2590%258E%25E7%259A%2584%25E8%25A5%25BF%25E5%258F%258C%25E7%2589%2588%25E7%25BA%25B3%25E5%259B%25B0%25E5%25B1%2580%2Fa-58279470" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626592625000-->
+<p><a href="https://www.dw.com/zh/%E8%B1%A1%E7%BE%A4%E5%87%BA%E8%B5%B0%E8%83%8C%E5%90%8E%E7%9A%84%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E5%9B%B0%E5%B1%80/a-58279470">象群出走背后的西双版纳困局</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2021-07-18T07:03:45.252Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57934314_303.jpg" width="100%" />  <div>
+<small style="color: #999;">野象家族为何出走西双版纳？</small>
+  </div>
+  <p>（德国之声中文网）2020年3月，17头（后有2头折返）野生亚洲象组成的象群从勐养至普洱之间的"老家"开始北迁一路走到昆明；而另一群17头野生亚洲象象群也从去年开始从这里出发南下，由于幼象在5月下旬无法渡过罗梭江，辗转进入并滞留在中国科学院西双版纳热带植物园；今年6月3日，野外监控系统发现，又有10头野象象群离开保护区进入西双版纳景洪市景讷乡曼窝村取食。</p>
+  <p>对此，有"太阳磁暴说"，还有"迷路说"，"食物短缺说"，"大象种群数量增多说"，"原始森林保护得太好导致食物减少说"，"栖息地破坏说"等众说纷纭的关于亚洲象出走原因的解释。</p>
+  <p>"从90年代开始，亚洲象就开始少量地从保护区外迁，每过几年又走出一点。"中国云南省的亚洲象保护协会专家，西双版纳国家级自然保护区科学研究所所长郭贤明说。</p>
+  <p>在西双版纳国家级自然保护区管护局发给媒体的新闻资料中，保护区的森林覆盖率从上世纪80年代的88%提高到了现在的95%以上，西双版纳亚洲象种群数量也由上世纪80年代的170余头增长到现在的300头左右。</p>
+  <p>但几十年来，野生亚洲象在西双版纳"吃不饱"的困局不仅没有缓解，反而愈演愈烈。</p>
+  <p>据西双版纳国家级自然保护区管护局科学研究所高级工程师王巧燕介绍，一头成年的亚洲象每天需要吃200公斤的食物，而象的习性是边走边吃，各有各自的领地，再加上每个象家族的活动规律也不一样。因此，每头象需要十万平方公里的栖息地，这就与人活动重叠的范围越来越大。</p>
+  <p>亚洲象喜欢活动的区域是海拔 900米以下，而这个区域也恰好是最适宜种橡胶树的区域。"从景洪到勐腊的高速路，两边全是橡胶林，触目惊心。"一位当地环保工作者说。</p>
+  <p>来自中国国家林业局西南林业局2018年的数据显示，目前亚洲象活动区域约三分之二在保护区外，其原因一是保护区内植被逐渐茂密，林下亚洲象的食物减少，不利于亚洲象觅食和活动。研究表明，在保护区内亚洲象觅食行为多发生在稀树灌木草丛中，其他植被很少被觅食利用，郁闭度（指森林中乔木树冠遮蔽地面的程度，完全覆盖地面为1）大于0.75的密林，很少发生觅食行为，不少象群到保护区外取食农作物；二是保护区的面积不足，并且成孤岛状态，满足不了大象的迁移和觅食，导致大量象群在保护区外活动。</p>
+  <p>国家林业局的规划中称，由于亚洲象偏爱的许多低海拔地段现已被人类生产活动占据，亚洲象的栖息地在很大程度上与当地社区的生产活动范围重叠。2018年来亚洲象从原来主要在森林内活动转向在林缘、农田附近活动栖息和觅食，是导致人象冲突的主要原因。</p>
+  <p>国家林业局西南林业局在2018年关于西双版纳国家级自然保护区总体规划中称，亚洲象栖息地丧失及适宜栖息地的退化是目前亚洲象保护面临的最主要威胁，这种威胁甚至大于非法盗猎的危害。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58277783_303.jpg" width="100%" />  <div>
+<small style="color: #999;">位于西双版纳某地的野象通道警示牌</small>
+  </div>
+  <p><strong>森林越好 象群越少</strong></p>
+  <p>困局的矛盾在于，西双版纳国家级自然保护区内亚洲象分布区的森林恢复得越来越好，亚洲象的食物来源减少，虽然保护好了森林资源，但影响了亚洲象栖息地的质量。再加上自然保护区建区之前就存在的橡胶林，保护区外大量天然林、宜林地等被大量开垦种植成橡胶、茶叶、咖啡等经济林，都造成了亚洲象通道的断裂，亚洲象生存空间质量的下降。西双版纳国家级自然保护区勐仑片区原有亚洲象分布区，虽然植被保护良好，但近20多年都未发现亚洲象活动的踪迹。</p>
+  <p>国家林业局2018年的数据显示，西双版纳州现存亚洲象可利用的栖息地面积约6000平方千米，居然被分割为共计12834个斑块。</p>
+  <p>研究亚洲象种群及行为学生态学的北京师范大学生命科学学院教授张立研究团队的数据则更触目惊心，在过去20年里,西双版纳的亚洲象适宜栖息地减少了40%，而整个栖息地大概只占版纳全州的3.5%面积。也就是说,适宜栖息地本来就不多，还减少了将近一半。整个栖息地面积由1976年的2084平方公里下降到近几年的500平方公里以下。</p>
+  <p>一边是保护得越来越好的"自然保护区"，另一边是被破坏得越来越严重的"亚洲象栖息地"，这个困局到底是如何形成的？</p>
+  <p>国家林业局2003年的数据显示，西双版纳国家自然保护区周界以内的土地利用情况较为特殊，保护区内的部分土地权属上不属于保护区而属于社区，形成了保护区辖区内的土地分国有和社区集体所有两种不同权属部分，未调整前的保护区总面积28.32万公顷，其中国有24.74万公顷，占87.4%，集体所有3.57万公顷，占12.6%。</p>
+  <p>而到了2018年，西双版纳国家自然保护区总面积变成了24.25万公顷，土地所有权均属国有。归属于社区的集体林的部分的3.57万公顷已经不在保护区管辖范围内。同时，国有部分的保护区土地面积减少了近5000公顷。</p>
+  <p><strong>水电站的角色</strong></p>
+  <p>对于为什么西双版纳国家级自然保护区的国有土地面积从2003年的24.74万公顷变成了2018年的24.25万公顷，至本文截稿时并未得到保护区管护局的回应。但据国家林业局2003年披露的数据显示，规划期内（2004-2015年）拟建的大型工程有将建于保护区西南澜沧江流域的景洪蓄水电站工程，该电站回水区将淹没保护区面积730公顷；以及将建于勐腊保护区外南腊河上的大沙坝水库工程，该水库回水区淹没保护区面积159.15公顷，因水库淹没导致公路改线占用保护区面积3公顷。两项工程共计占地892.2公顷，其中占用保护区土地653.4公顷，社区238.8公顷，占用林地675.6公顷。</p>
+  <p>除了淹没森林，水电站还让本已破碎的大象栖息地更加碎片化。水库蓄水导致勐养保护区去勐海县的象群无法返回原来的栖息地。勐海以前没有发生过人象冲突，但水电站建起后，发生多起大象伤人事故。</p>
+  <p>属于华能国际集团的景洪水电站曾进行环保测评。据中国媒体的公开新闻报道，西双版纳州环保局2012年2月下旬介绍，环境保护部组织西南环境保护督查中心、云南省环保厅、西双版纳州环保局、西双版纳国家级自然保护局和纳板河国家级自然保护局等15个部门代表和专家，组成验收组对澜沧江景洪水电站进行竣工环境保护验收。</p>
+  <p>对此，西双版纳国家级自然保护区科学研究所所长郭贤明表示："在修水电站之前，是有亚洲象过江的行为，这是事实，电站建起来以后，象过江的现象也没有发现过。"有环保组织对此质疑称，这跟亚洲象研究专家对当时验收组说的话是相反的。对此质疑，郭贤明表示："景洪水电站当时的环保测评并没有询问过我们（保护区）的意见。"但郭贤明强调，景洪水电站并不在保护区的范围内，保护区对此也没有管辖权。</p>
+  <p>来自国家林业局的组织机构管理示意图显示，云南省人民政府和国家林业局为最高管理机构，下属云南省林业厅和西双版纳傣族自治州人民政府，而西双版纳国家级自然保护区管理局为这两家机构直接管理的下属单位，保护区管理局与西双版纳州林业局平行，保护区管理局下属单位为保护区管理所科研所，再下属为保护区管理站。</p>
+  <p>此外，属于港股上市公司华润电力的回龙山水电站，于2015年10月开工，据环保组织自然之友实地勘查，蓄水区两岸海拔660米以下的植被都已经被"清库"。清库使是指将电站水库蓄水位以下的森林砍伐清理，以防止林木日后被河流冲刷而下，损坏大坝坝体。</p>
+  <p>事实上，早在2003年的保护区规划中，鉴于各自保护区之间分割以及主要保护对象的栖息地减少的特点，不利于动物的季节性迁徙、觅食、寻偶和遗传基因的交流，国家林业局甚至规划了6条总面积为70.905公顷的生物走廊带土地，保护区总投资1.18亿元。</p>
+  <p>该规划称，虽然生物走廊带不属于保护区的面积范围，但可以纳入保护区的管理，在与当地社区或有关管理部门共同协商下，尽可能减少生物走廊带内的人为活动，避免人工设施建设，使该地带的植物逐渐向原生植被演替，最终连片成为野生动植物潜在的栖息地。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58277759_303.jpg" width="100%" />  <div>
+<small style="color: #999;">西双版纳自然保护区是许多野象的家园</small>
+  </div>
+  <p>然而，二十年过去了，与建立这个生物走廊的初衷相反，野生亚洲象的栖息地反而更加破碎化。</p>
+  <p>这正是困局所在，保护区无权管辖归属于社区的土地，在发展地方经济的和保护野生动物栖息地的矛盾下，这些集体林显然是"烫手的山芋"，并最终被划出了保护区的管辖范围。</p>
+  <p>"西双版纳保护区的土地权属很复杂，1958年成立保护区，仅是个纸上的框框，后来，被蚕食，有外地移民侵入。保护局建立后，出现过管理人员进村烧房子的惨烈景象。框框里有部分土地，是农民的承包耕地和林地，存在争执。"吴兆录教授说。</p>
+  <p>对此，西南林业局也曾在2003年的规划中提到，保护区内的局部地段，有少量山林的权属存在争议，正以七部委文件及原有山林证书为依据，进行合理解决。</p>
+  <p>"从景洪到勐腊的高速路，两边全是橡胶林，触目惊心。"一位当地环保工作者回忆说。</p>
+  <p>中国国家林业局2003年时的统计显示，保护区周边社区群众文化水平低，交通闭塞，产业结构单一，99%的经济收入来源于种养殖业，但由于亚洲象等对农作物破坏，补偿额不足市场价的六分之一，如每市斤稻谷的赔偿不到1毛钱。</p>
+  <p>2002年，保护区境内外社区农民人均收入仅为1306元，低于全州平均水平，勐养的农民人均收入为856元，只有全州农民人均纯收入的50%左右，而当年全国城镇居民人均可支配收入为6110元。</p>
+  <p>在这个背景下，不被大象取食又有更高价值的经济作物似乎是当时社区发展经济的一个最优选择。</p>
+  <p><strong>发展经济和保护象群的"两难"</strong></p>
+  <p>西双版纳自治州保护区的社区居民特别是少数民族对传统资源利用的方式与保护区资源有着密切的联系。包括：林下野生资源利用，砂仁、竹笋、木耳和野生菌等，当地社区居民在保护区内主要采集菌类、竹笋和药材等。</p>
+  <p>中国国家林业局2003年的规划中称，养殖业畜牧业也是当地发展经济的重要途径之一，当地社区主要饲养山羊、黄牛和猪等，虽然经过西双版纳国际级自然保护区管护局多年的努力，通过宣传教育和保护巡护，周边放牧现象得到了很好的控制，但由于部分村民意识淡薄，为了方便和放牧的利益，在保护区内放牧的现象仍存在。</p>
+  <p>橡胶产业是当地经济发展的重要产业之一，张立教授的研究团队2017年在《科学报告》发文称，在1975年到2014年的40年里，西双版纳、临沧、普洱等地橡胶林面积扩大了23.4倍。这种看上郁郁葱葱的植物吸水力极强，且树高叶密，遮蔽阳光，导致树下寸草不生，林中生物的多样性减少甚至死亡，橡胶林因此也被称为"绿色沙漠"。研究显示，与天然林相比，人工橡胶林中的鸟类减少了70%以上，哺乳类动物减少了80%以上。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58277813_303.jpg" width="100%" />  <div>
+<small style="color: #999;">西双版纳地区的大量橡胶树林</small>
+  </div>
+  <p>此外，中国国家林业局2003年的规划中称，保护区内开始种植砂仁，主要分布区是在勐仑西片，在景洪-勐腊公路沿线南侧的沟谷雨林下种植，村民种植砂仁是当地政府由外地引进后，把这一种植区作为示范区种植的。然而，这一行动是在未经保护区批准的情况下，擅自进入保护区的核心区内，清除林下植物后，大面积种植的，林下地被物及林木被清除后，使林下物种结构遭受破坏，同时还影响林内动物交流，毁坏了动物食源，对保护区内的野生动植物物种保护造成了威胁。</p>
+  <p>根据中国国家林业局2003年的规划，西双版纳自然保护区1986年被批准列为国家级自然保护区时，村寨、公路、农场、旅游景点等在核心区内，使核心区名不副实；人口增长，开发区与保护矛盾突出，蚕食保护区土地现象时有发生；野生动物种群数量增长，活动范围溢出保护区，野生动物伤害人畜、损失农作物事件屡屡发生，冲突加剧，影响社区群众的保护积极性；与此同时，象昆曼公路、大沙坝水库、景洪电站等交通、农业、水电等基础设施建设已开工在即。</p>
+  <p>而这个矛盾直到现在也没有解决。2021年1月18日，中国官媒《人民日报》的调查报道称，为加快茶树生长，提高茶叶产量，增加种茶收入，西双版纳自治州内部分村民通过围剥树皮，使用有毒化学物质等隐蔽手段毁坏原始林木。</p>
+  <p>不过，在国家林业局2018年的规划中称，通过西双版纳国家级自然保护区管护局多年的努力，橡胶种植面积并没有扩大，并积极引导采用其他方式带动社区发展。</p>
+  <p><strong>解决方案：开设国家公园？</strong></p>
+  <p>但要从根本上解决西双版纳的困局，专家们不约而同地提到了建设大象国家公园的解决方案。</p>
+  <p>"要在国家层次上，通过财政补贴方式，降低或减缓地方经济增长标准，开展野生动物保护特区试点。有了这样一个顶层的设计，在西双版纳或普洱当前有亚洲象活动的地方建立一个没有行政界限的、以亚洲象为主的国家公园。这个国国家公园不是让你去旅游的，是保护野生亚洲象和热带森林生态系统的。"云南大学生态与环境学院教授吴兆录说。</p>
+  <p>"目前没有一个统一的部门来做这个规划，我们可以做一个整体的规划，哪些区域可以规划成亚洲象的栖息地，哪些是给其他动物的，哪些是留给原始森林的，这样我们就可以做一个整体的规划，可以统筹兼顾的，而现在（保护区）是无能为力的。"郭贤明说。</p>
+  <p>"不能以 GDP 作为指标去考核当地政府，应该是让当地政府的主要的工作重心放在保护热带森林保护亚洲象方面。管理国家公园的队伍，是一支跨行政属地界线的专门机构，全权负责亚洲象保护。在亚洲象问题上，有超越地方政府的管护权力。如果按照现在这个样子，任意开展大型建设工程，大量的外地人口跑到西双版纳去谋生、享乐，要解决亚洲象和人的冲突，基本做不到。"吴兆录说。</p>
+  <p><em>© 2021</em><em>年 德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-18/%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA%E5%8B%98%E5%AF%9F%E7%81%BE%E6%83%85%E6%97%B6%E5%93%88%E5%93%88%E5%A4%A7%E7%AC%91%E5%BC%95%E5%8F%91%E4%BC%97%E6%80%92">
+          德国总理候选人勘察灾情时哈哈大笑引发众怒
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD">
+          非洲头号乒乓好手叫板中国   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1">
+          爆发新冠疫情的伊朗女子监狱
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-18/%E6%B7%B1%E9%99%B7%E7%BB%8F%E6%B5%8E%E5%8D%B1%E6%9C%BA-%E4%BC%8A%E6%9C%97%E5%AF%8C%E4%BA%BA%E6%95%B0%E9%87%8F%E4%B8%8D%E5%87%8F%E5%8F%8D%E5%A2%9E">
+          深陷经济危机 伊朗富人数量不减反增  
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1">
+            前一篇：爆发新冠疫情的伊朗女子监狱
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD">
+            后一篇：非洲头号乒乓好手叫板中国   
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-18/%E9%9D%9E%E6%B4%B2%E5%A4%B4%E5%8F%B7%E4%B9%92%E4%B9%93%E5%A5%BD%E6%89%8B%E5%8F%AB%E6%9D%BF%E4%B8%AD%E5%9B%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-18/%E7%88%86%E5%8F%91%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E4%BC%8A%E6%9C%97%E5%A5%B3%E5%AD%90%E7%9B%91%E7%8B%B1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

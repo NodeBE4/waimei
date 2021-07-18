@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>数字力场 | 每个资本家，都是绝佳的路灯挂饰？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+" />
+    <meta property="og:description" content="
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="数字力场 | 每个资本家，都是绝佳的路灯挂饰？" />
+    <meta property="twitter:title" content="数字力场 | 每个资本家，都是绝佳的路灯挂饰？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5328)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668263.html&t=%E6%95%B0%E5%AD%97%E5%8A%9B%E5%9C%BA+%7C+%E6%AF%8F%E4%B8%AA%E8%B5%84%E6%9C%AC%E5%AE%B6%EF%BC%8C%E9%83%BD%E6%98%AF%E7%BB%9D%E4%BD%B3%E7%9A%84%E8%B7%AF%E7%81%AF%E6%8C%82%E9%A5%B0%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668263.html&t=%E6%95%B0%E5%AD%97%E5%8A%9B%E5%9C%BA+%7C+%E6%AF%8F%E4%B8%AA%E8%B5%84%E6%9C%AC%E5%AE%B6%EF%BC%8C%E9%83%BD%E6%98%AF%E7%BB%9D%E4%BD%B3%E7%9A%84%E8%B7%AF%E7%81%AF%E6%8C%82%E9%A5%B0%EF%BC%9F&d=2021-07-15&e=
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+
+
+  作者：佘宗明
+  
+  
+风向变了。
+  
+  01
+  「每个资本家，都是绝佳的路灯挂饰」，在B站、微博、知乎上，这句话正蔚为风行。
+  仇资，已经成了流行的社会情绪。
+  这股情绪就像火山。
+  随时都可能喷薄而出。
+  张军调侃「青年们正在睡觉」，左晖去世，都能成为出口。
+  在很多小年轻那，「资本家原罪论」已经过时了，「资本家全罪论」才是时兴观念。
+  在这些小年轻看来，他们不是社会问题解决方案的提供者，他们就是社会问题本身。
+  02
+  在反资本叙事的框架下，万恶是「资本家」的出厂设置。
+  网购？那是消费主义洗脑术。
+  游戏？那是用来麻醉人的电子瘾品。
+  短视频？那不就是奶头乐吗？
+  算法+大数据+AI？那就是边沁模型的数字化。
+  ……
+  这些批评者，人均一个本雅明+ 尼尔・波兹曼。
+  法兰克福..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668263.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668263.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668263.html&text=数字力场 | 每个资本家，都是绝佳的路灯挂饰？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668263.html&title=数字力场 | 每个资本家，都是绝佳的路灯挂饰？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668263.html&title=数字力场 | 每个资本家，都是绝佳的路灯挂饰？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=数字力场 | 每个资本家，都是绝佳的路灯挂饰？&body=
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668263.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668263.html&title=数字力场 | 每个资本家，都是绝佳的路灯挂饰？&caption=
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=数字力场 | 每个资本家，都是绝佳的路灯挂饰？&url=https://chinadigitaltimes.net/chinese/668263.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>数字力场 | 每个资本家，都是绝佳的路灯挂饰？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-15
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668263.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668263.html&t=%E6%95%B0%E5%AD%97%E5%8A%9B%E5%9C%BA+%7C+%E6%AF%8F%E4%B8%AA%E8%B5%84%E6%9C%AC%E5%AE%B6%EF%BC%8C%E9%83%BD%E6%98%AF%E7%BB%9D%E4%BD%B3%E7%9A%84%E8%B7%AF%E7%81%AF%E6%8C%82%E9%A5%B0%EF%BC%9F&d=2021-07-15&e=
+数字力场 | 每个资本家，都是绝佳的路灯挂饰？
+——
+
+
+  作者：佘宗明
+  
+  
+风向变了。
+  
+  01
+  「每个资本家，都是绝佳的路灯挂饰」，在B站、微博、知乎上，这句话正蔚为风行。
+  仇资，已经成了流行的社会情绪。
+  这股情绪就像火山。
+  随时都可能喷薄而出。
+  张军调侃「青年们正在睡觉」，左晖去世，都能成为出口。
+  在很多小年轻那，「资本家原罪论」已经过时了，「资本家全罪论」才是时兴观念。
+  在这些小年轻看来，他们不是社会问题解决方案的提供者，他们就是社会问题本身。
+  02
+  在反资本叙事的框架下，万恶是「资本家」的出厂设置。
+  网购？那是消费主义洗脑术。
+  游戏？那是用来麻醉人的电子瘾品。
+  短视频？那不就是奶头乐吗？
+  算法+大数据+AI？那就是边沁模型的数字化。
+  ……
+  这些批评者，人均一个本雅明+ 尼尔・波兹曼。
+  法兰克福..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668263.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626326320000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668263.html">数字力场 | 每个资本家，都是绝佳的路灯挂饰？</a>
+——</p>
+
+<div>
+  <p>作者：佘宗明</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668263-60efc532d5c1a." alt="cdtimg" /></p>
+  <div class="ts">
+风向变了。
+  </div>
+  <h4 id="section">01</h4>
+  <p>「每个资本家，都是绝佳的路灯挂饰」，在B站、微博、知乎上，这句话正蔚为风行。</p>
+  <p>仇资，已经成了流行的社会情绪。</p>
+  <p>这股情绪就像火山。</p>
+  <p>随时都可能喷薄而出。</p>
+  <p>张军调侃「青年们正在睡觉」，左晖去世，都能成为出口。</p>
+  <p>在很多小年轻那，「资本家原罪论」已经过时了，「资本家全罪论」才是时兴观念。</p>
+  <p>在这些小年轻看来，他们不是社会问题解决方案的提供者，他们就是社会问题本身。</p>
+  <h4 id="section-1">02</h4>
+  <p>在反资本叙事的框架下，万恶是「资本家」的出厂设置。</p>
+  <p>网购？那是消费主义洗脑术。</p>
+  <p>游戏？那是用来麻醉人的电子瘾品。</p>
+  <p>短视频？那不就是奶头乐吗？</p>
+  <p>算法+大数据+AI？那就是边沁模型的数字化。</p>
+  <p>……</p>
+  <p>这些批评者，人均一个本雅明+ 尼尔・波兹曼。</p>
+  <p>法兰克福学派那些形而上的批判，都被直接移植到实景生活中。</p>
+  <p>最终结论必定通向马克思的那句：资本来到世间，从头到脚，每个毛孔都滴着血和肮脏的东西。</p>
+  <h4 id="section-2">03</h4>
+  <p>将时间倒推至几年前，「资本家」在舆论场中的形象其实还挺正向。</p>
+  <p>那时他们的标签还叫「企业家」。</p>
+  <p>「保护企业家，保护市场主体，就是保护生产力」，是其时常见的调调。</p>
+  <p>在那一轮创富浪潮中，那些商业大佬们多是以「导师」面目出现。</p>
+  <p>假托他们之口的成功学语录，也成了「鸡汤」「鸡血」双拼的名言。</p>
+  <p>那几年，应该是这些大佬们在社会场里最高光的时刻了。</p>
+  <p>他们各种政治头衔、社会荣誉加身，出入必高端峰会、高峰论坛、高大上场合。</p>
+  <p>他们跟网民「相看两未厌」，形象也偏向「粉/路/黑」光谱里偏积极的那一端。</p>
+  <p>加上社达思维下的「慕强」心态，他们还被唤作「爸爸」「家父」。</p>
+  <h4 id="section-3">04</h4>
+  <p>但如今，风向骤变。</p>
+  <p>几年前，大家想躺赢，而如今，人们想躺平。</p>
+  <p>昔日弹幕皆「爸爸」，今天满屏都是「你工人爷爷来了！」</p>
+  <p>青萍之末，可见端倪。</p>
+  <p>在雪球上，用户@煌qhw 说：</p>
+  <p>你压榨我就算了，还美名其曰赚取剩余价值，这边说完自己多努力，那边就早早下班××××去了，留下一办公室996的员工，走前不忘说一句「996都是福报」，出门逢人就说「我们的员工自愿007」，左手生产资料，右手KPI绩效，员工不加班，就给穿小鞋职场PUA，猝死了，就说是社会的错。没猝死的，就过几年送走，就说是给社会输送人才。</p>
+  <p>（最怕空气突然安静，更怕将不同人在完整表达语境下的「问题说法」拎出集锦后合成「文字哈哈镜」。）</p>
+  <p>这段怒点密集的话，大致代表了很多年轻人的想法。</p>
+  <p>他们未必是「资本PTSD」最严重的，但却是反应最强烈的。</p>
+  <p>毕竟，他们才不读哈耶克，书单里前五里写着：《共产党宣言》《资本论》《毛选》……</p>
+  <h4 id="section-4">05</h4>
+  <p>从「慕强」到「仇资」，更深层次的原因是：时代变了。</p>
+  <p>经济大幕，已经从增量时代切到了存量时代。</p>
+  <p>在「付出-收获」ROI值很高的增量时代，人们努力，能做大属于自己的那块蛋糕。</p>
+  <p>人们热衷于做「生产性努力」，而大佬们的鸡汤来得很提神。</p>
+  <p>到了「卷」字诀通行的存量时代，不少年轻人努力，却无法跳脱「内卷螺旋」。</p>
+  <p>卷在里面的他们，只能做「分配性努力」，结果发现能分的蛋糕就那么点，一看刀叉都捏在老板们手头，怒了。</p>
+  <p>NND，搞半天，原来生产资料被这小撮人控制着……</p>
+  <p>本该是正常市场监管动作的反垄断，则是他们的情绪助燃器——</p>
+  <p>看看，这些人「万恶」的嘴脸。</p>
+  <p>于是他们开始解构所谓的资本话语话术，@赵皓阳 的那段话备受他们推崇：</p>
+  <p>资本主义的最大成功就是把剥削、吸血与掠夺用公平、自由、竞争、市场等外衣包裹了起来。</p>
+  <p>资本主义首先通过殖民主义、奴隶奴工制，掠夺全球资源完成资本原始积累，再通过生产关系来掠夺剩余价值，制造贫困，最后用「私有财产神圣不可侵犯」从法律和意识形态上为资本的一切血泪与罪恶背书，并通过塑造「财富的神性」和「自甘堕落的贫穷」等精神奴役，维系着整个资本运作的稳定。</p>
+  <p>他的那句「劳动者们仅仅是饿死而已，但资本家们失去的可是宝贵的剩余价值啊」，更是用尖锐的劳资对立撩起无数年轻人心中的怒火。</p>
+  <p>这股怒火，还能「人传人」。</p>
+  <h4 id="section-5">06</h4>
+  <p>每个火山下面的热能，都积攒了多时。</p>
+  <p>时代情绪的流变，并非无因。</p>
+  <p>财经博主@InquilineX 从经济学角度解释了「躺平心态」的起因：</p>
+  <p>躺平心态流行，说明信贷泡沫终于到了一个新阶段，就是哪怕完全不懂经济学和热力学的人，也意识到自己付出的劳动力与换取的货币债权高度不对称。</p>
+  <p>「躺平」本质上就是低欲望策略——只付出必要的劳动力换取必要的金融资源即可，避免自身劳动力的过度无效输出。这会带来博弈效果，如果足够多的人「躺平」，存量资本的价值就会大量缩水，扩张动量也会大幅下降，所以他们喊话「认命可以，躺平不行」。</p>
+  <p>所有这一切，都是大规模信贷扩张以及缺乏公共政策负反馈的结果，信贷扩张确实舒服，靠敲击键盘凭空创造不存在的东西就能让无数人每天忙死忙活，还能创造表面繁荣，但副作用确实非常大，且玩得越久越大。而躺平可以看做是一种非组织的、个体主导的、隐蔽且温和的特殊形式strike（反击）。</p>
+  <p>循此逻辑，「仇资」自然也是对现有秩序的迂回反抗。</p>
+  <h4 id="section-6">07</h4>
+  <p>不满是年轻人转动的发条。</p>
+  <p>只不过，许多年轻人不知道的是，他们的不满是被「调控」的。</p>
+  <p>说得更确切些，他们的不满的确能汇合成流，但流向与流速却可以被调节。</p>
+  <p>如今，这股涌流就在跟某些回流的暗流交会。</p>
+  <p>而后，激荡出「打土豪，分田地」的浪花。</p>
+  <p>浪奔，浪流，万里滔滔江水冲刷着「市场经济河岸」与「产权堤坝」。</p>
+  <h4 id="section-7">08</h4>
+  <p>反对996，是应该的。</p>
+  <p>反对「加班=奋斗」的「鸡成年人」（与鸡娃对应）话术，也是应该的。</p>
+  <p>要求劳资公平博弈，是合理的。</p>
+  <p>要求更合理的收入分配体系，也是合理的。</p>
+  <p>但不迷信「商业就是最大的道德」等话语，不等于要走向「商业是最大的恶」的另一端。</p>
+  <p>立起「劳资对立」的标靶，搬出「阶级斗争」思路，将「资本家」批倒批臭，将私企收归国有，然后呢？</p>
+  <p>回到1978年前？</p>
+  <p>将作为生产要素的资本跟贬抑性的「奴役」字眼扯在一块，又合适吗？</p>
+  <p>能不能先了解下经济社会发展规律？</p>
+  <h4 id="section-8">09</h4>
+  <p>看《资本论》的人，或许不care这点。</p>
+  <p>他们满脑子的「斗争」。</p>
+  <p>仇富，仇资，的确反映了「韭菜对镰刀的憎恶」。</p>
+  <p>他们不想总被收割。</p>
+  <p>他们只想「失去锁链，得到整个世界」。</p>
+  <p>但用「挂路灯」式的煽动话语激起的愤怒烈焰，在烧伤那「一小撮人」时，随时都可能灼伤整个社会。</p>
+  <p>今天大「资本家」得挂一挂，明天那些凡尔赛星人要不要安排路灯一盏？</p>
+  <p>凡尔赛星人安排上了，接下来，就该轮到那些相对高收入的中产了。</p>
+  <h4 id="section-9">10</h4>
+  <p>对于资本，不必捧杀，也不必棒杀。</p>
+  <p>把所谓的「资本家」设定为刘慈欣笔下的「终产者」，渲染社会收入分配结构畸形与「资本家」嗜血的关系，的确契合某种想象。</p>
+  <p>这类想象的支点，跟民粹同构。</p>
+  <p>齐泽克就认为，用阶级版身份政治作为「方案」解决「工人问题」，正是民粹主义的特色：这些主张者说是尊重工人，承认工人经常受剥削，希望在现有体制的坐标系中改善工人的处境。</p>
+  <p>将社会描绘成阶级对立的角斗场，视作一个阶级压迫另一个阶级的炼狱地宫，也的确能将很多复杂问题简单化阐释，省去条分缕析的琐细归因。</p>
+  <p>但「你黑我白」的二分法，是思维上的偷懒，也是认知上的缺陷。</p>
+  <p>智商在线者都知道，「人」外有「人」，「天」外有「天」。</p>
+  <p>「卷」确实是问题。「卷」背后的问题，不是出在增长上，而是出在分配上。</p>
+  <p>就分配而言，「资本家」远不是终极话事人。</p>
+  <p>人背后是某些机制。</p>
+  <p>「资本家」也是嵌在更宏大的社会运行规则版图里的。</p>
+  <p>他们只是体系的一部分。</p>
+  <h4 id="section-10">11</h4>
+  <p>这道理，许多人不是不懂。</p>
+  <p>问题是，他们也只敢骂「资本家」。</p>
+  <p>骂别的，容易超纲。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-15/404%E6%A1%A3%E6%A1%88%E9%A6%86-%E7%AC%AC13%E6%9C%9F-%E6%B3%95%E5%BA%AD%E8%A3%81%E5%88%A4%E6%96%87%E4%B9%A6%E5%85%AC%E5%BC%80%E7%BD%91%E6%80%8E%E4%B9%88%E6%88%90%E4%BA%86%E4%BF%9D%E5%AF%86%E7%BD%91">
+          【404档案馆】第13期：法庭裁判文书公开网怎么成了保密网？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E4%BA%A7%E7%94%9F%E6%B4%BB%E8%A7%82%E5%AF%9F-%E5%8F%AF%E6%80%95%E7%9A%84%E6%98%AF-%E5%A5%BD%E4%BA%BA-%E4%B9%9F%E5%BC%80%E5%A7%8B%E4%B8%BE%E6%8A%A5%E4%BA%86">
+          中产生活观察｜可怕的是“好人”也开始举报了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/CDTV-%E5%8C%97%E4%BA%AC%E5%85%B1%E9%9D%92%E5%9B%A2-%E4%B8%89%E5%8F%A5%E8%AF%9D-%E6%88%91%E7%9A%84%E4%B8%BE%E6%8A%A5%E8%AE%A9%E5%9B%BD%E5%AE%B6%E7%BB%99%E6%88%91%E5%8F%91%E4%BA%861%E4%B8%87%E5%85%83">
+          【CDTV】北京共青团｜三句话，我的举报让国家给我发了1万元
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/%E7%BE%8E%E5%9B%BD%E4%B9%8B%E9%9F%B3-%E7%8B%AC%E5%AE%B6-%E5%A2%99%E5%9B%BD%E9%9F%AD%E8%8F%9C-%E5%87%BA%E9%80%83%E8%AE%B0">
+          美国之音 | 独家：“墙国韭菜”出逃记
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-15/NBA%E6%80%BB%E5%86%A0%E5%86%9B%E8%B5%9B-%E5%85%AC%E9%B9%BF%E6%89%B3%E5%B9%B3%E5%A4%AA%E9%98%B3-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            前一篇：NBA总冠军赛 公鹿扳平太阳 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-15/%E5%88%86%E6%9E%90%E5%B8%88%E8%A7%82%E7%82%B9-%E9%99%8D%E5%87%86%E6%97%A5%E4%B8%AD%E5%9B%BD%E5%A4%AE%E8%A1%8C%E7%BC%A9%E9%87%8F%E5%B9%B3%E4%BB%B7%E7%BB%AD%E5%81%9AMLF-%E4%BD%86LPR%E9%99%8D%E6%81%AF%E9%A2%84%E6%9C%9F%E7%8A%B9%E5%AD%98">
+            后一篇：分析师观点：降准日中国央行缩量平价续做MLF 但LPR降息预期犹存
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/NBA%E6%80%BB%E5%86%A0%E5%86%9B%E8%B5%9B-%E5%85%AC%E9%B9%BF%E6%89%B3%E5%B9%B3%E5%A4%AA%E9%98%B3-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E5%88%86%E6%9E%90%E5%B8%88%E8%A7%82%E7%82%B9-%E9%99%8D%E5%87%86%E6%97%A5%E4%B8%AD%E5%9B%BD%E5%A4%AE%E8%A1%8C%E7%BC%A9%E9%87%8F%E5%B9%B3%E4%BB%B7%E7%BB%AD%E5%81%9AMLF-%E4%BD%86LPR%E9%99%8D%E6%81%AF%E9%A2%84%E6%9C%9F%E7%8A%B9%E5%AD%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E4%BA%A7%E7%94%9F%E6%B4%BB%E8%A7%82%E5%AF%9F-%E5%8F%AF%E6%80%95%E7%9A%84%E6%98%AF-%E5%A5%BD%E4%BA%BA-%E4%B9%9F%E5%BC%80%E5%A7%8B%E4%B8%BE%E6%8A%A5%E4%BA%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-14/CDTV-%E5%8C%97%E4%BA%AC%E5%85%B1%E9%9D%92%E5%9B%A2-%E4%B8%89%E5%8F%A5%E8%AF%9D-%E6%88%91%E7%9A%84%E4%B8%BE%E6%8A%A5%E8%AE%A9%E5%9B%BD%E5%AE%B6%E7%BB%99%E6%88%91%E5%8F%91%E4%BA%861%E4%B8%87%E5%85%83'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-15/NBA%E6%80%BB%E5%86%A0%E5%86%9B%E8%B5%9B-%E5%85%AC%E9%B9%BF%E6%89%B3%E5%B9%B3%E5%A4%AA%E9%98%B3-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-15/%E5%88%86%E6%9E%90%E5%B8%88%E8%A7%82%E7%82%B9-%E9%99%8D%E5%87%86%E6%97%A5%E4%B8%AD%E5%9B%BD%E5%A4%AE%E8%A1%8C%E7%BC%A9%E9%87%8F%E5%B9%B3%E4%BB%B7%E7%BB%AD%E5%81%9AMLF-%E4%BD%86LPR%E9%99%8D%E6%81%AF%E9%A2%84%E6%9C%9F%E7%8A%B9%E5%AD%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E4%BA%A7%E7%94%9F%E6%B4%BB%E8%A7%82%E5%AF%9F-%E5%8F%AF%E6%80%95%E7%9A%84%E6%98%AF-%E5%A5%BD%E4%BA%BA-%E4%B9%9F%E5%BC%80%E5%A7%8B%E4%B8%BE%E6%8A%A5%E4%BA%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-14/CDTV-%E5%8C%97%E4%BA%AC%E5%85%B1%E9%9D%92%E5%9B%A2-%E4%B8%89%E5%8F%A5%E8%AF%9D-%E6%88%91%E7%9A%84%E4%B8%BE%E6%8A%A5%E8%AE%A9%E5%9B%BD%E5%AE%B6%E7%BB%99%E6%88%91%E5%8F%91%E4%BA%861%E4%B8%87%E5%85%83">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

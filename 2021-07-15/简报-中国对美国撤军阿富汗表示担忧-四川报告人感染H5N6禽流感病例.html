@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+" />
+    <meta property="og:description" content="
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例" />
+    <meta property="twitter:title" content="简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5328)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F15%2Fworld%2Fasia%2Fchina-afghanistan-us-withdrawal.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E9%98%BF%E5%AF%8C%E6%B1%97%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7%EF%BC%9B%E5%9B%9B%E5%B7%9D%E6%8A%A5%E5%91%8A%E4%BA%BA%E6%84%9F%E6%9F%93H5N6%E7%A6%BD%E6%B5%81%E6%84%9F%E7%97%85%E4%BE%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F15%2Fworld%2Fasia%2Fchina-afghanistan-us-withdrawal.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E9%98%BF%E5%AF%8C%E6%B1%97%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7%EF%BC%9B%E5%9B%9B%E5%B7%9D%E6%8A%A5%E5%91%8A%E4%BA%BA%E6%84%9F%E6%9F%93H5N6%E7%A6%BD%E6%B5%81%E6%84%9F%E7%97%85%E4%BE%8B&d=2021-07-15&e=
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+
+
+  
+    
+Image      
+      
+本月的阿富汗喀布尔。中国高级官员已在声明中明确表示，他们将把该地区蔓延的任何不安全因素归咎于美国。Credit...Jim Huylebroek for The New York Times
+      
+    
+    
+      
+        阿富汗局势走向混乱，中国对美国撤军表示警惕与担忧。中国外交部长王毅本周公开呼吁美国负起责任，不能一走了之，“因撤生乱，因撤生战”。虽然阿富汗领土内的冲突不会对中国构成直接威胁，但其秩序崩溃将势必影响包括巴基斯坦在内的邻国，中国在这些地方拥有经济利益。此外，专家指出，如果阿富汗变得混乱，寻求独立的维吾尔人可能会再次在那里找到立足点。王毅本周开启中亚访问行程，阿富汗局势已成为他当下议程的重中之重。
+  ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F15%2Fworld%2Fasia%2Fchina-afghanistan-us-withdrawal.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html&text=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html&title=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html&title=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例&body=
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html&title=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例&caption=
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例&url=https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-15
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F15%2Fworld%2Fasia%2Fchina-afghanistan-us-withdrawal.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E9%98%BF%E5%AF%8C%E6%B1%97%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7%EF%BC%9B%E5%9B%9B%E5%B7%9D%E6%8A%A5%E5%91%8A%E4%BA%BA%E6%84%9F%E6%9F%93H5N6%E7%A6%BD%E6%B5%81%E6%84%9F%E7%97%85%E4%BE%8B&d=2021-07-15&e=
+简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例
+——
+
+
+  
+    
+Image      
+      
+本月的阿富汗喀布尔。中国高级官员已在声明中明确表示，他们将把该地区蔓延的任何不安全因素归咎于美国。Credit...Jim Huylebroek for The New York Times
+      
+    
+    
+      
+        阿富汗局势走向混乱，中国对美国撤军表示警惕与担忧。中国外交部长王毅本周公开呼吁美国负起责任，不能一走了之，“因撤生乱，因撤生战”。虽然阿富汗领土内的冲突不会对中国构成直接威胁，但其秩序崩溃将势必影响包括巴基斯坦在内的邻国，中国在这些地方拥有经济利益。此外，专家指出，如果阿富汗变得混乱，寻求独立的维吾尔人可能会再次在那里找到立足点。王毅本周开启中亚访问行程，阿富汗局势已成为他当下议程的重中之重。
+  ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F15%2Fworld%2Fasia%2Fchina-afghanistan-us-withdrawal.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626401223000-->
+<p><a href="https://www.nytimes.com/zh-hans/2021/07/15/world/asia/china-afghanistan-us-withdrawal.html">简报：中国对美国撤军阿富汗表示担忧；四川报告人感染H5N6禽流感病例</a>
+——</p>
+
+<div>
+  <section name="articleBody" class="meteredContent css-1r7ky0e">
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <picture><source media="(max-width: 599px) and (min-device-pixel-ratio: 3),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 3),(max-width: 599px) and (min-resolution: 3dppx),(max-width: 599px) and (min-resolution: 288dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/15/world/CN-15China-Diplo1-copy/15China-Diplo1-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=600" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 2),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 2),(max-width: 599px) and (min-resolution: 2dppx),(max-width: 599px) and (min-resolution: 192dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/15/world/CN-15China-Diplo1-copy/15China-Diplo1-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1200" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 1),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 1),(max-width: 599px) and (min-resolution: 1dppx),(max-width: 599px) and (min-resolution: 96dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/15/world/CN-15China-Diplo1-copy/15China-Diplo1-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1800" /><img /></picture>
+      <figcaption class="css-1l44abu ewdxa0s0">
+本月的阿富汗喀布尔。中国高级官员已在声明中明确表示，他们将把该地区蔓延的任何不安全因素归咎于美国。Credit...Jim Huylebroek for The New York Times
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">阿富汗局势走向混乱，<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/middleeast/china-pakistan-afghanistan.html" title="">中国对美国撤军表示警惕与担忧</a>。中国外交部长王毅本周公开呼吁美国负起责任，不能一走了之，“因撤生乱，因撤生战”。虽然阿富汗领土内的冲突不会对中国构成直接威胁，但其秩序崩溃将势必影响包括巴基斯坦在内的邻国，中国在这些地方拥有经济利益。此外，专家指出，如果阿富汗变得混乱，寻求独立的维吾尔人可能会再次在那里找到立足点。王毅本周开启中亚访问行程，阿富汗局势已成为他当下议程的重中之重。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">中国一男子<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/china-bird-flu.html" title="">感染H5N6禽流感入院治疗</a>。据官媒报道，这名居住在四川巴州的55岁男子于6月30日出现发烧症状，几天后入院治疗，7月6日确诊。当地官员表示，已启动应急响应，对患者及附近农户饲养的家禽进行了“捕杀和无害化处理”，并已对环境消毒。报道援引专家的话称，此为偶发事件，大规模人际传播的风险很低。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">缅甸变异病毒肆虐，<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/asia/myanmar-covid-oxygen.html" title="">军政府被控囤积氧气</a>。医务人员表示，军方已经下令私人诊所和慈善机构停止供应、分发氧气，并禁止人们直接向生产商进行购买。目击者称，仰光士兵甚至向排队购买氧气罐的人群开枪。医生们指责军方为了确保军队需求而无视平民。随着Delta病毒的入侵，缅甸近期的检测阳性率高达34%。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">非洲疫情急剧恶化，<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/africa-million-cases.html" title="">一月内新增100万新病例</a>。世卫组织指出，新冠病毒正在以前所未有的速度席卷非洲，Delta变异病毒传播在该大陆引发的第三波疫情极其严峻。与此同时，由于疫苗供应有限，非洲大陆的许多国家无力控制感染的蔓延。过去一周，非洲大陆的死亡人数激增43%。</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+“好友之间也可以有分歧，”拜登总统周四在与德国总理默克尔一起于白宫举行的新闻发布会上说。Credit...Doug Mills/The New York Times
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/us/politics/biden-merkel-meeting.html" title="">拜登和默克尔会面</a>：承认分歧，传递双边关系回暖信号。在周四于白宫举行的会面上，两人强调了他们的共同价值观，表明在特朗普时代的紧张局势之后，美欧联盟依然强大。但两位领导人也承认，在俄罗斯修建通往德国的一条天然气管道以及如何与中国打交道方面，双方仍然存在分歧。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/americas/haiti-president-security-chief-custody.html" title="">海地拘留总统官邸安全主管</a>，传唤保安卫队进行质询。当局正在试图寻找内部安保工作与若弗内尔·莫伊兹遇刺案之间的联系，官员们仍不确定二十多名武装雇佣兵是如何进入戒备森严的总统私宅，在爆发导致莫伊兹死亡的枪战时，安全卫队甚至没有开枪。 此外，海地官员指责暗杀事件的嫌疑人去年在佛罗里达州和多米尼加共和国举行的<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/americas/haiti-assassination-suspects.html" title="">一系列会议</a>上策划了这起事件。这些会议似乎将调查中看似不相关的嫌疑人联系到一起，但与会者表示，他们只是在讨论总统下台后重建这个陷入困境的国家。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/video/world/middleeast/100000007798345/gaza-israel-war.html" title="">“我们的生活全是战争”</a>：今年春天，以色列发生了什么？漫天的火箭弹、轰然崩塌的建筑、受伤的人群，爆炸声与尖叫声混在一起……利用巴勒斯坦人在加沙拍摄的镜头，时报视频团队制作了一支有关这场持续了11天的暴力冲突的短纪录片。</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+周四，比利时韦尔维耶的暴雨和洪水过后，汽车堆叠在一起。Credit...Francois Walschaerts/Agence France-Presse — Getty Images
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/europe/flooding-germany-belgium-switzerland-netherlands.html" title="">洪灾冲击德国等多个西欧国家</a>，造成至少69人死亡。强降雨导致河流决堤，建筑物被冲走，街道淹没在洪水中。德国当局表示，在受灾最严重的地区，已有58人死亡，另有至少1300人下落不明。比利时称，该国至少有11人死亡。这场洪灾还袭击了瑞士、荷兰和卢森堡，缓慢移动的天气系统可能会使情况进一步恶化。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">欧盟最高法院裁定，<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/business/Europe-court-head-scarves.html" title="">雇主可将拒绝摘下头巾的员工停职</a>。该法院表示，公司禁止员工在工作场所穿着任何可见的表达政治、哲学或宗教信仰的服装的政策，不构成直接歧视。人权组织指出，这一裁定可能导致穆斯林妇女在工作场所面临压力与排斥。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/14/health/cleveland-clinic-aduhelm.html" title="">阿尔兹海默症新药争议持续</a>，美国两大医疗中心拒绝使用。自美国食品药品监督管理局上月批准将Aduhelm用于治疗阿尔兹海默症以来，关于该药品的疗效和审批流程一直争议不断。美国两家权威医疗机构克利夫兰诊所和西奈山医院对这一药物的拒绝，更加凸显了人们的担忧。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/15/world/middleeast/lebanon-prime-minister-saad-hariri.html" title="">黎巴嫩候任总理哈里里辞职</a>。自去年10月该国前总理迪亚卜因贝鲁特大爆炸而辞职后，萨阿德·哈里里一直在努力组建新一届政府。但经过九个月的政治角力，他于周四宣布放弃这一努力。正陷入严重的政治和经济危机的黎巴嫩将进入新一轮权力真空。</p>
+      </li>
+    </ul>
+    <p class="css-pncxxs etfikam0">感谢阅读今天的简报，新读者请<a class="css-1g7m0tk" href="https://www.nytimes.com/newsletters/chinese-briefing" title="">点击此处订阅</a>。点击<a class="css-1g7m0tk" href="https://www.nytimes.com/zh-hans/series/daily-briefing-chinese" title="">这里</a>查看往日更新。欢迎在Twitter(<a class="css-1g7m0tk" href="https://twitter.com/nytchinese" title="" rel="noopener noreferrer" target="_blank">@nytchinese</a>)、<a class="css-1g7m0tk" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw" title="" rel="noopener noreferrer" target="_blank">Instagram</a>和<a class="css-1g7m0tk" href="https://www.facebook.com/nytimeschinese.t/" title="" rel="noopener noreferrer" target="_blank">Facebook</a>上关注我们，了解更多中文资讯。也欢迎访问<a class="css-1g7m0tk" href="https://cn.nytimes.com/" title="">中文网首页</a>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</p>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+  </section>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-16/%E7%89%A9%E4%BB%B7%E6%8C%81%E7%BB%AD%E4%BD%8E%E8%BF%B7-%E6%97%A5%E6%9C%AC%E9%9D%A2%E4%B8%B4%E9%80%9A%E8%B4%A7%E7%B4%A7%E7%BC%A9%E5%8E%8B%E5%8A%9B">
+          物价持续低迷，日本面临通货紧缩压力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9B%BD%E5%B0%B1%E9%98%BF%E5%AF%8C%E6%B1%97%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A-%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7">
+          中国就阿富汗局势发出警告，对美国撤军表示担忧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%80%E4%BD%8D%E8%87%AA%E7%A7%B0-%E9%BA%BB%E7%83%A6%E5%88%B6%E9%80%A0%E8%80%85-%E7%9A%84%E5%AF%8C%E8%B1%AA-%E4%B8%80%E5%BA%A7%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%B4%E9%BB%8E%E5%8D%9A%E7%89%A9%E9%A6%86">
+          一位自称“麻烦制造者”的富豪，一座不一样的巴黎博物馆
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9B%BD%E4%BA%8C%E5%AD%A3%E5%BA%A6GDP%E5%A2%9E7.9-%E5%A2%9E%E9%80%9F%E6%94%BE%E7%BC%93">
+          中国二季度GDP增7.9%，增速放缓
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9C%8B15%E6%97%A5%E6%96%B0%E5%A2%9E36%E4%BE%8BCOVID-19-%E5%9D%87%E7%82%BA%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5">
+            前一篇：中國15日新增36例COVID-19  均為境外移入
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-15/%E5%89%8D%E6%B2%B3%E5%8D%97%E7%9C%81610%E5%8A%9E%E5%85%AC%E5%AE%A4%E4%B8%BB%E4%BB%BB%E7%8E%8B%E6%96%87%E6%B5%B7%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89">
+            后一篇：前河南省610办公室主任王文海丑闻曝光
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9C%8B15%E6%97%A5%E6%96%B0%E5%A2%9E36%E4%BE%8BCOVID-19-%E5%9D%87%E7%82%BA%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E5%89%8D%E6%B2%B3%E5%8D%97%E7%9C%81610%E5%8A%9E%E5%85%AC%E5%AE%A4%E4%B8%BB%E4%BB%BB%E7%8E%8B%E6%96%87%E6%B5%B7%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9B%BD%E5%B0%B1%E9%98%BF%E5%AF%8C%E6%B1%97%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A-%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%80%E4%BD%8D%E8%87%AA%E7%A7%B0-%E9%BA%BB%E7%83%A6%E5%88%B6%E9%80%A0%E8%80%85-%E7%9A%84%E5%AF%8C%E8%B1%AA-%E4%B8%80%E5%BA%A7%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%B4%E9%BB%8E%E5%8D%9A%E7%89%A9%E9%A6%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9C%8B15%E6%97%A5%E6%96%B0%E5%A2%9E36%E4%BE%8BCOVID-19-%E5%9D%87%E7%82%BA%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-15/%E5%89%8D%E6%B2%B3%E5%8D%97%E7%9C%81610%E5%8A%9E%E5%85%AC%E5%AE%A4%E4%B8%BB%E4%BB%BB%E7%8E%8B%E6%96%87%E6%B5%B7%E4%B8%91%E9%97%BB%E6%9B%9D%E5%85%89">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%AD%E5%9B%BD%E5%B0%B1%E9%98%BF%E5%AF%8C%E6%B1%97%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A-%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%92%A4%E5%86%9B%E8%A1%A8%E7%A4%BA%E6%8B%85%E5%BF%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-15/%E4%B8%80%E4%BD%8D%E8%87%AA%E7%A7%B0-%E9%BA%BB%E7%83%A6%E5%88%B6%E9%80%A0%E8%80%85-%E7%9A%84%E5%AF%8C%E8%B1%AA-%E4%B8%80%E5%BA%A7%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%B7%B4%E9%BB%8E%E5%8D%9A%E7%89%A9%E9%A6%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,3640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美首都法轮功7·20烛光夜悼 神圣感人 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+" />
+    <meta property="og:description" content="
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美首都法轮功7·20烛光夜悼 神圣感人" />
+    <meta property="twitter:title" content="美首都法轮功7·20烛光夜悼 神圣感人" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5328)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F17%2Fn13095574.htm&t=%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F7%C2%B720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC+%E7%A5%9E%E5%9C%A3%E6%84%9F%E4%BA%BA" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F17%2Fn13095574.htm&t=%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F7%C2%B720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC+%E7%A5%9E%E5%9C%A3%E6%84%9F%E4%BA%BA&d=2021-07-17&e=
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+
+
+  【大纪元2021年07月17日讯】（大纪元记者李辰美国华盛顿DC报导）烛光点点，在微风中闪烁；盏盏蜡烛排成“真、善、忍”三个大字，放射出柔和的光芒；音乐响起，天地在这一刻聚焦，归于永恒……
+  7月16日晚，华盛顿纪念碑下，美国国家大草坪上，来自华府和周边地区部分法轮功学员近2千人，比邻而坐，手捧烛光，沉痛悼念那些被中共迫害致死的法轮功学员，呼吁停止长达22年的残酷迫害。
+  据明慧网不完全统计，自1999年7月20日以来，突破中共网络封锁能够传出消息的，已有4677名法轮功学员被迫害致死。
+  仅2021年上半年，新增63位法轮功学员在迫害中离世，另有12,761人被中共逮捕、绑架和骚扰。这些数字，只是冰山一角。
+  酷刑受害者的见证
+  
+    
+7月16日晚，法轮功学员王福花参加烛光夜悼活动，手持一位被迫害致死的法轮功学..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F17%2Fn13095574.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/7/17/n13095574.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/7/17/n13095574.htm&text=美首都法轮功7·20烛光夜悼 神圣感人&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/7/17/n13095574.htm&title=美首都法轮功7·20烛光夜悼 神圣感人" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/7/17/n13095574.htm&title=美首都法轮功7·20烛光夜悼 神圣感人" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美首都法轮功7·20烛光夜悼 神圣感人&body=
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/7/17/n13095574.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/7/17/n13095574.htm&title=美首都法轮功7·20烛光夜悼 神圣感人&caption=
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美首都法轮功7·20烛光夜悼 神圣感人&url=https://www.epochtimes.com/gb/21/7/17/n13095574.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美首都法轮功7·20烛光夜悼 神圣感人</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/7/17/n13095574.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F17%2Fn13095574.htm&t=%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F7%C2%B720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC+%E7%A5%9E%E5%9C%A3%E6%84%9F%E4%BA%BA&d=2021-07-17&e=
+美首都法轮功7·20烛光夜悼 神圣感人
+——
+
+
+  【大纪元2021年07月17日讯】（大纪元记者李辰美国华盛顿DC报导）烛光点点，在微风中闪烁；盏盏蜡烛排成“真、善、忍”三个大字，放射出柔和的光芒；音乐响起，天地在这一刻聚焦，归于永恒……
+  7月16日晚，华盛顿纪念碑下，美国国家大草坪上，来自华府和周边地区部分法轮功学员近2千人，比邻而坐，手捧烛光，沉痛悼念那些被中共迫害致死的法轮功学员，呼吁停止长达22年的残酷迫害。
+  据明慧网不完全统计，自1999年7月20日以来，突破中共网络封锁能够传出消息的，已有4677名法轮功学员被迫害致死。
+  仅2021年上半年，新增63位法轮功学员在迫害中离世，另有12,761人被中共逮捕、绑架和骚扰。这些数字，只是冰山一角。
+  酷刑受害者的见证
+  
+    
+7月16日晚，法轮功学员王福花参加烛光夜悼活动，手持一位被迫害致死的法轮功学..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F17%2Fn13095574.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626540878000-->
+<p><a href="https://www.epochtimes.com/gb/21/7/17/n13095574.htm">美首都法轮功7·20烛光夜悼 神圣感人</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年07月17日讯】（大纪元记者李辰美国华盛顿DC报导）烛光点点，在微风中闪烁；盏盏蜡烛排成“真、善、忍”三个大字，放射出柔和的光芒；音乐响起，天地在这一刻聚焦，归于永恒……</p>
+  <p>7月16日晚，华盛顿纪念碑下，美国国家大草坪上，来自<a href="https://www.epochtimes.com/gb/tag/%E5%8D%8E%E5%BA%9C.html">华府</a>和周边地区部分<a href="https://www.epochtimes.com/gb/tag/%E6%B3%95%E8%BD%AE%E5%8A%9F.html">法轮功</a>学员近2千人，比邻而坐，手捧烛光，沉痛悼念那些被中共迫害致死的法轮功学员，呼吁停止长达22年的残酷迫害。</p>
+  <p>据明慧网不完全统计，自1999年7月20日以来，突破中共网络封锁能够传出消息的，已有4677名<a href="https://www.epochtimes.com/gb/tag/%E6%B3%95%E8%BD%AE%E5%8A%9F.html">法轮功</a>学员被迫害致死。</p>
+  <p>仅2021年上半年，新增63位法轮功学员在迫害中离世，另有12,761人被中共逮捕、绑架和骚扰。这些数字，只是冰山一角。</p>
+  <h2 id="section">酷刑受害者的见证</h2>
+  <figure id="attachment_13095669" aria-describedby="caption-attachment-13095669" style="width: 613px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095669-Screen-Shot-2021-07-17-at-9.43.05-AM.png"><img class="size-medium_vertical wp-image-13095669" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095669-Screen-Shot-2021-07-17-at-9.43.05-AM-613x400.png" alt="" width="613" height="400" /></a>    <figcaption id="caption-attachment-13095669" class="wp-caption-text">
+7月16日晚，法轮功学员王福花参加<a href="https://www.epochtimes.com/gb/tag/%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC.html">烛光夜悼</a>活动，手持一位被迫害致死的法轮功学员遗照。（李辰／大纪元）
+    </figcaption>
+  </figure>
+  <p>参加<a href="https://www.epochtimes.com/gb/tag/%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC.html">烛光夜悼</a>活动的法轮功学员王福花，原是湖南省一所学校的教师，2016年来美。她说，“每一年烛光守夜，我的心情都非常沉重，因为那么多人被迫害致死，还有很多法轮功学员被秘密迫害致死，或被活摘器官，只是没有曝光出来。”</p>
+  <p>王福花1995年5月开始修炼法轮功。修炼前，患有乙肝、输卵管炎、腰痛等疾病。她说，“全身没有力气，走路像灌了铅一样，脚抬不起来”，修炼法轮功一年后，全身疾病都消失了，浑身轻松。法轮功以“真、善、忍”为修炼原则，包括五套舒缓优美的功法动作，其祛病健身效果神奇。</p>
+  <p>她也介绍了自己的部分受迫害经历。</p>
+  <p>2002年，王福花在湖南郴州白马垅劳教所关押期间，曾绝食抗议劳教所对她的非法迫害。</p>
+  <p>王福花表示，劳教所一开始对绝食的法轮功学员进行葡萄糖输液。一位夹控犯人告诉王福花不要绝食，那位犯人说，“你们不知道，（葡萄糖）里面加入了‘冬眠灵’”。</p>
+  <p>“‘冬眠灵’能够让人失去记忆。”王福花说，她拒绝输液，后来遭到劳教所强行灌食。十几个犯人强行按住她，“有的捏鼻子，有的按住脚”。</p>
+  <p>劳教所当时给王福花灌的是“牛奶”，她拒绝开嘴。“他们派了两个特警。用削尖的竹筒把我的牙齿撬开。当场撬掉3颗牙齿。”</p>
+  <p>她表示，她也见证了法轮功学员陈偶香在白马垅劳教所被灌食致死。</p>
+  <p>王福花表示，自己在非法关押期间，还被强制抽血，被威胁：不配合，就把你们送到大西北去。她后来意识到，这可能是潜在威胁要将法轮功学员活摘器官。</p>
+  <p>她说，在白马垅劳教所，有的法轮功学员过了一段时间后，就再也不见着人了。</p>
+  <p>王福花还表示，湖南郴州炼功点的一位法轮功学员李小英，去北京为法轮功上访后，就再也没有回来。</p>
+  <p>“中共的邪恶，前所未有。”她说。</p>
+  <h2 id="section-1">法轮功真相让人“分清善恶”</h2>
+  <figure id="attachment_13095661" aria-describedby="caption-attachment-13095661" style="width: 574px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095661-Screen-Shot-2021-07-17-at-9.36.01-AM.png"><img class="size-medium_vertical wp-image-13095661" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095661-Screen-Shot-2021-07-17-at-9.36.01-AM-574x400.png" alt="" width="574" height="400" /></a>    <figcaption id="caption-attachment-13095661" class="wp-caption-text">
+7月16日晚，王为宇在<a href="https://www.epochtimes.com/gb/tag/%E5%8D%8E%E5%BA%9C.html">华府</a>烛光夜悼现场。（李辰／大纪元）
+    </figcaption>
+  </figure>
+  <p>参加烛光夜悼的王为宇，原是清华大学精密仪器与机械学系96级博士生，在中共迫害中被迫离开校园，放弃博士学位，被非法判刑8年半。他后来辗转来美，目前在一家世界500强公司担任软件工程师。</p>
+  <p>王为宇说，在法轮功修炼中，“大法弟子，变成一个越来越为别人着想的人”。</p>
+  <p>2002年，在北京大兴“法制培训中心”，“610”（中共专门迫害法轮功的非法机构）国保大队人员一度对王为宇严刑逼供，包括电刑和毒打。他表示，受刑期间，他体会到“为他人着想”的善的力量。</p>
+  <p>“你心里想着别人的时候。想着自己越苦，就越不能让别人去承受的时候，你（在酷刑中）就能过去。”</p>
+  <p>“他们打我打得太狠了。（我想）如果把其他同修抓住，会像打我一样打他们。”</p>
+  <p>“当你心里想着别人的时候，那个疼就不那么疼。”</p>
+  <p>王为宇表示，法轮功学员放下生死向世人讲清真相，是为了让人分清善恶。</p>
+  <p>“这是一种责任，让更多人知道：‘善之为善，恶之为恶。’”</p>
+  <p>“我以前只知道法轮大法好，但是，不知道共产党坏。进了监狱才知道，共产党是真坏。”</p>
+  <p>“让人区分善恶，这是让人自我救赎的过程。”</p>
+  <h2 id="section-2">“<a href="https://www.epochtimes.com/gb/tag/%E7%A5%9E%E5%9C%A3.html">神圣</a>的时刻”</h2>
+  <p>参加夜悼的法轮功学员Christina Wang是北卡一家公司的机械工程师。她说，“每一次坐在这里，都有一种<a href="https://www.epochtimes.com/gb/tag/%E7%A5%9E%E5%9C%A3.html">神圣</a>的感觉。”</p>
+  <p>“今天，我带着孩子过来。我告诉孩子，这是一个非常神圣的时刻。很多法轮功学员被迫害致死，这是我们纪念他们的机会。同时，也告诉全世界，希望他们帮助制止这场迫害。”</p>
+  <h2 id="section-3">西人法轮功学员：我的眼中充满泪水</h2>
+  <figure id="attachment_13095682" aria-describedby="caption-attachment-13095682" style="width: 598px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095682-P1220642.jpg"><img class="size-medium_vertical wp-image-13095682" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095682-P1220642-598x400.jpg" alt="" width="598" height="400" /></a>    <figcaption id="caption-attachment-13095682" class="wp-caption-text">
+西人法轮功学员Frida Cats（左）和姐姐（右）在烛光夜悼活动前合影。（李辰／大纪元）
+    </figcaption>
+  </figure>
+  <p>西人法轮功学员Frida Cats表示，她每一年和姐姐从新泽西一起来华府参加呼吁停止迫害的活动。</p>
+  <p>Cats说，“这个功法非常好。教导(我们)要遵循法轮功‘真、善、忍’的原则。”</p>
+  <p>“这么多才华出众的年轻的法轮功学员被迫害致死。我很伤心。”</p>
+  <p>“坐在这里，我的心都碎了。音乐响起，我的眼中充满泪水。”</p>
+  <h2 id="section-4">希望迫害早日停止</h2>
+  <figure id="attachment_13095677" aria-describedby="caption-attachment-13095677" style="width: 599px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095677-P1220717.jpg"><img class="size-medium_vertical wp-image-13095677" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095677-P1220717-599x400.jpg" alt="" width="599" height="400" /></a>    <figcaption id="caption-attachment-13095677" class="wp-caption-text">
+参加夜悼的华盛顿DC法轮功学员张宇伟博士。（李辰/大纪元）
+    </figcaption>
+  </figure>
+  <p>参加夜悼的华盛顿DC法轮功学员张宇伟博士，在人工智能的医学应用领域工作，拥有多方面独特技能，目前在华府一家公司管理层工作。</p>
+  <p>张宇伟在烛光守夜的现场介绍，她身边就有法轮功学员被迫害致死，这位学员是中国一所商学院的老师，“年青漂亮”，她父亲则是另一所大学的党支部书记，临死前，还曾叫子女不要入党。</p>
+  <p>张宇伟本人在曾在中共洗脑班遭受残酷迫害。她说，“我有幸逃离了中国，但那么多人还在中国。”</p>
+  <p>“希望停止迫害，不希望这么惨痛的事情再发生了。”</p>
+  <h2 id="section-5">华府民众：“美丽、平和”的夜悼活动</h2>
+  <figure id="attachment_13095686" aria-describedby="caption-attachment-13095686" style="width: 599px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095686-P1220655.jpg"><img class="size-medium_vertical wp-image-13095686" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095686-P1220655-599x400.jpg" alt="" width="599" height="400" /></a>    <figcaption id="caption-attachment-13095686" class="wp-caption-text">
+华府信息技术顾问Al Aportela。（李辰／大纪元）
+    </figcaption>
+  </figure>
+  <p>不少华府民众当晚被法轮功学员举行的烛光守悼活动吸引，停驻观看。</p>
+  <p>Al Aportela介绍自己是 一位信息技术顾问，为美国联邦政府，也为商业公司工作。</p>
+  <p>“这个活动令人震撼”，Aportela说，“我感到内心的平和、安宁，身心很放松。活动的音乐非常非常美。”</p>
+  <p>中共对法轮功的迫害“时间太长了，这一定是一门很好的功法。很明显，法轮功学员不应该被迫害。我不理解，（中共）为何要迫害他们”。</p>
+  <p>“我看到他们非常平和，他们展现了很好的价值观——做好人。”</p>
+  <p>“‘真、善、忍’，这是普世价值，是人们应该遵循的很好的价值。”</p>
+  <figure id="attachment_13095692" aria-describedby="caption-attachment-13095692" style="width: 599px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13095692-P1220695.jpg"><img class="size-medium_vertical wp-image-13095692" src="https://i.epochtimes.com/assets/uploads/2021/07/id13095692-P1220695-599x400.jpg" alt="" width="599" height="400" /></a>    <figcaption id="caption-attachment-13095692" class="wp-caption-text">
+华府一家公司的IT工程师Gerson Saune。（李辰／大纪元）
+    </figcaption>
+  </figure>
+  <p>路过烛光守夜现场的Gerson Saune是华府一家公司的IT工程师，他说，“这个活动非常平和，实际上，如此美丽，如此有意义。”</p>
+  <p>“你们（法轮功学员）在中国大陆的遭遇令人难以想像。”</p>
+  <p>他说，法轮功所教导的真、善、忍的价值“非常重要。这些原则是这个社会的基石”。</p>
+  <figure id="attachment_13094884" aria-describedby="caption-attachment-13094884" style="width: 599px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13094884-2107162330461160.jpg"><img class="size-medium_vertical wp-image-13094884" src="https://i.epochtimes.com/assets/uploads/2021/07/id13094884-2107162330461160-599x400.jpg" alt="" width="599" height="400" /></a>    <figcaption id="caption-attachment-13094884" class="wp-caption-text">
+2021年7月16日，美国首都华盛顿DC，来自美东的部分法轮功学员聚集在华盛顿纪念碑下，展开庄严的烛光夜悼活动。（戴兵／大纪元）
+    </figcaption>
+  </figure>
+  <p>责任编辑：李缘＃</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-17/46%E5%A4%A9%E5%86%85-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9C%81%E6%94%BF%E6%B3%95%E5%A7%943%E5%90%8D%E9%AB%98%E5%AE%98%E8%90%BD%E9%A9%AC">
+          46天内 黑龙江省政法委3名高官落马
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-17/%E6%B2%B3%E5%8C%97%E7%9C%81%E5%89%8D%E5%85%AC%E5%AE%89%E5%8E%85%E5%89%AF%E5%8E%85%E9%95%BF%E8%90%BD%E9%A9%AC-%E6%9B%BE%E4%BB%BB610%E4%B8%BB%E4%BB%BB">
+          河北省前公安厅副厅长落马 曾任610主任
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3">
+          美首都法轮功720烛光夜悼 吁停止迫害
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-17/%E4%B8%89%E9%80%80%E5%A3%B0%E6%98%8E%E7%B2%BE%E9%80%89-2021-07-17">
+          三退声明精选（2021/07/17）
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3">
+            前一篇：美首都法轮功720烛光夜悼 吁停止迫害
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-17/%E4%B8%AD%E5%9B%BD%E8%B0%83%E6%9F%A5%E4%BA%BA%E5%91%98%E5%88%B0%E8%BE%BE%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E4%B8%AD%E4%BC%81%E7%8F%AD%E8%BD%A6%E7%88%86%E7%82%B8%E7%8E%B0%E5%9C%BA">
+            后一篇：中国调查人员到达巴基斯坦中企班车爆炸现场
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-17/%E4%B8%AD%E5%9B%BD%E8%B0%83%E6%9F%A5%E4%BA%BA%E5%91%98%E5%88%B0%E8%BE%BE%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E4%B8%AD%E4%BC%81%E7%8F%AD%E8%BD%A6%E7%88%86%E7%82%B8%E7%8E%B0%E5%9C%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-17/%E6%B2%B3%E5%8C%97%E7%9C%81%E5%89%8D%E5%85%AC%E5%AE%89%E5%8E%85%E5%89%AF%E5%8E%85%E9%95%BF%E8%90%BD%E9%A9%AC-%E6%9B%BE%E4%BB%BB610%E4%B8%BB%E4%BB%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-17/%E4%B8%AD%E5%9B%BD%E8%B0%83%E6%9F%A5%E4%BA%BA%E5%91%98%E5%88%B0%E8%BE%BE%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E4%B8%AD%E4%BC%81%E7%8F%AD%E8%BD%A6%E7%88%86%E7%82%B8%E7%8E%B0%E5%9C%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-17/%E6%B2%B3%E5%8C%97%E7%9C%81%E5%89%8D%E5%85%AC%E5%AE%89%E5%8E%85%E5%89%AF%E5%8E%85%E9%95%BF%E8%90%BD%E9%A9%AC-%E6%9B%BE%E4%BB%BB610%E4%B8%BB%E4%BB%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-17/%E7%BE%8E%E9%A6%96%E9%83%BD%E6%B3%95%E8%BD%AE%E5%8A%9F720%E7%83%9B%E5%85%89%E5%A4%9C%E6%82%BC-%E5%90%81%E5%81%9C%E6%AD%A2%E8%BF%AB%E5%AE%B3">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>
