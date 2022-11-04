@@ -1,0 +1,17 @@
+---
+layout: post
+title: "矽谷好景不再  Stripe和Lyft裁員亞馬遜凍結人事"
+date: 2022-11-04T13:34:04.000Z
+author: (臺)中央社CNA
+from: https://www.cna.com.tw/news/aopl/202211040349.aspx
+tags: [ (臺)中央社CNA ]
+comments: True
+categories: [ (臺)中央社CNA ]
+---
+<!--1667568844000-->
+[矽谷好景不再  Stripe和Lyft裁員亞馬遜凍結人事](https://www.cna.com.tw/news/aopl/202211040349.aspx)
+------
+
+<div>
+<div><div><div style="--aspect-ratio:1044/756;"><picture><source media="(max-width: 414px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20221104/1044x756_wmkn_129450363938.jpg"><source media="(min-width: 413px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20221104/1044x756_wmkn_129450363938.jpg"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20221104/1044x756_wmkn_129450363938.jpg" alt="美國矽谷的支付服務商Stripe與叫車平台Lyft 3日皆宣布裁員逾10%。圖為Stripe辦公室。（圖取自facebook.com/StripeHQ）" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20221104/1044x756_wmkn_129450363938.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20221104/1044x756_wmkn_129450363938.jpg 1024w"></picture></div><div>美國矽谷的支付服務商Stripe與叫車平台Lyft 3日皆宣布裁員逾10%。圖為Stripe辦公室。（圖取自facebook.com/StripeHQ）</div></div></div><div></div><div><p>（中央社舊金山3日綜合外電報導）美國矽谷的支付服務商Stripe與叫車平台Lyft今天皆宣布裁員逾10%，加上美國科技業巨擘亞馬遜已經宣布人事凍結，推特也預料會大裁員，顯示經濟困境讓矽谷吹起減員風。</p><p>法新社報導，總部在美國舊金山與愛爾蘭都柏林的Stripe告知員工，「以目前身處的全球環境而言，我們雇員過多」，因此將裁減14%人力，讓員工數重返今年2月期間的7000人。</p><p>Stripe執行長柯利森（Patrick Collison）在給員工的通知信中表示：「我們正面臨通貨膨脹居高不下、能源衝擊、利率攀升、投資預算減少，以及新創企業融資更加稀缺。」</p><p>優步（Uber）的對手Lyft則宣布裁減683名非駕駛雇員，相當於總人力的13%，原因是美國經濟很可能陷入衰退，以及駕駛的保險成本上漲。</p><p>亞馬遜（Amazon）則在2日通知員工，由於經濟環境具有高度不確定性，因此將凍結聘僱新員。</p><p>此外，社群媒體推特（Twitter）被全球首富馬斯克（Elon Musk）以440億美元買下後，科技業也預期推特會大裁員。</p><p>根據媒體報導，馬斯克為了找到辦法來減輕這起巨額併購案的財務負擔，正準備最快在4日裁員數千人。</p><p>臉書（Facebook）母公司Meta等多數美國科技業巨擘，最近才在財報季發布悲觀結果，其中蘋果（Apple）智慧手機iPhone銷量不如預期，服務營收成長減緩。Meta股價今年已大跌73%，降至2015年以來新低。</p><p>英國顧問公司「全球數據」（GlobalData）董事總經理桑德斯（Neil Saunders）表示：「亞馬遜凍結招聘，釋出一個清楚且不幸的訊號，那就是零售和消費者經濟的信心正在轉變。」</p><p>他還說：「猛烈成長的日子如今已結束，取而代之的是，為了保護獲利而有必要更謹慎行事的環境。」（譯者：張正芊/核稿：陳彥鈞）1111104</p><div class='paragraph moreArticle flexhalf'>                                <div class='moreArticle-title trailing'>                                    <a href='/tag/hysearchws.aspx?q=&#20126;&#39340;&#36956;'>亞馬遜</a>                                </div><a class='discursive' href='https://www.cna.com.tw/news/ait/202209130102.aspx'>                                <svg width='6' height='6'><use href='#svg-dot'></use></svg><span>貝佐斯無人火箭任務失敗 升空一分鐘突起火墜毀[影]</span>                                </a><a class='discursive' href='https://www.cna.com.tw/news/amov/202209040101.aspx'>                                <svg width='6' height='6'><use href='#svg-dot'></use></svg><span>「魔戒：力量之戒」開紅盤 破亞馬遜首播紀錄</span>                                </a></div><div class='paragraph moreArticle flexhalf'>                                <div class='moreArticle-title trailing'>                                    <a href='/tag/hysearchws.aspx?q=&#39340;&#26031;&#20811;'>馬斯克</a>                                </div><a class='discursive' href='https://www.cna.com.tw/news/aopl/202211040082.aspx'>                                <svg width='6' height='6'><use href='#svg-dot'></use></svg><span>通膨加墮胎槍枝議題 仇恨值主導美期中選舉</span>                                </a><a class='discursive' href='https://www.cna.com.tw/news/aopl/202211040067.aspx'>                                <svg width='6' height='6'><use href='#svg-dot'></use></svg><span>推特通知員工4日起裁員  紐時：約一半將遭開除</span>                                </a></div></div>
+</div>
