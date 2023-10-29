@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Matthew Perry過世享年54歲 飾「六人行」錢德勒廣為人知"
+date: 2023-10-29T00:58:00.000Z
+author: (臺)中央社CNA
+from: https://www.cna.com.tw/news/amov/202310290012.aspx
+tags: [ (臺)中央社CNA ]
+comments: True
+categories: [ (臺)中央社CNA ]
+---
+<!--1698541080000-->
+[Matthew Perry過世享年54歲 飾「六人行」錢德勒廣為人知](https://www.cna.com.tw/news/amov/202310290012.aspx)
+------
+
+<div>
+<figure class="floatImg center"><picture style="--aspect-ratio: 2000/1341;"><source media="(max-width: 414px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20231029/2000x1341_wmkn_36573413563125_0.jpg"><source media="(min-width: 413px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20231029/2000x1341_wmkn_36573413563125_0.jpg"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20231029/2000x1341_wmkn_36573413563125_0.jpg" alt="影集「六人行」飾演錢德勒一角的馬修派瑞據報在他加州洛杉磯地區的住處過世，享年54歲。（美聯社）" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20231029/2000x1341_wmkn_36573413563125_0.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20231029/2000x1341_wmkn_36573413563125_0.jpg 1024w" referrerpolicy="no-referrer"></picture><figcaption class="picinfo">影集「六人行」飾演錢德勒一角的馬修派瑞據報在他加州洛杉磯地區的住處過世，享年54歲。（美聯社）</figcaption></figure><p>（中央社洛杉磯28日綜合外電報導）美國娛樂新聞網站「時人」（People）報導，影集「六人行」飾演錢德勒一角的馬修派瑞（Matthew Perry）據報在他加州洛杉磯地區的住處過世，享年54歲。</p><p>時人引述八卦網站TMZ的報導指出，據執法消息來源的說法，馬修派瑞被發現陳屍在住處的按摩浴缸內，現場並沒有找到藥物。</p><p>消息來源告訴TMZ，這起事件並不涉及謀殺。消息人士同時表示，第一線急救人員是接獲心臟驟停通報後到現場進行處理。</p><p>馬修派瑞的經紀人尚未立即回覆「時人」置評的要求。</p><p>馬修派瑞曾在90年代夯劇「六人行」（Friends）飾演了10季的諷刺大王「錢德勒」（Chandler Bing），並曾於2002年入圍艾美獎。此劇的成功，讓他與同劇另外5位主角珍妮佛安妮斯頓（Jennifer Aniston）、寇特妮考克斯（Courteney Cox）、麗莎庫卓（Lisa Kudrow）、麥特雷布藍克（Matt LeBlanc）和大衛史溫默（David Schwimmer）最終每人每集都能賺上100萬美元（約新台幣3270萬元）片酬。（譯者：蔡佳敏/核稿：劉文瑜）1121029</p><div class="media"><div class="noWidthMedia"><a id="psHS0Cy7R3xyirH-a7Sxbg" class="gie-single" href="http://www.gettyimages.com/detail/51040229" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div></div><div class="media"><div class="youtubeBox"><div class="youtube"><iframe title="youtube iframe" data-src="//www.youtube.com/embed/3Bkzl4AIXvc" class="lazyload" frameborder="0" allowfullscreen="" sandbox="allow-presentation allow-scripts allow-popups allow-same-origin allow-popups-to-escape-sandbox" referrerpolicy="no-referrer"></iframe></div><div class="picinfo">影片來源：Warner Bros. TV</div></div></div><div class="articlekeywordGroup"><div class="keywordTag"><a href="https://www.cna.com.tw/tag/2330/">#六人行</a></div></div><div class="paragraph moreArticle"><div class="moreArticle-title trailing"><a href="https://www.cna.com.tw/topic/newstopic/3753.aspx" target="_blank">2023過世名人</a></div><ul class="timeline"><li class="timelineItem isNotLink isLatest" data-time="2023/10/29 08:58"><div class="timelineTitle"><div>Matthew Perry過世享年54歲 飾「六人行」錢德勒廣為人知</div></div><div class="timelineTime"><span>2023/10/29 08:58</span></div></li><li class="timelineItem " data-time="2023/10/28 19:31"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/amov/202310280177.aspx" target="_blank">體育主播詹啟聖辭世  享年58歲</a></div><div class="timelineTime"><span>2023/10/28 19:31</span></div></li><li class="timelineItem " data-time="2023/10/27 08:16"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/acn/202310275002.aspx" target="_blank">中國國務院前總理李克強去世 央視：心臟病發不治</a></div><div class="timelineTime"><span>2023/10/27 08:16</span></div></li></ul></div>
+</div>
