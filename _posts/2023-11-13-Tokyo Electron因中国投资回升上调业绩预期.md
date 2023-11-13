@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Tokyo Electron因中国投资回升上调业绩预期"
+date: 2023-11-13T01:27:50.000Z
+author: 秦醒驪
+from: https://cn.nikkei.com/industry/itelectric-appliance/54014-2023-11-13-10-27-50.html
+tags: [ 日本経済新聞 ]
+comments: True
+categories: [ 日本経済新聞 ]
+---
+<!--1699838870000-->
+[Tokyo Electron因中国投资回升上调业绩预期](https://cn.nikkei.com/industry/itelectric-appliance/54014-2023-11-13-10-27-50.html)
+------
+
+<div>
+<p>　　日本<span>Tokyo Electron</span>于<span>11</span>月<span>10</span>日发布的数据显示，<span>2023</span>财年（截至<span>2024</span>年<span>3</span>月）的合并净利润预计比上财年减少<span>35%</span>，降至<span>3070</span>亿日元。比此前预期（减少<span>36%</span>、降至<span>3000</span>亿日元）上调了<span>70</span>亿日元。中国对半导体设备的投资表现强劲，制造设备的销量与预期相比增加。该公司认为，此前受到半导体市场低迷影响的营业收入已经触底，但需求恢复缺乏强劲势头。</p><p>　　</p><p>　　预计财年营业收入下降<span>22%</span>，降至<span>1.73</span>万亿日元，营业利润下降<span>35%</span>，降至<span>4010</span>亿日元，分别上调<span>300</span>亿日元和<span>80</span>亿日元。净利润预期与事前的市场预测（<span>Quick Consensus</span>、<span>3072</span>亿日元）基本持平。</p><table border="0" style="border-collapse: collapse; width: 600px; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 99.6154%;"><img src="https://cn.nikkei.com/images/2023/11/1113/1113-05-2-L.jpg" loading="lazy" width="600" height="553" data-path="local-images:/2023/11/1113/1113-05-2-L.jpg" referrerpolicy="no-referrer"></td></tr></tbody></table><p>　　　</p><p>　　上调业绩预期的主要原因是对中国供货的增长。虽然受到美国等的出口管制影响，中国生产尖端半导体变得困难，但对管制对象以外的成熟领域的投资表现活跃。除了用于工业设备和汽车的功率半导体之外，对用于运算处理的逻辑半导体和存储器等广泛品类的投资也在推进。据悉，<span>Tokyo Electron</span>涉足的成膜和蚀刻等所有设备群都获得旺盛的订单。</p><p> 　　</p><p>　　鉴于这些动向，<span>Tokyo Electron</span>还上调了市场预期。认为“前工序”用制造设备（<span>WFE</span>）的全球市场规模<span>2023</span>年同比减少<span>10</span>～<span>15%</span>，降至<span>850</span>亿～<span>900</span>亿美元，比此前预期提高了约<span>150</span>亿美元。这将抵消尖端逻辑半导体、代工企业的下行。</p><p> 　　</p><p>　　中国占<span>Tokyo Electron</span>营业收入的比例也在<span>2023</span>年<span>7</span>～<span>9</span>月达到<span>43%</span>，与占到逾<span>2</span>成的<span>2022</span>财年相比迅速提高。按季度计算中国的占比首次超过<span>4</span>成。<span>Tokyo Electron</span>的社长河合利树在当天的财报说明会上提出看法称，“中国的新客户正在大幅增加”。</p><table border="0" style="border-collapse: collapse; width: 600px; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 99.6154%;"><img src="https://cn.nikkei.com/images/2023/11/1113/1113-05-1-L.jpg" loading="lazy" width="600" height="375" data-path="local-images:/2023/11/1113/1113-05-1-L.jpg" referrerpolicy="no-referrer"></td></tr><tr><td style="width: 99.6154%; text-align: center;"><span style="font-size: 8pt;"><strong>Tokyo Electron的2023财年业绩将改善</strong></span></td></tr></tbody></table><p>　　</p><p>　　该公司对于<span>2024</span>年以后的“前工序”用制造设备（<span>WFE</span>）市场维持了预测不变，认为<span>2024</span>和<span>2025</span>年合计规模将达到<span>2000</span>亿美元。认为拉动需求的是人工智能（<span>AI</span>）相关，<span>AI</span>服务器在<span>2023</span>～<span>2027</span>年将达到年均<span>31%</span>的增长率。<span>2025</span>年的<span>AI</span>服务器用制造设备市场规模之前预测为<span>50</span>亿美元，本次提高到<span>80</span>亿美元。河合社长表示，“随着生成式<span>AI</span>市场的全面启动，<span>2025</span>年的<span>WFE</span>（市场）将达到创历史最高的规模”。</p><p>　　</p><p>　　同一天公布的<span>2023</span>年<span>4</span>～<span>9</span>月的合并财报显示，净利润为<span>1374</span>亿日元，同比减少<span>49%</span>。半导体市场持续低迷，按同一期间计算，<span>4</span>年来首次出现利润下降。</p><p>  　</p><p>　　另一方面，<span>2023</span>年<span>7</span>～<span>9</span>月的营业收入为<span>4278</span>亿日元，比<span>4</span>～<span>6</span>月增长<span>9%</span>。该公司的常务执行董事川本弘在当天的财报发布会上表示，“营业收入已在<span>4</span>～<span>6</span>月触底”。不过，虽然最初预测<span>2024</span>年初设备需求将“全面恢复”，但此次提出了“将滞后<span>3</span>～<span>6</span>个月”的看法。受全球性通货膨胀等因素影响，作为半导体主要用途的智能手机和个人电脑销售疲软。业绩改善仍然存在不确定性。</p><p> 　　</p><strong>版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。</strong>
+</div>
