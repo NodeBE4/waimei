@@ -1,0 +1,17 @@
+---
+layout: post
+title: "白蓮花大飯店第3季泰國開拍 BLACKPINK Lisa參演"
+date: 2024-02-13T09:33:00.000Z
+author: (臺)中央社CNA
+from: https://www.cna.com.tw/news/amov/202402130121.aspx
+tags: [ (臺)中央社CNA ]
+comments: True
+categories: [ (臺)中央社CNA ]
+---
+<!--1707816780000-->
+[白蓮花大飯店第3季泰國開拍 BLACKPINK Lisa參演](https://www.cna.com.tw/news/amov/202402130121.aspx)
+------
+
+<div>
+<figure class="floatImg center"><picture style="--aspect-ratio: 1080/1350;"><source media="(max-width: 414px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20240213/1080x1350_wmkn_20678035174_0.jpg"><source media="(min-width: 413px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20240213/1080x1350_wmkn_20678035174_0.jpg"><img src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20240213/1080x1350_wmkn_20678035174_0.jpg" alt="美國有線電視頻道HBO宣布，BLACKPINK團員Lisa將加入「白蓮花大飯店」卡司。（圖取自twitter.com/StreamOnMax）" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20240213/1080x1350_wmkn_20678035174_0.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20240213/1080x1350_wmkn_20678035174_0.jpg 1024w" referrerpolicy="no-referrer"></picture><figcaption class="picinfo">美國有線電視頻道HBO宣布，BLACKPINK團員Lisa將加入「白蓮花大飯店」卡司。（圖取自twitter.com/StreamOnMax）</figcaption></figure><p>（中央社曼谷13日綜合外電報導）美國有線電視頻道HBO今天宣布，韓國女子天團BLACKPINK泰籍團員Lisa將加入「白蓮花大飯店」（The White Lotus）卡司，這部熱門電視劇第3季將移師Lisa故鄉泰國拍攝。</p><p>法新社報導，這部屢獲獎項肯定的黑色喜劇最新一季本月起在曼谷及度假島嶼普吉島（Phuket）與蘇梅島（Koh Samui）開拍。</p><p>影音串流服務HBO Max透過其社群媒體平台X官方帳號發文稱，本名為Lalisa Manobal的Lisa將與好萊塢資深影星史考特葛倫（Scott Glenn）一同在「白蓮花大飯店」第3季中演出。</p><p>26歲的Lisa受到大批粉絲愛戴，泰國各地的廣告看板上都能見到她的倩影。</p><p>「白蓮花大飯店」揭穿富人偽善利己的本質，為HBO帶來巨大商業成功並廣受好評，前2季皆獲多項艾美獎（Emmy Awards）提名。</p><p>第2季以義大利西西里島（Sicily）為背景，據稱掀起搜尋當地觀光資訊的網路熱潮。</p><p>不過，這部影集在本月稍早遭遇打擊，因為烏克蘭抱怨塞爾維亞演員比柯維奇（Milos Bikovic）與俄羅斯有關係，導致製片不得不將他踢出劇組。（譯者：張曉雯/核稿：施施）1130213</p><div class="articlekeywordGroup"><div class="keywordTag"><a href="https://www.cna.com.tw/tag/123/">#BLACKPINK</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/792/">#LISA</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/10412/">#俄烏戰爭</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/28224/">#泰國</a></div></div><div class="paragraph moreArticle"><div class="moreArticle-title">延伸閱讀</div><a class="moreArticle-link" href="https://www.cna.com.tw/news/amov/202311010383.aspx"><svg width="6" height="6"><use href="#svg-dot"></use></svg><span>Lisa演出瘋馬秀中國出手封殺 作品禁止發行微博被消失</span></a><a class="moreArticle-link" href="https://www.cna.com.tw/news/aopl/202311230007.aspx"><svg width="6" height="6"><use href="#svg-dot"></use></svg><span>英王查爾斯三世款待尹錫悅 授予BLACKPINK最高榮譽勳章</span></a></div><div class="paragraph moreArticle"><div class="moreArticle-title trailing"><a href="https://www.cna.com.tw/topic/newstopic/3805.aspx" target="_blank">串流片單</a></div><ul class="timeline"><li class="timelineItem isNotLink isLatest" data-time="2024/02/13 17:33"><div class="timelineTitle"><div>白蓮花大飯店第3季泰國開拍 BLACKPINK Lisa參演</div></div><div class="timelineTime"><span>2024/02/13 17:33</span></div></li><li class="timelineItem " data-time="2024/02/09 10:08"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/amov/202402090040.aspx" target="_blank">春節沙發片單 「龍族前傳」看到「侏羅紀公園」</a></div><div class="timelineTime"><span>2024/02/09 10:08</span></div></li><li class="timelineItem " data-time="2024/02/08 08:40"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/aspt/202402080013.aspx" target="_blank">大聯盟首例 Netflix整季跟拍紅襪揭祕辛</a></div><div class="timelineTime"><span>2024/02/08 08:40</span></div></li></ul></div>
+</div>
