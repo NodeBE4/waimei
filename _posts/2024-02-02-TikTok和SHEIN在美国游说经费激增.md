@@ -1,0 +1,17 @@
+---
+layout: post
+title: "TikTok和SHEIN在美国游说经费激增"
+date: 2024-02-02T01:55:24.000Z
+author: 陈博
+from: https://cn.nikkei.com/china/ccompany/54759-2024-02-02-10-55-24.html
+tags: [ 日本経済新聞 ]
+comments: True
+categories: [ 日本経済新聞 ]
+---
+<!--1706838924000-->
+[TikTok和SHEIN在美国游说经费激增](https://cn.nikkei.com/china/ccompany/54759-2024-02-02-10-55-24.html)
+------
+
+<div>
+<table border="0" height="308" style="border-collapse: collapse; width: 41.6419%; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 100%;"><img src="https://cn.nikkei.com/images/2024/02/0202/0202-04-1-L-REUTERS.jpg" loading="lazy" width="600" height="371" data-path="local-images:/2024/02/0202/0202-04-1-L-REUTERS.jpg" style="display: block; margin-left: auto; margin-right: auto;" referrerpolicy="no-referrer"></td></tr><tr><td style="width: 100%; text-align: center;"><span style="font-size: 8pt;"><strong>源自中国的科技企业TikTok和SHEIN在美国的游说经费出现激增</strong></span></td></tr></tbody></table><p> </p><p>   源自中国的科技公司正在美国迅速加强游说活动。从2023年的游说活动经费来看，短视频应用“TikTok”的运营公司比前一年增加80%，服装电商企业“SHEIN”也增至7.6倍。在中美对立的背景下，美国国会等对两家提高了警惕，企业正在试图减轻这些因素对业务的影响。</p><p>   根据各企业截至1月31日向美国国会提交的最新报告和美国OpenSecrets的调查结果进行了统计。调查了中国字节跳动关联的TikTok美国运营公司和SHEIN运营公司的游说经费。</p><p>   中国经济减速，国内市场难以实现增长，从事电商和网络服务的TikTok和SHEIN正寻求在作为世界最大消费市场的美国扩大业务。</p><p> </p><table border="0" height="386" style="border-collapse: collapse; width: 46.2908%; height: 386px; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 100%;"><img src="https://cn.nikkei.com/images/2024/02/0202/0202-04-3-L.jpg" loading="lazy" width="600" height="441" data-path="local-images:/2024/02/0202/0202-04-3-L.jpg" referrerpolicy="no-referrer"></td></tr></tbody></table><p> </p><p>   字节跳动的活动经费比去年增加了77%，达到874万美元。以TikTok为中心涉足多项业务，在美国的用户达到1.7亿人。在联邦国会一度出现禁止论调的逆风之下也得到了年轻一代为中心的喜爱。2023年还在APP中增加了电商功能。</p><p>   关于游说活动的范围，报告明确记载了限制TikTok在美国进行商务活动的法案和禁止在政府终端上使用的法案等针对自身的国会动向。在前总统特朗普签署禁止提供TikTok的总统令的2020年，TikTok将游说人员增加到约10人，截至2023年底登记14人。</p><p>   拜登政府2023年春季要求字节跳动出售TikTok。但自此之后，由于拜登在总统选举之前不想被年轻人的反对，一直保持观望态度。美国皮尤研究中心的统计显示，支持禁令的美国成年人从2023年3月的50%减少至秋季的38%。</p><p>   活动经费大幅增长的是SHEIN。2023年为212万美元，增至前一年的7.6倍，将服装和电商列为游说领域。据悉，SHEIN还起用美国贸易代表办公室(USTR)的前雇员，向国会有关人士等说明了本公司对美国经济的贡献。SHEIN还计划在美国申请首次公开募股(IPO)。</p><p>   在美国，进口货物申报额在800美元以下可以免除关税，可在不申报原产地等信息的情况下进口。美国国会的一些人指出，SHEIN利用这一制度在美国销售制造过程中存在强制劳动等隐忧的产品。因此SHEIN也将贸易相关管制列为游说对象。</p><p>   媒体询问了TikTok和SHEIN关于活动经费增加的问题，但没有得到答复。</p><table border="0" height="458" style="border-collapse: collapse; width: 36.2018%; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 100%;"><img src="https://cn.nikkei.com/images/2024/02/0202/0202-04-2-L.jpg" loading="lazy" width="600" height="518" data-path="local-images:/2024/02/0202/0202-04-2-L.jpg" referrerpolicy="no-referrer"></td></tr></tbody></table><p>   此外，日经还调查了亚马逊等美国5家主要科技公司的游说活动。活动经费总额为7400万美元，比前一年略有增加。调查对象包括亚马逊、Meta、谷歌的控股公司Alphabet、微软和苹果公司，将其总公司和一些关联公司的支出作为对象。</p><p>   金额最多的亚马逊比去年减少7%，约为1980万美元，另一方面，苹果增加5%，约为990万美元，创历史新高。在当局对于在IT产业拥有强大实力的科技巨头投去严厉视线的情况下，涉及《反托拉斯法案》（反垄断法）的情况引人注目。</p><p>   苹果将《美国创新与选择在线法案》列为游说对象，因为该法案禁止平台企业优待自身产品和服务。谷歌也明确提及国内外的反垄断法。</p><p>   此外，生成式AI（人工智能）也成为新的焦点。运营ChatGPT的美国新兴企业OpenAI在2023年首次向联邦国会报告了游说活动。金额为38万美元，活动对象为促使AI基础模型开发具有透明性的法案等，起用了曾在参议院司法委员会任职的人。</p><p>   在2022年11月ChatGPT问世后，谷歌在2023年1～3月的报告中首次提到了生成式AI。4～6月之后，包括“生成式AI和版权”、“生成式AI和专利”、“生成式AI的安全和隐私问题”在内，谷歌不断扩大游说活动的范围。拜登政府曾在10月发布包括AI安全性评估等内容的总统令。</p><p>   <strong>日本经济新闻（中文版：日经中文网）山田辽太郎 硅谷</strong></p><strong>版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。</strong>
+</div>
