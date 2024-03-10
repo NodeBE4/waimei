@@ -1,0 +1,17 @@
+---
+layout: post
+title: "不讲女德FistsUnchained｜“我死了，也许拼多多就不再追踪我父母要钱了”"
+date: 2024-03-10T06:38:31.000Z
+author: 不忘初心
+from: https://chinadigitaltimes.net/chinese/705768.html
+tags: [ 中国数字时代 ]
+comments: True
+categories: [ 中国数字时代 ]
+---
+<!--1710052711000-->
+[不讲女德FistsUnchained｜“我死了，也许拼多多就不再追踪我父母要钱了”](https://chinadigitaltimes.net/chinese/705768.html)
+------
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/705768.html" title="不讲女德FistsUnchained｜“我死了，也许拼多多就不再追踪我父母要钱了”" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/03/38fc2a0318b94bc3834552c8591c8ca1-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a><div style="width:42%;float:right;padding-left:20px"><div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>CDT 档案卡</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><strong>标题：</strong>“我死了，也许拼多多就不再追踪我父母要钱了”<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/拳打铁链的小娟" target="_blank">拳打铁链的小娟</a><br><strong>发表日期：</strong>2024.3.5<br /><strong>来源：</strong><a href="https://web.archive.org/web/20240310063249/https://mp.weixin.qq.com/s/ur3zD-90rgGZvT8P3aC-hw" target="_blank">微信公众号“不讲女德FistsUnchained”</a><br><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/拼多多" target="_blank">拼多多</a><br><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">话语馆</a><br><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。</div></div></div><p>在当前社会，劳动者权益保护问题日益受到公众的关注。近日，一位名为“草娃”的前拼多多员工，在面临公司索赔28万元的巨大压力下，无奈发出了这样一句绝望的话：</p><p>“我死了，也许拼多多就不会追踪我父母要钱了”。</p><p>2024年3月6日，一则来自微博用户“草娃故事”的帖子引发了社会广泛关注。该用户分享了自己作为拼多多前员工，在遵守竞业禁止条款后，被公司以违反协议为由索赔28万元的经历。这一事件在网上引起了热议，并对目前中国互联网公司的劳动环境提出了质疑。</p><h2>竞业禁止引发争议</h2><p>草娃，一名99年生于江西农村的女孩，于2022年7月大学毕业后加入拼多多，担任采销专员。在公司工作8个月后，因长时间加班导致健康受损，她选择离职。</p><p>离职时，她被公司强制执行了为期9个月的竞业禁止条款，并接收了每月2400元的补偿金。</p><p>然而，在收到6个月补偿后，草娃收到拼多多发起的劳动仲裁申请书，要求支付28万元的赔偿金。</p><p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/03/post-705768-65ed5550b5544." alt="image" /></p><h2>法律框架下的困惑</h2><p>草娃表示，作为一名应届毕业生，她对于突如其来的索赔感到震惊和困惑。在寻求法律援助过程中，她尝试和公司和解，愿意支付5万元赔偿，但遭到拒绝。上海长宁仲裁员指出，“5万元的价格在我们上海是没有的”，仲裁结果依旧是28万元的赔偿。草娃无奈之下，只能选择走诉讼途径。</p><h2>社会舆论的关注</h2><p>事件发酵后，草娃尝试在不同的社交平台上发声，但屡屡遭遇被投诉、删帖和封号。她的微博帖子引发了多方面的关注，不少网友为草娃的遭遇感到愤慨，同时也有人质疑和指责。草娃坦言，面对压力和绝望，曾一度产生了轻生念头。</p><p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/03/post-705768-65ed5550c23f9." alt="image" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/03/post-705768-65ed5550d009d." alt="image" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/03/post-705768-65ed5550dd8d2." alt="image" /></p><h2>呼吁劳动权益保护</h2><p>此事件反映出劳动者在面对巨大的企业力量时的无助，以及劳动法律在实际操作中可能存在的漏洞。</p><p>草娃的经历激起了公众对于劳动者权益保护的关注，也促使人们思考如何平衡企业的经营需要与员工的个人权利。目前，这一事件仍在进一步发展中，社会各界期待能有一个公正且合理的解决方案，为草娃和其他可能面临类似情况的劳动者带来希望。</p><p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/03/post-705768-65ed5550e8472." alt="image" /></p>
+</div>
