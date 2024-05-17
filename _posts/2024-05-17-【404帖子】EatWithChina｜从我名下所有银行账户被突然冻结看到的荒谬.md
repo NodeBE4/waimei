@@ -1,0 +1,17 @@
+---
+layout: post
+title: "【404帖子】EatWithChina｜从我名下所有银行账户被突然冻结看到的荒谬"
+date: 2024-05-17T15:48:24.000Z
+author: 既要又要还要
+from: https://chinadigitaltimes.net/chinese/707921.html
+tags: [ 中国数字时代 ]
+comments: True
+categories: [ 中国数字时代 ]
+---
+<!--1715960904000-->
+[【404帖子】EatWithChina｜从我名下所有银行账户被突然冻结看到的荒谬](https://chinadigitaltimes.net/chinese/707921.html)
+------
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/707921.html" title="【404帖子】EatWithChina｜从我名下所有银行账户被突然冻结看到的荒谬" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/05/image-1715954900607-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a><p>CDT编者按：原微博发布于2024年5月16日，由推特用户截图备份。截至发文时，原帖已在微博用户<a href="https://weibo.com/u/5231543650" title=" @EatWithChina"> @EatWithChina</a> 的时间线上消失。</p><hr /><p>遭遇人生第一次个人名下所有银行账户被冻结， 短短三天看到的荒谬记录下来，我们这个社会可以有多么草台班子，多么不安全。</p><p>5月13日晚上九点，突然发现我的光大卡余额显示为零，界面提示我去柜台，当时不以为意。</p><p>5月14日早上到光大银行柜台，被告知账户冻结，冻结方是绍兴市柯桥区公安。但银行柜台只能看到这个信息，没有更多可以提供，包括这个所谓“柯桥公安”的联系方式。</p><p>此时又陆续收到其它银行短信提示，我名下其它银行账户也开始被陆续冻结。</p><p>从网上找到柯桥区公安局电话，打过去转了几层，最后一个号码根据我报的个人信息，承认有冻结的事，但不肯吐露任何信息。</p><p>反而来了句：“那你为什么要去诈骗呢？”</p><div style="width:42%;float:right;padding-left:20px;"><div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>CDT 档案卡</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><strong>标题：</strong>从我名下所有银行账户被突然冻结看到的荒谬<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/EatWithChina" target="_blank">EatWithChina</a><br><strong>发表日期：</strong>2024.5.17<br /><strong>来源：</strong><a href="https://x.com/Captxueinshai/status/1791362453659615630" target="_blank">微博用户</a><br><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/云极权" target="_blank">云极权</a><br><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。</div></div></div><p>被气的够呛&#8230;&#8230;</p><p>14号上午正好有一个重要会议，只能先赶去参会。</p><p>开会期间，开始陆续求助绍兴的朋友也帮忙查下。</p><p>情况变得更坏：我的信用卡也开始被冻结；手机银行APP冻结后原本还能登录，现在也不能登录，直接跳出这个界面提示。</p><p>下午情况开始有点明朗，应该是最近收到的一笔学生费用，学生家长账户出问题，波及到我。</p><p>又联系那个柯桥公安号码，对方终于说了句：“你要实在着急，就去柯桥区华舍派出所现场说明吧”。</p><p>但是去那个派出所找谁？或哪个部门？则坚决不肯再说了。</p><p>5月15日下午，我赶到绍兴柯桥区华舍派出所， 问遍接待区的所有民警与保安，报我个人信息，问遍接待区的所有民警与保安，报我个人信息， 查不到任何信息。</p><p>值班民警让我在外等着，进办公区全所上下询问，终于有一个很年轻的民警出来，说我账户是他冻结的，问我认不认识林XX，我说不认识啊！</p><p>他说林XX13号晚上报案被诈骗，根据她的指认，把我账户冻结了。</p><p>很快，在我开车回宁波路上，这个林XX电话打过来道歉，果然是一个学生家长！</p><p>原来她13号晚上被电诈，报案的时候，民警电话与她一个个核对近期转账账号，语速很快问她这个账号是不是骗子？那个账号是不是骗子？她说：这个好像不认识、那个好像也陌生&#8230;&#8230;</p><p>然后勾到我的账号的时候，说我的也是陌生账号，就这样把我也给封了。</p><p>我怕忍不住开骂，说你不用和我解释了，有这点时间，赶快与那个民警沟通，尽快解冻我账户。</p><p>现在16号早上，写这篇的时候，我的所有银行账户依然没解冻。</p><p>一点总结与思考：</p><p>一个基层派出所的民警，可以直接冻结你名下所有账户，电话打过去也不告诉你任何原因，要你自己像侦探一样慢慢找到真相！这种不安全感的沖击太震撼了！！！</p><p>所谓反电诈，真的就是靠报案人一张嘴，她说哪个账号是诈骗，就封哪个账号！</p><p>你可以给所有的仇人转一分钱，然后报案被电诈，这些人名下所有账户都会被冻结。</p><p>这几天对个人生活的严重影响、业务的影响，在业务最繁忙季节，因为赶去柯桥派出所，耽误了工作和其它重要会议&#8230;&#8230;</p><p>在有权冻结你账户的人看来，完全不值一提，“我们是为了人民群众利益&#8230;&#8230;”</p><p>对这种随意冻结做法的疑问换来最多的就是这句回答，好像我既不是人民，也不属于群众&#8230;&#8230;</p><p>与这些人的对话完全不在一个频道上。</p>
+</div>
