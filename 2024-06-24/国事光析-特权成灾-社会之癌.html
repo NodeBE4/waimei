@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>国事光析: 特权成灾，社会之癌 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+国事光析: 特权成灾，社会之癌
+——
+" />
+    <meta property="og:description" content="
+国事光析: 特权成灾，社会之癌
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="国事光析: 特权成灾，社会之癌" />
+    <meta property="twitter:title" content="国事光析: 特权成灾，社会之癌" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cancer-of-the-society-20240624%2F7668593.html&t=%E5%9B%BD%E4%BA%8B%E5%85%89%E6%9E%90%3A+%E7%89%B9%E6%9D%83%E6%88%90%E7%81%BE%EF%BC%8C%E7%A4%BE%E4%BC%9A%E4%B9%8B%E7%99%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cancer-of-the-society-20240624%2F7668593.html&t=%E5%9B%BD%E4%BA%8B%E5%85%89%E6%9E%90%3A+%E7%89%B9%E6%9D%83%E6%88%90%E7%81%BE%EF%BC%8C%E7%A4%BE%E4%BC%9A%E4%B9%8B%E7%99%8C&d=2024-06-24&e=
+国事光析: 特权成灾，社会之癌
+——
+
+
+  
+Mon, 24 Jun 2024 22:33:02 GMT
+  
+  
+资料照片: 2022年9月21日北京一个交通路口
+  
+  编者按: 这是吴国光为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。
+  上次谈了中国社会溃败的“国际扩散”，这次就来了个中国社会溃败“出口转内销”的案例。欲罢不能，只好再谈一次。
+  这个案例的当事人是一位中国女士，在北京开着挂有外交牌照的汽车，停在路中间挡住了交通，被人质疑时反而责骂别人“混蛋”，问人家“懂什么叫外交豁免权吗？”。中国的网上舆论于是有一场热议。
+  在我看来，停车不挡路，属于起码的社会规范；不在乎这种规范，反而自认为有理还骂人，也是社会溃败的明显表征。其实，在当今社会，类似的这种规范，连猫儿狗儿都能遵守，但在中国却似乎总有那么一些人可以理..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cancer-of-the-society-20240624%2F7668593.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html&text=国事光析: 特权成灾，社会之癌&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html&title=国事光析: 特权成灾，社会之癌" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html&title=国事光析: 特权成灾，社会之癌" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=国事光析: 特权成灾，社会之癌&body=
+国事光析: 特权成灾，社会之癌
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html&title=国事光析: 特权成灾，社会之癌&caption=
+国事光析: 特权成灾，社会之癌
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=国事光析: 特权成灾，社会之癌&url=https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>国事光析: 特权成灾，社会之癌</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-24
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cancer-of-the-society-20240624%2F7668593.html&t=%E5%9B%BD%E4%BA%8B%E5%85%89%E6%9E%90%3A+%E7%89%B9%E6%9D%83%E6%88%90%E7%81%BE%EF%BC%8C%E7%A4%BE%E4%BC%9A%E4%B9%8B%E7%99%8C&d=2024-06-24&e=
+国事光析: 特权成灾，社会之癌
+——
+
+
+  
+Mon, 24 Jun 2024 22:33:02 GMT
+  
+  
+资料照片: 2022年9月21日北京一个交通路口
+  
+  编者按: 这是吴国光为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。
+  上次谈了中国社会溃败的“国际扩散”，这次就来了个中国社会溃败“出口转内销”的案例。欲罢不能，只好再谈一次。
+  这个案例的当事人是一位中国女士，在北京开着挂有外交牌照的汽车，停在路中间挡住了交通，被人质疑时反而责骂别人“混蛋”，问人家“懂什么叫外交豁免权吗？”。中国的网上舆论于是有一场热议。
+  在我看来，停车不挡路，属于起码的社会规范；不在乎这种规范，反而自认为有理还骂人，也是社会溃败的明显表征。其实，在当今社会，类似的这种规范，连猫儿狗儿都能遵守，但在中国却似乎总有那么一些人可以理..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cancer-of-the-society-20240624%2F7668593.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719268743000-->
+<p><a href="https://www.voachinese.com/a/the-cancer-of-the-society-20240624/7668593.html">国事光析: 特权成灾，社会之癌</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 24 Jun 2024 22:33:02 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/09410000-0a00-0242-1503-08daddd71323_cx0_cy9_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照片: 2022年9月21日北京一个交通路口</small>
+  </div>
+  <p><strong>编者按</strong><strong>: 这是吴国光为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。</strong></p>
+  <p>上次谈了中国社会溃败的“国际扩散”，这次就来了个中国社会溃败“出口转内销”的案例。欲罢不能，只好再谈一次。</p>
+  <p>这个案例的当事人是一位中国女士，在北京开着挂有外交牌照的汽车，停在路中间挡住了交通，被人质疑时反而责骂别人“混蛋”，问人家“懂什么叫外交豁免权吗？”。中国的网上舆论于是有一场热议。</p>
+  <p>在我看来，停车不挡路，属于起码的社会规范；不在乎这种规范，反而自认为有理还骂人，也是社会溃败的明显表征。其实，在当今社会，类似的这种规范，连猫儿狗儿都能遵守，但在中国却似乎总有那么一些人可以理直气壮地无视并践踏。究竟为什么？</p>
+  <p><strong>自恃特权，底气何来？</strong></p>
+  <p>有舆论认为，原因在于那位女士自认是外国人而不是中国人。某些中国媒体甚至借此扯出了什么“华人与狗不得入内”的上海租界的二十世纪初的故事，这次事情也就被说成了“外国人欺负中国人”。可是，尽管中共媒体很会变花样，但我只问一个问题：那人说她自己是外国人，她就是外国人了？</p>
+  <p>其实，北京有上百个外国大使馆，真正享有国际法所规定的“外交豁免权”的外国人以千以万计，几十年来似乎并未听闻闹出过这样的新闻。为什么那真正的外国人倒不敢欺负中国人，难道真的是被“中国人民站起来、强起来”所慑服的吗？相关新闻怕是有话不好说，但单看突出这位“假洋鬼子“的中共党国体制内”司局级干部“的身份，秘密似乎也显露了一大半：欺负中国人，优先权也早就转给了中共党国体制的那一大帮子官老爷官老娘们，外国人只能排排后了。中国确实“站起来、强起来”了，那就是中国的特权阶层站了起来、强了起来——站在了中国人头上作威作福，强到了随时随地当街停车，也早就强到了光天化日当街杀人！</p>
+  <p>有人嘲笑说：看来这还不过是个赵家狗腿子之流，真正的所谓“赵家人”用得着扯什么“外交豁免权”吗？的确，中共制度下的权势者，也就是民间所称的“赵家人”，在中国这九百六十万平方公里土地上，尽可以为所欲为，无法无天，那是“站起来、强起来”的“内政豁免权”，那是有着中共党国机器的强大暴力为后盾的。中国网易一篇署名“深度财线”撰写的文章说，“大妈和被堵司机这场冲突与无数在公路上发生的司机间争吵并没有大的不同“——错！两个货车司机吵架，和一个货车司机与一个党国司局级干部吵架，这能一样吗？把一个党国官员说成“一个大妈”，这是不是故意搅浑水呀？</p>
+  <p><strong>特权集团是社会溃败的根源</strong></p>
+  <p>很明显，权势来自中共制度，自恃特权的底气来自党国身份。本栏一个半月前首次谈论社会溃败时，强调的就是其政治根源。当时拙文问道：“试想，在一个权力至上、任性、暴虐的社会，官员们充斥着贪婪、霸道、败德、腐化，这个社会怎能不充满戾气？” 现在，不妨进一步追问：有一个依赖暴力垄断公共权力的所谓执政党，有一个不必在乎任何法律甚至宪法的政府，那些身居这一党国体系的大大小小的权力地位的人们，还有他们的子女、亲属、朋友、关系户，依仗这种地位，想发横财就大发横财，想当外国人就当外国人（还一面告诉你西方国家如何黑暗），想弄你进监狱就弄你进监狱，他说乌鸦是白的你不能说是黑的，他们怎么可能把社会文明的基本规范放在眼里？他们怎么能不霸道、贪婪、败德、腐化？</p>
+  <p>早先的拙文说过：“不要说他们不懂法，其实他们懂得这个制度下没有法治，因此可以无视和践踏法律，也只有无视和践踏法律才能展示自己的特权、能力和威风”。现在，我还要进一步说：随着中国老百姓的血汗在过去几十年中喂肥了这个党国庞然大物和依附在其皮里毛里的臭虫、虱子、跳蚤、螨虫等各色各等的“赵家人”，他们已经可以在国际社会无视和践踏法律与秩序了！随便派出个什么人，就可以使用某个国际组织的名头；甚至摆出“外国人”的嘴脸在中国土地上撒野。你不是觉得他这么做替包括你在内的中国人长志气吗，人家一个屁股蹲回来，坐烂的是中国人的生存摊子，砸毁的是中国的社会规则，最要欺负的还是中国人！</p>
+  <p>专制独裁，特权成灾，社会于是癌变。退让一步，我可以说，社会癌变还有很多其它原因。但是，无论另外还有多少原因，都不能否定这样一个基本原因，那就是不受制约的政治权力和特权集团的存在是今天中国社会溃败的最大根源。</p>
+  <p>从专制政治的无法无天，到特权集团的为所欲为，再到小流氓的胡作非为，这样一线贯之，因此中国社会今天充满戾气。但是，有人说，不是这样滴。他们说中国社会文明和谐，几十年来发展出来的物质财富正在带来社会在礼仪文明上的长足进步。或者说，有地位有身份的人知礼向善，社会的戾气都是穷人带来的，是所谓社会底层在戕害中国社会的文明秩序。再或者说，如果有社会溃败，那也不是因为政治原因，不过是因为这几年很多人的小日子不那么岁月静好了——这其实也等于在说贫穷才是社会溃败有所恶化的主因。本来我是愿意就这些观点展开讨论的，现在，实话说，完全不想再和这类观点对话了。我现在明白了：中国的权势者早都学会了“装外宾”，而这位亚太空间组织秘书长的作为把我恶心到了不想再和这些“外宾”们讨论问题。就此打住吧，否则再写下去我也感觉自己戾气迸发，直想骂人，怕是要被这个社会溃败的漩涡给卷进去喽。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E5%A4%A7%E7%96%86%E6%97%A0%E4%BA%BA%E6%9C%BA%E6%9C%89%E6%9C%9B%E5%9C%A8%E5%85%A8%E7%BE%8E%E7%A6%81%E7%94%A8-%E7%BE%8E%E5%9B%BD%E5%88%B6%E9%80%A0%E5%95%86%E5%B0%86%E8%BF%8E%E6%9D%A5%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3">
+          大疆无人机有望在全美禁用，美国制造商将迎来黄金时代？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE">
+          英国向中国出口大批军事设备 武器禁运形同虚设
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD">
+          乌克兰向克里米亚发射美国导弹，俄罗斯誓言报复美国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E9%9D%A2%E5%AF%B9%E6%89%B9%E8%AF%84%E5%A3%B0%E9%9F%B3%E5%92%8C%E8%B5%84%E9%87%91%E7%9F%AD%E7%BC%BA-%E8%81%94%E5%90%88%E5%9B%BD%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6%E9%9A%BE%E6%B0%91%E6%95%91%E6%B5%8E%E5%A4%84%E8%B4%9F%E8%B4%A3%E4%BA%BA%E4%B8%BA%E6%9C%AC%E6%9C%BA%E6%9E%84%E8%BE%A9%E6%8A%A4">
+          面对批评声音和资金短缺，联合国巴勒斯坦难民救济处负责人为本机构辩护
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD">
+            前一篇：乌克兰向克里米亚发射美国导弹，俄罗斯誓言报复美国
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE">
+            后一篇：英国向中国出口大批军事设备 武器禁运形同虚设
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-24/%E8%8B%B1%E5%9B%BD%E5%90%91%E4%B8%AD%E5%9B%BD%E5%87%BA%E5%8F%A3%E5%A4%A7%E6%89%B9%E5%86%9B%E4%BA%8B%E8%AE%BE%E5%A4%87-%E6%AD%A6%E5%99%A8%E7%A6%81%E8%BF%90%E5%BD%A2%E5%90%8C%E8%99%9A%E8%AE%BE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-24/%E4%B9%8C%E5%85%8B%E5%85%B0%E5%90%91%E5%85%8B%E9%87%8C%E7%B1%B3%E4%BA%9A%E5%8F%91%E5%B0%84%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9-%E4%BF%84%E7%BD%97%E6%96%AF%E8%AA%93%E8%A8%80%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

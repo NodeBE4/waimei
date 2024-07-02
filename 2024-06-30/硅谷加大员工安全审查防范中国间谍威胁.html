@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>硅谷加大员工安全审查防范中国间谍威胁 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+硅谷加大员工安全审查防范中国间谍威胁
+——
+" />
+    <meta property="og:description" content="
+硅谷加大员工安全审查防范中国间谍威胁
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="硅谷加大员工安全审查防范中国间谍威胁" />
+    <meta property="twitter:title" content="硅谷加大员工安全审查防范中国间谍威胁" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsilicon-valley-screening-chinese-staff-20240625%2F7669988.html&t=%E7%A1%85%E8%B0%B7%E5%8A%A0%E5%A4%A7%E5%91%98%E5%B7%A5%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%E9%98%B2%E8%8C%83%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%A8%81%E8%83%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsilicon-valley-screening-chinese-staff-20240625%2F7669988.html&t=%E7%A1%85%E8%B0%B7%E5%8A%A0%E5%A4%A7%E5%91%98%E5%B7%A5%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%E9%98%B2%E8%8C%83%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%A8%81%E8%83%81&d=2024-06-30&e=
+硅谷加大员工安全审查防范中国间谍威胁
+——
+
+
+  
+Sun, 30 Jun 2024 11:27:41 GMT
+  
+  
+资料照片: 设计师在旧金山硅谷电脑站工作 (2014年4月24日)
+  
+华盛顿 —   来自中国的间谍威胁在科技、经济、网络安全等层面对美国形成挑战，硅谷科技公司在安全防范上首当其冲，据报许多公司加大了对员工和应聘者的安全审查。专家对美国之音说，硅谷对来自中国的间谍威胁越发警惕，为了避免尖端技术被窃取，加大安全审查有其必要性。
+  在华盛顿一所大学就读计算机科学研究生的郑同学，最近刚将专业转为同个学院的网络安全专项。他说，来美国一年时间，看到美中关系越来越紧张，了解到中国政府派遣大量间谍盗取美国的数据，甚至是军事方面的高科技，让他在最近这段时间找到了人生追求的方向，那就是在美国成为网络安全行业的捍卫者。
+  他对美国之音说：“目标是有点高，但我觉得我作为一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsilicon-valley-screening-chinese-staff-20240625%2F7669988.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html&text=硅谷加大员工安全审查防范中国间谍威胁&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html&title=硅谷加大员工安全审查防范中国间谍威胁" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html&title=硅谷加大员工安全审查防范中国间谍威胁" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=硅谷加大员工安全审查防范中国间谍威胁&body=
+硅谷加大员工安全审查防范中国间谍威胁
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html&title=硅谷加大员工安全审查防范中国间谍威胁&caption=
+硅谷加大员工安全审查防范中国间谍威胁
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=硅谷加大员工安全审查防范中国间谍威胁&url=https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>硅谷加大员工安全审查防范中国间谍威胁</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsilicon-valley-screening-chinese-staff-20240625%2F7669988.html&t=%E7%A1%85%E8%B0%B7%E5%8A%A0%E5%A4%A7%E5%91%98%E5%B7%A5%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%E9%98%B2%E8%8C%83%E4%B8%AD%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%A8%81%E8%83%81&d=2024-06-30&e=
+硅谷加大员工安全审查防范中国间谍威胁
+——
+
+
+  
+Sun, 30 Jun 2024 11:27:41 GMT
+  
+  
+资料照片: 设计师在旧金山硅谷电脑站工作 (2014年4月24日)
+  
+华盛顿 —   来自中国的间谍威胁在科技、经济、网络安全等层面对美国形成挑战，硅谷科技公司在安全防范上首当其冲，据报许多公司加大了对员工和应聘者的安全审查。专家对美国之音说，硅谷对来自中国的间谍威胁越发警惕，为了避免尖端技术被窃取，加大安全审查有其必要性。
+  在华盛顿一所大学就读计算机科学研究生的郑同学，最近刚将专业转为同个学院的网络安全专项。他说，来美国一年时间，看到美中关系越来越紧张，了解到中国政府派遣大量间谍盗取美国的数据，甚至是军事方面的高科技，让他在最近这段时间找到了人生追求的方向，那就是在美国成为网络安全行业的捍卫者。
+  他对美国之音说：“目标是有点高，但我觉得我作为一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fsilicon-valley-screening-chinese-staff-20240625%2F7669988.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719747542000-->
+<p><a href="https://www.voachinese.com/a/silicon-valley-screening-chinese-staff-20240625/7669988.html">硅谷加大员工安全审查防范中国间谍威胁</a>
+——</p>
+
+<div>
+  <div>
+<em>Sun, 30 Jun 2024 11:27:41 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/814660BF-D34F-4C78-9D90-63224D78A5C1_cx0_cy10_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照片: 设计师在旧金山硅谷电脑站工作 (2014年4月24日)</small>
+  </div>
+华盛顿 —   <p>来自中国的间谍威胁在科技、经济、网络安全等层面对美国形成挑战，硅谷科技公司在安全防范上首当其冲，据报许多公司加大了对员工和应聘者的安全审查。专家对美国之音说，硅谷对来自中国的间谍威胁越发警惕，为了避免尖端技术被窃取，加大安全审查有其必要性。</p>
+  <p>在华盛顿一所大学就读计算机科学研究生的郑同学，最近刚将专业转为同个学院的网络安全专项。他说，来美国一年时间，看到美中关系越来越紧张，了解到中国政府派遣大量间谍盗取美国的数据，甚至是军事方面的高科技，让他在最近这段时间找到了人生追求的方向，那就是在美国成为网络安全行业的捍卫者。</p>
+  <p>他对美国之音说：“目标是有点高，但我觉得我作为一个基本上所有人生在中国出生成长的人，会对中国有更多了解。希望能够成为在网络安全领域有自己特色力量，对抗中国网络攻击的一个角色。”</p>
+  <p>不过，郑同学的同侪和他的想法有些不同。他就读的计算机研究生院组成以国际学生为主，当中包含大量中国学生。随着网络安全成为美国政府关注的议题，学院将更多资源投入该专项。他的许多同学认为自己陷入困境，因为他们毕业后面临找工作的挑战，而这类职位通常不对国际学生开放。</p>
+  <p>郑同学说：“像我这样子的‘反贼’是例外，大多数人还是指望能够从事软件开发，或者是AI机器学习相关的领域，更多从经济效益去看待自己未来的求职方向。所以我的同学带领全校区很多学生一起联名签署了这么一封信，给到了我们的院长，希望学校能够增加投入在网络安全以外的课程上。”</p>
+  <p>不过，未来郑同学和他的同侪在求职上可能都会面临更加严格的安全审查和等待。《金融时报》引述消息人士的话说，包括谷歌(Google)、OpenAI和红杉资本(Sequoia Capital)等科技公司加大了对员工和可能招聘的人员的安全审查，以应对来自中国的间谍威胁。</p>
+  <p><strong>硅谷加大安全审查防谍“必不可少”</strong></p>
+  <p>美国联邦调查局长克里斯托弗·雷(Christopher Wray)此前表示，中国对美国的间谍渗透无所不在，是美国信息和知识产权以及经济的最大长期威胁，也是对国家安全的威胁。在网络安全方面，美国政府指责中国是最主要的网络间谍威胁，国家支持的中国黑客从私营和公共部门窃取数据。过去两年，美国政府加大安全措施，包括更新《出口管制条例》，限制中国取得先进计算芯片、人工智能等技术的能力，并向企业加强有关中国间谍活动威胁的警告。</p>
+  <p>前白宫国安会亚洲事务副资深主任、烽火全球战略(Beacon Global Strategies)副总裁简以荣(Ivan Kanapathy)对美国之音说，硅谷乃至全美都对中国经济间谍、知识产权盗窃和未经授权使用技术非常担忧，硅谷的科技公司显然正在与为企业提供有关中国间谍威胁的战略情报公司合作，这些公司如雨后春笋般出现。还有很多科技公司正在对员工和供应商进行尽职调查，以确定他们是否在某种程度上与中国政府合作，包括调查员工、可能招聘的人员和合作伙伴过去的历史。</p>
+  <p>简以荣对美国之音说：“近年来，新兴科技公司变得更加谨慎，他们不想成为中国吸收技术的战略的牺牲品。中国在某些尖端技术上表现相当不错，这(加大审查)是势在必行的，因为公司不能承受帮助竞争对手而让自己破产的代价。我们已经看到这种情况在许多行业发生。美国和其他盟友的尖端公司感到担忧并采取措施降低中国国家支持的间谍活动的风险是很自然的”</p>
+  <p>在硅谷的咨询公司Constellation Research的创始人兼总监王瑞光(Ray Wang)对美国之音说，中国间谍窃取美国知识产权的情况已经持续了30年，而自疫情爆发以来，过去五年这种情况更为猖獗，他听闻许多有关中国情报人员利用在美国工作的中国人窃取信息的事件。</p>
+  <p>王瑞光说：“疫情期间，许多在中国有亲戚的人都采取了妥协的立场，他们被要求为中国政府做事，否则他们的亲戚就会处于危险之中。环顾四周会发现有很多这方面的案例，有人对他们说，如果你不这样做，你在上海的表弟就会处于危险之中，或者会被关进监狱。因此，疫情期间这实际上在硅谷敲响了许多警钟。”</p>
+  <p>王瑞光表示，中国几乎渗透到了美国的各个方面，美国面临的是系统性问题，他认为美国和中国就像是冷战时期的英国和俄罗斯。他说：“我们在政治、经济、文化、技术和环境方面都处于战争状态。因此，在这场战斗中，需要在国家安全和彻底的仇外心理之间取得微妙的平衡。科技是美国的一个重要领域，我们仍然处于领先地位，而美国科技公司对发生的事情越来越警惕。”</p>
+  <p><strong>中国窃取技术方法多样</strong><strong> </strong><strong>防范是否有代价？</strong></p>
+  <p>简以荣认为，过去几年美国公司已经在提高对中国间谍的认识和谨慎行事方面取得了很大进展，尤其是硅谷的初创公司。他举例，硅谷来自中国的投资额在过去几年下降了很多，成为一个正在消失的渠道。此外，许多初创公司希望和美国政府合作，包括美国国防工业和情报行业。这些公司如果以任何方式被渗透或看起来不谨慎，那么他们将很难获得美国政府的合同，因为美国政府将进行严格的安全审查。</p>
+  <p>简以荣说，有一点需要注意的是，中国可能通过挖角人才的方式取得美国的技术。这意味着他们试图招募一个了解某项技术的人，要他带着技术去中国开设一家新公司。尽管这在道德上有问题，但有时是合法的。这种情况偶尔会发生，硅谷公司对此也更加谨慎。</p>
+  <p>另一方面，简以荣指出，中国当局在科技业和大专院校投入巨资，包括大学里的人才招聘计划和科技行业的外国招聘活动，以及提供大量资金让人们做技术交流、研究交流和合作，其实真正目的是吸收技术，特别是尖端技术。</p>
+  <p>简以荣说：“中国的产业政策计划有它的目标。中国通过投资以获取技术，同时谋求某些科技公司的员工。中国可能还试图将自己的人员，包括工程师，安置到某些拥有他们想要的技术的公司。这是一个多管齐下的战略。”</p>
+  <p>简以荣认为美国政府已经意识到中国当局通过各种渠道来实现他们的技术愿景，而硅谷加大安全审查实际上对此作出了更好的回应。</p>
+  <p>王瑞光认为加大安全审查在一定程度上对打击中国间谍行为有所帮助，但目前看来硅谷对中国人或华裔的筛查程度更高。他指出，谷歌和Open AI对华人员工的安全审查更严格，微软正在将一些最重要的工程师从中国转移到其他地区；NVIDIA也一直在筛查方面保持高度警惕。他认为应谨慎以对，避免引发仇外情绪。“因此，每个新员工，不仅仅是中国公民，都应该经过同样的安全审查程序，”他说，“我认为这真地很重要。作为一名亚裔美国人，我们必须非常小心这些影响是什么。”</p>
+  <p>同为亚裔的简以荣对此则持不同看法。他认为在硅谷工作的人当中很多是亚裔移民，不会真地因此达到仇外心理的地步。他指出，科技公司创始人当中很多人是华裔或印度裔美国人，而这些人正是要求对中国公民进行安全审查的人，种族和国籍实际上是有区别的。</p>
+  <p>简以荣举例，有人说中国学生在美国感觉自己不受欢迎，然而中国留学生的比例仍与疫情前的最高比例相同，美国有30%的留学生来自中国。相反地，美国学生在中国的人数大幅下降，美国学生才是在中国感到不受欢迎的一群人。中国猖獗的种族主义也许是造成这种情况的原因。同样地，他同意硅谷加大筛查确实可能带来这种影响，但对这种说法必须小心以对，因为有时中国当局会支持一些没有数据支撑的错误言论，并且借由统战人员和宣传途径来渲染。</p>
+  <p>简以荣认为在联邦调查局和各个机构对中国间谍行为的认识升高的情况下，进行知识产权转让和盗窃比以往更难，除非中国将间谍活动升级到更高水平，他们必须投入更多才可能获得这些资源。在美国和硅谷成为更难攻击的目标以后，简以荣担心中国转向接触美国在欧洲的合作伙伴。尽管欧洲也开始意识到这一点，但他们在筛查人员方面可能比美国落后，例如对员工、合作伙伴、供应商和客户的筛查。</p>
+  <p>“中国毫不犹豫地利用间谍活动来获取商业利益。它还试图通过第三国获取美国技术。这些国家与美国密切合作开发和部署新技术。因此，美国必须与伙伴国家密切合作，确保不会出现泄漏，”简以荣说。</p>
+  <p>美国之音联系了谷歌、OpenAI和红杉资本，截至截稿前没有得到回复。</p>
+  <p>在加州担任软件工程师的吴先生对美国之音说，他能理解美国科技公司加强对员工的筛查，适当的安全审查还是有必要的。他自己倒是没有感受到针对中国人的特别严格的举措，也没有因为是中国公民受到不同待遇。</p>
+  <p>吴先生说：“毕竟我觉得美国相对来说还是比较包容开放一些吧。我觉得一个大的科技公司，有那么多外国员工也很不容易。中国的那种公司，比如华为，都是清一色的华人面孔，外国人都特别少，也不太可能聘请美国人来做比较重要的角色。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-30/%E4%BF%84%E5%86%9B%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E5%8D%97%E9%83%A8%E5%8F%91%E5%8A%A8%E5%AF%BC%E5%BC%B9%E8%A2%AD%E5%87%BB-%E5%AF%BC%E8%87%B47%E6%AD%BB36%E4%BC%A4%E6%83%A8%E5%89%A7">
+          俄军对乌克兰南部发动导弹袭击，导致7死36伤惨剧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-30/%E4%BB%A5%E5%86%9B%E5%9C%A8%E5%8A%A0%E6%B2%99%E5%8D%97%E5%8C%97%E5%8F%91%E5%8A%A8%E6%96%B0%E6%94%BB%E5%8A%BF-%E4%BB%A5%E8%B4%A2%E6%94%BF%E9%83%A8%E5%BB%B6%E9%95%BF%E4%B8%8E%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6%E9%93%B6%E8%A1%8C%E9%97%B4%E5%90%88%E4%BD%9C">
+          以军在加沙南北发动新攻势，以财政部延长与巴勒斯坦银行间合作
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E">
+          三中全会之财税改革篇：地方要钱、民间要减税，中共可能加税
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-30/%E5%8D%B0%E5%B0%BC%E5%B0%86%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%95%86%E5%93%81%E5%BE%81%E6%94%B6%E6%9C%80%E9%AB%98200-%E8%BF%9B%E5%8F%A3%E5%85%B3%E7%A8%8E">
+          印尼将对中国商品征收最高200%进口关税
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E">
+            前一篇：三中全会之财税改革篇：地方要钱、民间要减税，中共可能加税
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-30/%E5%8F%B0%E9%90%B5%E6%9A%96%E6%9A%96%E7%AB%99%E6%A9%9F%E8%BB%8A%E9%97%96%E5%85%A5%E8%BB%8C%E9%81%93%E9%81%AD%E6%92%9E-%E9%A8%8E%E5%A3%AB%E7%88%AC%E5%87%BA%E4%BF%9D%E5%91%BD%E9%80%81%E8%BE%A6">
+            后一篇：台鐵暖暖站機車闖入軌道遭撞 騎士爬出保命送辦
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-30/%E5%8F%B0%E9%90%B5%E6%9A%96%E6%9A%96%E7%AB%99%E6%A9%9F%E8%BB%8A%E9%97%96%E5%85%A5%E8%BB%8C%E9%81%93%E9%81%AD%E6%92%9E-%E9%A8%8E%E5%A3%AB%E7%88%AC%E5%87%BA%E4%BF%9D%E5%91%BD%E9%80%81%E8%BE%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-30/%E4%BB%A5%E5%86%9B%E5%9C%A8%E5%8A%A0%E6%B2%99%E5%8D%97%E5%8C%97%E5%8F%91%E5%8A%A8%E6%96%B0%E6%94%BB%E5%8A%BF-%E4%BB%A5%E8%B4%A2%E6%94%BF%E9%83%A8%E5%BB%B6%E9%95%BF%E4%B8%8E%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6%E9%93%B6%E8%A1%8C%E9%97%B4%E5%90%88%E4%BD%9C'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-30/%E5%8F%B0%E9%90%B5%E6%9A%96%E6%9A%96%E7%AB%99%E6%A9%9F%E8%BB%8A%E9%97%96%E5%85%A5%E8%BB%8C%E9%81%93%E9%81%AD%E6%92%9E-%E9%A8%8E%E5%A3%AB%E7%88%AC%E5%87%BA%E4%BF%9D%E5%91%BD%E9%80%81%E8%BE%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-30/%E4%BB%A5%E5%86%9B%E5%9C%A8%E5%8A%A0%E6%B2%99%E5%8D%97%E5%8C%97%E5%8F%91%E5%8A%A8%E6%96%B0%E6%94%BB%E5%8A%BF-%E4%BB%A5%E8%B4%A2%E6%94%BF%E9%83%A8%E5%BB%B6%E9%95%BF%E4%B8%8E%E5%B7%B4%E5%8B%92%E6%96%AF%E5%9D%A6%E9%93%B6%E8%A1%8C%E9%97%B4%E5%90%88%E4%BD%9C">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-30/%E4%B8%89%E4%B8%AD%E5%85%A8%E4%BC%9A%E4%B9%8B%E8%B4%A2%E7%A8%8E%E6%94%B9%E9%9D%A9%E7%AF%87-%E5%9C%B0%E6%96%B9%E8%A6%81%E9%92%B1-%E6%B0%91%E9%97%B4%E8%A6%81%E5%87%8F%E7%A8%8E-%E4%B8%AD%E5%85%B1%E5%8F%AF%E8%83%BD%E5%8A%A0%E7%A8%8E">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

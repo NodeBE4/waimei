@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+" />
+    <meta property="og:description" content="
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩" />
+    <meta property="twitter:title" content="香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Freactions-to-hk-journalists-association-executive-committee-election-results-20240624%2F7668316.html&t=%E9%A6%99%E6%B8%AF%E8%AE%B0%E5%8D%8F%E9%80%89%E5%87%BA%E6%96%B0%E4%B8%80%E5%B1%8A%E6%89%A7%E5%A7%94+%E7%8E%B0%E4%B8%BB%E5%B8%AD%E9%99%88%E6%9C%97%E5%8D%87%E6%8C%87%E9%A6%99%E6%B8%AF%E6%9C%AC%E5%9C%B0%E4%BC%A0%E5%AA%92%E8%90%8E%E7%BC%A9" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Freactions-to-hk-journalists-association-executive-committee-election-results-20240624%2F7668316.html&t=%E9%A6%99%E6%B8%AF%E8%AE%B0%E5%8D%8F%E9%80%89%E5%87%BA%E6%96%B0%E4%B8%80%E5%B1%8A%E6%89%A7%E5%A7%94+%E7%8E%B0%E4%B8%BB%E5%B8%AD%E9%99%88%E6%9C%97%E5%8D%87%E6%8C%87%E9%A6%99%E6%B8%AF%E6%9C%AC%E5%9C%B0%E4%BC%A0%E5%AA%92%E8%90%8E%E7%BC%A9&d=2024-06-24&e=
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+
+
+  
+Mon, 24 Jun 2024 18:23:43 GMT
+  
+  
+香港记者协会新一届执委会成员 (美国之音照片)
+  
+  有56年历史的香港记者协会(简称记协)，是2020年6月30日国安法实施后硕果仅存的工会组织之一，也是香港最大型的前线记者组织。记协上星期六举行周年会员大会，选举新主席及新一届执委会成员。
+  在换届选举前夕，记协上星期五发布重要启事指，有会员收到可疑信息，声称周年会员大会可能被执法机关监视，呼吁与会议保持距离。
+  在可疑信息的阴霾下，即将卸任的记协主席陈朗升上星期六会见传媒表示，出席周年会员大会的人数倍增，而新一届执委会成员多任职外媒，反映香港本地传媒行业的萎缩。
+  香港历史最悠久的记者组织、香港记者协会(简称记协)，1968年由前线新闻工作者成立，作为最大型的记者工会，记协在..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Freactions-to-hk-journalists-association-executive-committee-election-results-20240624%2F7668316.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html&text=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html&title=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html&title=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩&body=
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html&title=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩&caption=
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩&url=https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-24
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Freactions-to-hk-journalists-association-executive-committee-election-results-20240624%2F7668316.html&t=%E9%A6%99%E6%B8%AF%E8%AE%B0%E5%8D%8F%E9%80%89%E5%87%BA%E6%96%B0%E4%B8%80%E5%B1%8A%E6%89%A7%E5%A7%94+%E7%8E%B0%E4%B8%BB%E5%B8%AD%E9%99%88%E6%9C%97%E5%8D%87%E6%8C%87%E9%A6%99%E6%B8%AF%E6%9C%AC%E5%9C%B0%E4%BC%A0%E5%AA%92%E8%90%8E%E7%BC%A9&d=2024-06-24&e=
+香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩
+——
+
+
+  
+Mon, 24 Jun 2024 18:23:43 GMT
+  
+  
+香港记者协会新一届执委会成员 (美国之音照片)
+  
+  有56年历史的香港记者协会(简称记协)，是2020年6月30日国安法实施后硕果仅存的工会组织之一，也是香港最大型的前线记者组织。记协上星期六举行周年会员大会，选举新主席及新一届执委会成员。
+  在换届选举前夕，记协上星期五发布重要启事指，有会员收到可疑信息，声称周年会员大会可能被执法机关监视，呼吁与会议保持距离。
+  在可疑信息的阴霾下，即将卸任的记协主席陈朗升上星期六会见传媒表示，出席周年会员大会的人数倍增，而新一届执委会成员多任职外媒，反映香港本地传媒行业的萎缩。
+  香港历史最悠久的记者组织、香港记者协会(简称记协)，1968年由前线新闻工作者成立，作为最大型的记者工会，记协在..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Freactions-to-hk-journalists-association-executive-committee-election-results-20240624%2F7668316.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719254342000-->
+<p><a href="https://www.voachinese.com/a/reactions-to-hk-journalists-association-executive-committee-election-results-20240624/7668316.html">香港记协选出新一届执委 现主席陈朗升指香港本地传媒萎缩</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 24 Jun 2024 18:23:43 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0aff-0242-d10f-08dc943ae8b5_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">香港记者协会新一届执委会成员 (美国之音照片)</small>
+  </div>
+  <p>有56年历史的香港记者协会(简称记协)，是2020年6月30日国安法实施后硕果仅存的工会组织之一，也是香港最大型的前线记者组织。记协上星期六举行周年会员大会，选举新主席及新一届执委会成员。</p>
+  <p>在换届选举前夕，记协上星期五发布重要启事指，有会员收到可疑信息，声称周年会员大会可能被执法机关监视，呼吁与会议保持距离。</p>
+  <p>在可疑信息的阴霾下，即将卸任的记协主席陈朗升上星期六会见传媒表示，出席周年会员大会的人数倍增，而新一届执委会成员多任职外媒，反映香港本地传媒行业的萎缩。</p>
+  <p>香港历史最悠久的记者组织、香港记者协会(简称记协)，1968年由前线新闻工作者成立，作为最大型的记者工会，记协在2020年6月30日《港区国安法》实施后，公民社会组织及非建制派政党、工会解散潮下，仍然屹立不倒，成为硕果仅存的香港工会组织之一，但是多次被当局点名批评。</p>
+  <p><strong>记协可疑信息阴霾下选出新一届执委会</strong></p>
+  <p>记协上星期六(6月22日)举行周年会员大会，选举新主席及新一届执委会成员。在换届选举前夕，记协上星期五(6月21日)发布重要启事指，有会员收到可疑信息，声称周年会员大会可能被执法机关监控、录音和作身份识别，呼吁与会议保持距离。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0a00-0242-af8f-08dc943a1bd1_w900.jpg" alt="《华尔街日报》记者郑嘉如当选新一届香港记者协会主席 (美国之音照片)" border="0" />    <div>
+<small style="color: #999;">《华尔街日报》记者郑嘉如当选新一届香港记者协会主席 (美国之音照片)</small>
+    </div>
+  </div>
+  <p>记协提醒如果有任何人收到该消息，切勿回覆或点击任何按键。记协强调，没有收到有关消息，不认为根据《职工会条例》订明举行的周年会员大会涉及任何法律风险，希望会员上星期六依时出席。</p>
+  <p>在可疑信息的阴霾下，记协上星期六顺利举行周年会员大会，选出新主席及新一届执委会成员。据记协公布的名单，12名新当选的执委会成员，包括新任主席《华尔街日报》记者郑嘉如、副主席自由记者梁耀聪，其余成员包括《志传媒》主编关震海、《香港01》高级记者梁祖饶、“Hong Kong Free Press”记者谢梓枫、《留白》记者郑卓伶、《环球邮报》亚洲通讯员James Griffiths、自由记者黎佩儿、自由撰稿人李雨梦、自由记者余乐斯、BBC记者Danny Vincent以及关注难民权益组织Justice Centre Hong Kong高级政策顾问张皓明。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0a00-0242-317d-08dc94389dc6_w900.jpg" alt="即将卸任的香港记者协会主席陈朗升，6月22日周年会员大会结束后会见传媒。" border="0" />    <div>
+<small style="color: #999;">即将卸任的香港记者协会主席陈朗升，6月22日周年会员大会结束后会见传媒。</small>
+    </div>
+  </div>
+  <p><strong>陈朗升冀新一届执委沉稳面对压力及困难</strong></p>
+  <p>12名新当选的记协执委会成员未有在会后召开记者会，由即将在下星期一(7月1日)卸任的现任主席陈朗升会见传媒。</p>
+  <p>陈朗升表示，在执委会选举开票前，两名参选人包括任职BBC的Danny Vicent ，以及高级政策顾问张皓明提出退选，但由于记协没有退选机制，两人将于当选后提出辞职，但不方便代为透露两人退选原因。而记协执委会由最少5人及不多于12人组成，两人辞职后不会安排补选。</p>
+  <p>陈朗升表示，今年出席周年会员大会的人数比去年上升一倍，看来没有受到可疑信息的影响。他表示下星期一卸任主席后，只是一名记协的普通会员，不会再评论记协的事宜。他又表示，对新一届记协执委会成员的工作很有信心。</p>
+  <p>陈朗升说：“过去的3年基本上是记协主席这个身份给予我很大、很大的动力，继续做好每一件事情，很多人问我为何去了英国(深造)又会回来(香港)﹖为什么还要继续出来﹖有很多有时大家见到我们(记协)有些同执法部门的争拗，为什么你都要这样做呢﹖这样很简单，因为我是记协主席，很简单，因为大家都不敢讲，这样唯有我讲吧。很简单，因为如果我走了不回来的话，本会(记协)会被人说话、会被人笑、会被人攻击，我不可以这样做，但是今日(6月22日)开始，无论如何怎样都好，这个角色(记协主席)、这个负担我都要放下，交给下一个新任的主席以及执委会，我对他们的工作是很有信心的，但是当然我都希望他们明白，他们是会受到很大的压力、很大的困难，但是希望他们都能够沉稳面对，希望他们能够继续做好我们记协的工作。”</p>
+  <p><strong>记协不会歧视不同种族的会员</strong></p>
+  <p>对于保安局局长邓炳强上星期五质疑，记协新一届执委会参选人有如“外国记者协会”，因为大部份参选人都是外媒的记者，有部份是自由记者，有些甚至“不是记者”，他又质疑有候选人所属组织曾经“被揭露收美国的钱”。</p>
+  <p>陈朗升回应表示，新一届执委会成员以新闻工作者为主，他认为邓炳强的质疑可能出于不认识工会的运作架构，他又强调新一届执委会成员全部都是合资格的记协成员，亦不会歧视不同种族的会员。</p>
+  <p>陈朗升说：“可能邓炳强局长不认识工会的运作或者架构，我们的会员全部都是合资格的工会成员来的，所以我不明(白)为什么他会说我们有些会员是外国人，我希望他不是出于一个种族的想法去说他们，我们就没有歧视人家的，人家谁来，只要他有(香港居民)身份证、上来说是我们(记协)的合资格会员，他来申请做执委、来竞选都是可以的。好了，至于你(邓炳强)说有些人不是做记者，我又留意到可能是从事一些NGO(非政府组织)，或者其他们之前的工作、或者他们的工作是同新闻工作有关，是我们正式的附属会员等等。”</p>
+  <p>至于邓炳强质疑有执委会参选人所属机构“收美国人钱”，陈朗升表示，接受政府资助的新闻机构或者组织不一定要支持当地政府的立场，它们仍然可以有独立的编采自主方针。</p>
+  <p>陈朗升说：“这个世界有很多的机构，它是在政府的预算里面是有一些预算拨给它们，然后它们从事一些工作其实可以说是政府支持它们，但是它们不一定要支持那个政府的，即是好像BBC那样，它是收英国政府的Budget(预算)、有一笔钱给它，但是你说BBC的记者是不是个个都会支持(首相)苏纳克及(执政)保守党，我想大家都知是不会吧。亦都知道这是一个common sense(常识)，我又不明白为什么到了2024年的今日，即是我们又不是锁国的年代，又不是闭关的年代，好像这些政治的ABC(基本认识)都还要去解释的呢﹖我都不介意解释告诉他，即是人家收的可能那些钱、那些Budget(预算)是在政府入面拿出来，但是人家是一个民选的政府，它的Budget(预算)是会跟他们的市民、国民去负责，然后那些机构去做一些可能是难民、可能是社会议题的倡议，这样不可以讲到好像人家一定是同外国政府勾结是有关。”</p>
+  <p>至于香港本地新闻工作者较少参加新一届记协执委会选举，陈朗升认为反映香港本地传媒行业的萎缩。</p>
+  <p><strong>记协乐于与各界沟通</strong></p>
+  <p>陈朗升强调，记协一定乐于与各界沟通，他形容记协与警方的关系“一言难尽”，但仍有沟通渠道，他坦言过去3年他担任记协主席是非常艰难的时期，尤其是他3年前当选那日，正值《苹果日报》结业，其后《立场新闻》、《众新闻》等较具规模的网媒先后结业，而记协亦有认真思考过解散。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0aff-0242-eb8e-08dc943a84d1_w900.jpg" alt="自由记者梁耀聪当选新一届香港记者协会副主席 (美国之音照片)" border="0" />    <div>
+<small style="color: #999;">自由记者梁耀聪当选新一届香港记者协会副主席 (美国之音照片)</small>
+    </div>
+  </div>
+  <p>陈朗升又表示，记协过去接近4年经历过国安法及23条立法，依然是一个合法的工会，他相信这个角色可以继续维持下去。</p>
+  <p>陈朗升说：“至于在新时代之下我们去做这些工作，我们是很明白是有很多新的情况、环境会适应的，有很多新的限制我们要面对的，我想出来做记协执委的朋友都应该会知道的，所以不需要担心记协会不会犯法各样事情，我们亦都有经历过国安法、经历过23条(立法)，我们依然是一个合法的工会，所以我想我们这个角色会继续做得好的。”</p>
+  <p><strong>新任副主席冀在仅有空间继续存在</strong></p>
+  <p>新当选的记协副主席梁耀聪接受美国之音访问表示，上星期五出现针对记协周年会员大会的可疑信息，他不会感到太大压力，因为之前已经发生过类似的情况，不过，他坦言在新一届执委会选举前夕出现类似信息是比较敏感，而新任执委会成员将会秉持会章，以及根据香港的法例做好记协的工作。</p>
+  <p>对于记协的前景，梁耀聪希望可以在仅有的空间当中继续存在，吸引更多新会员加入。</p>
+  <p>梁耀聪说：“我自己认为我们(记协)会在仅有的空间做最多的事，即是现在的空间无论是大还是小，都是因组织以及因人而异，我认为我们每个决定都是由新的执委去沟通、去表决、去做出来的，前景的话我当然希望最基本的要求就是记协可以‘长做长有’，即是继续留在这里，自己的愿景就(是)来年记协一起加油，会员人数可以继续上升，然后会员、非会员都可以继续支持记协。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E7%BE%8E%E5%9B%BD%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%B0%86%E5%AE%A1%E8%AE%AE%E8%B7%A8%E6%80%A7%E5%88%AB%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E5%81%A5%E4%BF%9D%E6%A1%88%E4%BB%B6">
+          美国最高法院将审议跨性别未成年人的健保案件
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E6%9C%89%E8%BF%B9%E8%B1%A1%E6%98%BE%E7%A4%BA%E4%BF%84%E6%9C%9D%E9%98%B2%E5%BE%A1%E5%8D%8F%E8%AE%AE%E4%BB%A4%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%AE%89">
+          有迹象显示俄朝防御协议令中国不安
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E4%BF%84%E7%BD%97%E6%96%AF%E8%BE%BE%E5%90%89%E6%96%AF%E5%9D%A6%E6%9E%AA%E5%87%BB%E4%BA%8B%E4%BB%B6%E9%80%A0%E6%88%9020%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+          俄罗斯达吉斯坦枪击事件造成20人死亡
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-24/%E6%AC%A7%E7%9B%9F%E5%AF%B9%E4%BF%84%E5%AE%9E%E6%96%BD%E7%AC%AC14%E8%BD%AE%E5%88%B6%E8%A3%81-%E9%98%BB%E6%AD%A2%E4%BC%81%E4%B8%9A%E8%A7%84%E9%81%BF%E7%8E%B0%E6%9C%89%E5%88%B6%E8%A3%81">
+          欧盟对俄实施第14轮制裁，阻止企业规避现有制裁
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.24">
+            前一篇：每日一语 2024.6.24
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.23">
+            后一篇：每日一语 2024.6.23
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.24'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.23'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E6%9C%89%E8%BF%B9%E8%B1%A1%E6%98%BE%E7%A4%BA%E4%BF%84%E6%9C%9D%E9%98%B2%E5%BE%A1%E5%8D%8F%E8%AE%AE%E4%BB%A4%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%AE%89'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-24/%E4%BF%84%E7%BD%97%E6%96%AF%E8%BE%BE%E5%90%89%E6%96%AF%E5%9D%A6%E6%9E%AA%E5%87%BB%E4%BA%8B%E4%BB%B6%E9%80%A0%E6%88%9020%E4%BA%BA%E6%AD%BB%E4%BA%A1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.24">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-24/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.23">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-24/%E6%9C%89%E8%BF%B9%E8%B1%A1%E6%98%BE%E7%A4%BA%E4%BF%84%E6%9C%9D%E9%98%B2%E5%BE%A1%E5%8D%8F%E8%AE%AE%E4%BB%A4%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%AE%89">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-24/%E4%BF%84%E7%BD%97%E6%96%AF%E8%BE%BE%E5%90%89%E6%96%AF%E5%9D%A6%E6%9E%AA%E5%87%BB%E4%BA%8B%E4%BB%B6%E9%80%A0%E6%88%9020%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

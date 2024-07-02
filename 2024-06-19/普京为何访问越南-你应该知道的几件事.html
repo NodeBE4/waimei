@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>普京为何访问越南，你应该知道的几件事 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+普京为何访问越南，你应该知道的几件事
+——
+" />
+    <meta property="og:description" content="
+普京为何访问越南，你应该知道的几件事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="普京为何访问越南，你应该知道的几件事" />
+    <meta property="twitter:title" content="普京为何访问越南，你应该知道的几件事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240620%2Fputin-russia-vietnam-visit%2F%3Futm_source%3DRSS&t=%E6%99%AE%E4%BA%AC%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AE%E8%B6%8A%E5%8D%97%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E4%BB%B6%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240620%2Fputin-russia-vietnam-visit%2F%3Futm_source%3DRSS&t=%E6%99%AE%E4%BA%AC%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AE%E8%B6%8A%E5%8D%97%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E4%BB%B6%E4%BA%8B&d=2024-06-19&e=
+普京为何访问越南，你应该知道的几件事
+——
+
+
+  
+    
+俄罗斯总统普京在访问东南亚国家越南期间，希望巩固俄罗斯与越南的关系。 Pool photo by Natalia Kolesnikova
+    
+  
+  
+    
+      
+        俄罗斯总统普京结束了对盟友朝鲜的国事访问，前去拜访另一个盟友越南。他于当地时间周四凌晨抵达，希望在乌克兰旷日持久的战争期间，加强与该地区关键伙伴的关系。
+      
+      
+        普京在乌克兰的战争让他被西方孤立，而他对战争弹药的需求，让他与朝鲜及其领导人金正恩走得更近。两国领导人因历史上共同的对手美国而建立了深厚的联系，并于周三恢复了两国在冷战时期的共同防御承诺。
+      
+      
+        据俄罗斯官方媒体报道，普京已抵达河内。相比之下，在越南，他将会见最近与华盛顿建立了更紧密关系的官..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240620%2Fputin-russia-vietnam-visit%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS&text=普京为何访问越南，你应该知道的几件事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS&title=普京为何访问越南，你应该知道的几件事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS&title=普京为何访问越南，你应该知道的几件事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=普京为何访问越南，你应该知道的几件事&body=
+普京为何访问越南，你应该知道的几件事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS&title=普京为何访问越南，你应该知道的几件事&caption=
+普京为何访问越南，你应该知道的几件事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=普京为何访问越南，你应该知道的几件事&url=https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>普京为何访问越南，你应该知道的几件事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240620%2Fputin-russia-vietnam-visit%2F%3Futm_source%3DRSS&t=%E6%99%AE%E4%BA%AC%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AE%E8%B6%8A%E5%8D%97%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E5%87%A0%E4%BB%B6%E4%BA%8B&d=2024-06-19&e=
+普京为何访问越南，你应该知道的几件事
+——
+
+
+  
+    
+俄罗斯总统普京在访问东南亚国家越南期间，希望巩固俄罗斯与越南的关系。 Pool photo by Natalia Kolesnikova
+    
+  
+  
+    
+      
+        俄罗斯总统普京结束了对盟友朝鲜的国事访问，前去拜访另一个盟友越南。他于当地时间周四凌晨抵达，希望在乌克兰旷日持久的战争期间，加强与该地区关键伙伴的关系。
+      
+      
+        普京在乌克兰的战争让他被西方孤立，而他对战争弹药的需求，让他与朝鲜及其领导人金正恩走得更近。两国领导人因历史上共同的对手美国而建立了深厚的联系，并于周三恢复了两国在冷战时期的共同防御承诺。
+      
+      
+        据俄罗斯官方媒体报道，普京已抵达河内。相比之下，在越南，他将会见最近与华盛顿建立了更紧密关系的官..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240620%2Fputin-russia-vietnam-visit%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1718822152000-->
+<p><a href="https://cn.nytimes.com/world/20240620/putin-russia-vietnam-visit/?utm_source=RSS">普京为何访问越南，你应该知道的几件事</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-01-hpvw/19putin-vietnam-explainer-01-hpvw-master1050.jpg" width="1050" height="700" alt="俄罗斯总统普京在访问东南亚国家越南期间，希望巩固俄罗斯与越南的关系。" referrerpolicy="no-referrer" />    <figcaption>
+<span>俄罗斯总统普京在访问东南亚国家越南期间，希望巩固俄罗斯与越南的关系。</span> <cite>Pool photo by Natalia Kolesnikova</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>俄罗斯总统普京结束了对盟友朝鲜的国事访问，前去拜访另一个盟友越南。他于当地时间周四凌晨抵达，希望在乌克兰旷日持久的战争期间，加强与该地区关键伙伴的关系。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>普京在乌克兰的战争让他被西方孤立，而他对战争弹药的需求，让他与朝鲜及其领导人金正恩走得更近。两国领导人因历史上共同的对手美国而建立了深厚的联系，并于周三<a href="https://www.nytimes.com/2024/06/19/world/asia/putin-meets-kim-north-korea.html">恢复了两国在冷战时期的共同防御承诺</a>。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>据俄罗斯官方媒体报道，普京已抵达河内。相比之下，在越南，他将会见最近与华盛顿建立了更紧密关系的官员。但莫斯科长期以来一直是越南主要的武器供应来源，普京也希望保持这一地位。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这是普京第五次访问越南。去年，<a href="https://www.nytimes.com/2023/09/10/us/politics/biden-vietnam-hanoi.html">美国总统拜登</a>和<a href="https://cn.nytimes.com/china/20231212/china-vietnam-xi-jinping/">中国国家主席习近平</a>都曾访问越南，两位领导人都曾希望河内保证不会站在对方一边。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>对越南来说，普京此行将是巩固与俄罗斯关系的一个机会。俄罗斯是越南最重要的防务伙伴。尽管越南升级了与美国的关系，但它去年仍在寻找<a href="https://www.nytimes.com/2023/09/09/world/asia/vietnam-russia-arms-deal.html">秘密途径</a>购买俄罗斯的军事装备，这违反美国的制裁措施。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>华盛顿指责河内邀请俄罗斯领导人，称“任何国家都不应该给普京一个平台来宣传他的侵略战争，否则就会让他将自己的暴行正常化”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>本周，<a href="https://www.nytimes.com/2024/05/21/world/asia/vietnam-president-lam.html">越南新上任的国家主席</a>苏林对俄罗斯驻越大使说，河内“始终将俄罗斯视为越南外交政策中的优先合作伙伴之一”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-06-hpvw/19putin-vietnam-explainer-06-hpvw-master1050.jpg" alt="周二，工人在河内的列宁塑像前布置花盆。" data-src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-06-hpvw/19putin-vietnam-explainer-06-hpvw-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>周二，工人在河内的列宁塑像前布置花盆。</span> <cite>Nhac Nguyen/Agence France-Presse — Getty Images</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>关于莫斯科和河内之间的关系，需要知道的事情如下。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><strong>俄罗斯和越南之间有着深厚的军事关系。</strong></p>
+      </div>
+      <div class="article-paragraph">
+        <p>1950年，苏联是最早在外交上承认当时的越南民主共和国（即北越）的国家之一。几十年来，莫斯科成为越南最大的援助国，在河内与法国和美国作战时提供军事援助。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>防务关系支撑着这两个拥有共同共产主义意识形态的国家之间的许多联系。此次，普京与新任国防部长安德烈·别洛乌索夫一同抵达越南，凸显出安全问题是访问的核心。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>澳大利亚新南威尔士大学研究越南军事的阮世芳（音）表示，俄罗斯装备占越南国防武器库的60%至70%。俄罗斯向越南提供了海岸防御导弹系统、六艘基洛级潜艇、战斗机和许多的致命武器。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-03-hpvw/19putin-vietnam-explainer-03-hpvw-master1050.jpg" alt="2020 年，在俄罗斯阿拉比诺举行的峰会上，越南军事领导人参观俄罗斯T-90MS坦克。" data-src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-03-hpvw/19putin-vietnam-explainer-03-hpvw-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>2020 年，在俄罗斯阿拉比诺举行的峰会上，越南军事领导人参观俄罗斯T-90MS坦克。</span> <cite>Pavel Golovkin/Associated Press</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>阮世芳说，越南几乎所有的海军舰艇都来自俄罗斯。他还说，俄罗斯的T-90坦克是越南在2016年最后一次购买的俄罗斯武器，它构成了越南装甲部队的支柱。这意味着越南在未来几年仍将依赖俄罗斯。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><strong>越南从俄罗斯以外寻求武器。</strong></p>
+      </div>
+      <div class="article-paragraph">
+        <p>但西方对莫斯科实施的制裁，令河内担心俄罗斯是否依然是可靠的供应国，并使越南在与西方接触的同时继续与俄罗斯打交道变得越来越尴尬。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>许多越南领导人也很清楚俄罗斯军队在乌克兰的困境——有视频显示，T-90坦克被乌克兰使用的无人机炸毁。他们也意识到，俄罗斯与中国的关系正在加深。由于中越在南海存在长期领土争端，他们将中俄关系视为一种威胁。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>最近几个月，越南把目光转向韩国、日本和捷克共和国等国，作为武器的替代来源。它还试图建立自己的国防工业。它希望另一个苏联的前盟友印度能改造它的部分武器。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>美国一直在积极向越南提供更多武器，美国高级官员最近几个月访问了越南。但分析人士说，越南国防高层仍对华盛顿持怀疑态度。他们不愿意把自己的命运与一个军售必须经过国会批准的国家绑在一起，因为国会可能会把人权作为交易的条件。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><strong>俄罗斯和越南在石油业务方面建有合资企业。</strong></p>
+      </div>
+      <div class="article-paragraph">
+        <p>俄罗斯在越南利润丰厚的石油和天然气行业内拥有大量股份。由俄罗斯扎鲁别日石油公司和越南国家油气集团组建的合资企业越苏石油公司经营着越南最大的油田白虎油田。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>越苏石油公司的利润为俄罗斯和越南带来了数百万美元的收入。扎鲁别日石油公司和另一家俄罗斯国有能源公司俄罗斯天然气工业股份公司也参与了越南的石油勘探项目。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-04-hpvw/19putin-vietnam-explainer-04-hpvw-master1050.jpg" alt="越南国家油气集团位于越南头顿的油罐。越南国家油气集团与俄罗斯一家国有能源公司的合资企业为两国各自带来了数以百万计美元的收益。" data-src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-04-hpvw/19putin-vietnam-explainer-04-hpvw-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>越南国家油气集团位于越南头顿的油罐。越南国家油气集团与俄罗斯一家国有能源公司的合资企业为两国各自带来了数以百万计美元的收益。</span> <cite>Maxim Shemetov/Reuters</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>对莫斯科来说，这些项目正值欧盟实施制裁之后，俄罗斯对欧洲的石油和天然气出口<a href="https://www.nytimes.com/2023/04/27/business/energy-environment/russias-gas-exports-2023.html">大幅下降</a>之际。但这些项目引起了北京的不满，因为它们位于中国声称属于其领土的水域。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在新冠病毒大流行之前，越南也深受俄罗斯游客的青睐。2019年，俄罗斯向越南输送的游客数量在所有国家中排名第六，仅次于美国。但在疫情期间，这一数字有所下降，2022年俄罗斯入侵乌克兰后，越南停止了两国直航，游客数量进一步下降。直航于今年恢复。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p><strong>普京受到越南高层欢迎。</strong></p>
+      </div>
+      <div class="article-paragraph">
+        <p>从20世纪50年代开始，数以千计的<a href="https://www.nytimes.com/2024/03/20/world/asia/vietnam-government-communism.html">越南共产党官员</a>、商界高官、医生、教师和士兵在苏联和俄罗斯接受培训。其中包括现任越共总书记阮富仲。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-05-hpvw/19putin-vietnam-explainer-05-hpvw-master1050.jpg" alt="越南河内一家出售俄罗斯纪念品的商店里摆放着越南共产党领导人阮富仲与普京握手的照片。" data-src="https://static01.nyt.com/images/2024/06/19/multimedia/19putin-vietnam-explainer-05-hpvw/19putin-vietnam-explainer-05-hpvw-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>越南河内一家出售俄罗斯纪念品的商店里摆放着越南共产党领导人阮富仲与普京握手的照片。</span> <cite>Luong Thai Linh/EPA, via Shutterstock</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>但有些人认为，苏联最后一任领导人戈尔巴乔夫和俄罗斯首任总统叶利钦忽视了这种深厚的关系。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“越南人认为戈尔巴乔夫在上世纪80年代为改善与中国的关系而抛弃了越南；在整个90年代，叶利钦几乎没有关注过越南，”新加坡尤索夫伊萨东南亚研究所高级研究员伊恩·斯托里表示。“2000年普京上台后很给越南面子。所以越南人对此很感激。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>他还说，越南领导人喜欢普京，因为“他让越俄关系回到了正轨”。</p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/sui-lee-wee">黄瑞黎(Sui-Lee Wee)</a>是《纽约时报》东南亚分社社长，领导对该地区11个国家的报道。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/sui-lee-wee">点击此处查看更多关于她的信息。</a></p>
+    <p>翻译：纽约时报中文网</p>
+    <div data-poster="" class="">
+      <div data-poster="" class="">
+<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/06/19/world/asia/putin-russia-vietnam-visit.html">点击查看本文英文版。</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-19/%E5%85%A8%E7%90%83%E8%87%AA%E7%94%B1%E8%B4%B8%E6%98%93%E6%98%AF%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E5%90%97">
+          全球自由贸易是一个错误吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-19/%E4%B9%98%E9%A3%9E%E6%9C%BA%E5%87%BA%E8%A1%8C%E8%BF%98%E5%AE%89%E5%85%A8%E5%90%97-%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E4%B8%93%E5%AE%B6%E4%B8%BA%E4%BD%A0%E8%A7%A3%E7%AD%94">
+          乘飞机出行还安全吗？航空安全专家为你解答
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-18</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-18/%E4%B8%AD%E5%9B%BD%E5%8D%97%E6%96%B9%E6%9A%B4%E9%9B%A8%E5%BC%95%E5%8F%91%E6%B4%AA%E7%81%BE-%E8%87%B3%E5%B0%91%E4%B9%9D%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+          中国南方暴雨引发洪灾，至少九人死亡
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-18</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-18/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%B6%85%E8%B6%8A%E5%BE%AE%E8%BD%AF-%E6%88%90%E4%B8%BA%E5%85%A8%E7%90%83%E5%B8%82%E5%80%BC%E6%9C%80%E9%AB%98%E5%85%AC%E5%8F%B8">
+          英伟达超越微软，成为全球市值最高公司
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-19/%E8%8B%B1%E5%A4%A7%E9%81%B8%E6%B0%91%E8%AA%BF-%E8%98%87%E7%B4%8D%E5%85%8B%E6%81%90%E4%B8%9F%E8%AD%B0%E5%93%A1%E5%B8%AD%E4%BD%8D-%E5%89%B5%E5%9C%A8%E4%BD%8D%E9%A6%96%E7%9B%B8%E9%A6%96%E4%BE%8B">
+            前一篇：英大選民調：蘇納克恐丟議員席位 創在位首相首例
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-19/%E8%A3%B4%E6%B4%9B%E8%A5%BF%E8%B5%B4%E5%8D%B0%E5%BA%A6%E6%9C%83%E9%81%94%E8%B3%B4%E5%96%87%E5%98%9B-%E6%89%B9%E4%B8%AD%E5%9C%8B%E8%A9%A6%E5%9C%96%E6%B6%88%E6%BB%85%E8%A5%BF%E8%97%8F%E6%96%87%E5%8C%96">
+            后一篇：裴洛西赴印度會達賴喇嘛 批中國試圖消滅西藏文化
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-19/%E8%8B%B1%E5%A4%A7%E9%81%B8%E6%B0%91%E8%AA%BF-%E8%98%87%E7%B4%8D%E5%85%8B%E6%81%90%E4%B8%9F%E8%AD%B0%E5%93%A1%E5%B8%AD%E4%BD%8D-%E5%89%B5%E5%9C%A8%E4%BD%8D%E9%A6%96%E7%9B%B8%E9%A6%96%E4%BE%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-19/%E8%A3%B4%E6%B4%9B%E8%A5%BF%E8%B5%B4%E5%8D%B0%E5%BA%A6%E6%9C%83%E9%81%94%E8%B3%B4%E5%96%87%E5%98%9B-%E6%89%B9%E4%B8%AD%E5%9C%8B%E8%A9%A6%E5%9C%96%E6%B6%88%E6%BB%85%E8%A5%BF%E8%97%8F%E6%96%87%E5%8C%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-19/%E4%B9%98%E9%A3%9E%E6%9C%BA%E5%87%BA%E8%A1%8C%E8%BF%98%E5%AE%89%E5%85%A8%E5%90%97-%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E4%B8%93%E5%AE%B6%E4%B8%BA%E4%BD%A0%E8%A7%A3%E7%AD%94'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-18/%E4%B8%AD%E5%9B%BD%E5%8D%97%E6%96%B9%E6%9A%B4%E9%9B%A8%E5%BC%95%E5%8F%91%E6%B4%AA%E7%81%BE-%E8%87%B3%E5%B0%91%E4%B9%9D%E4%BA%BA%E6%AD%BB%E4%BA%A1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-19/%E8%8B%B1%E5%A4%A7%E9%81%B8%E6%B0%91%E8%AA%BF-%E8%98%87%E7%B4%8D%E5%85%8B%E6%81%90%E4%B8%9F%E8%AD%B0%E5%93%A1%E5%B8%AD%E4%BD%8D-%E5%89%B5%E5%9C%A8%E4%BD%8D%E9%A6%96%E7%9B%B8%E9%A6%96%E4%BE%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-19/%E8%A3%B4%E6%B4%9B%E8%A5%BF%E8%B5%B4%E5%8D%B0%E5%BA%A6%E6%9C%83%E9%81%94%E8%B3%B4%E5%96%87%E5%98%9B-%E6%89%B9%E4%B8%AD%E5%9C%8B%E8%A9%A6%E5%9C%96%E6%B6%88%E6%BB%85%E8%A5%BF%E8%97%8F%E6%96%87%E5%8C%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-19/%E4%B9%98%E9%A3%9E%E6%9C%BA%E5%87%BA%E8%A1%8C%E8%BF%98%E5%AE%89%E5%85%A8%E5%90%97-%E8%88%AA%E7%A9%BA%E5%AE%89%E5%85%A8%E4%B8%93%E5%AE%B6%E4%B8%BA%E4%BD%A0%E8%A7%A3%E7%AD%94">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-18/%E4%B8%AD%E5%9B%BD%E5%8D%97%E6%96%B9%E6%9A%B4%E9%9B%A8%E5%BC%95%E5%8F%91%E6%B4%AA%E7%81%BE-%E8%87%B3%E5%B0%91%E4%B9%9D%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

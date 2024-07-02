@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+" />
+    <meta property="og:description" content="
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？" />
+    <meta property="twitter:title" content="小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709351.html&t=%E5%B0%8F%E5%B0%8F%E5%A3%B0%E8%AF%B4%E8%AF%9D%EF%BD%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E5%AF%B9%E5%8D%8E%E5%8C%97%E6%9A%B4%E9%9B%A8%E6%B4%AA%E6%B0%B4%E7%9A%84%E6%8A%A5%E9%81%93%E5%BE%88%E5%B0%91%E6%8F%90%E5%8F%8A%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709351.html&t=%E5%B0%8F%E5%B0%8F%E5%A3%B0%E8%AF%B4%E8%AF%9D%EF%BD%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E5%AF%B9%E5%8D%8E%E5%8C%97%E6%9A%B4%E9%9B%A8%E6%B4%AA%E6%B0%B4%E7%9A%84%E6%8A%A5%E9%81%93%E5%BE%88%E5%B0%91%E6%8F%90%E5%8F%8A%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%EF%BC%9F&d=2024-07-01&e=
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+
+
+  我的小号又开张啦，谢谢你没有取关。
+  上周我在休假。在遥远的泰国某海岛上，我收到了华北平原普降特大暴雨的消息。这场我的思绪又回到了两年前河南郑州的那场极端降雨事件。这场巨大的悲剧夺取近400个生命，也将我引至气候变化报道的领域。
+  泰国酒店的小哥对我说，连他都察觉到这些年来天气有些不太对劲。前几年普吉岛经常会下暴雨，有的时候只要连续下半个小时的雨，临近海边的地区就会积水泛滥成灾。而今年，时值雨季当地却很少下雨，非常干旱。
+  “你知道吗？这是因为全球变暖导致海平面上升，暴雨更容易引发海水侵入。”小哥一脸严肃的对我说。
+  这让我为自己的家乡——位于海边、海拔仅有4.5米、有着2500万人口的上海而担心。热带风暴（台风）主要会给人类社会带来三种危害：大风、大雨和咸水风暴潮，相较华北这次遇到的特大暴雨，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709351.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/709351.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/709351.html&text=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/709351.html&title=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/709351.html&title=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？&body=
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/709351.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/709351.html&title=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？&caption=
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？&url=https://chinadigitaltimes.net/chinese/709351.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-07-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/709351.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709351.html&t=%E5%B0%8F%E5%B0%8F%E5%A3%B0%E8%AF%B4%E8%AF%9D%EF%BD%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%AD%E5%9B%BD%E5%AA%92%E4%BD%93%E5%AF%B9%E5%8D%8E%E5%8C%97%E6%9A%B4%E9%9B%A8%E6%B4%AA%E6%B0%B4%E7%9A%84%E6%8A%A5%E9%81%93%E5%BE%88%E5%B0%91%E6%8F%90%E5%8F%8A%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%EF%BC%9F&d=2024-07-01&e=
+小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？
+——
+
+
+  我的小号又开张啦，谢谢你没有取关。
+  上周我在休假。在遥远的泰国某海岛上，我收到了华北平原普降特大暴雨的消息。这场我的思绪又回到了两年前河南郑州的那场极端降雨事件。这场巨大的悲剧夺取近400个生命，也将我引至气候变化报道的领域。
+  泰国酒店的小哥对我说，连他都察觉到这些年来天气有些不太对劲。前几年普吉岛经常会下暴雨，有的时候只要连续下半个小时的雨，临近海边的地区就会积水泛滥成灾。而今年，时值雨季当地却很少下雨，非常干旱。
+  “你知道吗？这是因为全球变暖导致海平面上升，暴雨更容易引发海水侵入。”小哥一脸严肃的对我说。
+  这让我为自己的家乡——位于海边、海拔仅有4.5米、有着2500万人口的上海而担心。热带风暴（台风）主要会给人类社会带来三种危害：大风、大雨和咸水风暴潮，相较华北这次遇到的特大暴雨，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709351.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719827610000-->
+<p><a href="https://chinadigitaltimes.net/chinese/709351.html">小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/709351.html" title="小小声说话｜为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1719826586806-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>我的小号又开张啦，谢谢你没有取关。</p>
+  <p>上周我在休假。在遥远的泰国某海岛上，我收到了华北平原普降特大暴雨的消息。这场我的思绪又回到了两年前河南郑州的那场极端降雨事件。这场巨大的悲剧夺取近400个生命，也将我引至气候变化报道的领域。</p>
+  <p>泰国酒店的小哥对我说，连他都察觉到这些年来天气有些不太对劲。前几年普吉岛经常会下暴雨，有的时候只要连续下半个小时的雨，临近海边的地区就会积水泛滥成灾。而今年，时值雨季当地却很少下雨，非常干旱。</p>
+  <p>“你知道吗？这是因为全球变暖导致海平面上升，暴雨更容易引发海水侵入。”小哥一脸严肃的对我说。</p>
+  <p>这让我为自己的家乡——位于海边、海拔仅有4.5米、有着2500万人口的上海而担心。热带风暴（台风）主要会给人类社会带来三种危害：大风、大雨和咸水风暴潮，相较华北这次遇到的特大暴雨，更具致命性和破坏性的威胁是风暴潮（风暴引起的海平面异常上升）。而全球变暖导致的海平面上升正使得风暴潮变得更加危险。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>为什么中国媒体对华北暴雨洪水的报道很少提及气候变化？<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/小小声说话" target="_blank">短鼻子的匹诺曹</a><br /><strong>发表日期：</strong>2024.7.1<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/JNHMlKzhwZUUO_nJ3pa71g" target="_blank">微信公众号“小小声说话”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/环境保护" target="_blank">环境保护</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/全球变暖" target="_blank">全球变暖</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/2021年7月中国河南水灾" target="_blank">2021年7月中国河南水灾</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>同一天，我在北京的一位好友给我发来一条短信。问了我一个问题：为什么目前中国媒体对极端天气事件的报道还是比较少与气候变化联系到一起？为什么媒体在播报某一区域24小时降水达到两年降水量的同时不去追问成因？这一现象背后的原因是社会的、文化的、政治的、还是其他？</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1719826586806.png" alt="file" /></p>
+  <p>一、</p>
+  <p>我要解释一下这位朋友的问题，他并不是说中国媒体或者官方没有解释为何这样的“天灾”会发生？——中央气象台的专家们都在解释双台风和副高压还有华北地形等导致此次极端降水的直接气象和自然因素。他的意思是，为什么在过去几年几乎每一年都发生重大的极端天气气候灾害事件后，中国媒体还是很少提及气候变化这个在外媒报道和科学研究中被反复提及的导致“天灾”越来越极端和频繁的重要推手？</p>
+  <p>我认真地想了想，觉得可能有以下这些因素。</p>
+  <p>首先，是因为这场灾难涉及的面是如此的广，发生的事情是如此的多。大多数媒体在报道的第一切入点大多会选择从社会新闻的角度，人物报道的角度来做。第一时间肯定更多的是关注灾情本身、救灾、影响等方面。既容易吸引流量关注，也是媒体比较熟悉的操作。</p>
+  <p>但是灾害发生迄今已经一个多星期了，对于这场极端事件原因的深入分析和认知、反思不是完全没有，仍然比较少。这的确值得思考。不能否认的是大多数中国媒体都没有提到气候变化这个关键词。这可能和大多数中国媒体人对气候变化依旧比较陌生有关。大多数记者还是没有意识到将极端天气事件与气候变化从科学上关联起来。而这在国外的新闻媒体报道当中，早已是主流的做法。</p>
+  <p>简而言之，中国媒体工作者普遍缺少对气候变化的认知，或许只是中国公众缺乏认识的一个缩影。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1719826602657.png" alt="file" /></p>
+  <p>二、</p>
+  <p>让朋友感到困惑的是：现在的极端天气事件这么多，对中国影响也越来越大，不管是城市还是农村，不管是中国还是全球。同时中国媒体本身对极端天气事件的烈度、影响、相关数据的报道本身都是非常及时和全面的。</p>
+  <p>在这样一个大背景下边，为什么没有很多人去追问那个非常自然的问题——为什么会这么极端？怎么会出现这样的情况？原因是什么？</p>
+  <p>的确，我自己就是在两年前的郑州洪水报道中被这个问题所击中。采访对象提及的一个让我难忘的细节是——在河南救灾的整个过程中，所有人包括她自己，没有一个人问过——为什么会下这么大的雨？为什么会发生这样的灾难。</p>
+  <p>有一些人试图对这种媒体“沉默”提出一些解释，但是从目前来说中文媒体对于极端天气事件方面的报道来看，气候变化应该还不是什么禁区。所以这个问题的答案或许还包括其他原因。（欢迎留言）但与此同时，这位朋友 进一步提出了另外一个问题。</p>
+  <p>尽管气候变化的影响已经无处不在，这几年也已经深深触及了中国广大的人口，但是中国官方话语体系里对这些事情的反馈仍不大。不是说完全没有变化，而是相比较气候变化对中国的影响，相应的反应就显得比较过时或者不够充足了。</p>
+  <p>由此相引发的一个问题是，如果在不远的将来，中国官方的表述出现了变化，不知道是什么样的场景，会不会撬动中国媒体的报道？把极端天气事件和气候变化终于联系起来。那么中国的气候报道空间、篇幅数量等也会显著增加？</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1719827144375.png" alt="file" /></p>
+  <p>三、</p>
+  <p>说实话，我也不知道答案，但是我也希望会是这样的情境。因为今天的情况就是我们所有人都绑在“气候赌盘”上面，谁也不知道下一个骰子会轮到谁。</p>
+  <p>联合国IPCC的报告已经发布到了第六份，连续30多年来全世界几乎所有国家政府都在报告上签字表示认同。其中也包括我国政府。然而对于气候变化的真实存在并且是由人为活动造成的，这些在全球科学界和政府已经几乎完全达成了共识的问题上面，国内民众中其实还远远没有达到同样的认识度，甚至大多数人是不了解的。</p>
+  <p>在这个过程当中，媒体当然有自己应尽而未尽到的职责。如果像这位朋友所说的，未来有更大的空间可以来报道气候变化。我们最需要首先改变的，是媒体人对气候变化的正确认识。</p>
+  <p>高温暴雨洪水干旱、这些极端事件的极端性将会不断增强，越来越频繁的发生。我们所要问的问题不是气候变化是否造成了某一个具体的事件发生？因为由于天气事件的复杂性和目前的科研水平所限，现阶段没有一个科学家能够给出一个直接的答案。</p>
+  <p>我们可以问的正确的问题是：气候变化如何加剧了这些事件的发生？使得这些极端事件变得越来越极端，发生的越来越频繁？今天我们急需更新的认识，就是在气候变化影响下，我们即将经历越来越多更极端的天气事件。这并不是危言耸听。只有我们的认知先发生了转变，我们才有可能真正去采取行动来应对。</p>
+  <p>从这个角度来说，我们亟需重新认识“天灾”。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-01/%E5%B8%B8%E8%AF%86%E6%B5%81%E9%80%9A%E5%A4%84-%E5%AE%A1%E8%AE%A1%E7%BD%B2-66%E4%B8%AA%E5%8E%BF%E6%8C%AA%E7%94%A8%E5%AD%A6%E7%94%9F%E8%90%A5%E5%85%BB%E9%A4%90%E8%A1%A5%E5%8A%A9%E5%81%BF%E8%BF%98%E5%9C%B0%E6%96%B9%E5%80%BA">
+          常识流通处｜审计署：66个县挪用学生营养餐补助偿还地方债
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-01/%E5%87%A4%E5%87%B0%E7%BD%91-%E6%88%91%E4%BB%AC%E6%89%80%E8%AE%A4%E8%AF%86%E7%9A%84%E8%83%A1%E5%8F%8B%E5%B9%B3">
+          凤凰网｜我们所认识的胡友平
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-01/%E4%BA%AE%E8%A7%81-%E8%80%81%E8%99%8E%E7%9A%84%E5%B1%81%E8%82%A1%E6%91%B8%E4%B8%8D%E5%BE%97">
+          亮见｜老虎的屁股摸不得
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-01/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%A6%BB%E5%BC%80%E5%A4%A9%E9%80%9A%E8%8B%91">
+          真实故事计划｜年轻人离开天通苑
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-01/%E5%A5%A5%E5%B0%94%E7%8F%AD%E5%AE%A3%E5%B8%83%E5%9C%A8%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E7%BB%84%E5%BB%BA-%E6%AC%A7%E6%B4%B2%E7%88%B1%E5%9B%BD%E8%80%85-%E6%96%B0%E8%81%94%E7%9B%9F-%E5%8F%B3%E7%BF%BC%E7%89%88%E5%9B%BE%E9%87%8D%E7%BB%84">
+            前一篇：奥尔班宣布在欧洲议会组建“欧洲爱国者”新联盟  右翼版图重组
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-01/%E5%A4%A7%E9%99%86%E6%B8%B8%E5%AE%A2%E6%B6%88%E8%B4%B9%E8%B0%A8%E6%85%8E-%E6%BE%B3%E9%97%A86%E6%9C%88%E5%8D%9A%E5%BD%A9%E6%94%B6%E5%85%A5%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF%E4%B8%8B%E9%99%8D">
+            后一篇：大陆游客消费谨慎 澳门6月博彩收入同比增长下降
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-07-01/%E5%A5%A5%E5%B0%94%E7%8F%AD%E5%AE%A3%E5%B8%83%E5%9C%A8%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E7%BB%84%E5%BB%BA-%E6%AC%A7%E6%B4%B2%E7%88%B1%E5%9B%BD%E8%80%85-%E6%96%B0%E8%81%94%E7%9B%9F-%E5%8F%B3%E7%BF%BC%E7%89%88%E5%9B%BE%E9%87%8D%E7%BB%84'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-07-01/%E5%A4%A7%E9%99%86%E6%B8%B8%E5%AE%A2%E6%B6%88%E8%B4%B9%E8%B0%A8%E6%85%8E-%E6%BE%B3%E9%97%A86%E6%9C%88%E5%8D%9A%E5%BD%A9%E6%94%B6%E5%85%A5%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF%E4%B8%8B%E9%99%8D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-07-01/%E5%87%A4%E5%87%B0%E7%BD%91-%E6%88%91%E4%BB%AC%E6%89%80%E8%AE%A4%E8%AF%86%E7%9A%84%E8%83%A1%E5%8F%8B%E5%B9%B3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-07-01/%E4%BA%AE%E8%A7%81-%E8%80%81%E8%99%8E%E7%9A%84%E5%B1%81%E8%82%A1%E6%91%B8%E4%B8%8D%E5%BE%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-07-01/%E5%A5%A5%E5%B0%94%E7%8F%AD%E5%AE%A3%E5%B8%83%E5%9C%A8%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E7%BB%84%E5%BB%BA-%E6%AC%A7%E6%B4%B2%E7%88%B1%E5%9B%BD%E8%80%85-%E6%96%B0%E8%81%94%E7%9B%9F-%E5%8F%B3%E7%BF%BC%E7%89%88%E5%9B%BE%E9%87%8D%E7%BB%84">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-07-01/%E5%A4%A7%E9%99%86%E6%B8%B8%E5%AE%A2%E6%B6%88%E8%B4%B9%E8%B0%A8%E6%85%8E-%E6%BE%B3%E9%97%A86%E6%9C%88%E5%8D%9A%E5%BD%A9%E6%94%B6%E5%85%A5%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF%E4%B8%8B%E9%99%8D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-07-01/%E5%87%A4%E5%87%B0%E7%BD%91-%E6%88%91%E4%BB%AC%E6%89%80%E8%AE%A4%E8%AF%86%E7%9A%84%E8%83%A1%E5%8F%8B%E5%B9%B3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-07-01/%E4%BA%AE%E8%A7%81-%E8%80%81%E8%99%8E%E7%9A%84%E5%B1%81%E8%82%A1%E6%91%B8%E4%B8%8D%E5%BE%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

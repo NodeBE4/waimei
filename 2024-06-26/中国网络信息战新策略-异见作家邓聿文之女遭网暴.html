@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国网络信息战新策略：异见作家邓聿文之女遭网暴 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+" />
+    <meta property="og:description" content="
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国网络信息战新策略：异见作家邓聿文之女遭网暴" />
+    <meta property="twitter:title" content="中国网络信息战新策略：异见作家邓聿文之女遭网暴" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240627%2Fchina-disinformation-critics-harassment%2F%3Futm_source%3DRSS&t=%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%88%98%E6%96%B0%E7%AD%96%E7%95%A5%EF%BC%9A%E5%BC%82%E8%A7%81%E4%BD%9C%E5%AE%B6%E9%82%93%E8%81%BF%E6%96%87%E4%B9%8B%E5%A5%B3%E9%81%AD%E7%BD%91%E6%9A%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240627%2Fchina-disinformation-critics-harassment%2F%3Futm_source%3DRSS&t=%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%88%98%E6%96%B0%E7%AD%96%E7%95%A5%EF%BC%9A%E5%BC%82%E8%A7%81%E4%BD%9C%E5%AE%B6%E9%82%93%E8%81%BF%E6%96%87%E4%B9%8B%E5%A5%B3%E9%81%AD%E7%BD%91%E6%9A%B4&d=2024-06-26&e=
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+
+
+  
+    
+ Bing Guan for The New York Times
+    
+  
+  
+    
+      
+        生活在费城郊区的著名中国流亡作家邓聿文经常批评中国及其专制领导人习近平。中国近来的回应十分严厉，在网上对他进行了粗暴和恶意的攻击。
+      
+      
+        据克莱姆森大学和拥有Facebook与Instagram的Meta公司的研究人员称，通过充满性暗示和威胁的帖子，一个与中国安全部门有关联的秘密宣传网络在流行的社交媒体平台不仅对邓聿文，而且还对他十几岁的女儿进行了猛烈攻击。
+      
+      
+        这些内容是由假冒身份的用户发布的，出现在邓聿文发在社交平台X的帖子下的回复中，也出现在对他所在社区的公立学校账号的评论中，邓聿文16岁的女儿在这..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240627%2Fchina-disinformation-critics-harassment%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS&text=中国网络信息战新策略：异见作家邓聿文之女遭网暴&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS&title=中国网络信息战新策略：异见作家邓聿文之女遭网暴" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS&title=中国网络信息战新策略：异见作家邓聿文之女遭网暴" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国网络信息战新策略：异见作家邓聿文之女遭网暴&body=
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS&title=中国网络信息战新策略：异见作家邓聿文之女遭网暴&caption=
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国网络信息战新策略：异见作家邓聿文之女遭网暴&url=https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国网络信息战新策略：异见作家邓聿文之女遭网暴</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240627%2Fchina-disinformation-critics-harassment%2F%3Futm_source%3DRSS&t=%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%88%98%E6%96%B0%E7%AD%96%E7%95%A5%EF%BC%9A%E5%BC%82%E8%A7%81%E4%BD%9C%E5%AE%B6%E9%82%93%E8%81%BF%E6%96%87%E4%B9%8B%E5%A5%B3%E9%81%AD%E7%BD%91%E6%9A%B4&d=2024-06-26&e=
+中国网络信息战新策略：异见作家邓聿文之女遭网暴
+——
+
+
+  
+    
+ Bing Guan for The New York Times
+    
+  
+  
+    
+      
+        生活在费城郊区的著名中国流亡作家邓聿文经常批评中国及其专制领导人习近平。中国近来的回应十分严厉，在网上对他进行了粗暴和恶意的攻击。
+      
+      
+        据克莱姆森大学和拥有Facebook与Instagram的Meta公司的研究人员称，通过充满性暗示和威胁的帖子，一个与中国安全部门有关联的秘密宣传网络在流行的社交媒体平台不仅对邓聿文，而且还对他十几岁的女儿进行了猛烈攻击。
+      
+      
+        这些内容是由假冒身份的用户发布的，出现在邓聿文发在社交平台X的帖子下的回复中，也出现在对他所在社区的公立学校账号的评论中，邓聿文16岁的女儿在这..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240627%2Fchina-disinformation-critics-harassment%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719433673000-->
+<p><a href="https://cn.nytimes.com/china/20240627/china-disinformation-critics-harassment/?utm_source=RSS">中国网络信息战新策略：异见作家邓聿文之女遭网暴</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/06/26/multimedia/26china-disinfo-harassment-02-zwpg/26china-disinfo-harassment-02-zwpg-master1050.jpg" width="1050" height="700" alt="" referrerpolicy="no-referrer" />    <figcaption>
+<span></span> <cite>Bing Guan for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>生活在费城郊区的著名中国流亡作家邓聿文经常批评中国及其专制领导人习近平。中国近来的回应十分严厉，在网上对他进行了粗暴和恶意的攻击。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>据克莱姆森大学和拥有Facebook与Instagram的Meta公司的研究人员称，通过充满性暗示和威胁的帖子，一个与中国安全部门有关联的秘密宣传网络在流行的社交媒体平台不仅对邓聿文，而且还对他十几岁的女儿进行了猛烈攻击。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这些内容是由假冒身份的用户发布的，出现在邓聿文发在社交平台X的帖子下的回复中，也出现在对他所在社区的公立学校账号的评论中，邓聿文16岁的女儿在这些评论中被诬陷为吸毒者、纵火犯和妓女。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“没法屏蔽，”邓聿文在采访中用普通话谈到网上的攻击时说，“因为你今天屏蔽它，明天它就换一个马甲，又上来了。”</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>据研究人员称，针对这名女孩的粗俗评论还出现在Facebook的社区页面上，甚至出现在TripAdvisor、社区新闻平台Patch和帮助家长选择学校的Niche等网站上。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这种骚扰符合一个已经引起华盛顿、加拿大和其他国家警觉的网络恐吓模式，中国在这些国家的攻击越来越明目张胆。这些攻击活动包含数千个帖子，研究人员将它们与被称为“水军伪装”(Spamouflage)或“龙桥”(Dragonbridge)的社交媒体账号网络连接起来，中国庞大的宣传机构是该网络的组织者。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>克莱姆森大学媒体取证中心的创始人达伦·林维尔表示，中国长期以来一直试图<a href="https://cn.nytimes.com/usa/20220317/china-target-congress-campaign/">诋毁</a>批评人士，但把一名在美国的青少年当做目标是一种升级，该中心的研究人员记录了针对邓聿文的攻击。联邦法律禁止严重的网络骚扰或威胁，但这似乎无法阻止中国的行动。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>“毫无疑问，这越过了他们以前未曾越过的界线，”林维尔说。“我认为，这表明界线已经变得毫无意义。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>中国宣传机构还在更大范围内<a href="https://cn.nytimes.com/world/20240402/china-online-disinformation-us-election/">加强了对美国的攻击</a>，包括在11月总统大选前竭力诋毁拜登总统。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>联邦调查局局长克里斯托弗·雷4月在华盛顿举行的美国律师协会会议上表示：“甚至在中国境外，包括在美国，他们正在输出镇压和侵犯人权的行为——针对、威胁和骚扰那些敢于质疑其合法性或权威的人。”</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>他说，中国正在施加“巨大的、近乎黑手党式的压力”，试图让目前合法居住在美国的异见者保持沉默，包括在网上和现实生活中开展行动，比如在他们的住所附近张贴传单。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国驻华盛顿大使馆发言人刘鹏宇在声明中说，他不知道邓聿文的事情，也不发表评论。他还说，政府国务院去年在中国发布了保护青少年上网安全的规定。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>Meta在一份声明中表示，作为监控“水军伪装”活动的一部分，它已经删除了针对邓聿文一家的Facebook账号。声明说，这一活动在Facebook上没有引起太大关注。Patch和Niche表示，他们也因违反了使用标准而删除了这些账号。X和TripAdvisor没有回应置评请求。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>林维尔在克莱姆森大学的团队称，并非所有针对邓聿文一家的帖子都被删除了。新的帖子还会不断出现，甚至被删除的帖子的痕迹也会在网上存留数年。例如，在谷歌上搜索邓聿文和他的女儿时，“水军伪装”的攻击仍然会出现。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>来自中国的攻击一直是美国政府和执法官员面临的挑战。去年，美国司法部起诉了34名为中国国家安全部工作的官员，指控他们骚扰像邓聿文这样的美国居民，但这些官员生活在中国，可能还会继续在中国工作，不在美国执法部门的管辖范围之内。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>一些人呼吁采取更积极的应对措施，其中包括密歇根州众议员、众议院中共问题特设委员会主席、共和党人约翰·穆勒纳尔。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>“我们需要教育执法人员和美国人民，为他们赋权，让他们了解中共的策略，”他在声明中说。“还要保护那些在我们国家寻求安全庇护的人。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“水军伪装”网络于2019年在香港大规模反北京抗议活动期间首次被发现。它在社交媒体或技术平台上创建不真实的账号，用垃圾邮件式的内容轰炸真实用户——因此研究人员给这个网络起了这个名字。虽然这些内容通常不会发展为病毒式传播，但对被攻击的人来说，蜂拥而至的攻击可能会带来困扰，甚至更糟。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>去年，Meta将该网络与中国的执法机构联系了起来，后者曾经把大部分注意力集中在国内，诋毁和恐吓共产党的批评者，比如<a href="https://cn.nytimes.com/china/20190814/hong-kong-protests-china/">香港的抗议者</a>。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>它在海外也变得越来越活跃，试图影响台湾、加拿大的政治辩论和选举。至少从2022年的中期选举开始，它还试图影响美国的政治辩论和选举。一名美国奥运花样滑冰选手和她的父亲成了美国司法部所称的北京下令进行的间谍活动的目标。这位父亲曾是来自中国的政治难民。在海外工作的<a rel="noopener noreferrer" target="_blank" href="https://www.rfa.org/english/news/china/harassment-03202023133743.html">华裔记者</a>，尤其是女性记者，也同样出现在虚假的卖淫广告中，并面临炸弹和强奸威胁。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>司法部对那些国家安全部官员的起诉书没有明确将他们与“水军伪装”网络联系起来，但根据非营利研究机构战略对话研究所最近的报告，这些活动与“水军伪装”的工作密切相关，似乎“极有可能”是同一项行动。该研究所还警告称，该网络越来越关注美国总统大选。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在邓聿文的案例中，和其他人一样，其目的似乎是压制批评。邓先生出生于中国东南部的新余，曾担任《学习时报》的助理编辑，《学习时报》是专门培养新晋官员的中共中央党校的一份周刊。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/26/multimedia/26china-disinfo-harassment-03-zwpg/26china-disinfo-harassment-03-zwpg-jumbo.jpg" alt="邓聿文撰写的文章发表在《当代中国评论》2023年秋季刊上。" data-src="https://static01.nyt.com/images/2024/06/26/multimedia/26china-disinfo-harassment-03-zwpg/26china-disinfo-harassment-03-zwpg-jumbo.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>邓聿文撰写的文章发表在《当代中国评论》2023年秋季刊上。</span> <cite>Bing Guan for The New York Times</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>他的评论有时会突破党的底线。2013年，他为《金融时报》撰写了一篇评论文章，呼吁中国放弃与朝鲜反复无常的威权领导人金正恩的战略关系，之后他被免职。他最终离开了中国。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>现年56岁的邓聿文自2018年以来一直与妻子和两个孩子住在美国。他继续在各种新闻媒体上发表关于中国政治和外交政策的文章，并出版相关书籍。他的最新著作是《最后的极权》(The Last Totalitarian)，今年4月由纽约博登书屋出版。在这本书中，他认为共产党已经失去了人民的信任，需要改革。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>邓聿文在采访中说，他已经习惯了来自中国官方的批评，但在他今年2月发表了一篇文章后，人身攻击开始了。他在文中把习近平的高官团队比作毛泽东领导下的“四人帮”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>克莱姆森大学的研究人员发现的第一条帖子出现在当月的X上，邓聿文的账号在X上有10万多名关注者。帖子提到了他家所在城镇的一所中学和他的女儿。骚扰蔓延到X上的其他账户，然后又到了其它许多平台，包括Facebook、Medium、Pinterest、DeviantArt和日本艺术家网站Pixiv。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这些帖子谴责他是叛徒、剽窃者和美国的工具。克莱姆森的研究显示，到目前为止，仅在X上就有超过5700条帖子提到他的女儿。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这些用户的个人资料往往会让人觉得他们是美国人，但关注他们的人很少，甚至根本没有。许多帖子都使用蹩脚、不合语法的英语，这是“水军伪装”活动的一个标志。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>它们变得越来越耸人听闻和具有威胁性。Facebook上出现了一些篡改过的图片，将邓聿文女儿的脸叠加在穿着暴露的女性身上，做成开价300美元的色情广告。至少有一个帖子呼吁对她进行性侵犯，并提供8000美元的赏金。</p>
+      </div>
+      <div class="article-paragraph">
+        <p> <span>他的女儿——一名英语流利、熟知Z世代俚语的青少年，最初也对这些攻击感到愤怒</span>，但在他的鼓励下，她也试图对这件事置之不理。他说：“我尽量不让家人牵连到我的事。”</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>Meta、谷歌和其他主要技术平台早就意识到“水军伪装”的活动，并试图削弱其影响力。去年，Meta宣布，仅在一个季度内，它就删除了Facebook上与该网络相关的<a href="https://cn.nytimes.com/technology/20230831/meta-china-influence-campaign/">7700多个</a>虚假账号。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>克莱姆森大学的林维尔说，中国的策略可能会继续下去，因为中国“除了账号被关闭之外，还没有受到任何有意义的影响，从他们的角度来看，这根本不需要付出任何代价”。</p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+    <p>Bing Guan对本文有报道贡献。</p>
+    <p>Steven Lee Myers自旧金山报道有关错误信息和虚假信息的新闻。自1989年加入《纽约时报》以来，他在全世界多地工作过，包括华盛顿、巴格达、北京和首尔。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/steven-lee-myers">点击查看更多关于他的信息。</a></p>
+    <p>Tiffany Hsu报道错误信息、虚假信息及其起源、动向和后果。她从事新闻行业已有20多年。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/tiffany-hsu">点击查看更多关于她的信息。</a></p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/06/27/business/china-disinformation-critics-harassment.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-26/%E8%AF%A5%E4%B8%A5%E6%83%A9%E8%BF%98%E6%98%AF%E5%AE%BD%E6%81%95-%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E7%8A%AF%E7%BD%AA%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%BC%95%E5%8F%91%E7%97%9B%E8%8B%A6%E4%BA%89%E8%AE%BA">
+          该严惩还是宽恕？未成年人犯罪在中国引发痛苦争论
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-26/%E8%BF%BD%E5%AF%BB%E6%88%91%E7%88%B6%E4%BA%B2%E7%9A%84%E8%BE%B9%E7%96%86-%E4%BB%96%E5%9C%A8%E4%B8%AD%E5%85%B1%E5%86%9B%E9%98%9F%E7%9A%84%E5%B2%81%E6%9C%88">
+          追寻我父亲的边疆：他在中共军队的岁月
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-26/%E5%8F%A3%E8%AF%AF-%E9%87%91%E5%8F%A5-%E4%BA%92%E7%9B%B8%E4%BE%AE%E8%BE%B1-%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E8%BE%A9%E8%AE%BA%E7%9A%84%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB">
+          口误、金句、互相侮辱：美国总统大选辩论的经典时刻
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-26/%E8%AF%A5%E4%B8%A5%E6%83%A9%E8%BF%98%E6%98%AF%E5%AE%BD%E6%81%95-%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E7%8A%AF%E7%BD%AA%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%BC%95%E5%8F%91%E7%97%9B%E8%8B%A6%E4%BA%89%E8%AE%BA">
+          该严惩还是宽恕？未成年人犯罪在中国引发痛苦争论
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-26/%E6%B8%A1%E8%BE%B9%E5%8D%9A%E5%8F%B2-%E6%97%A5%E5%85%83=%E5%AE%89%E5%85%A8%E8%B4%A7%E5%B8%81-%E6%98%AF%E8%AF%AF%E8%A7%A3">
+            前一篇：渡边博史：“日元=安全货币”是误解
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-26/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%86%85%E5%A4%96%E6%89%BF%E5%8E%8B-IPO%E9%AA%A4%E5%87%8F-%E7%A9%BA%E4%BB%93%E7%8E%87%E4%B8%8A%E5%8D%87">
+            后一篇：中国经济内外承压 IPO骤减、空仓率上升
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-26/%E6%B8%A1%E8%BE%B9%E5%8D%9A%E5%8F%B2-%E6%97%A5%E5%85%83=%E5%AE%89%E5%85%A8%E8%B4%A7%E5%B8%81-%E6%98%AF%E8%AF%AF%E8%A7%A3'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-26/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%86%85%E5%A4%96%E6%89%BF%E5%8E%8B-IPO%E9%AA%A4%E5%87%8F-%E7%A9%BA%E4%BB%93%E7%8E%87%E4%B8%8A%E5%8D%87'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-26/%E8%BF%BD%E5%AF%BB%E6%88%91%E7%88%B6%E4%BA%B2%E7%9A%84%E8%BE%B9%E7%96%86-%E4%BB%96%E5%9C%A8%E4%B8%AD%E5%85%B1%E5%86%9B%E9%98%9F%E7%9A%84%E5%B2%81%E6%9C%88'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-26/%E5%8F%A3%E8%AF%AF-%E9%87%91%E5%8F%A5-%E4%BA%92%E7%9B%B8%E4%BE%AE%E8%BE%B1-%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E8%BE%A9%E8%AE%BA%E7%9A%84%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-26/%E6%B8%A1%E8%BE%B9%E5%8D%9A%E5%8F%B2-%E6%97%A5%E5%85%83=%E5%AE%89%E5%85%A8%E8%B4%A7%E5%B8%81-%E6%98%AF%E8%AF%AF%E8%A7%A3">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-26/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%86%85%E5%A4%96%E6%89%BF%E5%8E%8B-IPO%E9%AA%A4%E5%87%8F-%E7%A9%BA%E4%BB%93%E7%8E%87%E4%B8%8A%E5%8D%87">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-26/%E8%BF%BD%E5%AF%BB%E6%88%91%E7%88%B6%E4%BA%B2%E7%9A%84%E8%BE%B9%E7%96%86-%E4%BB%96%E5%9C%A8%E4%B8%AD%E5%85%B1%E5%86%9B%E9%98%9F%E7%9A%84%E5%B2%81%E6%9C%88">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-26/%E5%8F%A3%E8%AF%AF-%E9%87%91%E5%8F%A5-%E4%BA%92%E7%9B%B8%E4%BE%AE%E8%BE%B1-%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E8%BE%A9%E8%AE%BA%E7%9A%84%E7%BB%8F%E5%85%B8%E6%97%B6%E5%88%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>无声无光｜被攻击的为何是在华日本人学校？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+无声无光｜被攻击的为何是在华日本人学校？
+——
+" />
+    <meta property="og:description" content="
+无声无光｜被攻击的为何是在华日本人学校？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="无声无光｜被攻击的为何是在华日本人学校？" />
+    <meta property="twitter:title" content="无声无光｜被攻击的为何是在华日本人学校？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709230.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E8%A2%AB%E6%94%BB%E5%87%BB%E7%9A%84%E4%B8%BA%E4%BD%95%E6%98%AF%E5%9C%A8%E5%8D%8E%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%AD%A6%E6%A0%A1%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709230.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E8%A2%AB%E6%94%BB%E5%87%BB%E7%9A%84%E4%B8%BA%E4%BD%95%E6%98%AF%E5%9C%A8%E5%8D%8E%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%AD%A6%E6%A0%A1%EF%BC%9F&d=2024-06-25&e=
+无声无光｜被攻击的为何是在华日本人学校？
+——
+
+
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：被攻击的为何是在华日本人学校？作者：维舟发表日期：2024.6.25来源：微信公众号“无声无光”主题归类：维舟CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  6月24日下午，苏州日本人学校的校车遭一名52岁的男子周某某（近期来苏州的无业人员）持刀袭击，一对日本母子受轻伤，而阻止他行凶的一位中国人受重伤。凶手已被当场抓获。
+  尽管当地警方和外交部都强调这是一起“偶发事件”，但鉴于这是短短半个月内第二起对在华外国人行凶事件（上一起是6月10日，吉林市有人刺伤四名美国人），这难免让人产生一种“（义和团）开始杀洋人”的联想。如果不了解行凶动机，我们..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709230.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/709230.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/709230.html&text=无声无光｜被攻击的为何是在华日本人学校？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/709230.html&title=无声无光｜被攻击的为何是在华日本人学校？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/709230.html&title=无声无光｜被攻击的为何是在华日本人学校？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=无声无光｜被攻击的为何是在华日本人学校？&body=
+无声无光｜被攻击的为何是在华日本人学校？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/709230.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/709230.html&title=无声无光｜被攻击的为何是在华日本人学校？&caption=
+无声无光｜被攻击的为何是在华日本人学校？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=无声无光｜被攻击的为何是在华日本人学校？&url=https://chinadigitaltimes.net/chinese/709230.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>无声无光｜被攻击的为何是在华日本人学校？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-25
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/709230.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709230.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E8%A2%AB%E6%94%BB%E5%87%BB%E7%9A%84%E4%B8%BA%E4%BD%95%E6%98%AF%E5%9C%A8%E5%8D%8E%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%AD%A6%E6%A0%A1%EF%BC%9F&d=2024-06-25&e=
+无声无光｜被攻击的为何是在华日本人学校？
+——
+
+
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：被攻击的为何是在华日本人学校？作者：维舟发表日期：2024.6.25来源：微信公众号“无声无光”主题归类：维舟CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  6月24日下午，苏州日本人学校的校车遭一名52岁的男子周某某（近期来苏州的无业人员）持刀袭击，一对日本母子受轻伤，而阻止他行凶的一位中国人受重伤。凶手已被当场抓获。
+  尽管当地警方和外交部都强调这是一起“偶发事件”，但鉴于这是短短半个月内第二起对在华外国人行凶事件（上一起是6月10日，吉林市有人刺伤四名美国人），这难免让人产生一种“（义和团）开始杀洋人”的联想。如果不了解行凶动机，我们..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709230.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719358385000-->
+<p><a href="https://chinadigitaltimes.net/chinese/709230.html">无声无光｜被攻击的为何是在华日本人学校？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/709230.html" title="无声无光｜被攻击的为何是在华日本人学校？" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/06/苏州日本-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" srcset="https://chinadigitaltimes.net/chinese/files/2024/06/苏州日本-564x300.jpeg 564w, https://chinadigitaltimes.net/chinese/files/2024/06/苏州日本-660x350.jpeg 660w" sizes="(max-width: 564px) 100vw, 564px" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/06/post-709230-667b4fdb9cb57." alt="img" /></p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>被攻击的为何是在华日本人学校？<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/维舟" target="_blank">维舟</a><br /><strong>发表日期：</strong>2024.6.25<br /><strong>来源：</strong><a href="https://web.archive.org/web/20240612173001/https://mp.weixin.qq.com/s/4zbG5ZrNReR_Uq5wP303aw" target="_blank">微信公众号“无声无光”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/维舟" target="_blank">维舟</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>6月24日下午，苏州日本人学校的校车遭一名52岁的男子周某某（近期来苏州的无业人员）持刀袭击，一对日本母子受轻伤，而阻止他行凶的一位中国人受重伤。凶手已被当场抓获。</p>
+  <p>尽管当地警方和外交部都强调这是一起“偶发事件”，但鉴于这是短短半个月内第二起对在华外国人行凶事件（上一起是6月10日，吉林市有人刺伤四名美国人），这难免让人产生一种“（义和团）开始杀洋人”的联想。如果不了解行凶动机，我们就看不清楚这到底是怎么回事。</p>
+  <p>现在调查结果尚未出来，网上有诸多揣测，有的认定在学校行凶是欺负弱小，有的推测矛头是“汉奸”（因为车上那位中国人伤势更重），当然，更多人相信是冲着“日本”二字，但如果是这样，被攻击的又为何不是日企、日本车，而是在华日本人学校？</p>
+  <p>实际上，与日本人学校相关的谣言已经流传了很长时间。一直有人宣称，在华35所日本人学校是“独立王国”，不受中国管理，甚至贴着“禁止中国人靠近”的标语——这里的每一个论述都是错误的，连“35所”这个数目都成问题，但依然流传甚广。至于说它“不招收中国学生”，那倒是真的，但恰恰是中国教育部禁止它招收的。</p>
+  <p>网传有一位“大漠十三郎”认定，这是一个巨大的阴谋：“日本人学校在中国遍地开花，几十万日本学生已经如无形之水融入中国社会，日本人这般处心积虑，他们究竟要干什么？想想真的让人后背发凉！”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/06/post-709230-667b4fdbb7a32.png" alt="img" /></p>
+  <p>自称“全员盈利系统开创者”的李承恩曾鼓吹，在华日本人会培养出一群“中国通”，他们了解中国又无法从长相上区分，将成为潜伏在中国的完美间谍。</p>
+  <p>另一位股权投融资专家，号称“狼型组织理论奠基人”的臧其超（如果你搜他的名字，会发现多达数十个视频号），在一段视频里也质问“日本在中国建学校到底有何阴谋”：</p>
+  <blockquote>
+    <p>这35所日本人的学校，每年他们的毕业生，都去哪里了？他们说的都是普通话，他们的长相，你根本看不出是哪里人，他们现在毕业了，去哪里上班了？我们也不知道，说不定去到食品行业呢，有可能去到医疗行业，甚至有可能在教育行业，总之各行各业都有可能，他们就像定时炸弹，随时地把我们的信息和情报，流传到海外，随时都在我们身边爆炸。而且说不定，你我身边，这位正在看短视频的哥们，你可能就是一个小日本。</p>
+  </blockquote>
+  <p>在渲染这番阴谋论（与李承恩不知道谁抄谁）之后，他说，这“越想越恐怖，越想越无奈”。</p>
+  <p>这些阴谋论原本不难证否，事实上，英、美、法、韩和俄罗斯都有日本人学校，也没有证据表明中国境内的这些学校和阴谋指控相关，然而，这些事实都难以说服阴谋论的信奉者。</p>
+  <p>有一篇《中国的日本人学校，被严重误解过分渲染，真相原来如此！》澄清此类传闻，但底下却有人厉声质问：“你敢确定这些学生没有在中国进行测绘吗？一旦开战他们帮日本还是帮中国？”</p>
+  <p>为什么日本人学校特别遭怀疑？这与其说是因为它们真做下了什么事，不如说是因为它们是一些人排外仇恨心理的完美投射：历史恩怨使日本在他们心中俨然成为“永恒的敌人”，而日本人学校培养的正是一些“混在我们中间难以辨认的境外势力”，格外激起他们的恐惧想象和焦虑。</p>
+  <p>另一个关键点是：日本人学校被渲染为与外界封闭隔绝的存在，这就像晚清的百姓不了解西式新医院的运作，乃至谣传关起门来的手术室是要猎取人体器官（也就是传统所谓“采生折割”）。在不够了解这种封闭性空间的运作机制时，就会滋生出恐惧、怀疑的谣言，以为其必有神秘、不可告人之处，有时甚至可以想象得极其荒诞离奇。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/06/post-709230-667b4fdbc0c97." alt="img" /></p>
+  <p>如果你以为这只是一些无聊到不值得认真对待的蠢话，那就错了，真有人会信这些。就在这次事件发生前几天，还有人在微博上“强烈呼吁拆除日本在中国的学校”。</p>
+  <p>煽动性言论未必只是说说而已，甚至这也未必是中国人特别“愚蠢”，美国前些年还发生过“披萨门”阴谋论事件：一些电台主播言之凿凿地断定希拉里在华盛顿经营的一家披萨店有肮脏的地下儿童性交易，结果，真有一位持枪试图去“解救”那些孩子。</p>
+  <p>去年日本启动福岛核污水排放计划后，国内对日不满情绪涌动，就曾发生过这样两件事：山东青岛一间日本人学校遭掷石头，苏州日本人学校校区内则多处被投掷鸡蛋。</p>
+  <p>当时日本人学校被攻击应该还只是因为它们是“日本”在国内的象征符号，现在这一次的持刀行凶可说是升级版：一些狂热分子试图以极端方式净化国族有机体，清除他们心目中的“污染源”。对一些社会边缘的失败者来说，这样“干一票大的”甚至可以为他们提供价值感。</p>
+  <p>如果是这样，那这是相当危险的新动向：一些人表现出一种狭隘的冲动，在反对“境外势力”的名义下激烈排外；与此相辅相成的是，留学回国的海归现在也已不吃香了，海外学习经历甚至倒像是不值得受信任的污点。</p>
+  <p>那么在这些人眼里，谁才最值得信任？正是“提纯”的中国人，也就是说，拒绝与外部有任何交流接触的才最根正苗红，“封闭”被看作是一种美德，因为这样才最“纯洁”。</p>
+  <p>醒醒，到那一天才将是我们所有人的灾难：中国历史早就一再证明，那种封闭得到的不是“纯洁”，而将是落后于时代的腐朽木乃伊。</p>
+  <p><strong>相关阅读：</strong></p>
+  <p><a href="https://mp.weixin.qq.com/s?__biz=MzI0MTUzNjE2MA==&amp;mid=2247487145&amp;idx=1&amp;sn=e9f126af9e14e7593e36fcf4a41d633d&amp;chksm=e90b5366de7cda70cd884edb36ab8f184270d15466c7194bc5330b6e6c02ac333295b8541bf4&amp;scene=21#wechat_redirect">四名美国人被刺伤后</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651590624&amp;idx=1&amp;sn=ccfe285b4a1aa7f74aa3fdb5f55f1cd1&amp;chksm=8454130bb3239a1df13a42e08599a8e3fc5fccc9f5f629979ea973c196a1734beb0e9020986f&amp;scene=21#wechat_redirect">“境外势力”的幻影</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651590639&amp;idx=1&amp;sn=b2a5c899ace79dbc6a0545a7d0f76087&amp;chksm=84541304b3239a126d7b1fd3639beab55b832d5d70be74f4ec3ceada75febb08af72d108ab17&amp;scene=21#wechat_redirect">虚虚实实的敌人</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzI0MTUzNjE2MA==&amp;mid=2247485745&amp;idx=1&amp;sn=0e91c43e3e85c1b7c0857ebfbce42fd4&amp;chksm=e90b54fede7cdde824c54530c81b467b071d72e9f5ba3ff4f493e2cbb6ba289cc31b7248aa8c&amp;scene=21#wechat_redirect">身份的牢笼</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651614885&amp;idx=1&amp;sn=947f5426ccae50386d517f269694f768&amp;chksm=8454724eb323fb58afb2e05ab51ba0933edbca2a80b559e75f01e89d5491969b8fdcd8ecdd52&amp;scene=21#wechat_redirect">狂热认同的社会根源</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651612127&amp;idx=1&amp;sn=9d5874305e19020ee90f3fb54e050108&amp;chksm=84547f34b323f622667c90d0c18cc3074e385a5caeb31dec3db1dce185df5f27ad5ee983aea2&amp;scene=21#wechat_redirect">外面有多危险？</a><br /><a href="https://mp.weixin.qq.com/s?__biz=Mzg2MjYzNjMzNw==&amp;mid=2247483896&amp;idx=1&amp;sn=b683636b0113990ea2586983258f3b0f&amp;chksm=ce0591a6f97218b05e25cafed954dc12a56b30c9548d5c3d0aa6d7b13480fcbd3a369794d0c8&amp;scene=21#wechat_redirect">中国是普通国家吗？</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651588727&amp;idx=1&amp;sn=9e21999bba4e33b2ebd62a5c955952bf&amp;chksm=8454149cb3239d8ab49f38c2020720249ce2d224d5766cd2da720967cd66729b1e97e9f908a2&amp;scene=21#wechat_redirect">三十年启蒙失败了吗？</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651616014&amp;idx=1&amp;sn=c7c223af42725f2e6ed120a86729545c&amp;chksm=84546fe5b323e6f3fe510a37bd11898bdfbb0607e3f0a68cd48278257476e9ee9922b69f8906&amp;scene=21#wechat_redirect">我们对外部世界的看法是有问题的</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTg4MzY1Mg==&amp;mid=2651616022&amp;idx=1&amp;sn=624c4f7f0e7e48082c3421c48f83ef72&amp;chksm=84546ffdb323e6eb3e00c8020474fbd52c02f04d68413b089ab4b448d63fa0f854c1eb837e90&amp;scene=21#wechat_redirect">不必勉强读我的文章</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E6%9C%A8%E8%B9%8A%E8%AF%B4-%E6%97%A5%E6%9C%AC%E7%B1%8D%E6%AF%8D%E5%AD%90%E8%A2%AB%E5%88%BA-%E9%97%AE%E9%A2%98%E5%88%B0%E5%BA%95%E5%87%BA%E5%9C%A8%E5%93%AA">
+          木蹊说｜日本籍母子被刺，问题到底出在哪？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB">
+          凤凰网｜致命大火背后的中国人：在韩国工厂做最脏累险的活
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%B2%B3%E5%8D%97%E5%86%9C%E6%9D%91-%E8%B5%8C%E4%B8%80%E5%9C%BA%E9%9B%A8">
+          极昼工作室｜在河南农村，赌一场雨
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E7%AD%91%E5%9F%BA%E6%94%BF%E7%BB%8F-%E6%97%A5%E6%9C%AC%E6%AF%8D%E5%AD%90%E8%8B%8F%E5%B7%9E%E9%81%87%E8%A2%AD%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E">
+          筑基政经｜日本母子苏州遇袭与中国经济
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-25/%E5%8D%97%E6%B5%B7%E4%BA%89%E7%AB%AF-%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E4%B8%AD%E8%8F%B2%E5%86%B2%E7%AA%81%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9">
+            前一篇：南海争端：一文读懂中菲冲突的五大看点
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB">
+            后一篇：凤凰网｜致命大火背后的中国人：在韩国工厂做最脏累险的活
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E5%8D%97%E6%B5%B7%E4%BA%89%E7%AB%AF-%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E4%B8%AD%E8%8F%B2%E5%86%B2%E7%AA%81%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%B2%B3%E5%8D%97%E5%86%9C%E6%9D%91-%E8%B5%8C%E4%B8%80%E5%9C%BA%E9%9B%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-25/%E5%8D%97%E6%B5%B7%E4%BA%89%E7%AB%AF-%E4%B8%80%E6%96%87%E8%AF%BB%E6%87%82%E4%B8%AD%E8%8F%B2%E5%86%B2%E7%AA%81%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-25/%E5%87%A4%E5%87%B0%E7%BD%91-%E8%87%B4%E5%91%BD%E5%A4%A7%E7%81%AB%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA-%E5%9C%A8%E9%9F%A9%E5%9B%BD%E5%B7%A5%E5%8E%82%E5%81%9A%E6%9C%80%E8%84%8F%E7%B4%AF%E9%99%A9%E7%9A%84%E6%B4%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-25/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%B2%B3%E5%8D%97%E5%86%9C%E6%9D%91-%E8%B5%8C%E4%B8%80%E5%9C%BA%E9%9B%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+" />
+    <meta property="og:description" content="
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱" />
+    <meta property="twitter:title" content="推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709173.html&t=%E6%8E%A8%E5%8A%A8%E4%B8%96%E7%95%8C%E7%BE%8E%E5%A5%BD%EF%BD%9C%E5%90%8C%E6%A0%B7%E6%98%AF%E8%B4%AB%E5%9B%B0%EF%BC%8C%E7%BE%8E%E5%9B%BD%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AE%9A%E4%B9%89%E6%A0%87%E5%87%86%E5%B7%AE%E5%BC%82%E5%B7%A8%E5%A4%A7%EF%BC%9A%E8%B0%88%E5%BC%A0%E7%BB%B4%E4%B8%BA%E5%A6%82%E4%BD%95%E5%81%B7%E6%A2%81%E6%8D%A2%E6%9F%B1" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709173.html&t=%E6%8E%A8%E5%8A%A8%E4%B8%96%E7%95%8C%E7%BE%8E%E5%A5%BD%EF%BD%9C%E5%90%8C%E6%A0%B7%E6%98%AF%E8%B4%AB%E5%9B%B0%EF%BC%8C%E7%BE%8E%E5%9B%BD%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AE%9A%E4%B9%89%E6%A0%87%E5%87%86%E5%B7%AE%E5%BC%82%E5%B7%A8%E5%A4%A7%EF%BC%9A%E8%B0%88%E5%BC%A0%E7%BB%B4%E4%B8%BA%E5%A6%82%E4%BD%95%E5%81%B7%E6%A2%81%E6%8D%A2%E6%9F%B1&d=2024-06-22&e=
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+
+
+  2019年，复旦大学学者张维为在电视节目中提到，“美国4000万人贫困，1850万极度贫困” 。美国四千多万贫困线以下的居民。那可是快到美国六分之一人口了。
+  张维为说谎了吗？没有。根据美国人口普查局和劳工统计局的数据，2019年美国贫困人口比例为10.5%，大约3400多万人。受到新冠疫情的影响，美国的贫困人口新增。2020年，美国的实际贫困人口应该大约4200万人上下。
+  所以张维为说美国应该向中国学习很多东西，包括扶贫的经验。
+  张维为说的对吗？很遗憾，他引用的数据对，但结论是完全错误的。原因是什么？原因是张大教授不知道是有意还是无意地，偷换了贫困线的定义标准。贫困线的定义，美国、中国目前差异巨大。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：同..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709173.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/709173.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/709173.html&text=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/709173.html&title=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/709173.html&title=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱&body=
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/709173.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/709173.html&title=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱&caption=
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱&url=https://chinadigitaltimes.net/chinese/709173.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-22
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/709173.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709173.html&t=%E6%8E%A8%E5%8A%A8%E4%B8%96%E7%95%8C%E7%BE%8E%E5%A5%BD%EF%BD%9C%E5%90%8C%E6%A0%B7%E6%98%AF%E8%B4%AB%E5%9B%B0%EF%BC%8C%E7%BE%8E%E5%9B%BD%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%AE%9A%E4%B9%89%E6%A0%87%E5%87%86%E5%B7%AE%E5%BC%82%E5%B7%A8%E5%A4%A7%EF%BC%9A%E8%B0%88%E5%BC%A0%E7%BB%B4%E4%B8%BA%E5%A6%82%E4%BD%95%E5%81%B7%E6%A2%81%E6%8D%A2%E6%9F%B1&d=2024-06-22&e=
+推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱
+——
+
+
+  2019年，复旦大学学者张维为在电视节目中提到，“美国4000万人贫困，1850万极度贫困” 。美国四千多万贫困线以下的居民。那可是快到美国六分之一人口了。
+  张维为说谎了吗？没有。根据美国人口普查局和劳工统计局的数据，2019年美国贫困人口比例为10.5%，大约3400多万人。受到新冠疫情的影响，美国的贫困人口新增。2020年，美国的实际贫困人口应该大约4200万人上下。
+  所以张维为说美国应该向中国学习很多东西，包括扶贫的经验。
+  张维为说的对吗？很遗憾，他引用的数据对，但结论是完全错误的。原因是什么？原因是张大教授不知道是有意还是无意地，偷换了贫困线的定义标准。贫困线的定义，美国、中国目前差异巨大。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：同..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F709173.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719058256000-->
+<p><a href="https://chinadigitaltimes.net/chinese/709173.html">推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/709173.html" title="推动世界美好｜同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/06/image-1719058232255-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>2019年，复旦大学学者张维为在电视节目中提到，“美国4000万人贫困，1850万极度贫困” 。美国四千多万贫困线以下的居民。那可是快到美国六分之一人口了。</p>
+  <p>张维为说谎了吗？没有。根据美国人口普查局和劳工统计局的数据，2019年美国贫困人口比例为10.5%，大约3400多万人。受到新冠疫情的影响，美国的贫困人口新增。2020年，美国的实际贫困人口应该大约4200万人上下。</p>
+  <p>所以张维为说美国应该向中国学习很多东西，包括扶贫的经验。</p>
+  <p>张维为说的对吗？很遗憾，他引用的数据对，但结论是完全错误的。原因是什么？原因是张大教授不知道是有意还是无意地，偷换了贫困线的定义标准。贫困线的定义，美国、中国目前差异巨大。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>同样是贫困，美国与中国定义标准差异巨大：谈张维为如何偷梁换柱<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/推动世界美好" target="_blank">溪山烟雨</a><br /><strong>发表日期：</strong>2024.6.22<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/dBQHlCXpUuQlpY24S606jA" target="_blank">微信公众号“推动世界美好”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/张维为" target="_blank">张维为</a><br />、<strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/五毛话术" target="_blank">五毛话术</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>中国的贫困标准是什么呢？根据2020年3月中国国务院扶贫开发领导小组办公室主任刘永富的话，中国的脱贫标准包含“一收入、两不愁、三保障”。“一收入“指的是国家的收入标准，是2010年的不变价农民人均年收入2300元，按照物价等指数，大约4000元左右；“两不愁“指不愁吃、不愁穿，目前已经做到；“三保障”指义务教育、基本医疗、住房安全有保障。也就是说，中国的贫困线标准大概是年收入4000元，实际上比世界银行的“极度贫困”线还低一些。</p>
+  <p>那么，美国的贫困标准是什么呢？2020年的美国贫困线标准为人均年收入低于12760美元，大概相当于当年的84000多元人民币。如果不是单身汉，而是有小孩的家庭，那么该人均标准递增，4口之家贫困线标准为年收入低于26200美元，大概相当于17万元人民币，这个是多数地区，美国个别地区标准比这个更高。而美国“极度贫困”人口指的是年收入水平低于上述贫困线标准50%的人，也就是人均收入低于8.5万为美国极度贫困标准。中国年收入在17万的人，除了大城市，已经是绝对的高收入了。</p>
+  <p>当然，不看物价，只看收入肯定是不行，归根到底还得看购买力。</p>
+  <p>贫困人口最主要支出是基本水平的衣食支出。仅食物来看，美国超市的肉蛋奶均比北京超市中的相应产品便宜。青菜因为需要人工种植打理，比中国贵个大约2倍。服装方面，去沃尔玛十美元买件T恤，和国内小县城六七十块钱人民币买个T恤差不多。如果你开车去特价超市奥特莱斯，更便宜。所以实际上最基本的开支，美国与中国是差不多的，或者至少没有比中国贵过少。所以，在中国骂美国、自己在美国买别墅、女儿嫁美国佬的陈平教授说的“中国收入2000人民币比美国收入3000美元还好”，完全是胡说八道，骗骗国内不了解情况的老百姓可以。</p>
+  <p>美国联邦政府针对贫困人口提供多种社会福利，主要集中在医保、食品、住房、子女养育上。</p>
+  <p>【1】美国没有政府推动的统一福利医疗体系，大部分美国人的医疗保险都是购买商业医疗保险，因此，美国联邦政府和州政府为贫困人口提供医疗保险。<br />【2】食品券，生活在贫困线以下的贫困家庭，每个月可以按照标准领取到金额不等的食品券。<br />【3】政府有多项资助穷人住房的项目，例如房租补贴、提供低息住房贷款等。老年低收入者可以入住老年公寓。美国联邦政府住房和城市发展部具体负责低收入租房补贴运作。根据该部定义，所谓低收入者指收入低于当地家庭中间收入30%的人。<br />【4】贫困线下家庭的孩子在公立中小学可以享受免费午餐。美国义务教育为13年：幼儿园一年，小学到高中毕业12年， 公立学校免费。无论买房还是租房，根据学区就近入学。<br />【5】美国农业部妇婴幼儿保健计划专门资助穷人家庭的孕妇、产妇、哺乳期母婴给。且该项目不限于美国公民，只要居住在美国都可以享受。</p>
+  <p>所以，美国的贫困，内涵与中国的贫困完全不同。所以，国内不少每月一万多人民币退休金的老油条，要跑到美国去当“贫困人口”，原因你终于明白了。这些老油条无利是绝不会起早的。</p>
+  <p>中国经济的总体量很大，但人均却很低；中国人口多，即使有钱人比例很低，有钱人绝对数也不小。振兴中华，复兴民族，实现“中华之崛起”，还有很长路要走，现在天天忽悠中国如何富裕，如何强大的那种人，大部分都是做爱国生意的，陈平的把戏已经被拆穿，在中国已经没有市场，而张维为有意无意地混淆中美贫困线的根本不同，客观上误导国内很多人的认识，由于背靠名牌大学，仍然还有国有企业给他一次讲座十多万的出场费。</p>
+  <p>“农民工的盒饭比美国中产家庭吃的好”，“一小时，击沉美军所有航空母舰”，“清场式遥遥领先”，“西方现代化的”0到1”几乎都是来自中国”，以上种种雷人言论，出自张维为之口。张维为真的不懂吗？明眼人一看便知，非也。他只不过是在迎合某个群体的需要，本质上是低级红，甚至是高级黑。</p>
+  <p>有人在微信搜索，发现司马南、金灿荣的微信公众号都同属于一家公司——北京中易网天信息技术有限公司。 企查查之类的网站可以查到，北京中易网天信息技术有限公司的控制人是饶谨，持股超过95%。金灿荣的另一个公众号“政委灿荣”，运营主体是南京聆思科技有限公司，这个公司饶谨同样持股超过95%。陈平、张维为的微信公众号同属于一家公司—— 上海观察者网信息技术有限公司， 也是观察者网的运营主体。如果没有巨额利润，这些人只需要自己注册一个自媒体号表达观点即可，何必要与商业公司挂上钩呢？张维为在国企一次演讲十多万，这些人赚了多少钱？只有税务局才知道。一年没有几千万，也是几百万起步吧。</p>
+  <p>2008年4月，饶谨作为嘉宾参加央视二台《对话》访谈节目，现场观众有一位中国人民大学的教授，一共发了三次言。根据视频，老教授的第一次发言是：”一个大国，想要搞好，归根究底就四个字：实事求是。“老教授的第三次发言是：“我们还有很多问题，不要让外国人光看高楼大厦，还得让他看建造高楼大厦的农民工，这些农民工真苦。你要给外国人讲中国的毛病，而且讲得比他还要强，他就服你，这才证明中国真强大了，我们有自信。”</p>
+  <p>张教授如果真的有家国情怀，就应该在除了谈成绩之外，也应该适当讲讲问题和改进之道，号主以为至少应该七三开吧，也就是你谈7点成绩，也应该谈3个不足吧。但张教授只说好，不提不足。所以，只说美国不好的方面，不看美国做得好的方面，和只说中国好的方面，不说需要改进的方面，本质上都是在割韭菜，做爱国生意而已。张教授及其同道中人，显然深谙此道。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-22/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.6.22">
+          每日一语 2024.6.22
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-22/%E6%BE%8E%E6%B9%83%E4%BA%BA%E7%89%A9-%E6%A2%85%E5%B7%9E%E5%B9%B3%E8%BF%9C%E5%8E%BF-38%E4%BA%BA%E9%81%87%E9%9A%BE%E8%83%8C%E5%90%8E-%E9%82%A3%E4%BA%9B%E8%A2%AB%E6%B4%AA%E6%B0%B4%E8%A3%B9%E6%8C%9F%E7%9A%84%E5%91%BD%E8%BF%90">
+          澎湃人物｜梅州平远县：38人遇难背后，那些被洪水裹挟的命运
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-22/404%E6%96%87%E5%BA%93-%E5%8C%97%E4%BA%AC%E5%B8%82%E6%A1%A3%E6%A1%88%E9%A6%86-%E8%BF%91%E4%BB%A3%E5%8C%97%E4%BA%AC%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8C%BB%E7%96%97">
+          【404文库】北京市档案馆｜近代北京的免费医疗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-22/%E9%99%88%E6%83%9F%E6%9D%89-%E6%99%AE%E5%8D%8E%E6%B0%B8%E9%81%93-%E5%BC%95%E7%81%AB%E7%83%A7%E8%BA%AB">
+          陈惟杉｜普华永道，引火烧身
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-22/%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92%E9%87%8D%E5%BB%BA-%E5%8A%89%E4%B8%96%E8%8A%B3-%E6%9C%9D%E6%98%8E%E5%B9%B4%E5%BA%95%E5%85%A8%E9%9D%A2%E9%96%8B%E6%94%BE%E5%8A%AA%E5%8A%9B">
+            前一篇：太魯閣國家公園重建 劉世芳：朝明年底全面開放努力
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-22/%E5%93%88%E8%B4%9D%E5%85%8B-%E6%AC%A7%E7%9B%9F%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%85%B3%E7%A8%8E%E8%B0%88%E5%88%A4%E6%8C%81%E5%BC%80%E6%94%BE%E6%80%81%E5%BA%A6">
+            后一篇：哈贝克：欧盟对中国关税谈判持开放态度
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-22/%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92%E9%87%8D%E5%BB%BA-%E5%8A%89%E4%B8%96%E8%8A%B3-%E6%9C%9D%E6%98%8E%E5%B9%B4%E5%BA%95%E5%85%A8%E9%9D%A2%E9%96%8B%E6%94%BE%E5%8A%AA%E5%8A%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-22/%E5%93%88%E8%B4%9D%E5%85%8B-%E6%AC%A7%E7%9B%9F%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%85%B3%E7%A8%8E%E8%B0%88%E5%88%A4%E6%8C%81%E5%BC%80%E6%94%BE%E6%80%81%E5%BA%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-22/%E6%BE%8E%E6%B9%83%E4%BA%BA%E7%89%A9-%E6%A2%85%E5%B7%9E%E5%B9%B3%E8%BF%9C%E5%8E%BF-38%E4%BA%BA%E9%81%87%E9%9A%BE%E8%83%8C%E5%90%8E-%E9%82%A3%E4%BA%9B%E8%A2%AB%E6%B4%AA%E6%B0%B4%E8%A3%B9%E6%8C%9F%E7%9A%84%E5%91%BD%E8%BF%90'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-22/404%E6%96%87%E5%BA%93-%E5%8C%97%E4%BA%AC%E5%B8%82%E6%A1%A3%E6%A1%88%E9%A6%86-%E8%BF%91%E4%BB%A3%E5%8C%97%E4%BA%AC%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8C%BB%E7%96%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-22/%E5%A4%AA%E9%AD%AF%E9%96%A3%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92%E9%87%8D%E5%BB%BA-%E5%8A%89%E4%B8%96%E8%8A%B3-%E6%9C%9D%E6%98%8E%E5%B9%B4%E5%BA%95%E5%85%A8%E9%9D%A2%E9%96%8B%E6%94%BE%E5%8A%AA%E5%8A%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-22/%E5%93%88%E8%B4%9D%E5%85%8B-%E6%AC%A7%E7%9B%9F%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%85%B3%E7%A8%8E%E8%B0%88%E5%88%A4%E6%8C%81%E5%BC%80%E6%94%BE%E6%80%81%E5%BA%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-22/%E6%BE%8E%E6%B9%83%E4%BA%BA%E7%89%A9-%E6%A2%85%E5%B7%9E%E5%B9%B3%E8%BF%9C%E5%8E%BF-38%E4%BA%BA%E9%81%87%E9%9A%BE%E8%83%8C%E5%90%8E-%E9%82%A3%E4%BA%9B%E8%A2%AB%E6%B4%AA%E6%B0%B4%E8%A3%B9%E6%8C%9F%E7%9A%84%E5%91%BD%E8%BF%90">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-22/404%E6%96%87%E5%BA%93-%E5%8C%97%E4%BA%AC%E5%B8%82%E6%A1%A3%E6%A1%88%E9%A6%86-%E8%BF%91%E4%BB%A3%E5%8C%97%E4%BA%AC%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8C%BB%E7%96%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>嫦娥六号实现世界首次月球背面采样返回 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+嫦娥六号实现世界首次月球背面采样返回
+——
+" />
+    <meta property="og:description" content="
+嫦娥六号实现世界首次月球背面采样返回
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="嫦娥六号实现世界首次月球背面采样返回" />
+    <meta property="twitter:title" content="嫦娥六号实现世界首次月球背面采样返回" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20240626%2Fchange-6-china-earth-moon%2F%3Futm_source%3DRSS&t=%E5%AB%A6%E5%A8%A5%E5%85%AD%E5%8F%B7%E5%AE%9E%E7%8E%B0%E4%B8%96%E7%95%8C%E9%A6%96%E6%AC%A1%E6%9C%88%E7%90%83%E8%83%8C%E9%9D%A2%E9%87%87%E6%A0%B7%E8%BF%94%E5%9B%9E" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20240626%2Fchange-6-china-earth-moon%2F%3Futm_source%3DRSS&t=%E5%AB%A6%E5%A8%A5%E5%85%AD%E5%8F%B7%E5%AE%9E%E7%8E%B0%E4%B8%96%E7%95%8C%E9%A6%96%E6%AC%A1%E6%9C%88%E7%90%83%E8%83%8C%E9%9D%A2%E9%87%87%E6%A0%B7%E8%BF%94%E5%9B%9E&d=2024-06-25&e=
+嫦娥六号实现世界首次月球背面采样返回
+——
+
+
+  
+    
+嫦娥六号降落到内蒙古地区，带回了来自月球背面的土壤样本。 CCTV via Reuters
+    
+  
+  
+    
+      
+        周二，中国将一个装满月球背面土壤的储存装置送回地球，这是其雄心勃勃的月球和太阳系其他部分探测计划的最新成就。
+      
+      
+        在历时53天的飞行任务后，中国国家航天局的嫦娥六号返回器送回了土壤样本，这凸显出中国在太空领域不断增强的能力，也是自2007年以来一系列月球探测任务中的又一次胜利，迄今为止这些任务都是几乎毫无瑕疵地得以完成。
+      
+      
+        “嫦娥六号是人类历史上第一次从月球背面带回样本的任务，”中国地质大学的行星地质学家肖龙在一封电子邮件中写道。“这对全世界的科学家来说都是一件大事，”他补充道，“也是全..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20240626%2Fchange-6-china-earth-moon%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS&text=嫦娥六号实现世界首次月球背面采样返回&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS&title=嫦娥六号实现世界首次月球背面采样返回" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS&title=嫦娥六号实现世界首次月球背面采样返回" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=嫦娥六号实现世界首次月球背面采样返回&body=
+嫦娥六号实现世界首次月球背面采样返回
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS&title=嫦娥六号实现世界首次月球背面采样返回&caption=
+嫦娥六号实现世界首次月球背面采样返回
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=嫦娥六号实现世界首次月球背面采样返回&url=https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>嫦娥六号实现世界首次月球背面采样返回</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-25
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20240626%2Fchange-6-china-earth-moon%2F%3Futm_source%3DRSS&t=%E5%AB%A6%E5%A8%A5%E5%85%AD%E5%8F%B7%E5%AE%9E%E7%8E%B0%E4%B8%96%E7%95%8C%E9%A6%96%E6%AC%A1%E6%9C%88%E7%90%83%E8%83%8C%E9%9D%A2%E9%87%87%E6%A0%B7%E8%BF%94%E5%9B%9E&d=2024-06-25&e=
+嫦娥六号实现世界首次月球背面采样返回
+——
+
+
+  
+    
+嫦娥六号降落到内蒙古地区，带回了来自月球背面的土壤样本。 CCTV via Reuters
+    
+  
+  
+    
+      
+        周二，中国将一个装满月球背面土壤的储存装置送回地球，这是其雄心勃勃的月球和太阳系其他部分探测计划的最新成就。
+      
+      
+        在历时53天的飞行任务后，中国国家航天局的嫦娥六号返回器送回了土壤样本，这凸显出中国在太空领域不断增强的能力，也是自2007年以来一系列月球探测任务中的又一次胜利，迄今为止这些任务都是几乎毫无瑕疵地得以完成。
+      
+      
+        “嫦娥六号是人类历史上第一次从月球背面带回样本的任务，”中国地质大学的行星地质学家肖龙在一封电子邮件中写道。“这对全世界的科学家来说都是一件大事，”他补充道，“也是全..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fscience%2F20240626%2Fchange-6-china-earth-moon%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1719362841000-->
+<p><a href="https://cn.nytimes.com/science/20240626/change-6-china-earth-moon/?utm_source=RSS">嫦娥六号实现世界首次月球背面采样返回</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/06/25/world/asia/_3x2_Horiz/_3x2_Horiz-master1050.jpg" width="1050" height="700" alt="嫦娥六号降落到内蒙古地区，带回了来自月球背面的土壤样本。" referrerpolicy="no-referrer" />    <figcaption>
+<span>嫦娥六号降落到内蒙古地区，带回了来自月球背面的土壤样本。</span> <cite>CCTV via Reuters</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>周二，中国将一个装满月球背面土壤的储存装置送回地球，这是其雄心勃勃的月球和太阳系其他部分探测计划的最新成就。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在历时53天的飞行任务后，中国国家航天局的嫦娥六号返回器送回了土壤样本，这凸显出中国在太空领域<a href="https://www.nytimes.com/2022/11/29/world/asia/china-space-launch-astronauts.html">不断增强的能力</a>，也是自2007年以来一系列月球探测任务中的又一次胜利，迄今为止这些任务都是几乎毫无瑕疵地得以完成。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“嫦娥六号是人类历史上第一次从月球背面带回样本的任务，”中国地质大学的行星地质学家肖龙在一封电子邮件中写道。“这对全世界的科学家来说都是一件大事，”他补充道，“也是全人类值得庆祝的事情。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这种情绪和国际月球样本交换的前景凸显了外界的希望，即中国的月球和火星机器人探测任务将有助于促进对太阳系的科学理解。与此形成鲜明对比的是，华盛顿等方面的观点认为，周二的成就是21世纪具有地缘政治色彩的太空竞赛的最新里程碑。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>今年2月，一艘由私人运营的美国航天器<a href="https://www.nytimes.com/2024/02/22/science/intuitive-machines-lander-history.html">登陆月球</a>。为了让美国人重返月球表面，航空航天局也在推进阿耳忒弥斯计划，不过该计划的下一个任务——宇航员绕月飞行已<a href="https://www.nytimes.com/2024/01/09/science/nasa-moon-artemis-spacex-delay.html">因技术问题而被推迟</a>。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国也在努力扩大在月球上的存在，未来几年里，将把更多的机器人送上月球，并最终实现宇航员登月。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-landing-image/25sci-china-moon-landing-image-jumbo.jpg" alt="嫦娥六号月球着陆器上的摄像机捕捉到了航天器下降到月球表面的场景。" data-src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-landing-image/25sci-china-moon-landing-image-jumbo.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>嫦娥六号月球着陆器上的摄像机捕捉到了航天器下降到月球表面的场景。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>为了实现这一目标，中国采取了缓慢而稳健的方法，实施了提前数十年设计的机器人月球探索计划。该计划以中国月宫仙子嫦娥命名，其中前两次的任务是绕月飞行，对月球表面进行拍摄和绘制。随后，嫦娥三号于2013年登陆月球表面，并放出了玉兔一号月球车。2019年，嫦娥四号成为首个访问月球背面的航天器，并将玉兔二号月球车送上月球表面。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>一年后，中国的嫦娥五号着陆月球，将1731克重的月球表面风化层样本送回地球。这一成就使中国成为继美国和苏联之后第三个实现从月球采集样本这一复杂轨道规划的国家。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>据香港大学月球地质学家钱煜奇介绍，嫦娥五号和嫦娥六号的轨道操作都是中国未来载人登月任务的试运行，未来这些载人登月会像20世纪60年代和70年代的阿波罗任务一样，需要在月球表面着陆，然后让人类宇航员重新升空。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large with-no-credit-caption">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-sampler-image/25sci-china-moon-sampler-image-jumbo.jpg" alt="" data-src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-sampler-image/25sci-china-moon-sampler-image-jumbo.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span></span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国致力于将宇航员送上月球，而其长期战略则是通过了解太阳系来获取科学利益。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>嫦娥五号样本比美国和苏联在20世纪60年代和70年代收集的月球物质更年轻。它主要由玄武岩或古代火山喷发的冷却熔岩组成。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>两个由中国人领导的研究小组<a rel="noopener noreferrer" target="_blank" href="https://www.nature.com/articles/s41586-021-04100-2">得出结论</a>，认为这些玄武岩大约有20亿年的历史，这意味着月球上的火山活动比美国阿波罗号和苏联月球车样本推断的时间范围至少延长了10亿年。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>其他对该物质的研究排除了有关月球内部如何变暖到足以产生火山活动的理论。一个研究小组<a rel="noopener noreferrer" target="_blank" href="https://www.nature.com/articles/s41586-021-04119-5">发现</a>，月球内部的放射性元素含量不足以引起火山喷发，这些元素可能会衰变并产生热量。另一个<a rel="noopener noreferrer" target="_blank" href="https://www.nature.com/articles/s41586-021-04107-9">研究结果</a>排除了月幔中的水是导致火山活动的内部熔融的潜在来源这一可能性。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>嫦娥六号<a href="https://www.nytimes.com/2024/05/03/science/china-moon-launch-watch.html">于5月3日发射</a>，其科学抱负更加宏大：从月球背面带回物质。月球的表面主要是广阔的黑暗平原，那里曾经流淌着古老的熔岩。但背面的平原较少。它还有更多的陨石坑和更厚的壳层。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>而且由于那一半从未面向地球，因此无法直接与月球背面的着陆器进行通信，因此很难成功到达。中国航天局依靠之前发射到月球轨道的两颗卫星“鹊桥”和“鹊桥二号”在嫦娥六号访问期间与其保持联系。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>该航天器采用与嫦娥五号相同的技术抵达月球，然后将样本带回地球。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-loft-image/25sci-china-moon-loft-image-master1050.jpg" alt="6月3日，嫦娥六号着陆器采集的月球样本被送入月球轨道。" data-src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-loft-image/25sci-china-moon-loft-image-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>6月3日，嫦娥六号着陆器采集的月球样本被送入月球轨道。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>在月球轨道上运行几周后，嫦娥六号<a href="https://www.nytimes.com/2024/06/02/world/asia/china-moon-landing.html">降落</a>到南极-艾特肯盆地边缘的一个地点，这是月球上最古老、最深的撞击坑。着陆器配备了机械勺和钻头，花了两天时间从周围环境和月球地表下收集月球岩石和尘埃。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>然后，它把这些材料收起。这次任务部署了一辆微型漫游车，它拍下了着陆器升起一面小中国国旗的照片。然后，在6月3日，上升器将样本容器带回月球轨道。6月6日，这些材料与留在轨道上的飞船会合，准备开始返回地球的旅程。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>本周二，样本容器重新进入地球大气层，然后用降落伞落到内蒙古四子王旗地区的地表，地面人员展开工作将其回收。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>当科学家们获得月球背面土壤后，他们将把新发现的玄武岩成分与月球正面的玄武岩成分进行比较。这可能会帮助他们推断出月球的火山活动是如何导致月球两半发生不同演变的。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>任务小组还将寻找周围地区的物质，这些物质是在彗星和小行星撞击时被炸离原始地点的。钱博士称，如果这些撞击足够强烈，可能把月球下地壳和上地幔的物质炸出来。这将有助于了解月球内部的结构和组成。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-rendezvous-image/25sci-china-moon-rendezvous-image-jumbo.jpg" alt="月球采样容器与在轨的嫦娥六号飞船的一部分在月球上空会和。" data-src="https://static01.nyt.com/images/2024/06/24/science/25sci-china-moon-rendezvous-image/25sci-china-moon-rendezvous-image-jumbo.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>月球采样容器与在轨的嫦娥六号飞船的一部分在月球上空会和。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>这些撞击产生的熔岩还可以提供有关南极-艾特肯盆地的形成时间及其形成年代的线索，科学家们认为，在这一时期，小行星和彗星对内太阳系进行了连番冲撞。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>钱博士说，这一时期“完全改变了月球的地质历史”，同时也是“地球演化的关键时期”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>圣母大学行星地质学家克莱夫·尼尔称这是一个远大的目标，但他期待着样本返回后的发现。在谈到中国迄今为止在月球上取得的一系列成功时，“这非常好，”他说。“我支持他们。”</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>然而，紧张的政治关系将使美国科学家与中国研究人员合作研究月球背面样本的前景面临挑战。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>2011年颁布的《沃尔夫修正案》禁止航空航天局将联邦资金用于与中国政府的双边合作。联邦官员最近批准了一项豁免，允许航空航天局资助的研究人员申请获取嫦娥五号带回的月球正面样本。但美国众议院6月通过的另一项法案将禁止与中国机构有研究联系的大学接受美国国防部的资助。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>未来，中国将目光集中在月球南极，嫦娥七号和八号将在那里探索环境，寻找水和其他资源。中国希望在2030年之前向月球派出载人飞行任务。最终，中国计划在月球南极建立一个国际基地。<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>美国航空航天局的阿尔忒弥斯计划也在瞄准月球南极。局长比尔·纳尔逊曾将这些同时进行的<a href="https://www.nytimes.com/2023/08/10/science/russia-moon-launch.html">项目</a>称为中美竞赛。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>许多科学家不接受这种说法。尼尔博士说，1969年美国宇航员先于苏联宇航员登上月球表面后，研究月球的资源急剧下降。“我不喜欢国际太空竞赛，因为它们不可持续，”他说。“比赛是为了赢得胜利。一旦你赢了，然后呢？”<br /></p>
+      </div>
+      <div class="article-paragraph">
+        <p>他还说：“我认为，重要的是要把太空看作是可以把我们团结在一起的东西，而不是把我们割裂的东西。”<br /></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>嫦娥六号还搭载了来自法国和巴基斯坦等国的国际载荷。中国研究人员认为这是未来的一个好兆头。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>肖博士表示：“月球探测是全人类的共同事业。”他还说，他希望加强国际合作，“特别是像中国和美国这样的航天大国之间的合作”。<br /></p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+    <p>Joy Dong自香港对本文有研究贡献。 </p>
+    <p><span>Katrina Miller是《纽约时报》驻芝加哥的科学记者。她在芝加哥大学获得了物理学博士学位。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/katrina-miller">点击查看更多关于她的信息。</a></span></p>
+    <p>翻译：Annie Xu、Ziyu Qing</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/06/25/science/change-6-china-earth-moon.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E9%9F%A9%E5%9B%BD%E9%94%82%E7%94%B5%E6%B1%A0%E5%8E%82%E7%81%AB%E7%81%BE-%E4%B8%BA%E4%BD%95%E6%AD%BB%E8%80%85%E5%A4%9A%E4%B8%BA%E4%B8%AD%E5%9B%BD%E5%8A%B3%E5%B7%A5">
+          韩国锂电池厂火灾：为何死者多为中国劳工
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9AIPO%E4%B8%BA%E4%BD%95%E5%A4%A7%E5%B9%85%E5%87%8F%E5%B0%91">
+          中国企业IPO为何大幅减少
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E4%B9%B0%E4%B9%B0%E4%B9%B0%E9%80%A0%E5%B0%B1%E4%B8%9C%E5%8D%97%E4%BA%9A-%E6%A6%B4%E8%8E%B2%E5%AF%8C%E8%B1%AA">
+          中国人买买买造就东南亚“榴莲富豪”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-25/%E6%9C%9D%E5%9C%A3-%E9%9F%B3%E4%B9%90%E8%8A%82-%E5%A5%A5%E8%BF%90%E4%BC%9A-%E6%9E%81%E7%AB%AF%E9%85%B7%E7%83%AD%E4%B8%8B%E7%9A%84%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8A%A8%E6%9C%89%E5%A4%9A%E5%8D%B1%E9%99%A9">
+          朝圣、音乐节、奥运会，极端酷热下的大型活动有多危险
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-25/%E6%8B%9C%E7%99%BB%E5%92%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%9C%AC%E5%91%A8%E8%BE%A9%E8%AE%BA-%E5%88%86%E6%9E%90%E4%BA%BA%E5%A3%AB%E8%B0%88%E4%B8%A4%E4%BA%BA%E5%9C%A8%E5%85%B3%E9%94%AE%E5%A4%96%E4%BA%A4%E6%94%BF%E7%AD%96%E9%97%AE%E9%A2%98%E4%B8%8A%E7%9A%84%E7%AB%8B%E5%9C%BA">
+            前一篇：拜登和特朗普本周辩论，分析人士谈两人在关键外交政策问题上的立场
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-25/%E5%8B%9E%E5%8A%9B%E4%B8%8D%E8%B6%B3%E6%9C%89%E6%A9%9F%E8%82%A5%E6%9C%AA%E8%A6%86%E5%9C%9F%E7%99%BC%E8%87%AD%E5%91%B3-%E5%8F%B0%E6%9D%B1%E6%8E%A5%E7%8D%B248%E4%BB%B6%E9%99%B3%E6%83%85">
+            后一篇：勞力不足有機肥未覆土發臭味 台東接獲48件陳情
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E6%8B%9C%E7%99%BB%E5%92%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%9C%AC%E5%91%A8%E8%BE%A9%E8%AE%BA-%E5%88%86%E6%9E%90%E4%BA%BA%E5%A3%AB%E8%B0%88%E4%B8%A4%E4%BA%BA%E5%9C%A8%E5%85%B3%E9%94%AE%E5%A4%96%E4%BA%A4%E6%94%BF%E7%AD%96%E9%97%AE%E9%A2%98%E4%B8%8A%E7%9A%84%E7%AB%8B%E5%9C%BA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E5%8B%9E%E5%8A%9B%E4%B8%8D%E8%B6%B3%E6%9C%89%E6%A9%9F%E8%82%A5%E6%9C%AA%E8%A6%86%E5%9C%9F%E7%99%BC%E8%87%AD%E5%91%B3-%E5%8F%B0%E6%9D%B1%E6%8E%A5%E7%8D%B248%E4%BB%B6%E9%99%B3%E6%83%85'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9AIPO%E4%B8%BA%E4%BD%95%E5%A4%A7%E5%B9%85%E5%87%8F%E5%B0%91'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E4%B9%B0%E4%B9%B0%E4%B9%B0%E9%80%A0%E5%B0%B1%E4%B8%9C%E5%8D%97%E4%BA%9A-%E6%A6%B4%E8%8E%B2%E5%AF%8C%E8%B1%AA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-25/%E6%8B%9C%E7%99%BB%E5%92%8C%E7%89%B9%E6%9C%97%E6%99%AE%E6%9C%AC%E5%91%A8%E8%BE%A9%E8%AE%BA-%E5%88%86%E6%9E%90%E4%BA%BA%E5%A3%AB%E8%B0%88%E4%B8%A4%E4%BA%BA%E5%9C%A8%E5%85%B3%E9%94%AE%E5%A4%96%E4%BA%A4%E6%94%BF%E7%AD%96%E9%97%AE%E9%A2%98%E4%B8%8A%E7%9A%84%E7%AB%8B%E5%9C%BA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-25/%E5%8B%9E%E5%8A%9B%E4%B8%8D%E8%B6%B3%E6%9C%89%E6%A9%9F%E8%82%A5%E6%9C%AA%E8%A6%86%E5%9C%9F%E7%99%BC%E8%87%AD%E5%91%B3-%E5%8F%B0%E6%9D%B1%E6%8E%A5%E7%8D%B248%E4%BB%B6%E9%99%B3%E6%83%85">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9AIPO%E4%B8%BA%E4%BD%95%E5%A4%A7%E5%B9%85%E5%87%8F%E5%B0%91">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-25/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E4%B9%B0%E4%B9%B0%E4%B9%B0%E9%80%A0%E5%B0%B1%E4%B8%9C%E5%8D%97%E4%BA%9A-%E6%A6%B4%E8%8E%B2%E5%AF%8C%E8%B1%AA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

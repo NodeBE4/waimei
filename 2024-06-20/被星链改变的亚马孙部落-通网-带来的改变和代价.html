@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>被星链改变的亚马孙部落：“通网”带来的改变和代价 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+" />
+    <meta property="og:description" content="
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="被星链改变的亚马孙部落：“通网”带来的改变和代价" />
+    <meta property="twitter:title" content="被星链改变的亚马孙部落：“通网”带来的改变和代价" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7020)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240621%2Fstarlink-internet-elon-musk-brazil-amazon%2F%3Futm_source%3DRSS&t=%E8%A2%AB%E6%98%9F%E9%93%BE%E6%94%B9%E5%8F%98%E7%9A%84%E4%BA%9A%E9%A9%AC%E5%AD%99%E9%83%A8%E8%90%BD%EF%BC%9A%E2%80%9C%E9%80%9A%E7%BD%91%E2%80%9D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%94%B9%E5%8F%98%E5%92%8C%E4%BB%A3%E4%BB%B7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240621%2Fstarlink-internet-elon-musk-brazil-amazon%2F%3Futm_source%3DRSS&t=%E8%A2%AB%E6%98%9F%E9%93%BE%E6%94%B9%E5%8F%98%E7%9A%84%E4%BA%9A%E9%A9%AC%E5%AD%99%E9%83%A8%E8%90%BD%EF%BC%9A%E2%80%9C%E9%80%9A%E7%BD%91%E2%80%9D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%94%B9%E5%8F%98%E5%92%8C%E4%BB%A3%E4%BB%B7&d=2024-06-20&e=
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+
+
+  
+    
+巴西亚马孙地区，马鲁博人的玛纳基阿维村里卫星接收天线。 Victor Moriyama for The New York Times
+    
+  
+  
+    
+      
+        随着演讲的进行，人们的目光转向屏幕。年轻人刷着Instagram。一个男人在给女朋友发短信。当该组织的第一位女性领导人讲话时，男人们围着一部手机看足球比赛直播。
+      
+      
+        在任何地方，这样一幕都是很普通的。但这发生在一个偏远的土著村庄，在地球上最与世隔绝的地区之一。
+      
+      
+        马鲁博人长期居住在亚马孙雨林深处，散布在伊图伊河沿岸数百公里的共有小屋中。他们说自己的语言，服用死藤水与森林精灵沟通，捕捉蜘蛛猴做汤或当做宠物。
+      
+      
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240621%2Fstarlink-internet-elon-musk-brazil-amazon%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS&text=被星链改变的亚马孙部落：“通网”带来的改变和代价&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS&title=被星链改变的亚马孙部落：“通网”带来的改变和代价" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS&title=被星链改变的亚马孙部落：“通网”带来的改变和代价" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=被星链改变的亚马孙部落：“通网”带来的改变和代价&body=
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS&title=被星链改变的亚马孙部落：“通网”带来的改变和代价&caption=
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=被星链改变的亚马孙部落：“通网”带来的改变和代价&url=https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>被星链改变的亚马孙部落：“通网”带来的改变和代价</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-06-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240621%2Fstarlink-internet-elon-musk-brazil-amazon%2F%3Futm_source%3DRSS&t=%E8%A2%AB%E6%98%9F%E9%93%BE%E6%94%B9%E5%8F%98%E7%9A%84%E4%BA%9A%E9%A9%AC%E5%AD%99%E9%83%A8%E8%90%BD%EF%BC%9A%E2%80%9C%E9%80%9A%E7%BD%91%E2%80%9D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%94%B9%E5%8F%98%E5%92%8C%E4%BB%A3%E4%BB%B7&d=2024-06-20&e=
+被星链改变的亚马孙部落：“通网”带来的改变和代价
+——
+
+
+  
+    
+巴西亚马孙地区，马鲁博人的玛纳基阿维村里卫星接收天线。 Victor Moriyama for The New York Times
+    
+  
+  
+    
+      
+        随着演讲的进行，人们的目光转向屏幕。年轻人刷着Instagram。一个男人在给女朋友发短信。当该组织的第一位女性领导人讲话时，男人们围着一部手机看足球比赛直播。
+      
+      
+        在任何地方，这样一幕都是很普通的。但这发生在一个偏远的土著村庄，在地球上最与世隔绝的地区之一。
+      
+      
+        马鲁博人长期居住在亚马孙雨林深处，散布在伊图伊河沿岸数百公里的共有小屋中。他们说自己的语言，服用死藤水与森林精灵沟通，捕捉蜘蛛猴做汤或当做宠物。
+      
+      
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20240621%2Fstarlink-internet-elon-musk-brazil-amazon%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1718913669000-->
+<p><a href="https://cn.nytimes.com/world/20240621/starlink-internet-elon-musk-brazil-amazon/?utm_source=RSS">被星链改变的亚马孙部落：“通网”带来的改变和代价</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/06/02/world/02brazil-starlink-tribe-promo/02brazil-starlink-tribe-promo-master1050.jpg" width="1050" height="700" alt="巴西亚马孙地区，马鲁博人的玛纳基阿维村里卫星接收天线。" referrerpolicy="no-referrer" />    <figcaption>
+<span>巴西亚马孙地区，马鲁博人的玛纳基阿维村里卫星接收天线。</span> <cite>Victor Moriyama for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>随着演讲的进行，人们的目光转向屏幕。年轻人刷着Instagram。一个男人在给女朋友发短信。当该组织的第一位女性领导人讲话时，男人们围着一部手机看足球比赛直播。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在任何地方，这样一幕都是很普通的。但这发生在一个偏远的土著村庄，在地球上最与世隔绝的地区之一。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>马鲁博人长期居住在亚马孙雨林深处，散布在伊图伊河沿岸数百公里的共有小屋中。他们说自己的语言，服用死藤水与森林精灵沟通，捕捉蜘蛛猴做汤或当做宠物。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>他们与世隔绝，几百年来一直保持着这种生活方式——有些村庄需要一周的时间才能到达。但自去年9月以来，由于埃隆·马斯克，马鲁博人拥有了高速互联网。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>这个2000人的部落是巴西各地数百个部落中的一个，他们突然开始使用马斯克的私人太空公司SpaceX提供的卫星互联网服务星链。自2022年进入巴西以来，星链已经席卷了世界上最大的雨林，将网络带到地球上最后的离线地区之一。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>《纽约时报》深入亚马孙，走访了马鲁博村庄，试图了解一个封闭的小文明突然向世界开放时会发生什么。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-2/00brazil-starlink-lhjz-master1050.jpg" alt="自从他们村庄有了星链以来，许多马鲁博人都注册了 Facebook和Instagram账户。" data-src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-2/00brazil-starlink-lhjz-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>自从他们村庄有了星链以来，许多马鲁博人都注册了 Facebook和Instagram账户。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-whzk/00brazil-starlink-whzk-master1050.jpg" alt="马鲁博人经常使用手机。村里有了卫星接收天线后，他们在距离最近的城市买了手机。" data-src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-whzk/00brazil-starlink-whzk-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>马鲁博人经常使用手机。村里有了卫星接收天线后，他们在距离最近的城市买了手机。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>“当它到来的时候，每个人都很高兴，”73岁的提纳玛·马鲁博说，她坐在村中“马洛卡”的泥地板上，“马洛卡”是一种约15米高的小屋，他们一家人在这里睡觉、做饭和吃饭。互联网带来了明显的好处，比如与远方的亲人视频聊天，以及在紧急情况下寻求帮助。“但现在，情况变得更糟了，”她说。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>马鲁博人正努力应对互联网的根本困境：它已经变得必不可少——但这是有代价的。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在与星链合作仅九个月后，马鲁博人已经开始应对困扰美国家庭多年的同样挑战：青少年沉迷手机；群聊里充满流言蜚语；社交网络让人上瘾；网上的陌生人；暴力电子游戏；诈骗；不实信息；未成年人看色情内容。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>随着互联网的不断发展，现代社会几十年来一直在应对这些问题。在马鲁博和其他土著部落，几代人以来，人们一直抵制现代化，现在他们同时面对互联网的潜力和危险，还要它对他们的身份和文化来说意味着什么。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p><span>由于星链的出现，这场争论现在已经到来。通过在如此偏远的地区提供曾经无法想象的服务，星链迅速<a href="https://www.nytimes.com/interactive/2023/07/28/business/starlink.html">主导了全球卫星互联网市场</a>。SpaceX已经发射了6000颗低轨道星链卫星（约占所有在运行的航天器的60%），为地球上几乎任何地方提供比许多家庭互联网更快的速度，包括在撒哈拉沙漠、蒙古草原和太平洋小岛。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>但是，也许星链最具变革性的影响发生在那些曾经基本上不在互联网覆盖范围之内的地区，比如亚马孙。目前，巴西亚马孙地区有6.6万份有效合同，涉及该地区93%的法定市镇。这为那些生活在森林里的人提供了新的工作和教育机会。它还为亚马孙地区的非法伐木者和采矿者提供了一种通讯和逃避当局的<a rel="noopener noreferrer" target="_blank" href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2024/04/12/ibama-apreende-antenas-starlink-internet-elon-musk-garimpo-ilegal-amazonia.htm">新工具</a>。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-5/00brazil-starlink-mgvj-master1050.jpg" alt="搬运星链卫星接收天线的马鲁博人停下来休息，吃着木瓜。" data-src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-5/00brazil-starlink-mgvj-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>搬运星链卫星接收天线的马鲁博人停下来休息，吃着木瓜。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/02/world/02brazil-starlink-tribe-11/02brazil-starlink-tribe-11-master1050.jpg" alt="贾瓦里山谷原住民领地，这里是马鲁博人居住的地方，也是地球上最为与世隔绝的地方之一。" data-src="https://static01.nyt.com/images/2024/06/02/world/02brazil-starlink-tribe-11/02brazil-starlink-tribe-11-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>贾瓦里山谷原住民领地，这里是马鲁博人居住的地方，也是地球上最为与世隔绝的地方之一。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>马鲁博的一位首领、40岁的伊诺克·马鲁博（所有马鲁博人都使用同一个姓）说，他立即看到了星链的潜力。在离开丛林多年后，他说他相信互联网可以给他的人民带来新的自主权。有了它，他们可以更好地沟通，了解自己，讲述自己的故事。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>去年，他和一名巴西活动人士录制了一段50秒的视频，寻求潜在捐助者帮助他们获得星链的连接。视频中他戴着传统的马鲁博头饰，坐在马洛卡里。一个戴着动物牙齿项链的小孩坐在他旁边。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>他们把视频发了出去。几天后，他们收到了俄克拉荷马州一位女士的回复。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>部落</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>哈瓦里河谷原住民领地是地球上最为与世隔绝的地方之一，这片茂密的雨林面积与葡萄牙相当，没有道路，只有迷宫般的水道。哈瓦里山谷有26个部落，是世界上最密集的部落群，其中有19个完全与外界隔绝。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/02/world/02brazil-starlink-tribe66/02brazil-starlink-tribe-master1050.jpg" alt="伊诺克·马鲁博正在村里安装星链卫星接收天线。" data-src="https://static01.nyt.com/images/2024/06/02/world/02brazil-starlink-tribe66/02brazil-starlink-tribe-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>伊诺克·马鲁博正在村里安装星链卫星接收天线。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-4/00brazil-starlink-bjzk-master1050.jpg" alt="伊诺克辗转于丛林和城市，曾经做过可口可乐的平面设计师。" data-src="https://static01.nyt.com/images/2024/06/02/multimedia/02brazil-starlink-tribe-4/00brazil-starlink-bjzk-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>伊诺克辗转于丛林和城市，曾经做过可口可乐的平面设计师。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>马鲁博人也曾经与世隔绝，在丛林里游荡了几百年，直到19世纪末采集橡胶的人来到这里。由此而来的是数十年的暴力和疾病，同时也带来了新的习俗和技术。马鲁博人开始穿衣服。一些人学习葡萄牙语。他们把弓箭换成了猎枪来猎杀野猪，把砍刀换成了链锯来清理木薯地。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>有一个家庭尤其在推动这一变化。在20世纪60年代，塞巴斯蒂昂·马鲁博是第一批在丛林之外生活的马鲁博之一。他回来时带来了另一项新技术：船舶发动机。它可以把几周的行程缩短到几天。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>他的儿子伊诺克成为了下一代领袖，渴望带领部落走向未来。伊诺克辗转于丛林和城市，曾经做过可口可乐的平面设计师。所以当马鲁博人的首领对接入互联网感兴趣时，他们就去找他询问。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>马斯克来到巴西后，伊诺克有了答案。2022年，这位SpaceX的所有者和时任巴西总统雅伊尔·博尔索纳罗在写着“连接亚马孙”的屏幕前宣布了星链的到来。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>伊诺克和与原住民部落合作的巴西活动人士弗洛拉·杜特拉向100多名国会议员致信，要求获得星链，但没有回应。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>去年年初，杜特拉看到一位美国女性在一个太空会议上发言。杜特拉查看了她的Facebook页面，看到她在SpaceX总部外拍照。“我知道她就是我要找的人，”她说。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>捐赠者</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>艾莉森·勒诺在领英页面上的描述是太空顾问、主题讲者、作家、飞行员、马术运动员、人道主义者、首席执行官、董事和11个亲生子女的母亲。她说，她本人的大部分收入都来自在俄克拉荷马州诺曼附近做体操教练和出租房屋。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>勒诺说，她并不是为了出名而帮助别人。“否则，我会告诉你我在世界各地开展的所有项目，”她在接受采访时说。“那是为了脸上的表情，是为了眼睛里的希望。这些就是奖杯。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>她说，去年，她从一个陌生人那里收到了一段视频，请求帮助为一个偏远的亚马孙部落建立网络连接，当时她就有了这样的想法。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>她从未去过巴西，但认为投资回报会很高。伊诺克想要20部星链天线来改变他的部落的生活，大约需要1.5万美元。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>勒诺说，她用自己的钱和孩子们的捐款买了这些天线。然后她订了机票去帮忙送货。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>连接</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>互联网设备是男人们背进来的，有人光着脚，有人穿着人字拖，在丛林里跋涉数公里，每人背着两部天线。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>紧随其后的是伊诺克、杜特拉、勒诺和一名记录她这次旅程的摄影师。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>互联网的到来立刻引起了轰动。“这极大地改变了我们的日常生活，以至于产生了有害影响，”伊诺克承认。“在村里，如果你不打猎、不捕鱼、不种菜，就没有饭吃。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/05/31/world/00starlink/00starlink-master1050.jpg" alt="艾莉森·勒诺（右）已向马鲁博人捐赠了超过20个星链卫星接收天线。" data-src="https://static01.nyt.com/images/2024/05/31/world/00starlink/00starlink-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>艾莉森·勒诺（右）已向马鲁博人捐赠了超过20个星链卫星接收天线。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-fmgv/00brazil-starlink-fmgv-master1050.jpg" alt="马鲁博人用好几趟船和数英里的徒步跋涉，将星链运到了村里。" data-src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-fmgv/00brazil-starlink-fmgv-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>马鲁博人用好几趟船和数英里的徒步跋涉，将星链运到了村里。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>部落首领意识到需要限制。他们决定，互联网将只在早上开放两小时，晚上开放五小时，周日全天开放。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>辩论</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>阿尔弗雷多·马鲁博是一个马鲁博村庄联合会的领导人，他已成为部落中对互联网最直言不讳的批评者。马鲁博人以口头方式传承历史和文化，他担心这些知识会流失。“所有人都泡在网上，有时他们甚至不和自己的家人说话，”他说。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>色情内容最令他不安。他说，年轻人在群聊中分享露骨视频，这对于一个不赞成在公共场合接吻的文化来说是一个惊人的变化。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>未来</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>今年4月，勒诺回到了丛林。在伊诺克的要求下，她又买了四部天线。其中两个被送往科鲁博部落，那是一个人口不到150人的部落，1996年首次与外界接触，至今仍有一些成员完全与世隔绝。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>勒诺坐在一根原木上，吃着放在马洛卡泥土地面上的干牛肉和煮木薯，她说她意识到互联网是“一把双刃剑”。因此，她说，当她在Facebook上发布给马鲁博带来互联网的消息时，她总是强调，这是应一位当地首领的要求。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“我不想让人们认为我把这些东西带进来是为了强加给他们。”她说。她还说，她希望他们能够“保护这种令人难以置信的文化的纯洁性，因为一旦它消失了，那就是真的消失了”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>饭后，伊诺克的父亲塞巴斯蒂安说，关于部落的互联网之旅，已经有过预言。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-bplm/00brazil-starlink-bplm-master1050.jpg" alt="马鲁博人还将太阳能板运到了村里，用来给星链供电。" data-src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-bplm/00brazil-starlink-bplm-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>马鲁博人还将太阳能板运到了村里，用来给星链供电。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-tczg/00brazil-starlink-tczg-master1050.jpg" alt="帮助原住民部落的活动人士弗洛拉·杜特拉（右）与勒诺和伊诺克·马鲁博。" data-src="https://static01.nyt.com/images/2024/05/22/multimedia/00brazil-starlink-tczg/00brazil-starlink-tczg-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>帮助原住民部落的活动人士弗洛拉·杜特拉（右）与勒诺和伊诺克·马鲁博。</span> <cite></cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>几十年前，一位最受尊敬的马鲁博人巫师设想了一种可以连接整个世界的手持设备。“这将造福人民，”他说。“但最终却并非如此。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>无论如何，他补充说，已经没有办法回到过去。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“首领们已经说得很清楚了，”他说。“我们不能没有互联网。”</p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+    <p>本文最初发表于2024年6月2日。</p>
+    <p>摄影：Victor Moriyama</p>
+    <p>Flávia Milhorance、Lis Moriconi自里约热内卢对本文有报道贡献。 </p>
+    <p>Jack Nicas是时报巴西分社社长，驻里约热内卢，负责南美洲大部分地区的报道。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/jack-nicas">点击查看更多关于他的信息。</a></p>
+    <p>翻译：晋其角</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/06/02/world/americas/starlink-internet-elon-musk-brazil-amazon.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-06-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-20/%E9%85%B8%E8%BE%A3%E7%B2%89%E5%92%8C%E9%85%B8%E8%8F%9C%E9%B1%BC-%E6%9B%B4%E5%A4%9A%E5%86%85%E5%9C%B0%E9%A4%90%E9%A6%86%E6%B6%8C%E5%85%A5%E9%A6%99%E6%B8%AF">
+          酸辣粉和酸菜鱼：更多内地餐馆涌入香港
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-20/%E4%BF%84%E6%9C%9D%E5%85%B1%E5%90%8C%E9%98%B2%E5%BE%A1%E6%9D%A1%E7%BA%A6%E7%BB%99%E5%8C%97%E4%BA%AC%E5%B8%A6%E6%9D%A5%E6%9B%B4%E5%A4%9A%E9%BA%BB%E7%83%A6">
+          俄朝共同防御条约给北京带来更多麻烦
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E4%BF%84%E4%B8%AD%E4%BC%9A%E9%87%8D%E5%90%AF%E6%A0%B8%E8%AF%95%E9%AA%8C%E5%90%97">
+          美俄中会重启核试验吗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-06-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-06-19/%E4%BF%84%E6%9C%9D%E7%AD%BE%E7%BD%B2%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE-%E6%9C%9D%E9%B2%9C%E5%8D%8A%E5%B2%9B%E6%97%A0%E6%A0%B8%E5%8C%96%E5%8A%AA%E5%8A%9B%E6%88%90%E7%A9%BA">
+          俄朝签署安全协议，朝鲜半岛无核化努力成空？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-20/%E4%BA%9A%E6%B4%B2%E5%8D%9A%E5%BD%A9%E5%9C%A8%E9%87%8D%E6%8B%BE%E7%B9%81%E8%8D%A3">
+            前一篇：亚洲博彩在重拾繁荣？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E5%8E%9F%E6%B2%B9%E5%BA%AB%E5%AD%98%E4%B8%8B%E9%99%8D-%E5%B0%B1%E6%A5%AD%E5%B8%82%E5%A0%B4%E9%99%8D%E6%BA%AB-%E5%9C%8B%E9%9A%9B%E6%B2%B9%E5%83%B9%E4%B8%8A%E6%BC%B2">
+            后一篇：美原油庫存下降、就業市場降溫 國際油價上漲
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-06-20/%E4%BA%9A%E6%B4%B2%E5%8D%9A%E5%BD%A9%E5%9C%A8%E9%87%8D%E6%8B%BE%E7%B9%81%E8%8D%A3'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E5%8E%9F%E6%B2%B9%E5%BA%AB%E5%AD%98%E4%B8%8B%E9%99%8D-%E5%B0%B1%E6%A5%AD%E5%B8%82%E5%A0%B4%E9%99%8D%E6%BA%AB-%E5%9C%8B%E9%9A%9B%E6%B2%B9%E5%83%B9%E4%B8%8A%E6%BC%B2'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-06-20/%E4%BF%84%E6%9C%9D%E5%85%B1%E5%90%8C%E9%98%B2%E5%BE%A1%E6%9D%A1%E7%BA%A6%E7%BB%99%E5%8C%97%E4%BA%AC%E5%B8%A6%E6%9D%A5%E6%9B%B4%E5%A4%9A%E9%BA%BB%E7%83%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E4%BF%84%E4%B8%AD%E4%BC%9A%E9%87%8D%E5%90%AF%E6%A0%B8%E8%AF%95%E9%AA%8C%E5%90%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-06-20/%E4%BA%9A%E6%B4%B2%E5%8D%9A%E5%BD%A9%E5%9C%A8%E9%87%8D%E6%8B%BE%E7%B9%81%E8%8D%A3">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E5%8E%9F%E6%B2%B9%E5%BA%AB%E5%AD%98%E4%B8%8B%E9%99%8D-%E5%B0%B1%E6%A5%AD%E5%B8%82%E5%A0%B4%E9%99%8D%E6%BA%AB-%E5%9C%8B%E9%9A%9B%E6%B2%B9%E5%83%B9%E4%B8%8A%E6%BC%B2">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-06-20/%E4%BF%84%E6%9C%9D%E5%85%B1%E5%90%8C%E9%98%B2%E5%BE%A1%E6%9D%A1%E7%BA%A6%E7%BB%99%E5%8C%97%E4%BA%AC%E5%B8%A6%E6%9D%A5%E6%9B%B4%E5%A4%9A%E9%BA%BB%E7%83%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-06-20/%E7%BE%8E%E4%BF%84%E4%B8%AD%E4%BC%9A%E9%87%8D%E5%90%AF%E6%A0%B8%E8%AF%95%E9%AA%8C%E5%90%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
