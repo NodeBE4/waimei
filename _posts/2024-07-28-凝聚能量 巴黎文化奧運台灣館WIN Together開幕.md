@@ -1,0 +1,17 @@
+---
+layout: post
+title: "凝聚能量 巴黎文化奧運台灣館WIN Together開幕"
+date: 2024-07-28T23:48:00.000Z
+author: (臺)中央社CNA
+from: https://www.cna.com.tw/news/aspt/202407290027.aspx
+tags: [ (臺)中央社CNA ]
+comments: True
+categories: [ (臺)中央社CNA ]
+---
+<!--1722210480000-->
+[凝聚能量 巴黎文化奧運台灣館WIN Together開幕](https://www.cna.com.tw/news/aspt/202407290027.aspx)
+------
+
+<div>
+<p>（中央社記者李若韻巴黎28日電）巴黎文化奧運台灣館27日正式開幕！儘管開場雨勢不小，整晚仍累積近4000名觀眾參與，無論國籍，所有人在台灣特有的廟會舞台現場，坐在大紅辦桌旁邊吃珍奶冰棒，邊看越來越熱鬧的表演，凝聚全世界的能量，WIN Together！</p><p>巴黎北方拉維特園區的文化奧運台灣館27日下午5點開放進場，儘管巴黎的雨勢自26日晚間奧運開幕式後就沒停過，但人潮卻一直湧進台灣館，來自世界各地的人撐著雨傘，驚喜地打開每日限量贈送的茄芷袋禮包，立刻大啖珍奶冰棒、小泡芙、無酒精的台灣啤酒，或站或坐的在廟會舞台前等待表演。</p><p>松尼（Sonny）和蒂波（Thibaut）是巴黎當地人，他們好奇的問中央社記者：「小泡芙是什麼？我們3天後就要去台灣旅行1個月，今天先來預習台灣風情！」</p><p>來自瑞士的記者卡倫（Karen）對著鏡頭邊吃珍奶冰棒，邊錄製台灣館的影像報導。她已經採訪完巴西館、南非館，接著要去印度館。由於台灣館的官方法文名稱是中華台北館（Pavillon Chinese Taipei），卡倫說她花了一些時間理解背後的原因。</p><p>法國人格布茲（Grabuez）的太太是台灣人，熟知台灣政治狀況的他，發現台灣館的平面設計把「Taiwan」藏得不漏痕跡，「將W字母用小圖示取代，像是兩杯珍奶、兩隻台灣黑熊、兩個天燈、一雙藍白拖。看起來可愛，卻富含玄機，真的很聰明。」</p><p>台灣館現場設有兩個諮詢台，服務人員之一的麗莎（Lisa）向中央社記者表示，今天被問到最多的問題是「哪裡可以拿到珍奶冰棒」？再來是「哪裡可以拿到以W為設計的台灣奧運紀念徽章」？麗莎的工作是向現場觀眾介紹正在台灣館演出的藝術團隊，並提供7月27日至8月10日的演出資訊。</p><p>7月27日台灣館的表演從傍晚6點開始至晚上10點，由4組截然不同的表演，展現台灣的多元。</p><p>開場由「DJ QuestionMark」，結合VJ feiiic的創意視覺，從溫柔抽象的聲音表情，帶入台灣饒舌歌手「蛋堡」的歌曲，勾出台灣人的輪廓；接著由箏、阮及笛組成的三重奏樂團「三個人」，風格創新，以調皮感性的態度說著生活感與自然萬物。</p><p>另外，女子馬戲團體「創造焦點」在腿技、砌物、呼拉圈中，大聲咆哮女性平權與自我追尋，表情自信確定。最後由歌手「阿爆」帶領那屋瓦樂團，用不需要翻譯的節奏，帶領全場觀眾盡情搖擺，在現場氣氛嗨到最高點後，再以優雅平靜的創作古調收場，結束首日演出。</p><p>來自紐約的道格拉斯（Douglas）因為朋友推薦，特別來台灣館聽DJ QuestionMark的演出，他向中央社記者表示他很喜歡，「細節好多，風格強烈」。</p><p>住在拉維特園區附近的巴黎人馬里奧（Mario）喜歡「三個人」音樂裡的和諧感，尤其對「阮」這個樂器很好奇，他覺得三個人的穿著很有整體感，很好看。馬里奧認為文化奧運藉由不同國家的場館，讓大家有機會親自感受不同的文化。</p><p>來自南非的布倫蔻（Bulumko）和黛比（Debbie）為了奧運已來巴黎6週，因為在園區散步而發現台灣館，她們覺得「三個人」的音樂優美，而且全場似乎都沉浸其中，氣氛讓人放鬆。</p><p>身披法國國旗的卡林（Coline）來自北法諾曼第，她覺得「創造焦點」的表演很厲害，她很驚訝。卡林與家人為了奧運來巴黎1週，才剛在園區中的法國館看完橄欖球決賽轉播，法國代表隊贏得冠軍，他們非常高興。</p><p>哥倫比亞館就在台灣館附近，一群哥倫比亞人來到台灣館準備聽「阿爆」的壓軸表演，只說西班牙語的他們表示無法接受採訪，但頻頻伸出大拇指說：「Taiwan Good」！（編輯：韋樞）1130729</p><div class="articlekeywordGroup"><div class="keywordTag"><a href="https://www.cna.com.tw/tag/4999/">#台灣</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/5164/">#台灣館</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/26415/">#阿爆</a></div><div class="keywordTag"><a href="https://www.cna.com.tw/tag/44891/">#文化奧運</a></div></div><div class="paragraph moreArticle flexhalf"><div class="moreArticle-title trailing"><span>阿爆</span></div><a class="discursive" href="https://www.cna.com.tw/news/aspt/202406190330.aspx"><svg width="6" height="6"><use href="#svg-dot"></use></svg><span>「月光•海音樂會」10週年 東管處演練確保安全</span></a></div><div class="paragraph moreArticle"><div class="moreArticle-title trailing"><a href="https://www.cna.com.tw/topic/newstopic/4547.aspx" target="_blank">文化奧運</a></div><ul class="timeline"><li class="timelineItem isNotLink isLatest" data-time="2024/07/29 07:48"><div class="timelineTitle"><div>凝聚能量 巴黎文化奧運台灣館WIN Together開幕</div></div><div class="timelineTime"><span>2024/07/29 07:48</span></div></li><li class="timelineItem " data-time="2024/07/28 13:59"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/acul/202407280092.aspx" target="_blank">文化奧運台灣館開幕近4000觀眾同歡 民眾排隊搶拿限量茄芷包禮袋</a></div><div class="timelineTime"><span>2024/07/28 13:59</span></div></li><li class="timelineItem " data-time="2024/07/27 18:38"><div class="timelineTitle"><a href="https://www.cna.com.tw/news/acul/202407270210.aspx" target="_blank">文化奧運台灣館為巴黎奧運祈福 分享多元台灣</a></div><div class="timelineTime"><span>2024/07/27 18:38</span></div></li></ul></div>
+</div>
