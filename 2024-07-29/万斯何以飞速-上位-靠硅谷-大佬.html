@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>万斯何以飞速“上位”？靠硅谷“大佬” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+" />
+    <meta property="og:description" content="
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="万斯何以飞速“上位”？靠硅谷“大佬”" />
+    <meta property="twitter:title" content="万斯何以飞速“上位”？靠硅谷“大佬”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20240730%2Fvance-trump-cryptocurrency%2F%3Futm_source%3DRSS&t=%E4%B8%87%E6%96%AF%E4%BD%95%E4%BB%A5%E9%A3%9E%E9%80%9F%E2%80%9C%E4%B8%8A%E4%BD%8D%E2%80%9D%EF%BC%9F%E9%9D%A0%E7%A1%85%E8%B0%B7%E2%80%9C%E5%A4%A7%E4%BD%AC%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20240730%2Fvance-trump-cryptocurrency%2F%3Futm_source%3DRSS&t=%E4%B8%87%E6%96%AF%E4%BD%95%E4%BB%A5%E9%A3%9E%E9%80%9F%E2%80%9C%E4%B8%8A%E4%BD%8D%E2%80%9D%EF%BC%9F%E9%9D%A0%E7%A1%85%E8%B0%B7%E2%80%9C%E5%A4%A7%E4%BD%AC%E2%80%9D&d=2024-07-29&e=
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+
+
+  
+    
+ Julia Nikhinson/Associated Press
+    
+  
+  
+    
+      
+        这世上的政治人物，有的才华横溢，有的平庸无能，还有第三种，叫JD·万斯——怎么说呢，当初“不养孩子只养猫的女人”的言论引发众怒，他为了打圆场，弱弱地说了个冷笑话，说他“对猫没意见”。
+      
+      
+        如今他干脆开始颠倒黑白，声称贺锦丽主张取消生育税务抵免，尽管她作为拜登政府的一员是支持对该抵免进行一次大幅扩充的，在共和党的一致反对下，这项显著改善了儿童贫困问题的抵免措施于2022年过期失效。
+      
+      
+        那么，这人是怎么就成了共和党的副总统提名人了呢？他的支持者是些什么人？他跟信教的右翼群体也没有什么渊源，顶多就是在女性和生育权利上..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20240730%2Fvance-trump-cryptocurrency%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS&text=万斯何以飞速“上位”？靠硅谷“大佬”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS&title=万斯何以飞速“上位”？靠硅谷“大佬”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS&title=万斯何以飞速“上位”？靠硅谷“大佬”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=万斯何以飞速“上位”？靠硅谷“大佬”&body=
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS&title=万斯何以飞速“上位”？靠硅谷“大佬”&caption=
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=万斯何以飞速“上位”？靠硅谷“大佬”&url=https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>万斯何以飞速“上位”？靠硅谷“大佬”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-07-29
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20240730%2Fvance-trump-cryptocurrency%2F%3Futm_source%3DRSS&t=%E4%B8%87%E6%96%AF%E4%BD%95%E4%BB%A5%E9%A3%9E%E9%80%9F%E2%80%9C%E4%B8%8A%E4%BD%8D%E2%80%9D%EF%BC%9F%E9%9D%A0%E7%A1%85%E8%B0%B7%E2%80%9C%E5%A4%A7%E4%BD%AC%E2%80%9D&d=2024-07-29&e=
+万斯何以飞速“上位”？靠硅谷“大佬”
+——
+
+
+  
+    
+ Julia Nikhinson/Associated Press
+    
+  
+  
+    
+      
+        这世上的政治人物，有的才华横溢，有的平庸无能，还有第三种，叫JD·万斯——怎么说呢，当初“不养孩子只养猫的女人”的言论引发众怒，他为了打圆场，弱弱地说了个冷笑话，说他“对猫没意见”。
+      
+      
+        如今他干脆开始颠倒黑白，声称贺锦丽主张取消生育税务抵免，尽管她作为拜登政府的一员是支持对该抵免进行一次大幅扩充的，在共和党的一致反对下，这项显著改善了儿童贫困问题的抵免措施于2022年过期失效。
+      
+      
+        那么，这人是怎么就成了共和党的副总统提名人了呢？他的支持者是些什么人？他跟信教的右翼群体也没有什么渊源，顶多就是在女性和生育权利上..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20240730%2Fvance-trump-cryptocurrency%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722285214000-->
+<p><a href="https://cn.nytimes.com/opinion/20240730/vance-trump-cryptocurrency/?utm_source=RSS">万斯何以飞速“上位”？靠硅谷“大佬”</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/07/30/multimedia/29krugman1-wflh/29krugman1-wflh-master1050.jpg" width="1050" height="701" alt="" referrerpolicy="no-referrer" />    <figcaption>
+<span></span> <cite>Julia Nikhinson/Associated Press</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>这世上的政治人物，有的才华横溢，有的平庸无能，还有第三种，叫JD·万斯——怎么说呢，当初“不养孩子只养猫的女人”的言论引发众怒，他为了打圆场，<span>弱弱地说了个冷笑话，说他“<a rel="noopener noreferrer" target="_blank" href="https://www.usatoday.com/story/entertainment/celebrities/2024/07/25/jd-vance-cat-ladies-comment-celebrity-reactions/74549457007/">对猫没意见</a>”。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>如今他干脆开始颠倒黑白，<a rel="noopener noreferrer" target="_blank" href="https://x.com/Acyn/status/1817729281482711551">声称</a>贺锦丽主张取消生育税务抵免，尽管她作为拜登政府的一员是支持对该抵免进行一次<a href="https://www.nytimes.com/2022/11/25/us/politics/child-tax-credit.html">大幅扩充</a>的，在共和党的一致反对下，这项</span>显著改善了儿童贫困问题的抵免措施于2022年过期失效。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>那么，这人是怎么就成了共和党的副总统提名人了呢？他的支持者是些什么人？他跟信教的右翼群体也没有什么渊源，顶多就是在女性和生育权利上发表了一些<a href="https://www.nytimes.com/2024/07/25/opinion/kamala-harris-jd-vance.html">《使女的故事》</a>范儿的观点。他是最近才开始接受MAGA世界观的，曾经一度忧心忡忡地说唐纳德·特朗普会成为“<a href="https://www.nytimes.com/2024/07/26/us/politics/vance-political-conversion.html">美国的希特勒</a>”。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>万斯的横空出世是由一小撮以<a rel="noopener noreferrer" target="_blank" href="https://www.washingtonpost.com/technology/2024/07/28/jd-vance-peter-thiel-donors-big-tech-trump-vp/">彼得·蒂尔为首</a>的科技业亿万富翁<a href="https://www.nytimes.com/2024/07/17/technology/jd-vance-tech-silicon-valley.html">推动</a>的，他们在万斯2022年的参议员竞选上<a rel="noopener noreferrer" target="_blank" href="https://www.latimes.com/opinion/story/2024-07-26/elon-musk-and-peter-thiel-backed-trump-and-vance-to-what-ends">投入了巨资</a>。</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>这个小集团与一年前对小罗伯特·肯尼迪有过一阵迷恋的科技业人士显然是有相当程度的重叠的。他们对肯尼迪的热情渐渐消退，是因为他们认识到一个显而易见的事实——他是个怪胎，当个搅局的候选人还凑合，但要让他正正经经地去竞逐总统之位就不行了。另一方面，万斯的崛起之势——连贬损他的人似乎都没充分意识到他是个多么糟糕的政客——更加难以阻挡。理论上把万斯换下来的可能性仍然存在，但特朗普大概会坚持用他。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>无论如何，你需要把万斯当做一个群体的化身来看待，如果看他的回忆录的书名，你会以为他代表了乡下人，但其实是那些“技术男”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>如果说万斯代表整个硅谷，又是有失偏颇的<span>。他背后的推手——主要是坚定支持特朗普-万斯组合的科技业亿万富翁——是个<a rel="noopener noreferrer" target="_blank" href="https://www.washingtonpost.com/technology/2024/07/28/jd-vance-peter-thiel-donors-big-tech-trump-vp/">相对小</a>的群体，虽然</span>个个富可敌国。那么他们有什么共同点？</p>
+      </div>
+      <div class="article-paragraph">
+        <p>首先是右翼政治倾向。他们中有些人曾经自称是自由放任主义者，但现在与特朗普达成了和解，尽管后者承诺大规模驱逐移民，并暗示对政治对手发起检控，可以说跟自由放任完全不沾边。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>一些右翼科技人士还堕落到开始搞阴谋论。首当其冲的是埃隆·马斯克，他宣扬了一种<a rel="noopener noreferrer" target="_blank" href="https://www.politifact.com/factchecks/2024/mar/06/elon-musk/fact-check-elon-musks-claim-that-democrats-are-avo/">错误的说法</a>，即民主党人拒绝驱逐非法移民是因为他们认为能拿到这些人的选票。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>正如我<a href="https://www.nytimes.com/2023/08/28/opinion/columnists/covid-climate-cryptocurrency-plutocrats.html">之前所说</a>，让人意外的是，最富有的人会自然而然地受到妄想狂政治的吸引，这<a href="https://www.nytimes.com/2024/07/28/us/politics/donald-trump-2024-campaign-timothy-mellon.html">不仅限于科技业</a>。这一定程度上是因为许多亿万富翁很难避免让自己的<a href="https://www.nytimes.com/2023/07/06/opinion/robert-kennedy-jr-silicon-valley.html">身边</a>充斥着阿谀奉承之辈，在他们说蠢话时也不会指出来。另一方面也因为有的人似乎对那些钱买不到的东西怀着一种怪异的怨恨：既然我这么有钱，为什么不能把世界塑造成我想要的样子？</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p><span>“技术男”对特朗普和万斯的支持似乎还跟一个具体的东西有很大关系，那就是加密货币。2017年，支持特朗普的科技业大亨戴维·萨克斯——在本月的共和党大会上，他的演讲是<a rel="noopener noreferrer" target="_blank" href="https://www.usatoday.com/story/news/politics/elections/2024/07/15/david-sacks-speech-rnc/74411040007/">重头戏之一</a>——对CNBC说，“比特币实现了PayPal的创想，那就是创造‘新世界货币’。”去年，蒂尔的创始人基金向两种加密币<a rel="noopener noreferrer" target="_blank" href="https://www.reuters.com/technology/peter-thiels-founders-fund-made-200-million-crypto-investment-before-bull-run-2024-02-13/" title="Link: https://www.reuters.com/technology/peter-thiels-founders-fund-made-200-million-crypto-investment-before-bull-run-2024-02-13/">投资了2亿美元</a>。同样在去年，《政治人》杂志<a rel="noopener noreferrer" target="_blank" href="https://www.politico.com/news/2024/06/26/vance-crypto-00164859">报道</a>称，万斯“提出的一项议案将使银行可以不用再在监管机构的压力下拒绝加密币客户”。今年，他又在传阅一份“产业友好”的立法草案，将“对证监会和商品期货交易委员会管理加密币市场的方式进行全面改革”。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>什么是加密币？周六在一个比特币大会上讲话的特朗普<a rel="noopener noreferrer" target="_blank" href="https://www.nbcnews.com/politics/donald-trump/trump-hails-crypto-largest-bitcoin-conference-rcna163925">宣称</a>，“大多数人压根不知道这是个什么东西”——这话没错，并且基本肯定也适用于特朗普本人，他曾经不屑地说比特币就是针对美元的“<a rel="noopener noreferrer" target="_blank" href="https://www.bbc.com/news/business-57392734">一场骗局</a>”，但现在他说“攻击加密币的”</span>是<span>那些“<a href="https://www.nytimes.com/2024/07/27/us/politics/trump-bitcoin-crypto.html">左翼法西斯分子</a>”。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>现实是比特币在推出15年后——对科技业来说这简直是永恒——仍然在经济上毫无用处：2022年的一项<a rel="noopener noreferrer" target="_blank" href="https://www.bis.org/publ/bppdf/bispap136.pdf#page=18">调查</a>发现，涉及加密币资产的交易“很少是加密币生态之外的支付”。但有两个领域它是有用的，那就是<a rel="noopener noreferrer" target="_blank" href="https://www.justice.gov/opa/pr/bitcoin-fog-operator-convicted-money-laundering-conspiracy">洗钱</a>和<a rel="noopener noreferrer" target="_blank" href="https://www.npr.org/2021/06/10/1004874311/how-bitcoin-has-fueled-ransomware-attacks">勒索</a>。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>但许多鼓吹加密币的人现在似乎相信，他们通过特朗普可以得到至关重要的政治支持。他们已经成功地将自己的一些最重要的愿望嵌入到2024年共和党<a rel="noopener noreferrer" target="_blank" href="https://www.presidency.ucsb.edu/documents/2024-republican-party-platform">竞选纲领</a>中：“共和党人将终结民主党人对加密币进行的非法、非美国的镇压，并反对创建中央银行数字货币。”（这是一份面向选民的文件，篇幅较短，因此塞入这些东西是很奇怪的，我敢肯定没几个选民看得懂这几句是在说什么。）</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>周六的大会上，特朗普的言论似乎比党的纲领还要更进一步，他呼吁创建某种国家比特币储备——等于<span>由政府来解救一个丑闻不断、摧毁价值和<a rel="noopener noreferrer" target="_blank" href="https://www.techtarget.com/sustainability/feature/The-environmental-impact-of-bitcoin-mining-explained">环境</a>的产业。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>噢还有，周一，万斯将前往数字资产公司BitGo首席执行官迈克·比尔谢家中，<a rel="noopener noreferrer" target="_blank" href="https://www.bloomberg.com/news/articles/2024-07-26/bitgo-ceo-belshe-to-host-fundraiser-for-trump-headlined-by-vance?embedded-checkout=true&amp;sref=B3uFyqJT">担纲</a>一场筹款会。</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>总之，科技业亿万富翁的支持是万斯能成为副总统竞争者的关键原因。他把自己包装成劳动阶级美国的捍卫<span>者。但在他那冷酷的文化战争背后——在他对激浪汽水等平头百姓图腾表达的<a rel="noopener noreferrer" target="_blank" href="https://www.theatlantic.com/technology/archive/2024/07/j-d-vance-mountain-dew/679204/">忠心</a>背后——他和一种跟民粹主义八竿子打不着的科技圈特质存在密切联系。</span></p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+<span>        <p>保罗·克鲁格曼(Paul Krugman)自2000年以来一直是时报的专栏作家。他也是纽约市立大学研究生中心的杰出教授。克鲁格曼因在国际贸易和经济地理方面的成就获得2008年诺贝尔经济学奖。欢迎在Twitter上关注他： <a rel="nofollow" target="_blank" href="https://twitter.com/PaulKrugman">@PaulKrugman</a>。</p>
+        <p>翻译：杜然</p>
+        <div data-poster="" class="">
+          <div data-poster="" class="">
+<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/07/29/opinion/vance-trump-cryptocurrency.html">点击查看本文英文版。</a>
+          </div>
+        </div>
+</span>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/%E8%B4%BA%E9%94%A6%E4%B8%BD%E7%9A%84-%E7%A7%98%E5%AF%86%E6%AD%A6%E5%99%A8-%E7%AC%91">
+          贺锦丽的“秘密武器”：笑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE-%E6%8B%9C%E7%99%BB%E5%92%8C%E8%B4%BA%E9%94%A6%E4%B8%BD%E5%81%A5%E5%BA%B7%E7%8A%B6%E5%86%B5%E7%9A%8414%E4%B8%AA%E9%97%AE%E9%A2%98">
+          关于特朗普、拜登和贺锦丽健康状况的14个问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/%E4%BB%8E%E7%B2%BE%E8%8B%B1%E5%BE%8B%E5%B8%88%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%A4%AB%E4%BA%BA-%E5%80%99%E9%80%89-%E4%B8%87%E6%96%AF%E5%8D%B0%E5%BA%A6%E8%A3%94%E5%A6%BB%E5%AD%90%E5%BC%95%E5%85%B3%E6%B3%A8">
+          从精英律师到“第二夫人”候选：万斯印度裔妻子引关注
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/%E6%97%A5%E6%9C%AC%E8%BF%BD%E6%B1%82%E7%9A%84%E9%80%9A%E8%83%80%E7%8E%87%E5%8D%87%E9%AB%98%E5%AE%9E%E7%8E%B0%E4%BA%86-%E7%BB%8F%E6%B5%8E%E4%B8%BA%E4%BD%95%E5%8D%B4%E6%9C%AA%E5%8F%98%E5%A5%BD">
+          日本追求的通胀率升高实现了，经济为何却未变好
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-29/%E8%B3%B4%E4%B8%BB%E6%81%A9%E5%A5%A7%E9%81%8B16%E5%BC%B7%E6%AD%A2%E6%AD%A5-%E5%9B%9E%E9%A6%96%E4%BD%8E%E6%BD%AE%E6%84%9F%E6%85%A8%E6%8C%81%E7%BA%8C%E5%8A%AA%E5%8A%9B%E6%88%96%E8%A8%B1%E4%B8%8D%E5%90%8C">
+            前一篇：賴主恩奧運16強止步 回首低潮感慨持續努力或許不同
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-29/%E9%AB%98%E6%89%BF%E7%9D%BF%E8%BC%95%E5%8F%96%E7%BE%85%E9%A6%AC%E5%B0%BC%E4%BA%9E%E5%B0%8D%E6%89%8B-%E5%A5%A7%E9%81%8B%E6%A1%8C%E7%90%83%E7%94%B7%E5%96%AE%E6%99%8916%E5%BC%B7">
+            后一篇：高承睿輕取羅馬尼亞對手 奧運桌球男單晉16強
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E8%B3%B4%E4%B8%BB%E6%81%A9%E5%A5%A7%E9%81%8B16%E5%BC%B7%E6%AD%A2%E6%AD%A5-%E5%9B%9E%E9%A6%96%E4%BD%8E%E6%BD%AE%E6%84%9F%E6%85%A8%E6%8C%81%E7%BA%8C%E5%8A%AA%E5%8A%9B%E6%88%96%E8%A8%B1%E4%B8%8D%E5%90%8C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E9%AB%98%E6%89%BF%E7%9D%BF%E8%BC%95%E5%8F%96%E7%BE%85%E9%A6%AC%E5%B0%BC%E4%BA%9E%E5%B0%8D%E6%89%8B-%E5%A5%A7%E9%81%8B%E6%A1%8C%E7%90%83%E7%94%B7%E5%96%AE%E6%99%8916%E5%BC%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE-%E6%8B%9C%E7%99%BB%E5%92%8C%E8%B4%BA%E9%94%A6%E4%B8%BD%E5%81%A5%E5%BA%B7%E7%8A%B6%E5%86%B5%E7%9A%8414%E4%B8%AA%E9%97%AE%E9%A2%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E4%BB%8E%E7%B2%BE%E8%8B%B1%E5%BE%8B%E5%B8%88%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%A4%AB%E4%BA%BA-%E5%80%99%E9%80%89-%E4%B8%87%E6%96%AF%E5%8D%B0%E5%BA%A6%E8%A3%94%E5%A6%BB%E5%AD%90%E5%BC%95%E5%85%B3%E6%B3%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-07-29/%E8%B3%B4%E4%B8%BB%E6%81%A9%E5%A5%A7%E9%81%8B16%E5%BC%B7%E6%AD%A2%E6%AD%A5-%E5%9B%9E%E9%A6%96%E4%BD%8E%E6%BD%AE%E6%84%9F%E6%85%A8%E6%8C%81%E7%BA%8C%E5%8A%AA%E5%8A%9B%E6%88%96%E8%A8%B1%E4%B8%8D%E5%90%8C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-07-29/%E9%AB%98%E6%89%BF%E7%9D%BF%E8%BC%95%E5%8F%96%E7%BE%85%E9%A6%AC%E5%B0%BC%E4%BA%9E%E5%B0%8D%E6%89%8B-%E5%A5%A7%E9%81%8B%E6%A1%8C%E7%90%83%E7%94%B7%E5%96%AE%E6%99%8916%E5%BC%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-07-29/%E5%85%B3%E4%BA%8E%E7%89%B9%E6%9C%97%E6%99%AE-%E6%8B%9C%E7%99%BB%E5%92%8C%E8%B4%BA%E9%94%A6%E4%B8%BD%E5%81%A5%E5%BA%B7%E7%8A%B6%E5%86%B5%E7%9A%8414%E4%B8%AA%E9%97%AE%E9%A2%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-07-29/%E4%BB%8E%E7%B2%BE%E8%8B%B1%E5%BE%8B%E5%B8%88%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%A4%AB%E4%BA%BA-%E5%80%99%E9%80%89-%E4%B8%87%E6%96%AF%E5%8D%B0%E5%BA%A6%E8%A3%94%E5%A6%BB%E5%AD%90%E5%BC%95%E5%85%B3%E6%B3%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

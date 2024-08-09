@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【网络民议】“It must be Chinese before you” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【网络民议】“It must be Chinese before you”
+——
+" />
+    <meta property="og:description" content="
+【网络民议】“It must be Chinese before you”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【网络民议】“It must be Chinese before you”" />
+    <meta property="twitter:title" content="【网络民议】“It must be Chinese before you”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710072.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E2%80%9CIt+must+be+Chinese+before+you%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710072.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E2%80%9CIt+must+be+Chinese+before+you%E2%80%9D&d=2024-07-27&e=
+【网络民议】“It must be Chinese before you”
+——
+
+
+  
+  2024年7月27日，湖南卫视音乐综艺节目《歌手2024》落下帷幕，最终歌手那英爆冷战胜了其他选手，摘得“歌王”称号，谭维维、孙楠分别获得了亚军、季军。之前从未跌出前三的加拿大歌手凡希亚在总决赛中仅排名第四，这让很多网友感到不平，表示难以接受这一结果。因为在过去的多场比赛中，凡希亚的表现可圈可点，已被公认为夺冠热门。
+  
+  
+    2024年5月，已停播多年的湖南卫视音乐综艺节目《我是歌手》（第九季）复播，导演洪啸大胆采用了全新的赛制，并邀请了其他国家的歌手进行同台竞演。在节目开始之后，来自美国的香缇·摩尔以及加拿大的凡希亚·奥伊亚上演了对一众华语歌手的“全方位吊打”，两位在舞台上的歌唱水准、情感投入、舞台表现力及松弛感都显得难以挑剔，几乎无争议的斩获第一、第二（第一轮第一场）。原..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710072.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/710072.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/710072.html&text=【网络民议】“It must be Chinese before you”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/710072.html&title=【网络民议】“It must be Chinese before you”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/710072.html&title=【网络民议】“It must be Chinese before you”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【网络民议】“It must be Chinese before you”&body=
+【网络民议】“It must be Chinese before you”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/710072.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/710072.html&title=【网络民议】“It must be Chinese before you”&caption=
+【网络民议】“It must be Chinese before you”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【网络民议】“It must be Chinese before you”&url=https://chinadigitaltimes.net/chinese/710072.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【网络民议】“It must be Chinese before you”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-07-27
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/710072.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710072.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E2%80%9CIt+must+be+Chinese+before+you%E2%80%9D&d=2024-07-27&e=
+【网络民议】“It must be Chinese before you”
+——
+
+
+  
+  2024年7月27日，湖南卫视音乐综艺节目《歌手2024》落下帷幕，最终歌手那英爆冷战胜了其他选手，摘得“歌王”称号，谭维维、孙楠分别获得了亚军、季军。之前从未跌出前三的加拿大歌手凡希亚在总决赛中仅排名第四，这让很多网友感到不平，表示难以接受这一结果。因为在过去的多场比赛中，凡希亚的表现可圈可点，已被公认为夺冠热门。
+  
+  
+    2024年5月，已停播多年的湖南卫视音乐综艺节目《我是歌手》（第九季）复播，导演洪啸大胆采用了全新的赛制，并邀请了其他国家的歌手进行同台竞演。在节目开始之后，来自美国的香缇·摩尔以及加拿大的凡希亚·奥伊亚上演了对一众华语歌手的“全方位吊打”，两位在舞台上的歌唱水准、情感投入、舞台表现力及松弛感都显得难以挑剔，几乎无争议的斩获第一、第二（第一轮第一场）。原..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710072.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722110148000-->
+<p><a href="https://chinadigitaltimes.net/chinese/710072.html">【网络民议】“It must be Chinese before you”</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/710072.html" title="【网络民议】“It must be Chinese before you”" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722109224537-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722097842019.png" alt="filev" /></p>
+  <p>2024年7月27日，湖南卫视音乐综艺节目《歌手2024》落下帷幕，最终歌手那英爆冷战胜了其他选手，摘得“歌王”称号，谭维维、孙楠分别获得了亚军、季军。之前从未跌出前三的加拿大歌手凡希亚在总决赛中仅排名第四，这让很多网友感到不平，表示难以接受这一结果。因为在过去的多场比赛中，凡希亚的表现可圈可点，已被公认为夺冠热门。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722108181758.png" alt="file" /></p>
+  <blockquote>
+    <p>2024年5月，已停播多年的湖南卫视音乐综艺节目《我是歌手》（第九季）复播，导演洪啸大胆采用了全新的赛制，并邀请了其他国家的歌手进行同台竞演。在节目开始之后，来自美国的香缇·摩尔以及加拿大的凡希亚·奥伊亚上演了对一众华语歌手的“全方位吊打”，两位在舞台上的歌唱水准、情感投入、舞台表现力及松弛感都显得难以挑剔，几乎无争议的斩获第一、第二（第一轮第一场）。原本被认为第一无悬念的实力派唱将那英只排到了第三。其余几位的排名争夺显得存在感薄弱，有人甚至调侃为“集体争第七”。随后，一种莫名其妙但又预料之中的情绪爆发了，先是歌手韩红在微博主动要求代表中国“请战”，之后又有网民开始“帮那英摇人”，周深、腾格尔、龚琳娜、凤凰传奇、宋祖英等歌手陆续被列入了所谓的“国家队名单”。在某些人看来，这场歌唱比赛已经与列强入侵无异，是一场关乎民族尊严的“华语乐坛保卫战”。57岁的满族人那英被人PS成了《走向共和》中的晚清慈禧太后，并附上剧中的知名台词“我要洋人死”。对此，有网友形容——“《我是歌手》现在的感觉已经往《霍元甲》发展了，外国大力士摆下擂台，已经全国直播打翻了几个知名武术家，全国人民怒了，正在呼唤高手找回场子。”</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/05/image-1716032812149.png" alt="img" /></p>
+  </blockquote>
+  <p>相关阅读：<a href="https://chinadigitaltimes.net/chinese/707923.html" title="【CDT周报】第170期：一档音综节目，咋就成了“五旬老太守国门”？">【CDT周报】第170期：一档音综节目，咋就成了“五旬老太守国门”？</a></p>
+  <p>随着《歌手2024》赛事的进行，实力唱将孙楠、谭维维也作为补位选手加入了比赛。直至决赛前，歌手阵容已与比赛开始时有了较大变化，但外国歌手凡希亚及香缇莫依然在名单之中。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722098633019.png" alt="file" /></p>
+  <p>两个多月以来，网络上“五旬老太守国门”的说法明显减少，观众议论和关注的焦点更多聚焦在歌手各自的表现上，基于音乐本身给出自己的评价。而歌手那英在多场比赛里的表现并不稳定，曾出现了“音准不稳、技巧欠缺、紧张忘词、偶尔跑调”等问题，多次排名末尾，这是她最终夺冠却难以服众的重要原因之一。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722099121162.png" alt="file" /></p>
+  <p>那英在“五旬老太守住了”之后表示：“拿冠军就一定会有很多的负面，你敢不敢接受？我敢。这里面所有的故事只有我清楚，我要感谢我自己，也要感谢在座的每位歌手。”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722109662775.png" alt="file" /></p>
+  <p>在那英夺冠后，有不少网友质疑节目存在黑幕，认为节目组刻意制造了一个“那英守住国门”的结果，而凡希亚及香缇莫所的名次均与实际表现存在较大出入。7月27日，一段节目内容的流出似乎印证了网友的黑幕猜想：</p>
+  <blockquote>
+    <p>凡希亚在输掉与中国歌手谭维维的对决后，哈萨克歌手迪玛希与其耳语时说出：“They said, It must be Chinese before you.（他们说中国人排名必须在你前面）”。凡希亚一脸复杂地回应：“Ok! It’s no problem.（好，没关系）”。</p>
+  </blockquote>
+  <p>由于《歌手2024》全程采取了直播方式，这段未关麦克风的对话被清晰放出，引发了网民对比赛公正性的强烈质疑。</p>
+  <p>    <iframe loading="lazy" title="2024.7.27 迪玛希：They said, It must be Chinese before you" width="1080" height="608" src="https://www.youtube.com/embed/_Eguqaqbafw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+  <p>在《歌手2024》有剧本的指控出现实锤证据后，制作方作出回应，称“节目肯定真实，无需设防，音乐骗不了人，音乐不能骗人”。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722102008508.png" alt="file" /></p>
+  <p>歌手迪玛希也发布了微博视频进行解释，说自己当初的原话是“Must be a chinese singer for you”而非“It must be Chinese before you”。但这一说法显然有“中式洗地”的意味，因为在原视频中，迪玛希“be”的发音非常明显。</p>
+  <p>    <iframe loading="lazy" title="2024.7.27 迪玛希：原话是Must be a chinese singer for you" width="1080" height="608" src="https://www.youtube.com/embed/_8pvp5ratQI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+  <p>7月27日上午，微博话题“#迪玛希忘记关麦克风”一度冲上热搜榜第二，阅读量高达2.3亿。但在几小时后它便被“#巴黎开幕式”、“#中国首金”等奥运话题替代。有网友愤怒表示“（歌手2024是）史上最牛的黑幕，（那英）一直在末尾排名，偶尔才到前三！跑调、忘词都能当歌王！几个月把观众当傻子耍。”还有网友称：“剧本2024圆满结束，我们剧本2025就不要再见了。”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722109205101.png" alt="file" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/image-1722109224537.png" alt="file" /></p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【网络民议】“It must be Chinese before you”<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/中国数字时代" target="_blank">中国数字时代</a><br /><strong>发表日期：</strong>2024.7.28<br /><strong>来源：</strong><a href="" target="_blank">微博、推特</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">话语馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>以下为中国数字时代编辑摘自微博、推特网友的评论：</strong></p>
+  <blockquote>
+    <p>蓝桉真的猛：第一期莫莫和凡希亚给内娱上了一课，最后一期内娱给她俩上了一课。</p>
+    <p>向阳花Honey：第一期提出了问题：为什么内娱不行？ 最后一期歌手自己回答了这个问题。</p>
+    <p>NS_Compass：一觉醒来还是觉得丢人，奥运会这么大的热度都压不下去这份羞耻感！</p>
+    <p>苗原Mark：第一期的时候就说了，如果要爱国，那最后结果一定是第一。</p>
+    <p>HC-Enoch：如果那英输了，当初的老太守国门不就成了老太输国门。</p>
+    <p>曾一呜_：整季都被吊打，最后硬给个歌王，一个敢给一个敢拿。</p>
+    <p>Peter的另一个号：寒窗苦读20年最后工作被关系户抢走了……</p>
+    <p>筱雨溪溪：内娱就是罗刹海市，自娱自乐吧。</p>
+    <p>浮花若似她：为什么内娱不行？谜底就在谜面上。</p>
+    <p>红掌啵绿啵噢o：第一期亚亚信心满满“冲着总冠军！”最后一期：“ok…no problem…”</p>
+    <p>pig_zhina：她虽然说no prob不过表情和肢体语言说明了一切了。</p>
+    <p>结石姐的罗伯特：张杰：这件事不能放在台面上说。</p>
+    <p>FROFILE：这种节目别办了…哪有什么公平。</p>
+    <p>海边书坊：作为中国人，我感觉很丢脸。</p>
+    <p>小鹿陪你摘星星：虽然从一开始就知道都是剧本，但这属实是丢脸丢到国际上了。</p>
+    <p>Kashiwako888：這對中國國家形象殺傷力極大。</p>
+    <p>MissOllie2020：内娱好不好看不知道，但确实好笑。</p>
+    <p>Roxanne_7_：芒果应该办世界杯，这样中国男足也能拿冠军。</p>
+    <p>nzkai0123：“外国人不能进前三，那啥必须拿第一。”哪里是潜规则，简直是明规则。</p>
+    <p>肥肥MAAAA：明显说的就是before啊，耳朵没聋。</p>
+    <p>耶比0730生日：凡希亚模拟考次次985，结果高考大专。// 禾伙任：北京考生（那英）秒了。// 快乐男孩想那个：香提莫连大专都没考上。</p>
+    <p>william98901393：至少真的是直播。</p>
+    <p>driftaway：盐碱地种不出好庄稼。</p>
+    <p>bigbaofans：在专业的事情上业余，在业余的事情上专业。凡希亚来到中国很久了，估计也是理解了中国人做事风格。同样的，她音乐的好坏早就在欧美老家被证明了，不需要在音乐洼地中国再被证明一次。</p>
+    <p>gedeepeg：只感觉到滑稽，并不感到意外。还是为凡希亚感觉到不甘，本来人家以为这个国家还不错，没想到整整几个月都是一场骗局，难以想象人家的心理阴影，估计以后她看到老中就要干呕了。</p>
+    <p>logiclchina：一个歌手比赛节目，招揽很多外国歌手进来，既然比赛肯定比拼实力。既要打着比赛的旗号又不让别人赢，这有多么可笑，那还不如不办这么可笑的比赛。中国特色社会主义道路。</p>
+  </blockquote>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-07-28</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-28/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC180%E6%9C%9F-%E6%97%B1%E7%81%BE%E6%B4%AA%E7%81%BE%E9%83%BD%E6%8C%A1%E4%B8%8D%E4%BD%8F%E7%B2%AE%E9%A3%9F%E7%9A%84%E5%B9%B4%E5%B9%B4%E5%A2%9E%E4%BA%A7">
+          【CDT周报】第180期：旱灾洪灾都挡不住粮食的年年增产
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-28</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-28/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%A4%AE%E8%A7%86%E8%A7%A3%E8%AF%B4%E6%B2%89%E9%BB%98%E4%BA%86-%E7%9B%B4%E6%92%AD%E8%BF%99%E4%BA%8B%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%AE%E8%A7%86-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E6%8A%8A%E6%8E%A7%E5%B1%80%E9%9D%A2">
+          【网络民议】“央视解说沉默了，直播这事不适合央视，不能完全把控局面”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-27/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E7%88%B1%E5%85%9A%E7%88%B1%E5%9B%BD%E5%8A%A0%E5%8D%81%E5%88%86-%E8%B6%8A%E7%BA%A7%E4%B8%8A%E8%AE%BF%E5%87%8F%E5%8D%81%E5%88%86">
+          【网络民议】爱党爱国加十分，越级上访减十分
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-27/Lola-%E8%BF%99%E4%B8%96%E7%95%8C%E6%9C%89%E5%A4%AA%E5%A4%9A%E8%BF%87%E5%8E%BB-%E6%9C%AA%E6%9D%A5%E5%8D%B4%E4%B8%8D%E6%96%AD%E7%BC%A9%E6%B0%B4">
+          Lola｜这世界有太多过去，未来却不断缩水
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-27/%E5%8A%A0%E6%B2%99%E5%AE%98%E5%91%98%E8%AF%B4-%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%BB%E5%87%BB%E5%AD%A6%E6%A0%A1%E8%87%B3%E5%B0%91%E9%80%A0%E6%88%9030%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+            前一篇：加沙官员说，以色列攻击学校至少造成30人死亡
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-27/%E5%A5%A7%E9%81%8B%E7%BE%BD%E7%90%83-%E9%BA%9F%E6%B4%8B%E9%85%8D-%E9%96%8B%E7%B4%85%E7%9B%A4-%E6%A9%AB%E6%8E%83%E4%B8%96%E9%8C%A6%E8%B3%BD%E6%97%A5%E6%9C%AC%E9%87%91%E7%89%8C%E7%B5%84%E5%90%88">
+            后一篇：奧運羽球「麟洋配」開紅盤 橫掃世錦賽日本金牌組合
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-07-27/%E5%8A%A0%E6%B2%99%E5%AE%98%E5%91%98%E8%AF%B4-%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%BB%E5%87%BB%E5%AD%A6%E6%A0%A1%E8%87%B3%E5%B0%91%E9%80%A0%E6%88%9030%E4%BA%BA%E6%AD%BB%E4%BA%A1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-07-27/%E5%A5%A7%E9%81%8B%E7%BE%BD%E7%90%83-%E9%BA%9F%E6%B4%8B%E9%85%8D-%E9%96%8B%E7%B4%85%E7%9B%A4-%E6%A9%AB%E6%8E%83%E4%B8%96%E9%8C%A6%E8%B3%BD%E6%97%A5%E6%9C%AC%E9%87%91%E7%89%8C%E7%B5%84%E5%90%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-07-28/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%A4%AE%E8%A7%86%E8%A7%A3%E8%AF%B4%E6%B2%89%E9%BB%98%E4%BA%86-%E7%9B%B4%E6%92%AD%E8%BF%99%E4%BA%8B%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%AE%E8%A7%86-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E6%8A%8A%E6%8E%A7%E5%B1%80%E9%9D%A2'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-07-27/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E7%88%B1%E5%85%9A%E7%88%B1%E5%9B%BD%E5%8A%A0%E5%8D%81%E5%88%86-%E8%B6%8A%E7%BA%A7%E4%B8%8A%E8%AE%BF%E5%87%8F%E5%8D%81%E5%88%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-07-27/%E5%8A%A0%E6%B2%99%E5%AE%98%E5%91%98%E8%AF%B4-%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%BB%E5%87%BB%E5%AD%A6%E6%A0%A1%E8%87%B3%E5%B0%91%E9%80%A0%E6%88%9030%E4%BA%BA%E6%AD%BB%E4%BA%A1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-07-27/%E5%A5%A7%E9%81%8B%E7%BE%BD%E7%90%83-%E9%BA%9F%E6%B4%8B%E9%85%8D-%E9%96%8B%E7%B4%85%E7%9B%A4-%E6%A9%AB%E6%8E%83%E4%B8%96%E9%8C%A6%E8%B3%BD%E6%97%A5%E6%9C%AC%E9%87%91%E7%89%8C%E7%B5%84%E5%90%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-07-28/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%A4%AE%E8%A7%86%E8%A7%A3%E8%AF%B4%E6%B2%89%E9%BB%98%E4%BA%86-%E7%9B%B4%E6%92%AD%E8%BF%99%E4%BA%8B%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%AE%E8%A7%86-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E6%8A%8A%E6%8E%A7%E5%B1%80%E9%9D%A2">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-07-27/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E7%88%B1%E5%85%9A%E7%88%B1%E5%9B%BD%E5%8A%A0%E5%8D%81%E5%88%86-%E8%B6%8A%E7%BA%A7%E4%B8%8A%E8%AE%BF%E5%87%8F%E5%8D%81%E5%88%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

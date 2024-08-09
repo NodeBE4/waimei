@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美法院裁决：谷歌是行业垄断者 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美法院裁决：谷歌是行业垄断者
+——
+" />
+    <meta property="og:description" content="
+美法院裁决：谷歌是行业垄断者
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美法院裁决：谷歌是行业垄断者" />
+    <meta property="twitter:title" content="美法院裁决：谷歌是行业垄断者" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E7%25BE%258E%25E6%25B3%2595%25E9%2599%25A2%25E8%25A3%2581%25E5%2586%25B3%25EF%25BC%259A%25E8%25B0%25B7%25E6%25AD%258C%25E6%2598%25AF%25E8%25A1%258C%25E4%25B8%259A%25E5%259E%2584%25E6%2596%25AD%25E8%2580%2585%2Fa-69872561&t=%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E7%25BE%258E%25E6%25B3%2595%25E9%2599%25A2%25E8%25A3%2581%25E5%2586%25B3%25EF%25BC%259A%25E8%25B0%25B7%25E6%25AD%258C%25E6%2598%25AF%25E8%25A1%258C%25E4%25B8%259A%25E5%259E%2584%25E6%2596%25AD%25E8%2580%2585%2Fa-69872561&t=%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85&d=2024-08-06&e=
+美法院裁决：谷歌是行业垄断者
+——
+
+
+  
+2024-08-06T14:19:58.985Z
+  
+  
+裁决定位谷歌为“垄断者”
+  
+  （德国之声中文网）美国一家法院周一（8月5日）裁定，搜索引擎巨头谷歌非法利用其市场主导地位打压竞争对象，从而进行行业垄断。
+  美国正在致力于制约大型科技公司，针对多家大型公司的诉讼相继提起。
+  "谷歌是一个垄断者"
+  "在仔细考虑和权衡证人证词和证据后，法院得出以下结论：谷歌是一个垄断者，并且一直以垄断者的方式行事以维持其垄断地位。"美国地方法院法官阿米特·梅塔（Amit Mehta）在其裁决中写道。他说，谷歌"相对于其竞争对手拥有一个主要的、基本上看不见的优势：默认分发。"
+  根据裁决，谷歌"在通用搜索服务市场中占有89.2%的份额，这一比例在移动设备上增加到94.9%。"
+  梅塔裁定，谷歌还利用其主导地位来压制创新。
+  此案..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E7%25BE%258E%25E6%25B3%2595%25E9%2599%25A2%25E8%25A3%2581%25E5%2586%25B3%25EF%25BC%259A%25E8%25B0%25B7%25E6%25AD%258C%25E6%2598%25AF%25E8%25A1%258C%25E4%25B8%259A%25E5%259E%2584%25E6%2596%25AD%25E8%2580%2585%2Fa-69872561" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561&text=美法院裁决：谷歌是行业垄断者&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561&title=美法院裁决：谷歌是行业垄断者" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561&title=美法院裁决：谷歌是行业垄断者" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美法院裁决：谷歌是行业垄断者&body=
+美法院裁决：谷歌是行业垄断者
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561&title=美法院裁决：谷歌是行业垄断者&caption=
+美法院裁决：谷歌是行业垄断者
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美法院裁决：谷歌是行业垄断者&url=https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美法院裁决：谷歌是行业垄断者</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E7%25BE%258E%25E6%25B3%2595%25E9%2599%25A2%25E8%25A3%2581%25E5%2586%25B3%25EF%25BC%259A%25E8%25B0%25B7%25E6%25AD%258C%25E6%2598%25AF%25E8%25A1%258C%25E4%25B8%259A%25E5%259E%2584%25E6%2596%25AD%25E8%2580%2585%2Fa-69872561&t=%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85&d=2024-08-06&e=
+美法院裁决：谷歌是行业垄断者
+——
+
+
+  
+2024-08-06T14:19:58.985Z
+  
+  
+裁决定位谷歌为“垄断者”
+  
+  （德国之声中文网）美国一家法院周一（8月5日）裁定，搜索引擎巨头谷歌非法利用其市场主导地位打压竞争对象，从而进行行业垄断。
+  美国正在致力于制约大型科技公司，针对多家大型公司的诉讼相继提起。
+  "谷歌是一个垄断者"
+  "在仔细考虑和权衡证人证词和证据后，法院得出以下结论：谷歌是一个垄断者，并且一直以垄断者的方式行事以维持其垄断地位。"美国地方法院法官阿米特·梅塔（Amit Mehta）在其裁决中写道。他说，谷歌"相对于其竞争对手拥有一个主要的、基本上看不见的优势：默认分发。"
+  根据裁决，谷歌"在通用搜索服务市场中占有89.2%的份额，这一比例在移动设备上增加到94.9%。"
+  梅塔裁定，谷歌还利用其主导地位来压制创新。
+  此案..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E7%25BE%258E%25E6%25B3%2595%25E9%2599%25A2%25E8%25A3%2581%25E5%2586%25B3%25EF%25BC%259A%25E8%25B0%25B7%25E6%25AD%258C%25E6%2598%25AF%25E8%25A1%258C%25E4%25B8%259A%25E5%259E%2584%25E6%2596%25AD%25E8%2580%2585%2Fa-69872561" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722955625000-->
+<p><a href="https://www.dw.com/zh/%E7%BE%8E%E6%B3%95%E9%99%A2%E8%A3%81%E5%86%B3%EF%BC%9A%E8%B0%B7%E6%AD%8C%E6%98%AF%E8%A1%8C%E4%B8%9A%E5%9E%84%E6%96%AD%E8%80%85/a-69872561">美法院裁决：谷歌是行业垄断者</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2024-08-06T14:19:58.985Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69774209_303.jpg" width="100%" />  <div>
+<small style="color: #999;">裁决定位谷歌为“垄断者”</small>
+  </div>
+  <p>（德国之声中文网）美国一家法院周一（8月5日）裁定，搜索引擎巨头<span data-id="17457413" data-type="AUTO_TOPIC" title="Automatische Themenseite">谷歌</span>非法利用其市场主导地位打压竞争对象，从而<a href="https://api.dw.com/api/detail/article/59778013" rel="ArticleRef">进行行业垄断</a>。</p>
+  <p>美国正在致力于制约大型科技公司，<a href="https://api.dw.com/api/detail/article/55348831" rel="ArticleRef">针对多家大型公司的诉讼相继提起</a>。</p>
+  <p><strong>"谷歌是一个垄断者"</strong></p>
+  <p>"在仔细考虑和权衡证人证词和证据后，法院得出以下结论：谷歌是一个垄断者，并且一直以垄断者的方式行事以维持其垄断地位。"美国地方法院法官阿米特·梅塔（Amit Mehta）在其裁决中写道。他说，谷歌"相对于其竞争对手拥有一个主要的、基本上看不见的优势：默认分发。"</p>
+  <p>根据裁决，谷歌"在通用搜索服务市场中占有89.2%的份额，这一比例在移动设备上增加到94.9%。"</p>
+  <p>梅塔裁定，谷歌还利用其主导地位来压制创新。</p>
+  <p>此案被认为是美国近25年来最大的反垄断诉讼，起诉者是美国司法部反垄断部门。"这次对谷歌的胜利是美国人民的历史性胜利，"美国司法部长加兰在一份声明中说。</p>
+  <p>谷歌表示将对这一裁决提出上诉。</p>
+  <p>"这一裁决承认谷歌提供了最好的搜索引擎，但得出结论认为我们不应该让用户轻易获取。"谷歌全球事务总裁沃克（Kent Walker）辩称。</p>
+  <p>谷歌的搜索引擎隶属于母公司Alphabet Inc，目前每天处理约85亿个查询。</p>
+  <p>针对谷歌的案件是美国政府提起的五大反行业垄断诉讼中首个进入审判的案件。针对Meta、亚马逊和苹果的案件以及针对谷歌的另一起案件也将在联邦法庭上审理。</p>
+  <p>美国司法部反垄断机构在近四年前特朗普任总统时提起了这一诉讼，并在拜登总统执政期间加大了遏制大型科技公司权力的力度。</p>
+  <h3 id="section">相关图集：除了谷歌，他们也被欧盟开出天价罚单！</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44721233_303.jpg" width="100%" /><strong>微软：不能捆绑销售</strong>：经过了5年的调查，2004年欧委会得出结论，认为微软滥用在PC操作系统上的垄断地位，对微软处以4．97亿欧元罚款。并给出了90天的期限，微软在此期间要推出一个没有“Mediaplayer”的Windows版本。与此同时，该机构还要求微软在120天内向竞争对手提供通信代码。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/39589876_303.jpg" width="100%" /><strong>又是微软：这次是9亿</strong>：2007年，欧委会将目标再次锁定微软，重罚其上交9亿欧元的罚款。当时的理由是：这家IT巨头直到2007年向竞争对手收取技术信息许可费，这种做法不公平不合理，违反了2004年欧盟推出的反垄断规定。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44721193_303.jpg" width="100%" /><strong>英特尔：给好处费</strong>：2009年，欧盟开出一张刷新记录的天价罚单：英特尔Intel要上交10.6亿欧元的罚款，长达9年的激烈垄断纷争以此达到高潮。竞争监管机构指出，英特尔给德国大型电子产品零售商Media Saturn Holding优惠折扣，要求后者仅销售安装了英特尔处理器的电脑。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/37267336_303.jpg" width="100%" /><strong>微软还没完</strong>：2013年，微软又得向欧盟上交5.6亿罚款。因为这家美国集团违反了2009年的承诺，没有给用户提供安装其他公司浏览器的可能。欧委会指出，2011年5月至2012年7月之间，微软没有遵守欧盟的规定。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44721900_303.jpg" width="100%" /><strong>英飞凌——操控价格</strong>：2014年欧委会宣布对4家芯片制造商处以1.3亿总额的罚款，其中就包括英飞凌Infineon。这家慕尼黑企业须支付的罚金最多，达到8200万欧元。当时的指控是：英飞凌在2003年9月至2005年9月之间与飞利浦、三星和瑞萨都操控芯片价格。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44721253_303.jpg" width="100%" /><strong>谷歌“踩”对手</strong>：2017年，谷歌刷新了被欧盟罚款的新记录——24.2亿欧元。欧盟委员会裁定谷歌滥用搜索引擎市场的主导优势，在搜索结果中偏袒自己的服务项目Google Shopping，进行不公平竞争，将自己的比价服务置于网页最上端，而竞争对手的比价服务则被挤到下面。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44721325_303.jpg" width="100%" /><strong>高通独霸“天下”</strong>：2017年，苹果的供应商之一高通Qualcomm 要给欧盟汇出9.97亿欧元的巨额罚款。这家美国企业被指向苹果支付数百万，以保证自身专属供应商的地位，其他竞争公司因此超过5年都没有机会进入LTE基带芯片组市场。Qualcomm是该领域最大的供应商。
+  </div>
+  <p>（美联社、法新社、路透社）</p>
+  <p><em>© 2024</em><em>年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.run" style="color:orange" target="_blank">https://feedx.run</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/%E6%97%A5%E6%9C%AC%E6%BB%91%E6%9D%BF%E7%A7%B0%E9%9C%B8%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90-%E5%9C%A8%E6%9C%AC%E5%9C%9F%E4%B8%BA%E4%BD%95%E5%8F%97%E5%86%B7%E7%9C%BC">
+          日本滑板称霸巴黎奥运 在本土为何受冷眼？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/%E8%B3%80%E9%8C%A6%E9%BA%97%E6%90%AD%E6%AA%94%E6%B2%83%E7%88%BE%E8%8C%B2%E5%B0%8D%E8%8F%AF%E7%AB%8B%E5%A0%B4%E8%BB%9F%E9%82%84%E6%98%AF%E7%A1%AC">
+          賀錦麗搭檔沃爾茲對華立場軟還是硬? 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B">
+          客座评论：赖清德需要Plan B
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%86%B7%E7%8B%97-%E4%B8%8D%E7%94%A8%E7%83%98%E7%84%99%E7%9A%84%E5%BE%B7%E5%9C%8B%E7%89%B9%E8%89%B2%E7%94%9C%E9%BB%9E">
+          「冷狗」：不用烘焙的德國特色甜點
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B">
+            前一篇：客座评论：赖清德需要Plan B
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E8%B3%80%E9%8C%A6%E9%BA%97%E5%85%AC%E5%B8%83%E5%89%AF%E6%89%8B-%E6%98%8E%E5%B0%BC%E8%98%87%E9%81%94%E5%B7%9E%E9%95%B7%E8%8F%AF%E8%8C%B2%E5%87%BA%E7%B7%9A">
+            后一篇：賀錦麗公布副手 明尼蘇達州長華茲出線
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E8%B3%80%E9%8C%A6%E9%BA%97%E5%85%AC%E5%B8%83%E5%89%AF%E6%89%8B-%E6%98%8E%E5%B0%BC%E8%98%87%E9%81%94%E5%B7%9E%E9%95%B7%E8%8F%AF%E8%8C%B2%E5%87%BA%E7%B7%9A'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-07/%E8%B3%80%E9%8C%A6%E9%BA%97%E6%90%AD%E6%AA%94%E6%B2%83%E7%88%BE%E8%8C%B2%E5%B0%8D%E8%8F%AF%E7%AB%8B%E5%A0%B4%E8%BB%9F%E9%82%84%E6%98%AF%E7%A1%AC'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E8%B3%80%E9%8C%A6%E9%BA%97%E5%85%AC%E5%B8%83%E5%89%AF%E6%89%8B-%E6%98%8E%E5%B0%BC%E8%98%87%E9%81%94%E5%B7%9E%E9%95%B7%E8%8F%AF%E8%8C%B2%E5%87%BA%E7%B7%9A">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-07/%E8%B3%80%E9%8C%A6%E9%BA%97%E6%90%AD%E6%AA%94%E6%B2%83%E7%88%BE%E8%8C%B2%E5%B0%8D%E8%8F%AF%E7%AB%8B%E5%A0%B4%E8%BB%9F%E9%82%84%E6%98%AF%E7%A1%AC">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E8%B5%96%E6%B8%85%E5%BE%B7%E9%9C%80%E8%A6%81Plan-B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

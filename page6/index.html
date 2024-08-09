@@ -1,0 +1,3235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX 老实报新闻 少整妖蛾子">
+    <meta property="og:description" content="git.io/JJCxX 老实报新闻 少整妖蛾子" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage6%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage6%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage6%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page6/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page6/&text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page6/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page6/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page6/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page6/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&url=https://nodebe4.github.io/waimei/page6/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%AF%94%E5%88%A9%E6%99%8279%E6%AF%9466%E6%93%8A%E9%80%80%E8%A5%BF%E7%8F%AD%E7%89%99-%E9%97%96%E9%80%B2%E5%A5%A7%E9%81%8B%E5%A5%B3%E7%B1%834%E5%BC%B7">
+      
+        比利時79比66擊退西班牙 闖進奧運女籃4強
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408080002.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%97%8F%E4%BA%BA-%E5%85%AD%E5%9B%9B%E4%BA%BA%E5%A3%AB-%E4%B9%90%E8%A7%81%E6%B2%83%E5%B0%94%E5%85%B9%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%9C%89%E7%AC%AC%E4%B8%80%E6%89%8B%E7%BB%8F%E9%AA%8C">
+      
+        藏人、六四人士: 乐见沃尔兹对中国有第一手经验
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/chinese-internet-highlights-that-harris-vp-pick-taught-in-china-20240807/7733395.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%A0%94%E7%A9%B6%E7%A7%B0%E7%8C%AB%E8%A1%A8%E7%8E%B0%E5%87%BA%E5%AF%B9%E5%85%B6%E5%AE%83%E5%AE%A0%E7%89%A9%E6%AD%BB%E4%BA%A1%E7%9A%84%E6%82%B2%E7%97%9B%E4%B9%8B%E6%83%85">
+      
+        研究称猫表现出对其它宠物死亡的悲痛之情
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78913" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B3%B4%E7%B8%BD%E7%B5%B1-%E5%B7%B2%E8%AB%8B%E9%AB%94%E8%82%B2%E7%BD%B2%E6%8E%A1%E6%B3%95%E5%BE%8B%E4%BD%9C%E7%82%BA-%E8%AE%93%E6%9E%97%E9%83%81%E5%A9%B7%E7%84%A1%E5%BE%8C%E9%A1%A7%E4%B9%8B%E6%86%82">
+      
+        賴總統：已請體育署採法律作為 讓林郁婷無後顧之憂
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070396.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%A5%A7%E9%81%8B%E6%A1%8C%E7%90%83%E5%A5%B3%E5%9C%98%E6%AD%A2%E6%AD%A58%E5%BC%B7-%E5%8D%93%E6%A6%AE%E6%B3%B0-%E9%9D%A2%E5%B0%8D%E7%A1%AC%E4%BB%97%E4%BB%8D%E6%9C%89%E5%BC%B7%E6%94%BB%E8%86%BD%E8%AD%98">
+      
+        奧運桌球女團止步8強 卓榮泰：面對硬仗仍有強攻膽識
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070395.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%B7%B4%E9%BB%8E%E5%A5%A7%E9%81%8B%E5%8F%B0%E7%81%A3%E4%B8%AD%E7%B9%BC%E7%AB%99%E9%81%8B%E5%8B%95%E4%B8%AD%E5%BF%83%E5%8F%97%E5%A5%BD%E8%A9%95-%E7%BE%8E%E5%9C%8B%E4%B9%9F%E5%80%9F%E7%94%A8">
+      
+        巴黎奧運台灣中繼站運動中心受好評 美國也借用
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070394.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B0%91%E8%B0%83-%E5%93%88%E9%87%8C%E6%96%AF%E6%AF%94%E6%8B%9C%E7%99%BB%E6%9B%B4%E5%8F%97%E9%9D%9E%E8%A3%94%E6%AC%A2%E8%BF%8E-%E7%99%BD%E4%BA%BA%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E5%BA%A6%E7%95%A5%E5%8D%87">
+      
+        民调：哈里斯比拜登更受非裔欢迎，白人对特朗普支持度略升
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/harris-draws-more-support-among-black-voters-trump-up-slightly-among-white-voters-20240807/7733170.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%93%88%E9%A9%AC%E6%96%AF%E9%80%89%E6%8B%A9%E5%BC%BA%E7%A1%AC%E6%B4%BE%E8%BE%9B%E7%93%A6%E5%B0%94%E7%BB%A7%E4%BB%BB%E9%A2%86%E8%A2%96-%E4%BB%A5%E8%89%B2%E5%88%97%E7%A7%B0%E5%85%B6%E5%BF%85%E6%AD%BB%E6%97%A0%E7%96%91">
+      
+        哈马斯选择强硬派辛瓦尔继任领袖，以色列称其必死无疑
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/hamas-names-yahya-sinwar-mastermind-of-the-oct-7-attacks-as-its-new-leader-in-show-of-defiance-20240807/7733122.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%86-X-%E5%8F%98%E6%88%90%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%94%BF%E6%B2%BB%E6%B8%B8%E4%B9%90%E5%9C%BA">
+      
+        马斯克将 X 变成个人的政治游乐场
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78912" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD%E5%8A%A0%E5%BC%BA%E5%8D%97%E6%B5%B7%E6%88%98%E5%B7%A1-%E5%9B%9E%E5%BA%94%E7%BE%8E%E8%8F%B2%E7%AD%89%E5%9B%9B%E5%9B%BD%E5%86%9B%E6%BC%94">
+      
+        中国加强南海战巡 回应美菲等四国军演
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E4%B8%AD%E5%9B%BD%E5%8A%A0%E5%BC%BA%E5%8D%97%E6%B5%B7%E6%88%98%E5%B7%A1%20%E5%9B%9E%E5%BA%94%E7%BE%8E%E8%8F%B2%E7%AD%89%E5%9B%9B%E5%9B%BD%E5%86%9B%E6%BC%94/a-69880602" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%81%AD%E6%8C%87%E8%A1%8C%E6%9D%8E%E7%AD%89%E5%80%99%E6%99%82%E9%96%93%E8%BC%83%E9%95%B7-%E6%A1%83%E6%A9%9F-%E7%95%B0%E5%B8%B8%E8%88%AA%E7%8F%AD%E7%B4%844">
+      
+        遭指行李等候時間較長 桃機：異常航班約4%
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070392.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%8F%AF%E8%8C%B2%E6%88%90%E8%B3%80%E9%8C%A6%E9%BA%97%E6%90%AD%E6%AA%94-%E5%BE%80%E6%98%94%E8%99%95%E7%90%86%E7%A8%AE%E6%97%8F%E6%8A%97%E7%88%AD%E6%9A%B4%E4%BA%82%E6%96%B9%E5%BC%8F%E9%81%AD%E6%AA%A2%E8%A6%96">
+      
+        華茲成賀錦麗搭檔 往昔處理種族抗爭暴亂方式遭檢視
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070393.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B2%A1%E9%83%A8-%E9%A0%90%E7%AE%97%E7%B7%A8%E5%88%97%E9%87%8F%E5%85%A5%E7%82%BA%E5%87%BA-%E8%B2%A1%E6%94%BF%E5%9C%B0%E7%8D%84%E8%AA%AA%E6%B3%95%E8%88%87%E4%BA%8B%E5%AF%A6%E4%B8%8D%E7%AC%A6">
+      
+        財部：預算編列量入為出 財政地獄說法與事實不符
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070391.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8D%93%E6%A6%AE%E6%B3%B0%E9%A6%96%E5%A0%B4%E9%81%93%E5%AE%89%E6%9C%83%E5%A0%B1-%E5%89%8D5%E6%9C%88%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E6%AD%BB%E4%BA%A1%E9%99%8D8.9-%E9%81%94%E6%A8%99">
+      
+        卓榮泰首場道安會報 前5月交通事故死亡降8.9%達標
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070390.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%84%AD%E6%80%A1%E9%9D%9C%E9%99%B3%E6%80%9D%E7%BE%BD%E7%B0%A1%E5%BD%A4%E5%A8%9F%E4%B8%8D%E6%95%B5%E4%B8%AD%E5%9C%8B-%E5%A5%A7%E9%81%8B%E6%A1%8C%E7%90%83%E5%A5%B3%E5%9C%988%E5%BC%B7%E6%AD%A2%E6%AD%A5">
+      
+        鄭怡靜陳思羽簡彤娟不敵中國 奧運桌球女團8強止步
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070389.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%97%A5%E6%9C%AC%E8%A8%98%E5%90%8D%E8%A5%BF%E7%93%9C%E5%8D%A1%E6%9C%80%E5%BF%AB%E7%A7%8B%E5%A4%A9%E6%81%A2%E5%BE%A9%E8%B2%A9%E5%94%AE">
+      
+        日本記名西瓜卡最快秋天恢復販售
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070388.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9C%8B%E7%B1%8D%E7%94%B7%E5%AD%90%E6%90%B6%E5%A4%A7%E9%98%AA%E7%8F%A0%E5%AF%B6%E5%BA%97%E8%A2%AB%E6%8D%95-%E8%A2%AB%E5%88%BA%E5%82%B7%E5%BA%97%E5%93%A1%E5%AE%A3%E5%91%8A%E4%B8%8D%E6%B2%BB">
+      
+        中國籍男子搶大阪珠寶店被捕 被刺傷店員宣告不治
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070387.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B3%B0%E5%9C%8B%E5%89%8D%E9%80%B2%E9%BB%A8%E9%81%AD%E8%A7%A3%E6%95%A3-%E5%9C%8B%E6%9C%83%E8%AD%B0%E5%93%A19%E6%97%A5%E5%B0%87%E5%8A%A0%E5%85%A5%E6%96%B0%E6%94%BF%E9%BB%A8">
+      
+        泰國前進黨遭解散 國會議員9日將加入新政黨
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070386.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%B5%90%E6%9D%9F%E5%A5%A7%E9%81%8B%E4%B9%8B%E6%97%85-%E8%BC%95%E8%89%87%E7%AB%B6%E9%80%9F%E9%81%B8%E6%89%8B%E8%B3%B4%E5%86%A0%E5%82%91%E5%AE%8C%E6%88%90%E8%88%87%E5%B7%B2%E9%80%9D%E6%AF%8D%E8%A6%AA%E7%B4%84%E5%AE%9A">
+      
+        結束奧運之旅 輕艇競速選手賴冠傑完成與已逝母親約定
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070385.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%93%88%E9%A9%AC%E6%96%AF%E4%BB%BB%E5%91%BD%E8%BE%9B%E7%93%A6%E5%B0%94%E4%B8%BA%E5%85%B6%E6%96%B0%E9%A2%86%E5%AF%BC%E4%BA%BA">
+      
+        哈马斯任命辛瓦尔为其新领导人
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%93%88%E9%A9%AC%E6%96%AF%E4%BB%BB%E5%91%BD%E8%BE%9B%E7%93%A6%E5%B0%94%E4%B8%BA%E5%85%B6%E6%96%B0%E9%A2%86%E5%AF%BC%E4%BA%BA/a-69880408" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%90%91%E8%AE%B8%E5%AE%B6%E5%8D%B0%E7%AD%89%E4%BA%BA%E8%BF%BD%E8%AE%A860%E4%BA%BF%E7%BE%8E%E5%85%83%E5%90%8E-%E6%81%92%E5%A4%A7%E6%B8%85%E7%9B%98%E4%BA%BA%E5%86%8D%E8%B5%B7%E8%AF%89%E6%99%AE%E5%8D%8E%E6%B0%B8%E9%81%93">
+      
+        向许家印等人追讨60亿美元后 恒大清盘人再起诉普华永道
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%90%91%E8%AE%B8%E5%AE%B6%E5%8D%B0%E7%AD%89%E4%BA%BA%E8%BF%BD%E8%AE%A860%E4%BA%BF%E7%BE%8E%E5%85%83%E5%90%8E%20%E6%81%92%E5%A4%A7%E6%B8%85%E7%9B%98%E4%BA%BA%E5%86%8D%E8%B5%B7%E8%AF%89%E6%99%AE%E5%8D%8E%E6%B0%B8%E9%81%93/a-69880419" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%92%B2%E4%BA%AD-%E7%83%8F%E8%B7%A8%E5%A2%83%E9%80%B2%E7%8A%AF%E5%A4%A7%E8%A6%8F%E6%A8%A1%E6%8C%91%E9%87%81-%E4%BF%84%E6%80%A5%E6%92%A4%E6%95%B8%E5%8D%83%E4%BA%BA">
+      
+        蒲亭：烏跨境進犯大規模挑釁 俄急撤數千人
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070384.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%9D%B0%E6%88%887%E5%B1%80%E5%A5%BD%E6%8A%95-%E5%BC%B5%E5%A5%95%E6%8B%86%E5%BD%88%E5%8C%96%E8%A7%A3%E5%8D%B1%E6%A9%9F-%E6%82%8D%E5%B0%87%E5%AE%8C%E5%B0%81%E7%8D%85%E9%9A%8A">
+      
+        杰戈7局好投、張奕拆彈化解危機 悍將完封獅隊
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070383.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%BE%A9%E5%A4%A7%E5%88%A9%E6%8B%9B%E6%94%AC%E4%B8%AD%E5%9C%8B%E6%B1%BD%E8%BB%8A%E8%A8%AD%E5%BB%A0%E8%A1%9D%E7%94%A2%E9%87%8F-%E8%BC%BF%E8%AB%96%E6%86%82%E6%98%AF%E9%9B%99%E9%9D%A2%E5%88%83">
+      
+        義大利招攬中國汽車設廠衝產量 輿論憂是雙面刃
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070382.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%BB%A5%E8%89%B2%E5%88%97%E5%8F%88%E5%90%91%E5%8A%A0%E8%96%A9%E5%8C%97%E9%83%A8%E7%99%BC%E7%96%8F%E6%95%A3%E4%BB%A4-%E6%BA%96%E5%82%99%E5%8F%8D%E6%93%8A%E7%81%AB%E7%AE%AD%E5%BD%88%E6%94%BB%E6%93%8A">
+      
+        以色列又向加薩北部發疏散令 準備反擊火箭彈攻擊
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070381.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD%E6%89%93%E5%87%BB%E6%95%B4%E6%B2%BB%E5%85%BB%E8%80%81%E8%AF%88%E9%AA%97-%E4%B8%8A%E5%8D%8A%E5%B9%B4%E8%B5%B7%E8%AF%89343%E4%BA%BA">
+      
+        中国打击整治养老诈骗 上半年起诉343人
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439380" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%90%83%E8%BF%B7%E5%BE%AE%E5%8D%9A%E4%B8%8A%E6%80%92%E6%80%BC%E5%A5%A5%E8%BF%90%E9%87%91%E7%89%8C%E7%90%83%E5%91%98%E9%81%AD%E5%88%91%E6%8B%98-%E5%8C%97%E4%BA%AC%E5%88%A9%E7%94%A8%E5%A5%A5%E8%BF%90%E6%95%B4%E6%B2%BB-%E9%A5%AD%E5%9C%88%E6%96%87%E5%8C%96">
+      
+        球迷微博上怒怼奥运金牌球员遭刑拘，北京利用奥运整治“饭圈文化”
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-cracks-down-on-fan-culture-during-the-olympics-arresting-a-woman-for-social-media-posts-20240807/7733088.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD%E4%B8%B4%E6%97%B6%E9%A2%86%E5%AF%BC%E4%BA%BA-%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%92%8C%E5%B9%B3%E5%A5%96%E5%BE%97%E4%B8%BB%E5%B0%A4%E5%8A%AA%E6%96%AF">
+      
+        孟加拉国临时领导人：诺贝尔和平奖得主尤努斯
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD%E4%B8%B4%E6%97%B6%E9%A2%86%E5%AF%BC%E4%BA%BA%EF%BC%9A%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%92%8C%E5%B9%B3%E5%A5%96%E5%BE%97%E4%B8%BB%E5%B0%A4%E5%8A%AA%E6%96%AF/a-69879491" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B9%8C%E5%86%9B%E8%B6%8A%E5%A2%83%E6%94%BB%E5%87%BB%E4%BF%84%E5%BA%93%E5%B0%94%E6%96%AF%E5%85%8B%E5%9C%B0%E5%8C%BA-%E5%8F%8C%E6%96%B9%E5%B1%95%E5%BC%80%E6%BF%80%E6%88%98">
+      
+        乌军越境攻击俄库尔斯克地区，双方展开激战
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/ukraine-pierces-russian-border-triggering-major-battles-20240807/7733093.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B0%A3%E5%80%99%E8%AE%8A%E9%81%B7%E5%B0%8D%E7%AD%96%E5%A7%94%E5%93%A1%E6%9C%838%E6%97%A5%E7%99%BB%E5%A0%B4-%E8%83%BD%E6%BA%90%E7%AD%96%E7%95%A5%E8%88%87%E9%9B%BB%E5%8A%9B%E6%88%90%E7%84%A6%E9%BB%9E">
+      
+        氣候變遷對策委員會8日登場 能源策略與電力成焦點
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070371.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E5%AE%A3%E5%B8%83%E8%B4%AD%E4%B9%B0%E8%87%B3%E5%B0%9130%E6%9E%B6%E7%A9%BA%E5%AE%A2A330-900%E9%A3%9E%E6%9C%BA">
+      
+        国泰航空宣布购买至少30架空客A330-900飞机
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E5%AE%A3%E5%B8%83%E8%B4%AD%E4%B9%B0%E8%87%B3%E5%B0%9130%E6%9E%B6%E7%A9%BA%E5%AE%A2A330-900%E9%A3%9E%E6%9C%BA/a-69878537" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%92%96%E5%96%B1%E9%A6%99%E8%82%A0-%E4%B8%BA%E4%BD%95%E8%83%BD%E6%88%90%E4%B8%BA%E5%BE%B7%E5%9B%BD%E5%9B%BD%E6%B0%91%E5%B0%8F%E5%90%83">
+      
+        “咖喱香肠”为何能成为德国国民小吃？
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E2%80%9C%E5%92%96%E5%96%B1%E9%A6%99%E8%82%A0%E2%80%9D%E4%B8%BA%E4%BD%95%E8%83%BD%E6%88%90%E4%B8%BA%E5%BE%B7%E5%9B%BD%E5%9B%BD%E6%B0%91%E5%B0%8F%E5%90%83%EF%BC%9F/a-69645578" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%88%86%E6%9E%90-%E5%9B%9E%E6%AD%B8%E5%B0%8D%E5%8F%B0%E6%88%B0%E7%95%A5%E6%A8%A1%E7%B3%8A%E4%B8%8D%E7%AC%A6%E5%90%88%E7%BE%8E%E5%9C%8B%E6%96%B0%E6%94%BF%E5%BA%9C%E5%88%A9%E7%9B%8A">
+      
+        分析：回歸對台戰略模糊不符合美國新政府利益
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070370.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%9C%A8%E7%BE%8E%E8%A1%93%E9%A4%A8%E5%AF%A6%E8%B8%90%E7%A4%BE%E6%9C%83%E6%95%99%E8%82%B2-%E7%8E%8B%E7%8F%AE%E7%8F%8A%E7%82%BA%E8%A6%96%E9%9A%9C%E6%97%8F%E7%99%BC%E8%81%B2">
+      
+        在美術館實踐社會教育 王珮珊為視障族發聲
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acul/202408070369.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B3%B4%E5%86%A0%E5%82%918%E5%BC%B7%E7%8D%B2%E5%88%86%E7%B5%84%E7%AC%AC4-%E5%A5%A7%E9%81%8B1000%E5%85%AC%E5%B0%BA%E5%96%AE%E4%BA%BAC%E8%89%87%E9%81%AD%E6%B7%98%E6%B1%B0">
+      
+        賴冠傑8強獲分組第4 奧運1000公尺單人C艇遭淘汰
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070368.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8F%B0%E8%82%A1%E5%BC%B7%E5%BD%88794%E9%BB%9E-%E8%9E%8D%E8%B3%87%E9%A4%98%E9%A1%8D%E5%BE%AE%E5%A2%9E3.94%E5%84%84%E5%85%83">
+      
+        台股強彈794點 融資餘額微增3.94億元
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070367.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%AB%8B%E6%B1%82%E9%99%90%E6%9C%9F%E9%91%91%E5%AE%9A%E6%96%B0%E7%AB%B9%E6%A3%92%E7%90%83%E5%A0%B4%E8%A6%86%E5%9C%9F%E9%81%AD%E9%A7%81-%E5%B8%82%E5%BA%9C-%E5%8C%85%E5%95%86%E5%BB%B6%E5%AE%95">
+      
+        請求限期鑑定新竹棒球場覆土遭駁 市府：包商延宕
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070366.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD%E5%A5%A5%E8%BF%90%E4%BB%A3%E8%A1%A8%E5%9B%A2%E5%89%AF%E5%9B%A2%E9%95%BF%E5%91%BC%E5%90%81%E5%AF%B9%E6%AF%94%E8%B5%9B%E5%A4%B1%E8%AF%AF%E8%BF%90%E5%8A%A8%E5%91%98%E7%90%86%E8%A7%A3%E5%8C%85%E5%AE%B9">
+      
+        中国奥运代表团副团长呼吁对比赛失误运动员理解包容
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439204" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%A7%92%E5%8A%9B%E5%A5%B3%E5%B0%87%E8%B6%85%E9%87%8D100%E5%85%AC%E5%85%8B%E5%A4%B1%E7%88%AD%E9%87%91%E8%B3%87%E6%A0%BC-%E5%8D%B0%E5%BA%A6%E5%A5%A7%E6%9C%83%E6%8F%90%E5%BC%B7%E7%83%88%E6%8A%97%E8%AD%B0">
+      
+        角力女將超重100公克失爭金資格 印度奧會提強烈抗議
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070365.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%BE%B3%E6%B4%B2%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9C%8B%E5%88%A5%E8%84%85%E8%BF%AB%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%B3%B6%E5%9C%8B-%E6%87%89%E6%8F%90%E4%BE%9B%E9%80%8F%E6%98%8E%E5%8C%96%E6%8F%B4%E5%8A%A9">
+      
+        澳洲敦促中國別脅迫太平洋島國 應提供透明化援助
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070364.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%9B%86%E5%9C%98%E7%94%A2%E5%8D%80%E7%B2%BE%E9%A5%8C%E7%B1%B3%E7%8D%8E%E5%A5%AA%E9%87%91-%E8%BE%B2%E7%B3%A7%E7%BD%B2%E7%B1%B2%E5%85%AC%E7%B3%A7%E7%A8%BB%E8%BE%B2%E5%8A%A0%E5%85%A5">
+      
+        集團產區精饌米獎奪金 農糧署籲公糧稻農加入
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070363.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8C%97%E5%B8%824%E6%9C%9F%E7%A9%BA%E5%93%81%E5%8D%80115%E5%B9%B4%E6%96%BD%E8%A1%8C-%E5%8D%97%E4%BA%AC%E6%9D%B1%E4%BB%81%E6%84%9B%E4%BF%A1%E7%BE%A9%E8%B7%AF%E5%85%A5%E5%88%97">
+      
+        北市4期空品區115年施行 南京東仁愛信義路入列
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070362.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%BB%8A%E5%BD%A9539%E7%AC%AC113189%E6%9C%9F%E9%96%8B%E7%8D%8E">
+      
+        今彩539第113189期開獎
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070361.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%83%A8%E7%BD%B2%E6%9B%B4%E5%A4%9A%E7%BE%8E%E5%86%9B%E4%B9%8B%E9%99%85%E7%BE%8E%E5%9B%BD%E9%A2%86%E5%AF%BC%E5%B1%82%E5%91%BC%E5%90%81%E4%B8%AD%E4%B8%9C%E4%BF%9D%E6%8C%81%E5%86%B7%E9%9D%99">
+      
+        部署更多美军之际美国领导层呼吁中东保持冷静
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/u-s-leaders-call-for-calm-in-the-middle-east/7732961.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%A5%A7%E9%81%8B%E5%A5%B3%E7%B1%83%E6%BE%B3%E6%B4%B285%E6%AF%9467%E6%93%8A%E6%95%97%E5%A1%9E%E7%88%BE%E7%B6%AD%E4%BA%9E-%E6%99%89%E7%B4%9A4%E5%BC%B7">
+      
+        奧運女籃澳洲85比67擊敗塞爾維亞 晉級4強
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070360.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%AB%98%E9%9B%84%E7%94%B7%E5%AD%90%E9%91%BD%E9%80%B2%E5%A5%BD%E5%B8%82%E5%A4%9A%E5%86%B0%E6%AB%83%E6%93%BA%E6%8B%8D%E5%AC%89%E9%AC%A7-%E6%A5%AD%E8%80%85%E8%87%AA%E4%B8%BB%E4%B8%8B%E6%9E%B6%E9%A3%9F%E5%93%81">
+      
+        高雄男子鑽進好市多冰櫃擺拍嬉鬧 業者自主下架食品
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/asoc/202408070359.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B7%A1%E8%98%AD%E5%8F%A4%E9%81%93%E7%9F%B3%E7%A2%87%E6%AE%B5%E9%82%8A%E5%9D%A1%E5%B4%A9%E5%A1%8C-%E5%A4%96%E6%8C%89%E8%87%B3%E8%80%81%E8%A1%97%E6%AD%A5%E9%81%93%E5%B0%81%E9%96%89%E6%95%B4%E4%BF%AE">
+      
+        淡蘭古道石碇段邊坡崩塌 外按至老街步道封閉整修
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070358.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%AB%98%E5%B8%AB%E5%A4%A7%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%89%80%E5%8F%83%E8%A8%AA%E5%8D%B0%E5%B0%BC-%E8%AE%9A%E5%9F%8E%E5%B8%82%E9%80%B2%E6%AD%A5%E6%89%93%E7%A0%B4%E5%88%BB%E6%9D%BF%E5%8D%B0%E8%B1%A1">
+      
+        高師大東南亞所參訪印尼 讚城市進步打破刻板印象
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070357.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%8B%E5%8D%88%E5%AF%9F-%E6%8E%BC%E8%9B%8B%E5%A6%82%E4%BD%95%E5%8F%98-%E6%AF%92%E5%BC%B9">
+      
+        下午察：掼蛋如何变“毒弹”？
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4440920" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%98%87%E4%B8%B9%E5%85%A7%E6%88%B0%E7%88%86%E9%A5%91%E8%8D%92-%E8%81%AF%E5%90%88%E5%9C%8B-%E5%9C%8B%E9%9A%9B%E7%A4%BE%E6%9C%83%E8%89%AF%E7%9F%A5%E6%9F%93%E6%B1%99%E9%BB%9E">
+      
+        蘇丹內戰爆饑荒 聯合國：國際社會良知染汙點
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070356.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%A6%AC%E6%B2%BB%E8%96%87%E6%B6%89%E5%8F%97%E4%B8%AD%E5%9C%8B%E8%B3%87%E5%8A%A9%E7%99%BE%E8%90%AC%E9%81%B8%E7%AB%8B%E5%A7%94-%E9%81%95%E5%8F%8D%E5%80%8B%E8%B3%87%E6%B3%95%E5%88%A4%E5%88%918%E6%9C%88">
+      
+        馬治薇涉受中國資助百萬選立委 違反個資法判刑8月
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/asoc/202408070355.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B8%AF%E5%BE%8B%E6%94%BF%E5%8F%B8%E9%95%BF%E7%8E%87%E5%9B%A2%E8%AE%BF%E6%B7%B1%E5%9C%B3-%E4%B8%A4%E5%9C%B0%E5%8D%8F%E5%90%8C%E5%8F%91%E5%B1%95%E6%A8%A1%E5%BC%8F%E4%B8%8D%E6%96%AD%E5%88%9B%E6%96%B0%E6%B7%B1%E5%8C%96">
+      
+        港律政司长率团访深圳：两地协同发展模式不断创新深化
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439007" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%96%AF%E6%B4%9B%E4%BC%90%E5%85%8B%E5%A4%A7%E5%A0%B1%E5%A0%B1%E5%B0%8E%E5%8F%B0%E6%96%AF%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%90%88%E4%BD%9C-%E7%A0%94%E7%99%BC%E9%9B%BB%E5%8B%95%E8%BB%8A%E9%80%86%E8%AE%8A%E5%99%A8">
+      
+        斯洛伐克大報報導台斯半導體合作 研發電動車逆變器
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070354.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%A4%8F%E5%AD%A3%E7%94%B2%E5%AD%90%E5%9C%92-%E5%81%A5%E5%A4%A7%E9%AB%98%E5%B4%8E%E9%A9%9A%E9%9A%AA%E6%99%89%E7%B4%9A%E6%9C%9D%E6%98%A5%E5%A4%8F%E9%80%A3%E9%9C%B8%E9%82%81%E6%AD%A5">
+      
+        夏季甲子園 健大高崎驚險晉級朝春夏連霸邁步
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070353.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8F%B0%E8%82%A1%E5%BC%B7%E5%BD%88794%E9%BB%9E-%E6%B3%95%E4%BA%BA-%E7%9F%AD%E7%B7%9A%E8%A7%80%E5%AF%9F%E5%9C%8B%E9%9A%9B%E5%BD%B1%E9%9F%BF%E5%9B%A0%E7%B4%A0">
+      
+        台股強彈794點 法人：短線觀察國際影響因素
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070352.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%B0%BC%E6%B3%8A%E5%B0%94%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%9D%A0%E6%AF%81-%E5%9B%9B%E5%90%8D%E4%B8%AD%E5%9B%BD%E5%85%AC%E6%B0%91%E9%81%87%E9%9A%BE">
+      
+        尼泊尔直升机坠毁 四名中国公民遇难
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4441054" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%8D%A2%E5%9B%9A%E8%A1%8C%E5%8A%A8-%E4%BA%BA%E8%B4%A8%E9%87%8C%E5%85%8B%E4%B8%93%E8%AE%BF-%E6%88%91%E4%B8%80%E7%9B%B4%E6%9C%9F%E7%9B%BC%E5%BE%B7%E5%9B%BD%E7%9A%84%E5%B8%AE%E5%8A%A9">
+      
+        “换囚行动”人质里克专访：“我一直期盼德国的帮助”
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E2%80%9C%E6%8D%A2%E5%9B%9A%E8%A1%8C%E5%8A%A8%E2%80%9D%E4%BA%BA%E8%B4%A8%E9%87%8C%E5%85%8B%E4%B8%93%E8%AE%BF%EF%BC%9A%E2%80%9C%E6%88%91%E4%B8%80%E7%9B%B4%E6%9C%9F%E7%9B%BC%E5%BE%B7%E5%9B%BD%E7%9A%84%E5%B8%AE%E5%8A%A9%E2%80%9D/a-69877927" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD%E5%8F%91%E5%B0%84%E9%A6%96%E6%89%B9%E5%AE%BD%E5%B8%A6%E5%8D%AB%E6%98%9F">
+      
+        中国发射首批宽带卫星
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78911" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/AIT%E5%A4%84%E9%95%BF-%E7%BE%8E%E5%9B%BD%E6%89%BF%E8%AF%BA%E5%8A%A0%E5%BC%BA%E5%8F%B0%E6%B9%BE%E5%AE%89%E5%85%A8">
+      
+        AIT处长：美国承诺加强台湾安全
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4438752" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%8F%91%E7%8E%B0%E5%B0%BA%E5%AF%B8%E6%9C%80%E5%B0%8F%E7%9A%84%E4%BA%BA%E7%B1%BB%E5%8C%96%E7%9F%B3">
+      
+        科学家发现尺寸最小的人类化石
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78910" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%A8%A1%E6%A0%B7-%E7%BD%91%E7%BB%9C%E4%B8%BE%E6%8A%A5-%E6%88%90%E4%BA%86%E8%BF%99%E4%B8%96%E9%81%93%E7%9A%84-%E6%95%91%E5%91%BD%E7%A8%BB%E8%8D%89">
+      
+        现实的模样｜网络举报，成了这世道的“救命稻草”
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/710373.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/404%E6%96%87%E5%BA%93-%E7%9F%A5%E7%81%BC-%E5%94%90%E5%B1%B1%E6%89%93%E4%BA%BA%E4%BA%8B%E4%BB%B6%E5%8E%9F%E5%87%BA%E8%AD%A6%E6%B0%91%E8%AD%A6%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E8%87%AA%E5%B7%B1%E9%81%AD%E5%BC%BA%E8%A1%8C%E5%AE%9A%E7%BD%AA-%E5%AE%98%E6%96%B9%E8%BF%9E%E5%A4%9C%E5%85%AC%E5%B8%83%E8%B0%83%E6%9F%A5%E7%BB%93%E8%AE%BA">
+      
+        【404文库】知灼｜唐山打人事件原出警民警实名举报自己遭强行定罪 ：官方连夜公布调查结论
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/710350.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%BD%B0%E5%8C%96%E4%BC%91%E6%97%85%E8%BB%8A%E7%96%91%E5%80%92%E8%BB%8A%E4%B8%8D%E6%96%B7%E6%89%93%E6%BB%91%E5%BC%95%E7%87%83%E7%A8%BB%E8%8D%89-%E7%81%AB%E7%87%92%E8%BB%8A%E5%89%A9%E9%AA%A8%E6%9E%B6">
+      
+        彰化休旅車疑倒車不斷打滑引燃稻草 火燒車剩骨架
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/asoc/202408070314.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%A9%BA%E4%B8%AD%E8%8B%B1%E8%AA%9E%E5%89%B5%E8%BE%A6%E4%BA%BA%E5%BD%AD%E8%92%99%E6%83%A0%E8%BE%AD%E4%B8%96-AIT-%E6%B0%B8%E9%81%A0%E6%B4%BB%E5%9C%A8%E6%88%91%E5%80%91%E5%BF%83%E4%B8%AD">
+      
+        空中英語創辦人彭蒙惠辭世 AIT：永遠活在我們心中
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070313.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%96%8B%E8%B7%AF%E9%BC%93%E6%A8%82%E4%BF%9D%E5%AD%98%E8%80%85%E6%9D%8E%E6%98%A5%E7%94%9F%E8%BE%AD%E4%B8%96-%E6%96%87%E5%8C%96%E9%83%A8%E9%A0%92%E8%B4%88%E6%97%8C%E6%8F%9A%E7%8B%80">
+      
+        開路鼓樂保存者李春生辭世 文化部頒贈旌揚狀
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acul/202408070311.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%9C%8B%E5%AF%B6-%E7%94%98%E9%9C%B2%E6%B0%B4-%E8%BF%94%E9%BB%83%E5%9C%9F%E6%B0%B4%E6%AF%8D%E6%A0%A1-9%E6%9C%88%E9%A6%96%E5%BA%A6%E8%B5%B4%E6%97%A5%E5%B1%95%E5%87%BA">
+      
+        國寶「甘露水」返黃土水母校 9月首度赴日展出
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acul/202408070312.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%AE%87%E5%A4%9A%E7%94%B0%E5%85%89%E6%BC%94%E5%94%B1%E6%9C%83%E7%99%BB%E5%8F%B0-%E9%81%A0%E5%82%B3%E5%8A%A9%E5%94%AE%E7%A5%A8%E7%B3%BB%E7%B5%B1%E6%89%93%E6%93%8A%E9%BB%83%E7%89%9B">
+      
+        宇多田光演唱會登台 遠傳助售票系統打擊黃牛
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070310.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8F%B0%E8%82%A1%E8%B7%8C%E6%B7%B1%E5%8F%8D%E5%BD%88%E7%8B%82%E6%BC%B2794%E9%BB%9E-%E6%96%B0%E5%8F%B0%E5%B9%A3%E8%B2%B6%E7%BF%BB%E5%8D%87%E6%94%B632.681%E5%85%83">
+      
+        台股跌深反彈狂漲794點 新台幣貶翻升收32.681元
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070309.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B3%B4%E6%B8%85%E5%BE%B7-114%E5%B9%B4%E5%BA%A6%E6%B2%BB%E6%B0%B4%E9%A0%90%E7%AE%97%E5%A2%9E159%E5%84%84-%E6%8C%81%E7%BA%8C%E6%94%AF%E6%8C%81%E5%9C%B0%E6%96%B9">
+      
+        賴清德：114年度治水預算增159億 持續支持地方
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070308.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8D%93%E8%B6%8A%E8%91%A3%E4%BA%8B%E9%95%B7%E6%9B%BE%E6%B7%91%E9%88%B4-%E9%9D%A2%E5%B0%8D%E5%B0%91%E5%AD%90%E5%8C%96-%E5%95%9F%E5%8B%95%E5%8D%B0%E5%B0%BC%E5%B8%82%E5%A0%B4%E5%B8%83%E5%B1%80">
+      
+        卓越董事長曾淑鈴：面對少子化 啟動印尼市場布局
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070307.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%A1%9E%E7%B4%8D%E6%B2%B3%E6%B0%B4%E8%B3%AA%E6%AA%A2%E6%B8%AC%E9%81%94%E6%A8%99-%E5%A5%A7%E9%81%8B%E6%B8%B8%E6%B3%B3%E9%A6%AC%E6%8B%89%E6%9D%BE%E7%8D%B2%E5%87%86%E8%A9%A6%E6%B8%B8">
+      
+        塞納河水質檢測達標 奧運游泳馬拉松獲准試游
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aspt/202408070306.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%BE%8E%E6%B9%96%E4%B8%AD%E5%A4%AE%E6%A9%9F%E9%97%9C%E5%90%88%E7%BD%B2%E8%BE%A6%E5%85%AC%E9%83%BD%E6%9B%B4-%E5%9C%8B%E7%94%A2%E7%BD%B2-1%E5%80%8B%E6%9C%88%E6%8F%90%E5%A0%B1%E9%9C%80%E6%B1%82">
+      
+        澎湖中央機關合署辦公都更 國產署：1個月提報需求
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070305.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%8F%AF%E6%96%B0%E7%A7%91%E5%8A%A0%E7%A2%BC%E6%99%B6%E6%8A%80%E6%8C%81%E8%82%A1-%E8%8F%AF%E7%A7%91%E4%BA%8B%E6%A5%AD%E7%BE%A4%E6%8C%81%E8%82%A1%E6%AF%94%E9%87%8D%E9%80%BE12">
+      
+        華新科加碼晶技持股 華科事業群持股比重逾12%
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070304.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8D%95%E6%97%A5%E8%BF%9B%E5%B0%BA2006%E7%B1%B3-%E4%B8%AD%E5%9B%BD%E9%99%86%E4%B8%8A%E8%B6%85%E6%B7%B1%E4%BA%95%E9%92%BB%E6%8E%A2%E9%80%9F%E5%BA%A6%E5%88%9B%E9%80%A0%E6%96%B0%E7%BA%AA%E5%BD%95">
+      
+        单日进尺2006米 中国陆上超深井钻探速度创造新纪录
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4438528" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%9C%8B%E8%BB%8D1%E8%87%B38%E6%9C%88%E6%99%89%E4%BB%BB31%E5%B0%87%E5%AE%98-%E8%B3%B4%E7%B8%BD%E7%B5%B18%E6%97%A5%E5%87%BA%E5%B8%AD%E5%8B%97%E5%8B%89%E5%85%B8%E7%A6%AE">
+      
+        國軍1至8月晉任31將官 賴總統8日出席勗勉典禮
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070303.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%A7%A3%E6%94%BE%E5%86%9B%E5%9C%A8-%E9%BB%84%E5%B2%A9%E5%B2%9B-%E9%99%84%E8%BF%91%E4%B8%BE%E8%A1%8C%E6%B5%B7%E7%A9%BA%E6%88%98%E5%B7%A1-%E8%8F%B2%E7%BE%8E%E5%8A%A0%E6%BE%B3%E5%90%8C%E6%97%A5%E8%81%94%E5%90%88%E5%86%9B%E6%BC%94">
+      
+        解放军在“黄岩岛”附近举行海空战巡 菲美加澳同日联合军演
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-launches-air-sea-patrols-near-scarborough-shoal/7733036.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%A3%AB%E9%9B%BB%E4%B8%8A%E5%8D%8A%E5%B9%B4%E7%8D%B2%E5%88%A9%E5%90%8C%E6%9C%9F%E6%96%B0%E9%AB%98-%E7%AC%AC2%E5%AD%A3%E7%8D%B2%E5%88%A9%E5%90%8C%E6%9C%9F%E6%AC%A1%E9%AB%98">
+      
+        士電上半年獲利同期新高 第2季獲利同期次高
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/afe/202408070302.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%AD%82%E9%A1%9B%E8%A8%98-%E5%8A%87%E5%A0%B4%E5%BD%B1%E5%83%8F%E7%89%88-%E9%87%8D%E7%8F%BE%E8%A6%86%E9%BC%8E%E9%87%91%E5%85%AC%E5%A2%93%E9%AD%94%E5%B9%BB%E9%A0%90%E8%A8%80">
+      
+        「魂顛記」劇場影像版 重現覆鼎金公墓魔幻預言
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/acul/202408070301.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%BD%AD%E8%92%99%E6%83%A0%E7%94%9F%E5%89%8D%E9%8C%84%E5%BD%B1%E5%85%AC%E5%B8%83-%E4%B8%80%E7%94%9F%E6%8A%95%E5%85%A5%E7%82%BA%E5%B9%AB%E5%8F%B0%E7%81%A3%E4%BA%86%E8%A7%A3%E4%B8%96%E7%95%8C">
+      
+        彭蒙惠生前錄影公布 一生投入為幫台灣了解世界
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/ahel/202408070300.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B3%80%E9%8C%A6%E9%BA%97%E5%89%AF%E6%89%8B%E8%8F%AF%E8%8C%B2%E6%9B%BE%E5%9C%A8%E5%BB%A3%E6%9D%B1%E6%95%99%E6%9B%B8-%E5%B0%8D%E4%B8%AD%E5%9C%8B%E6%85%8B%E5%BA%A6%E5%BC%95%E9%97%9C%E6%B3%A8">
+      
+        賀錦麗副手華茲曾在廣東教書 對中國態度引關注
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aopl/202408070299.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%BD%B7%E5%85%8D%E8%AC%9D%E5%9C%8B%E6%A8%91%E9%80%A3%E7%BD%B2%E4%BA%BA%E5%90%8D%E5%86%8A%E5%9F%BA%E9%9A%86%E9%81%B8%E5%A7%94%E6%9C%83%E5%AE%8C%E6%88%90%E6%9F%A5%E5%B0%8D-%E6%9F%A5%E8%A9%A2%E5%96%AE8-14%E8%AA%8D%E5%AE%9A">
+      
+        罷免謝國樑連署人名冊基隆選委會完成查對 查詢單8/14認定
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aipl/202408070298.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%96%B0%E7%AB%B9%E6%A3%92%E7%90%83%E5%A0%B4%E8%A6%86%E5%9C%9F%E9%91%91%E5%AE%9A-%E7%AB%B9%E5%B8%82%E5%BA%9C%E8%AB%8B%E6%B1%82%E9%99%90%E6%9C%9F%E5%87%BA%E5%85%B7%E5%A0%B1%E5%91%8A%E9%81%AD%E9%A7%81">
+      
+        新竹棒球場覆土鑑定 竹市府請求限期出具報告遭駁
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070296.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%8F%B0%E5%8D%97%E6%96%B0%E6%A3%92%E7%90%83%E5%A0%B4%E6%94%B9%E4%BA%BA%E5%B7%A5%E8%8D%89%E7%9A%AE%E6%83%B9%E8%AD%B0-%E5%B8%82%E5%BA%9C-%E7%84%A1%E9%AB%98%E6%BA%AB%E5%82%B7%E4%BA%BA%E7%96%91%E6%85%AE">
+      
+        台南新棒球場改人工草皮惹議 市府：無高溫傷人疑慮
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070297.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E9%AB%98%E9%9B%84%E5%A5%B3%E4%B8%AD%E8%88%87%E8%B3%87%E6%B7%B1%E6%A0%A1%E5%8F%8B%E5%90%8C%E6%85%B6%E7%99%BE%E6%AD%B2-%E5%9B%9E%E5%91%B3%E6%98%AD%E5%92%8C%E5%8D%92%E6%A5%AD%E7%B4%80%E5%BF%B5%E5%86%8A">
+      
+        高雄女中與資深校友同慶百歲 回味昭和卒業紀念冊
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA" class="tag">
+        (臺)中央社CNA
+      </a>
+      
+
+      
+      <a href="https://www.cna.com.tw/news/aloc/202408070295.aspx" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%97%A5%E6%9C%AC%E6%BB%91%E6%9D%BF%E7%A7%B0%E9%9C%B8%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90-%E5%9C%A8%E6%9C%AC%E5%9C%9F%E4%B8%BA%E4%BD%95%E5%8F%97%E5%86%B7%E7%9C%BC">
+      
+        日本滑板称霸巴黎奥运 在本土为何受冷眼？
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%BB%91%E6%9D%BF%E7%A7%B0%E9%9C%B8%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90%20%E5%9C%A8%E6%9C%AC%E5%9C%9F%E4%B8%BA%E4%BD%95%E5%8F%97%E5%86%B7%E7%9C%BC%EF%BC%9F/a-69871454" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%BE%8E%E5%9B%BD%E5%B0%86%E5%A2%9E%E5%8A%A0%E5%9C%A8%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E7%9A%84%E5%86%9B%E5%8A%9B%E6%8A%95%E5%B0%84%E8%83%BD%E5%8A%9B%E4%BB%A5%E5%BA%94%E5%AF%B9%E4%B8%AD%E5%9B%BD%E7%9A%84-%E8%83%81%E8%BF%AB-%E8%A1%8C%E4%B8%BA">
+      
+        美国将增加在澳大利亚的军力投射能力以应对中国的“胁迫”行为
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-to-increase-power-projection-in-australia/7733026.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%8E%B7%E5%88%91%E6%B0%91%E8%AD%A6%E6%B8%85%E7%A9%BA%E4%B8%BE%E6%8A%A5%E5%86%85%E5%AE%B9">
+      
+        唐山烧烤店打人案获刑民警清空举报内容
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4440311" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%B4%B5%E9%98%B3%E5%B8%82%E9%95%BF%E9%A9%AC%E5%AE%81%E5%AE%87%E4%BB%BB%E5%86%85%E8%A2%AB%E6%9F%A5-13%E5%B9%B4%E5%86%85%E8%B4%B5%E9%98%B3%E5%9B%9B%E4%BB%BB%E5%B8%82%E9%95%BF%E8%90%BD%E9%A9%AC">
+      
+        贵阳市长马宁宇任内被查 13年内贵阳四任市长落马
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/zhengzhi/ql-china-guiyang-corruption-mayer-08072024025705.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD7%E6%9C%88%E4%BB%BD%E5%A4%96%E6%B1%87%E5%82%A8%E5%A4%87%E7%8E%AF%E6%AF%94%E5%A4%A7%E5%B9%85%E5%A2%9E%E9%95%BF1.06">
+      
+        中国7月份外汇储备环比大幅增长1.06%
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4440026" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%81%92%E5%A4%A7%E9%9B%86%E5%9B%A2%E6%AF%8D%E5%85%AC%E5%8F%B8%E5%87%AF%E9%9A%86%E7%BD%AE%E4%B8%9A%E8%A2%AB%E7%94%B3%E8%AF%B7%E7%A0%B4%E4%BA%A7%E6%B8%85%E7%AE%97">
+      
+        恒大集团母公司凯隆置业被申请破产清算
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439870" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%83%E5%A4%95%E6%AD%A3%E5%80%BC%E5%91%A8%E5%85%AD-%E4%B8%AD%E5%9B%BD%E6%B0%91%E6%94%BF%E9%83%A8-%E9%BC%93%E5%8A%B1%E5%A9%9A%E5%A7%BB%E7%99%BB%E8%AE%B0%E6%9C%BA%E5%85%B3%E6%BB%A1%E8%B6%B3%E7%BE%A4%E4%BC%97%E9%9C%80%E6%B1%82">
+      
+        七夕正值周六 中国民政部：鼓励婚姻登记机关满足群众需求
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439603" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD7%E6%9C%88%E4%BB%BD%E5%87%BA%E5%8F%A3%E5%A2%9E%E9%80%9F%E6%94%BE%E7%BC%93%E8%87%B3%E4%B8%89%E4%B8%AA%E6%9C%88%E4%BD%8E%E7%82%B9-%E8%BF%9B%E5%8F%A3%E6%81%A2%E5%A4%8D%E5%A2%9E%E9%95%BF">
+      
+        中国7月份出口增速放缓至三个月低点 进口恢复增长
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-exports-growth-slows-to-3-month-low-in-july/7733000.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/FireFox-129-%E9%87%8A%E5%87%BA">
+      
+        FireFox 129 释出
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78909" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B8%AF%E5%BA%9C%E6%8F%90%E9%86%92%E8%BA%AB%E5%9C%A8%E6%88%96%E6%8B%9F%E8%B5%B4%E8%8B%B1%E5%9B%BD%E7%9A%84%E6%B8%AF%E4%BA%BA%E6%B3%A8%E6%84%8F%E5%AE%89%E5%85%A8">
+      
+        港府提醒身在或拟赴英国的港人注意安全
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439188" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E8%93%9D%E8%90%A5%E6%9B%9D%E6%B0%91%E8%BF%9B%E5%85%9A%E4%B8%8E%E7%BE%8E%E5%A4%A7%E9%BA%BB%E4%B8%9A%E8%80%85%E9%A4%90%E5%8F%99-%E7%BB%BF%E8%90%A5%E9%A9%B3%E5%B9%B6%E9%9D%9E%E4%BA%8B%E5%AE%9E">
+      
+        蓝营曝民进党与美大麻业者餐叙 绿营驳并非事实
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439464" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AA%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%9F%E4%B8%A5%E9%87%8D%E6%95%85%E9%9A%9C-%E5%AE%A2%E6%9C%8D-%E6%AD%A3%E6%8A%A2%E4%BF%AE">
+      
+        百度地图导航系统发生严重故障 客服：正抢修
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439536" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E6%B3%A2%E9%9F%B3%E5%B0%86%E6%94%B9%E8%BF%9B737-Max-9%E8%AE%BE%E8%AE%A1%E4%BB%A5%E9%98%B2%E6%AD%A2%E8%88%B1%E9%97%A8%E7%A9%BA%E4%B8%AD%E8%84%B1%E8%90%BD">
+      
+        波音将改进737 Max 9设计以防止舱门空中脱落
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/boeing-to-make-design-changes-to-prevent-future-737-max-9-door-panel-blowout/7732982.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E4%B8%8A%E5%8D%8A%E5%B9%B4%E4%B8%AD%E5%9B%BD%E6%9C%BA%E6%A2%B0%E5%B7%A5%E4%B8%9A%E8%A7%84%E4%B8%8A%E4%BC%81%E4%B8%9A%E5%A2%9E%E5%8A%A0%E5%80%BC%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF6.1">
+      
+        上半年中国机械工业规上企业增加值同比增长6.1%
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4438837" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/Google-Chrome-%E5%B0%86%E5%85%81%E8%AE%B8%E7%94%A8%E6%88%B7%E6%89%93%E8%B5%8F%E5%85%B6%E5%96%9C%E6%AC%A2%E7%9A%84%E7%BD%91%E7%AB%99">
+      
+        Google Chrome 将允许用户打赏其喜欢的网站
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=78908" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-08-07/%E5%87%86%E5%8F%B0%E9%A9%BB%E7%BE%8E%E5%89%AF%E4%BB%A3%E8%A1%A8-%E5%8F%B0%E7%BE%8E%E5%85%B3%E7%B3%BB%E6%9C%80%E5%A5%BD%E7%9A%84%E6%97%B6%E5%88%BB%E8%BF%98%E6%B2%A1%E5%88%B0%E6%9D%A5">
+      
+        准台驻美副代表：台美关系最好的时刻还没到来
+      </a>
+      <time>2024-08-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#联合早报" class="tag">
+        联合早报
+      </a>
+      
+
+      
+      <a href="https://www.zaobao.com/realtime/china/story20240807-4439214" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page5/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page7/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page5/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page7/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page5/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page7/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

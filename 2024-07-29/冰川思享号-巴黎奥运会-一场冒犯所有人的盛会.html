@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+" />
+    <meta property="og:description" content="
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会" />
+    <meta property="twitter:title" content="冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710110.html&t=%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7%EF%BD%9C%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90%E4%BC%9A%EF%BC%8C%E4%B8%80%E5%9C%BA%E5%86%92%E7%8A%AF%E6%89%80%E6%9C%89%E4%BA%BA%E7%9A%84%E7%9B%9B%E4%BC%9A" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710110.html&t=%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7%EF%BD%9C%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90%E4%BC%9A%EF%BC%8C%E4%B8%80%E5%9C%BA%E5%86%92%E7%8A%AF%E6%89%80%E6%9C%89%E4%BA%BA%E7%9A%84%E7%9B%9B%E4%BC%9A&d=2024-07-29&e=
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：巴黎奥运会，一场冒犯所有人的盛会作者：侯虹斌发表日期：2024.7.28来源：冰川思享号主题归类：巴黎奥运CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这届奥运会开幕式，被称为最癫的一届。
+  开幕之前，巴黎罢工，基建没搞好，塞纳河太脏，提前进村的运动员被抢劫，没有空调，整个组委会又奢侈又抠门，酒水可以随便吃喝，睡的床垫却差得要命……
+  总之，完全符合我们对巴黎人的刻板印象：一方面懒，“春天工作，夏天度假，秋天罢工，冬天过圣诞”；一方面，又脏又乱又差。
+  这次巴黎奥运会开幕式出来后，原来的吐槽顿时哑火了。
+  因为，比起开幕式巴黎表现出来..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710110.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/710110.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/710110.html&text=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/710110.html&title=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/710110.html&title=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会&body=
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/710110.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/710110.html&title=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会&caption=
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会&url=https://chinadigitaltimes.net/chinese/710110.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-07-29
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/710110.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710110.html&t=%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7%EF%BD%9C%E5%B7%B4%E9%BB%8E%E5%A5%A5%E8%BF%90%E4%BC%9A%EF%BC%8C%E4%B8%80%E5%9C%BA%E5%86%92%E7%8A%AF%E6%89%80%E6%9C%89%E4%BA%BA%E7%9A%84%E7%9B%9B%E4%BC%9A&d=2024-07-29&e=
+冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：巴黎奥运会，一场冒犯所有人的盛会作者：侯虹斌发表日期：2024.7.28来源：冰川思享号主题归类：巴黎奥运CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这届奥运会开幕式，被称为最癫的一届。
+  开幕之前，巴黎罢工，基建没搞好，塞纳河太脏，提前进村的运动员被抢劫，没有空调，整个组委会又奢侈又抠门，酒水可以随便吃喝，睡的床垫却差得要命……
+  总之，完全符合我们对巴黎人的刻板印象：一方面懒，“春天工作，夏天度假，秋天罢工，冬天过圣诞”；一方面，又脏又乱又差。
+  这次巴黎奥运会开幕式出来后，原来的吐槽顿时哑火了。
+  因为，比起开幕式巴黎表现出来..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710110.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722230648000-->
+<p><a href="https://chinadigitaltimes.net/chinese/710110.html">冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/710110.html" title="冰川思享号｜巴黎奥运会，一场冒犯所有人的盛会" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/07/1-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>巴黎奥运会，一场冒犯所有人的盛会<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/冰川思享号" target="_blank">侯虹斌</a><br /><strong>发表日期：</strong>2024.7.28<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/edooqz5mVx65WCm4-Kwofg" target="_blank">冰川思享号</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/巴黎奥运" target="_blank">巴黎奥运</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>这届奥运会开幕式，被称为最癫的一届。</p>
+  <p>开幕之前，巴黎罢工，基建没搞好，塞纳河太脏，提前进村的运动员被抢劫，没有空调，整个组委会又奢侈又抠门，酒水可以随便吃喝，睡的床垫却差得要命……</p>
+  <p>总之，完全符合我们对巴黎人的刻板印象：<strong>一方面懒，“春天工作，夏天度假，秋天罢工，冬天过圣诞”；一方面，又脏又乱又差。</strong></p>
+  <p>这次巴黎奥运会开幕式出来后，原来的吐槽顿时哑火了。</p>
+  <p>因为，比起开幕式巴黎表现出来的疯癫、出格，什么脏乱差，压根就是小事一桩了。巴黎开幕式，把所有能犯的文化、政治、宗教禁忌都犯了。</p>
+  <p>对中国人来说，这一届奥运会很难评。就像榴梿一样，喜欢的非常喜欢，连呼伟大；讨厌的很憎恶，痛骂这啥破玩意儿。</p>
+  <h2 id="section">01</h2>
+  <p>巴黎奥运会开幕式都干了些什么？</p>
+  <p>冒犯。</p>
+  <p>不断地冒犯。</p>
+  <p><strong>先来说性别平等上的。</strong></p>
+  <p>当女歌手在唱法国国歌《马赛曲》的时候，10座雕像从塞纳河中缓缓升起，她们都是法国历史上各行各业作为巨大贡献的女权主义者。</p>
+  <p>专出拎出一章来歌颂女权，这对于许多视女权为洪水猛兽的国家，情何以堪。还有许多网友冷嘲热讽，女人的地位本来已经太高了，为啥不做男性雕像来歌颂为男权作出贡献的男人呢？</p>
+  <p><strong>无所不在的LGBT元素更是吓坏不少人。</strong></p>
+  <p>法国是时装之都，时装秀上走秀的却是各式各样的变装皇后，留着络腮胡子的穿着紧身胸衣一脸妩媚，在桌上跳着火辣艳舞的，你以为是男人其实性别已是女人，或者正相反。我甚至不敢判断性别。</p>
+  <p><strong>宗教上的冒犯，更尖锐。</strong></p>
+  <p>变装皇后和LGBT们，一起COS了达芬奇《最后的晚餐》。基督教对于同性恋是不待见的，但他们模仿圣画，用戏谑消解了神圣和严肃，用教条最讨厌的东西去戏仿它。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/post-710110-66a726dcb8439.png" alt="image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">图/央视网</span>  <p>有一段致敬“新浪潮”的表演，模仿复刻电影《祖与占》的争议细节，集合了一切伦理的禁忌。节目长达数分钟时间，转播被直接干到沉默了，不知说啥好。这是我们能看的吗？</p>
+  <p>后来看到，各国网友纷纷自嘲。不仅中国，我们美国、英国、日本、加拿大等等国家的转播，也沉默了，顶多说了一句“哦，我们没有被邀请”。</p>
+  <p><strong>还有，冒犯皇室，冒犯历史，冒犯政治。</strong></p>
+  <p>12年前的英国伦敦奥运会，英国女王被英俊的特工007亲自接到了奥运会场，参加开幕式；而这一届的法国巴黎奥运会，法国王后也以另一种形式参加奥运开幕式了：“断头王后”玛丽·安托瓦内特抱着自己的头，在巴黎古监狱的窗口唱歌。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/post-710110-66a726dcc0ea4." alt="image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">图/央视网</span>  <p>玛丽·安托瓦内特是法国国王路易十六的王后，在法国大革命时期被关在这个监狱。而她上断头台，标志了革命胜利，法国人民获得了自由。</p>
+  <p>当火炬手穿越大剧院的时候，演员们正在排练《悲惨世界》，而戏剧的结束场景还原了名画《自由引导人民》，它描绘的是法国七月革命的场景。</p>
+  <p><strong>把革命、战斗、死亡、断头台等血腥内容，搬上“合家欢”的奥运会场，向全世界歌唱，这合适吗？</strong></p>
+  <p>巴黎人回答：合适。</p>
+  <p>他们认为，法国大革命，把皇室贵族送上断头台，这不仅是法国人的历史与传统，也是全世界的文明遗产，有何不可？‍</p>
+  <h2 id="section-1">02</h2>
+  <p>实际上，这次的奥运会开幕式，小毛病不断。</p>
+  <p>比如，一身银色铠甲的圣母贞德，骑着机械银色战马，从塞纳河上飞奔到会场，献上奥运会旗时，中世纪与现代结合，多么令人惊艳！</p>
+  <p>结果，奥运会旗升上去，却挂反了！</p>
+  <p>在法国国歌《马赛曲》声中，10座为女权主义作出重大贡献的女性雕像，在塞纳河中缓缓升起，多么激动人心！</p>
+  <p>结果，只升起来9座，最有名的波伏瓦的雕像，卡住了，始终没有升上来！</p>
+  <p><strong>谁不说巴黎奥运会是一个草台班子呢。</strong></p>
+  <p>据说，这次开幕式压根没有进行过一次完整的彩排；由于是第一次户外进行的奥运开幕式，表演是分组进行的，必须配合上非常复杂的切播和录制，各种粗糙出错，节奏混乱。</p>
+  <p>但是，整体效果一出来，这些小细节，大家不care，不紧张。错就错吧，大差不差就好。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/post-710110-66a726dcd349b.png" alt="image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">图/央视网</span>  <p>今年的巴黎和20年前的希腊雅典，开幕式都令人心潮澎湃，我们在里面辩认出太多我们熟悉的符号，就像重温了半部历史。文化渊远流长就是有这个好处，太得天独厚了。</p>
+  <p>比如法国，音乐、美术、时尚、文学、哲学、社会科学、时尚、流行文化，甚至政治革命，他们贡献给给世界无数伟大的人物、伟大的作品、伟大的符号或品牌，随便拈出一个，大家都屁颠屁颠地吹捧，就是这么牛。</p>
+  <p><strong>有这么厚的底子，他们当然可以很松驰，出点小毛病，根本不影响大局。</strong>何况，这些华丽的创意、非凡的想象力、无以伦比的审美，太多出人意表，很足够了。</p>
+  <h2 id="section-2"><strong>03</strong></h2>
+  <p>这里，又回到一个很有挑战性的问题了：</p>
+  <p><strong>巴黎奥运会跟北京奥运会相比，谁更好？</strong></p>
+  <p>两种极端的看法都有。一种认为极力抬北京开幕式，贬巴黎开幕式；另一种则相反。没人能给出说服所有人的答案。</p>
+  <p>其实，审美这种事，不需要一个非常明确的是与非呢。再土的东西都会有人喜欢，再时髦的货反对的人也很多。</p>
+  <p>这与一个国家、一个城市的性格是密切相关的，<strong>严肃紧张，是一种风格；松驰浪荡，也是一种风格。</strong></p>
+  <p>中国在“卷”这条道路上已经奔向极致了，有集体精神，愿意为了未来而放弃当下。整齐划一，一丝不苟，每个人都成为这艘时代巨轮上的一颗镙丝钉；这艘巨轮所呈现的物理尺度，是无比强大的，沛然莫之能御。</p>
+  <p>而且，我们确实有可称道的地方，不在于光电技术和计算机控制，而是根植于当时中国人民的生活水平的真实提高，那是人们幸福感非常强的一个时代，这种宏大叙事是符合人民的本意的。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/post-710110-66a726dce8b64.png" alt="image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">北京奥运会开幕式（图/视频截图）</span>  <p>北京奥运的开幕式，我是喜欢的，因为我就是“卷”的一员。</p>
+  <p>但巴黎奥运的开幕式，我也非常喜欢，因为那是我向往而不可得的松驰与浓郁的文化。</p>
+  <p>如果拟人化，那么，北京就是一个奔忙一生、日卷夜卷的中国人，他们正襟危坐，恨不得门门考一百分，很烦像巴黎这样的浪荡艺术家，不是喝茶就是谈恋爱，不干正事。于是，我们讥笑巴黎的“脏、乱、差”，都是真的，可是，“浪荡子”怎么在乎呢？</p>
+  <p>但是，<strong>“浪荡子”偶而一出手，拿出的作品还很棒。这确实让人心烦，觉得世间不公。</strong></p>
+  <p>当然，像巴黎这样的“浪荡子”，也会认为北京保守、偏执、滑稽、无趣。</p>
+  <h2 id="section-3"><strong>04</strong></h2>
+  <p>重新说回巴黎开幕式上无所不在的LGBT元素。</p>
+  <p>这个，确实走得太远了。<strong>不仅是中国人，美国人以及其他西方人，也有很多不满。而且，由于宗教观念的存在，他们的厌恶和抵制只会比中国人更严重，情绪更激烈。</strong></p>
+  <p>但是，巴黎的同性婚姻合法化很多年了，LGBT这个观念在欧洲也行走多年了，人家只是表示他们的生活日常，就会把另一部分保守的人刺激得嗷嗷叫。</p>
+  <p>不过，这不重要。自由就是这样来的。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/07/post-710110-66a726dcf1bd1." alt="image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">图/央视网</span>  <p>仅仅几十年前，美国的黑人是不允许跟白人坐一辆公交车的，美国大学的男女同校仅仅只有50多年，中国女人松开小脚，也仅仅是一百年前；直到现在，美国及许多国家的女性都没有堕胎权……</p>
+  <p>以上哪一项，在当时不是被视为大逆不道的、人人喊打的？</p>
+  <p>冒犯，才是进步的。</p>
+  <p><strong>巴黎奥运开幕式的最大创意，不在于展现的表演有多精彩，而是主打一个观念差。</strong>它就是要不断冒犯保守的、正确的、理所当然的，告诉你，世界还有一种这样的存在。</p>
+  <p>感谢这场盛会，时代在变化，一切都奔向更自由。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/%E5%86%B0%E7%82%B9%E5%91%A8%E5%88%8A-%E4%B8%80%E4%B8%AA%E7%88%B1-%E8%AF%B4%E8%AF%9D-%E7%9A%84%E6%99%AE%E9%80%9A%E5%B8%82%E6%B0%91-%E8%B5%B0%E4%BA%86">
+          冰点周刊｜一个爱“说话”的普通市民，走了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-29/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E5%A5%A5%E8%BF%90%E5%BC%80%E5%B9%95%E5%BC%8F%E7%9A%84%E8%8A%82%E7%9B%AE%E5%B1%85%E7%84%B6%E6%B2%A1%E6%9C%89%E5%AE%A1%E6%9F%A5-%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86">
+          【404文库】建设性意见｜奥运开幕式的节目居然没有审查！太可怕了……
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-28</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-28/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC180%E6%9C%9F-%E6%97%B1%E7%81%BE%E6%B4%AA%E7%81%BE%E9%83%BD%E6%8C%A1%E4%B8%8D%E4%BD%8F%E7%B2%AE%E9%A3%9F%E7%9A%84%E5%B9%B4%E5%B9%B4%E5%A2%9E%E4%BA%A7">
+          【CDT周报】第180期：旱灾洪灾都挡不住粮食的年年增产
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-28</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-28/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%A4%AE%E8%A7%86%E8%A7%A3%E8%AF%B4%E6%B2%89%E9%BB%98%E4%BA%86-%E7%9B%B4%E6%92%AD%E8%BF%99%E4%BA%8B%E4%B8%8D%E9%80%82%E5%90%88%E5%A4%AE%E8%A7%86-%E4%B8%8D%E8%83%BD%E5%AE%8C%E5%85%A8%E6%8A%8A%E6%8E%A7%E5%B1%80%E9%9D%A2">
+          【网络民议】“央视解说沉默了，直播这事不适合央视，不能完全把控局面”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-29/%E9%9F%A9%E5%9B%BD-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B1%E6%95%A3%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%B8%96%E7%BA%AA%E5%90%8E%E5%9B%9E%E5%BD%92%E7%9A%84%E9%AB%98%E4%B8%BD%E5%AE%B6%E5%BA%AD%E5%8F%97%E5%88%B0%E5%86%B7%E9%81%87">
+            前一篇：韩国：为什么失散一个多世纪后回归的高丽家庭受到冷遇
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-29/%E9%A6%99%E6%B8%AF%E5%87%BB%E5%89%91%E5%A5%B3%E5%B0%86%E5%A5%A5%E8%BF%90%E5%A4%BA%E9%87%91%E8%8E%B7600%E4%B8%87%E6%B8%AF%E5%85%83%E5%A5%96%E9%87%91">
+            后一篇：香港击剑女将奥运夺金获600万港元奖金
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E9%9F%A9%E5%9B%BD-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B1%E6%95%A3%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%B8%96%E7%BA%AA%E5%90%8E%E5%9B%9E%E5%BD%92%E7%9A%84%E9%AB%98%E4%B8%BD%E5%AE%B6%E5%BA%AD%E5%8F%97%E5%88%B0%E5%86%B7%E9%81%87'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/%E9%A6%99%E6%B8%AF%E5%87%BB%E5%89%91%E5%A5%B3%E5%B0%86%E5%A5%A5%E8%BF%90%E5%A4%BA%E9%87%91%E8%8E%B7600%E4%B8%87%E6%B8%AF%E5%85%83%E5%A5%96%E9%87%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-07-29/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E5%A5%A5%E8%BF%90%E5%BC%80%E5%B9%95%E5%BC%8F%E7%9A%84%E8%8A%82%E7%9B%AE%E5%B1%85%E7%84%B6%E6%B2%A1%E6%9C%89%E5%AE%A1%E6%9F%A5-%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-07-28/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC180%E6%9C%9F-%E6%97%B1%E7%81%BE%E6%B4%AA%E7%81%BE%E9%83%BD%E6%8C%A1%E4%B8%8D%E4%BD%8F%E7%B2%AE%E9%A3%9F%E7%9A%84%E5%B9%B4%E5%B9%B4%E5%A2%9E%E4%BA%A7'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-07-29/%E9%9F%A9%E5%9B%BD-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B1%E6%95%A3%E4%B8%80%E4%B8%AA%E5%A4%9A%E4%B8%96%E7%BA%AA%E5%90%8E%E5%9B%9E%E5%BD%92%E7%9A%84%E9%AB%98%E4%B8%BD%E5%AE%B6%E5%BA%AD%E5%8F%97%E5%88%B0%E5%86%B7%E9%81%87">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-07-29/%E9%A6%99%E6%B8%AF%E5%87%BB%E5%89%91%E5%A5%B3%E5%B0%86%E5%A5%A5%E8%BF%90%E5%A4%BA%E9%87%91%E8%8E%B7600%E4%B8%87%E6%B8%AF%E5%85%83%E5%A5%96%E9%87%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-07-29/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E5%A5%A5%E8%BF%90%E5%BC%80%E5%B9%95%E5%BC%8F%E7%9A%84%E8%8A%82%E7%9B%AE%E5%B1%85%E7%84%B6%E6%B2%A1%E6%9C%89%E5%AE%A1%E6%9F%A5-%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-07-28/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC180%E6%9C%9F-%E6%97%B1%E7%81%BE%E6%B4%AA%E7%81%BE%E9%83%BD%E6%8C%A1%E4%B8%8D%E4%BD%8F%E7%B2%AE%E9%A3%9F%E7%9A%84%E5%B9%B4%E5%B9%B4%E5%A2%9E%E4%BA%A7">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

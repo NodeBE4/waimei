@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>明尼苏达州州长沃尔兹成为贺锦丽竞选搭档 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+" />
+    <meta property="og:description" content="
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="明尼苏达州州长沃尔兹成为贺锦丽竞选搭档" />
+    <meta property="twitter:title" content="明尼苏达州州长沃尔兹成为贺锦丽竞选搭档" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20240807%2Fkamala-harris-vp%2F%3Futm_source%3DRSS&t=%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E5%B7%9E%E5%B7%9E%E9%95%BF%E6%B2%83%E5%B0%94%E5%85%B9%E6%88%90%E4%B8%BA%E8%B4%BA%E9%94%A6%E4%B8%BD%E7%AB%9E%E9%80%89%E6%90%AD%E6%A1%A3" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20240807%2Fkamala-harris-vp%2F%3Futm_source%3DRSS&t=%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E5%B7%9E%E5%B7%9E%E9%95%BF%E6%B2%83%E5%B0%94%E5%85%B9%E6%88%90%E4%B8%BA%E8%B4%BA%E9%94%A6%E4%B8%BD%E7%AB%9E%E9%80%89%E6%90%AD%E6%A1%A3&d=2024-08-06&e=
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+
+
+  
+    
+明尼苏达州州长蒂姆·沃尔兹，2023年摄于圣保罗的州议会大厦。 Jenn Ackerman for The New York Times
+    
+  
+  
+    
+      
+        现任副总统、民主党总统候选人贺锦丽已选择明尼苏达州州长蒂姆·沃尔兹作为竞选搭档，提升了后者的地位。因其来自农村的背景、他的自由主义政策和引起网上热议的对前总统特朗普的抨击之词，当过橄榄球教练的沃尔兹最近声名大噪。
+      
+      
+        现年60岁的沃尔兹从多位候选人当中脱颖而出，虽然他在知名度方面不占优势，所在州也并非政治上最为有利。明尼苏达州不是大选竞争的主战场，不太可能成为贺锦丽-沃尔兹获胜的关键州。
+      
+      
+        但在最近几天里，他已跃居贺锦丽名单的首位，这得益于..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20240807%2Fkamala-harris-vp%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS&text=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS&title=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS&title=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档&body=
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS&title=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档&caption=
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=明尼苏达州州长沃尔兹成为贺锦丽竞选搭档&url=https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>明尼苏达州州长沃尔兹成为贺锦丽竞选搭档</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20240807%2Fkamala-harris-vp%2F%3Futm_source%3DRSS&t=%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E5%B7%9E%E5%B7%9E%E9%95%BF%E6%B2%83%E5%B0%94%E5%85%B9%E6%88%90%E4%B8%BA%E8%B4%BA%E9%94%A6%E4%B8%BD%E7%AB%9E%E9%80%89%E6%90%AD%E6%A1%A3&d=2024-08-06&e=
+明尼苏达州州长沃尔兹成为贺锦丽竞选搭档
+——
+
+
+  
+    
+明尼苏达州州长蒂姆·沃尔兹，2023年摄于圣保罗的州议会大厦。 Jenn Ackerman for The New York Times
+    
+  
+  
+    
+      
+        现任副总统、民主党总统候选人贺锦丽已选择明尼苏达州州长蒂姆·沃尔兹作为竞选搭档，提升了后者的地位。因其来自农村的背景、他的自由主义政策和引起网上热议的对前总统特朗普的抨击之词，当过橄榄球教练的沃尔兹最近声名大噪。
+      
+      
+        现年60岁的沃尔兹从多位候选人当中脱颖而出，虽然他在知名度方面不占优势，所在州也并非政治上最为有利。明尼苏达州不是大选竞争的主战场，不太可能成为贺锦丽-沃尔兹获胜的关键州。
+      
+      
+        但在最近几天里，他已跃居贺锦丽名单的首位，这得益于..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20240807%2Fkamala-harris-vp%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1723000270000-->
+<p><a href="https://cn.nytimes.com/usa/20240807/kamala-harris-vp/?utm_source=RSS">明尼苏达州州长沃尔兹成为贺锦丽竞选搭档</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/08/01/multimedia/00pol-harris-vp-hfo-walz-qlpv/00pol-harris-vp-hfo-walz-qlpv-master1050.jpg" width="1050" height="700" alt="明尼苏达州州长蒂姆·沃尔兹，2023年摄于圣保罗的州议会大厦。" referrerpolicy="no-referrer" />    <figcaption>
+<span>明尼苏达州州长蒂姆·沃尔兹，2023年摄于圣保罗的州议会大厦。</span> <cite>Jenn Ackerman for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>现任副总统、民主党总统候选人贺锦丽已选择明尼苏达州州长蒂姆·沃尔兹作为竞选搭档，提升了后者的地位。因其来自农村的背景、他的自由主义政策和引起网上热议的对前总统特朗普的抨击之词，当过橄榄球教练的沃尔兹最近声名大噪。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>现年60岁的沃尔兹从多位候选人当中脱颖而出，虽然他在知名度方面不占优势，所在州也并非政治上最为有利。明尼苏达州不是大选竞争的主战场，不太可能成为贺锦丽-沃尔兹获胜的关键州。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但在最近几天里，他已跃居贺锦丽名单的首位，这得益于他在有线电视新闻上的露面——在接受采访时，他宣称共和党人“古怪”。对于选民为什么应该拒绝特朗普，这个清晰的新解释迅速流行起来，让聚光灯投在了该说法背后这个言辞坦率的中西部人。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹正在州长的第二个任期上，他曾在国会当过12年众议员，代表的是一个以农村为主的选区，这在中西部的民主党人中罕见。进入政界前，他曾在国民警卫队服役24年，并在明尼苏达州曼卡托的高中教授社会科学。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>虽然他的背景非常适合温和派选民，但在担任州长期间，他的政策一直坚定地倾向于自由主义，反映的是他的盟友称为“草原民粹主义”的东西。他签署通过的有关大麻、带薪家务假、堕胎权、枪支管制等方面的法案都在民主党的愿望清单上。共和党人则把他称为穿着土布衣服的左翼分子。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“民主党人从沃尔兹那里得到了一个完整的左翼政策议程，虽然他看上去像是一个刚打猎回来的人，”蒂姆·波伦蒂说道，他是最后一位担任明尼苏达州州长的共和党人。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但沃尔兹的双重特性正是让贺锦丽对他感兴趣的部分原因。在湾区自由派政治中成长起来的贺锦丽寻找竞选搭档时，优先考虑的是外观上的政治平衡，这可能有助于她赢得摇摆选民的支持。包括沃尔兹在内，贺锦丽候选人名单上的所有人都是白人男性，都在共和党有优势的地区有过胜选记录。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这份名单还包括宾夕法尼亚州州长乔什·夏皮罗，他更有名、也更老练，而且来自一个关键的摇摆州。此外还有亚利桑那州的联邦参议员马克·凯利，他曾是一名宇航员，有令人钦佩的履历，对他所在的摇摆州的<a href="https://www.nytimes.com/2024/07/26/us/politics/mark-kelly-kamala-harris-vp.html">边境问题有深入了解</a>，这也许能帮助削弱共和党人在这个问题上的一些攻击。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但沃尔兹传递了一个关于特朗普和共和党的简练、有说服力的信息。在民主党人仍在消化拜登总统退选、贺锦丽升为总统候选人的时候，这让沃尔兹在短短两周里从名不见经传的州长变成了有可能在明年1月成为总统第一顺位继承人的人。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹在内布拉斯加州的农村出生长大，青年时期搬到了明尼苏达州的曼卡托，在那里的高中教授社会科学，兼任学校橄榄球队教练，曾带领球队夺得州冠军。他2005年从国民警卫队退役，并开始自己的第一次公职竞选。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>沃尔兹的政治起源故事似乎与好莱坞的电影剧本如出一辙。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>2004年8月，他陪着一些学生在曼卡托参加了乔治·W·布什总统的竞选集会。据沃尔兹说，他们被拒之门外，原因是<a rel="noopener noreferrer" target="_blank" href="https://www.bluestemprairie.com/a_bluestem_prairie/2006/11/rochester_post__4.html" title="Link: https://www.bluestemprairie.com/a_bluestem_prairie/2006/11/rochester_post__4.html">一名学生的钱包上贴的贴纸</a>是支持布什的对手、马萨诸塞州民主党联邦参议员约翰·F·克里的。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹非常愤怒，第二天就去为克里的竞选活动当了志愿者。虽然到年底时，克里输掉了大选，但沃尔兹决心已下，他要自己去竞选公职。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>2006年，在主要由他以前的学生组成的竞选团队的帮助下，沃尔兹在一个农村选区意外赢得了国会代表席位，该席位曾由共和党人把持了12年。他在国会连任了六届众议员，直至2018年首次当选州长。那之后，他曾在众议院的席位一直由共和党人担任。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“我最喜欢的事情之一是，在明尼苏达州时，有人会走到我面前说，‘我的地理课是沃尔兹教练教的’，或‘他改变了我的人生，他的教室对我这个同性恋学生来说是个安全地方’，”明尼苏达州副州长佩吉·弗拉纳根说，她曾为沃尔兹2006年的国会议员竞选担任志愿者。“这就是他的竞选方式。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹在国会时被认为是一名温和的民主党人，曾在众议院的农业、退伍军人事务和武装力量等委员会任委员。<a href="https://www.nytimes.com/2024/08/01/us/nra-tim-walz-guns.html" title="Link: https://www.nytimes.com/2024/08/01/us/nra-tim-walz-guns.html">美国全国步枪协会曾在很多年的时间里把他评为A级</a>，但在佛罗里达州帕克兰发生了大规模枪击事件后，他在2018年竞选州长时宣布放弃该组织的支持，并呼吁禁止突击性武器。沃尔兹说，女儿的呼吁影响了他的决定，后来他经常在公开场合提这件事，每次都赢得了掌声。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>“我不怕被全国步枪协会踢出去，”他说。“我在军队服役了25年，我常去打猎。”</p>
+      </div>
+      <div class="article-paragraph">
+        <p>2022年，美国最高法院的裁决终止了宪法授予的堕胎权后，沃尔兹乘着民主党人的愤怒浪潮，帮助民主党完全控制了明尼苏达州立法机构，这是2014年以来的第一次。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹和州民主党人展示了他们的新实力。2023年，他签署了将堕胎权写进该州法律的立法，将大麻合法化，颁布了新的枪支管制法，为所有公立学校学生提供免费午餐，设立了带薪家务假，并为无证移民提供了获得明尼苏达州驾照的机会。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>去年年底，他开始担任民主党州长协会主席，这个职务让他能够接触到民主党在全国各地的捐款者。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>特朗普最近一次来明尼苏达州时，民主党请沃尔兹发表一篇先发制人的反击讲话。共和党总统候选人上一次在明尼苏达州获胜是1972年。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>沃尔兹对这名前总统及其竞选搭档、俄亥俄州联邦参议员 J·D·万斯的描述——“<a href="https://www.nytimes.com/2024/07/29/us/tim-walz-minnesota-kamala-harris.html" title="Link: https://www.nytimes.com/2024/07/29/us/tim-walz-minnesota-kamala-harris.html">这些人就是很古怪</a>”——在网上引起了强烈反响。几乎一夜之间，“古怪”这个标签已被包括贺锦丽在内的全国各地的民主党人采用。</p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+    <div data-poster="" class="css-53u6y8">
+      <p>Katie Glueck、Nicholas Nehamas和Ken Bensinger对本文有报道贡献。</p>
+      <p>Reid J. Epstein自华盛顿报道竞选活动和选举新闻。在2019年加入时报之前，他曾在《华尔街日报》、Politico、Newsday和《密尔沃基哨兵报》工作。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/reid-j-epstein">点击查看更多关于他的信息。</a></p>
+      <div data-poster="" class="">
+<br />
+      </div>
+      <div data-poster="" class="">
+<br />
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/iPhone%E4%B8%BA%E4%BD%95%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0">
+          iPhone为何中国制造？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%B4%E9%94%99%E8%AF%9D-%E8%A2%AB%E7%A6%81%E8%A8%80-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%BE%AE%E5%8D%9A%E5%81%9C%E6%9B%B4%E4%B9%8B%E8%B0%9C">
+          “说错话”被禁言？胡锡进微博停更之谜
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%BD%93%E5%B7%B4%E9%BB%8E%E4%B8%80%E9%97%B4%E5%B0%8F%E5%B0%8F%E4%B8%AD%E9%A4%90%E9%A6%86%E5%86%85%E6%8C%A4%E6%BB%A1%E4%B9%92%E4%B9%93%E7%90%83%E5%A5%A5%E8%BF%90%E5%86%A0%E5%86%9B">
+          当巴黎一间小小中餐馆内挤满乒乓球奥运冠军
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%93%88%E9%A9%AC%E6%96%AF%E6%96%B0%E4%BB%BB%E6%94%BF%E6%B2%BB-%E5%A4%B4%E5%8F%B7%E4%BA%BA%E7%89%A9-%E6%98%AF%E8%B0%81">
+          哈马斯新任政治“头号人物”是谁？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%AD%A6%E8%80%85%E8%A2%AB%E6%8C%87%E5%90%91%E4%B8%AD%E5%9B%BD%E6%8F%90%E4%BE%9B%E5%BC%82%E8%A7%81%E4%BA%BA%E5%A3%AB%E6%83%85%E6%8A%A5">
+            前一篇：美华裔学者被指向中国提供异见人士情报
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E9%80%9A%E6%8A%A5%E6%BB%9E%E7%95%99%E6%95%B0%E6%9C%88%E8%83%A1%E5%A7%93%E5%A3%AB%E5%85%B5%E5%B7%B2%E8%BF%94%E5%8F%B0">
+            后一篇：中国大陆通报滞留数月胡姓士兵已返台
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%AD%A6%E8%80%85%E8%A2%AB%E6%8C%87%E5%90%91%E4%B8%AD%E5%9B%BD%E6%8F%90%E4%BE%9B%E5%BC%82%E8%A7%81%E4%BA%BA%E5%A3%AB%E6%83%85%E6%8A%A5'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E9%80%9A%E6%8A%A5%E6%BB%9E%E7%95%99%E6%95%B0%E6%9C%88%E8%83%A1%E5%A7%93%E5%A3%AB%E5%85%B5%E5%B7%B2%E8%BF%94%E5%8F%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%B4%E9%94%99%E8%AF%9D-%E8%A2%AB%E7%A6%81%E8%A8%80-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%BE%AE%E5%8D%9A%E5%81%9C%E6%9B%B4%E4%B9%8B%E8%B0%9C'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%BD%93%E5%B7%B4%E9%BB%8E%E4%B8%80%E9%97%B4%E5%B0%8F%E5%B0%8F%E4%B8%AD%E9%A4%90%E9%A6%86%E5%86%85%E6%8C%A4%E6%BB%A1%E4%B9%92%E4%B9%93%E7%90%83%E5%A5%A5%E8%BF%90%E5%86%A0%E5%86%9B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E7%BE%8E%E5%8D%8E%E8%A3%94%E5%AD%A6%E8%80%85%E8%A2%AB%E6%8C%87%E5%90%91%E4%B8%AD%E5%9B%BD%E6%8F%90%E4%BE%9B%E5%BC%82%E8%A7%81%E4%BA%BA%E5%A3%AB%E6%83%85%E6%8A%A5">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E9%80%9A%E6%8A%A5%E6%BB%9E%E7%95%99%E6%95%B0%E6%9C%88%E8%83%A1%E5%A7%93%E5%A3%AB%E5%85%B5%E5%B7%B2%E8%BF%94%E5%8F%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%B4%E9%94%99%E8%AF%9D-%E8%A2%AB%E7%A6%81%E8%A8%80-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%BE%AE%E5%8D%9A%E5%81%9C%E6%9B%B4%E4%B9%8B%E8%B0%9C">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%BD%93%E5%B7%B4%E9%BB%8E%E4%B8%80%E9%97%B4%E5%B0%8F%E5%B0%8F%E4%B8%AD%E9%A4%90%E9%A6%86%E5%86%85%E6%8C%A4%E6%BB%A1%E4%B9%92%E4%B9%93%E7%90%83%E5%A5%A5%E8%BF%90%E5%86%A0%E5%86%9B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

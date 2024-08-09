@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外国人到中国旅游是一种什么样的体验 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+外国人到中国旅游是一种什么样的体验
+——
+" />
+    <meta property="og:description" content="
+外国人到中国旅游是一种什么样的体验
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="外国人到中国旅游是一种什么样的体验" />
+    <meta property="twitter:title" content="外国人到中国旅游是一种什么样的体验" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240801%2Fchina-travel-visas-explained%2F%3Futm_source%3DRSS&t=%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%88%B0%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240801%2Fchina-travel-visas-explained%2F%3Futm_source%3DRSS&t=%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%88%B0%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C&d=2024-07-31&e=
+外国人到中国旅游是一种什么样的体验
+——
+
+
+  
+    
+北京什刹海的游客，摄于本月。中国一直在采取非同寻常的措施来吸引海外游客。 Vincent Thian/Associated Press
+    
+  
+  
+    
+      
+        从某些方面来看，到中国旅游从未如此容易。
+      
+      
+        近几个月来，中国一直在大力吸引外国游客。它已经向数十个国家推出了免签政策，而且惠及对象的名单越来越长。中国承诺为外国游客的支付、酒店预定和出行提供便利。
+      
+      
+        在经历了长达三年的疫情管控，让大多数外国人难以进入中国后，这些措施是为了向世界表明，中国欢迎大家来做生意——还有旅游观光。为了推动经济的增长，政府尤其希望吸引游客。
+      
+      
+        中国还希望藉此表明，尽管与西方关系紧张..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240801%2Fchina-travel-visas-explained%2F%3Futm_source%3DRSS" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS&text=外国人到中国旅游是一种什么样的体验&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS&title=外国人到中国旅游是一种什么样的体验" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS&title=外国人到中国旅游是一种什么样的体验" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外国人到中国旅游是一种什么样的体验&body=
+外国人到中国旅游是一种什么样的体验
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS&title=外国人到中国旅游是一种什么样的体验&caption=
+外国人到中国旅游是一种什么样的体验
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外国人到中国旅游是一种什么样的体验&url=https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>外国人到中国旅游是一种什么样的体验</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-07-31
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240801%2Fchina-travel-visas-explained%2F%3Futm_source%3DRSS&t=%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%88%B0%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C&d=2024-07-31&e=
+外国人到中国旅游是一种什么样的体验
+——
+
+
+  
+    
+北京什刹海的游客，摄于本月。中国一直在采取非同寻常的措施来吸引海外游客。 Vincent Thian/Associated Press
+    
+  
+  
+    
+      
+        从某些方面来看，到中国旅游从未如此容易。
+      
+      
+        近几个月来，中国一直在大力吸引外国游客。它已经向数十个国家推出了免签政策，而且惠及对象的名单越来越长。中国承诺为外国游客的支付、酒店预定和出行提供便利。
+      
+      
+        在经历了长达三年的疫情管控，让大多数外国人难以进入中国后，这些措施是为了向世界表明，中国欢迎大家来做生意——还有旅游观光。为了推动经济的增长，政府尤其希望吸引游客。
+      
+      
+        中国还希望藉此表明，尽管与西方关系紧张..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20240801%2Fchina-travel-visas-explained%2F%3Futm_source%3DRSS" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722473901000-->
+<p><a href="https://cn.nytimes.com/china/20240801/china-travel-visas-explained/?utm_source=RSS">外国人到中国旅游是一种什么样的体验</a>
+——</p>
+
+<div>
+  <figure class="article-span-photo">
+<img src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-01-tjck/00china-travel-explainer-01-tjck-master1050.jpg" width="1050" height="700" alt="北京什刹海的游客，摄于本月。中国一直在采取非同寻常的措施来吸引海外游客。" referrerpolicy="no-referrer" />    <figcaption>
+<span>北京什刹海的游客，摄于本月。中国一直在采取非同寻常的措施来吸引海外游客。</span> <cite>Vincent Thian/Associated Press</cite>
+    </figcaption>
+  </figure>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>从某些方面来看，到中国旅游从未如此容易。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>近几个月来，中国一直在大力吸引外国游客。它已经向数十个国家推出了免签政策，而且惠及对象的名单越来越长。中国承诺为外国游客的支付、酒店预定和出行提供便利。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>在经历了长达三年的疫情管控，让大多数外国人难以进入中国后<span>，这些措施是为了向世界表明，中国欢迎大家来做生意——还有旅游观光。<a href="https://www.nytimes.com/2024/07/14/business/chinas-gdp-q2.html">为了推动经济的增长</a>，政府<a href="https://www.nytimes.com/2024/07/31/world/asia/china-propaganda-travel-influencers.html">尤其希望</a>吸引游客。</span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国还希望藉此表明，尽管与西方关系紧张，国内安全机构的影响力也在不断扩大，它依然与世界保持着联系。</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>北京单方面提供了免签，这对于一个通常坚持互惠原则的政府来说，是一个罕见的举动，显示出中国的急切态度。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但实际上，前往中国仍然是一个重大挑战。以下是需要知道的内容：</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>有什么新变化？</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国单方面向来自多个国家的公民提供15天的免签入境待遇，其中大部分是西欧国家，比如法国、德国和西班牙。该计划于去年12月开始，之后不断扩大；澳大利亚、新西兰和波兰上个月被纳入其中。这个政策将持续到2025年。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>此外，包括美国在内的50多个国家的公民现在可以免签过境。如果继续前往其他目的地，他们可以在中国停留72小时或144小时，具体取决于入境口岸的不同。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-02-tjck/00china-travel-explainer-02-tjck-master1050.jpg" alt="北京大兴国际机场的出租车。据中国政府称，今年上半年，大多数海外入境者使用的都是免签计划。" data-src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-02-tjck/00china-travel-explainer-02-tjck-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>北京大兴国际机场的出租车。据中国政府称，今年上半年，大多数海外入境者使用的都是免签计划。</span> <cite>Mark R Cristino/EPA, via Shutterstock</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>过境旅客只能在特定区域内停留。例如，飞往上海的旅客只能前往上海以及邻近的江苏、浙江两省。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国还承诺减少外国游客在旅行安排上的麻烦。微信和支付宝——大多数中国人在日常生活不可缺少的所谓超级应用，涵盖了从电子支付、叫车到餐馆点餐的各种服务<span>——已经可以绑定国际信用卡，而不像过去局限于中国的银行卡。（大多数商家不直接接受信用卡。）而且在5月份，政府<a rel="noopener noreferrer" target="_blank" href="https://www.globaltimes.cn/page/202405/1312991.shtml">要求酒店</a>不得拒绝接待外宾，这曾经是一种普遍做法。</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p><span><strong>中国为什么要这么做？</strong></span></p>
+      </div>
+      <div class="article-paragraph">
+        <p>简单来说就是——缺钱。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>随着中国的经济放缓，消费者变得谨慎，引发了对通缩的担忧。政府还希望重新吸引外国投资，许多外国企业因中国长期的疫情封锁和日益严峻的政治环境而感到不安。为期15天的免签政策不仅可以用于观光旅游，还可以用来做生意。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>吸引更多外国游客也有助于政府反驳来自美国和其他西方国家的指责，即中国对外国人越来越不友好。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-04-tjck/00china-travel-explainer-04-tjck-master1050.jpg" alt="游客在内蒙古的一片薰衣草田。" data-src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-04-tjck/00china-travel-explainer-04-tjck-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>游客在内蒙古的一片薰衣草田。</span> <cite>Agence France-Presse — Getty Images</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国政府去年修订了《反间谍法》，扩大了间谍活动的定义，国家宣传部门也警告，一些看似无害的外国人可能正试图破坏中国的国家安全。尽管如此，政府坚称，有关仇外心理和民族主义抬头的报道均属捏造，是那些试图阻止中国崛起的国家精心策划的谎言。</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span><strong>会有更多外国游客到来吗？</strong></span></p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>根据中国的统计数据，今年上半年，全国各口岸入境的外国人为1463.5万人次。其中大部分是免签入境。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>这一数字是去年同期的2.5倍，但远低于疫情前2019年上半年2400万人次的水平。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国在提升游客体验所做的努力取得了好坏参半的结果。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>不久前的一个周五，24岁的卢卡·勒费夫尔和21岁的夏洛特·科莱从巴黎到越南，期间在上海停留10个小时，想在这段时间尽可能多跑一些景点。他们参观了豫园，这是一处亭台楼阁建筑群，并在主要的商业街南京东路拍照。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但他们在使用手机支付时遇到了麻烦，只能转而使用现金。他们还对无处不在的监控摄像头感到惊讶。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>“对我们来说，这有点太过了，因为我们在法国没有这个，”科莱说。“但我们明白这是为了安全。”</p>
+      </div>
+    </div>
+  </div>
+  <div class="article-partial">
+    <div class="article-body-item col-lg-5">
+      <div class="article-paragraph">
+        <p>“（在摄像头下）呆10个小时，倒是没问题，”勒费夫尔补充道。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>即使是那些弄懂了中国应用程序的游客也表示，要上手还是需要点时间。</p>
+      </div>
+      <div class="article-paragraph">
+        <p></p>
+        <figure class="article-inline-photo large">
+          <div class="img-box">
+<img src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-cpmz/00china-travel-explainer-cpmz-master1050.jpg" alt="上海的黄浦区，摄于上个月。" data-src="https://static01.nyt.com/images/2024/07/25/multimedia/00china-travel-explainer-cpmz/00china-travel-explainer-cpmz-master1050.jpg" referrerpolicy="no-referrer" />
+          </div>
+          <figcaption>
+<span>上海的黄浦区，摄于上个月。</span> <cite>Hector Retamal/Agence France-Presse — Getty Images</cite>
+          </figcaption>
+        </figure>
+        <p></p>
+      </div>
+      <div class="article-paragraph">
+        <p>在上海历史悠久的外滩溜达时，瑞士大学生梅琳·拉肖和 纳迪亚·霍夫曼说，她们在西安、重庆和上海旅行时，将信用卡与支付宝做了绑定。她们说，方便程度“令人惊叹”。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>但第一次来中国的拉肖说，她主要靠辅修汉学、以前来过中国的霍夫曼。她之前不知道支付宝除了用于支付，还可以用来在餐馆点餐，而应用内的菜单是中文的。</p>
+      </div>
+      <div class="article-paragraph">
+        <p>中国许多主要旅游景点，如北京的故宫，也需要通过微信等平台提前预约，这些平台也基本是中文的。（由于超级应用程序无处不在，中国的许多网站维护不善。）</p>
+      </div>
+      <div class="article-paragraph">
+        <p><span>“中国不适合菜鸟，”霍夫曼说。</span></p>
+      </div>
+    </div>
+  </div>
+  <footer class="author-info">
+<span>        <p>王月眉(Vivian Wang)是《纽约时报》驻华记者，常驻北京，撰写关于中国的崛起及野心如何塑造普通人日常生活的报道。<a rel="nofollow" target="_blank" href="https://www.nytimes.com/by/vivian-wang">点击查看更多关于她的信息。</a></p>
+        <p>翻译：纽约时报中文网</p>
+        <div data-poster="" class="">
+          <div data-poster="" class="">
+<a rel="nofollow" target="_blank" href="https://www.nytimes.com/2024/07/31/world/asia/china-travel-visas-explained.html">点击查看本文英文版。</a>
+          </div>
+        </div>
+</span>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2024-07-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-31/%E4%B8%AD%E5%9B%BD%E6%8B%9F%E6%8E%A8%E8%A1%8C-%E7%BD%91%E7%BB%9C%E8%BA%AB%E4%BB%BD%E8%AF%81-%E4%BF%9D%E6%8A%A4%E9%9A%90%E7%A7%81%E8%BF%98%E6%98%AF%E5%8A%A0%E5%BC%BA%E7%9B%91%E6%8E%A7">
+          中国拟推行“网络身份证”，保护隐私还是加强监控？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-31/%E5%A4%96%E5%9B%BD%E7%BD%91%E7%BA%A2%E6%B8%B8%E5%AE%A2-%E4%B8%AD%E5%9B%BD%E5%AE%A3%E4%BC%A0%E6%9C%BA%E6%9E%84%E7%9A%84-%E4%BA%92%E8%81%94%E7%BD%91%E5%98%B4%E6%9B%BF">
+          外国网红游客，中国宣传机构的“互联网嘴替”？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-31/%E7%9C%9F%E4%B8%BB%E5%85%9A%E5%93%88%E9%A9%AC%E6%96%AF%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%9B%B8%E7%BB%A7%E9%81%87%E8%A2%AD-%E4%B8%AD%E4%B8%9C%E4%BC%9A%E7%88%86%E5%8F%91%E6%9B%B4%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%88%98%E4%BA%89%E5%90%97">
+          真主党哈马斯领导人相继遇袭，中东会爆发更大规模战争吗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-07-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-07-31/%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BC%80%E4%B8%80%E6%9E%AA%E5%B0%B1%E8%83%BD%E6%8E%A7%E5%88%B6%E5%8D%97%E6%B5%B7">
+          中国不开一枪就能控制南海
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-31/%E5%9C%8B%E9%98%B2%E9%83%A8-%E5%85%A8%E7%A8%8B%E6%8E%8C%E6%8F%A1%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%A1%E9%98%B2%E8%89%A6%E9%80%9A%E9%81%8E%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B3%BD">
+            前一篇：國防部：全程掌握加拿大巡防艦通過台灣海峽
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-07-31/%E4%BD%95%E8%AF%97%E8%93%93%E6%88%90%E9%A6%96%E5%90%8D%E8%8E%B7%E5%BE%97%E5%9B%9B%E6%9E%9A%E5%A5%A5%E8%BF%90%E5%A5%96%E7%89%8C%E9%A6%99%E6%B8%AF%E8%BF%90%E5%8A%A8%E5%91%98">
+            后一篇：何诗蓓成首名获得四枚奥运奖牌香港运动员
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-07-31/%E5%9C%8B%E9%98%B2%E9%83%A8-%E5%85%A8%E7%A8%8B%E6%8E%8C%E6%8F%A1%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%A1%E9%98%B2%E8%89%A6%E9%80%9A%E9%81%8E%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B3%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-07-31/%E4%BD%95%E8%AF%97%E8%93%93%E6%88%90%E9%A6%96%E5%90%8D%E8%8E%B7%E5%BE%97%E5%9B%9B%E6%9E%9A%E5%A5%A5%E8%BF%90%E5%A5%96%E7%89%8C%E9%A6%99%E6%B8%AF%E8%BF%90%E5%8A%A8%E5%91%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-07-31/%E5%A4%96%E5%9B%BD%E7%BD%91%E7%BA%A2%E6%B8%B8%E5%AE%A2-%E4%B8%AD%E5%9B%BD%E5%AE%A3%E4%BC%A0%E6%9C%BA%E6%9E%84%E7%9A%84-%E4%BA%92%E8%81%94%E7%BD%91%E5%98%B4%E6%9B%BF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-07-31/%E7%9C%9F%E4%B8%BB%E5%85%9A%E5%93%88%E9%A9%AC%E6%96%AF%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%9B%B8%E7%BB%A7%E9%81%87%E8%A2%AD-%E4%B8%AD%E4%B8%9C%E4%BC%9A%E7%88%86%E5%8F%91%E6%9B%B4%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%88%98%E4%BA%89%E5%90%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-07-31/%E5%9C%8B%E9%98%B2%E9%83%A8-%E5%85%A8%E7%A8%8B%E6%8E%8C%E6%8F%A1%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%A1%E9%98%B2%E8%89%A6%E9%80%9A%E9%81%8E%E5%8F%B0%E7%81%A3%E6%B5%B7%E5%B3%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-07-31/%E4%BD%95%E8%AF%97%E8%93%93%E6%88%90%E9%A6%96%E5%90%8D%E8%8E%B7%E5%BE%97%E5%9B%9B%E6%9E%9A%E5%A5%A5%E8%BF%90%E5%A5%96%E7%89%8C%E9%A6%99%E6%B8%AF%E8%BF%90%E5%8A%A8%E5%91%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-07-31/%E5%A4%96%E5%9B%BD%E7%BD%91%E7%BA%A2%E6%B8%B8%E5%AE%A2-%E4%B8%AD%E5%9B%BD%E5%AE%A3%E4%BC%A0%E6%9C%BA%E6%9E%84%E7%9A%84-%E4%BA%92%E8%81%94%E7%BD%91%E5%98%B4%E6%9B%BF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-07-31/%E7%9C%9F%E4%B8%BB%E5%85%9A%E5%93%88%E9%A9%AC%E6%96%AF%E9%A2%86%E5%AF%BC%E4%BA%BA%E7%9B%B8%E7%BB%A7%E9%81%87%E8%A2%AD-%E4%B8%AD%E4%B8%9C%E4%BC%9A%E7%88%86%E5%8F%91%E6%9B%B4%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%88%98%E4%BA%89%E5%90%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

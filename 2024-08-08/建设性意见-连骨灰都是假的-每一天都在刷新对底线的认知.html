@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+" />
+    <meta property="og:description" content="
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知" />
+    <meta property="twitter:title" content="建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710403.html&t=%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81%EF%BD%9C%E8%BF%9E%E9%AA%A8%E7%81%B0%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84%EF%BC%81%EF%BC%81%EF%BC%81%E6%AF%8F%E4%B8%80%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%88%B7%E6%96%B0%E5%AF%B9%E5%BA%95%E7%BA%BF%E7%9A%84%E8%AE%A4%E7%9F%A5" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710403.html&t=%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81%EF%BD%9C%E8%BF%9E%E9%AA%A8%E7%81%B0%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84%EF%BC%81%EF%BC%81%EF%BC%81%E6%AF%8F%E4%B8%80%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%88%B7%E6%96%B0%E5%AF%B9%E5%BA%95%E7%BA%BF%E7%9A%84%E8%AE%A4%E7%9F%A5&d=2024-08-08&e=
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：连骨灰都是假的！！！每一天都在刷新对底线的认知作者：项栋梁发表日期：2024.8.8来源：建设性意见主题归类：山西倒卖尸体案CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  肝肠寸断的家属把离世的亲人送进殡仪馆，想象着亲人在烈火洗礼之下化作一缕青烟，从此天人永隔，只留一罐骨灰可供凭吊，让生者寄托无尽哀思。
+  如果这时候有人告知家属，亲人的遗体并没有被当场火化，而是在殡仪馆被粗暴肢解，然后送到一家生物医药公司制成“人源骨骼制品”，再卖到医院作为骨科手术替换材料。而家属领到的骨灰，可能来自别家的逝者，也可能是牛羊猪狗的骨灰……
+  
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710403.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/710403.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/710403.html&text=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/710403.html&title=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/710403.html&title=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知&body=
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/710403.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/710403.html&title=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知&caption=
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知&url=https://chinadigitaltimes.net/chinese/710403.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/710403.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710403.html&t=%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81%EF%BD%9C%E8%BF%9E%E9%AA%A8%E7%81%B0%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84%EF%BC%81%EF%BC%81%EF%BC%81%E6%AF%8F%E4%B8%80%E5%A4%A9%E9%83%BD%E5%9C%A8%E5%88%B7%E6%96%B0%E5%AF%B9%E5%BA%95%E7%BA%BF%E7%9A%84%E8%AE%A4%E7%9F%A5&d=2024-08-08&e=
+建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：连骨灰都是假的！！！每一天都在刷新对底线的认知作者：项栋梁发表日期：2024.8.8来源：建设性意见主题归类：山西倒卖尸体案CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  肝肠寸断的家属把离世的亲人送进殡仪馆，想象着亲人在烈火洗礼之下化作一缕青烟，从此天人永隔，只留一罐骨灰可供凭吊，让生者寄托无尽哀思。
+  如果这时候有人告知家属，亲人的遗体并没有被当场火化，而是在殡仪馆被粗暴肢解，然后送到一家生物医药公司制成“人源骨骼制品”，再卖到医院作为骨科手术替换材料。而家属领到的骨灰，可能来自别家的逝者，也可能是牛羊猪狗的骨灰……
+  
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710403.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1723137558000-->
+<p><a href="https://chinadigitaltimes.net/chinese/710403.html">建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/710403.html" title="建设性意见｜连骨灰都是假的！！！每一天都在刷新对底线的认知" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/08/453-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>连骨灰都是假的！！！每一天都在刷新对底线的认知<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/项栋梁" target="_blank">项栋梁</a><br /><strong>发表日期：</strong>2024.8.8<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/o4ijMW-ah4gG5kkVkwXq9Q" target="_blank">建设性意见</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/山西倒卖尸体案" target="_blank">山西倒卖尸体案</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>肝肠寸断的家属把离世的亲人送进殡仪馆，想象着亲人在烈火洗礼之下化作一缕青烟，从此天人永隔，只留一罐骨灰可供凭吊，让生者寄托无尽哀思。</p>
+  <p>如果这时候有人告知家属，亲人的遗体并没有被当场火化，而是在殡仪馆被粗暴肢解，然后送到一家生物医药公司制成“人源骨骼制品”，再卖到医院作为骨科手术替换材料。而家属领到的骨灰，可能来自别家的逝者，也可能是牛羊猪狗的骨灰……</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd6fce7f2." alt="image" /></p>
+  <p>我跟你说，悲愤交加的家属绝对能当场提刀砍人，逮到谁干的跟谁拼命！</p>
+  <p>如此践踏人伦丧尽天良之事，仅仅已经查明的，就发生了超过4000起。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd6fda84e." alt="image" /></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd6fe7621." alt="image" /></p>
+  <p>据流传出来的公安部门《起诉意见书》显示，2015年1月到2023年7月，山西奥瑞生物材料有限公司涉嫌非法购买遗体、残肢作为原材料，并在购买和生产过程中对非法获取的尸体、尸骨进行粗暴肢解、剔除皮肉、清洗、辐照等，用于生产“同种异体骨植入性材料”产品，<strong>营业收入合计达到3.8亿元</strong>。</p>
+  <p>山西奥瑞公司实际控制人李某兴原为某国家级科研单位领导干部，并曾获评全国劳动模范。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd6ff2b02." alt="image" /></p>
+  <p>山西奥瑞公司第二大股东苏某忠，负责该公司的人体骨骼原料供应，其先后以承包、入股、派人入驻等方式，<strong>控制云南昭通、重庆巴南、贵州铜仁、四川遂宁共四家殡仪馆的火化场</strong>。</p>
+  <p>在此期间，苏某忠指示其安排在火化场的人员盗窃尸体，并在火化车间内对尸体粗暴肢解后，运回公司进一步处理。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd7009ed8." alt="image" /></p>
+  <p>据苏某忠交代，上述四家火化场共向其非法提供4000余具遗体。</p>
+  <p>这还只是一家公司，这还只是已经查明涉案的4家火化场。</p>
+  <p>查询得知，中国持有“同种异体骨”注册证的生产企业共有17家：</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd7012587." alt="image" /></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710403-66b4fd701b236." alt="image" /></p>
+  <p>实际情况有多么严重和普遍，实在是超出我的想象能力。</p>
+  <p>最令人恐惧的是，上述案件仅太原公安部门查实的涉案嫌疑人就有75名，实际知情人员至少也有几百人，作案时间跨度长达8年之久，硬是没有一个人良心发现，又或者曾经有人举报但被压了下来。</p>
+  <p>总之，这又是一起带有行业普遍性的，已经存在多年的，令人闻之色变、脊背发凉的社会现实。</p>
+  <p>作为多年老记者，我绝对算是对社会阴暗面所知甚多了解颇深的那类人。但就算是我，也很难想到会有如此离谱的事情存在，就算是我，也从来不敢说知道黑暗的底线在哪里。</p>
+  <p>现实，每一天都在刷新我对底线的认知。</p>
+  <p>一点建设性意见：</p>
+  <p>希望监督公权力的阳光有朝一日能照进这片黑暗森林，希望我有生之年能有幸看到。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/404%E6%96%87%E5%BA%93-%E7%95%8C%E9%9D%A2%E6%96%B0%E9%97%BB-%E7%96%91-%E9%9D%9E%E6%B3%95%E8%B4%AD%E4%B9%B0%E9%81%97%E4%BD%93-%E7%9A%84%E5%B1%B1%E8%A5%BF%E5%A5%A5%E7%91%9E%E6%98%AF%E8%B0%81-%E5%90%8C%E7%A7%8D%E5%BC%82%E4%BD%93%E9%AA%A8%E7%A7%BB%E6%A4%8D-%E5%8F%88%E6%98%AF%E4%BB%80%E4%B9%88">
+          【404文库】界面新闻｜疑“非法购买遗体”的山西奥瑞是谁？“同种异体骨移植”又是什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/%E8%B4%A2%E6%96%B0-75%E4%BA%BA%E5%8D%B7%E5%85%A5%E5%B1%B1%E8%A5%BF%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E9%81%97%E4%BD%93%E6%A1%88-%E5%A4%9A%E5%9C%B0%E6%B0%91%E6%94%BF%E5%B1%80%E7%A7%B0%E5%B7%B2%E8%B7%9F%E8%BF%9B%E8%B0%83%E6%9F%A5">
+          财新｜75人卷入山西盗窃倒卖遗体案 多地民政局称已跟进调查
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/404%E6%96%87%E5%BA%93-%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB-%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E6%95%B0%E5%8D%83%E5%85%B7%E5%B0%B8%E4%BD%93%E5%88%B6%E4%BD%9C%E6%A4%8D%E5%85%A5%E6%9D%90%E6%96%99-75%E4%BA%BA%E6%B6%89%E6%A1%88-%E5%9C%B0%E6%96%B9%E6%B0%91%E6%94%BF%E9%83%A8%E9%97%A8%E5%9B%9E%E5%BA%94">
+          【404文库】澎湃新闻｜盗窃倒卖数千具尸体制作植入材料、75人涉案，地方民政部门回应
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/%E6%97%A7%E6%96%87%E9%87%8D%E6%B8%A9-%E8%AE%B0%E8%80%85%E5%88%98%E5%90%91%E5%8D%97-%E6%88%91%E5%9C%A8%E4%B8%A4%E5%B9%BF%E9%87%87%E8%AE%BF-%E6%AE%A1%E8%91%AC%E5%AE%98%E5%91%98%E7%BB%84%E7%BB%87%E5%80%92%E5%8D%96%E5%B0%B8%E4%BD%93%E6%A1%88">
+          【旧文重温】记者刘向南｜我在两广采访“殡葬官员组织倒卖尸体案”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-08/%E9%83%AD%E5%A9%9E%E6%B7%B3%E6%8C%BA%E9%81%8E%E5%8F%97%E5%82%B7%E4%BD%8E%E6%BD%AE%E5%A5%A7%E9%81%8B%E6%91%98%E9%8A%85-%E6%8E%A5%E5%8F%97%E8%87%AA%E5%B7%B1-%E5%9B%9E%E4%B8%8D%E5%8E%BB%E4%BA%86">
+            前一篇：郭婞淳挺過受傷低潮奧運摘銅 接受自己「回不去了」
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-08/%E8%88%89%E9%87%8D%E9%83%AD%E5%A9%9E%E6%B7%B3%E5%86%8D%E6%9B%BF%E5%8F%B0%E7%81%A3%E6%B7%BB%E9%8A%85-%E5%B7%B4%E9%BB%8E%E5%A5%A7%E9%81%8B6%E9%9D%A2%E7%89%8C%E5%8F%B2%E4%B8%8A%E7%AC%AC2%E5%A4%9A">
+            后一篇：舉重郭婞淳再替台灣添銅 巴黎奧運6面牌史上第2多
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E9%83%AD%E5%A9%9E%E6%B7%B3%E6%8C%BA%E9%81%8E%E5%8F%97%E5%82%B7%E4%BD%8E%E6%BD%AE%E5%A5%A7%E9%81%8B%E6%91%98%E9%8A%85-%E6%8E%A5%E5%8F%97%E8%87%AA%E5%B7%B1-%E5%9B%9E%E4%B8%8D%E5%8E%BB%E4%BA%86'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E8%88%89%E9%87%8D%E9%83%AD%E5%A9%9E%E6%B7%B3%E5%86%8D%E6%9B%BF%E5%8F%B0%E7%81%A3%E6%B7%BB%E9%8A%85-%E5%B7%B4%E9%BB%8E%E5%A5%A7%E9%81%8B6%E9%9D%A2%E7%89%8C%E5%8F%B2%E4%B8%8A%E7%AC%AC2%E5%A4%9A'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E8%B4%A2%E6%96%B0-75%E4%BA%BA%E5%8D%B7%E5%85%A5%E5%B1%B1%E8%A5%BF%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E9%81%97%E4%BD%93%E6%A1%88-%E5%A4%9A%E5%9C%B0%E6%B0%91%E6%94%BF%E5%B1%80%E7%A7%B0%E5%B7%B2%E8%B7%9F%E8%BF%9B%E8%B0%83%E6%9F%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/404%E6%96%87%E5%BA%93-%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB-%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E6%95%B0%E5%8D%83%E5%85%B7%E5%B0%B8%E4%BD%93%E5%88%B6%E4%BD%9C%E6%A4%8D%E5%85%A5%E6%9D%90%E6%96%99-75%E4%BA%BA%E6%B6%89%E6%A1%88-%E5%9C%B0%E6%96%B9%E6%B0%91%E6%94%BF%E9%83%A8%E9%97%A8%E5%9B%9E%E5%BA%94'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-08/%E9%83%AD%E5%A9%9E%E6%B7%B3%E6%8C%BA%E9%81%8E%E5%8F%97%E5%82%B7%E4%BD%8E%E6%BD%AE%E5%A5%A7%E9%81%8B%E6%91%98%E9%8A%85-%E6%8E%A5%E5%8F%97%E8%87%AA%E5%B7%B1-%E5%9B%9E%E4%B8%8D%E5%8E%BB%E4%BA%86">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-08/%E8%88%89%E9%87%8D%E9%83%AD%E5%A9%9E%E6%B7%B3%E5%86%8D%E6%9B%BF%E5%8F%B0%E7%81%A3%E6%B7%BB%E9%8A%85-%E5%B7%B4%E9%BB%8E%E5%A5%A7%E9%81%8B6%E9%9D%A2%E7%89%8C%E5%8F%B2%E4%B8%8A%E7%AC%AC2%E5%A4%9A">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-08/%E8%B4%A2%E6%96%B0-75%E4%BA%BA%E5%8D%B7%E5%85%A5%E5%B1%B1%E8%A5%BF%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E9%81%97%E4%BD%93%E6%A1%88-%E5%A4%9A%E5%9C%B0%E6%B0%91%E6%94%BF%E5%B1%80%E7%A7%B0%E5%B7%B2%E8%B7%9F%E8%BF%9B%E8%B0%83%E6%9F%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-08/404%E6%96%87%E5%BA%93-%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB-%E7%9B%97%E7%AA%83%E5%80%92%E5%8D%96%E6%95%B0%E5%8D%83%E5%85%B7%E5%B0%B8%E4%BD%93%E5%88%B6%E4%BD%9C%E6%A4%8D%E5%85%A5%E6%9D%90%E6%96%99-75%E4%BA%BA%E6%B6%89%E6%A1%88-%E5%9C%B0%E6%96%B9%E6%B0%91%E6%94%BF%E9%83%A8%E9%97%A8%E5%9B%9E%E5%BA%94">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

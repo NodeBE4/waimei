@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+" />
+    <meta property="og:description" content="
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制" />
+    <meta property="twitter:title" content="独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710312.html&t=%E7%8B%AC%E8%A7%92%E9%B2%B8%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BD%9C%E8%BF%99%E4%B8%AA%E8%80%83%E7%BC%96%E5%A4%A7%E7%9C%81%EF%BC%8C%E5%8F%B2%E6%97%A0%E5%89%8D%E4%BE%8B%E5%9C%B0%E7%A0%8D%E6%8E%89%E4%BA%86%E5%8D%81%E4%B8%87%E7%BC%96%E5%88%B6" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710312.html&t=%E7%8B%AC%E8%A7%92%E9%B2%B8%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BD%9C%E8%BF%99%E4%B8%AA%E8%80%83%E7%BC%96%E5%A4%A7%E7%9C%81%EF%BC%8C%E5%8F%B2%E6%97%A0%E5%89%8D%E4%BE%8B%E5%9C%B0%E7%A0%8D%E6%8E%89%E4%BA%86%E5%8D%81%E4%B8%87%E7%BC%96%E5%88%B6&d=2024-08-05&e=
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+
+
+  山东的丈母娘恐怕更难了。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：这个考编大省，史无前例地砍掉了十万编制作者：龙之朱发表日期：2024.8.5来源：微信公众号“独角鲸工作坊”主题归类：公务员CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  山东省人社厅等10部门近日联合发布重磅通知，宣布启动省属事业单位向企业转变的全面改革。
+  此次改革涉及驻济和非驻济省属事业单位，转制后将收回所有事业编制，原工作人员将从省编办的实名制名单中剔除，并与新成立企业签订劳动合同。约10万名曾经拥有事业编制的员工将正式成为企业合同工。
+  
+  考编是一个岗一个岗地匹配，而改革则直接收回10万人..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710312.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/710312.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/710312.html&text=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/710312.html&title=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/710312.html&title=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制&body=
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/710312.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/710312.html&title=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制&caption=
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制&url=https://chinadigitaltimes.net/chinese/710312.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/710312.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710312.html&t=%E7%8B%AC%E8%A7%92%E9%B2%B8%E5%B7%A5%E4%BD%9C%E5%9D%8A%EF%BD%9C%E8%BF%99%E4%B8%AA%E8%80%83%E7%BC%96%E5%A4%A7%E7%9C%81%EF%BC%8C%E5%8F%B2%E6%97%A0%E5%89%8D%E4%BE%8B%E5%9C%B0%E7%A0%8D%E6%8E%89%E4%BA%86%E5%8D%81%E4%B8%87%E7%BC%96%E5%88%B6&d=2024-08-05&e=
+独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制
+——
+
+
+  山东的丈母娘恐怕更难了。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：这个考编大省，史无前例地砍掉了十万编制作者：龙之朱发表日期：2024.8.5来源：微信公众号“独角鲸工作坊”主题归类：公务员CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  山东省人社厅等10部门近日联合发布重磅通知，宣布启动省属事业单位向企业转变的全面改革。
+  此次改革涉及驻济和非驻济省属事业单位，转制后将收回所有事业编制，原工作人员将从省编办的实名制名单中剔除，并与新成立企业签订劳动合同。约10万名曾经拥有事业编制的员工将正式成为企业合同工。
+  
+  考编是一个岗一个岗地匹配，而改革则直接收回10万人..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710312.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722868537000-->
+<p><a href="https://chinadigitaltimes.net/chinese/710312.html">独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/710312.html" title="独角鲸工作坊｜这个考编大省，史无前例地砍掉了十万编制" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/08/640-564x300.webp" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>山东的丈母娘恐怕更难了。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>这个考编大省，史无前例地砍掉了十万编制<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/独角鲸工作坊" target="_blank">龙之朱</a><br /><strong>发表日期：</strong>2024.8.5<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/JSzLsvulsTpVDPTXMdsHSQ" target="_blank">微信公众号“独角鲸工作坊”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/公务员" target="_blank">公务员</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>山东省人社厅等10部门近日联合发布重磅通知，宣布启动省属事业单位向企业转变的全面改革。</p>
+  <p>此次改革涉及驻济和非驻济省属事业单位，转制后将收回所有事业编制，原工作人员将从省编办的实名制名单中剔除，并与新成立企业签订劳动合同。约10万名曾经拥有事业编制的员工将正式成为企业合同工。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710312-66b0e188b58de.png" alt="img" /></p>
+  <p>考编是一个岗一个岗地匹配，而改革则直接收回10万人的编制，这一轮“事转企”的力度确实够狠，甚至让人感觉到丝丝凉意。随着后续影响的持续释放，这也必然会加剧山东人考公考编的难度，爱考编的宝宝傻了。</p>
+  <h2 id="section">01</h2>
+  <p>这不难理解。</p>
+  <p>制度层面的改革，传递到社会，自然会激起各式各样的浪花。<strong>山东这一史上最大规模缩编的社会影响，怎么估量都不过分。</strong></p>
+  <p>腰缠万贯，生意好到爆，也不及丈母娘眼里的一个“编”。一直以来，山东给人的印象就是考编大省，“为什么山东人如此热爱编制”的话题，火遍各大平台，就连张雪峰老师在直播时也调侃山东人对编制的痴迷，说什么“不孝有三，无编为大”。</p>
+  <p>在很多人那里，<strong>一个稳定的编制就是唯一的价值观，就是个体在大时代对于生活和生存的基本认知。</strong></p>
+  <p>这当然没有问题。生活的质感或者说生存的价值，对于大多数人群而言，粗粝而真实。有一个编制，意味着一种笃定和踏实，是市井百姓对于制度的信心所在。通俗地讲，入编就是进入“保险箱”。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-710312-66b0e18907b93.png" alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">图/冰川</span>  <p>然而，事物都是在变化的，编制也不例外。<strong>当“保险箱”越来越大，纳入其中的编制越来越多，就有点难以为继了。</strong></p>
+  <p>一方面，事业单位太多，涉及范围太广，必然从寻求保障走向抑制活力的反面，导致财政不堪负累，有点托不住了。而因为事业单位兼及生产经营领域，也使得诸多本该有活力的领域逐渐利益固化、社会板结化。</p>
+  <p>另一方面，求安稳的编内人生，也产生大量机构冗余、人员冗余，很多人宁可守着一个鸡肋般的编制，抱残守缺，躺在舒适区，也不愿去实现更多的可能，并不利于激发社会的创新和创造力。</p>
+  <h2 id="section-1">02</h2>
+  <p>事业单位改革已势在必行。若说这样的改革究竟有多必要？不妨从之前已经取得的成效来做个考察。</p>
+  <p>作为全国事业单位改革试点省份之一，山东省事业单位改革一直在进行中。2022年9月，山东省在“山东这十年”系列主题新闻发布会上宣布，10年来，不再保留省级10名、市级7名、县级5名以下事业单位，全省纳入改革范围的事业单位减少9996家，精简33.1%。</p>
+  <p><strong>减少近万家事业单位，这个数目确实不小，但只占全部事业单位三成不到。巨大成绩背后，其实是更加庞大的事业单位数量。</strong></p>
+  <p>从这个背景看这一次新启动的省属事业单位转企，或可认为这项改革正在进入深水区，已经开始啃骨头。毕竟，相对于之前砍掉的近万家“小软散”机构，省属事业单位往往距离权力更近，则推进难度也会更大。</p>
+  <p>这无疑需要下更大的决心，设定更为完善的行动方案，坚决、稳妥地做好一系列后续接驳服务。毕竟，任何改革都意味着利益的剥夺和再分配，必须搞下去，但要尽可能照顾到各方利益。</p>
+  <p>同时，也必须考虑到，事业单位中有一部分属于最基本的公共服务，包括教育、医疗、就业、社会保障等，这是政府必须提供的最基本的公共服务，不能市场化和社会化。</p>
+  <h2 id="section-2">03</h2>
+  <p>任何改革都不可能孤军深入，而是要协调联动、配套共进。</p>
+  <p>当下，多地事业单位改革亮点频现，热火朝天，除山东外，河南省今年4月启动改革，原则上不再保留科级和事业编制16名以下的事业单位。</p>
+  <p><strong>这些做法均可圈可点，但也只是改革第一步。</strong></p>
+  <p>事业单位改革已经不断深化，行政单位改革也应跟上，迅速破题。既然入编的人容易滋生怠惰，公务员难道就不会怠惰了吗？各级财政的真正重负，公务员所占不少。</p>
+  <p>其实，很多人只是看到了山东人对编制的热爱，其实，更应该看到的，是底层人士对可预期生活的向往。</p>
+  <p>一个健康的社会，就应该通过不断的改革，让资源配置更合理，让人才流动更顺畅，更能释放并激发社会成员的热情和创造力，大家一起找到各自最合适的姿势，也找到自己最满意的对象。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-05/%E7%A0%81%E5%A4%B4%E6%B0%B4%E9%AC%BC-%E6%B3%A1%E5%9C%A8%E6%B4%AA%E6%B0%B4%E9%87%8C%E7%9C%8B%E5%A5%A5%E8%BF%90">
+          码头水鬼 | 泡在洪水里看奥运
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-05/%E6%B5%A3%E8%8A%B1%E6%BA%AA%E6%9D%9C%E7%94%AB-%E6%8C%9F%E6%82%A3%E5%84%BF%E4%BB%A5%E7%9D%A1%E5%85%B6%E6%AF%8D-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%89%8D%E9%83%BD%E6%98%AF%E6%A5%B7%E6%A8%A1-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%90%8E%E9%83%BD%E6%98%AF%E6%81%B6%E9%AD%94">
+          浣花溪杜甫｜挟患儿以睡其母，曝光之前都是楷模，曝光之后都是恶魔
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-05/%E4%BA%AE%E8%A7%81-%E8%BF%99%E4%BB%B6%E4%BA%8B%E5%A6%82%E6%9E%9C%E5%B1%9E%E5%AE%9E-%E9%82%A3%E5%B0%B1%E5%A4%AA%E4%BB%A4%E4%BA%BA%E5%8F%91%E6%8C%87%E4%BA%86">
+          亮见｜这件事如果属实，那就太令人发指了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-05/%E4%B8%AD%E5%9B%BD%E6%96%B0%E9%97%BB%E5%91%A8%E5%88%8A-%E5%85%A8%E5%9B%BD%E6%80%A7%E6%8A%97%E8%AE%AE%E5%90%8E-%E5%AD%9F%E5%8A%A0%E6%8B%89%E5%9B%BD-%E9%93%81%E5%A8%98%E5%AD%90-%E6%80%BB%E7%90%86%E8%BE%9E%E8%81%8C%E4%BA%86">
+          中国新闻周刊｜全国性抗议后，孟加拉国“铁娘子”总理辞职了
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-05/%E5%94%90%E5%98%89%E9%B4%BB%E9%AB%94%E6%93%8D%E5%96%AE%E6%A7%93%E5%A0%85%E6%8C%81%E5%AE%8C%E8%B3%BD%E6%91%98%E9%8A%85-%E6%83%B3%E8%AD%89%E6%98%8E%E5%8A%AA%E5%8A%9B%E6%B2%92%E7%99%BD%E8%B2%BB">
+            前一篇：唐嘉鴻體操單槓堅持完賽摘銅 想證明努力沒白費
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-05/%E6%9B%BE%E5%8A%A9%E5%AD%9F%E5%8A%A0%E6%8B%89%E6%93%BA%E8%84%AB%E8%BB%8D%E4%BA%8B%E7%B5%B1%E6%B2%BB-%E7%B8%BD%E7%90%86%E5%93%88%E5%B8%8C%E7%B4%8D%E5%9F%B7%E6%94%BF15%E5%B9%B4%E5%BE%8C%E5%80%92%E5%8F%B0">
+            后一篇：曾助孟加拉擺脫軍事統治 總理哈希納執政15年後倒台
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-05/%E5%94%90%E5%98%89%E9%B4%BB%E9%AB%94%E6%93%8D%E5%96%AE%E6%A7%93%E5%A0%85%E6%8C%81%E5%AE%8C%E8%B3%BD%E6%91%98%E9%8A%85-%E6%83%B3%E8%AD%89%E6%98%8E%E5%8A%AA%E5%8A%9B%E6%B2%92%E7%99%BD%E8%B2%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-05/%E6%9B%BE%E5%8A%A9%E5%AD%9F%E5%8A%A0%E6%8B%89%E6%93%BA%E8%84%AB%E8%BB%8D%E4%BA%8B%E7%B5%B1%E6%B2%BB-%E7%B8%BD%E7%90%86%E5%93%88%E5%B8%8C%E7%B4%8D%E5%9F%B7%E6%94%BF15%E5%B9%B4%E5%BE%8C%E5%80%92%E5%8F%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-05/%E6%B5%A3%E8%8A%B1%E6%BA%AA%E6%9D%9C%E7%94%AB-%E6%8C%9F%E6%82%A3%E5%84%BF%E4%BB%A5%E7%9D%A1%E5%85%B6%E6%AF%8D-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%89%8D%E9%83%BD%E6%98%AF%E6%A5%B7%E6%A8%A1-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%90%8E%E9%83%BD%E6%98%AF%E6%81%B6%E9%AD%94'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-05/%E4%BA%AE%E8%A7%81-%E8%BF%99%E4%BB%B6%E4%BA%8B%E5%A6%82%E6%9E%9C%E5%B1%9E%E5%AE%9E-%E9%82%A3%E5%B0%B1%E5%A4%AA%E4%BB%A4%E4%BA%BA%E5%8F%91%E6%8C%87%E4%BA%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-05/%E5%94%90%E5%98%89%E9%B4%BB%E9%AB%94%E6%93%8D%E5%96%AE%E6%A7%93%E5%A0%85%E6%8C%81%E5%AE%8C%E8%B3%BD%E6%91%98%E9%8A%85-%E6%83%B3%E8%AD%89%E6%98%8E%E5%8A%AA%E5%8A%9B%E6%B2%92%E7%99%BD%E8%B2%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-05/%E6%9B%BE%E5%8A%A9%E5%AD%9F%E5%8A%A0%E6%8B%89%E6%93%BA%E8%84%AB%E8%BB%8D%E4%BA%8B%E7%B5%B1%E6%B2%BB-%E7%B8%BD%E7%90%86%E5%93%88%E5%B8%8C%E7%B4%8D%E5%9F%B7%E6%94%BF15%E5%B9%B4%E5%BE%8C%E5%80%92%E5%8F%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-05/%E6%B5%A3%E8%8A%B1%E6%BA%AA%E6%9D%9C%E7%94%AB-%E6%8C%9F%E6%82%A3%E5%84%BF%E4%BB%A5%E7%9D%A1%E5%85%B6%E6%AF%8D-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%89%8D%E9%83%BD%E6%98%AF%E6%A5%B7%E6%A8%A1-%E6%9B%9D%E5%85%89%E4%B9%8B%E5%90%8E%E9%83%BD%E6%98%AF%E6%81%B6%E9%AD%94">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-05/%E4%BA%AE%E8%A7%81-%E8%BF%99%E4%BB%B6%E4%BA%8B%E5%A6%82%E6%9E%9C%E5%B1%9E%E5%AE%9E-%E9%82%A3%E5%B0%B1%E5%A4%AA%E4%BB%A4%E4%BA%BA%E5%8F%91%E6%8C%87%E4%BA%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

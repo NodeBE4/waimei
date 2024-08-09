@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>「女拳手」誰說了算？性別檢測的盲點與爭議 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+" />
+    <meta property="og:description" content="
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="「女拳手」誰說了算？性別檢測的盲點與爭議" />
+    <meta property="twitter:title" content="「女拳手」誰說了算？性別檢測的盲點與爭議" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E3%2580%258C%25E5%25A5%25B3%25E6%258B%25B3%25E6%2589%258B%25E3%2580%258D%25E8%25AA%25B0%25E8%25AA%25AA%25E4%25BA%2586%25E7%25AE%2597%25EF%25BC%259F%25E6%2580%25A7%25E5%2588%25A5%25E6%25AA%25A2%25E6%25B8%25AC%25E7%259A%2584%25E7%259B%25B2%25E9%25BB%259E%25E8%2588%2587%25E7%2588%25AD%25E8%25AD%25B0%2Fa-69883305&t=%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E3%2580%258C%25E5%25A5%25B3%25E6%258B%25B3%25E6%2589%258B%25E3%2580%258D%25E8%25AA%25B0%25E8%25AA%25AA%25E4%25BA%2586%25E7%25AE%2597%25EF%25BC%259F%25E6%2580%25A7%25E5%2588%25A5%25E6%25AA%25A2%25E6%25B8%25AC%25E7%259A%2584%25E7%259B%25B2%25E9%25BB%259E%25E8%2588%2587%25E7%2588%25AD%25E8%25AD%25B0%2Fa-69883305&t=%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0&d=2024-08-08&e=
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+
+
+  
+null 方子齐2024-08-08T05:13:03.517Z
+  
+  
+林郁婷被質疑性別，她的媽媽廖秀蘭受訪時表示很心疼女兒，她的身分證（字號）就是2開頭（台灣女性ID號碼開頭為2），有什麼可以質疑的？
+  
+  （德國之聲中文網）她贏了。來自台灣的奧運拳擊選手林郁婷，8月7日獲得5位裁判一致判定，贏得女子57公斤級4強賽，晉級金牌戰。她將在週六（10日）與波蘭拳手塞雷梅塔（Julia Szeremeta）爭奪金牌。
+  然而落敗的土耳其選手卡拉曼（Esra Yıldız Kahraman）在賽後在擂台上朝著觀眾席比出「X」手勢，被認為是在暗諷林郁婷的性別爭議。雖然她本人拒絕評論比出該手勢的原因，但話題馬上在社群媒體上延燒。
+  林郁婷賽後受訪時只表示：「佩服、尊敬對手」。這是她在巴黎奧運的第三場比賽，第一場賽前林郁婷..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E3%2580%258C%25E5%25A5%25B3%25E6%258B%25B3%25E6%2589%258B%25E3%2580%258D%25E8%25AA%25B0%25E8%25AA%25AA%25E4%25BA%2586%25E7%25AE%2597%25EF%25BC%259F%25E6%2580%25A7%25E5%2588%25A5%25E6%25AA%25A2%25E6%25B8%25AC%25E7%259A%2584%25E7%259B%25B2%25E9%25BB%259E%25E8%2588%2587%25E7%2588%25AD%25E8%25AD%25B0%2Fa-69883305" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305&text=「女拳手」誰說了算？性別檢測的盲點與爭議&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305&title=「女拳手」誰說了算？性別檢測的盲點與爭議" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305&title=「女拳手」誰說了算？性別檢測的盲點與爭議" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=「女拳手」誰說了算？性別檢測的盲點與爭議&body=
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305&title=「女拳手」誰說了算？性別檢測的盲點與爭議&caption=
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=「女拳手」誰說了算？性別檢測的盲點與爭議&url=https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>「女拳手」誰說了算？性別檢測的盲點與爭議</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E3%2580%258C%25E5%25A5%25B3%25E6%258B%25B3%25E6%2589%258B%25E3%2580%258D%25E8%25AA%25B0%25E8%25AA%25AA%25E4%25BA%2586%25E7%25AE%2597%25EF%25BC%259F%25E6%2580%25A7%25E5%2588%25A5%25E6%25AA%25A2%25E6%25B8%25AC%25E7%259A%2584%25E7%259B%25B2%25E9%25BB%259E%25E8%2588%2587%25E7%2588%25AD%25E8%25AD%25B0%2Fa-69883305&t=%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0&d=2024-08-08&e=
+「女拳手」誰說了算？性別檢測的盲點與爭議
+——
+
+
+  
+null 方子齐2024-08-08T05:13:03.517Z
+  
+  
+林郁婷被質疑性別，她的媽媽廖秀蘭受訪時表示很心疼女兒，她的身分證（字號）就是2開頭（台灣女性ID號碼開頭為2），有什麼可以質疑的？
+  
+  （德國之聲中文網）她贏了。來自台灣的奧運拳擊選手林郁婷，8月7日獲得5位裁判一致判定，贏得女子57公斤級4強賽，晉級金牌戰。她將在週六（10日）與波蘭拳手塞雷梅塔（Julia Szeremeta）爭奪金牌。
+  然而落敗的土耳其選手卡拉曼（Esra Yıldız Kahraman）在賽後在擂台上朝著觀眾席比出「X」手勢，被認為是在暗諷林郁婷的性別爭議。雖然她本人拒絕評論比出該手勢的原因，但話題馬上在社群媒體上延燒。
+  林郁婷賽後受訪時只表示：「佩服、尊敬對手」。這是她在巴黎奧運的第三場比賽，第一場賽前林郁婷..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E3%2580%258C%25E5%25A5%25B3%25E6%258B%25B3%25E6%2589%258B%25E3%2580%258D%25E8%25AA%25B0%25E8%25AA%25AA%25E4%25BA%2586%25E7%25AE%2597%25EF%25BC%259F%25E6%2580%25A7%25E5%2588%25A5%25E6%25AA%25A2%25E6%25B8%25AC%25E7%259A%2584%25E7%259B%25B2%25E9%25BB%259E%25E8%2588%2587%25E7%2588%25AD%25E8%25AD%25B0%2Fa-69883305" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1723094224000-->
+<p><a href="https://www.dw.com/zh/%E3%80%8C%E5%A5%B3%E6%8B%B3%E6%89%8B%E3%80%8D%E8%AA%B0%E8%AA%AA%E4%BA%86%E7%AE%97%EF%BC%9F%E6%80%A7%E5%88%A5%E6%AA%A2%E6%B8%AC%E7%9A%84%E7%9B%B2%E9%BB%9E%E8%88%87%E7%88%AD%E8%AD%B0/a-69883305">「女拳手」誰說了算？性別檢測的盲點與爭議</a>
+——</p>
+
+<div>
+  <div>
+<em>null 方子齐<br />2024-08-08T05:13:03.517Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69845706_303.jpg" width="100%" />  <div>
+<small style="color: #999;">林郁婷被質疑性別，她的媽媽廖秀蘭受訪時表示很心疼女兒，她的身分證（字號）就是2開頭（台灣女性ID號碼開頭為2），有什麼可以質疑的？</small>
+  </div>
+  <p>（德國之聲中文網）她贏了。來自台灣的奧運拳擊選手林郁婷，8月7日獲得5位裁判一致判定，贏得女子57公斤級4強賽，晉級金牌戰。她將在週六（10日）與波蘭拳手塞雷梅塔（Julia Szeremeta）爭奪金牌。</p>
+  <p>然而落敗的土耳其選手卡拉曼（Esra Yıldız Kahraman）在賽後在擂台上朝著觀眾席比出「X」手勢，被認為是在暗諷林郁婷的性別爭議。雖然她本人拒絕評論比出該手勢的原因，但話題馬上在社群媒體上延燒。</p>
+  <p>林郁婷賽後受訪時只表示：「佩服、尊敬對手」。這是她在巴黎奧運的第三場比賽，第一場賽前林郁婷就告訴記者，她刪除了所有社群軟體。</p>
+  <p>她也贏了。<a href="https://api.dw.com/api/detail/article/69838598" rel="ArticleRef">阿爾及利亞拳擊手哈利夫（Imane Khelif）</a>獲得巴黎奧運拳擊女子66公斤級決賽門票。她接受《 SNTV》 採訪時表示自己要向全世界的人們發出訊息，要求維護奧運精神，不要霸凌運動員。</p>
+  <p>她將在8月9日與中國選手楊柳對決，但卻有有微博網友留言稱：「我們的選手楊柳不參加這不合理賽制的比賽」、「我們的女選手可以視情（況）退賽，人身安全最重要」；也有人稱哈利夫獲得金牌「只能更證明性別疑雲，回擊不了性別爭議」。</p>
+  <p>印度女性短跑選手強德（Dutee Chand）過去曾陷入相同爭議，她向DW表示，「我想告訴林郁婷與其他受害於性別檢測的女性運動員說：請不要放棄希望。」</p>
+  <p>強德經歷過的性別爭議發生在10年前。2014年，她在台北的亞洲青年田徑錦標賽奪下兩枚金牌，展開國際賽事生涯。剛滿18歲的強德，隨後積極備戰大英國協運動會，卻在比賽前3天被印度田徑總會（Athletics Federation of India）除名。</p>
+  <p>官方給出的理由，是強德患有「雄性素過多症（hyperandrogenism）」，不符女子賽事標準。「我不明白，」強德說，「為什麼當我們贏得獎牌，對手可以端看我們的身體組成，就質疑我們的性別？」</p>
+  <p>強德認為，女性分泌雄性素是自然現象，與運動表現沒有關聯。她說自己被性別檢測羞辱，訓練與比賽期間也因此而分心。</p>
+  <p>「許多運動員的生涯，因為性別檢測而終止，身心健康也深受影響，」強德說，「IOC能做的，就是停止其他體育組織進行性別檢測。」</p>
+  <p>然而，IOC與其他國際體育組織之間，權力並非由上而下貫徹，而是形成「聯邦制」的合作關係。在此架構下，IOC難以全面禁止性別檢測。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69834057_303.jpg" width="100%" />  <div>
+<small style="color: #999;">哈利夫在接受《 SNTV》 採訪時表示，目前對她的性別質疑和霸凌「可以摧毀人，它可以殺死人的思想、精神和思想。它可以分裂人。」</small>
+  </div>
+  <p><strong>性別檢測爭議</strong></p>
+  <p>加拿大布魯克大學運動管理學系副教授唐諾利（Michele Donnelly）告訴DW，組成雄性素的睪固酮並非「能讓人變成超強運動員的神奇物質」。他表示，沒有科學研究能證明睪固酮與運動表現的直接關聯。</p>
+  <p>然而，10年過去了，睪固酮仍被IBA拿來質疑林郁婷與哈利夫的女性身分。IBA主席克列姆列夫（Umar Kremlev）8月5日在記者會先是聲稱，兩位選手的睪固酮過高，後來又告訴俄羅斯國營媒體塔斯社，IBA當年取消林郁婷與哈利夫的資格，是因為兩人「被證明帶有XY染色體」。</p>
+  <p>「這是好幾年前就已破除的迷思，」唐諾利說，「對於仍有體育組織用檢測染色體的方式，排除特定運動員參與女子競賽，我感到震驚。」</p>
+  <p>唐諾利說，染色體檢測採用的是1960年代引進的巴氏體檢測（Barr body test），而這種檢測方法後來被停用的原因之一，就是發現在罕見案例中，女性體內也可能帶有XY染色體。</p>
+  <p>一封在2018年由超過兩千名美國科學家連署的公開信也指出，性染色體、生殖器與性別認同之間「關聯複雜且尚未被全盤理解」。信中表示，目前不存在任何基因檢測，可以清楚判定性別。</p>
+  <p>唐諾利表示，現行體育賽事以二元方式區分性別，但人體比各種檢測標準還要具有多樣性。唐諾利說，能夠判定「是男是女」的檢測「實際上並不存在」。</p>
+  <p>國際人權組織「人權觀察（Human Rights Watch）」研究員奈特（Kyle Knight）則表示，性別檢測標準武斷，且包含高度爭議的科學方法，以及對於女性特質的刻板印象。「人權觀察」的研究報告指出，性別檢測制度侵害隱私和尊嚴。</p>
+  <p>除此之外，回顧性別檢測歷史，更有種族和文化議題在其中。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69542603_303.jpg" width="100%" />  <div>
+<small style="color: #999;">科學研究證實，天生擁有陰道跟卵巢的「真女人」，依然可能擁有XY染色體。</small>
+  </div>
+  <p><strong>「不夠女性」的亞非選手</strong></p>
+  <p>1960年代，國際體育組織逐漸建立性別檢測制度，IOC也從1968年冬季奧運起採納實施。當時正值美蘇冷戰，夏季奧運的獎牌數量排名，往往是美國與蘇聯兩國角逐排頭。蘇聯的獎牌數量在1956、1960、1972年居冠，而1976年蒙特婁奧運的排名為蘇聯第一、東德第二，美國屈居老三。</p>
+  <p>著有《另一種奧運》（The Other Olympians: Fascism, Queerness, and the Making of Modern Sports）的歷史研究者華特斯（Michael Waters）表示，美蘇對峙的緊張關係，讓奧運的性別檢測備受矚目。</p>
+  <p>華特斯告訴DW，歷史上的性別檢測皆針對女性，未見檢測男性的紀錄；而冷戰期間，美國質疑獲獎連連的東歐女選手「太過陽剛」，美國媒體更感到焦慮，進而懷疑這些共產世界的女選手作弊。</p>
+  <p>英國伯明罕大學科學與醫療史領域副教授亨吉（Vanessa Heggie）的研究也指出，蘇聯與東德女性運動員的戲劇性成就，以及部分運動員不同於西方認知的「女性特質」，導致西方體育組織的擔憂。</p>
+  <p>直至冷戰結束後，西方世界對於「女性特質」的認知，仍影響國際體壇的性別檢測制度。</p>
+  <p>現今仍實施性別檢測的體育賽事，大多採取「檢舉制」，意即主辦單位不審查選手的性別，只在接獲其他選手的「抗議」時，才要求「被抗議」的選手提出性別證明，或進行性別檢測。</p>
+  <p>美國普渡大學教授庫奇（Cheryl Cooky）向DW表示，當前運動場上的性別爭議，並非「先檢測才有疑義」，而是「先有疑義才檢測」。</p>
+  <p>「這些對於性別的疑問，並非高舉驗血報告喊著『我有疑義』，」庫奇表示，「當選手或體育組織說『我們對特定選手有疑義』，這些疑問從哪裡來？你只能從眼前所見來提出疑義，對吧？」</p>
+  <p>庫奇表示，皮膚、頭髮、五官、體型不符合「西方女性特質」標準的運動員，往往成為箭靶。</p>
+  <p>加拿大布魯克大學運動管理學系副教授唐諾利（Michele Donnelly）則說，來自非洲、南亞、東亞的女性，以及非白人運動員，不斷被質疑女性身分，「我們沒聽過有人懷疑白人女性的性別。」</p>
+  <p>「這是很大的問題，」唐諾利表示，「這讓性別檢測制度，不僅性別歧視、差別對待，更帶有種族主義與民族優越感。」</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69779460_303.jpg" width="100%" />  <div>
+<small style="color: #999;">國際奧委會在2019年以「財政、管治架構、倫理道德以及裁判問題」暫停國際拳總的資格，又在去年取消其認證，所以本屆奧運的拳擊比賽由國際奧委會管理。</small>
+  </div>
+  <p><strong>IOC能夠全面禁止性別檢測？</strong></p>
+  <p>IOC主導的「各國際單項運動總會（IFs）」，由各個單項運動的國際組織串連而成，並獲得IOC承認為該項目的指導單位。目前IFs的組成，包含世界羽球總會（BWF）與國際足球總會（FIFA）等組織。</p>
+  <p><a href="https://api.dw.com/api/detail/article/69855864" rel="ArticleRef">國際拳擊總會（IBA）</a>過去也曾獲得IOC認可，卻因為資金來源、人事管理、賽事公正等爭議，在去年遭到IOC除名。奧運與IBA分道揚鑣過後，IOC更無法控制IBA的性別檢測制度。</p>
+  <p>從2000年雪梨奧運開始，IOC不再主動審查選手性別。根據IOC在2021年頒布的性別指導方針，在符合相關標準的前提下，運動員應被允許參與最符合自身性別認同的賽事類別。</p>
+  <p>普渡大學的性別研究學者庫奇分析，「符合相關標準的前提」等字句，仍為性別檢測留下餘地。</p>
+  <p>庫奇表示，這份指導方針固然展現IOC重視包容性與公平性，卻沒有對強制要求國際體育組織貫徹。庫奇表示，IOC可以推出更有力的政策，接納跨性別與非二元性別者。</p>
+  <p>庫奇認為，性別檢測所引發的爭議，核心問題在於人們是否認為「一位在生物上、生理上、甚至荷爾蒙組成上異於其他女性的人」仍可以是一位女人。</p>
+  <p>「當體育賽事被二元劃分，一邊是女子競賽，一邊是男子競賽，你必須符合兩者其中一項，」庫奇說，「這對在二元性別以外的人來說，非常艱難。」</p>
+  <p>唐諾利則認為，人們可以提出更有創意且更周到的賽事分類。唐諾利舉例，既然拳擊賽可以用體重級別分類，其他賽事也可以參照生理條件或技術等級來分類。</p>
+  <p>「不過，」唐諾利說，「我不認為我們能在近期之內，放棄以性別分類賽事。」</p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.run" style="color:orange" target="_blank">https://feedx.run</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/%E4%BF%84%E7%BD%97%E6%96%AF-%E5%BA%93%E5%B0%94%E6%96%AF%E5%85%8B%E5%8F%97%E5%88%B0%E6%94%BB%E5%87%BB-%E5%BD%93%E5%9C%B0%E8%BF%9B%E5%85%A5%E7%B4%A7%E6%80%A5%E7%8A%B6%E6%80%81">
+          俄罗斯：库尔斯克受到攻击 当地进入紧急状态
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-08/%E6%99%AE%E4%BA%AC%E4%B8%8E%E6%AC%A7%E6%B4%B2-25%E5%B9%B4%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87">
+          普京与欧洲：25年的爱恨情仇
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/%E6%B3%B0%E5%9C%8B%E6%B3%95%E9%99%A2%E8%A7%A3%E6%95%A3%E5%8F%8D%E5%B0%8D%E9%BB%A8-%E4%BC%81%E5%9C%96%E6%8E%A8%E7%BF%BB%E5%90%9B%E4%B8%BB%E7%AB%8B%E6%86%B2%E5%88%B6">
+          泰國法院解散反對黨：企圖推翻君主立憲制
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/%E4%B8%AD%E5%9B%BD%E5%8A%A0%E5%BC%BA%E5%8D%97%E6%B5%B7%E6%88%98%E5%B7%A1-%E5%9B%9E%E5%BA%94%E7%BE%8E%E8%8F%B2%E7%AD%89%E5%9B%9B%E5%9B%BD%E5%86%9B%E6%BC%94">
+          中国加强南海战巡 回应美菲等四国军演
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-08/%E9%99%88%E6%A2%A6-%E5%B8%8C%E6%9C%9B%E7%90%83%E8%BF%B7%E8%83%BD%E6%AD%A3%E7%A1%AE%E9%9D%A2%E5%AF%B9%E8%B5%9B%E5%9C%BA%E8%BE%93%E8%B5%A2">
+            前一篇：陈梦：希望球迷能正确面对赛场输赢
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-08/%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%8B%9F%E6%8A%95%E8%B5%84%E5%8D%83%E4%BA%BF%E6%B8%AF%E5%85%83-%E5%B7%A9%E5%9B%BA%E9%A6%99%E6%B8%AF%E6%9E%A2%E7%BA%BD%E5%9C%B0%E4%BD%8D">
+            后一篇：国泰航空拟投资千亿港元 巩固香港枢纽地位
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E9%99%88%E6%A2%A6-%E5%B8%8C%E6%9C%9B%E7%90%83%E8%BF%B7%E8%83%BD%E6%AD%A3%E7%A1%AE%E9%9D%A2%E5%AF%B9%E8%B5%9B%E5%9C%BA%E8%BE%93%E8%B5%A2'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%8B%9F%E6%8A%95%E8%B5%84%E5%8D%83%E4%BA%BF%E6%B8%AF%E5%85%83-%E5%B7%A9%E5%9B%BA%E9%A6%99%E6%B8%AF%E6%9E%A2%E7%BA%BD%E5%9C%B0%E4%BD%8D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-08/%E6%99%AE%E4%BA%AC%E4%B8%8E%E6%AC%A7%E6%B4%B2-25%E5%B9%B4%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-07/%E6%B3%B0%E5%9C%8B%E6%B3%95%E9%99%A2%E8%A7%A3%E6%95%A3%E5%8F%8D%E5%B0%8D%E9%BB%A8-%E4%BC%81%E5%9C%96%E6%8E%A8%E7%BF%BB%E5%90%9B%E4%B8%BB%E7%AB%8B%E6%86%B2%E5%88%B6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-08/%E9%99%88%E6%A2%A6-%E5%B8%8C%E6%9C%9B%E7%90%83%E8%BF%B7%E8%83%BD%E6%AD%A3%E7%A1%AE%E9%9D%A2%E5%AF%B9%E8%B5%9B%E5%9C%BA%E8%BE%93%E8%B5%A2">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-08/%E5%9B%BD%E6%B3%B0%E8%88%AA%E7%A9%BA%E6%8B%9F%E6%8A%95%E8%B5%84%E5%8D%83%E4%BA%BF%E6%B8%AF%E5%85%83-%E5%B7%A9%E5%9B%BA%E9%A6%99%E6%B8%AF%E6%9E%A2%E7%BA%BD%E5%9C%B0%E4%BD%8D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-08/%E6%99%AE%E4%BA%AC%E4%B8%8E%E6%AC%A7%E6%B4%B2-25%E5%B9%B4%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-07/%E6%B3%B0%E5%9C%8B%E6%B3%95%E9%99%A2%E8%A7%A3%E6%95%A3%E5%8F%8D%E5%B0%8D%E9%BB%A8-%E4%BC%81%E5%9C%96%E6%8E%A8%E7%BF%BB%E5%90%9B%E4%B8%BB%E7%AB%8B%E6%86%B2%E5%88%B6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

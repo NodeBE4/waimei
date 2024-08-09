@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇） – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+" />
+    <meta property="og:description" content="
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）" />
+    <meta property="twitter:title" content="【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710354.html&t=%E3%80%90404%E5%AA%92%E4%BD%93%E3%80%91%E2%80%9C%E5%A5%B9%E4%BB%AC%E6%9C%AC%E4%B8%8D%E8%AF%A5%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BA%BA%E7%90%86%E5%BA%94%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%E2%80%9D%28%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710354.html&t=%E3%80%90404%E5%AA%92%E4%BD%93%E3%80%91%E2%80%9C%E5%A5%B9%E4%BB%AC%E6%9C%AC%E4%B8%8D%E8%AF%A5%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BA%BA%E7%90%86%E5%BA%94%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%E2%80%9D%28%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-08-06&e=
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+
+
+  
+  
+    
+    
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）来源：煎茶小组、她刊、孤独星球        主题归类：404媒体 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710354.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/710354.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/710354.html&text=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/710354.html&title=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/710354.html&title=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）&body=
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/710354.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/710354.html&title=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）&caption=
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）&url=https://chinadigitaltimes.net/chinese/710354.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/710354.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710354.html&t=%E3%80%90404%E5%AA%92%E4%BD%93%E3%80%91%E2%80%9C%E5%A5%B9%E4%BB%AC%E6%9C%AC%E4%B8%8D%E8%AF%A5%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BA%BA%E7%90%86%E5%BA%94%E6%88%90%E4%B8%BA%E8%A2%AB%E7%89%BA%E7%89%B2%E7%9A%84%E9%82%A3%E9%83%A8%E5%88%86%E2%80%9D%28%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-08-06&e=
+【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）
+——
+
+
+  
+  
+    
+    
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）来源：煎茶小组、她刊、孤独星球        主题归类：404媒体 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F710354.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722990375000-->
+<p><a href="https://chinadigitaltimes.net/chinese/710354.html">【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/710354.html" title="【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/08/5583-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" srcset="https://chinadigitaltimes.net/chinese/files/2024/08/5583-564x300.png 564w, https://chinadigitaltimes.net/chinese/files/2024/08/5583-300x160.png 300w, https://chinadigitaltimes.net/chinese/files/2024/08/5583-1024x545.png 1024w, https://chinadigitaltimes.net/chinese/files/2024/08/5583-768x409.png 768w, https://chinadigitaltimes.net/chinese/files/2024/08/5583-1080x575.png 1080w, https://chinadigitaltimes.net/chinese/files/2024/08/5583.png 1172w" sizes="(max-width: 564px) 100vw, 564px" /></a>  <p><img loading="lazy" decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/5583.png" alt="" width="1024" height="545" class="size-large wp-image-672171" /></p>
+  <div style="text-align:center;margin-top:26px;margin-bottom:26px">
+    <!-- iframe plugin v.5.1 wordpress.org/plugins/iframe/ -->
+    <iframe loading="lazy" src="https://open.firstory.me/embed/story/clziwlh2y0e0q01u5dzrm9plj" height="180" width="700" scrolling="yes" class="iframe-class" frameborder="0"></iframe>
+  </div>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【404媒体】“她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分”(外二篇）<br /><strong>来源：</strong><a href="https://chinadigitaltimes.net/space/煎茶小组" target="_blank">煎茶小组</a>、<a href="https://chinadigitaltimes.net/space/她刊" target="_blank">她刊</a>、<a href="https://chinadigitaltimes.net/space/孤独星球" target="_blank">孤独星球</a>        <p><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/404媒体" target="_blank">404媒体</a> <br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E6%97%B6%E9%97%B4%E9%A6%86" target="_blank" rel="noopener">时间馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          <p><a href="https://chinadigitaltimes.net/chinese/404-archives">《404档案馆》</a>讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“<a href="https://open.firstory.me/user/cdt">404档案馆</a>”进行收听，视频节目可在Youtube“<a href="https://www.youtube.com/channel/UCwXewCWwaK1-yec8niJLrqg">中国数字时代· 404档案馆</a>”频道收看。</p>
+          <p>欢迎来到404档案馆，在这里，我们一起穿越<a href="https://chinadigitaltimes.net/space/%E5%9B%BD%E5%AE%B6%E9%98%B2%E7%81%AB%E5%A2%99">中国数字高墙</a>。</p>
+          <p>尽管中国的<a href="https://chinadigitaltimes.net/space/%E8%A8%80%E8%AE%BA%E5%AE%A1%E6%9F%A5">言论审查</a>和舆论管控日趋严峻，<a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86">国家对公民的监控</a>也无处不在，但我们依然可以看那些不服从的个体，顶着被删号、被约谈、甚至被监禁的风险，对不公义勇敢发出自己的声音。</p>
+          <p>中国数字时代在<a href="https://chinadigitaltimes.net/chinese/category/404-media">“404媒体”</a>栏目中长期记录这些被当局审查封禁的媒体或自媒体。</p>
+          <p>本期节目，我们将介绍遭到封禁的媒体、自媒体账号为： 煎茶小组、孤独星球LonelyPlanet、她刊。</p>
+          <h2 id="section">一、<a href="https://chinadigitaltimes.net/space/煎茶小组">煎茶小组｜暂时的告别，是为了更好的重逢</a></h2>
+          <p>            <iframe loading="lazy" title="【404媒体】煎茶小组｜暂时的告别，是为了更好的重逢" width="1080" height="608" src="https://www.youtube.com/embed/eqDfneCdsjc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+          <p>微信公众号“煎茶小组”长期以来致力于消除就业性别歧视。该号自2016年4月21日以来累计发文318篇，包括微博热点、海外之声、消歧动态等等话题。其中以关注中国女性权益为主。此外，该号长期收集来自网友的投稿，揭露曝光一些企业在招聘中的性别歧视行为。</p>
+          <p>2024年6月16日，该号发布文章《暂时的告别，是为了更好的重逢》，称由于注册主体信息无法继续使用的原因，微信公众号“煎茶小组”将于2024年6月底注销。</p>
+          <p>在2024年2月7日，该号发布的《2023年度汇总｜消歧在行动》一文中，作者总结了部分在2023年发生的就业市场性别歧视问题。</p>
+          <p>文中写道：</p>
+          <blockquote>
+            <p>据不完全统计，2023年，大队共曝光了65起招聘性别歧视行为，收到举报回复2个。2个回复均及时更正。</p>
+            <p>大队收到投稿，11月7日，舒莱Shecare抖♪小编代工厂招聘专员发布一条工人招聘信息：招聘机台操作工、电器工程师、叉车工，要求男性。</p>
+          </blockquote>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/640-2.webp" alt="img" /></p>
+          <blockquote>
+            <p><strong>舒莱Shecare回复：</strong></p>
+            <p>昨日（11月7日）抖♪小编代工厂招聘专员发布一条工人招聘信息；<br />因我们职能部门在郑州，工厂在县城，故工人的招聘未经职能部门审核直接联系了小编发出。<br />工厂负责的招聘都是十几年的老员工，思想确实还比较传统。这边了解后反馈是县城不好招聘，所以她考虑分流提高招聘效率，工作强度大、需要随时待命的岗位考虑招男性，轻便工作招女性，以关照女同事。这种想当然的思路是非常不对的。经沟通，高强度工作后续会调整为能者居之，优先女性。我们也会加强对老员工认知的培训。<br />此前，我们也一直有优秀的女性叉车工在一线工作。这次确实是招聘人员考虑不周，以及审核未能闭环，在此向大家致以诚挚的歉意。<br />我们会引以为戒，再次感谢大家的支持与监督！</p>
+            <p><strong>湖北省水利水电规划勘测设计院：岗位条件为“男性”存在瑕疵，删除了“男性”条件。</strong></p>
+          </blockquote>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/截屏2024-08-06-下午2.11.17.png" alt="Img" /></p>
+          <blockquote>
+            <p>大队收到投稿，湖北省水利水电规划勘测设计院有限公司，招聘财务资产部财经类相关专业，要求男性。</p>
+            <p>投稿人：设计院的就业性别歧视已经是人尽皆知，但我以前以为只存在于工科专业里，没有想到财经类专业也会这么直白地在岗位条件里写上限男性。</p>
+            <p><strong>设计院回复：</strong></p>
+            <p>告知内容：公司发现10月20日发布的2024年度招聘简章中财务资产部需求的财经类相关专业岗位条件为“男性”存在瑕疵，已于11月3日将招聘简章中相关岗位条件进行了更改，删除了“男性”条件。</p>
+          </blockquote>
+          <h2 id="section-1">二、<a href="https://chinadigitaltimes.net/space/她刊">她刊｜没有人理应成为被牺牲的那部分</a></h2>
+          <p>            <iframe loading="lazy" title="【404媒体】她刊｜没有人理应成为被牺牲的那部分" width="1080" height="608" src="https://www.youtube.com/embed/Ul1JdQ2g6Dw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+          <p>和微信公众号“煎茶小组”一样，微信公众号“她刊”也关注中国女性权益、劳工议题等等主题，并长期发布文章对各类社会事件中与女性权益有关的内容进行评论。</p>
+          <p>2024年6月17日，@李老师不是你老师 发推称，“她刊”的多个社交媒体账号被设置禁止关注。目前，“她刊”的微信公众号已被封禁。</p>
+          <p>中国数字时代收录了多篇来自该号的文章。</p>
+          <p>其中，在一篇于2024年4月发布的文章《她刊｜25岁规培生之死，背后是百万“免费牛马”》中，作者就“规培医生轻生”事件进行评论。</p>
+          <p>文章中写道：</p>
+          <blockquote>
+            <p>我第一次拨通规培生多特的电话，是在一个工作日的下午，她反复跟我道歉，说自己比约定时间晚了半小时，手机刚刚充上电。能感受到，她度过了漫长的一天。她本以为自己这次会连续上36个小时的班，即从前一天上午8点一直到当天上午8点，又接着上到当晚8点。万幸，她当天下午4点左右就回到家了。</p>
+            <p>值完24小时的夜班，不能直接休息，而要接着把当天的班上完，这是多特所在医院的规定。目前，多特一个月要值一次这样的夜班，“但谁知道以后会不会变成一周一次呢？”，她的语气很俏皮。</p>
+            <p>丁香园2020年调查了3000多位规培医生，统计发现55.2%的人表示每周要上1次夜班。只不过，值完夜班需不需要接着上班，就因每家医院而异了。</p>
+          </blockquote>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/641-1.webp" alt="img" /></p>
+          <blockquote>
+            <p>多特还有一次上了48个小时的班，她回忆，早上7点左右，她在见不到太阳时去的医院，又在没有太阳的凌晨回到家。</p>
+            <p>丁香园2020年的调查结果显示，28.3%的规培生认为自己比住院医师的工作强度大、时间长，55.6%的人认为跟住院医师差不多。同时，55.8%的规培生表示工作时长在8～10个小时。多特在工作中，也能感到自己“来得比其他医生早，走得比他们晚”。</p>
+            <p>由于多特的女性身份，她感受到的医院的管控又多了一层。我眼前的她，一头长发、声音脆甜，笑起来有些羞涩。跟她聊天，能感受到她是自然的、热情的、不遮掩的。</p>
+            <p>但没想到，她身上的这些女性气质，却经常成为科室调侃的对象。比如， 她那一口脆甜的声音，会被调侃成“这个女学生怎么这么爱撒娇”。还有，每当需要搬重物时，她也会被以“你太瘦了”为由，被迫站到一旁。</p>
+            <p>在一次值完24小时班后，她感到身体很强的不适感。她想了很久，鼓足勇气跑去跟导师请假。但得到的回复却是一句略带玩笑的话，“你身体是不是太弱了”？被拒绝之余，矛盾被成功转移到了她的身上。</p>
+            <p>本质上，她进一步说，他们对医生有一种默认的期待，“他们期待一种更像男性的声音与体型等”。这种性别期待也充斥在整个医院，最明显的一个例子是，多特说，医院的值班房是按医生、护士来划分的，而非按性别，这是默认医生是男的、护士是女的。那么女医生该睡哪儿呢？</p>
+            <p>多特也想过，能怪哪一家医院把她们当劳动力用吗？她理解医院作为一个高效运转的机器，必须依赖像她们这样没什么经验的“劳动力”去完成一些工作。</p>
+            <p>多特回忆，自己到医院规培的近一年时间内，她每月的800块生活补助就曾停发过大半年。</p>
+            <p>“难道要去质疑病人想花更少的钱看病嘛？”，多特更觉得他们没有错。她说，“看起来所有人都没错，所有人都获得了一些东西，而我们只是被牺牲的那部分而已”。</p>
+            <p>写到最后，我不断地想到多特说的那句“我们只是被牺牲的那部分”。但她们本不该成为被牺牲的那部分，没有人理应成为被牺牲的那部分。</p>
+          </blockquote>
+          <h2 id="lonelyplanet">三、<a href="https://chinadigitaltimes.net/space/孤独星球LonelyPlanet">孤独星球LonelyPlanet｜孤独星球都退出中国市场了，这个星球真的越来越孤独了</a></h2>
+          <p>            <iframe loading="lazy" title="【404媒体】孤独星球LonelyPlanet｜孤独星球都退出中国市场了，这个星球真的越来越孤独了" width="1080" height="608" src="https://www.youtube.com/embed/JKsw7xuKOrs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/06/image-1719400664023.png" alt="file" /></p>
+          <p>孤独星球出版社（LonelyPlanet）被认为是目前世界上最大的私人旅游指南出版社。该出版社出版的《孤独星球》系列旅游书籍是第一个针对背包客撰写的旅游系列丛书，该系列收到旅游者的广泛好评。至2004年，该系列一共出版了650个主题，扩及118个国家，年销售量达到600万本。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/08/post-709255-667bfa15c9d0b.png" alt="img" /></p>
+          <p>2012年，孤独星球出版社与中国地图出版社合作，推出《孤独星球》杂志中文版，并推出相关的中文旅行指南和旅行读物。2022年，《孤独星球》杂志中文版停刊。</p>
+          <p>2024年6月26日，孤独星球在其官方微信公众号上发布文章，宣布关闭中国办公室，停止更新中国区的所有官方社交账号，并暂时不再出版新的中文旅行指南书。由于孤独星球官方给出的退出中国的原因是“过往疫情影响和公司战略调整”，引起不少热议，一些网民再度提起疫情三年中国实行的过度防疫政策的影响。</p>
+          <p>这一封《告别信》中，孤独星球这样写道：</p>
+          <blockquote>
+            <p>Lonely Planet已度过50周岁生日，位于北京东城区的孤独星球中国分公司也已陪伴了大家10个年头。在变动愈发剧烈、愈发难以预测的世界，我们曾幸运地共同拥有这一小片蓝色天地，承载着青春的记忆，同伴的情谊，以及对下一段旅程的不灭渴望。</p>
+            <p>10年来，正是这样执着的热爱支撑我们在中国取得了一些成绩。尽管不舍，在2024年盛夏的这个日子里，还是要遗憾地告诉大家，由于过往疫情影响与公司战略调整，Lonely Planet已关闭中国办公室，停止在中国的出版业务；Lonely Planet在中国的所有官方社交媒体账号，包括微信公众号、新浪微博、小红书、知乎等已停止更新。</p>
+            <p>在10年前拍摄的一段视频里，Lonely Planet联合创始人托尼·惠勒曾这样阐述旅行的意义：“因为那一刻，我就在那里（Because I was there, in the moment）。”</p>
+            <p>亲眼的目睹，亲手的抚触，亲耳的聆听，亲身的经历，这样的体验是珍贵而复杂的，无可比拟，无法磨灭。为了这样的体验，我们一次次告别、出发、重逢。</p>
+            <p>祝你旅行愉快，我们旅途再见！</p>
+          </blockquote>
+          <p>有网民感叹到：<strong>“孤独星球都退出中国市场了，这个星球真的越来越孤独了。”</strong></p>
+          <p>而有另外的网民则在这条微博下留言称：<strong>“是咱这儿更孤独了哈”。</strong></p>
+          <p>以上，是本期节目所选取的被封禁的媒体、自媒体账号。本期节目所选读的文章全文见中国数字时代网站。这些作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。</p>
+          <p>中国数字时代 CDT 致力于记录和传播中文互联网上被审查的信息，以及人们与审查对抗的努力。欢迎大家通过<a href="https://t.me/cdtmedia_bot" title="电报(Telegram)平台">电报(Telegram)平台</a> 向我们投稿，为记录和对抗中国网络审查作出你的贡献！</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2022/05/404给CDT-QR-code-1.jpg" alt="cdtimg" /></p>
+          <p>了解更多投稿信息，请阅读<a href="https://chinadigitaltimes.net/chinese/telegrambot" title="中国数字时代征稿说明">中国数字时代征稿说明</a></p>
+          <p><strong>欢迎读者访问 <a href="https://open.firstory.me/user/cdt/platforms &quot;CDT播客&quot;">CDT播客</a> 和 <a href="https://www.youtube.com/@CDTChinese/videos" title="CDT视频">CDT视频</a> 收听/观看更多相关内容。</strong></p>
+ &lt;/div&gt;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-07/404%E6%96%87%E5%BA%93-%E7%9F%A5%E7%81%BC-%E5%94%90%E5%B1%B1%E6%89%93%E4%BA%BA%E4%BA%8B%E4%BB%B6%E5%8E%9F%E5%87%BA%E8%AD%A6%E6%B0%91%E8%AD%A6%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E8%87%AA%E5%B7%B1%E9%81%AD%E5%BC%BA%E8%A1%8C%E5%AE%9A%E7%BD%AA-%E5%AE%98%E6%96%B9%E8%BF%9E%E5%A4%9C%E5%85%AC%E5%B8%83%E8%B0%83%E6%9F%A5%E7%BB%93%E8%AE%BA">
+          【404文库】知灼｜唐山打人事件原出警民警实名举报自己遭强行定罪 ：官方连夜公布调查结论
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%BB%E5%AE%8B%E5%8F%B2%E7%9A%84%E8%B5%B5%E5%A4%A7%E8%83%96-%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%AF%BB%E5%8E%86%E5%8F%B2-%E6%84%9F%E6%82%9F%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%A7%E5%AE%9E%E8%AF%9D">
+          读宋史的赵大胖｜这些年读历史，感悟到的一些大实话
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0">
+          大河报｜独家 | 唐山烧烤店打人案被判刑民警：领导当时让我照稿念……亲述未当场抓陈继志原因
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%B2%AD%E5%8D%97%E9%85%B7%E5%84%BFLingnan-queer-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%AF%B9%E5%90%8C%E6%80%A7%E6%81%8B%E6%8E%A5%E7%BA%B3%E5%BA%A6%E4%BB%8520-%E4%BD%8E%E4%BA%8E%E5%88%91%E6%BB%A1%E9%87%8A%E6%94%BE-%E8%89%BE%E6%BB%8B%E7%97%85-%E4%B9%9E%E8%AE%A8%E8%80%85">
+          岭南酷儿Lingnan queer｜中国人对同性恋接纳度仅20%，低于刑满释放、艾滋病、乞讨者
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0">
+            前一篇：大河报｜独家 | 唐山烧烤店打人案被判刑民警：领导当时让我照稿念……亲述未当场抓陈继志原因
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%80%E7%BD%91%E6%B0%91%E5%A5%A5%E8%BF%90%E4%BC%9A%E4%B9%92%E4%B9%93%E5%A5%B3%E5%8D%95%E5%86%B3%E8%B5%9B%E5%90%8E%E5%8F%91%E8%A1%A8%E8%AF%8B%E6%AF%81%E8%BF%90%E5%8A%A8%E5%91%98%E5%92%8C%E6%95%99%E7%BB%83%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%91%E6%8B%98">
+            后一篇：一网民奥运会乒乓女单决赛后发表诋毁运动员和教练言论被刑拘
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%80%E7%BD%91%E6%B0%91%E5%A5%A5%E8%BF%90%E4%BC%9A%E4%B9%92%E4%B9%93%E5%A5%B3%E5%8D%95%E5%86%B3%E8%B5%9B%E5%90%8E%E5%8F%91%E8%A1%A8%E8%AF%8B%E6%AF%81%E8%BF%90%E5%8A%A8%E5%91%98%E5%92%8C%E6%95%99%E7%BB%83%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%91%E6%8B%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%BB%E5%AE%8B%E5%8F%B2%E7%9A%84%E8%B5%B5%E5%A4%A7%E8%83%96-%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%AF%BB%E5%8E%86%E5%8F%B2-%E6%84%9F%E6%82%9F%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%A7%E5%AE%9E%E8%AF%9D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%80%E7%BD%91%E6%B0%91%E5%A5%A5%E8%BF%90%E4%BC%9A%E4%B9%92%E4%B9%93%E5%A5%B3%E5%8D%95%E5%86%B3%E8%B5%9B%E5%90%8E%E5%8F%91%E8%A1%A8%E8%AF%8B%E6%AF%81%E8%BF%90%E5%8A%A8%E5%91%98%E5%92%8C%E6%95%99%E7%BB%83%E8%A8%80%E8%AE%BA%E8%A2%AB%E5%88%91%E6%8B%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-06/%E8%AF%BB%E5%AE%8B%E5%8F%B2%E7%9A%84%E8%B5%B5%E5%A4%A7%E8%83%96-%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%AF%BB%E5%8E%86%E5%8F%B2-%E6%84%9F%E6%82%9F%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%A7%E5%AE%9E%E8%AF%9D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%A4%A7%E6%B2%B3%E6%8A%A5-%E7%8B%AC%E5%AE%B6-%E5%94%90%E5%B1%B1%E7%83%A7%E7%83%A4%E5%BA%97%E6%89%93%E4%BA%BA%E6%A1%88%E8%A2%AB%E5%88%A4%E5%88%91%E6%B0%91%E8%AD%A6-%E9%A2%86%E5%AF%BC%E5%BD%93%E6%97%B6%E8%AE%A9%E6%88%91%E7%85%A7%E7%A8%BF%E5%BF%B5-%E4%BA%B2%E8%BF%B0%E6%9C%AA%E5%BD%93%E5%9C%BA%E6%8A%93%E9%99%88%E7%BB%A7%E5%BF%97%E5%8E%9F%E5%9B%A0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

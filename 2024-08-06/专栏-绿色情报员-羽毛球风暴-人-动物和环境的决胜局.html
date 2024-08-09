@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+" />
+    <meta property="og:description" content="
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局" />
+    <meta property="twitter:title" content="专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (7503)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-badminton-ball-human-and-environment-08072024085856.html&t=%E4%B8%93%E6%A0%8F+%7C+%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E7%BE%BD%E6%AF%9B%E7%90%83%E9%A3%8E%E6%9A%B4+%E4%BA%BA%E3%80%81%E5%8A%A8%E7%89%A9%E5%92%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E5%86%B3%E8%83%9C%E5%B1%80" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-badminton-ball-human-and-environment-08072024085856.html&t=%E4%B8%93%E6%A0%8F+%7C+%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E7%BE%BD%E6%AF%9B%E7%90%83%E9%A3%8E%E6%9A%B4+%E4%BA%BA%E3%80%81%E5%8A%A8%E7%89%A9%E5%92%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E5%86%B3%E8%83%9C%E5%B1%80&d=2024-08-06&e=
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+
+
+ 巴黎奥运的男子羽球双打金牌战吸引两岸目光，球友热衷赛事，也关注羽毛球价格飞涨。   
+   路透社
+  
+  
+  巴黎奥运的男子羽球双打金牌战热议不断，来自台湾的“麟洋配”（王齐麟、李洋）击败中国的头号种子“梁王”（梁伟铿、王昶）组合，从场内台湾球迷被刁难、央视突然切断转播讯号，到赛后酸民大打口水战，小小羽毛球挑起敏感神经，其实今年以来羽毛球早就火爆冲上微博热搜，还有人调侃“快打不下去了！”。
+  全球大约有9成的天然羽毛球产自中国，一波又一波的羽毛球“通膨”和“球荒”，中国玩家格外有感。7月初，尤尼克斯、红双喜、亚狮龙、翎美、威克多等多家羽毛球品牌接连发布调涨公告，普遍上涨超过40%，甚至出现断货现象。
+   
+  一桶球是一只烤鸭
+  一颗羽毛球看似轻如鸿毛，飞涨的身价却是重如泰山，叫中国羽毛球爱好者大叹接..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-badminton-ball-human-and-environment-08072024085856.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html&text=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html&title=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html&title=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局&body=
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html&title=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局&caption=
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局&url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-08-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-badminton-ball-human-and-environment-08072024085856.html&t=%E4%B8%93%E6%A0%8F+%7C+%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E7%BE%BD%E6%AF%9B%E7%90%83%E9%A3%8E%E6%9A%B4+%E4%BA%BA%E3%80%81%E5%8A%A8%E7%89%A9%E5%92%8C%E7%8E%AF%E5%A2%83%E7%9A%84%E5%86%B3%E8%83%9C%E5%B1%80&d=2024-08-06&e=
+专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局
+——
+
+
+ 巴黎奥运的男子羽球双打金牌战吸引两岸目光，球友热衷赛事，也关注羽毛球价格飞涨。   
+   路透社
+  
+  
+  巴黎奥运的男子羽球双打金牌战热议不断，来自台湾的“麟洋配”（王齐麟、李洋）击败中国的头号种子“梁王”（梁伟铿、王昶）组合，从场内台湾球迷被刁难、央视突然切断转播讯号，到赛后酸民大打口水战，小小羽毛球挑起敏感神经，其实今年以来羽毛球早就火爆冲上微博热搜，还有人调侃“快打不下去了！”。
+  全球大约有9成的天然羽毛球产自中国，一波又一波的羽毛球“通膨”和“球荒”，中国玩家格外有感。7月初，尤尼克斯、红双喜、亚狮龙、翎美、威克多等多家羽毛球品牌接连发布调涨公告，普遍上涨超过40%，甚至出现断货现象。
+   
+  一桶球是一只烤鸭
+  一颗羽毛球看似轻如鸿毛，飞涨的身价却是重如泰山，叫中国羽毛球爱好者大叹接..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-badminton-ball-human-and-environment-08072024085856.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1722960000000-->
+<p><a href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html">专栏 | 绿色情报员：羽毛球风暴 人、动物和环境的决胜局</a>
+——</p>
+
+<div>
+<img src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/@@images/4006a42b-5875-483b-a18c-f0ef3d0da50e.jpeg" alt="专栏 | 绿色情报员：羽毛球风暴　人、动物和环境的决胜局" title="专栏 | 绿色情报员：羽毛球风暴　人、动物和环境的决胜局" height="504" width="620" referrerpolicy="no-referrer" /> <span class="lead_image_caption">巴黎奥运的男子羽球双打金牌战吸引两岸目光，球友热衷赛事，也关注羽毛球价格飞涨。</span>   <div id="zoomattribute">
+<a id="single_image" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/@@images/image/social_media" data-fancybox="" data-caption="巴黎奥运的男子羽球双打金牌战吸引两岸目光，球友热衷赛事，也关注羽毛球价格飞涨。" title="巴黎奥运的男子羽球双打金牌战吸引两岸目光，球友热衷赛事，也关注羽毛球价格飞涨。"> <img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /> </a> <span class="copyright">路透社</span>
+  </div>
+  <!-- zoomattribute -->
+  <p><span>巴黎奥运的男子羽球双打金牌战热议不断，来自台湾的</span>“<span>麟洋配</span>”<span>（王齐麟、李洋）击败中国的头号种子</span>“<span>梁王</span>”<span>（梁伟铿、王昶）组合，从场内台湾球迷被刁难、央视突然切断转播讯号，到赛后酸民大打口水战，小小羽毛球挑起敏感神经，其实今年以来羽毛球早就火爆冲上微博热搜，还有人调侃</span>“<span>快打不下去了！</span>”<span>。</span></p>
+  <p><span>全球大约有</span>9<span>成的天然羽毛球产自中国，一波又一波的羽毛球</span>“<span>通膨</span>”<span>和</span>“<span>球荒</span>”<span>，中国玩家格外有感。</span>7<span>月初，尤尼克斯、红双喜、亚狮龙、翎美、威克多等多家羽毛球品牌接连发布调涨公告，普遍上涨超过</span>40%<span>，甚至出现断货现象。</span></p>
+  <p> </p>
+  <p><strong><span>一桶球是一只烤鸭</span></strong></p>
+  <p><span>一颗羽毛球看似轻如鸿毛，飞涨的身价却是重如泰山，叫中国羽毛球爱好者大叹接不住。</span></p>
+  <p>“4<span>月份，我买一桶尤尼克斯</span>AS-9<span>的羽毛球是（人民币）</span>160<span>块，现在淘宝的官网上面要卖</span>260<span>块左右。</span>”<span>何汉一面关注奥运赛事，一面紧盯涨不停的羽毛球价格，他打了</span>4<span>年多的羽毛球，</span>“<span>今年的涨幅最大，前</span>4<span>年羽毛球价格都只是稳步上升。</span>”</p>
+  <p><span>何汉用的是业余训练球，一桶球</span>12<span>个只能打上</span>4<span>至</span>6<span>小时，</span>“<span>炸毛</span>”<span>后压根儿打不了，如今一桶球的价格相当于一只北京烤鸭，他只好从场地来撙节花费，</span>“<span>专业羽毛球馆一个小时是</span>40<span>至</span>60<span>块不等，没有空调的只要</span>20<span>块。</span>”</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="短短半年多来，中国的羽毛球价格上涨40%至60%不等，也被贴上“贵族运动”标签。（路透社）" height="799" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/2-2.jpg/@@images/01385c41-2c84-459a-bd39-9ed0be05477e.jpeg" title="2 (2).JPG" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+短短半年多来，中国的羽毛球价格上涨40%至60%不等，也被贴上“贵族运动”标签。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="短短半年多来，中国的羽毛球价格上涨40%至60%不等，也被贴上“贵族运动”标签。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/2-2.jpg" id="single_image" title="短短半年多来，中国的羽毛球价格上涨40%至60%不等，也被贴上“贵族运动”标签。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+   <p></p>
+  <p><strong>“<span>毛片荒</span>”<span>引爆</span>“<span>球荒</span>”</strong></p>
+  <p><span>羽毛球的毛片来自鹅和鸭子，从生产端来看，行动亚洲</span>ACTAsia<span>的亚洲区代表龙缘之博士分析，中国的鸭和鹅养殖量减少、出栏量下降，毛片原料供应跟着短缺，这背后牵涉几个原因，首先是饲料价格上涨，鸭、鹅的主要饲料成分是玉米，随着养殖成本的提高，鸭农和鹅农的饲养意愿和养殖数量就会降低，另外，由于禽流感大量的变异病毒出现，集约化养殖有利于病毒传播，这也对养殖户造成很大的损失。</span></p>
+  <p><span>运动员出身的台湾资深体育用品业者许世宗表示，除了禽流感造成毛片紧缺外，安徽是全世界的羽毛球制造重镇，今年入夏以来当地暴雨成灾，洞庭湖决堤受灾严重，羽毛球的产能受到波及，目前全球的羽毛球价格都上涨，接下来可能会继续再涨。</span></p>
+  <p><span>极端天气也直接冲击养殖场，</span>“<span>鸭和鹅在幼雏时期需要保暖，温度大约在</span>30<span>至</span>34℃<span>，到了第三周，牠们适合的温度大概是</span>24℃<span>，甚至更低，因为鸭和鹅很怕热。</span>”<span>龙缘之说明，</span>“<span>在全球暖化的情况下，许多养殖场缺乏适当遮蔽和水池不足，无法让牠们在里面游憩和降温，牠们的体质会变得相当虚弱，鸭子的嘴巴常都是张开的，这表示牠们已经很不舒服了。</span>”</p>
+  <p><span>根据联合国粮农组织（</span>FAO<span>）的统计数据，全球</span>9<span>成的肉鸭和肉鹅产地集中在亚洲，中国是最大的养殖国。近年来，破纪录的高温热浪持续侵袭亚洲，今年夏天中国南方酷热难耐，多地气温动辄飙破</span>40℃<span>，地处温带的韩国也处于</span>“<span>烤箱模式</span>”<span>，韩国行政安全部</span>8<span>月</span>6<span>日发布报告，高温炎热天气造成逾</span>30<span>万畜禽死亡，当中家禽就占了</span>27.7<span>万只，养殖场损失持续增加。</span></p>
+  <p>此外，中国的鸭、鹅产量下滑和消费市场变化也脱不了关系，龙缘之指出，这几年由于猪肉价格下降，影响了民众消费肉品的选择，同时植物性来源蛋白质饮食比例逐渐增加，对鸭肉和鹅肉的需求量降低，再加上客观的养殖条件不佳，所以鸭和鹅的出栏量下降，肉品和羽毛的供应都明显减少。</p>
+  <p><span></span></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="这几年中国的鸭和鹅出栏量下降，羽毛球的毛片原料跟着短缺。（路透社）" height="763" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/3-1.jpg/@@images/e8df3305-67bc-47b6-a984-f3e09d43a501.jpeg" title="3 (1).JPG" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+这几年中国的鸭和鹅出栏量下降，羽毛球的毛片原料跟着短缺。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="这几年中国的鸭和鹅出栏量下降，羽毛球的毛片原料跟着短缺。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/3-1.jpg" id="single_image" title="这几年中国的鸭和鹅出栏量下降，羽毛球的毛片原料跟着短缺。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p>“<span>根据《羊城晚报》的报道，中国的鸭鹅产量在</span>2019<span>年接近巅峰，鸭的出栏量达到</span>48.78<span>亿只，鹅的出栏量达到</span>6.34<span>亿只，随后新冠疫情爆发，</span>2020<span>年鸭鹅产量开始下跌。</span>”<span>龙缘之探究数字波动，</span>“<span>今年</span>2<span>月官方公布的统计显示，</span>2023<span>年鸭的出栏量是</span>42.18<span>亿只，鹅的出栏量是</span>5.15<span>亿只，两者比起</span>2019<span>年都下降许多。</span>”</p>
+  <p><span>从消费端来看，中国羽球运动蓬勃发展和巴黎奥运也驱动了市场需求。龙缘之表示，羽球在中国是一个很普遍的运动，现在更多时候看到的是民众喜欢打羽球，但是愈来愈多民众抱怨打不起羽球，因为羽毛球本身是耗材，购买成本愈来愈高。</span></p>
+  <p> </p>
+  <p><strong><span>一颗羽毛球要几只鸭鹅？</span></strong></p>
+  <p><span>羽毛球的毛片消耗量相当惊人，原料取自鹅、鸭翅膀上的大翅羽（刀翎），而且由于左右翼的羽毛生长方向不同，必须使用同一侧的毛片制作羽毛球，才能达到最佳的平衡和稳定度。</span></p>
+  <p><span>许世宗指出，一颗羽毛球有</span>16<span>支羽毛，至少要用</span>4<span>只鹅才能做出一颗比赛球，以专业赛事来说，一两分钟就会更换一颗球，用球量相当大。</span></p>
+  <p><span>更有甚者，不是所有的鸭、鹅的羽毛都能制作羽毛球。龙缘之说，一般能够符合羽毛球毛片需求的鸭子，生长周期必须达到</span>60<span>天，但是现在市场上很多肉鸭不到</span>60<span>天就送去屠宰作为肉用，所以符合羽毛球需求的鸭鹅数量是有限的，此外，很多鸭鹅的最大根羽毛也无法作为羽毛球毛片，通常拿来用作鹅毛笔或鸭毛笔，所以一只鹅或鸭可能只有不到</span>7<span>支羽毛适合制作羽毛球。</span></p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="一颗羽毛球有16支羽毛，一颗比赛球起码要用上4只鹅。（路透社）" height="766" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/4-1.jpg/@@images/75d8c3bd-880d-49c9-834d-16bbc87db609.jpeg" title="4 (1).JPG" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+一颗羽毛球有16支羽毛，一颗比赛球起码要用上4只鹅。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="一颗羽毛球有16支羽毛，一颗比赛球起码要用上4只鹅。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/4-1.jpg" id="single_image" title="一颗羽毛球有16支羽毛，一颗比赛球起码要用上4只鹅。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+   <p></p>
+  <p><strong><span>一场没有赢家的赛局</span></strong></p>
+  <p><span>众人目光聚焦在羽毛球价格飙涨和奥运胜败之际，小小羽毛球背后是一场人、动物和环境的拉锯战，过程中到底谁赢了、谁输了，各种议题陆续浮上台面。</span></p>
+  <p><span>近年来，全球禽流感疫情反复升温，联合国粮农组织</span>7<span>月</span>25<span>日示警，亚太地区人类和动物感染禽流感案例增加，情况令人担忧。这半年多来，安徽陆续传出感染</span>H3N2<span>与</span>H10N5<span>混合病例，以及感染</span>H5N6<span>个案，两位患者发病前都有活禽接触史，而且发病后快速死亡。</span></p>
+  <p><span>龙缘之指出，羽毛球的毛片主要来自集约化养殖场，为了阻断候鸟传播禽流感风险，许多养殖场将过去开放式饲养改为室内或封闭式禽舍，不过，很多证据显示不可能完全阻绝空气，以及空气中的病毒传播，而且集约化养殖场本质上是潜在的病毒库，禽流感疫情不但直接影响动物和养殖户生计，养殖场劳工也暴露在高风险的环境中，因为人类感染禽流感主要是透过接触染病的禽鸟（活鸟或死鸟）或是牠们的粪便，养殖场所在的农村地区常有长者、儿童和长期的病患，一旦感染禽流感，他们也较容易出现支气管炎、肺炎等并发症。</span></p>
+  <p><span>不只是禽流感风暴，龙缘之提醒，这些集约化的鸭鹅养殖场往往因为超量抽取地下水，使得土地下陷、海水倒灌，有些地区甚至出现地层和房屋下陷而无法居住；另外，养殖场动物排放的粪尿、用水和气味也带来了污染问题，运输和处理过程同样暗藏隐患，包括从养殖场到屠宰场、再到加工厂，这些羽毛和羽绒浸泡过粪便和血水，各种环境污染和公共卫生危机令人堪忧。</span></p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="近年全球不断发生禽流感，中国羽球产业也多次受到波及，甚至因疫情被其他国家禁止进口。（路透社）" height="765" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/5-1.jpg/@@images/c160aec5-0554-443f-85c3-064f3faad9d9.jpeg" title="5 (1).JPG" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+近年全球不断发生禽流感，中国羽球产业也多次受到波及，甚至因疫情被其他国家禁止进口。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="近年全球不断发生禽流感，中国羽球产业也多次受到波及，甚至因疫情被其他国家禁止进口。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/5-1.jpg" id="single_image" title="近年全球不断发生禽流感，中国羽球产业也多次受到波及，甚至因疫情被其他国家禁止进口。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p>“<span>我的动物保护的启蒙者就是一只鸭子。</span>”<span>龙缘之聊起小时候饲养一只公鸭</span>bibi<span>，牠把她当作鸭妈妈紧跟在身旁，</span>“<span>我看着牠如何去整理羽毛，把油脂涂抹在身上，变成防水涂层，牠的大羽毛数量很少，大概一生中不超过</span>10<span>根。</span>”<span>她也观察到鸭子的五感相当敏锐，</span>“<span>牠听到我爸爸的摩托车引擎声，就会开心地跑到门口去迎接他。</span>”</p>
+  <p><span>然而，从养殖场到屠宰场往往漠视动物福利，龙缘之说，鸭鹅是水禽动物，牠们不可能离水生活，集约化养殖场在利润和数量考量下，大多没有提供足够的水池，动物福利状况普遍不佳，此外，屠宰过程是否有人道处置，或者是不是在牠们未断气前就活拔毛，由于缺乏监管且没有罚则，这些情况是一定存在的。</span></p>
+  <p> </p>
+  <p><strong><span>羽球革命缓步振翅</span></strong></p>
+  <p><span>这一波羽毛球涨价风暴下，有些球友开始改变对鸭毛和鹅毛的传统偏执，改用合成材料的羽毛球。</span></p>
+  <p><span>为了省荷包，何汉改打塑料球后发现，</span>“<span>塑料球很耐打，</span>3<span>颗</span>80<span>块，可以打上</span>6<span>个小时左右。</span>”<span>中国社群平台也出现羽球产业变革的声浪和讨论：</span>“<span>一个行业不能故步自封</span>”“<span>人造球是大势所趋</span>”“<span>改革成果未必能符合预期效果，但不去尝试就意味着停滞。</span>”“<span>比赛真正靠的还是技术实力，跟用球没有多大关系。</span>”</p>
+  <p><span>事实上，</span>2020<span>年世界羽球联盟（</span>BWF<span>）已经批准国际羽球赛事可采用人造羽球，以减少资源浪费。龙缘之认为，相较天然羽毛球，人造羽球更具有环境和经济优势，产品品质和产量也可以更稳定，然而当前需要更多的活动和知识普及，让更多人接受非羽毛的羽毛球。</span></p>
+  <p><span></span></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="看天吃饭的天然羽毛球价格波动大，还卷入环境污染和公共卫生问题，羽球产业的变革呼声四起。（路透社）" height="754" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/6-1.jpg/@@images/721e8750-f83b-4f6f-b117-0ef3ebafc7c2.jpeg" title="6 (1).JPG" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+看天吃饭的天然羽毛球价格波动大，还卷入环境污染和公共卫生问题，羽球产业的变革呼声四起。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="看天吃饭的天然羽毛球价格波动大，还卷入环境污染和公共卫生问题，羽球产业的变革呼声四起。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-badminton-ball-human-and-environment-08072024085856.html/6-1.jpg" id="single_image" title="看天吃饭的天然羽毛球价格波动大，还卷入环境污染和公共卫生问题，羽球产业的变革呼声四起。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><span>她以中国国乐的去动物化为例，许多传统乐器例如二胡等会使用珍稀动物皮革，音乐家在出国表演时，很多时候会被海关拦下，因为这些动物制品的来源合法性受到质疑，</span>10<span>多年前人造皮国乐乐器的声浪开始出现，甚至主要的协会和音乐家还发起全部使用人造皮国乐乐器的音乐会，让更多音乐家和消费者去体验和接受这样的产品。</span></p>
+  <p>“<span>目前人造羽毛球还没有普及，但是未来一定会有类似的活动，我很希望未来有很多受欢迎的运动员能够带头起到一个效果，然后有更多的厂商投入。</span>”<span>龙缘之期许羽坛翻转局面，</span>“<span>从这一波毛片荒，大家要意识到人、动物和环境所付出的代价。</span>”</p>
+  <p>撰稿、制作和主持：麦小田　　责编：许书婷</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%8D%8E%E8%A3%94%E4%B9%92%E4%B9%93%E7%90%83%E9%80%89%E6%89%8B%E8%A2%81%E5%98%89%E6%A5%A0-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%B2%A1%E6%9C%89%E6%9C%BA%E4%BC%9A-%E5%88%B0%E6%B3%95%E5%9B%BD%E5%87%BA%E6%88%98%E5%A5%A5%E8%BF%90">
+          华裔乒乓球选手袁嘉楠：在中国没有机会 到法国出战奥运
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E5%88%86%E6%9E%90%E7%BE%8E%E5%9B%BD%E8%BF%90%E5%8A%A8%E5%91%98-%E7%B4%AB%E8%84%B8-%E5%8E%9F%E5%9B%A0-%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%91%98%E9%81%AD%E5%BD%93%E5%B1%80%E8%B0%83%E6%9F%A5">
+          分析美国运动员"紫脸"原因 中国官员遭当局调查
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9">
+          专栏 | 军事无禁区：强化边海空防－看中国的战略收缩
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-08-06</time>
+        <a href="https://nodebe4.github.io/waimei/2024-08-06/%E9%95%BF%E6%9C%9F%E5%85%B3%E6%B3%A8%E6%96%B0%E7%96%86-%E5%93%88%E8%90%A8%E5%85%8B%E6%B0%91%E9%97%B4%E7%BB%84%E7%BB%87%E8%B4%9F%E8%B4%A3%E4%BA%BA%E8%A2%AB%E6%8B%9810%E5%A4%A9">
+          长期关注新疆 哈萨克民间组织负责人被拘10天
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9">
+            前一篇：专栏 | 军事无禁区：强化边海空防－看中国的战略收缩
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-08-06/AMD-%E7%A7%BB%E9%99%A4%E5%85%B6%E8%B5%84%E5%8A%A9%E7%9A%84-CUDA-%E5%AE%9E%E7%8E%B0-ZLUDA">
+            后一篇：AMD 移除其资助的 CUDA 实现 ZLUDA
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/AMD-%E7%A7%BB%E9%99%A4%E5%85%B6%E8%B5%84%E5%8A%A9%E7%9A%84-CUDA-%E5%AE%9E%E7%8E%B0-ZLUDA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E5%88%86%E6%9E%90%E7%BE%8E%E5%9B%BD%E8%BF%90%E5%8A%A8%E5%91%98-%E7%B4%AB%E8%84%B8-%E5%8E%9F%E5%9B%A0-%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%91%98%E9%81%AD%E5%BD%93%E5%B1%80%E8%B0%83%E6%9F%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-08-06/AMD-%E7%A7%BB%E9%99%A4%E5%85%B6%E8%B5%84%E5%8A%A9%E7%9A%84-CUDA-%E5%AE%9E%E7%8E%B0-ZLUDA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-08-06/%E5%88%86%E6%9E%90%E7%BE%8E%E5%9B%BD%E8%BF%90%E5%8A%A8%E5%91%98-%E7%B4%AB%E8%84%B8-%E5%8E%9F%E5%9B%A0-%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%91%98%E9%81%AD%E5%BD%93%E5%B1%80%E8%B0%83%E6%9F%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-08-06/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E5%BC%BA%E5%8C%96%E8%BE%B9%E6%B5%B7%E7%A9%BA%E9%98%B2-%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%88%98%E7%95%A5%E6%94%B6%E7%BC%A9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
