@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>国庆之际 中国解放军“剑指”南海 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+国庆之际 中国解放军“剑指”南海
+——
+" />
+    <meta property="og:description" content="
+国庆之际 中国解放军“剑指”南海
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="国庆之际 中国解放军“剑指”南海" />
+    <meta property="twitter:title" content="国庆之际 中国解放军“剑指”南海" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5331)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%259B%25BD%25E5%25BA%2586%25E4%25B9%258B%25E9%2599%2585%2520%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A7%25A3%25E6%2594%25BE%25E5%2586%259B%25E2%2580%259C%25E5%2589%2591%25E6%258C%2587%25E2%2580%259D%25E5%258D%2597%25E6%25B5%25B7%2Fa-70373409&t=%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85+%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%259B%25BD%25E5%25BA%2586%25E4%25B9%258B%25E9%2599%2585%2520%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A7%25A3%25E6%2594%25BE%25E5%2586%259B%25E2%2580%259C%25E5%2589%2591%25E6%258C%2587%25E2%2580%259D%25E5%258D%2597%25E6%25B5%25B7%2Fa-70373409&t=%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85+%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7&d=2024-10-01&e=
+国庆之际 中国解放军“剑指”南海
+——
+
+
+  
+2024-10-01T09:54:11.610Z
+  
+  
+中国官方并没有就本轮南海军演发布任何照片，也没有透露具体是哪些舰船参演。图为中国海军“南昌舰”2019年资料图
+  
+  （德国之声中文网）中国人民解放军（PLA）南部战区于10月1日中国国庆节当天发布消息称：根据年度军事训练任务安排，9月30日至10月1日，中国人民解放军南部战区组织舰艇编队位南海有关海域进行战备巡航，旨在提高联合作战能力，坚决维护南海地区和平稳定。从中国官方媒体的报道来看，军方最新的动作是延续了上周末在该地区罕见的军事演习。
+  南海是全球最繁忙的航道之一，中国几乎对整个南海提有主权诉求，而文莱、马来西亚、菲律宾和越南等国家对此持有不同的主张。2016年，海牙常设仲裁庭裁定中国的主张不符合国际法，但中国政府拒绝承认该裁决。
+  就在此次战备巡逻之前，菲..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%259B%25BD%25E5%25BA%2586%25E4%25B9%258B%25E9%2599%2585%2520%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A7%25A3%25E6%2594%25BE%25E5%2586%259B%25E2%2580%259C%25E5%2589%2591%25E6%258C%2587%25E2%2580%259D%25E5%258D%2597%25E6%25B5%25B7%2Fa-70373409" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409&text=国庆之际 中国解放军“剑指”南海&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409&title=国庆之际 中国解放军“剑指”南海" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409&title=国庆之际 中国解放军“剑指”南海" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=国庆之际 中国解放军“剑指”南海&body=
+国庆之际 中国解放军“剑指”南海
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409&title=国庆之际 中国解放军“剑指”南海&caption=
+国庆之际 中国解放军“剑指”南海
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=国庆之际 中国解放军“剑指”南海&url=https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>国庆之际 中国解放军“剑指”南海</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%259B%25BD%25E5%25BA%2586%25E4%25B9%258B%25E9%2599%2585%2520%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A7%25A3%25E6%2594%25BE%25E5%2586%259B%25E2%2580%259C%25E5%2589%2591%25E6%258C%2587%25E2%2580%259D%25E5%258D%2597%25E6%25B5%25B7%2Fa-70373409&t=%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85+%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7&d=2024-10-01&e=
+国庆之际 中国解放军“剑指”南海
+——
+
+
+  
+2024-10-01T09:54:11.610Z
+  
+  
+中国官方并没有就本轮南海军演发布任何照片，也没有透露具体是哪些舰船参演。图为中国海军“南昌舰”2019年资料图
+  
+  （德国之声中文网）中国人民解放军（PLA）南部战区于10月1日中国国庆节当天发布消息称：根据年度军事训练任务安排，9月30日至10月1日，中国人民解放军南部战区组织舰艇编队位南海有关海域进行战备巡航，旨在提高联合作战能力，坚决维护南海地区和平稳定。从中国官方媒体的报道来看，军方最新的动作是延续了上周末在该地区罕见的军事演习。
+  南海是全球最繁忙的航道之一，中国几乎对整个南海提有主权诉求，而文莱、马来西亚、菲律宾和越南等国家对此持有不同的主张。2016年，海牙常设仲裁庭裁定中国的主张不符合国际法，但中国政府拒绝承认该裁决。
+  就在此次战备巡逻之前，菲..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%259B%25BD%25E5%25BA%2586%25E4%25B9%258B%25E9%2599%2585%2520%25E4%25B8%25AD%25E5%259B%25BD%25E8%25A7%25A3%25E6%2594%25BE%25E5%2586%259B%25E2%2580%259C%25E5%2589%2591%25E6%258C%2587%25E2%2580%259D%25E5%258D%2597%25E6%25B5%25B7%2Fa-70373409" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1727777824000-->
+<p><a href="https://www.dw.com/zh/%E5%9B%BD%E5%BA%86%E4%B9%8B%E9%99%85%20%E4%B8%AD%E5%9B%BD%E8%A7%A3%E6%94%BE%E5%86%9B%E2%80%9C%E5%89%91%E6%8C%87%E2%80%9D%E5%8D%97%E6%B5%B7/a-70373409">国庆之际 中国解放军“剑指”南海</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2024-10-01T09:54:11.610Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/62151498_303.jpg" width="100%" />  <div>
+<small style="color: #999;">中国官方并没有就本轮南海军演发布任何照片，也没有透露具体是哪些舰船参演。图为中国海军“南昌舰”2019年资料图</small>
+  </div>
+  <p>（德国之声中文网）中国人民解放军（PLA）南部战区于10月1日中国国庆节当天发布消息称：根据年度军事训练任务安排，9月30日至10月1日，中国人民解放军南部战区组织舰艇编队位南海有关海域进行战备巡航，旨在提高联合作战能力，坚决维护南海地区和平稳定。从中国官方媒体的报道来看，军方最新的动作是延续了上周末在该地区罕见的军事演习。</p>
+  <p>南海是全球最繁忙的航道之一，中国几乎对整个南海提有主权诉求，而文莱、马来西亚、菲律宾和越南等国家对此持有不同的主张。2016年，海牙常设仲裁庭裁定中国的主张不符合国际法，但中国政府拒绝承认该裁决。</p>
+  <p>就在此次战备巡逻之前，<a href="https://api.dw.com/api/detail/article/70309307" rel="ArticleRef">菲律宾</a>与澳大利亚、日本、新西兰及美国宣布将在菲律宾专属经济区内举行联合海上活动。这引发了中国的强烈反应，上周六，中国海空军在有争议的斯卡伯勒浅滩（中国称黄岩岛）附近进行演习，该区域距离菲律宾主岛吕宋岛仅约200公里，处于菲律宾的专属经济区内。</p>
+  <p>美国国务卿布林肯在与中国高级外交官王毅的近期会晤中，<a href="https://api.dw.com/api/detail/article/69993593" rel="ArticleRef">曾就中国在南海的"危险且破坏稳定的行动"表达关切</a>。布林肯此前还指责中国在<span data-id="19377688" data-type="AUTO_TOPIC" title="Automatische Themenseite">南海</span>的强势部署，包括利用海警和疑似海上民兵的渔船来扩大其海上势力。</p>
+  <h3 id="section">相关图集：中国南海“微整形”工程 效果清晰可见</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18558429_303.jpg" width="100%" /><strong>接近完工</strong>：2016年6月28日拍摄的卫星图像显示，中国在存在主权争议的永暑礁（Fiery Cross Riff）修建的一条3000米长的飞机跑道修建已经进入尾声。理论上，该跑道足以满足空客A380机型的起降。与7个月之前的卫星图像比较，中国在南中国海人工岛屿的建造速度惊人。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18270381_303.jpg" width="100%" /><strong>岛上设施</strong>：这张卫星图片是2015年11月拍摄的，人们可以看到岛上正在进行建造工程。据悉，岛屿上已经设有一个直升机停机坪，一个300米长的码头，还有面积大到足以停靠军队油轮的海港。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18558433_303.jpg" width="100%" /><strong>赤瓜礁</strong>：中国在争议海域填的首个海造地工程之一就是在赤瓜礁（South Johnson Reef）进行的。赤瓜礁由中国实际控制。这张最近拍摄的图片可以看到，岛上北端一座雷达塔的修建接近完工。华盛顿战略与国际研究中心下属机构亚洲海事透明倡议（AMTI）表示，岛屿中心位置可能修建了一座大型的多层军事基地。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18389801_303.jpg" width="100%" /><strong>军事基地？</strong>：从2016年年初，在斯普拉特利群岛（Spratly Islands，中国称为南沙群岛)之内的美济礁（Mischief Reef）附近，中国也开始大兴土木。专家推测，美济礁未来可能会成为中方的海军军事基地。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17993844_303.jpg" width="100%" /><strong>飞速建设</strong>：南熏礁（Gaven-Riff）的人工岛工程始于2014年，施工速度很快，已经填海造出11.4万平方米土地。对比2014年3月的左图和2014年8月的右图，一座人工新岛赫然成形。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18270389_303.jpg" width="100%" /><strong>防空塔</strong>：根据亚洲海事透明倡议，自2003年起，中国就在南熏礁部署了军力。专家们表示，岛上主广场上似乎建立一个防空塔。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18270391_303.jpg" width="100%" /><strong>如何造岛</strong>：扩张岛礁的基本流程是从海底疏浚砂石，倒在浅滩上，砂会聚集至高水位线以上，之前岸床或者岛礁的位置就被隐藏起来。然后用推土机等工具将砂子弄平。建造完想要的土地面积后，岛屿周边工人要建立壁垒，防止侵蚀和风暴潮。之后就开始建造各种设施。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15847554_303.jpg" width="100%" /><strong>“沙土长城”</strong>：中国对南中国海上约90%的区域提出领土要求，而菲律宾、越南、马来西亚、文莱等国也对这块资源丰富的水域提出主权要求。南中国海是重要的世界贸易航运通道，每年都有价值约5万亿美元的货物经由该海域运往全球各地。中国的填海造地被美国军方称为“沙土长城”工程，美国对建造人工岛屿的意图表示严重关切。北京认为，其对南中国海拥有“历史性权利”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18491654_303.jpg" width="100%" /><strong>美国的担忧</strong>：华盛顿担心，中国在南中国海地区军事层面的努力会削弱美国在太平洋地区的海军和经济力量。美国考虑派遣美国军机和军舰进入南中国海新造岛礁12海里内海域。华盛顿一再向北京和其他在争议海域进行填海的国家结束工程，但北京对此表示拒绝。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17081533_303.jpg" width="100%" /><strong>生态影响</strong>：菲律宾政府表示，中国的人工造岛活动对南中国海的“生物多样性和生态平衡造成不可逆转的广泛破坏”。并且，珊瑚礁系统因此遭到破坏，导致周边沿海国家每年蒙受1亿美元的经济损失。
+  </div>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+  <p> </p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-01/%E4%BB%A5%E8%89%B2%E5%88%97%E5%AF%B9%E9%BB%8E%E5%B7%B4%E5%AB%A9%E5%8D%97%E9%83%A8%E5%8F%91%E8%B5%B7%E5%9C%B0%E9%9D%A2%E6%94%BB%E5%8A%BF-%E7%99%BE%E4%B8%87%E4%BA%BA%E6%B5%81%E7%A6%BB%E5%A4%B1%E6%89%80">
+          以色列对黎巴嫩南部发起地面攻势  百万人流离失所
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-01/%E4%B8%AD%E5%9B%BD%E8%82%A1%E5%B8%82%E7%8B%82%E9%A3%99-%E7%9F%AD%E6%9C%9F%E6%8A%95%E6%9C%BA%E8%BF%98%E6%98%AF%E9%95%BF%E6%9C%9F%E5%88%A9%E5%A5%BD">
+          中国股市狂飙：短期投机还是长期利好？ 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-01/%E6%8B%9C%E7%99%BB%E5%A4%A7%E6%89%8B%E7%AD%86%E5%B0%8D%E5%8F%B0%E8%BB%8D%E6%8F%B4-%E5%88%86%E6%9E%90-%E7%82%BA%E7%99%BD%E5%AE%AE%E6%98%93%E4%B8%BB%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA">
+          拜登大手筆對台軍援 分析：為白宮易主分散風險
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-30/%E4%B8%AD%E5%85%B1%E5%BB%BA%E6%94%BF75%E9%80%B1%E5%B9%B4-%E7%BF%92%E8%BF%91%E5%B9%B3-%E5%A0%85%E6%8C%81%E9%BB%A8%E7%B8%BD%E6%94%AC%E5%85%A8%E5%B1%80">
+          中共建政75週年 習近平：堅持黨總攬全局
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-01/%E7%BE%8E%E5%86%9B%E6%8A%A8%E5%87%BB%E4%BF%84%E7%BD%97%E6%96%AF%E6%88%98%E6%9C%BA%E5%9C%A8%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E9%99%84%E8%BF%91%E7%9A%84-%E4%B8%8D%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C">
+            前一篇：美军抨击俄罗斯战机在阿拉斯加附近的“不安全操作”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-01/%E7%9F%B3%E7%A0%B4%E8%8C%82%E8%8E%B7%E9%80%89%E4%B8%BA%E6%97%A5%E6%9C%AC%E6%96%B0%E9%A6%96%E7%9B%B8-10%E6%9C%88%E5%BA%95%E6%8F%90%E5%89%8D%E4%B8%BE%E5%8A%9E%E5%9B%BD%E4%BC%9A%E5%A4%A7%E9%80%89">
+            后一篇：石破茂获选为日本新首相 10月底提前举办国会大选
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-01/%E7%BE%8E%E5%86%9B%E6%8A%A8%E5%87%BB%E4%BF%84%E7%BD%97%E6%96%AF%E6%88%98%E6%9C%BA%E5%9C%A8%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E9%99%84%E8%BF%91%E7%9A%84-%E4%B8%8D%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-01/%E7%9F%B3%E7%A0%B4%E8%8C%82%E8%8E%B7%E9%80%89%E4%B8%BA%E6%97%A5%E6%9C%AC%E6%96%B0%E9%A6%96%E7%9B%B8-10%E6%9C%88%E5%BA%95%E6%8F%90%E5%89%8D%E4%B8%BE%E5%8A%9E%E5%9B%BD%E4%BC%9A%E5%A4%A7%E9%80%89'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-01/%E4%B8%AD%E5%9B%BD%E8%82%A1%E5%B8%82%E7%8B%82%E9%A3%99-%E7%9F%AD%E6%9C%9F%E6%8A%95%E6%9C%BA%E8%BF%98%E6%98%AF%E9%95%BF%E6%9C%9F%E5%88%A9%E5%A5%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-01/%E6%8B%9C%E7%99%BB%E5%A4%A7%E6%89%8B%E7%AD%86%E5%B0%8D%E5%8F%B0%E8%BB%8D%E6%8F%B4-%E5%88%86%E6%9E%90-%E7%82%BA%E7%99%BD%E5%AE%AE%E6%98%93%E4%B8%BB%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-01/%E7%BE%8E%E5%86%9B%E6%8A%A8%E5%87%BB%E4%BF%84%E7%BD%97%E6%96%AF%E6%88%98%E6%9C%BA%E5%9C%A8%E9%98%BF%E6%8B%89%E6%96%AF%E5%8A%A0%E9%99%84%E8%BF%91%E7%9A%84-%E4%B8%8D%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-01/%E7%9F%B3%E7%A0%B4%E8%8C%82%E8%8E%B7%E9%80%89%E4%B8%BA%E6%97%A5%E6%9C%AC%E6%96%B0%E9%A6%96%E7%9B%B8-10%E6%9C%88%E5%BA%95%E6%8F%90%E5%89%8D%E4%B8%BE%E5%8A%9E%E5%9B%BD%E4%BC%9A%E5%A4%A7%E9%80%89">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-01/%E4%B8%AD%E5%9B%BD%E8%82%A1%E5%B8%82%E7%8B%82%E9%A3%99-%E7%9F%AD%E6%9C%9F%E6%8A%95%E6%9C%BA%E8%BF%98%E6%98%AF%E9%95%BF%E6%9C%9F%E5%88%A9%E5%A5%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-01/%E6%8B%9C%E7%99%BB%E5%A4%A7%E6%89%8B%E7%AD%86%E5%B0%8D%E5%8F%B0%E8%BB%8D%E6%8F%B4-%E5%88%86%E6%9E%90-%E7%82%BA%E7%99%BD%E5%AE%AE%E6%98%93%E4%B8%BB%E5%88%86%E6%95%A3%E9%A2%A8%E9%9A%AA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

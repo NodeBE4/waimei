@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>修明札记｜司马南代表真实民意吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+修明札记｜司马南代表真实民意吗？
+——
+" />
+    <meta property="og:description" content="
+修明札记｜司马南代表真实民意吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="修明札记｜司马南代表真实民意吗？" />
+    <meta property="twitter:title" content="修明札记｜司马南代表真实民意吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5331)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711852.html&t=%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0%EF%BD%9C%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711852.html&t=%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0%EF%BD%9C%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97%EF%BC%9F&d=2024-09-29&e=
+修明札记｜司马南代表真实民意吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：司马南代表真实民意吗？作者：修明札记发表日期：2024.9.27来源：修明札记主题归类：司马南CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这几年，很多读者普遍担心国内的民粹主义，尤其是近几个月，出了多起袭击外国人的事件，让人非常担忧。今天我就给大家分析下这个问题，我的结论是中国的民粹情绪并没有很多人想的那样严重，网上的声音并不代表实际情况。
+  就拿司马南来说，司马南是全网知名的民粹大V，在抖音有3700多万粉丝，头条有1638万粉丝，2021年，司马南炮轰柳传志，其视频在全网获得的流量更是突破千万，引爆了舆论。
+  因为司马南声势浩大，很多中产朋友想..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711852.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/711852.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/711852.html&text=修明札记｜司马南代表真实民意吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/711852.html&title=修明札记｜司马南代表真实民意吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/711852.html&title=修明札记｜司马南代表真实民意吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=修明札记｜司马南代表真实民意吗？&body=
+修明札记｜司马南代表真实民意吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/711852.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/711852.html&title=修明札记｜司马南代表真实民意吗？&caption=
+修明札记｜司马南代表真实民意吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=修明札记｜司马南代表真实民意吗？&url=https://chinadigitaltimes.net/chinese/711852.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>修明札记｜司马南代表真实民意吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-09-29
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/711852.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711852.html&t=%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0%EF%BD%9C%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97%EF%BC%9F&d=2024-09-29&e=
+修明札记｜司马南代表真实民意吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：司马南代表真实民意吗？作者：修明札记发表日期：2024.9.27来源：修明札记主题归类：司马南CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这几年，很多读者普遍担心国内的民粹主义，尤其是近几个月，出了多起袭击外国人的事件，让人非常担忧。今天我就给大家分析下这个问题，我的结论是中国的民粹情绪并没有很多人想的那样严重，网上的声音并不代表实际情况。
+  就拿司马南来说，司马南是全网知名的民粹大V，在抖音有3700多万粉丝，头条有1638万粉丝，2021年，司马南炮轰柳传志，其视频在全网获得的流量更是突破千万，引爆了舆论。
+  因为司马南声势浩大，很多中产朋友想..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711852.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1727663599000-->
+<p><a href="https://chinadigitaltimes.net/chinese/711852.html">修明札记｜司马南代表真实民意吗？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/711852.html" title="修明札记｜司马南代表真实民意吗？" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/09/640-1-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>司马南代表真实民意吗？<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/修明札记" target="_blank">修明札记</a><br /><strong>发表日期：</strong>2024.9.27<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/Lati0sABpmYQj2Qr9dkk0w" target="_blank">修明札记</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/司马南" target="_blank">司马南</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>这几年，很多读者普遍担心国内的民粹主义，尤其是近几个月，出了多起袭击外国人的事件，让人非常担忧。今天我就给大家分析下这个问题，我的结论是中国的民粹情绪并没有很多人想的那样严重，网上的声音并不代表实际情况。</p>
+  <p>就拿司马南来说，司马南是全网知名的民粹大V，在抖音有3700多万粉丝，头条有1638万粉丝，2021年，司马南炮轰柳传志，其视频在全网获得的流量更是突破千万，引爆了舆论。</p>
+  <p>因为司马南声势浩大，很多中产朋友想当然的认为司马南代表了下沉市场，代表了中国最广大人民的呼声，那些反对司马南的声音只是社会中的少数。</p>
+  <p>但是今年发生的两件事，实在是打破了这一预期。</p>
+  <p>首先是司马南主演的电影《重山之外》，上映三天累计票房只有58.1万元，一个几千万粉丝的大V，居然只有这么点粉丝买票，实在让人大跌眼镜，看来司马南的粉丝并不愿为自己的偶像付钱。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/f/2/f22f933c/a4fbd850.jpeg" alt="image" /></p>
+  <p>一星期前，司马南扮成李白，为西凤酒旗下品牌“国花瓷”宣扬文化，结果被群嘲为史上“最丑李白”和“最猥琐李白”。全网只见嘲讽司马南的声音，几乎不见为他辩解的声音。</p>
+  <p>这两件事证明了两点，一是司马南的粉丝质量非常低。二是反感司马南的人可能比支持的人更多。</p>
+  <p>司马南的粉丝质量无疑是很差的，人们看他的文章，是叫好的多，出力的少，大家看他的文章，只是图一乐，只是借司马南这个嘴发泄心中的不满，并没有把司马南本人当回事。</p>
+  <p>其实，和那些明星小鲜肉比就能看到差距，比如TFboys，多少粉丝愿意为他们花钱，愿意千里迢迢参加他们的演唱会，三个人上大学，还有粉丝亲自整理了思政笔记给他们寄过去，这虔诚度，可比司马南的粉丝强多了。</p>
+  <p>就算不和明星比，和同行比，司马南也算是末流。罗翔、九边、甚至咪蒙，粉丝黏性都高于司马南。就算是小一点的大V，比如押沙龙、西塞罗，粉丝的忠诚度和付费意愿也不是司马南能比。</p>
+  <p>这充分说明，民众对于司马南传播的理念，并没有多高的忠诚度，司马南能火，不是民众喜欢司马南这个人，也不是认同他的世界观，而是借司马南的嘴发泄不满。</p>
+  <p>比如司马南抨击联想，更多是迎合了公众的仇富心理和民族主义情绪，司马南是借势而起，现在风潮过去了，司马南马上不火了，以至于都要接“费力不讨好”广告。</p>
+  <p>除了粉丝质量不高，司马南的反对者也很多，而且我大胆判断，司马南几千万的粉丝里，可能有20%-30%是黑粉，他们关注司马南只是为了看戏。要不然司马南扮演李白不会有这么多嘲讽声音。</p>
+  <p>很简单的道理，对于路人来说，一个老头扮演李白，谁会关心呢，既然能闹出风波，那肯定是一直关注他的人，风评不好又显然表明这些人是黑粉，我们显然不能低估这股力量。</p>
+  <p>要论证这一点，我们也可以把目光放向国外。我们会发现网上的声音从不代表实际情况，基本盘的狂热和基本盘的数量也没有必然联系。</p>
+  <p>就拿美国大选来说，特朗普每一次集会都声势浩大，万人空巷，很多人就此断定特朗普代表了沉默的大多数。</p>
+  <p><strong>尤其是2020年，对比非常强烈，拜登的集会只有几百人参加，而特朗普动辄1万多人，如果你只看集会规模，那特朗普应该拿到97%的选票，拜登也就得一个零头。</strong></p>
+  <p>当时的网络民调也是如此，特朗普在推特有7000多万粉丝，拜登只有1000多万，在推特上你随便发起一个投票，都是特朗普获得70%多的票，支持民主党不到30%，如果网络民意是准确的，那特朗普能赢下美国所有的州。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/f/2/f22f933c/2111a66b.png" alt="image" /></p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/f/2/f22f933c/e40a2dcd.jpeg" alt="image" /></p>
+  <p>可实际情况是什么呢，2016年特朗普普选票输了2.1%，2020年输了4.5%，就得票数看，代表大多数的恰恰是民主党而非共和党。</p>
+  <p>特朗普的粉丝，只是比较狂热，愿意刷存在感，让他们看起来人多势众，但实际上他们并不是代表大多数。</p>
+  <p>今年哈里斯代表的民主党改变了竞选策略，也开始动员基本盘，搞一定民粹主义，集会人数也达到了上万人，甚至一度超过特朗普，但我大胆预测，哈里斯最终的得票一定不会超过拜登，理由和特朗普的水分一样。</p>
+  <p>除了美国大选可供参考，我国台湾地区的选举也是如此，当年韩国瑜也是声势浩大，集会万人空巷，而他的民进党对手总是组织不起满意的集会，但最终再次证明，集会人数不代表选举胜利，粉丝的狂热并不能弥补基本盘人数的不足。</p>
+  <p>说这么多，就是想告诉大家，真实的民意没那么容易测算，不要太相信你看到的东西，否则会形成巨大的谬误。</p>
+  <p>其实把司马南和特朗普比，也是侮辱特朗普了，毕竟特朗普的粉丝是真的忠诚，他们高频购买懂王的周边，冒着大雨也要参加懂王的集会，懂王败选了冒着被监禁的风险冲击国会，懂王说消毒水能防新冠，也毫不犹豫的就打。粉丝对特朗普的崇拜，是司马南可望不可及的。</p>
+  <p>所以，形势从来没那么悲观，很多焦虑是我们自己带来的，司马南的粉丝会陷入茧房，部分反司马南的人恐怕也陷入了茧房。</p>
+  <p>我们知道，网络内容都是被筛选的，有很多内容我们根本无法看到，真实的民意到底如何，没人能给出一个准确的答案。</p>
+  <p>我个人判断，中国人的真实想法肯定没有一些人想得那么极端。中国人几千年的理想，无非是老婆孩子热炕头，过个安稳日子，我不觉得中国人整体上是一个极端的民族。</p>
+  <p>近期经济政策上的利好就表明，我们真没必要太悲观。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-09-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-30/%E4%B8%AD%E5%9B%BD%E6%94%BF%E6%B2%BB%E5%8F%8A%E5%AE%97%E6%95%99%E5%8F%97%E9%9A%BE%E8%80%85%E5%90%8E%E6%8F%B4%E4%BC%9A-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-%E5%85%AC%E5%91%8A-2024%E5%B9%B4%E5%BA%A6-%E7%AC%AC%E4%B8%80%E5%B1%8A-%E4%B8%AD%E5%9B%BD%E5%BD%93%E4%BB%A3%E8%8B%B1%E9%9B%84%E6%AF%8D%E4%BA%B2%E5%A5%96%E9%A2%81%E5%A5%96%E8%AF%8D">
+          中国政治及宗教受难者后援会（澳大利亚）| 公告：2024年度（第一届）中国当代英雄母亲奖颁奖词
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-30/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC188%E6%9C%9F-%E5%8F%A4%E6%9C%89%E6%8B%8D%E7%85%A7%E5%8B%BE%E9%AD%82-%E4%BB%8A%E6%9C%89%E8%8B%B9%E6%9E%9C%E7%88%86%E7%82%B8">
+          【CDT周报】第188期：古有拍照勾魂，今有苹果爆炸
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8">
+          张鸣｜义和团始末真相
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29">
+          每日一语 2024.9.29
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8">
+            前一篇：张鸣｜义和团始末真相
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-09-30/%E5%A5%A5%E5%9C%B0%E5%88%A9%E6%9E%81%E5%8F%B3%E7%BF%BC%E6%94%BF%E5%85%9A%E5%9C%A8%E5%9B%BD%E6%B0%91%E8%AE%AE%E4%BC%9A%E9%80%89%E4%B8%BE%E4%B8%AD%E8%B5%A2%E5%BE%97%E4%BA%8C%E6%88%98%E4%BB%A5%E6%9D%A5%E7%9A%84%E9%A6%96%E6%AC%A1%E8%83%9C%E5%88%A9">
+            后一篇：奥地利极右翼政党在国民议会选举中赢得二战以来的首次胜利
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-09-30/%E5%A5%A5%E5%9C%B0%E5%88%A9%E6%9E%81%E5%8F%B3%E7%BF%BC%E6%94%BF%E5%85%9A%E5%9C%A8%E5%9B%BD%E6%B0%91%E8%AE%AE%E4%BC%9A%E9%80%89%E4%B8%BE%E4%B8%AD%E8%B5%A2%E5%BE%97%E4%BA%8C%E6%88%98%E4%BB%A5%E6%9D%A5%E7%9A%84%E9%A6%96%E6%AC%A1%E8%83%9C%E5%88%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-09-30/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC188%E6%9C%9F-%E5%8F%A4%E6%9C%89%E6%8B%8D%E7%85%A7%E5%8B%BE%E9%AD%82-%E4%BB%8A%E6%9C%89%E8%8B%B9%E6%9E%9C%E7%88%86%E7%82%B8'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-09-30/%E5%A5%A5%E5%9C%B0%E5%88%A9%E6%9E%81%E5%8F%B3%E7%BF%BC%E6%94%BF%E5%85%9A%E5%9C%A8%E5%9B%BD%E6%B0%91%E8%AE%AE%E4%BC%9A%E9%80%89%E4%B8%BE%E4%B8%AD%E8%B5%A2%E5%BE%97%E4%BA%8C%E6%88%98%E4%BB%A5%E6%9D%A5%E7%9A%84%E9%A6%96%E6%AC%A1%E8%83%9C%E5%88%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-09-30/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC188%E6%9C%9F-%E5%8F%A4%E6%9C%89%E6%8B%8D%E7%85%A7%E5%8B%BE%E9%AD%82-%E4%BB%8A%E6%9C%89%E8%8B%B9%E6%9E%9C%E7%88%86%E7%82%B8">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-09-29/%E5%BC%A0%E9%B8%A3-%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

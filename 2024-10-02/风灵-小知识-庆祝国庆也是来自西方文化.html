@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>风灵｜小知识：庆祝国庆也是来自西方文化 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+" />
+    <meta property="og:description" content="
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="风灵｜小知识：庆祝国庆也是来自西方文化" />
+    <meta property="twitter:title" content="风灵｜小知识：庆祝国庆也是来自西方文化" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5331)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711923.html&t=%E9%A3%8E%E7%81%B5%EF%BD%9C%E5%B0%8F%E7%9F%A5%E8%AF%86%EF%BC%9A%E5%BA%86%E7%A5%9D%E5%9B%BD%E5%BA%86%E4%B9%9F%E6%98%AF%E6%9D%A5%E8%87%AA%E8%A5%BF%E6%96%B9%E6%96%87%E5%8C%96" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711923.html&t=%E9%A3%8E%E7%81%B5%EF%BD%9C%E5%B0%8F%E7%9F%A5%E8%AF%86%EF%BC%9A%E5%BA%86%E7%A5%9D%E5%9B%BD%E5%BA%86%E4%B9%9F%E6%98%AF%E6%9D%A5%E8%87%AA%E8%A5%BF%E6%96%B9%E6%96%87%E5%8C%96&d=2024-10-02&e=
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+
+
+  
+  风灵
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：小知识：庆祝国庆也是来自西方文化作者：风灵之声发表日期：2024.10.2来源：微信公众号“风灵”主题归类：国庆CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  近些年，一到圣诞节之类的“洋节日”，就有不少人嚷嚷着要抵制，理由是要抵制西方文化。但其实，不仅圣诞节，元旦、五一节、儿童节、三八节等等都是来自于西方，甚至庆祝国庆也是来自西方的文化。
+  国庆日的英文为“National Day”，由“national”（国家的）和“day”（日子、节日）组成，直译为“国家的日子”，即指一个与国家密切相关具有代表意义的日子。现代很多国家都有固定..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711923.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/711923.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/711923.html&text=风灵｜小知识：庆祝国庆也是来自西方文化&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/711923.html&title=风灵｜小知识：庆祝国庆也是来自西方文化" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/711923.html&title=风灵｜小知识：庆祝国庆也是来自西方文化" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=风灵｜小知识：庆祝国庆也是来自西方文化&body=
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/711923.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/711923.html&title=风灵｜小知识：庆祝国庆也是来自西方文化&caption=
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=风灵｜小知识：庆祝国庆也是来自西方文化&url=https://chinadigitaltimes.net/chinese/711923.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>风灵｜小知识：庆祝国庆也是来自西方文化</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/711923.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711923.html&t=%E9%A3%8E%E7%81%B5%EF%BD%9C%E5%B0%8F%E7%9F%A5%E8%AF%86%EF%BC%9A%E5%BA%86%E7%A5%9D%E5%9B%BD%E5%BA%86%E4%B9%9F%E6%98%AF%E6%9D%A5%E8%87%AA%E8%A5%BF%E6%96%B9%E6%96%87%E5%8C%96&d=2024-10-02&e=
+风灵｜小知识：庆祝国庆也是来自西方文化
+——
+
+
+  
+  风灵
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：小知识：庆祝国庆也是来自西方文化作者：风灵之声发表日期：2024.10.2来源：微信公众号“风灵”主题归类：国庆CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  近些年，一到圣诞节之类的“洋节日”，就有不少人嚷嚷着要抵制，理由是要抵制西方文化。但其实，不仅圣诞节，元旦、五一节、儿童节、三八节等等都是来自于西方，甚至庆祝国庆也是来自西方的文化。
+  国庆日的英文为“National Day”，由“national”（国家的）和“day”（日子、节日）组成，直译为“国家的日子”，即指一个与国家密切相关具有代表意义的日子。现代很多国家都有固定..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711923.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1727881204000-->
+<p><a href="https://chinadigitaltimes.net/chinese/711923.html">风灵｜小知识：庆祝国庆也是来自西方文化</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/711923.html" title="风灵｜小知识：庆祝国庆也是来自西方文化" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/国庆-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-711923-66fd38af3d24f.png" alt="img" /></p>
+  <p><strong>风灵</strong></p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>小知识：庆祝国庆也是来自西方文化<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/风灵" target="_blank">风灵之声</a><br /><strong>发表日期：</strong>2024.10.2<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/7mMoSnaNWRqMOpM01sdUEA" target="_blank">微信公众号“风灵”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/国庆" target="_blank">国庆</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>近些年，一到圣诞节之类的“洋节日”，就有不少人嚷嚷着要抵制，理由是要抵制西方文化。但其实，不仅圣诞节，元旦、五一节、儿童节、三八节等等都是来自于西方，甚至庆祝国庆也是来自西方的文化。</p>
+  <p>国庆日的英文为“National Day”，由“national”（国家的）和“day”（日子、节日）组成，直译为“国家的日子”，即指一个与国家密切相关具有代表意义的日子。现代很多国家都有固定的国庆日，是国家统一和民族认同的重要象征。</p>
+  <p>中国古代虽然也有国家庆典，但并非每年都举行，通常是特殊的情况下才举办。庆典一般围绕皇帝、朝廷以及重大事件展开，主要包括皇帝登基大典、皇帝寿辰、庆祝军事胜利和一些国家重大事件，如迁都或修成重要工程之类。即使是皇帝寿辰，也不是每年全国上下都大肆庆祝，很多时候只是皇家庆典，主要是朝臣、贵族和皇室成员参与。这些都不是现代意义上的国庆日。</p>
+  <p>近代西方以前的王权时代，也没有国庆日即National Day 的概念。比如在旧制度（Ancien Régime）时期，法国是一个君主制国家，国王是国家的象征，不需要像现代国庆日那样的节日来庆祝国家的成立或统一。和古代中国类似，旧制度下，法国的节庆主要与宗教节日和皇室庆典相关，如国王的加冕典礼、皇室婚礼、皇族的生日、军事胜利等。这些庆典活动不是为了纪念国家，而是为了巩固王权和展现皇室的威严与荣耀。</p>
+  <p>现代意义上的国庆日传统，最早可以追溯到18世纪末至19世纪初，当时是独立运动、革命和现代民族国家的形成时期。</p>
+  <p>美国是最早设立国庆日的国家之一。1776年7月4日，《独立宣言》签署，标志着美国从英国殖民统治下独立。美国的独立日庆祝活动从独立后早期就开始举行，并逐渐发展为国民最重要的节日之一。美国独立日成为了国庆日的典范，鼓舞了后来许多国家的独立运动和现代国庆日的设立。</p>
+  <p>法国的国庆日“巴士底日”是纪念1789年7月14日的巴士底狱起义。这一事件是法国大革命的重要象征，代表了推翻旧制度、建立共和制的历史转折。巴士底日1880年被正式定为法国的国庆日，并成为纪念民主、自由和共和国的象征。</p>
+  <p>在拉丁美洲，许多国家在19世纪初相继从西班牙和葡萄牙的殖民统治中独立。这些国家设立了自己的国庆日，纪念独立宣言或决定性战役。例如，墨西哥的国庆日定在1810年9月16日，纪念独立战争的开始；阿根廷的国庆日是5月25日，纪念1810年的五月革命。</p>
+  <p>19世纪，随着民族国家的兴起，许多欧洲国家在获得独立或确立现代国家制度后，也开始设立国庆日。比如，挪威的国庆日是5月17日，纪念该国1814年通过了宪法；希腊的国庆日是3月25日，纪念1821年希腊独立战争的开始。</p>
+  <p>英国因其历史原因，没有国庆节。其国家形成是一个长期演变的过程，不是由某个独立或建国事件所决定的，所以没有一个具体的日期来纪念这样的历史时刻。</p>
+  <p>原属英国殖民地的加拿大，国庆节是 7月1日，以前称为“Dominion Day”（自治领日），纪念 1867年7月1日《英属北美法案》（British North America Act）通过，标志着加拿大作为联邦正式成立。这部法案将新不伦瑞克省、新斯科舍省、魁北克省和安大略省统一为一个联邦，并确立了加拿大自治领（Dominion of Canada）的基础。1982年，加拿大国会通过立法，将“自治领日”正式更名为“加拿大日”（Canada Day）。</p>
+  <p>而同样曾为英国殖民地的澳大利亚，国庆日是 1月26日，称为 “Australia Day”（澳大利亚日），纪念 1788年1月26日英国第一舰队在悉尼湾登陆并正式建立了英国在澳大利亚的殖民地。</p>
+  <p>西方这种国庆日的传统于19世纪末20世纪初引入中国。1912年，中华民国正式成立，将国庆日定为每年的10月10日，称为“双十节”，以纪念1911年10月10日爆发的武昌起义，这场起义是推翻清朝统治、建立中华民国的开端。而现在中国的国庆日是10月1日，是因为1949年10月1日，毛泽东在北京天安门广场宣布中华人民共和国成立，后来10月1日就被正式确定为中国的国庆日。</p>
+  <p>可见，“国庆”作为西方历史文化的产物，传入中国满打满算也就一百多年。当然这不稀奇，因为连“民族国家”，“国家主权”“独立”之类概念也都是来自西方。</p>
+  <p><strong>相关文章：<br /><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTE5MTM0NA==&amp;mid=2650041650&amp;idx=1&amp;sn=0425a1a1b6119e7f0c789339a8c88af1&amp;chksm=879805edb0ef8cfb0c6d8941194e00c899e2fac5dab12939f0b80db57440bf9668f42ac2efbb&amp;scene=21#wechat_redirect">知识贴：社会主义与共产主义有什么联系和区别？</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTE5MTM0NA==&amp;mid=2650034853&amp;idx=1&amp;sn=9cc13abef521f244afadda1c80ed6fb2&amp;chksm=87983a7ab0efb36cd740c4779c9d1a0fe5e5e3091c022cd9a1ee83e9182bcd9deb681ca65766&amp;scene=21#wechat_redirect">农历和24节气背后的秘密</a><br /><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTE5MTM0NA==&amp;mid=2650034935&amp;idx=1&amp;sn=c33250bf4df266d1e88c4ada9c8b9efe&amp;chksm=87983a28b0efb33e61092d2b6aadc55d798133a1541b5a3ee12270ab3e75f732f6023cd18e12&amp;scene=21#wechat_redirect">那些没收外资的国家，后来怎样了？</a></strong></p>
+  <p><strong>想要真正了解米塞斯的读者看过来！我们将于10月11日开始新一期双语阅读课程，阅读米塞斯最受欢迎的阿根廷系列演讲《六堂课：经济政策》。阅读原文，体会大师的思想，品味原汁原味的精彩！课程将持续10-12周左右。每周腾讯会议上课，每次2小时。课后提供云录播。无须下载，长期有效。本期为初级班课程，适合初中级学员。报名不限英语水平，不限专业，不限年龄。</strong></p>
+  <p><strong>本期报名费仅为199元，可赠送风灵签名译著一本，国内包邮，学生半价仅100元！多人报名更有特惠！详情可见：<a href="https://mp.weixin.qq.com/s?__biz=MzA4MTE5MTM0NA==&amp;mid=2650041643&amp;idx=1&amp;sn=0ce5fc417a8e955923188d0fd7b7d67e&amp;chksm=879805f4b0ef8ce2653e01c9bf19b84160955eff754c4698070f7a5ac96f9cfe1849c715c47a&amp;scene=21#wechat_redirect">这世上谬误太多，米塞斯太少——《六堂课：经济政策》双语阅读课程报名</a></strong></p>
+  <p><strong>另外，如果想要打好基础，强化英语能力，欢迎参加与阅读课程配套开设的英语专项训练，每周一次，随到随学，按年计费。每年仅199元！各期老学员专享半价每年仅100元！详情可见：<a href="https://mp.weixin.qq.com/s?__biz=MzA4MTE5MTM0NA==&amp;mid=2650041764&amp;idx=1&amp;sn=0fd5cf4b4480be11fb4f7c47f82a0501&amp;chksm=8798057bb0ef8c6da77667b47a74fedf252eacef84cf90ed8855d2c92891d351ceaabec0d990&amp;scene=21#wechat_redirect">干货贴：英语基本功要怎么练？</a>友情提示，英语专项训练对各种英语考试特别有用。</strong></p>
+  <p><strong>报名可搜索风灵的微信号mefengling，或点击下面海报二维码加好友（不打算报名的勿扰哦，谢谢！）。</strong></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-711923-66fd38af48dce." alt="img" /></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-02/%E5%BC%A0%E4%B8%89%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E6%B3%84%E6%84%A4-%E6%97%B6%E4%BB%A3-%E6%99%AE%E9%80%9A%E4%BA%BA%E5%A6%82%E4%BD%95%E8%87%AA%E5%A4%84">
+          张三丰的世界｜“泄愤”时代，普通人如何自处
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-02/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E4%B8%80%E6%8A%8A%E7%9F%AD%E5%88%80-%E6%80%8E%E4%B9%88%E5%B0%B1%E8%AE%A9%E4%BB%96%E8%BF%9E%E6%8D%8518%E4%BA%BA">
+          【404文库】建设性意见｜一把短刀，怎么就让他连捅18人？！
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-02/%E8%80%81%E5%B9%B2%E4%BD%93v-%E8%B0%81%E4%BC%9A%E8%A2%AB%E6%89%93%E6%88%90-%E4%BE%B5%E7%8A%AF%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6-%E7%9A%84%E5%8F%8D%E9%9D%A2%E5%85%B8%E5%9E%8B">
+          老干体v｜谁会被打成「侵犯民营企业家」的反面典型？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-02/%E6%97%A7%E6%96%87%E9%87%8D%E6%B8%A9-%E4%BA%BA%E6%96%87%E7%BB%8F%E6%B5%8E%E5%AD%A6%E4%BC%9A-%E9%99%88%E5%BF%97%E6%AD%A6-%E6%94%BF%E7%AD%96%E7%89%9B%E5%B8%82%E5%AE%B3%E4%BA%86%E8%B0%81">
+          【旧文重温】人文经济学会｜陈志武：政策牛市害了谁
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-02/%E8%8B%8F%E9%BB%8E%E4%B8%96%E6%89%98%E5%84%BF%E6%89%80%E9%99%84%E8%BF%91%E6%8C%81%E5%88%80%E8%A2%AD%E5%87%BB-%E4%B8%89%E5%90%8D%E5%84%BF%E7%AB%A5%E5%8F%97%E4%BC%A4">
+            前一篇：苏黎世托儿所附近持刀袭击，三名儿童受伤
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-02/%E4%B8%8D%E8%83%BD%E8%AF%BB%E4%B9%A6%E7%9A%84%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E7%94%9F">
+            后一篇：不能读书的名牌大学生
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-02/%E8%8B%8F%E9%BB%8E%E4%B8%96%E6%89%98%E5%84%BF%E6%89%80%E9%99%84%E8%BF%91%E6%8C%81%E5%88%80%E8%A2%AD%E5%87%BB-%E4%B8%89%E5%90%8D%E5%84%BF%E7%AB%A5%E5%8F%97%E4%BC%A4'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-02/%E4%B8%8D%E8%83%BD%E8%AF%BB%E4%B9%A6%E7%9A%84%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E7%94%9F'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-02/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E4%B8%80%E6%8A%8A%E7%9F%AD%E5%88%80-%E6%80%8E%E4%B9%88%E5%B0%B1%E8%AE%A9%E4%BB%96%E8%BF%9E%E6%8D%8518%E4%BA%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-02/%E8%80%81%E5%B9%B2%E4%BD%93v-%E8%B0%81%E4%BC%9A%E8%A2%AB%E6%89%93%E6%88%90-%E4%BE%B5%E7%8A%AF%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6-%E7%9A%84%E5%8F%8D%E9%9D%A2%E5%85%B8%E5%9E%8B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-02/%E8%8B%8F%E9%BB%8E%E4%B8%96%E6%89%98%E5%84%BF%E6%89%80%E9%99%84%E8%BF%91%E6%8C%81%E5%88%80%E8%A2%AD%E5%87%BB-%E4%B8%89%E5%90%8D%E5%84%BF%E7%AB%A5%E5%8F%97%E4%BC%A4">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-02/%E4%B8%8D%E8%83%BD%E8%AF%BB%E4%B9%A6%E7%9A%84%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E7%94%9F">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-02/404%E6%96%87%E5%BA%93-%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E4%B8%80%E6%8A%8A%E7%9F%AD%E5%88%80-%E6%80%8E%E4%B9%88%E5%B0%B1%E8%AE%A9%E4%BB%96%E8%BF%9E%E6%8D%8518%E4%BA%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-02/%E8%80%81%E5%B9%B2%E4%BD%93v-%E8%B0%81%E4%BC%9A%E8%A2%AB%E6%89%93%E6%88%90-%E4%BE%B5%E7%8A%AF%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6-%E7%9A%84%E5%8F%8D%E9%9D%A2%E5%85%B8%E5%9E%8B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

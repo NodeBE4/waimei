@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>张鸣｜义和团始末真相 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+张鸣｜义和团始末真相
+——
+" />
+    <meta property="og:description" content="
+张鸣｜义和团始末真相
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="张鸣｜义和团始末真相" />
+    <meta property="twitter:title" content="张鸣｜义和团始末真相" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5331)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711850.html&t=%E5%BC%A0%E9%B8%A3%EF%BD%9C%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711850.html&t=%E5%BC%A0%E9%B8%A3%EF%BD%9C%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8&d=2024-09-29&e=
+张鸣｜义和团始末真相
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：义和团始末真相作者：张鸣发表日期：2024.9.29来源：新新默存主题归类：义和团CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  四一按：收到张鸣教授这篇新作，我很感动。当时，我找他要一篇关于义和团的老文章以供默存刊发，我知道他博士论文做的就是义和团，他读的义和团档案、教案档案之多，当代可能没几个学者比得上。结果他直接说，我给你写篇新的，把这事讲清楚。然后很快他就发来新写的文章，我一读，顿觉清朗。过去我也读过一些义和团的论文论著，但没有一篇，能像张鸣教授这样深入浅出、娓娓道来而且胜义迭出。
+  
+  都说义和拳起山东，这倒不假。但是，一般国内学者认为，义和团的源头是白..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711850.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/711850.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/711850.html&text=张鸣｜义和团始末真相&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/711850.html&title=张鸣｜义和团始末真相" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/711850.html&title=张鸣｜义和团始末真相" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=张鸣｜义和团始末真相&body=
+张鸣｜义和团始末真相
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/711850.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/711850.html&title=张鸣｜义和团始末真相&caption=
+张鸣｜义和团始末真相
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=张鸣｜义和团始末真相&url=https://chinadigitaltimes.net/chinese/711850.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>张鸣｜义和团始末真相</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-09-29
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/711850.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711850.html&t=%E5%BC%A0%E9%B8%A3%EF%BD%9C%E4%B9%89%E5%92%8C%E5%9B%A2%E5%A7%8B%E6%9C%AB%E7%9C%9F%E7%9B%B8&d=2024-09-29&e=
+张鸣｜义和团始末真相
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：义和团始末真相作者：张鸣发表日期：2024.9.29来源：新新默存主题归类：义和团CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  四一按：收到张鸣教授这篇新作，我很感动。当时，我找他要一篇关于义和团的老文章以供默存刊发，我知道他博士论文做的就是义和团，他读的义和团档案、教案档案之多，当代可能没几个学者比得上。结果他直接说，我给你写篇新的，把这事讲清楚。然后很快他就发来新写的文章，我一读，顿觉清朗。过去我也读过一些义和团的论文论著，但没有一篇，能像张鸣教授这样深入浅出、娓娓道来而且胜义迭出。
+  
+  都说义和拳起山东，这倒不假。但是，一般国内学者认为，义和团的源头是白..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F711850.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1727663283000-->
+<p><a href="https://chinadigitaltimes.net/chinese/711850.html">张鸣｜义和团始末真相</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/711850.html" title="张鸣｜义和团始末真相" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/09/31-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>义和团始末真相<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/张鸣" target="_blank">张鸣</a><br /><strong>发表日期：</strong>2024.9.29<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/IOX94I38rGCKDxXH9dvm7g" target="_blank">新新默存</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/义和团" target="_blank">义和团</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>四一按：收到张鸣教授这篇新作，我很感动。当时，我找他要一篇关于义和团的老文章以供默存刊发，我知道他博士论文做的就是义和团，他读的义和团档案、教案档案之多，当代可能没几个学者比得上。结果他直接说，我给你写篇新的，把这事讲清楚。然后很快他就发来新写的文章，我一读，顿觉清朗。过去我也读过一些义和团的论文论著，但没有一篇，能像张鸣教授这样深入浅出、娓娓道来而且胜义迭出。</p>
+  <hr />
+  <p>都说义和拳起山东，这倒不假。但是，一般国内学者认为，义和团的源头是白莲教类的民间宗教，其实并不靠谱。不能说义和团里没有一个民间教门中人，但义和团的确不源于这些教门。台湾学者，倾向于义和团来源于乡团，这也没有太多的根据，只能说，义和团的盛期，乡团是有参与的，但他们肯定也不是义和团的源头。所以，美国学者周锡瑞，干脆把十九世纪末和二十世纪初的山东社会以及文化，视为义和团的起源，这样说，保险倒是很保险，但对于希望有个踏实答案的人来说，还是失望。</p>
+  <p>说起来，义和团起初，就是一些练神拳的人。这些人品流很杂，有一般的老百姓，也有民间拳会中人，乡团的人也是有的，至于民间教门的人，个别参与进去，也不能排除，他们的源头，是一些自有师承的人。几个世纪以来，中国的北方数省，一直都存在着一些教神拳，即刀枪不入法门的人，他们被称为老师。这种功夫，其实就是一种简易法门，通过一些简单的神秘仪式，喝符，念咒，然后教人如何运气，运到一定火候，就可以排刀，即用大刀砍运气的部位，一般都是肚皮，一砍一个白印。完了，就退法，回到常人状态。当初，有人在山东大刀会里教这个功夫的时候，清政府的密探，卧底已经查明了情况。当时就有人指出，这都是假招子，刀砍不进，但用刀子一划，就是一个口子。</p>
+  <p>这种人，在明清两代间或出现，甚至闹出了义和团这样的大的事儿，到了民国，还有人干，民国的红枪会，就是义和团的翻版。但是，这种人一般都闹不大，非得学的人特别多，而且有相应的土壤的时候，才能成气候。义和团能闹大，是因为政治时事的需要，民国时期红枪会闹大了，也是因为军阀混战实在逼得北方乡村社会没办法活了。</p>
+  <p>需要特别说明的是，无论在何时何地，教功夫的老师，对当地练这套简易法门的组织，都不起任何作用，根本不参与他们的活动，活动的组织者、领导者，另有其人。老师都是外地人，而组织者都是本地人，大小是个人物，但也不算是精英。所以，义和团的组织，都是一股一股的，能几个村子联合起来，就已经很了不起了，所以，大师兄，二师兄这样的领导者，就够用了。</p>
+  <p>在戊戌变法之前，练这些功夫的人，并没有表现出明显的政治倾向，他们甚至也不与寻常的跟乡村教会为难的那些人结合。但是，有一个引子，把这些人引向了跟洋人作对的轨道里。这就是德国人修胶济铁路，由于牵扯面过广，德国人跟山东农村社会之间的摩擦增加。仇视德国人，进而仇视一切洋人。原本山东的教会，就跟民间社会有冲突，这回就一锅烩了。所以，慢慢的，由于刀枪不入这个法门，具有很强的工具性的威慑力，所以，一些跟洋人为难的人，也都开始习染这个法门。这就是为什么，义和团组织千差万别，杂七杂八，但唯一的共同点，就是他们的法术，不管是什么乾字团，坎字团，练的功夫，都是一个，因为就是那么几个老师，传的法，都一样。</p>
+  <p>这些习染了神拳的组织，开始并不叫义和团，叫什么的都有，其中有叫神拳和义和拳的，渐渐的，这两个称谓，流行起来。</p>
+  <p>当时凡是跟洋人作对，打教灭教的组织，都是要被清政府镇压的。保守派官员，毓贤和李秉衡主政山东时，都镇压过神拳和义和拳。在面对政府镇压的时候，这些组织，基本上是没有抵抗的，但由于很分散，一哄而散，所以，也消灭不了。</p>
+  <p>到了戊戌政变发生，西太后再度垂帘，尽废新法，大开历史倒车。但是，由此不可避免地造成跟包括日本在内的西方世界关系的交恶。在废掉光绪皇帝这个具体问题上，西太后跟西方关系到了不可挽回的境地。从更深的层次讲，当初变法，学习西方，无非是为了挽救甲午以来的亡国危机，现在尽废新法，但危机仍在，如何应对，也是西太后不得不面对的难题。尽管当时中国的洋务运动已经搞了很多年，但西太后对于洋务所知甚少，对她来说，只要能把洋人赶出去，不让他们进来，亡国危机自然就没有了。</p>
+  <p>所以，寻找对抗西方，挽救危局的良方，是摆在西太后面前的现实课题。所以，一些保守派官员，提出了“民气可用”的建议，而具体的例证，就是山东的义和拳，并且说他们有刀枪不入的法术。西太后虽说没有马上采纳，但还是为之动容的。上面一有这个意思，那么，下面马上政策就变了，所以，义和拳立刻像气吹了一样，膨胀起来。为了呼应上面的恩典，义和拳就变成了更官方化的义和团。扶清灭洋的口号，也喊得山响。</p>
+  <p>到了成千上万的义和团涌向京津，而且到处杀洋灭教，屠杀四万多新基督教的教民的时候，这里，也有一些西方传教士和来中国修铁路的工程师被害，或者，受到了威胁，乱子就闹大了，整个世界为之哗然。而西太后对义和团的肯定，也升了一个格，正式承认他们是义民。在此之前，西太后曾经派军机处里的刚毅和赵舒翘两人，去涿州的义和团大本营考察过，他们两人肯定了义和团的刀枪不入是真的。所以，在义和团进入北京城之后，义和团被西太后安了一个大统领，就是要取代光绪的大阿哥溥雋的亲生父亲，端郡王载漪，还拨了一些钱粮。义和团也知趣地向组织靠拢，自称“奉旨练团”，所有的拳坛，都打的旗号是钦命义和团。主动到处抓汉奸，非常自觉地跟白莲教划清界限，在北京，曾经抓捕过一个所谓的白莲教团伙（其实就是些走江湖卖艺的），把人家都给杀了。</p>
+  <p>尽管，在这期间，载漪他们想的是，利用义和团逼走或者整死光绪，所以，他给义和团了一个新口号，要杀一龙二虎三百羊，龙就是光绪。西太后虽然还暂时不想如此操切，但是，在此期间，义和团是这个女人的希望，所以，任何对义和团的批评，都是不能被容许的。哪怕义和团闯祸，烧了作为朝廷门脸的前门楼子，都没有人敢说半个不字。说不字的，都丢了脑袋，当时死了五个大臣。</p>
+  <p>尽管如此，西太后希望的是义和团来对付西方人，主要是军队。可这些来自乡土的拳民，最乐意打的，却是那些信教的教民，这些人，由于信教，同在一个乡土世界，已经跟他们这些不信教的，有了几十年的隔阂和冲突。教民不仅信仰跟平民不同，而且教民做弥撒，洗礼，这样的行为也为平民看不惯，特别是，教民不参与祭祖，也不为平时的迎神赛会的演戏活动交份子钱。所以，双方的冲突，已非一日。所有的教案冲突，来自平民的理由，大抵都是误会，比如说人家集体宣淫啦，比如说人家捣毁神像啦，甚至说教会育婴堂挖孩子的眼睛做药啦。但是，只要教堂被捣毁，教民被杀，闹出案子，官方在西方的干预下，最终还得让平民偿命赔钱，但却从不告诉老百姓真相，让老百姓觉得，教会的确十恶不赦，官府由于害怕洋人，不得不屈从。所以，闹一次教案，民教的仇怨就升一级。从这个意义上讲，义和团运动，就是一个总教案。</p>
+  <p>需要指出的是，义和团闹大之后，由于老师当初传法，其实就是一个简易法门，即便喝符念咒，也没有多少神秘色彩。所以，闹大之后，拳民们开始自行发明创造，把喝符念咒以及运气的过程，说成是神灵附体。而拳民平时就浸润在带有宗教色彩的戏乐文化里，所以，他们附体之神，都是平时戏里的人物，特别是三国人物，西游人物，还加上八仙，以及公案戏里的黄三太和黄天霸。加上原来念咒，就是个幌子，所以，后来的的咒语，就五花八门，什么都有，跟宗教的咒语，毫不相干。拳民在上法（神灵附体）之时，还会模仿戏剧里的人物，做一些表演身段，让人看起来很滑稽。</p>
+  <p>除此以外，义和团还真没有多少宗教，甚至民间宗教色彩。在自己的团上挂上八卦的名号，什么乾字团之类，也就仅此而已了，事实上，义和团并没有把八个名号都排上，大家都一窝蜂都是乾字团，大约是感觉乾字是老大吧。剩下的，用红布或者黄布包头，无非就是借用民间的吉色。</p>
+  <p>当然，到了西太后真的用义和团来抵御洋人的时候，就不行了。无论是攻打西什库教堂还是使馆区，还是抵抗八国联军，真正能给洋人制造一点威胁的，还是清军。后来一些中国学者移花接木，把清军的战绩都安在了义和团头上，但是最终也无济于事。</p>
+  <p>特别需要说明的一点，传得很盛的红灯照，其实根本就没有这种所谓女义和团的组织，也没有女性练红灯照。所谓红灯照，就是由灯节的时候，飘在空中的那种灯，想象出来，有人想象，有少女像这些灯一样，飞来飞去，飞到外国，把洋人的首都给烧了。义和团非常保守，对女性极度歧视，义和团里的女人，比如黄莲圣母（林黑儿），不过是义和团为了对抗所谓洋人的女性法宝（传说义和团的法术不灵，就是因为洋人用了裸体女人，或者女人的生殖器），所以，找林黑儿这种船妓，最脏的女人，以毒攻毒，来对抗洋人之用的。最后对抗不了，林黑儿就被义和团抛弃，结果被洋人活捉，用来展览。</p>
+  <p>当围攻使馆到一个多月的时候，西太后已经醒悟，刀枪不入不中用了，但是，此时她已经走得太远，没法马上回头了。但是，当她逃出北京，刚到山西，勉强算脱离了危险，就以光绪的名义发布上谕，命令清军剿灭义和团。此后，杀义和团最多的，其实是清军。这样的反噬，虽然有景廷宾带头（他其实不是正经的义和团，只是被围剿义和团的清军给牵连的乡绅），反抗了一下，基本上就烟消云散了。需要提一下的是，在义和团的盛时，由于山东巡抚换成了袁世凯，袁世凯就凭他那一万的新建陆军，就把山东的义和团赶得赶，杀得杀，都给剿灭了，所以，闹出大事的义和团，只集中在直隶和山西，主要是京津一带。</p>
+  <p>后来，干过义和团的农民，凡是没死的，一般都回归了乡土，其中不少人，甚至还都信了基督教。道理何在？给钱玄同拉车的车夫，曾经是做过大师兄，但也皈依了基督教，他说，之所以如此，是因为他们的菩萨灵，我们的菩萨不灵。</p>
+  <p>义和团没了，但那些教功夫的老师还在，因为他们没有参与过什么杀洋灭教，他们自有自己的师承，代代相传。到了民国北洋时期的后半段，由于军阀混战极度频仍，造成了北方乡村社会的大破坏，于是，当年的义和团，又以红枪会的名目再现了。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-09-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-30/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC188%E6%9C%9F-%E5%8F%A4%E6%9C%89%E6%8B%8D%E7%85%A7%E5%8B%BE%E9%AD%82-%E4%BB%8A%E6%9C%89%E8%8B%B9%E6%9E%9C%E7%88%86%E7%82%B8">
+          【CDT周报】第188期：古有拍照勾魂，今有苹果爆炸
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97">
+          修明札记｜司马南代表真实民意吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29">
+          每日一语 2024.9.29
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-09-29</time>
+        <a href="https://nodebe4.github.io/waimei/2024-09-29/CDT%E5%85%B3%E6%B3%A8-WOMEN%E6%88%91%E4%BB%AC-%E5%BD%93%E7%88%B6%E6%AF%8D%E6%88%90%E4%B8%BA%E5%9B%BD%E5%AE%B6%E7%9A%84%E6%95%8C%E4%BA%BA-%E6%9C%AA%E6%88%90%E5%B9%B4%E7%9A%84%E5%AD%A9%E5%AD%90%E4%BB%AC%E6%88%90%E4%B8%BA%E4%BA%86-%E6%9C%80%E8%84%86%E5%BC%B1%E7%9A%84%E8%BF%AB%E5%AE%B3%E5%AF%B9%E8%B1%A1">
+          【CDT关注】WOMEN我们｜当父母成为国家的敌人，未成年的孩子们成为了“最脆弱的迫害对象”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29">
+            前一篇：每日一语 2024.9.29
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97">
+            后一篇：修明札记｜司马南代表真实民意吗？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-09-29/%E4%BF%AE%E6%98%8E%E6%9C%AD%E8%AE%B0-%E5%8F%B8%E9%A9%AC%E5%8D%97%E4%BB%A3%E8%A1%A8%E7%9C%9F%E5%AE%9E%E6%B0%91%E6%84%8F%E5%90%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-09-29/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.9.29">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
