@@ -1,0 +1,17 @@
+---
+layout: post
+title: "与BYD竞争加剧，Robotaxi左右特斯拉"
+date: 2024-10-15T20:00:01.000Z
+author: 王 征
+from: https://cn.nikkei.com/industry/icar/56958-2024-10-16-05-00-01.html
+tags: [ 日本経済新聞 ]
+comments: True
+categories: [ 日本経済新聞 ]
+---
+<!--1729022401000-->
+[与BYD竞争加剧，Robotaxi左右特斯拉](https://cn.nikkei.com/industry/icar/56958-2024-10-16-05-00-01.html)
+------
+
+<div>
+<table border="0" style="border-collapse: collapse; width: 17.3845%; border-width: 0px; margin-left: auto; margin-right: auto;"><colgroup><col style="width: 100%;"></colgroup><tbody><tr><td><img src="https://cn.nikkei.com/images/2024/10/1014/1014-10-1-L-reuters.jpg" loading="lazy" width="600" height="375" data-path="local-images:/2024/10/1014/1014-10-1-L-reuters.jpg" referrerpolicy="no-referrer"></td></tr><tr><td><strong><span style="font-size: 8pt;">特斯拉在中国的销售正在恢复（在上海工厂制造的“Model 3”，Reuters）</span></strong></td></tr></tbody></table><p>   纯电动汽车（EV）市场排名世界第一的美国特斯拉正在与排名第二的比亚迪（BYD）展开激烈的竞争。特斯拉最近发布的7月～9月的全球销量同比增长6%，达到了46.289万辆，这是三个季度以来首次增长。另一方面，比亚迪同期的EV销量为44.3426万辆，正在不断追赶。</p><p>   特斯拉并未披露各地区的销量，但调查公司MarkLines的数据显示，7月～8月两个月时间，特斯拉在中国市场增长了8%。中国销售增长的背后主要归功于政府的促销措施。中国政府在内需萎缩的情况下，增加了换购新车时的补贴以刺激消费，这被认有助于需求的恢复。</p><p>   截至9月9日，根据中国汽车工业协会的数据，9月的销量（批发量）同比增长了19%。</p><p>   而特斯拉的主要市场美国的销售依旧放缓。美国调查公司Cox Automotive的数据显示，特斯拉在美国7月～9月的销量同比减少了2%，仅为15.38万辆。</p><table border="0" style="border-collapse: collapse; width: 9.24041%; border-width: 0px; margin-left: auto; margin-right: auto;"><colgroup><col style="width: 100%;"></colgroup><tbody><tr><td><img src="https://cn.nikkei.com/images/2024/10/1014/1014-10-2-M.jpg" loading="lazy" width="400" height="324" data-path="local-images:/2024/10/1014/1014-10-2-M.jpg" referrerpolicy="no-referrer"></td></tr><tr><td></td></tr></tbody></table><p>   特斯拉在美国的EV销售份额已连续两个季度低于5成。尽管美国市场的EV销量在7月～9月期间也增长了8%，但价格竞争依然激烈。特斯拉以外的大型车企也在美国增加销售激励等，进行降价促销。</p><p>   EV市场持续放缓的欧洲也表现低迷。根据MarkLines的数据，特斯拉在欧洲的销售在7月～8月期间同比下降了4成。主要国家停止了对EV的购买补贴，这也是影响因素之一。</p><p>   7月～9月的销量低于分析师的市场预期（约46.3万辆）。</p><p>   特斯拉2024年的年销量首次转为负增长的可能性也很大。2023年全球销量同比增长38%至约180万辆，创下历史新高，但进入2024年后，由于与中国企业的价格竞争以及全球EV市场放缓，增长势头明显减弱。1月～9月的销量同比下降了2%。</p><p>   进入2024年以后，全球产量也在持续下滑。2023年特斯拉生产了约184万辆汽车，同比增长35％，刷新了历史最高纪录，但2024年1月至9月的产量同比下滑3％。如果全年销量和产量均低于上年，那将是创立以来首次出现负增长。</p><table border="0" style="border-collapse: collapse; width: 8.69225%; border-width: 0px; margin-left: auto; margin-right: auto;"><colgroup><col style="width: 100%;"></colgroup><tbody><tr><td><img src="https://cn.nikkei.com/images/2024/10/1014/1014-10-3-M.jpg" loading="lazy" width="400" height="289" data-path="local-images:/2024/10/1014/1014-10-3-M.jpg" referrerpolicy="no-referrer"></td></tr><tr><td></td></tr></tbody></table><p>   EV销量仅次于特斯拉、位居全球第二的比亚迪10月1日公布的数据显示，2024年7月至9月的EV销量为44万3426 辆，增长3％。</p><p>   单从EV来看，特斯拉连续3个季度高于比亚迪，但从包括插电式混合动力车（PHV）在内的全球销量来看，比亚迪远远高于特斯拉，EV销量也仅与特斯拉相差不到2万辆。从全年销量来看，特斯拉仍占优势，但比亚迪也有微小的逆转可能性。2023年10月至12月，比亚迪的EV销量首次超过了特斯拉。</p><p>   特斯拉10月10日发布了自动驾驶出租车“Robotaxi”。Robotaxi可能预示着特斯拉未来的增长。该车升级了使用人工智能（AI）的驾驶辅助系统，预计将通过扩大运输服务来增加EV销量。另一方面，要在全球实现无需驾驶员干预的“Level 4”服务，仍面临很大的监管壁垒。</p><p>   CFRA Research分析师加勒特·尼尔森就Robotaxi的盈利表示：“还需要几年时间，仍有诸多技术门槛、安全测试和监管部门的批准问题挡在前面”。</p><p>   另一方面，韦德布什（Wedbush）证券分析师丹尼尔·艾夫斯在9日的报告中评论：“AI和自动驾驶领域在未来几年将为特斯拉带来1万亿美元的价值”。</p><p>   特斯拉在自动驾驶和AI领域采取的战略是，在包括中国在内的全球范围内推广在美国开发的技术。</p><p>   但中美对立也给这种战略蒙上了阴影。美国拜登政府9月宣布禁止进口和销售使用中国零部件和软件的“联网汽车”。如果中美分裂进一步加剧，可能也会对特斯拉的开发体制产生影响。</p><p> <strong>日本经济新闻（中文版：日经中文网）川上梓 纽约报道</strong></p><strong>版权声明：日本经济新闻社版权所有，未经授权不得转载或部分复制，违者必究。</strong>
+</div>
