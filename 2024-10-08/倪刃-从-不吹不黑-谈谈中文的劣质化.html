@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>倪刃｜从“不吹不黑”谈谈中文的劣质化 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+" />
+    <meta property="og:description" content="
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="倪刃｜从“不吹不黑”谈谈中文的劣质化" />
+    <meta property="twitter:title" content="倪刃｜从“不吹不黑”谈谈中文的劣质化" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5344)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712058.html&t=%E5%80%AA%E5%88%83%EF%BD%9C%E4%BB%8E%E2%80%9C%E4%B8%8D%E5%90%B9%E4%B8%8D%E9%BB%91%E2%80%9D%E8%B0%88%E8%B0%88%E4%B8%AD%E6%96%87%E7%9A%84%E5%8A%A3%E8%B4%A8%E5%8C%96" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712058.html&t=%E5%80%AA%E5%88%83%EF%BD%9C%E4%BB%8E%E2%80%9C%E4%B8%8D%E5%90%B9%E4%B8%8D%E9%BB%91%E2%80%9D%E8%B0%88%E8%B0%88%E4%B8%AD%E6%96%87%E7%9A%84%E5%8A%A3%E8%B4%A8%E5%8C%96&d=2024-10-08&e=
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：从“不吹不黑”谈谈中文的劣质化作者：倪刃发表日期：2024.10.8来源：微信公众号“倪刃”主题归类：中文劣化主题归类：语言暴力CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  前段时间写过一篇文章，关于中文的语言腐败，反响挺大的。可见大家对简体中文这种堕落的现象深恶痛绝。
+  今天这篇想进一步说一下中文的劣质化问题。
+  首先一组劣质化的词就是“吹”、“黑”以及“不吹不黑”。很多人现在想讲一个看法，都要先申明自己“不吹不黑”，就是因为好的评价总是被说成是“吹”，相反则是“黑”。
+  
+  语言的劣质化，从表面上来说是因为，总倾向于用很大的词或者某种立场..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712058.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712058.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712058.html&text=倪刃｜从“不吹不黑”谈谈中文的劣质化&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712058.html&title=倪刃｜从“不吹不黑”谈谈中文的劣质化" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712058.html&title=倪刃｜从“不吹不黑”谈谈中文的劣质化" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=倪刃｜从“不吹不黑”谈谈中文的劣质化&body=
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712058.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712058.html&title=倪刃｜从“不吹不黑”谈谈中文的劣质化&caption=
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=倪刃｜从“不吹不黑”谈谈中文的劣质化&url=https://chinadigitaltimes.net/chinese/712058.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>倪刃｜从“不吹不黑”谈谈中文的劣质化</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712058.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712058.html&t=%E5%80%AA%E5%88%83%EF%BD%9C%E4%BB%8E%E2%80%9C%E4%B8%8D%E5%90%B9%E4%B8%8D%E9%BB%91%E2%80%9D%E8%B0%88%E8%B0%88%E4%B8%AD%E6%96%87%E7%9A%84%E5%8A%A3%E8%B4%A8%E5%8C%96&d=2024-10-08&e=
+倪刃｜从“不吹不黑”谈谈中文的劣质化
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：从“不吹不黑”谈谈中文的劣质化作者：倪刃发表日期：2024.10.8来源：微信公众号“倪刃”主题归类：中文劣化主题归类：语言暴力CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  前段时间写过一篇文章，关于中文的语言腐败，反响挺大的。可见大家对简体中文这种堕落的现象深恶痛绝。
+  今天这篇想进一步说一下中文的劣质化问题。
+  首先一组劣质化的词就是“吹”、“黑”以及“不吹不黑”。很多人现在想讲一个看法，都要先申明自己“不吹不黑”，就是因为好的评价总是被说成是“吹”，相反则是“黑”。
+  
+  语言的劣质化，从表面上来说是因为，总倾向于用很大的词或者某种立场..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712058.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728384595000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712058.html">倪刃｜从“不吹不黑”谈谈中文的劣质化</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712058.html" title="倪刃｜从“不吹不黑”谈谈中文的劣质化" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728384265200-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>从“不吹不黑”谈谈中文的劣质化<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/倪刃" target="_blank">倪刃</a><br /><strong>发表日期：</strong>2024.10.8<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/vQ0eiN67Wl8KJ7-rW_EoQA" target="_blank">微信公众号“倪刃”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中文劣化" target="_blank">中文劣化</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/语言暴力" target="_blank">语言暴力</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>前段时间写过一篇文章，关于中文的语言腐败，反响挺大的。可见大家对简体中文这种堕落的现象深恶痛绝。</p>
+  <p>今天这篇想进一步说一下中文的劣质化问题。</p>
+  <p>首先一组劣质化的词就是“吹”、“黑”以及“不吹不黑”。很多人现在想讲一个看法，都要先申明自己“不吹不黑”，就是因为好的评价总是被说成是“吹”，相反则是“黑”。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712058-67050e5358c11." alt="img" /></p>
+  <p>语言的劣质化，从表面上来说是因为，总倾向于用很大的词或者某种立场，去替代事实本身。</p>
+  <p>比如说“吹”，其实发言者本意可能只是夸赞什么东西，这是再正常不过的一种语言表达、情绪表达，但却被一些人简单归类为“吹”，也就是说，你这个夸赞其实是一种故意的吹捧。</p>
+  <p>此处还可以衍生出来一个词就是“舔”。</p>
+  <p>“舔”就更加劣质化了，因为背后还有个词是“跪舔”。大家都知道，这个词尤其容易被用于夸赞国外的优点。</p>
+  <p>夸赞本来是一个充满人性的、复杂的语言表达，比如当一个人夸赞某种食物很好吃，或者夸赞某个国家的人很有礼貌，都被简单归类为“吹”或者“舔”，这就是一种将复杂事物简单化的过程。</p>
+  <p>中国有一些人非常热衷于这种扣帽子的语言方式，我不知道这习惯从何而来。其实就是将事物标签化、粗陋化，以便于他们进行“踩”或者“捧”。</p>
+  <p>比如一个人夸赞欧洲人有礼貌，就会有人冒出来说：“别舔了，欧洲人哪里礼貌了？”</p>
+  <p>其实，反驳实乃正常，认为欧洲人不礼貌是一个人的自由观点，无可厚非。但是在反驳之前，一定要加个定语，就是你在“舔”。这样似乎便增加了自己说法的合理性，一定要证明欧洲人不礼貌。</p>
+  <p>由此可见，这种劣质化语言还有个功能就是抬杠。只有语言先劣质化，这杠才能抬得起来。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712058-67050e538297a.png" alt="img" /></p>
+  <p>我的文章评论区，这种语言就数不胜数。比如很多人反驳我，非得先说“你还在那舔呢”。我本来是可以接受反驳的，被这么一说，就是开始了一种被攻击。</p>
+  <p>这种语言的劣质化表面上是简单化、标签化、杠精化，但是其本质却是文化的深层次倒退，非常具有伤害力，因为它摧毁的是一代人甚至几代人的文明。</p>
+  <p>真的有这么严重？我觉得有。因为语言是人类最重要的文明工具，一个人怎样发言，是非常重要的事情。</p>
+  <p>在文明的社会，最流行的发言必然是充满了逻辑和理性的，是务实的和具体的；但是在文明倒退的情况下，相当多的发言都是粗鄙、蛮横、无礼和极端的。</p>
+  <p>其实这样的问题早有端倪。我们现在看民国乃至之前的一些民间文书，都是非常优雅的。即便是离婚协议书，有时候都写得像散文一样优美。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712058-67050e53a6ba7." alt="img" /><br /><span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">敦煌莫高窟1900年出土的唐代文献中《放妻书》原文</span>    <p>这看似只是口舌的问题，却体现出文明的内核是否注重体面和尊严。如果完全抛弃了体面尊严，语言就会跟着劣质化。</p>
+    <p>我知道这里肯定有人要说：“还在这吹民国呢？”这就是一种典型的劣质化。因为我只是说了民国和之前时代的文化属性，但是在他们眼中那就是简单的“吹”。</p>
+    <p>除了文明倒退，语言劣质化还会带来思维的倒退。</p>
+    <p>当人们习惯了“吹”或者“黑”，就会逐渐忘记人还有能力去理性赞美或者理性批评一样事物，就会陷入我们常说的“二极管”状态。也就是说，他们不再关心事情的细节和丰富性，所有的事物在他们眼中都只有好坏两个极端。</p>
+    <p>长此以往，人们便丧失了思考能力，都变成二极管简单生物。他们就像低智动物一样，给它一种刺激，它便只做出一个固定反应。</p>
+    <p>这种情况在政治运动期间尤其严重。“革命”与“反革命”就是一个典型例子：到底什么是革命或者反革命，这个定义是模糊的，或者说其定义根本就不重要，重要的是你这个人适合被划分到革命还是反革命。</p>
+    <p>人本来是拥有复杂性的，比如一个人既很爱国，同时又不满意国家存在的一些问题，于是他偶尔发的牢骚，就成了反革命证据。</p>
+    <p>有时甚至只是拍了一张生活照，就被认定是反革命。</p>
+    <p>这么简单划分和处理一个人，会让全民丧智。大家都只会念叨那些革命还是反革命的车轱辘话，却没有人会动动脑子，去思考一下人到底何以为人，忘了脑子是用来想事情的。</p>
+    <p>除了“吹”、“黑”、“舔”等词儿，还有个最流行的劣质词是“洗”。</p>
+    <p>为啥他们爱说“洗地”或者“洗”呢？这词儿又往往跟“水军”有关，所以叫“水军洗地”。后来这个范围扩大了，不光是水军，一般人也会被说是在洗。</p>
+    <p>比如说他们已经认定了的事情，你去辩驳两句，就是“洗”。这种劣质化的目的在于否定你的辩驳本身，无视你说的内容，一个“洗”就足以让你说的一大堆话都毫无意义。</p>
+    <p>从这里也能看出，语言劣质化常常试图把语言的重心从内容转移到立场上去，用立场替代事实。</p>
+    <p>这也还是属于一种简单化，因为直面对方说的内容总是费劲的、需要动脑子的，只有用“洗”这类词概括，才是简单直接的。</p>
+    <p>所以总体来看，语言的劣质化伴随着社会平均思维能力的退化、单一化，同时也标志着整个社会都在试图用立场去打压别人。</p>
+    <p>立场的背后，其实是权力。之所以打压别人，则是因为有权力撑腰。当全社会都只崇拜权力甚至语言暴力（语言的劣质化其实就是一种语言暴力），那么文明的倒退就成了一种必然。</p>
+ &lt;/div&gt;</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-08/%E5%85%A5%E6%9C%A8%E4%B8%89%E5%88%86%E8%B0%88-%E5%88%AB%E5%93%AD-%E7%BB%99%E4%BD%A0%E6%B3%A8%E5%85%A5%E6%AD%A3%E8%83%BD%E9%87%8F%E5%91%A2">
+          入木三分谈｜别哭，给你注入正能量呢
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-08/%E8%A1%A3%E8%80%85%E6%9C%9D%E6%96%B0-%E5%B0%86%E6%9D%A5-%E9%9E%AD%E5%B0%B8-%E7%9A%84%E5%A5%BD%E7%B4%A0%E6%9D%90">
+          衣者朝新｜将来“鞭尸”的好素材
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-08/404%E6%96%87%E5%BA%93-%E6%AF%8F%E6%97%A5%E4%B9%90%E8%AF%84-%E4%B8%8A%E6%B5%B7%E8%B6%85%E5%B8%82%E8%A1%80%E6%A1%88-%E8%83%8C%E5%90%8E%E7%BC%98%E7%94%B1%E8%AE%A9%E4%BA%BA%E6%8F%AA%E5%BF%83">
+          【404文库】每日乐评｜上海超市血案：背后缘由让人揪心
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-08/%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%A8%A1%E6%A0%B7-%E6%80%AA%E4%BA%8B-%E6%9C%BA%E5%9C%BA%E5%87%BA%E5%A2%83%E6%9C%AA%E6%8A%A5%E5%A4%87-%E7%B4%A2%E8%A6%81100%E5%85%83%E7%BB%99%E9%A2%86%E5%AF%BC%E4%B9%B0%E7%83%9F%E8%A2%AB%E6%94%BE%E8%A1%8C">
+          现实的模样｜怪事！机场出境未报备，索要100元给领导买烟被放行
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-08/%E7%BE%8E%E5%9B%BD%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E8%B0%B7%E6%AD%8C%E7%BB%99%E7%AB%9E%E4%BA%89%E5%AF%B9%E6%89%8B%E5%BC%80%E6%94%BE%E5%AE%89%E5%8D%93%E5%95%86%E5%BA%97">
+            前一篇：美国法院下令谷歌给竞争对手开放安卓商店
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-08/%E5%8D%81%E4%B8%80-%E5%88%9A%E8%BF%87-%E5%9B%9B%E5%90%8D%E7%9C%81%E9%83%A8%E7%BA%A7%E5%AE%98%E5%91%98%E8%A2%AB%E5%8F%8C%E5%BC%80%E5%B9%B6%E7%A7%BB%E9%80%81%E5%8F%B8%E6%B3%95">
+            后一篇：“十一”刚过 四名省部级官员被双开并移送司法
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-08/%E7%BE%8E%E5%9B%BD%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E8%B0%B7%E6%AD%8C%E7%BB%99%E7%AB%9E%E4%BA%89%E5%AF%B9%E6%89%8B%E5%BC%80%E6%94%BE%E5%AE%89%E5%8D%93%E5%95%86%E5%BA%97'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-08/%E5%8D%81%E4%B8%80-%E5%88%9A%E8%BF%87-%E5%9B%9B%E5%90%8D%E7%9C%81%E9%83%A8%E7%BA%A7%E5%AE%98%E5%91%98%E8%A2%AB%E5%8F%8C%E5%BC%80%E5%B9%B6%E7%A7%BB%E9%80%81%E5%8F%B8%E6%B3%95'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-08/%E8%A1%A3%E8%80%85%E6%9C%9D%E6%96%B0-%E5%B0%86%E6%9D%A5-%E9%9E%AD%E5%B0%B8-%E7%9A%84%E5%A5%BD%E7%B4%A0%E6%9D%90'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-08/404%E6%96%87%E5%BA%93-%E6%AF%8F%E6%97%A5%E4%B9%90%E8%AF%84-%E4%B8%8A%E6%B5%B7%E8%B6%85%E5%B8%82%E8%A1%80%E6%A1%88-%E8%83%8C%E5%90%8E%E7%BC%98%E7%94%B1%E8%AE%A9%E4%BA%BA%E6%8F%AA%E5%BF%83'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-08/%E7%BE%8E%E5%9B%BD%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E8%B0%B7%E6%AD%8C%E7%BB%99%E7%AB%9E%E4%BA%89%E5%AF%B9%E6%89%8B%E5%BC%80%E6%94%BE%E5%AE%89%E5%8D%93%E5%95%86%E5%BA%97">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-08/%E5%8D%81%E4%B8%80-%E5%88%9A%E8%BF%87-%E5%9B%9B%E5%90%8D%E7%9C%81%E9%83%A8%E7%BA%A7%E5%AE%98%E5%91%98%E8%A2%AB%E5%8F%8C%E5%BC%80%E5%B9%B6%E7%A7%BB%E9%80%81%E5%8F%B8%E6%B3%95">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-08/%E8%A1%A3%E8%80%85%E6%9C%9D%E6%96%B0-%E5%B0%86%E6%9D%A5-%E9%9E%AD%E5%B0%B8-%E7%9A%84%E5%A5%BD%E7%B4%A0%E6%9D%90">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-08/404%E6%96%87%E5%BA%93-%E6%AF%8F%E6%97%A5%E4%B9%90%E8%AF%84-%E4%B8%8A%E6%B5%B7%E8%B6%85%E5%B8%82%E8%A1%80%E6%A1%88-%E8%83%8C%E5%90%8E%E7%BC%98%E7%94%B1%E8%AE%A9%E4%BA%BA%E6%8F%AA%E5%BF%83">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

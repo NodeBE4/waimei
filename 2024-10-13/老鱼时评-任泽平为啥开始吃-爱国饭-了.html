@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>老鱼时评｜任泽平为啥开始吃“爱国饭”了 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+" />
+    <meta property="og:description" content="
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="老鱼时评｜任泽平为啥开始吃“爱国饭”了" />
+    <meta property="twitter:title" content="老鱼时评｜任泽平为啥开始吃“爱国饭”了" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5344)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712177.html&t=%E8%80%81%E9%B1%BC%E6%97%B6%E8%AF%84%EF%BD%9C%E4%BB%BB%E6%B3%BD%E5%B9%B3%E4%B8%BA%E5%95%A5%E5%BC%80%E5%A7%8B%E5%90%83%E2%80%9C%E7%88%B1%E5%9B%BD%E9%A5%AD%E2%80%9D%E4%BA%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712177.html&t=%E8%80%81%E9%B1%BC%E6%97%B6%E8%AF%84%EF%BD%9C%E4%BB%BB%E6%B3%BD%E5%B9%B3%E4%B8%BA%E5%95%A5%E5%BC%80%E5%A7%8B%E5%90%83%E2%80%9C%E7%88%B1%E5%9B%BD%E9%A5%AD%E2%80%9D%E4%BA%86&d=2024-10-13&e=
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：任泽平为啥开始吃“爱国饭”了作者：老鱼时评发表日期：2024.10.13来源：老鱼时评主题归类：爱国贼CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  最近几天，很久没有露面的前恒大首席经济学家任泽平又火了。
+  他先是在上周做出了预言，说下周股市开市就要全部涨停，所以节前建议大家持股过节。
+  结果大家都知道了，专治各种不服的大A狠狠打了首席经济学家的脸。
+  其实，真正有本事的专家一般都不做这种很具体的预测。毕竟。股市这玩意从来就没有人能真正预测对过，连巴菲特荣格这样的人也都是讲讲趋势啥的。你问他们明天股市是涨是跌，他们往往也是懵逼的。
+  
+  ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712177.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712177.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712177.html&text=老鱼时评｜任泽平为啥开始吃“爱国饭”了&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712177.html&title=老鱼时评｜任泽平为啥开始吃“爱国饭”了" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712177.html&title=老鱼时评｜任泽平为啥开始吃“爱国饭”了" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=老鱼时评｜任泽平为啥开始吃“爱国饭”了&body=
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712177.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712177.html&title=老鱼时评｜任泽平为啥开始吃“爱国饭”了&caption=
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=老鱼时评｜任泽平为啥开始吃“爱国饭”了&url=https://chinadigitaltimes.net/chinese/712177.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>老鱼时评｜任泽平为啥开始吃“爱国饭”了</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712177.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712177.html&t=%E8%80%81%E9%B1%BC%E6%97%B6%E8%AF%84%EF%BD%9C%E4%BB%BB%E6%B3%BD%E5%B9%B3%E4%B8%BA%E5%95%A5%E5%BC%80%E5%A7%8B%E5%90%83%E2%80%9C%E7%88%B1%E5%9B%BD%E9%A5%AD%E2%80%9D%E4%BA%86&d=2024-10-13&e=
+老鱼时评｜任泽平为啥开始吃“爱国饭”了
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：任泽平为啥开始吃“爱国饭”了作者：老鱼时评发表日期：2024.10.13来源：老鱼时评主题归类：爱国贼CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  最近几天，很久没有露面的前恒大首席经济学家任泽平又火了。
+  他先是在上周做出了预言，说下周股市开市就要全部涨停，所以节前建议大家持股过节。
+  结果大家都知道了，专治各种不服的大A狠狠打了首席经济学家的脸。
+  其实，真正有本事的专家一般都不做这种很具体的预测。毕竟。股市这玩意从来就没有人能真正预测对过，连巴菲特荣格这样的人也都是讲讲趋势啥的。你问他们明天股市是涨是跌，他们往往也是懵逼的。
+  
+  ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712177.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728840105000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712177.html">老鱼时评｜任泽平为啥开始吃“爱国饭”了</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712177.html" title="老鱼时评｜任泽平为啥开始吃“爱国饭”了" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/rz-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>任泽平为啥开始吃“爱国饭”了<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/老鱼时评" target="_blank">老鱼时评</a><br /><strong>发表日期：</strong>2024.10.13<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/8rTH7nnVuD2WPevnqVnwvQ" target="_blank">老鱼时评</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/爱国贼" target="_blank">爱国贼</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>最近几天，很久没有露面的前恒大首席经济学家任泽平又火了。</p>
+  <p>他先是在上周做出了预言，说下周股市开市就要全部涨停，所以节前建议大家持股过节。</p>
+  <p>结果大家都知道了，专治各种不服的大A狠狠打了首席经济学家的脸。</p>
+  <p>其实，真正有本事的专家一般都不做这种很具体的预测。毕竟。股市这玩意从来就没有人能真正预测对过，连巴菲特荣格这样的人也都是讲讲趋势啥的。你问他们明天股市是涨是跌，他们往往也是懵逼的。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa0a020." alt="image" /></p>
+  <p>更何况，咱们大A历来的打法都是不按套路出牌，比什么美国股市不知道要狂野到哪里去了。</p>
+  <p>一般来说，专家预测被打脸之后，最好的选择就是先躲起来不出声，毕竟现在网络时代，新热点多的是，说不定明天有别人被打脸，你的糗事也就是被忘记了。</p>
+  <p>没想到的是，任泽平预测失败之后，不但没躲起来，反而变本加厉了。他昨天和搞私募基金的但斌吵起来了。</p>
+  <p>10月2日，但斌说过：股市暴涨必有暴跌。他建议大家谨慎入市，再被套就不好整了。当时还有人嘲笑但斌被吓破胆子了，行情来都不敢出手。</p>
+  <p>现在看，但斌的担心显然是有道理的。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa115cc." alt="image" /></p>
+  <p>10月11日，但斌又指出：“喊大牛市，让股民往里冲”的专家、学者和自媒体作者们，应该对股民们公开道歉。</p>
+  <p>其实我觉得但斌的说法还是很克制的，毕竟你们大嘴一张随便就能BB几句，但听了你们建议的散户们赔掉的都是自己的血汗钱，有的人甚至是赔了棺材本。</p>
+  <p>这种情况，道个歉怎么了？</p>
+  <p>别说道歉了，股市暴跌之后，之前劝人入市的上海爷叔都失踪好几天了，据说是门牙被愤怒的散户打掉好几颗，不敢见人了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa1ea8a." alt="image" /></p>
+  <p>就在但斌喊话之后，所有曾经劝散户入市的人们都悄咪咪地不出声的时候，首席经济学家任泽平主动对号入座了。</p>
+  <p>但他这次倒没有和但斌争论股市下一步的行情，而是剑走偏锋，打起了爱国牌。</p>
+  <p>10月11日，任泽平在自媒体上发文，给但斌安了一个“唱空股市”罪，还不点名地骂但斌就是汉奸。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa2b604." alt="image" /></p>
+  <p>自己的预测失败，就给预测对了的人扣个汉奸卖国的帽子。这已经不是经济学家之间的争论，而是纯纯的道德绑架了。</p>
+  <p>不过，说到“唱空股市”这件事，我倒是想起了任泽平的历史来。</p>
+  <p>任泽平在担任恒大首席经济学家之前，曾经在著名的国泰君安工作过，2014年的他发表了一篇雄文：《论对熊市的最后一战》，在这篇文章中他说5000点不是梦，还说“党给了我智慧给我胆，千难万险只等闲”等振聋发聩的言论。</p>
+  <p>文章一出，可以说是震惊四座。当然了，有人说A股在2014年之后确实达到了5000点，任泽平说的没错。说这种话的人是不了解当时的情况。</p>
+  <p>任泽平说这个话的时候，时代背景是这样的：</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa3274e." alt="image" /></p>
+  <p>而熟悉A股的人都知道，2014年到2015年的那一波“牛市”完全是靠资金推动起来的，散户们正是听信了任泽平之流的“预测”，利用各种配资杠杆大举入市，据不完全统计，当年的各种杠杆资金加起来达到了5万亿。</p>
+  <p>当然了，杠杆形成的牛市有多疯狂，后果就有多凄凉。那么牛市造成的伤害，让很多散户现在还心有余悸。</p>
+  <p>今年国泰君安已经要和海通证券合并了，任泽平曾经工作著名券商落得个惨淡收场。</p>
+  <p>2017年，任泽平跳槽到恒大地产，担任许家印的首席经济学家和经济研究院院长，年薪1500万。而现在的恒大是什么情况，大家都知道，不用我细说了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa403cb." alt="image" /></p>
+  <p>我说到这，可能有人又要说了，任泽平在恒大崩盘之前就离开了，而且他还说过：许家印根本不听他的，就是拿他做个招牌。言下之意，他任泽平还是有水平的，如果许家印要是按照他说的做，不至于有今天。</p>
+  <p>这种说法，和他在国泰君安时预测5000点不是梦一样，都是只知其一，不知其二。许家印听不听任泽平的咱们是不知道的，但你任泽平在恒大做首席科学家的时候高喊未来10年一二线城市房价翻二倍，三四线城市房价翻三倍，那咱们可是听得真真的啊！</p>
+  <p>由此可见，恒大能有今天，中国房地产能有今天，任泽平这样专家的贡献还真的不少呢！</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712177-670c01aa48993." alt="image" /></p>
+  <p>任泽平倒是不唱空，但他工作过的单位全完犊子了。</p>
+  <p>或许，这么多年走来，任泽平已经发现“经济学家”的这碗饭实在是不太好吃，再看复旦的张维为教授等人混得风生水起，于是就端起爱国饭碗来了？</p>
+  <p>但问题是，你真要是胡锡进那样人的也就算了，毕竟他买股票吃瓜群众就当去动物园看耍猴了。</p>
+  <p>可你任泽平是一个堂堂的首席经济学家，在用严肃的经济学理论来解构问题的同时，还加带一点个人情绪的私货，结果就是粉丝们被打了鸡血之后进场去接盘那些逃顶卖公司的。</p>
+  <p>任泽平这样的所谓”经济学“家们，都特么的快成“政治经济学”家了，在经济上辩不过人家，就给对方扣政治大帽子，这真的是很无耻。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-14/%E5%9C%B0%E7%90%83%E5%85%AC%E6%B0%91%E9%87%91%E5%BB%BA%E5%9B%BD-%E4%B8%8D%E4%BC%9A%E5%94%B1%E5%9B%BD%E6%AD%8C%E5%B0%B1%E6%98%AF%E9%97%B4%E8%B0%8D%E5%90%97">
+          地球公民金建国｜不会唱国歌就是间谍吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-14/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%85%B3%E9%94%AE%E6%98%AF%E6%88%91%E4%BB%AC%E6%83%B3%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A">
+          【网络民议】“关键是我们想好好说话您不让啊”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-13</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8">
+          建设性意见｜明天哪只股票会涨？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-13</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-13/%E8%80%81%E5%B9%B2%E4%BD%93v-%E5%9C%B0%E6%96%B9%E5%80%BA-%E7%BB%88%E7%A9%B6%E8%BF%98%E6%98%AF%E4%B8%AD%E5%A4%AE%E6%89%9B%E4%B8%8B%E4%BA%86%E6%89%80%E6%9C%89">
+          老干体v｜地方债，终究还是中央扛下了所有
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8">
+            前一篇：建设性意见｜明天哪只股票会涨？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-13/%E5%94%AF%E4%B8%80%E5%80%99%E9%80%89%E4%BA%BA-%E5%B2%91%E6%B5%A9%E8%BE%89%E6%88%90%E6%BE%B3%E9%97%A8%E9%A6%96%E4%BD%8D%E5%A4%A7%E9%99%86%E5%87%BA%E7%94%9F%E7%89%B9%E9%A6%96">
+            后一篇：“唯一候选人” 岑浩辉成澳门首位大陆出生特首
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-13/%E5%94%AF%E4%B8%80%E5%80%99%E9%80%89%E4%BA%BA-%E5%B2%91%E6%B5%A9%E8%BE%89%E6%88%90%E6%BE%B3%E9%97%A8%E9%A6%96%E4%BD%8D%E5%A4%A7%E9%99%86%E5%87%BA%E7%94%9F%E7%89%B9%E9%A6%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-14/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%85%B3%E9%94%AE%E6%98%AF%E6%88%91%E4%BB%AC%E6%83%B3%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-13/%E5%94%AF%E4%B8%80%E5%80%99%E9%80%89%E4%BA%BA-%E5%B2%91%E6%B5%A9%E8%BE%89%E6%88%90%E6%BE%B3%E9%97%A8%E9%A6%96%E4%BD%8D%E5%A4%A7%E9%99%86%E5%87%BA%E7%94%9F%E7%89%B9%E9%A6%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-14/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E5%85%B3%E9%94%AE%E6%98%AF%E6%88%91%E4%BB%AC%E6%83%B3%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-13/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%98%8E%E5%A4%A9%E5%93%AA%E5%8F%AA%E8%82%A1%E7%A5%A8%E4%BC%9A%E6%B6%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>读库老六｜我并不是不想进入股市 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+读库老六｜我并不是不想进入股市
+——
+" />
+    <meta property="og:description" content="
+读库老六｜我并不是不想进入股市
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="读库老六｜我并不是不想进入股市" />
+    <meta property="twitter:title" content="读库老六｜我并不是不想进入股市" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5344)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712108.html&t=%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD%EF%BD%9C%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712108.html&t=%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD%EF%BD%9C%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82&d=2024-10-11&e=
+读库老六｜我并不是不想进入股市
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：填我并不是不想进入股市作者：读库老六发表日期：2024.10.10来源：读库老六主题归类：中国股市CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  关于时而冷清时而热闹、时而让人绝望时而重燃希望的股市，我的基本态度是最近流行的那六个字：已老实，求放过。
+  但我并不是一个投资原罪主义者，相反，我觉得这是一个你躲都躲不开的话题，生而为现代人必须要具备的技能——至少是意识。
+  那到底是什么缘由，让我成了现在这个样子呢？
+  辛苦遭逢起一经，需从头说起。
+  那是三十多年前，我听到消息，一个同学炒股，某天买了一支叫“东北电力”的股票，上午几块钱买的，到下午的时候，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712108.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712108.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712108.html&text=读库老六｜我并不是不想进入股市&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712108.html&title=读库老六｜我并不是不想进入股市" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712108.html&title=读库老六｜我并不是不想进入股市" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=读库老六｜我并不是不想进入股市&body=
+读库老六｜我并不是不想进入股市
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712108.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712108.html&title=读库老六｜我并不是不想进入股市&caption=
+读库老六｜我并不是不想进入股市
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=读库老六｜我并不是不想进入股市&url=https://chinadigitaltimes.net/chinese/712108.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>读库老六｜我并不是不想进入股市</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712108.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712108.html&t=%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD%EF%BD%9C%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82&d=2024-10-11&e=
+读库老六｜我并不是不想进入股市
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：填我并不是不想进入股市作者：读库老六发表日期：2024.10.10来源：读库老六主题归类：中国股市CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  关于时而冷清时而热闹、时而让人绝望时而重燃希望的股市，我的基本态度是最近流行的那六个字：已老实，求放过。
+  但我并不是一个投资原罪主义者，相反，我觉得这是一个你躲都躲不开的话题，生而为现代人必须要具备的技能——至少是意识。
+  那到底是什么缘由，让我成了现在这个样子呢？
+  辛苦遭逢起一经，需从头说起。
+  那是三十多年前，我听到消息，一个同学炒股，某天买了一支叫“东北电力”的股票，上午几块钱买的，到下午的时候，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712108.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728654173000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712108.html">读库老六｜我并不是不想进入股市</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712108.html" title="读库老六｜我并不是不想进入股市" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/32-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>填我并不是不想进入股市<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/读库老六" target="_blank">读库老六</a><br /><strong>发表日期：</strong>2024.10.10<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/CvmX7EHSBe7m9q4NCKlWTw" target="_blank">读库老六</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中国股市" target="_blank">中国股市</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>关于时而冷清时而热闹、时而让人绝望时而重燃希望的股市，我的基本态度是最近流行的那六个字：已老实，求放过。</p>
+  <p>但我并不是一个投资原罪主义者，相反，我觉得这是一个你躲都躲不开的话题，生而为现代人必须要具备的技能——至少是意识。</p>
+  <p>那到底是什么缘由，让我成了现在这个样子呢？</p>
+  <p>辛苦遭逢起一经，需从头说起。</p>
+  <p>那是三十多年前，我听到消息，一个同学炒股，某天买了一支叫“东北电力”的股票，上午几块钱买的，到下午的时候，涨到了三十八块。</p>
+  <p>这几句话现在写出来轻描淡写，但那可是没有手机没有网络，连寻呼机都不普及的年代，而发了大财的家伙远在另一座城市，消息却能以不可思议的速度和广度传到我的耳朵里，足见其震撼人心的力度。这种传奇故事的冲刷之下，不动心是不可能的，我决定攒出一笔钱来，然后给同学写封情深意长的信，让他教我怎么炒股。地址我都打听好了，包括邮政编码。</p>
+  <p>但通过上班来挣钱的速度实在是太慢了，即使努力争取让自己上夜班，每月能多出几十块钱夜班费，也很难买下“一手”股票。瞧瞧，我已经悄悄学会了这个量词。</p>
+  <p>再然后，某天办公室的电话响了，是那个买过“东北电力”的同学找我的，说是妹妹出国留学需要学费，问我有没有钱。得知我的存款数目，他心疼地挂了电话。其后几天，我不断听到消息，他已经找许多同学借了钱。</p>
+  <p>眼看他起高楼，眼看他楼塌了的故事，并不能让我对股市死心。真正起到警钟作用的，是另一个朋友。他在某家证券报社工作，既是专业媒体人员，自己也炒股。每逢一堆朋友吆五喝六要聚会吃饭，这种义不容辞的场合，他一次都没有出席，而理由无一例外，是不能脱身，要“看盘”。</p>
+  <p>“东北电力”一天能翻好几倍，以及炒股要“看盘”，都是那个年代的特有场景。我的感想是，一个人不跟朋友喝酒吹牛，却要眼巴巴盯着一堆不断变化的数字，真是了无生趣啊。咱可不能这样活。</p>
+  <p>这位朋友的母亲在老家，就靠把他从报社透露的一些所谓“内幕消息”传递给其他股民，而被当地人称为“股神”，那么，整天看盘的他，和他为股神的母亲，自身业绩如何呢？据说因为得到的“内幕消息”太多，进退失据，反倒没落下什么钱。</p>
+  <p>这事闹的。</p>
+  <p>再次让我对股市产生荒谬感，已经进入了新千年。</p>
+  <p>2001年，北京申奥成功，我在报社上班，听旁边炒股的同事说，要赶快去买全聚德的股票养在手里：你想，北京要开奥运会了，得有多少外国人来北京啊，得把全聚德的鸭子吃成啥样儿啊。</p>
+  <p>啊，就这？这番推理让我不得不怀疑人生。先别说奥运会要几年后才开，就是开了，运动员和教练员也不见得全吃烤鸭呀，难道东来顺的涮羊肉和稻香村的牛舌烧饼就不香吗？</p>
+  <p>二十二年后，我认识了投资专家孟岩老师，说起这段烤鸭股票的故事，他夸奖了我：虽然你不懂炒股，但有基本的逻辑。</p>
+  <p>这话说的，把那些股民的脸往哪儿搁？</p>
+  <p>但被孟岩老师这么一夸，我就向他坦白了另一个故事。</p>
+  <p>那已经是北京奥运会开过快十年之后，全聚德烤鸭也吃得不能再吃，我终于按捺不住，开通了股票账户。</p>
+  <p>之所以决定投身股市，是因为我发现自己拥有的社会资源已经悄悄发生了变化。当时我四十多岁，鼓捣《读库》已经十年，结识的人也越来越多。而这些亲朋好友也没闲着，纷纷在自己从事的专业领域小有所成，包括一些做投资的。比如许多地方由当地《读库》读者发起，成立了各种书友群，其中深圳分舵有个炒股高手，扬言只要跟着他混，至少可以保证让你每年挣出一笔可以订《读库》的书款来。</p>
+  <p>嗯哼，当时，一年《读库》的预订费是一百八十元。</p>
+  <p>我也认识了另一位投资界的朋友，几顿饭吃下来，跟我透了实底儿：钱挣得都不好意思了。我小小的心灵深处，不是不羡慕的，于是决定就跟他混了。</p>
+  <p>虽然我迫切地想赚钱，但基本的风度还是要保持的。我给他打了通电话，严正声明，我就拿出五万块钱炒股，这笔钱就是赔光了也不影响家庭生活和事业，所以你给我推荐股票，不要有任何压力哈，赔了赚了都好说。</p>
+  <p>挂断电话，过了一会儿，他发给我一个股票代码，并解释说，这家公司是做苹果手机包装材料的，新款iPhone马上要上市了，他们的业绩应该会上涨。</p>
+  <p>好，立马满仓。</p>
+  <p>时过境迁沧海桑田，如今炒股已经用手机软件来操作，不用再“看盘”了。</p>
+  <p>操作完成之后，我隐隐觉得有点儿不对劲：苹果手机不是每年都出新款吗？并且这是全世界人民都知道的内幕消息啊。</p>
+  <p>但是，你还别说，这支股票真就非常听话地涨了。</p>
+  <p>那位朋友说，大概涨到10%的时候你就抛。但我想，我可不只是他的人肉代理，要全让他说什么就是什么，那我的脑子是干啥的？</p>
+  <p>此时经过多年创业历练，深知实体经济之艰难，我内心的思维方式已经发生了转变，计算一笔钱时，我总是想：这得卖多少本《读库》啊。于是我开始憧憬，要等涨到20%再抛（放心，过了20%，再涨多少咱也不贪心），那就是挣了一万块钱——这得卖多少本《读库》啊。</p>
+  <p>结果如你所料，这支股票，然后就开始往回抽抽了。见势不好，我急忙抛掉，这笔交易，大概赚了一千多块，是预期的十分之一。</p>
+  <p>按照我原本的心理建设，还是非常理智的：什么时候到用这五万块钱挣出了五万块钱，咱就把那五万本金取出来，反正本已经回来了，剩下的都是赚的，爱咋折腾就咋折腾。</p>
+  <p>孟岩老师听了我这番胸怀大志的设想，点评道：炒股的人没有一个人会像你这样想，当他用五万块钱赚了五万块钱的时候，只会恨自己为什么不凑出五十万块钱去赚五十万。</p>
+  <p>好吧，我承认自己由于战绩不佳，所以还没养成这种血战到底的心态就已经龟缩了。不过拿这五万块钱小试牛刀之后，我还是总结出了一条规律：虽然盈亏比例是一样的，但基数和体量的不同，给人带来的影响也是指数级的。你把一百亿亏得只剩一亿，和把一百万亏得只剩一万，当然是不一样的。</p>
+  <p>所以，这次被“五万元之战”小小摩擦一下，我的内心很平和：看K线图跟心电图都没什么区别，这种钱确实轮不到我来赚。</p>
+  <p>又过了几年，我踏踏实实做读库这家公司，并且风险意识也开始养成，终于攒出一笔钱，有三百万。我把这笔钱称为“救命钱”，就是等到出现意外的恶性状况时，可以拿出来救急。</p>
+  <p>既然是救命钱，那就意味着，当你的命还处于正常状态时，这笔钱暂时无需动用。</p>
+  <p>我又把眼光投向了股市。</p>
+  <p>此时，我结识了另一位段位更高的股神朋友，并且我的做派也跟菜鸟小白不一样了，无需再做那番严正声明，直接轻描淡写地对他说，老哥，给推荐支股票吧。</p>
+  <p>他发给我一个股票代码，我马上打开手机，准备满仓。</p>
+  <p>此时我才发现，这支叫“上海谊众”的股票属于科创板，而我的证券账号居然没有资格购买。靠，难道没见过读库跨国公司老板吗？</p>
+  <p>当然，我小小的心灵深处，还是风险意识在作祟：这可是读库跨国公司的救命钱啊。</p>
+  <p>但这次入手未遂的上海谊众的股价我还记得，是三十元左右。并且，这支股票就保存在我的关注列表里。</p>
+  <p>过了不到一年时间，我无意中打开手机里的股票软件，看到了上海谊众的股价：是一百七十多元。</p>
+  <p>我仔细揉揉眼睛，看清这个数字，小小的心灵深处马上计算出来：如果我当时把那三百万买了上海谊众，不到一年，这笔钱就会变成一千七百万——不知不觉，不声不响，我错过了一千四百万！</p>
+  <p>这得卖多少本《读库》啊。</p>
+  <p>意难平。</p>
+  <p>之所以认识孟岩老师，是因为他写的书《投资第1课》由读库出版，终审书稿，也是我接受投资教育的过程，等到跟孟岩老师讲述这一千四百万故事的时候，我基本不再耿耿于怀了。</p>
+  <p>孟岩老师对我说，如果你真买了上海谊众，第一，你不可能隔好几个月才关注它的股价；第二，当它涨到10%的时候，你可能就忍不住要抛；第三，当它再涨到20%的时候，你忍不住要再买；第四，归根结底，这一千四百万你赚不到。</p>
+  <p>到写这篇文章的时候，我打开手机里的股票软件，看了上海谊众的股价——嗨，如今，咱也会看K线图了。</p>
+  <p>上海谊众最高的时候是一百九十八元。照此计算，与我擦肩而过的，是一千六百八十万。</p>
+  <p>而上海谊众现在的股价，是三十五元。</p>
+  <p>那个向我推荐上海谊众的股神，他通过这支股票挣了还是赔了，我没有去询问。基本的风度还是要保持的。哼，我只知道，认识他两年了，这小子在群里，一次红包也没发过。</p>
+  <p>我受到的投资理财方面的教育，除了股市的浅尝辄止，除了孟岩老师的《投资第1课》，还有另一位今年才认识的朋友。</p>
+  <p>此人在哈佛医学院搞科研，年纪轻轻就是博导。因为有着对发烧音响的共同爱好，我俩聊了许多，期间无意中提到股票。他说，疫情期间，他和同事闲着没事，就着各种学术论文、科研前沿的信息，以及药品研发的内在规律来分析一些药企：这家研发的药前景很好，那家的新药看来要失败，这家很快就看到曙光了，那家虽然暂时风光但终归还是不行……于是，一些同事就去试着买了股票，据说很成功。</p>
+  <p>对啊，这才是我心目中真正的股神啊，因为懂得，所以赚钱。</p>
+  <p>恍然大悟之际，我又感到一种淡淡的哀愁：人家是在医药行业啊，如果深耕某个专业领域的人才能看清具体某支股票的走势，那么我这个做出版的，放眼望去，有哪家同业公司的经营前景是充满希望的呢？</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E5%8F%A4%E8%80%81%E6%9D%BF%E7%9A%84%E8%80%81%E5%B7%A2-%E5%AF%B9%E4%BA%8E%E8%82%A1%E5%B8%82%E6%9A%B4%E8%B7%8C-%E4%BD%A0%E9%9C%80%E8%A6%81%E5%AF%B9%E6%94%BF%E5%BA%9C%E8%A1%8C%E4%B8%BA%E8%BF%9B%E8%A1%8C%E7%90%86%E8%A7%A3">
+          古老板的老巢｜对于股市暴跌，你需要对政府行为进行理解
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%81%AE%E8%94%BD-%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%88%B1%E7%9A%87%E5%B8%9D%E8%80%8C%E5%B7%B2">
+          张3丰的世界｜历史中的遮蔽：你只是爱皇帝而已
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6">
+          导筒directube｜又是熟悉的全网下架
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2">
+          亮见｜《阿Q外传》：重生之我在21世纪做网红
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6">
+            前一篇：导筒directube｜又是熟悉的全网下架
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-11/%E4%B8%AD%E5%9B%BD%E5%92%8C%E8%B6%8A%E5%8D%97%E5%B0%86%E7%AD%BE%E7%BD%B2%E6%9B%B4%E5%A4%9A%E6%96%B0%E5%8D%8F%E8%AE%AE">
+            后一篇：中国和越南将签署更多新协议
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E4%B8%AD%E5%9B%BD%E5%92%8C%E8%B6%8A%E5%8D%97%E5%B0%86%E7%AD%BE%E7%BD%B2%E6%9B%B4%E5%A4%9A%E6%96%B0%E5%8D%8F%E8%AE%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%81%AE%E8%94%BD-%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%88%B1%E7%9A%87%E5%B8%9D%E8%80%8C%E5%B7%B2'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-11/%E4%B8%AD%E5%9B%BD%E5%92%8C%E8%B6%8A%E5%8D%97%E5%B0%86%E7%AD%BE%E7%BD%B2%E6%9B%B4%E5%A4%9A%E6%96%B0%E5%8D%8F%E8%AE%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-11/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%81%AE%E8%94%BD-%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%88%B1%E7%9A%87%E5%B8%9D%E8%80%8C%E5%B7%B2">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-11/%E5%AF%BC%E7%AD%92directube-%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

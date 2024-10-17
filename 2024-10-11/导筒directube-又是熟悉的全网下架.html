@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>导筒directube｜又是熟悉的全网下架 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+导筒directube｜又是熟悉的全网下架
+——
+" />
+    <meta property="og:description" content="
+导筒directube｜又是熟悉的全网下架
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="导筒directube｜又是熟悉的全网下架" />
+    <meta property="twitter:title" content="导筒directube｜又是熟悉的全网下架" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5344)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712102.html&t=%E5%AF%BC%E7%AD%92directube%EF%BD%9C%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712102.html&t=%E5%AF%BC%E7%AD%92directube%EF%BD%9C%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6&d=2024-10-11&e=
+导筒directube｜又是熟悉的全网下架
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：又是熟悉的全网下架作者：导筒directube发表日期：2024.1.1来源：导筒directube主题归类：言论审查CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  日前，知名影视自媒体影视飓风发布了最新一期视频：《清晰度不如 4 年前！视频变糊是你的错觉吗？》。
+  该视频科普了视频平台为了降低流量费用支出，通过降低视频码率，改变编码格式等方式，压缩上传的视频画质。
+  甚至一些视频网站还会根据视频观看次数来进行动态调节，在视频观看人数少时则会给到较高码率，一旦视频上了热门观看人数增加，就会降低码率调整格式来节省流量开支。
+  为了尽可能不影响..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712102.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712102.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712102.html&text=导筒directube｜又是熟悉的全网下架&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712102.html&title=导筒directube｜又是熟悉的全网下架" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712102.html&title=导筒directube｜又是熟悉的全网下架" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=导筒directube｜又是熟悉的全网下架&body=
+导筒directube｜又是熟悉的全网下架
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712102.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712102.html&title=导筒directube｜又是熟悉的全网下架&caption=
+导筒directube｜又是熟悉的全网下架
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=导筒directube｜又是熟悉的全网下架&url=https://chinadigitaltimes.net/chinese/712102.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>导筒directube｜又是熟悉的全网下架</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712102.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712102.html&t=%E5%AF%BC%E7%AD%92directube%EF%BD%9C%E5%8F%88%E6%98%AF%E7%86%9F%E6%82%89%E7%9A%84%E5%85%A8%E7%BD%91%E4%B8%8B%E6%9E%B6&d=2024-10-11&e=
+导筒directube｜又是熟悉的全网下架
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：又是熟悉的全网下架作者：导筒directube发表日期：2024.1.1来源：导筒directube主题归类：言论审查CDS收藏：真理馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  日前，知名影视自媒体影视飓风发布了最新一期视频：《清晰度不如 4 年前！视频变糊是你的错觉吗？》。
+  该视频科普了视频平台为了降低流量费用支出，通过降低视频码率，改变编码格式等方式，压缩上传的视频画质。
+  甚至一些视频网站还会根据视频观看次数来进行动态调节，在视频观看人数少时则会给到较高码率，一旦视频上了热门观看人数增加，就会降低码率调整格式来节省流量开支。
+  为了尽可能不影响..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712102.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728653979000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712102.html">导筒directube｜又是熟悉的全网下架</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712102.html" title="导筒directube｜又是熟悉的全网下架" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/0f126ad6-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>又是熟悉的全网下架<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/导筒directube" target="_blank">导筒directube</a><br /><strong>发表日期：</strong>2024.1.1<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://mp.weixin.qq.com/s/y1zAQLaZeZNHbC0WArQ6Cg" target="_blank">导筒directube</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/言论审查" target="_blank">言论审查</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E7%9C%9F%E7%90%86%E9%A6%86" target="_blank" rel="noopener">真理馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>日前，知名影视自媒体影视飓风发布了最新一期视频：《清晰度不如 4 年前！视频变糊是你的错觉吗？》。</p>
+  <p>该视频科普了视频平台为了降低流量费用支出，通过降低视频码率，改变编码格式等方式，压缩上传的视频画质。</p>
+  <p>甚至一些视频网站还会根据视频观看次数来进行动态调节，在视频观看人数少时则会给到较高码率，一旦视频上了热门观看人数增加，就会降低码率调整格式来节省流量开支。</p>
+  <p>为了尽可能不影响清晰度降低带来的观感下降，视频网站还会主动提升视频的锐化，从而让创作者的视频内容出现偏差，甚至影响了创作者内容表达。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/1cb1848d.jpeg" alt="image" /></p>
+  <p>然而，今天下午影视飓风却发文称：“因为多方原因，有关清晰度的视频只能全网下架了，我们仍然希望互联网技术可以不断演进，让大家看到更清晰的视频。”</p>
+  <p>其实国内视频平台降低码率已经几乎是人尽皆知的秘密，早在三年前相关话题就曾上过热搜。</p>
+  <p>当时有人发现，国内视频平台上 1080P 的清晰度还不如 YouTube 的 720P，4K 差距更是天差地别。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/aa702d62.jpeg" alt="image" /></p>
+  <p>其实我们目前常见的分辨率表达方式是 1080P、4K 等，这些都只能片面的体现画面像素值，但并不能完全决定清晰度，而决定清晰度最重要的因素之一就是 " 码率 "。</p>
+  <p>码率代表的是编码器每秒编出的数据大小，就类似游戏中的帧率数据，码率约稿就是帧率约稿，每秒画面越多，视频体积越大。</p>
+  <p>在同等分辨率下，码率越高，视频清晰度也就越高，而国内视频平台的清晰度差距主要就在这里。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/68974e6e.jpeg" alt="image" /></p>
+  <p>部分概念解读：</p>
+  <p><strong>一、分辨率（Resolution）</strong></p>
+  <p>视频分辨率是指视频成像产品所成图像的大小或尺寸，它的表达式为：“水平像素数*垂直像素数”。常见的图像分辨率有QCIF（176×144）、CIF（352×288）、D1（704×576）、720P（1280×720）、1080P（1920*1080）。摄像机成像的最大分辨率是由CCD或CMOS感光器件决定的。现在摄像机基本支持修改分辨率，是通过摄像机自带软件裁剪原始图像生成的。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/0f126ad6.webp" alt="image" /></p>
+  <p><strong>二、帧率（Frame Rate）</strong></p>
+  <p>一帧就是一副静止的画面，连续的帧就形成动画，如电影等。我们通常所说的帧数就是在1秒钟时间里传输的图片的帧数，通常用fps（Frames Per Second）表示。每一帧都是静止的图像，快速连续地显示帧便形成了运动的假象，还原了物体当时的状态。高帧率可以得到更流畅、更逼真的动画。每秒钟帧数(fps) 愈多，所显示的动作就会愈流畅。一般来说，图像帧率设置为25fps或30fps已经足够。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/2aaa3dd3.gif" alt="image" /></p>
+  <p><strong>三、码流（Data Rate）</strong></p>
+  <p>码流是指视频图像经过编码压缩后在单位时间内的数据流量，也叫码率，是视频编码中画面质量控制中最重要的部分。同样分辨率下，压缩比越小，视频图像的码率就越大，画面质量就越高。</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/998c7020.webp" alt="image" /></p>
+  <p>分辨率、帧率及码流之间的相互关系可以用下图简单表示：</p>
+  <p><img decoding="async" src="https://keep.cdt.media/assets/images/7/2/720fa616/030ea73f.webp" alt="image" /></p>
+  <p>对于静止的图像，用较低的码流即可以获得较高的图像质量；对于运动的图像，需要配置较高的码流。举个例子，针对720P的摄像机来说，典型码率为：2M，对于室内场景，因运动物体较少、速度较小，配置2M码流即可满足要求；对于道路监控场景，因车流速度快，场景变换大，可能需要配置4M码率。实际应用中，我们应该配置为变码率，使其更好地适应场景变化。</p>
+  <p><strong>HDR</strong></p>
+  <p>HDR就是高动态对比（High Dynamic Range）</p>
+  <p>2015年由美国消费电子协会CEA公布的，CEA定义了“什么是HDR显示器材”，当中就将最大亮度定在<strong>1000nits</strong></p>
+  <p>人眼实际能感受的亮度其实可以达到<strong>20000nits</strong></p>
+  <p><strong>杜比视界（Dolby Vision） HDR</strong></p>
+  <p>Dolby实验室所开发的Dolby Vision。和HDR 10相比，Dolby Vision的规格更优异，首先在亮度资讯部分可以支持到<strong>4000nits</strong>，是HDR 10的四倍。</p>
+  <p>在“色深”部分支持12bit，色彩阶数是10bit的好几十倍。HDR 10是以一组“静态数据”来对应整部影片，如果影片中某些段落的明暗对比不一致，就可能出现画面偏暗的情形。</p>
+  <p>Dolby Vision是采取“动态数据”，能针对每一幅画面（frame by frame）提供相对应的数据，让每幅画面的变化都符合导演的要求，整体表现优于HDR 10。</p>
+  <p>Dolby Vision的普及率还不如HDR 10，主要原因在于HDR 10是开放式规格，而Dolby Vision是封闭式规格，想要发挥Dolby Vision效果，必须硬件上有所对应，理论上播放器和显示器材都必须配合专门解码芯片才行，另外还必须取得Dolby的授权，这让让它普及率不及HDR 10！</p>
+  <p>杜比视界不是开放的标准，需要使用它必须交付一定的版权费用（据悉是每年每台设备3美元）。</p>
+  <h4 id="section"><strong>蓝光</strong></h4>
+  <p>蓝光是影视文件的一种压缩方式 (BluRay)。</p>
+  <p>4K不一定是蓝光，蓝光也不一定是4K，但是原盘一定是蓝光</p>
+  <p><strong>原盘电影</strong></p>
+  <p>原盘分为两种：BDISO/BDMV原盘和REMUX原盘</p>
+  <p>BDISO/BDMV原盘：直接从正版蓝光光碟里"拷贝"出来的，完全无修改，纯正蓝光原盘电影。</p>
+  <p>它包含了光碟里面所有的内容（除了正片还有影片幕后花絮、字幕、导航菜单、多语言多音轨、彩蛋、HDR 信息等等），和市面上的正版蓝光光碟内容上完全一致，二者存储媒介不一样，一个在光盘中，一个在硬盘。其中BDISO 就是单文件，而BDMV则是多个文件夹。</p>
+  <p>**BDISO原盘</p>
+  <p>不同于我们常见的MP4和MKV，原盘电影有两种格式：一种是光盘镜像，即iso格式的文件（也称<strong>BDISO</strong>），它可以用虚拟光驱载入后播放，或者用支持iso文件的播放器播放；</p>
+  <p>**BDMV原盘</p>
+  <p>另外一种是包含了完整的文件结构的BDMV 文件夹（也称<strong>BDMV</strong>），BDMV文件夹里面也包含大量文件和文件夹，其中影片的主体是STREAM 文件夹下的<strong>m2ts文件</strong>，对于专业的蓝光播放机来说直接就可以读取并播放。</p>
+  <p>将原盘电影iso文件或者BDMV文件夹拖到PotPlayer播放器窗口就能直接播放。</p>
+  <p>**REMUX原盘：</p>
+  <p>REMUX是把上面两种无修改原盘的音频、视频分离出来，然后再对音视频进行无损的封装加工合成。</p>
+  <p>精简了一些不需要的音轨、花絮、菜单信息，还有部分语言字幕，对于国内发烧友，它还加入了中文特效字幕等。</p>
+  <p>REMUX原盘对于原盘电影中的画质和音质不会做任何修改，并且保留了纯正蓝光原盘正片所有的内容，“原盘精简版”占用容量也会有缩减，同一部影片有可能比BDISO/BDMV原盘小20GB）。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E5%8E%86%E5%8F%B2%E4%B8%AD%E7%9A%84%E9%81%AE%E8%94%BD-%E4%BD%A0%E5%8F%AA%E6%98%AF%E7%88%B1%E7%9A%87%E5%B8%9D%E8%80%8C%E5%B7%B2">
+          张3丰的世界｜历史中的遮蔽：你只是爱皇帝而已
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82">
+          读库老六｜我并不是不想进入股市
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2">
+          亮见｜《阿Q外传》：重生之我在21世纪做网红
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-11/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.10">
+          每日一语 2024.10.10
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2">
+            前一篇：亮见｜《阿Q外传》：重生之我在21世纪做网红
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82">
+            后一篇：读库老六｜我并不是不想进入股市
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-11/%E8%AF%BB%E5%BA%93%E8%80%81%E5%85%AD-%E6%88%91%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%B8%8D%E6%83%B3%E8%BF%9B%E5%85%A5%E8%82%A1%E5%B8%82">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-11/%E4%BA%AE%E8%A7%81-%E9%98%BFQ%E5%A4%96%E4%BC%A0-%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E5%9C%A821%E4%B8%96%E7%BA%AA%E5%81%9A%E7%BD%91%E7%BA%A2">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
