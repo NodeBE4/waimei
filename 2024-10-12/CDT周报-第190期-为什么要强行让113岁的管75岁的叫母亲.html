@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+" />
+    <meta property="og:description" content="
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？" />
+    <meta property="twitter:title" content="【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5362)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712111.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC190%E6%9C%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BC%BA%E8%A1%8C%E8%AE%A9113%E5%B2%81%E7%9A%84%E7%AE%A175%E5%B2%81%E7%9A%84%E5%8F%AB%E6%AF%8D%E4%BA%B2%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712111.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC190%E6%9C%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BC%BA%E8%A1%8C%E8%AE%A9113%E5%B2%81%E7%9A%84%E7%AE%A175%E5%B2%81%E7%9A%84%E5%8F%AB%E6%AF%8D%E4%BA%B2%EF%BC%9F&d=2024-10-12&e=
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+
+
+  上期周报：【CDT周报】第189期：国庆期间，上海没有砍人，西安没有下雪
+  过去两周中国数字时代【404文库】新增文章6篇，【每日一语】新增网语5条，【大事记】收录热点事件2件，刊登读者投稿2篇，投稿请点此。
+  编者的话：
+  
+    10月6日—11日 这一周。
+    长假期间，台湾艺人吴慷仁在微博转发了人民日报的一篇国庆帖文，并配上了“祝福锦绣中华”六个字。此外，台湾歌手安溥（张悬）所属的经纪公司也在微博上发出一封手写信，上有安溥亲手所写的“祝福新中国成立七十五周年”。
+    
+    由于安溥与吴慷仁两人过去都有参与过“太阳花”等台湾的社会运动，并就相关议题发声，因此两人对中国国庆的祝福也引发了巨大争议。有许多台湾网民将之视同背叛，认为是这是为了“既要又要”而选择“跪舔中共”。相反，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712111.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712111.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712111.html&text=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712111.html&title=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712111.html&title=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？&body=
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712111.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712111.html&title=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？&caption=
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？&url=https://chinadigitaltimes.net/chinese/712111.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712111.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712111.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC190%E6%9C%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%BC%BA%E8%A1%8C%E8%AE%A9113%E5%B2%81%E7%9A%84%E7%AE%A175%E5%B2%81%E7%9A%84%E5%8F%AB%E6%AF%8D%E4%BA%B2%EF%BC%9F&d=2024-10-12&e=
+【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+——
+
+
+  上期周报：【CDT周报】第189期：国庆期间，上海没有砍人，西安没有下雪
+  过去两周中国数字时代【404文库】新增文章6篇，【每日一语】新增网语5条，【大事记】收录热点事件2件，刊登读者投稿2篇，投稿请点此。
+  编者的话：
+  
+    10月6日—11日 这一周。
+    长假期间，台湾艺人吴慷仁在微博转发了人民日报的一篇国庆帖文，并配上了“祝福锦绣中华”六个字。此外，台湾歌手安溥（张悬）所属的经纪公司也在微博上发出一封手写信，上有安溥亲手所写的“祝福新中国成立七十五周年”。
+    
+    由于安溥与吴慷仁两人过去都有参与过“太阳花”等台湾的社会运动，并就相关议题发声，因此两人对中国国庆的祝福也引发了巨大争议。有许多台湾网民将之视同背叛，认为是这是为了“既要又要”而选择“跪舔中共”。相反，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712111.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728739587000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712111.html">【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712111.html" title="【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728736989311-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>上期周报：<a href="https://chinadigitaltimes.net/chinese/712007.html" title="【CDT周报】第189期：国庆期间，上海没有砍人，西安没有下雪">【CDT周报】第189期：国庆期间，上海没有砍人，西安没有下雪</a></p>
+  <p>过去两周中国数字时代<a href="https://chinadigitaltimes.net/chinese/404-articles-archive">【404文库】</a>新增文章6篇，<a href="https://chinadigitaltimes.net/chinese/quote-of-the-day">【每日一语】</a>新增网语5条，<a href="https://chinadigitaltimes.net/chinese/chronicle-of-major-events">【大事记】</a>收录热点事件2件，刊登读者投稿2篇，投稿请<a href="https://chinadigitaltimes.net/chinese/681495.html">点此</a>。</p>
+  <h3 id="section">编者的话：</h3>
+  <blockquote>
+    <p>10月6日—11日 这一周。</p>
+    <p>长假期间，台湾艺人吴慷仁在微博转发了人民日报的一篇国庆帖文，并配上了“祝福锦绣中华”六个字。此外，台湾歌手安溥（张悬）所属的经纪公司也在微博上发出一封手写信，上有安溥亲手所写的“祝福新中国成立七十五周年”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728736734698.png" alt="file" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728736713779.png" alt="file" /></p>
+    <p>由于安溥与吴慷仁两人过去都有参与过“太阳花”等台湾的社会运动，并就相关议题发声，因此两人对中国国庆的祝福也引发了巨大争议。有许多台湾网民将之视同背叛，认为是这是为了“既要又要”而选择“跪舔中共”。相反，也有不少中国大陆网民批评，“祝福锦绣中华”未提到“祖国”二字，是“忠诚不绝对”，是“连夜绣红旗”。总之，二人陷入了两岸皆不讨好的尴尬境地。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728736812012.png" alt="file" /></p>
+    <p>接下来，在中华民国113年国庆晚会上（10月5日），台湾总统赖清德抛出了一个“祖国论”，他说“最近邻居中华人民共和国10月1日刚过完75岁生日，再过几天，中华民国就要过113岁生日。因此，就年纪来说，中华人民共和国是绝对不可能成为中华民国人民的‘祖国’，反倒是中华民国可能是中华人民共和国75岁以上民众的祖国！”</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728469894682.png" alt="img" /></p>
+    <p>此番表述可能是受到了一段短视频的启发，而它确实在逻辑、事实层面有力回击了中共的宣传，具有相当强烈的解构作用。以至于引发了各种网络调侃“为什么要强行让113岁的管75岁的叫妈？”、“到底谁才是奴役人民的非法政权”？</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728736989311.png" alt="file" /></p>
+    <p>几天之后，赖清德又在任内首次的双十国庆演说中强调“中华民国已在台澎金马落地生根，和中华人民共和国互不隶属”。有网友指出，赖清德的两次表述就像《皇帝的新衣》中的小孩，直言不讳的讲出了两个最基本的常识：1.中华民国政府法统仍未断绝。2.大陆与台湾仍分属不同的主权，是事实上的“两个中国”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728737086115.png" alt="file" /></p>
+    <p>不过，赖清德近期的“祖国论”、“两国说”，还是让大陆方面都有些措手不及。例如，大陆国台办发言人回应说“赖清德的‘祖国论’是新瓶装旧酒的‘台独’谬论”，被迫承认了它说法的“新”。而外交部发言人则重申立场，强调“世界上只有一个中国，中华人民共和国政府是代表中国的唯一合法政府”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728737294862.png" alt="filev" /></p>
+    <p>有网友对此真诚发问，如果对于中国大陆民众而言，中共的执政合法性都越来越难以维持，那中共又如何能够说服国际社会，自己能代表民主的台湾社会呢？</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728738359854.png" alt="file" /></p>
+    <p>自“9·24金融新政”出台后，中国股市经历了连续5个交易日的大涨。因此在国庆长假期间，网上到处都是宣扬“长期牛市来了”的声音，尤其还有外媒报道“中国短期内将推出约1.5至2万亿元人民币的大规模财政刺激措施”，这无疑给许多跑步入市的新股民极大信心。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728739200325.png" alt="file" /></p>
+    <p>在这种集体乐观的氛围中，拥有千万粉丝短视频博主 @大蓝 建议粉丝进入股市，预测“节后股市必定暴涨”，并高喊“全仓猛干”的口号。上海一位颇有名气的“街头股神” @上海爷叔 更是预言节后大盘将“涨停”，并送给粉丝们一句“买得伟大，套得光荣”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728726839583.png" alt="img" /></p>
+    <p>由于投资者入场意愿强烈，券商开户量短期内激增。据统计显示，新开账户以年轻人为主，90后、00后成为开户主力军。长假的最后一天，微博话题“A股明天正式开盘”、“新股民跑步入场”、“股民担忧A股开盘第一天买不到”等话题，持续占据热门。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728738312439.png" alt="file" /></p>
+    <p>10月8日，中国股市如期迎来大涨，三大股指集体大幅高开，近千只股票涨停，一天内诞生多项历史新纪录。然而，从9日开始，股市便迎来了大幅回调，继而又是连续多日下跌，上演了一出过山车式的行情。11日，沪指一度失守3200点，而从3600点跌回3200点，只花了四天时间。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728738210268.png" alt="file" /></p>
+    <p>由于中国股市实行的是“T+1”交易制度，这导致许多砸锅卖铁的散户们入场即被套牢，成为了一批新的韭菜，怒批“说好的牛市呢？”有网友撰文分析并建议“越是牛市，中小散户越要小心，你眼前的繁荣，反而大概率是财富流失的渠道，因为中小投资者的判断力、信息和资本都无法与证券市场的二元结构相抗衡”。</p>
+    <p>那么，中国股市真的会有牛市吗？乐观声音认为，这波慢牛已经到来，毕竟它是一场人为的政策牛市，而官方政策意图还远远没有实现。在此过程中，有关部门也需要不断给股市降温以降低风险。悲观声音则认为，15天的牛市也可能是又一项刷新记录的烂尾工程，毕竟作为“欺骗性市场”的中国股市，人们是很难在整体信心不足的前提下，玩好这个击鼓传花的接盘游戏的。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1728738821562.png" alt="file" /></p>
+  </blockquote>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？<br /><strong>作者：</strong>中国数字时代<br /><strong>发表日期：</strong>2024.10.12<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/大事记" target="_blank">大事记</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">话语馆</a><br />        <!-- Shortcode is missing "name" attribute -->
+      </div>
+    </div>
+  </div>
+  <h3 id="section-1">一周荐读：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712112.html">【CDT报告汇】人权观察：中国政府跨国镇压手段以威胁在华亲属为主（外二篇）</a></li>
+  </ul>
+  <p>数名来自新疆的维吾尔人表示，中国当局透过他们在国内的家人和他们取得联络。之后警察直接用微信（WeChat）打电话向他们施压，要求他们停止在日本批评中国政府，或者要求他们提供日本维吾尔社区的资料，包括日本维吾尔协会成员的资料。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712031.html">【CDT关注】低音｜杳无音讯：何方美和她失踪的女儿们</a></li>
+  </ul>
+  <p>何方美还没有给女儿争取来“一个保障”，她决定以自己的方式，表达愤怒和痛苦。在记录泼墨的视频中，她留着齐耳短发，穿着黑色裙子和黑色打底裤，指着儿童车上的希希，讲述女儿因疫苗致残、自己维权被关押十个月的经历。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712075.html">【CDT关注】赖清德：“75岁的中华人民共和国，不可能是中华民国的‘祖国’”</a></li>
+  </ul>
+  <p>2024年10月5日，在中华民国113年国庆晚会上，台湾总统赖清德表示：中华人民共和国近期刚过完75岁生日，而中华民国即将迎来113周年。因此从两国的成立时间来说，中华人民共和国不可能成为中华民国人民的“祖国”……</p>
+  <h3 id="section-2">一周关注：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712141.html">【网络民议】你的经济条件甚至不如20年前的野原广志？</a></li>
+  </ul>
+  <p>野原广志是《蜡笔小新》中的经典角色，35岁的他不仅已婚，还有两个孩子和一只狗，年薪高达650万日圆，甚至拥有一栋独立房子。这个成就无疑是很多35岁的人所羡慕的。最近，有许多网友纷纷以野原广志为标准，对照自己的人生成就……</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712085.html">张3丰的世界｜“遮蔽”不会带来安全感</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712057.html">【404文库】每日乐评｜上海超市血案：背后缘由让人揪心</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712122.html">难得君｜数倍超速撞人致一家三口灭门，竟无人报道</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712104.html">风声OPINION｜经济复苏仍需要强力政策，建议直接发钱</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712108.html">读库老六｜我并不是不想进入股市</a></li>
+  </ul>
+  <p>广州发生一起针对小学生的袭击事件，一个男生、一位女生、还有一位接送小孩的阿姨受伤，60岁的歹徒被逮捕。在警方的“通报“中，这成了“3名群众”受伤。根本没提两名伤者是9岁的小学生，也故意淡化了案发地点，因为公布地点，就提示了那是一所学校的门口。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712073.html">阜成门六号院｜即便是牛市来了，中小散户也很难赚到钱</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712101.html">古老板的老巢｜对于股市暴跌，你需要对政府行为进行理解</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712134.html">木蹊说｜“买的伟大，套的光荣”，大A惊现卧龙凤雏</a></li>
+  </ul>
+  <p>笔者虽然不是证券行业专家，但是这些大数据依然提醒我们：越是牛市，中小散户越要小心，你眼前的繁荣，90%以上并不属于你，反而大概率是财富流失的渠道，中小投资者的判断力、信息和资本都无法与证券市场的二元结构相抗衡，各种投资行为要三思而后行。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712077.html">三联生活周刊｜餐饮业进入寒冬，你还舍得去餐馆吃饭吗？</a></li>
+  </ul>
+  <p>今年以来，国内餐饮行业利润大幅下降，大量餐馆亏损甚至倒闭。一向热衷于聚餐的中国消费者，现在舍不得去餐馆吃饭了吗？北京和上海这两大一线城市，率先拉响了餐饮业的警报。北京统计局的数据显示，2024年上半年，北京限额以上餐饮企业的利润同比暴跌88.8%。上海的数据更加惨淡……</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712102.html">导筒directube｜又是熟悉的全网下架</a></li>
+  </ul>
+  <p>日前，影视飓风却发文称：“因为多方原因，有关清晰度的视频只能全网下架了，我们仍然希望互联网技术可以不断演进，让大家看到更清晰的视频。”该视频科普了视频平台为了降低流量费用支出，通过降低视频码率，改变编码格式等方式，压缩上传的视频画质。</p>
+  <h3 id="section-3">一周惊奇：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712054.html">现实的模样｜怪事！机场出境未报备，索要100元给领导买烟被放行</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712120.html">走读新生｜这样肆无忌惮的明抢，就不怕遭报应吗？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712089.html">竹不倒｜权力越玩越疯，底层老百姓何去何从？</a></li>
+  </ul>
+  <p>无论从哪方面，你都无法想通湖南公安跑到昆明机场去“执法”的怪事。发生这样的“怪事”也就罢了，奇葩的是，这“报备”与否的问题，既然花100元钱就可以通融。更为讽刺的是，索要这100元钱的理由，竟然是为了给领导买烟抽！</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712021.html">双刀流｜堪比十个“北极鲶鱼”的“冬冬安安”，他到底是谁的后代？</a></li>
+  </ul>
+  <p>芸芸众生，只不过是他们登上荣耀宝座的一层层阶梯……如果这是假的，那他严重伤害了劳动人民的感情，请将其依法抓捕。如果是真的，那我们想知道，原本以为北极鲶鱼已经天下无敌了，这又是谁的后代？这点知情权，不过分吧？</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712024.html">剑客写字的地方｜有些人在用最丢脸的方法，帮我们“出名”！</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712064.html">书写者｜瑞士伤害儿童者的心理动机：阿Q不知道自己恨谁爱谁</a></li>
+  </ul>
+  <p>一个人可以选择做一个体面的人，也可以选择做一个丑角，但如果丑角越来越多，就别怪人家看不起你的整个“剧团”了。美其名曰“出口恶气”，其实不过是在“出口”自己的无知与狭隘。用猥琐的手段去获得廉价的“精神胜利”，不但不会赢得尊重，反而只会加深对方的轻视与偏见。</p>
+  <h3 id="section-4">一周讽刺：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712015.html">【404文库】新新默存｜王五四：忽然爱国的咪蒙</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712028.html">深涵说｜互联网没有记忆，举大旗者永远有赛道</a></li>
+  </ul>
+  <p>朋友们，对于忽然来的爱，我们要保持警惕，就像突如其来的爱国，始料未及的爱国，猝不及防的爱国，莫名其妙的爱国，最终都是毫不留情不讲武德的收割，忽然爱国，不是良心发现，是发现韭菜了，发点国难财。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712099.html">亮见｜《阿Q外传》：重生之我在21世纪做网红</a></li>
+  </ul>
+  <p>阿Q每次在国内看到外国人，尤其是外国人学校，就恨得牙痒痒。他好几次要进日本人学校，都被保安拦了下来，他大骂，他诅咒，“中国人的地方，凭什么不让中国人进？”但没有人理他，阿Q的挫败感越来越重，越来越气愤。他向外国校车砸石头，在外国人学校墙上写泄愤的大字。他觉得被外国人包围了，四周全是敌人……</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712091.html">鱼眼观察｜监控对着意见箱，这事真够离谱的</a></li>
+  </ul>
+  <p>如果说，一两个意见箱被安装在监控摄像头之下，相关方面还可以辩解是不小心，但如此多意见箱都被摄像头死死盯着，恐怕这种解释就说不通了。意见箱本来是用来监督的，但对“意见箱”进行“监控”，则成了对监督的一种反制，让监督形同虚设。这，真是一种悲哀！</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712079.html">个人记忆库｜过去一年，中国人对外部世界的观感全面恶化</a></li>
+  </ul>
+  <p>清华大学战略与安全研究中心在去年和今年进行的「中国人的国际安全观」民意调查结果显示，在过去的这一年中，中国人对外部世界的观感全面恶化。仅俄罗斯基本除外！</p>
+  <h3 id="section-5">一周声音：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712058.html">倪刃｜从“不吹不黑”谈谈中文的劣质化</a></li>
+  </ul>
+  <p>总体来看，语言的劣质化伴随着社会平均思维能力的退化、单一化，同时也标志着整个社会都在试图用立场去打压别人。立场的背后，其实是权力。之所以打压别人，则是因为有权力撑腰。当全社会都只崇拜权力甚至语言暴力，那么文明的倒退就成了一种必然。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712017.html">读宋史的赵大胖｜一生都在追求“教育意义”的家长</a></li>
+  </ul>
+  <p>社会逼成年人内卷，成年人逼自己的孩子内卷，最终这个巨大的压力分摊到了未成年人的身上……一生都在追求教育意义的家长，其实一生都在折磨孩子，折磨自己。希望他们能明白一个道理：并不是所有的事情，都要有教育意义的，人也并不是随时随地都需要被教育的。</p>
+  <h3 id="section-6">一周故事：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712095.html">【404文库】闻道不分朝夕｜38年前，蒋经国松口“解严”，开放党禁报禁</a></li>
+  </ul>
+  <p>38年前的今天——1986年10月9日，台湾新闻局证实，蒋经国表示国民党当局将提议解除已在台湾实施37年的“戒严令”。这一决定非同寻常。2007年7月21日，傅国涌先生在《南方人物周刊》发表的文章中写道，在历史发展的关键时刻，蒋经国争得政治变革的主动权，掌握了历史的主动权，一个新的时代由此开启。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712008.html">财新｜入学五天后，他们纵身一跳</a></li>
+  </ul>
+  <p>吃过晚饭，13岁的柳棋和同学小马翻过学校食堂二楼的窗户，先后从五米高的窗台跳下。此时是2023年11月4日，距离柳棋进入山东聊城市少林武校仅过去五天。柳棋说，自己有恐高症，跳下去前很害怕。他见到小马跳下去后躺地上抱着腿大叫，但仍跟着纵身一跃。因为这是他想到唯一能出去的办法——“摔残了也比在这里强。”</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712081.html">极昼工作室｜白石洲拆迁后，那些上学奔波的孩子都去哪儿了？</a></li>
+  </ul>
+  <p>白石洲拆迁之后，那些蜗居在城中村的家庭都去哪儿了？2019年，深圳著名的城中村白石洲，迎来拆除重建的时刻。作为许多“深漂”的第一站，据粗略统计，从上个世纪90年代开始，这里至少容纳过300万人次。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712083.html">冷杉RECORD｜不完美跨儿：病人、斗士与谎言</a></li>
+  </ul>
+  <p>从一个被社会建构了20多年的男性身份，到另一个同样被建构的女性身份，过渡期是混乱的，甚至是割裂的，寻找自我是一个艰难的过程。改变性别后，孙悦灵依然没有获得想要的爱情。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-12</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-12/404%E6%96%87%E5%BA%93-%E6%88%91%E4%BB%AC%E5%AE%87%E5%AE%99%E6%97%A0%E6%95%8C-%E6%88%91%E4%BB%AC%E5%A4%AA%E5%B9%B3%E7%9B%9B%E4%B8%96-%E6%88%91%E4%BB%AC%E7%B2%BE%E5%BD%A9%E6%9E%81%E4%BA%86-%E5%A4%96%E4%BA%8C%E7%AF%87">
+          【404文库】“我们宇宙无敌，我们太平盛世，我们精彩极了”（外二篇）
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-12</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-12/CDT%E5%85%B3%E6%B3%A8-%E6%AD%AA%E8%84%91-%E7%B1%B3%E7%B1%B3%E4%BA%9A%E5%A8%9C-%E5%9C%A8%E6%B5%B7%E5%A4%96%E5%9B%9B%E9%80%9A%E6%A1%A5%E5%A3%B0%E6%8F%B4%E8%BF%90%E5%8A%A8%E4%B8%AD-%E6%88%91%E4%BB%AC%E8%BF%99%E6%A0%B7%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7">
+          【CDT关注】歪脑｜米米亚娜：在海外四通桥声援运动中，我们这样克服恐惧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-12</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD">
+          玖奌杂货铺｜她揭露黑暗获得诺贝尔文学奖，没有人指责她抹黑韩国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-12</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-12/%E4%BA%BA%E7%89%A9-%E4%B8%80%E6%89%80%E9%87%8D%E7%82%B9%E9%AB%98%E4%B8%AD%E7%9A%84%E5%BF%83%E7%90%86%E8%87%AA%E6%95%91">
+          人物｜一所重点高中的心理自救
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD">
+            前一篇：玖奌杂货铺｜她揭露黑暗获得诺贝尔文学奖，没有人指责她抹黑韩国
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-12/%E7%BE%8E%E6%AC%A7%E6%95%A6%E4%BF%83%E4%BB%A5%E8%89%B2%E5%88%97%E5%81%9C%E6%AD%A2%E6%94%BB%E5%87%BB%E8%81%94%E5%90%88%E7%BB%B4%E5%92%8C%E9%83%A8%E9%98%9F-%E7%BE%8E%E5%AF%B9%E4%BB%A5%E9%BB%8E%E5%86%B2%E7%AA%81%E6%80%81%E5%BA%A6%E4%BC%BC%E6%9C%89%E5%8F%98%E5%8C%96">
+            后一篇：美欧敦促以色列停止攻击联合维和部队，美对以黎冲突态度似有变化
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-12/%E7%BE%8E%E6%AC%A7%E6%95%A6%E4%BF%83%E4%BB%A5%E8%89%B2%E5%88%97%E5%81%9C%E6%AD%A2%E6%94%BB%E5%87%BB%E8%81%94%E5%90%88%E7%BB%B4%E5%92%8C%E9%83%A8%E9%98%9F-%E7%BE%8E%E5%AF%B9%E4%BB%A5%E9%BB%8E%E5%86%B2%E7%AA%81%E6%80%81%E5%BA%A6%E4%BC%BC%E6%9C%89%E5%8F%98%E5%8C%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-12/CDT%E5%85%B3%E6%B3%A8-%E6%AD%AA%E8%84%91-%E7%B1%B3%E7%B1%B3%E4%BA%9A%E5%A8%9C-%E5%9C%A8%E6%B5%B7%E5%A4%96%E5%9B%9B%E9%80%9A%E6%A1%A5%E5%A3%B0%E6%8F%B4%E8%BF%90%E5%8A%A8%E4%B8%AD-%E6%88%91%E4%BB%AC%E8%BF%99%E6%A0%B7%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-12/%E7%BE%8E%E6%AC%A7%E6%95%A6%E4%BF%83%E4%BB%A5%E8%89%B2%E5%88%97%E5%81%9C%E6%AD%A2%E6%94%BB%E5%87%BB%E8%81%94%E5%90%88%E7%BB%B4%E5%92%8C%E9%83%A8%E9%98%9F-%E7%BE%8E%E5%AF%B9%E4%BB%A5%E9%BB%8E%E5%86%B2%E7%AA%81%E6%80%81%E5%BA%A6%E4%BC%BC%E6%9C%89%E5%8F%98%E5%8C%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-12/CDT%E5%85%B3%E6%B3%A8-%E6%AD%AA%E8%84%91-%E7%B1%B3%E7%B1%B3%E4%BA%9A%E5%A8%9C-%E5%9C%A8%E6%B5%B7%E5%A4%96%E5%9B%9B%E9%80%9A%E6%A1%A5%E5%A3%B0%E6%8F%B4%E8%BF%90%E5%8A%A8%E4%B8%AD-%E6%88%91%E4%BB%AC%E8%BF%99%E6%A0%B7%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-12/%E7%8E%96%E5%A5%8C%E6%9D%82%E8%B4%A7%E9%93%BA-%E5%A5%B9%E6%8F%AD%E9%9C%B2%E9%BB%91%E6%9A%97%E8%8E%B7%E5%BE%97%E8%AF%BA%E8%B4%9D%E5%B0%94%E6%96%87%E5%AD%A6%E5%A5%96-%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8C%87%E8%B4%A3%E5%A5%B9%E6%8A%B9%E9%BB%91%E9%9F%A9%E5%9B%BD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

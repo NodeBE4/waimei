@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>冰点周刊｜藏在酒店民宿里的摄像头 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+" />
+    <meta property="og:description" content="
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="冰点周刊｜藏在酒店民宿里的摄像头" />
+    <meta property="twitter:title" content="冰点周刊｜藏在酒店民宿里的摄像头" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5362)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712264.html&t=%E5%86%B0%E7%82%B9%E5%91%A8%E5%88%8A%EF%BD%9C%E8%97%8F%E5%9C%A8%E9%85%92%E5%BA%97%E6%B0%91%E5%AE%BF%E9%87%8C%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712264.html&t=%E5%86%B0%E7%82%B9%E5%91%A8%E5%88%8A%EF%BD%9C%E8%97%8F%E5%9C%A8%E9%85%92%E5%BA%97%E6%B0%91%E5%AE%BF%E9%87%8C%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4&d=2024-10-17&e=
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：藏在酒店民宿里的摄像头作者：冰点周刊发表日期：2024.10.16来源：冰点周刊主题归类：视频监控CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  外出住宿，不料住客的一举一动却被实时直播。偷拍设备藏在酒店民宿的插座、电视、空调、天花板烟雾报警器，甚至钉子、衣架等隐蔽位置，悄无声息地窥视密录，镜头另一端，交易与疯狂同时进行。
+  9月份，一名博主“影子不会说谎”及其团队在石家庄华强广场民宿房间内发现多个偷拍摄像头，该博主报警后，在楼道被多人围堵。这件事再次触动了公众对偷拍行为的恐惧与不安。
+  北京师范大学法学院博士生导师、中国互联网协会研究中心副主任吴沈..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712264.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712264.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712264.html&text=冰点周刊｜藏在酒店民宿里的摄像头&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712264.html&title=冰点周刊｜藏在酒店民宿里的摄像头" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712264.html&title=冰点周刊｜藏在酒店民宿里的摄像头" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=冰点周刊｜藏在酒店民宿里的摄像头&body=
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712264.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712264.html&title=冰点周刊｜藏在酒店民宿里的摄像头&caption=
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=冰点周刊｜藏在酒店民宿里的摄像头&url=https://chinadigitaltimes.net/chinese/712264.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>冰点周刊｜藏在酒店民宿里的摄像头</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712264.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712264.html&t=%E5%86%B0%E7%82%B9%E5%91%A8%E5%88%8A%EF%BD%9C%E8%97%8F%E5%9C%A8%E9%85%92%E5%BA%97%E6%B0%91%E5%AE%BF%E9%87%8C%E7%9A%84%E6%91%84%E5%83%8F%E5%A4%B4&d=2024-10-17&e=
+冰点周刊｜藏在酒店民宿里的摄像头
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：藏在酒店民宿里的摄像头作者：冰点周刊发表日期：2024.10.16来源：冰点周刊主题归类：视频监控CDS收藏：老大哥馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  外出住宿，不料住客的一举一动却被实时直播。偷拍设备藏在酒店民宿的插座、电视、空调、天花板烟雾报警器，甚至钉子、衣架等隐蔽位置，悄无声息地窥视密录，镜头另一端，交易与疯狂同时进行。
+  9月份，一名博主“影子不会说谎”及其团队在石家庄华强广场民宿房间内发现多个偷拍摄像头，该博主报警后，在楼道被多人围堵。这件事再次触动了公众对偷拍行为的恐惧与不安。
+  北京师范大学法学院博士生导师、中国互联网协会研究中心副主任吴沈..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712264.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1729218912000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712264.html">冰点周刊｜藏在酒店民宿里的摄像头</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712264.html" title="冰点周刊｜藏在酒店民宿里的摄像头" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/12-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>藏在酒店民宿里的摄像头<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/冰点周刊" target="_blank">冰点周刊</a><br /><strong>发表日期：</strong>2024.10.16<br /><strong>来源：</strong><a href="https://archive.ph/wip/oOqDB" target="_blank">冰点周刊</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/视频监控" target="_blank">视频监控</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86" target="_blank" rel="noopener">老大哥馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>外出住宿，不料住客的一举一动却被实时直播。偷拍设备藏在酒店民宿的插座、电视、空调、天花板烟雾报警器，甚至钉子、衣架等隐蔽位置，悄无声息地窥视密录，镜头另一端，交易与疯狂同时进行。</p>
+  <p>9月份，一名博主“影子不会说谎”及其团队在石家庄华强广场民宿房间内发现多个偷拍摄像头，该博主报警后，在楼道被多人围堵。这件事再次触动了公众对偷拍行为的恐惧与不安。</p>
+  <p>北京师范大学法学院博士生导师、中国互联网协会研究中心副主任吴沈括告诉中青报·中青网记者，近年来尽管偷拍现象得到了大力管控，但是因为新技术不断涌现，直播方式使得偷拍的侵害性更广泛，监管挑战也在持续增大。</p>
+  <p>他指出，酒店民宿需要首先承担防范、告知和及时处置偷拍事件的义务。此外，依据《中华人民共和国个人信息保护法》，住客在发现受到偷拍侵害的情况下，提供基本信息进行举证，可以提出维权主张，要求酒店民宿承担过错推定的侵权责任，反向推动相关机构作出有效的自检和回应。监管部门也应加大监管的力度，变化监管的方式。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712264-6711c9817ac73." alt="imgv" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">吴文煜测试金属探测仪（左）、红光检测仪（中）和热成像扫描仪（右）。受访者供图。</span>  <h2 id="section">一本万利的偷拍产业屡禁不止</h2>
+  <p>“偷拍产业之所以屡禁不止，因为其总是‘一本万利’。”浙江大学数字法治研究院副院长高艳东告诉中青报·中青网记者，目前，偷拍产业链分工明确，已经形成了设备制造和销售、设备安装、视频获取和传播三个方面，也就是前端偷拍工具、中端偷拍机会和后端的偷拍传播行为。</p>
+  <p>公安部早在2014年就已经明确禁止非法生产窃照窃听设备，高艳东认为情况却不容乐观。10月11日，记者在淘宝、京东和拼多多APP上搜索“针孔摄像头”，均无显示相关产品。然而，记者通过其他关键词，诸如“小巧”“针眼”，或根据搜索框自动填充的关键词，错字搜索“摄线头”等，仍可搜索出店家宣传的体积小、隐蔽性强的摄像头，有的仅有指甲盖大小，“找得到，我吃掉”“无声无光”“保密发货”等是该类产品的常见宣传语。此类摄像头价格从几十元到几百元不等。</p>
+  <p>除了在网络上依然可以找到售卖微型摄像头的渠道，高艳东指出，线下渠道更为隐蔽，在实践中也有不法分子购买零件自行编程组装。</p>
+  <p>高艳东介绍，根据国家市场监督管理总局（原国家质检总局）2017年的数据，约有80%的智能摄像头存在隐私泄露风险，其中也不乏厂家在生产时就给不法分子留下“快捷通道”的产品。黑客通过技术手段侵入家庭智能摄像头，通常采用付费直播的方式进行盈利。</p>
+  <p>偷拍密录的场景涵盖私密场所和公共场所。偷拍者在酒店、民宿、出租房等私密场所安装针孔摄像头，此次石家庄事件里，博主便是在民宿空调的通风管道里找到了摄像头。</p>
+  <p>不法分子还会在公园、游乐场、海滩等人流量较大的公共场所的厕所中安装针孔摄像头，“其中在女厕的安装较为普遍，通常根据女性的年龄外貌特征，将女性如厕的视频打上不同的标签进行分类，最后统一售卖给网站或者个人买家。”高艳东说。</p>
+  <p>偷拍设备的购买价格低廉，但是偷拍视频却可以多次出售甚至“私人定制”家庭直播。根据高艳东的调研，偷拍主要有两种方式获利，一种是付费直播，一般是400-600元就可以买到三五台酒店摄像头的观看权限，家庭摄像头价格会更低。</p>
+  <p>一种是视频销售，不法分子将私密视频剪辑好售卖给网站，一条视频的价格在100-300元之间，或者将视频直接卖给观看者，一般价格在几元到几十元不等，但是购买者不计其数。</p>
+  <p>酒店民宿里的摄像头是如何藏进房间的，事件曝光后，许多人对此提出疑问。“影子”博主在接受大象新闻采访时提到，许多团伙将服务器设在境外，通过支付佣金或分成的方式，指挥境内的社会闲散人员，俗称“小马仔”，统一给他们邮寄改装好的设备，告知安装位置和如何调试设备，装完之后删掉自己安装的视频。</p>
+  <p>2017年至2020年在北京经营民宿的王慧（化名）告诉中青报·中青网记者，她曾在和同行聊天中得知，有的民宿老板在装修时就已经把摄像头安装在房间里。</p>
+  <p>“对方说做正经民宿能挣几个钱，他们都是这样做（指安装摄像头），视频会同步云端，有的实时直播，每天的直播收入可观。稳赚不赔做一年后转让民宿，以后哪怕摄像头被查到了，也不是他的事了。”王慧表示，她拒绝了同行的建议，还购买了检测仪，在每个房间贴了入住之前先检测的指示牌，提醒顾客保护隐私。</p>
+  <p>高艳东指出，确实存在经营者自己安装摄像头的情况，这类情况在学校周边以及旅游风景区会更多一些，商务差旅酒店相对少一些；资质齐全，品牌效应强的酒店和民宿可能会少一些，而资质不完备的住所则多一些。</p>
+  <p>不过，他并不认为这是一种普遍情况，“我愿意相信中国的广大酒店民宿经营者有着其应有的职业操守，不会去偷拍牟利，只有少数经营者才会这么做。”</p>
+  <p>高艳东表示，偷拍产业在2017年至2018年逐渐泛滥。在2020年前，偷拍产业依然在扩张，直到2021年11月份，公安部网安局部署开展依法严厉打击偷拍偷窥黑色产业链条行动，偷拍产业才有所收敛。这几年随着净网运动的展开，线上购买针孔摄像头的渠道被取缔了许多，许多传播相关私密视频的网站也被大量关停。</p>
+  <p>“但团伙作案用于传播色情牟利的情况依然存在，而且新技术的运用使其更难以被发觉。”高艳东举例，诸如针孔摄像头之类的微型摄像头不仅可以实时联网直播，甚至可以“无红外”，不易被检测。不法分子还通过网络聊天工具或网盘兜售偷拍视频，使得传播行为更难被察觉。</p>
+  <h2 id="section-1">如果不幸找出隐藏的摄像头</h2>
+  <p>石家庄事件发酵之后，网络平台出现了多种教人检查隐藏摄像头的方式，防偷拍设备销量上涨。“反偷拍博主”也大量涌现，一些博主放出偷拍视角打过码的画面，素材来源和定位不明，称以此引起受害者和网友注意，“避雷”相关酒店民宿，并推荐网友购买相关检测摄像头的仪器。有网友对视频来源提出质疑，认为这种方式也对受害者造成二次伤害。</p>
+  <p>曾在摄影器材品牌工作的吴文煜指出，近期一些热门的检查方法不一定都有效，“如果大家相信了错误的方法，反而是纵容偷拍摄像头。”吴文煜实际测试了通过反射红光找到摄像头的设备和激光笔，前者需要摄像头会反光且找准照射角度，后者需要激光持续且大范围照射，因此他认为这两者的效果比较有限。</p>
+  <p>使用网络扫描软件筛查可疑设备也是被提及较多的方法。“网络分析的软件原理是扫描同一个网络下面的设备，不认识的为可疑设备。基本上市面上的扫描软件都可以实现这个功能。”吴文煜提醒，软件会有漏报的可能，如果摄像头连接了其他的Wi-Fi，或者不使用Wi-Fi，就没办法检测到。</p>
+  <p>录像设备一旦使用，就会产生大量热量，可以使用热成像扫描仪扫描识别出来。吴文煜同时测试了插座和烟雾感应器，它们运转时自身热量不高，一旦被安装了隐藏摄像头，用扫描仪一扫就能发现。他认为这一方法最为有效，但缺点是仪器价格高，一台需要八九百元。</p>
+  <p>此外，事件当事人博主接受采访时特别提醒，普通人住酒店民宿时，首先要排查的是“带电的地方”，因为大多数摄像头需要通电才能运行。中青报·中青网记者发现，有些网购平台的店家宣传“免插电”的摄像头，吴文煜表示，偷拍摄像头的耗电量比较大，“免插电”摄像头的电源容量非常小，无法支撑长时间使用，更多是商家噱头。</p>
+  <p>高艳东强调，普通人若发现了偷拍，首先应收集和保留相关证据，尽量保护好现场以便后续调查取证。他特别提醒，偷拍产业可能会涉及团伙作案，住客在势单力薄的情况下要优先注重自己的人身安全，尽量避免与相关人员发生冲突，及时报警，当遇到人身威胁时向警方申请人身保护。</p>
+  <p>其次，住客合理评估入住场所的资质，是否为较为知名的、星级认证较高、资质齐全完备、品牌知名度高的酒店，如果是，可以考虑联系酒店管理人进行处理；若是资质不齐全或监管不到位的小酒店或民宿，应该谨慎通知相关管理人来处理，“因为并不清楚管理人与偷拍行为之间是否存在关系。”</p>
+  <p>9月24日晚，石家庄市公安局新华分局发布警情通报称，已于24日将涉嫌非法使用窃听、窃照专用器材罪的三名犯罪嫌疑人全部抓获并依法采取刑事强制措施，经审讯，该三人均供认借住宿之机，在客房内偷装网购监控设备，以牟取非法利益的犯罪事实，且与民宿业主并不相识。</p>
+  <p>2023年，北京市海淀区人民检察院第二检察部办理了一起偷拍案件。犯罪人员以拍摄影视素材为由将多名女生约至他的住所，用提前隐藏的摄像设备偷拍下女生换装的隐私视频。该案最终以侵犯公民个人信息罪定罪处罚。</p>
+  <p>负责该案的检察官李鹏向中青报·中青网记者解释，将偷拍密录案件定性为侵犯公民个人信息罪在司法实务中比较少见，这也是司法机关为了保护公民个人信息、特别是隐私音视频信息所做的一次尝试。</p>
+  <p>国家对公民个人信息实施严格保护。李鹏表示，个人隐私也属于公民个人信息，偷拍偷录的视频若含有某些人体部位特征信息，如性器官等隐私部位，或窃取了未经允许下载的裸照等，均属个人信息保护范畴，都受到法律规制。</p>
+  <p>李鹏介绍，以往司法实务中认定偷拍密录案件性质的罪名，一是刑法第二百八十四条规定的“非法使用窃听窃照器材罪”，该罪要求犯罪嫌疑人使用了“非法窃听、窃照器材”并造成了“严重后果”。司法实务中一般将被禁止的针孔隐形摄像头等认定为“非法窃听、窃照器材”，但部分案件中，犯罪分子也使用市场上正规售卖的器材用于偷拍。这种情况就无法认定该罪。</p>
+  <p>二是依据刑法第三百六十三条“制作、贩卖、传播淫秽物品罪”中规定的行为。但在偷拍案件中，将被侵害主体的隐私图片、视频评价为“淫秽内容”略有不妥，且一些犯罪行为人未凭借传播或售卖偷拍内容牟利，通过该类罪名进行刑事规制也存在一定困难。</p>
+  <p>最终，该案依据刑法侵犯公民个人信息罪定罪处罚获得法院的认可。</p>
+  <p>法律具有一定滞后性，因此，用现有法律评价新型犯罪行为，有时需要更新相应的规范性法律文件来实现。在李鹏看来，偷拍案件从行为上来说，符合侵犯公民个人信息罪的定义，至于是否会达到情节严重的界限，还要看侦查机关查获的证据情况。他认为，情节严重与否可以依据行为人偷拍的内容和时长、出售的次数、观看传播的人数、非法获利等犯罪情节进行综合评价。</p>
+  <h2 id="section-2">应综合治理偷拍产业链的前、中、后端</h2>
+  <p>高艳东建议，若要打击偷拍，就需要斩断偷拍产业链，从前端、中端、后端同时发力。在前端，相关主管部门要压实监管责任，严格控制生产销售偷拍设备，从源头防止偷拍泛滥。</p>
+  <p>2021年5月至8月，中央网信办、工业和信息化部、公安部、市场监管总局在全国范围组织开展摄像头偷窥黑产集中治理。最终清理相关违规有害信息2.2万余条，处置平台账号4000余个，全面排查联网摄像头存在的安全隐患，发现4万多个未授权访问、远程命令执行等摄像头漏洞，收缴窃听窃照器材1500余套。</p>
+  <p>在中端偷拍机会这方面，几乎很难设防。高艳东解释，安装针孔摄像头的场所多是公共场所，并不会排斥人们进入，所以在这一方面，社会应该往排查偷拍设备层面去发力，早排查，早安全。酒店和民宿更应该加强监管，落实其安全筛查职责。</p>
+  <p>石家庄事件之后，一些酒店民宿经营者宣称采取自检自查方式，保护客人隐私。譬如，贵州毕节织金县的一名民宿老板程星明（化名）向中青报·中青网记者介绍，他在9月25日购买了摄像头检测仪，在客人退房之后用仪器扫描检查房间，该举动获得网友和客人好评。</p>
+  <p>在法治层面，2021年11月《中华人民共和国个人信息保护法》正式实施，刑法中也有侵犯公民个人信息罪。此外，高艳东建议将偷拍行为作为单独犯罪处罚，增设侵犯隐私罪。</p>
+  <p>他解释，一般而言，偷拍侵犯的是公民的个人隐私，而在实务和学理中一般不把公民隐私归入个人信息中，因而对于偷拍侵犯到公民个人隐私的，一般是通过治安管理处罚法予以惩处，通过民事诉讼主张侵权损害赔偿，若是情节严重一般也只是通过刑法中的其他条文，诸如非法使用窃听、窃照专用器材罪、侮辱罪、强制猥亵罪等条款对公民的隐私进行间接保护。</p>
+  <p>预防是刑法的重要功能之一，他指出，若只是采取间接保护的方式，就意味着存在一些侵犯公民隐私的情况无法被涵摄入这些条文中，例如使用手机偷拍，并不构成非法使用窃听、窃照专用器材罪；而若只是用于个人目的而不传播，也无法构成传播淫秽物品罪，所以只能是处以行政处罚，但这样的处罚又显得较为轻微。“在目前的风险社会视角下，这很难起到预防作用。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-17</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-17/%E5%86%B0%E5%B7%9D%E6%80%9D%E4%BA%AB%E5%8F%B7-%E5%A4%87%E5%8F%97%E5%86%85%E5%8D%B7%E6%8A%98%E7%A3%A8%E7%9A%84%E5%B9%B4%E8%BD%BB%E4%BA%BA-%E6%AD%A3%E5%9C%A8%E7%BE%A4%E5%98%B2%E8%BF%99%E4%B8%AA%E5%8C%97%E5%A4%A7%E5%A5%B3%E6%95%99%E6%8E%88">
+          冰川思享号｜备受内卷折磨的年轻人，正在群嘲这个北大女教授
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-17</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17">
+          每日一语 2024.10.17
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-17</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.16">
+          每日一语 2024.10.16
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-17</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-17/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%80%E5%B0%81%E7%BB%99%E8%B5%B0%E5%A4%B1%E6%9C%8B%E5%8F%8B%E7%9A%84%E4%BF%A1">
+          张3丰的世界｜一封给走失朋友的信
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-17/%E8%8B%B1%E5%9B%BD%E5%A4%96%E7%9B%B8%E8%AE%BF%E5%8D%8E-%E5%9C%A8%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E6%9D%83%E4%B8%AD%E9%97%B4%E5%AF%BB%E6%89%BE%E5%B9%B3%E8%A1%A1">
+            前一篇：英国外相访华：在经济与人权中间寻找平衡
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17">
+            后一篇：每日一语 2024.10.17
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-17/%E8%8B%B1%E5%9B%BD%E5%A4%96%E7%9B%B8%E8%AE%BF%E5%8D%8E-%E5%9C%A8%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E6%9D%83%E4%B8%AD%E9%97%B4%E5%AF%BB%E6%89%BE%E5%B9%B3%E8%A1%A1'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.16'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-17/%E8%8B%B1%E5%9B%BD%E5%A4%96%E7%9B%B8%E8%AE%BF%E5%8D%8E-%E5%9C%A8%E7%BB%8F%E6%B5%8E%E4%B8%8E%E4%BA%BA%E6%9D%83%E4%B8%AD%E9%97%B4%E5%AF%BB%E6%89%BE%E5%B9%B3%E8%A1%A1">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.17">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.16">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
