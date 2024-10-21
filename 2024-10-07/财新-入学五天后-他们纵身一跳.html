@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>财新｜入学五天后，他们纵身一跳 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+财新｜入学五天后，他们纵身一跳
+——
+" />
+    <meta property="og:description" content="
+财新｜入学五天后，他们纵身一跳
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="财新｜入学五天后，他们纵身一跳" />
+    <meta property="twitter:title" content="财新｜入学五天后，他们纵身一跳" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712008.html&t=%E8%B4%A2%E6%96%B0%EF%BD%9C%E5%85%A5%E5%AD%A6%E4%BA%94%E5%A4%A9%E5%90%8E%EF%BC%8C%E4%BB%96%E4%BB%AC%E7%BA%B5%E8%BA%AB%E4%B8%80%E8%B7%B3" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712008.html&t=%E8%B4%A2%E6%96%B0%EF%BD%9C%E5%85%A5%E5%AD%A6%E4%BA%94%E5%A4%A9%E5%90%8E%EF%BC%8C%E4%BB%96%E4%BB%AC%E7%BA%B5%E8%BA%AB%E4%B8%80%E8%B7%B3&d=2024-10-07&e=
+财新｜入学五天后，他们纵身一跳
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：入学五天后，他们纵身一跳作者：范俏佳，卢丹云发表日期：2024.10.7来源：财新主题归类：留守儿童CDS收藏：人物馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  吃过晚饭，13岁的柳棋和同学小马翻过学校食堂二楼的窗户，先后从五米高的窗台跳下。
+  两辆救护车的警报声划破夜空，此时是2023年11月4日，距离柳棋进入山东聊城市少林武校仅过去五天。
+  柳棋说，自己有恐高症，跳下去前很害怕。他见到小马跳下去后躺地上抱着腿大叫，但仍跟着纵身一跃。因为这是他想到唯一能出去的办法——“摔残了也比在这里强。”
+  成为常态的体罚
+  　　把柳棋送进武术学校是奶奶秦晓庆的决定。
+  　..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712008.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712008.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712008.html&text=财新｜入学五天后，他们纵身一跳&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712008.html&title=财新｜入学五天后，他们纵身一跳" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712008.html&title=财新｜入学五天后，他们纵身一跳" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=财新｜入学五天后，他们纵身一跳&body=
+财新｜入学五天后，他们纵身一跳
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712008.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712008.html&title=财新｜入学五天后，他们纵身一跳&caption=
+财新｜入学五天后，他们纵身一跳
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=财新｜入学五天后，他们纵身一跳&url=https://chinadigitaltimes.net/chinese/712008.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>财新｜入学五天后，他们纵身一跳</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-07
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712008.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712008.html&t=%E8%B4%A2%E6%96%B0%EF%BD%9C%E5%85%A5%E5%AD%A6%E4%BA%94%E5%A4%A9%E5%90%8E%EF%BC%8C%E4%BB%96%E4%BB%AC%E7%BA%B5%E8%BA%AB%E4%B8%80%E8%B7%B3&d=2024-10-07&e=
+财新｜入学五天后，他们纵身一跳
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：入学五天后，他们纵身一跳作者：范俏佳，卢丹云发表日期：2024.10.7来源：财新主题归类：留守儿童CDS收藏：人物馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  吃过晚饭，13岁的柳棋和同学小马翻过学校食堂二楼的窗户，先后从五米高的窗台跳下。
+  两辆救护车的警报声划破夜空，此时是2023年11月4日，距离柳棋进入山东聊城市少林武校仅过去五天。
+  柳棋说，自己有恐高症，跳下去前很害怕。他见到小马跳下去后躺地上抱着腿大叫，但仍跟着纵身一跃。因为这是他想到唯一能出去的办法——“摔残了也比在这里强。”
+  成为常态的体罚
+  　　把柳棋送进武术学校是奶奶秦晓庆的决定。
+  　..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712008.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728317900000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712008.html">财新｜入学五天后，他们纵身一跳</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712008.html" title="财新｜入学五天后，他们纵身一跳" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/6-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>入学五天后，他们纵身一跳<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/财新" target="_blank">范俏佳，卢丹云</a><br /><strong>发表日期：</strong>2024.10.7<br /><strong>来源：</strong><a href="https://web.archive.org/web/https://www.caixin.com/2024-10-07/102242529.html" target="_blank">财新</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/留守儿童" target="_blank">留守儿童</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E4%BA%BA%E7%89%A9%E9%A6%86" target="_blank" rel="noopener">人物馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>吃过晚饭，13岁的柳棋和同学小马翻过学校食堂二楼的窗户，先后从五米高的窗台跳下。</p>
+  <p>两辆救护车的警报声划破夜空，此时是2023年11月4日，距离柳棋进入山东聊城市少林武校仅过去五天。</p>
+  <p>柳棋说，自己有恐高症，跳下去前很害怕。他见到小马跳下去后躺地上抱着腿大叫，但仍跟着纵身一跃。因为这是他想到唯一能出去的办法——“摔残了也比在这里强。”</p>
+  <h2 id="section">成为常态的体罚</h2>
+  <p>　　把柳棋送进武术学校是奶奶秦晓庆的决定。</p>
+  <p>　　柳棋住在聊城以北100多公里的村子里，爸爸患有精神疾病，6岁时母亲出走，从小由奶奶抚养长大。</p>
+  <p>　　60多岁的秦晓庆平日里除了照顾儿子，顾着五亩农田，还要在村里村外打零工，一天赚几十块维持生计。秦晓庆不识字，柳棋说跟奶奶无法沟通。2020年，住在北京的远方亲戚齐章一家在多方走动下，才帮秦晓庆申请到低保户身份。</p>
+  <p>　　齐章说，柳棋从小性格就比较敏感，为了让孩子少跟爸爸接触，齐章资助柳棋去县城的寄宿小学上学。然而，从小学升入初中的那年，课业难度陡增，一次被学校老师冤枉后，柳棋说什么也不愿意再去上学，变成奶奶眼中的问题儿童。</p>
+  <p>　　秦晓庆听说在聊城市里的武校管理严格，专治叛逆期的小孩，能练武又能学文化。不顾齐章的劝阻，她执意把孙子送入武校。</p>
+  <p>　　柳棋回忆，入学当天，他和奶奶坐亲戚的车一进学校，奶奶被工作人员带去签合同，他则被“拽下车”，立即去换了武校的校服，不允许再和奶奶见面。秦晓庆为孙子交了一个月3900多元的管理费，餐费另算，这比聊城大部分私立学校的学费高上两到三倍。</p>
+  <p>　　学校官网显示，聊城武校是一所全封闭制的民办中小学，现有学生6000余人。学校奉行军事化管理，校训为“流血流汗不流泪，掉皮掉肉不掉队”。</p>
+  <p>　　据2020年离开聊城武校的余田回忆，武校的围墙二三米高，顶部挂有铁丝网，而且监控密集。在校内不能使用手机，每个月月底需要经过家长、学校双方同意后才能放假回家，第二个月5日开学回校。</p>
+  <p>　　柳棋入学时，一般学生还在放假。和他想象中不一样的是，进武校之后，他既没有上一堂文化课，甚至连武术也没有学过一招。他每天早上五点就被叫起床，除了吃饭时间外唯一要做的事就是服从教练命令做各种杂事。</p>
+  <p>　　比如，教练会无理由地要求他们罚站、做俯卧撑、持续做蛙跳、蹲起超过半小时，有一天将一个班7个同学一起带到校园后门无人使用的小操场，清扫树叶、收拾垃圾，另有一天命令他们将全校的厕所马桶全部刷洗一次。</p>
+  <p>　　柳棋不敢违抗命令。他曾亲眼看到教练用拖把粗细的棍子打其他同学。因为不允许使用手机，任何事情都无法告知家长。</p>
+  <p>　　除了做杂事外，柳棋大部分时间都被反锁在宿舍里，和同学聊天是唯一可以做的事情。</p>
+  <p>　　一同“跳楼”的小马是他的室友。小马因为抽烟被家里认定为不良少年，便被送来改造，已经来了十几天。小马告诉柳棋，他曾试图从五楼跳下，但被同学发现没有成功。聊天中，两个少年一拍集合，第二天一同从楼上跳下。</p>
+  <h2 id="section-1">“问题少年”的问题</h2>
+  <p>　　柳棋的遭遇在聊城武校并非个例。</p>
+  <p>　　曾就读于聊城武校的余田告诉财新，家长为了治疗他的“网瘾”将他送入武校。他曾在2019年、2020年两次进入聊城武校读初三、高一，最终退学，重新报考聊城其他私立高中。</p>
+  <p>　　2018年9月，余田因沉迷手机游戏与父亲激烈争吵，最终被父亲送入聊城第四人民医院，诊断为“网瘾”，随后在此住院两个月。期间，医院除了刚入院时，把他绑在床上打镇定剂外，没有对他进行任何检查或药物治疗，最终因临近期末考试而允许出院。次年5月，余田与父亲再次因手机使用发生争执，第二天，武校的三位教练开车到家门口把他“押”去了武校。</p>
+  <p>　　在学校要干很多体力活。余田记得，在学校盖新的教学楼时，他和同学曾在教练命令下将几卡车课桌椅一张一张搬到四五楼的教室。</p>
+  <p>　　他称，在聊城武校可能因为任何理由被教练打。偷藏手机、在集体活动时偷跑去上厕所，都可能换来惩罚，小至扇巴掌，大至被拧在一起的电线抽。他也曾遇到过不打人的主管教练，但在他看来，每位教练都掌握极大权力，只要遇到严格管教的教练，学校的监管效用甚微。</p>
+  <p>　　学生在该校遭受体罚的现象或相当普遍。根据聊城市东昌府区人民检察院的判决书，聊城武校的散打教练员念国明曾因为殴打学生致下颌骨骨折被判故意伤害罪，判刑有期徒刑一年。</p>
+  <p>　　高一武校放假时，余田终于跟父亲坦白在武校的遭遇，得到父亲的道歉，父亲承诺为他办理退学。如今他马上要开始大一生活，但仍然会因为有人大声说话而感到恐惧、浑身颤抖。</p>
+  <p>　　据了解，武校中农村学生比例偏高，家长们选择送孩子就读武校时，希望武校的军事化管理可以改造自己管不住的孩子，远离电子产品，通过吃苦磨平孩子的脾气。</p>
+  <p>　　例如，河南登封某武校在微信公众号中宣传称，青春叛逆期无论如何管教都没有什么用，这时只有封闭式军事化管理能够约束住孩子。</p>
+  <p>　　这样的包办式管理击中了家长们的需求痛点。余田回忆，同学的家长大多也是认为孩子有网瘾，或有抽烟、说脏话、厌学等行为，相当于送孩子到“少管所”。</p>
+  <p>　　武术学校半天文化课、半天习武的设置，还回应了家长对孩子“文武双全”的渴望。一份山东省菏泽市武术学校发展现状的调查研究称，农村的中小学教育存在资金不足、师资力量缺乏、质量不高等问题，相比之下，武术学校是农村中小学教育的“有益补充”。</p>
+  <p>　　家长许默的两个儿子都曾就读于前述河南武校。咨询时学校告诉他，相比于一般高中，从武校毕业后出路更多——能成为武术运动员、演员、当兵或依靠体育单招进入高校。</p>
+  <p>　　而实际上，多数孩子们的未来可能与这样的愿景相去甚远。例如，2014年一份研究中的《山东省民办武术学校学生就业情况表》显示，武校毕业生中仅有7%考入大学，1%成为武打演员，2%成为警察，25%成为教练或保安，其余52%都从与武术无关职业或无业。</p>
+  <p>　　该武校只允许孩子每年过年时回家。2023年过年时，许默发现二儿子回家后精神恍惚，一说到回武校上学就显出极度害怕的神情，在当地医院被诊断为“忧郁症”。</p>
+  <p>　　从医院回家，许默发现孩子身上有多处淤青，多次询问下，孩子才坦白曾被武校教练用熨斗在身上烫、耳朵也曾被打到流脓。孩子告诉他，因为害怕家长质问学校后他被学校为难，从2022年开始受到体罚一年以来，一直没有告诉父亲。</p>
+  <p>　　他已为两个儿子办理退学，并与该武校私下协商赔偿。调解协议上显示，孩子在校期间“多次被教练体罚殴打、熨斗烫伤、辱骂等”。</p>
+  <p>　　目前在公立体系，对于有严重不良行为的未成年人，可送专门学校进行专门教育。目前各地都在扩建此类专门学校，但数量仍嫌不足。《预防未成年人犯罪法》规定，可区别不良行为和严重不良行为，进行分级干预，这依法有明确的定性和归类。（参见财新周刊《<a href="https://weekly.caixin.com/2023-04-29/102041277.html">专门学校怎么办</a>》）事实上，更多被认定为“问题少年”的孩子并不一定能从法律层面对号入座。不少家长对其“叛逆行为”束手无策后，便诉诸各类“戒网瘾”学校、管教学校、行为矫正学校、武术学校等机构寻求管教服务。</p>
+  <p>　　一位监管机构相关人士透露，这些机构提供的服务之所以长期存在、屡禁不绝，是满足了一部分家长的教育需求，所以在实际治理的过程中也阻力较大。源头上解决这一问题，需要为家长提供科学的教育理念引导。</p>
+  <p>　　在暴力、压抑的管理下，“问题少年”们真正的问题常被掩盖。</p>
+  <p>　　柳棋告诉财新，自己从小学起就读民办寄宿制学校，成绩在班级中属中上游。在学校每天时间都很紧张，上课到晚上八点才放学。老师占课、拖堂很正常，体育课、美术课很少上，基本被数学、英语、语文老师占了。他因而有了厌学情绪：“觉得没意思。”升入初中更是上了一星期就不想上了。</p>
+  <p>　　他跟奶奶说希望能休学一学期喘口气，但随即被送到了武校。从武校出来后的他表示：“更不想上（学）了。”</p>
+  <p>　　“为了抑制所谓的叛逆，将孩子送到封闭式管理学校，我很怀疑这样做能达到目的。”长期研究青少年健康的心理咨询师彭小华认为，封闭、强制作息的学校生活会给孩子带来负面的心理后果。</p>
+  <p>　　一开始，命令和相对应的体罚会在孩子心中注入恐惧，接下来，孩子可能从恐惧暴力发展到迷信暴力。除此之外，彭小华从咨询案例中看到，在校期间孩子的自我受到压制，在离开学校后，反抗行为会报复性反弹。</p>
+  <p>　　彭小华自2005年起，持续关注中国青少年厌学问题。她认为，“叛逆”是一个家长本位、教师本位的概念。“权威受到了挑战，孩子都不按照我的指挥要求去做了，这就是最基本的叛逆。”随着年龄增长、进入青春期，孩子慢慢发展出独立的思考能力、感受能力、判断能力，需要家长为孩子让渡出民主协商的空间，“一个适当的自然生长的空间”。</p>
+  <p>　　做咨询二十年来，她发现青少年厌学现象呈增加趋势。彭小华表示，沉迷手机和电子游戏有时候是“生活出现问题”的消极应对。作为家长，应该做的是了解孩子的心理压力来源，激发孩子的内驱力、自我管理的能力，而非从外界强制隔离。</p>
+  <h2 id="section-2">“跳楼”之后</h2>
+  <p>　　柳棋奶奶秦晓庆接到消息时，聊城武校的朱副校长已经将柳棋送至聊城市东昌府中医院。</p>
+  <p>　　从二楼跃下，导致柳棋双脚骨折，医院告诉秦晓庆，柳棋需要住院治疗，但朱副校长称回家保守治疗即可，医院并未坚持。回家后，柳棋卧床静养。亲戚来探访时发现他双脚已经发黑，便又被送至县城医院。医生诊疗后认为必须进行手术，并推荐其转诊至德州市人民医院。手术中，柳棋的双脚被打入七根钢钉。</p>
+  <p>　　柳棋住院手术期间，秦晓庆与该校徐学忠校长联系，打了十几次电话未能接通。后经齐章联系，校方才答应支付医疗费、医院押金及1000元营养费。齐章称，柳棋从东昌村的家前往位于德州市的医院6、7次，皆为秦晓庆及亲戚陪同，学校并未出面，对于替家属做决定、导致延误治疗等情况，校方也没有做出解释。</p>
+  <p>　　齐章曾致电聊城市政府热线，要求市政府通知校方的行政主管部门聊城教体局出面了解此事，但没有收到任何相关反馈。2024年4月，齐章联系北京市华一律师事务所，协助柳棋起诉聊城少林武校，寻求赔偿。</p>
+  <p>　　7月初，柳棋一案一审开庭，聊城武校的责任过错成为原告、被告双方的控辩重点。</p>
+  <p>　　原告代理律师刘明珂认为，学校此前就曾发生教练殴打学生致骨折的事件，证明学校一贯有体罚的教学风格。另外，聊城武校在柳棋情绪不稳定时，并未让柳棋接受心理干预或上课，而是持续让他“打扫卫生”，以上证据足以证明柳棋陈述中学校体罚成立，且违反义务教育法，损害其受教育权。</p>
+  <p>　　被告聊城武校方则辩称，柳棋家长因孩子调皮“孩子有厌学、经常逃学历史，逆反心理强，有网瘾、玩手机及不回家等现象”送至武校上学，最终因为想逃学外出从窗户爬出，应自行负担全部责任。校方提交了一些柳棋父亲签字的“入学申请书”等材料。但齐章认为，柳棋父亲柳明因精神疾病在住院，不可能签字。</p>
+  <p>　　8月上旬，聊城武校提出以支付两万元和解，柳棋家属方认为赔偿金额不足以支付柳棋的所有医疗支出及精神损失，拒绝和解。最终，一审判决，认为学校体罚虐待证据不足，武校与柳棋分别在此案中承担六成、四成责任。</p>
+  <p>　　这个结果并不意外。北京市汉良律师事务所律师王凯指出，在校内出现纠纷时，最难的是搜集证据。一方面，学校属于封闭场所，如家长之类的外人难以进入，并且存在多处监控死角。另一方面，学校喜欢“捂嘴巴”，其他学生可能不敢站出来说话，没办法提出学校环境的佐证。</p>
+  <p>　　柳棋一案中，由于柳棋属于限制民事行为能力人，且自己决定跳楼逃跑，法官认为，当事人应该部分承担自己造成的后果。刘明珂则认为，在学生诉学校的这种案件当中，学生在权力、取证能力上都处于弱势。对于年仅13岁的柳棋来说，在校时间只有不到五天，还无法使用手机，搜集证据难上加难。</p>
+  <p>　　如同聊城武校，全国大多少林武校都奉行军事化封闭管理。财新查阅裁判文书网及媒体报道，发现教练对学生、学生之间的暴力事件层不出穷，也有不少学员在训练中受伤、甚至死亡的案件。</p>
+  <p>　　2024年6月21日，嵩山少林塔沟武术学校一学生父亲发现孩子身上淤青，经过医院诊断，认为武校教练殴打虐待学生致精神障碍。</p>
+  <p>　　2024年6月13日，山东青岛一名8岁男童，因动作不规范被3名武术教练殴打致死。</p>
+  <p>　　2019年8月30日上午，棋盘山武校的一名13岁男孩因试图逃跑被抓回后，遭到同宿舍学生的围殴，导致颅脑损伤，最终抢救无效死亡。</p>
+  <p>　　2018年12月，登封某著名武校两名学生打架导致1人死亡，嫌犯被刑拘。</p>
+  <p>　　2013年5月24日，登封市塔沟武术学校教练邝成森因怀疑有学员说自己坏话，于晚上23时左右将四位学员叫至宿舍询问。李姓同学因被指认曾说过教练拉关系，惹怒邝成森。他击打李同学的左肩部、左胸部等处数拳，导致李同学最终经抢救无效死亡。</p>
+  <p>　　多名律师指出，依据民法典第一千二百条的规定，在武术学校等教育机构发生纠纷、最终导致学生伤亡的案件中，学校未尽到教育、管理职责的，应承担侵权责任。面对层出不穷的武校学生安全事件，2021年及2024年，国家体育总局武术运动管理中心及中国武术协会先后发布《武术学校及习武场所安全管理指南（试行）》及《全国武术学校管理办法》。</p>
+  <p>　　两份文件指出，武术学校按照“谁办校、谁负责，谁经营、谁负责，谁审批、谁负责，谁主管、谁监督”的原则，施行属地管理主体责任。</p>
+  <p>　　各省各地对于武术学校管理的投入程度不同。例如，作为少林派功夫的发源地，河南登封在2019年就有武术学校101所，在校学生12余万人。各武校规模也不尽相同，多的800余人，少的3-4个人。</p>
+  <p>　　当地武校于2018年、2019年连续爆出学员死亡案件后，曾迎来大规模整改。依据河南日报报道，登封于2019年开展武校专项治理，查处黑中介，成立11个专项工作组，建立武校“黑白名单”制度。登封市在接下来的4个月里发起“百日攻坚”。根据登封市教体局的统计，除经过当地教育部门审批的九年一贯制武术学校20所外，取缔60所习武场所，以及未经批准的13所武校。</p>
+  <p>　　聊城武校目前正常营运，对采访不予回应。</p>
+  <p>　　（文中未成年人及其家属姓名为化名）</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-08/%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%A8%A1%E6%A0%B7-%E6%80%AA%E4%BA%8B-%E6%9C%BA%E5%9C%BA%E5%87%BA%E5%A2%83%E6%9C%AA%E6%8A%A5%E5%A4%87-%E7%B4%A2%E8%A6%81100%E5%85%83%E7%BB%99%E9%A2%86%E5%AF%BC%E4%B9%B0%E7%83%9F%E8%A2%AB%E6%94%BE%E8%A1%8C">
+          现实的模样｜怪事！机场出境未报备，索要100元给领导买烟被放行
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC189%E6%9C%9F-%E5%9B%BD%E5%BA%86%E6%9C%9F%E9%97%B4-%E4%B8%8A%E6%B5%B7%E6%B2%A1%E6%9C%89%E7%A0%8D%E4%BA%BA-%E8%A5%BF%E5%AE%89%E6%B2%A1%E6%9C%89%E4%B8%8B%E9%9B%AA">
+          【CDT周报】第189期：国庆期间，上海没有砍人，西安没有下雪
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6">
+          每日一语 2024.10.6
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.7">
+          每日一语 2024.10.7
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6">
+            前一篇：每日一语 2024.10.6
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-07/%E4%BB%A5%E8%89%B2%E5%88%97%E9%A9%BB%E5%8F%B0%E4%BB%A3%E8%A1%A8%E5%BC%BA%E8%B0%83%E4%BB%A5%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%AF%86%E5%88%87-%E4%BD%86%E6%8B%92%E8%B0%88%E9%BB%8E%E5%B7%B4%E5%AB%A9%E4%BC%A0%E5%91%BC%E6%9C%BA%E7%88%86%E7%82%B8%E4%BA%8B%E4%BB%B6">
+            后一篇：以色列驻台代表强调以台关系密切，但拒谈黎巴嫩传呼机爆炸事件
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E4%BB%A5%E8%89%B2%E5%88%97%E9%A9%BB%E5%8F%B0%E4%BB%A3%E8%A1%A8%E5%BC%BA%E8%B0%83%E4%BB%A5%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%AF%86%E5%88%87-%E4%BD%86%E6%8B%92%E8%B0%88%E9%BB%8E%E5%B7%B4%E5%AB%A9%E4%BC%A0%E5%91%BC%E6%9C%BA%E7%88%86%E7%82%B8%E4%BA%8B%E4%BB%B6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC189%E6%9C%9F-%E5%9B%BD%E5%BA%86%E6%9C%9F%E9%97%B4-%E4%B8%8A%E6%B5%B7%E6%B2%A1%E6%9C%89%E7%A0%8D%E4%BA%BA-%E8%A5%BF%E5%AE%89%E6%B2%A1%E6%9C%89%E4%B8%8B%E9%9B%AA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-07/%E4%BB%A5%E8%89%B2%E5%88%97%E9%A9%BB%E5%8F%B0%E4%BB%A3%E8%A1%A8%E5%BC%BA%E8%B0%83%E4%BB%A5%E5%8F%B0%E5%85%B3%E7%B3%BB%E5%AF%86%E5%88%87-%E4%BD%86%E6%8B%92%E8%B0%88%E9%BB%8E%E5%B7%B4%E5%AB%A9%E4%BC%A0%E5%91%BC%E6%9C%BA%E7%88%86%E7%82%B8%E4%BA%8B%E4%BB%B6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-07/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC189%E6%9C%9F-%E5%9B%BD%E5%BA%86%E6%9C%9F%E9%97%B4-%E4%B8%8A%E6%B5%B7%E6%B2%A1%E6%9C%89%E7%A0%8D%E4%BA%BA-%E8%A5%BF%E5%AE%89%E6%B2%A1%E6%9C%89%E4%B8%8B%E9%9B%AA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

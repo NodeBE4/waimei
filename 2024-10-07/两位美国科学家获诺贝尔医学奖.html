@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>两位美国科学家获诺贝尔医学奖 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+两位美国科学家获诺贝尔医学奖
+——
+" />
+    <meta property="og:description" content="
+两位美国科学家获诺贝尔医学奖
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="两位美国科学家获诺贝尔医学奖" />
+    <meta property="twitter:title" content="两位美国科学家获诺贝尔医学奖" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%25A4%25E4%25BD%258D%25E7%25BE%258E%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E5%25AE%25B6%25E8%258E%25B7%25E8%25AF%25BA%25E8%25B4%259D%25E5%25B0%2594%25E5%258C%25BB%25E5%25AD%25A6%25E5%25A5%2596%2Fa-70428158&t=%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%25A4%25E4%25BD%258D%25E7%25BE%258E%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E5%25AE%25B6%25E8%258E%25B7%25E8%25AF%25BA%25E8%25B4%259D%25E5%25B0%2594%25E5%258C%25BB%25E5%25AD%25A6%25E5%25A5%2596%2Fa-70428158&t=%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96&d=2024-10-07&e=
+两位美国科学家获诺贝尔医学奖
+——
+
+
+  
+2024-10-07T14:22:50.157Z
+  
+  
+2024年度诺贝尔生理学或医学奖周一在瑞典揭晓
+  
+  （德国之声中文网）2024年度诺贝尔生理学或医学奖授予美国科学家维克多·安布罗斯（Victor Ambros） 和加里·鲁夫昆（Gary Ruvkun）。他们发现了microRNA（小分子核糖核酸）及其在转录后基因调控中的作用。
+  现年70岁的安布罗斯在位于沃赛斯特的马萨诸塞大学医学院任教，72岁的鲁夫昆在哈佛大学医学院从事研究。两人将分享1100万瑞典克朗（约合97万欧元）的奖金。
+  诺贝尔奖委员会在瑞典卡罗琳斯卡皇家医学院的新闻发布会上指出，两位科学家的突破性发现揭示了一种全新的基因调控（gene regulation）原理，这种原理已经被证明在多细胞生物（包括人类）的发育和生理功能具有至关重要的意义。
+  相..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%25A4%25E4%25BD%258D%25E7%25BE%258E%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E5%25AE%25B6%25E8%258E%25B7%25E8%25AF%25BA%25E8%25B4%259D%25E5%25B0%2594%25E5%258C%25BB%25E5%25AD%25A6%25E5%25A5%2596%2Fa-70428158" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158&text=两位美国科学家获诺贝尔医学奖&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158&title=两位美国科学家获诺贝尔医学奖" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158&title=两位美国科学家获诺贝尔医学奖" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=两位美国科学家获诺贝尔医学奖&body=
+两位美国科学家获诺贝尔医学奖
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158&title=两位美国科学家获诺贝尔医学奖&caption=
+两位美国科学家获诺贝尔医学奖
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=两位美国科学家获诺贝尔医学奖&url=https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>两位美国科学家获诺贝尔医学奖</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-07
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%25A4%25E4%25BD%258D%25E7%25BE%258E%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E5%25AE%25B6%25E8%258E%25B7%25E8%25AF%25BA%25E8%25B4%259D%25E5%25B0%2594%25E5%258C%25BB%25E5%25AD%25A6%25E5%25A5%2596%2Fa-70428158&t=%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96&d=2024-10-07&e=
+两位美国科学家获诺贝尔医学奖
+——
+
+
+  
+2024-10-07T14:22:50.157Z
+  
+  
+2024年度诺贝尔生理学或医学奖周一在瑞典揭晓
+  
+  （德国之声中文网）2024年度诺贝尔生理学或医学奖授予美国科学家维克多·安布罗斯（Victor Ambros） 和加里·鲁夫昆（Gary Ruvkun）。他们发现了microRNA（小分子核糖核酸）及其在转录后基因调控中的作用。
+  现年70岁的安布罗斯在位于沃赛斯特的马萨诸塞大学医学院任教，72岁的鲁夫昆在哈佛大学医学院从事研究。两人将分享1100万瑞典克朗（约合97万欧元）的奖金。
+  诺贝尔奖委员会在瑞典卡罗琳斯卡皇家医学院的新闻发布会上指出，两位科学家的突破性发现揭示了一种全新的基因调控（gene regulation）原理，这种原理已经被证明在多细胞生物（包括人类）的发育和生理功能具有至关重要的意义。
+  相..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E4%25B8%25A4%25E4%25BD%258D%25E7%25BE%258E%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E5%25AE%25B6%25E8%258E%25B7%25E8%25AF%25BA%25E8%25B4%259D%25E5%25B0%2594%25E5%258C%25BB%25E5%25AD%25A6%25E5%25A5%2596%2Fa-70428158" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1728312424000-->
+<p><a href="https://www.dw.com/zh/%E4%B8%A4%E4%BD%8D%E7%BE%8E%E5%9B%BD%E7%A7%91%E5%AD%A6%E5%AE%B6%E8%8E%B7%E8%AF%BA%E8%B4%9D%E5%B0%94%E5%8C%BB%E5%AD%A6%E5%A5%96/a-70428158">两位美国科学家获诺贝尔医学奖</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2024-10-07T14:22:50.157Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70423193_303.jpg" width="100%" />  <div>
+<small style="color: #999;">2024年度诺贝尔生理学或医学奖周一在瑞典揭晓</small>
+  </div>
+  <p>（德国之声中文网）2024年度<span data-id="17452333" data-type="AUTO_TOPIC" title="Automatische Themenseite">诺贝尔</span>生理学或医学奖授予美国科学家维克多·安布罗斯（Victor Ambros） 和加里·鲁夫昆（Gary Ruvkun）。他们发现了microRNA（小分子核糖核酸）及其在转录后基因调控中的作用。</p>
+  <p>现年70岁的安布罗斯在位于沃赛斯特的马萨诸塞大学医学院任教，72岁的鲁夫昆在哈佛大学医学院从事研究。两人将分享1100万瑞典克朗（约合97万欧元）的奖金。</p>
+  <p>诺贝尔奖委员会在瑞典卡罗琳斯卡皇家医学院的新闻发布会上指出，两位科学家的突破性发现揭示了一种全新的基因调控（gene regulation）原理，这种原理已经被证明在多细胞生物（包括人类）的发育和生理功能具有至关重要的意义。</p>
+  <h3 id="section">相关图集：百年回眸：诺贝尔生理学或医学奖</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/55161668_303.jpg" width="100%" /><strong>2020：发现丙型肝炎病毒</strong>：三名来自美国和英国的科学家因发现丙型肝炎病毒而荣获今年度的诺贝尔奖。因为他们的成就，数以百万人的生命得以拯救。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/44717973_303.jpg" width="100%" /><strong>2018：启动针对癌症的免疫系统“刹车机制”</strong>：我们的身体对于肿瘤有天然抵御能力，需要的只是解决免疫系统的“刹车机制”。艾利森(James P. Allison )和本庶佑研究的抗癌疗法，能激活人类免疫细胞中的一些通常不被使用的特殊功能，从而让这些细胞更有效地去对抗癌细胞。基于这两位学者科研成果而开发出的一些新型抗癌疗法，已经被证明具有显著的临床疗效。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/42883603_303.jpg" width="100%" /><strong>2017：告诉你生物钟的秘密</strong>：三位美国遗传学家因其在昼夜节律控制机制（即生物钟）方面的发现，获得2017年度诺贝尔医学奖。他们利用果蝇作为模型，成功分离出一种控制生物正常昼夜节律的基因。研究显示这一基因会让一种蛋白质在夜晚时分在细胞内积累，并在白天分解。诺贝尔大会宣布这一决定时表示，三人的研究“帮助我们窥测了我们的生物钟，并阐明它们内在的运作机理”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/5275177_7.jpg" width="100%" /><strong>2013：细胞内的秘密</strong>：2013年诺贝尔医学奖项已经揭晓。德国科学家托马斯•聚德霍夫（Thomas Südhof）和两位美国研究学者詹姆斯•罗斯曼（James Rothman）、兰迪•谢克曼（Randy Schekman）共同获得了这个奖项。得奖原因为他们成功破译了细胞内重要的运输机制。这个系统的失稳会导致如阿尔茨海默氏症、帕金森综合症或糖尿病的发生。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15874164_303.jpg" width="100%" /><strong>2010：试管婴儿</strong>：爱德华兹(Robert Edwards)获得了2010年度诺贝尔医学奖。他发明了俗称试管婴儿技术的体外受精技术。首名试管婴儿于1978年诞生。之后这个技术经过不断的发展完善，也增大了成功率。现今，全球已有超过500万名试管婴儿降生人世。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15683292_303.jpg" width="100%" /><strong>2008：女性的福音</strong>：通过德国癌症研究中心哈拉尔德·楚尔·豪森（Harald zur Hausen）的发现，人们才知道，人类乳头状瘤病毒可能会让人患上子宫颈癌。研究人员基于这个发现，研制出了针对这种病毒的疫苗。女性们现在能针对这种类型的宫颈癌接种疫苗。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16318260_303.jpg" width="100%" /><strong>1979 和 2003：体内乾坤</strong>：最开始，如果人们想了解人体内部的情况，唯一的办法就是照X光照片。不过随着时间的推移，医生们已经找到了更好的办法。其中之一就是“电脑断层扫描”技术（CT），这种技术虽然也利用具有放射性的X-射线，但是能够照出更详细的人体断层图像。之后出现了“核磁共振成像”(MRT)，这种方法利用了对人体完全无害的强磁场。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15650839_303.jpg" width="100%" /><strong>1956：以身试验</strong>：德国人沃纳·福斯曼（Werner Forßmann）和两位同事共同获得了诺贝尔奖。他发明了心脏导管技术。福斯曼曾经自己身上做了实验，完成了心脏导管插入术。这种手术是将一根塑料导管插入肘前静脉或者手部静脉，并向内推进直到心脏。如今，医生们仍利用这种技术做心脏检查或是进行心脏手术。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15907307_303.jpg" width="100%" /><strong>1948：杀死害虫</strong>：化学家米勒(Paul Hermann Müller)发现，杀虫剂DDT可以杀死害虫，却几乎不伤及哺乳动物。这个消息公布于世后的几十年里，DDT是被最广泛应用的杀虫剂之一。直到人们发现，DDT在环境中的积累会对鸟类造成伤害后情况才有所改变。虽然现在DDT已遭受冷落。不过人们还是会使用它来对付疟蚊。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16876291_303.jpg" width="100%" /><strong>1939, 1945 和 1952：细菌的克星</strong>：有三个诺贝尔医学奖颁发给了抗生素的发现者和开发者。其中包括发现青霉素的亚历山大·弗莱明（Alexander Fleming）。直到今天，抗生素是最常被使用的药物之一，也经常成为病人的大救星。不过研究人员必须不断开发出新的抗生素品种，因为细菌经过一段时间就会对抗生素进化出抗药性。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16926142_303.jpg" width="100%" /><strong>1930：四个血型</strong>：奥地利人卡尔·兰德斯坦纳（Karl Landsteiner）发现，如果把两个人的血液混合在一起，经常出现凝结，但这种情况并不具有绝对性。很快他就找出了原因：人类有不同的血型A、B、O(他称这个血型为C型)。稍晚，他的同事发现了第四种血型AB。这个发现大大提高了输血的安全性。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/6037839_7.jpg" width="100%" /><strong>1924：一探心脏的秘密</strong>：荷兰人威廉·埃因托芬（Willem Einthoven）被称为“心电图之父”。他发展的心电图描记器成了医院和诊所诊断病情的技术手段之一。心电图描记机记录了心脏肌肉纤维的活动。医生可以凭借心电图可以检测出心律失常等心脏疾病。直到今天这都是一个十分广泛的使用方法。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15826591_303.jpg" width="100%" /><strong>1912：器官的移植</strong>：法国外科医生亚历克西·卡雷尔（Alexis Carrel）成功的进行了人体的血管缝合和器官移植，因此获得诺贝尔医学奖。他发明了“血管吻合术”，把切断的血管重新对合拼接起来。另外他也找出了一种储存人体器官的稳妥方式。时至今日，医生每年大概要移植10万个左右的器官。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/15808166_303.jpg" width="100%" /><strong>1905：结核菌</strong>：德国科学家科赫(Robert Koch)发现了结核病的病原体——结核菌。而今，结核病是一种全球各地都可见到的感染性疾病，尽管使用对症的抗生素，其治疗过程也往往非常漫长。随着医学的发展，医研人员已经发明出一种可以预防婴幼儿得结核病的疫苗，但是这种疫苗对成年人并没有效用。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16772329_303.jpg" width="100%" /><strong>1902：都是蚊子惹的祸</strong>：英国人罗纳德·罗斯（Ronald Ross）发现，疟蚊是热带疾病疟疾的传播媒介。他指出，疟蚊是疟原虫属生物的寄主，会传播疟疾。直到如今，每年还有约3亿人口染有疟疾。感谢罗斯的重要贡献，可以让研究人员针对这种疾病开发出药物。
+  </div>
+  <p>他们的研究关注一个十分基础的问题：为什么一个生物体里的每一个细胞携带的是相同的遗传信息，最终却发展成为功能截然不同的细胞。答案是，这取决于遗传信息如何受到调控，而小分子核糖核酸在其中扮演关键角色。</p>
+  <p>具体而言：一个生命体的每一个细胞尽管都拥有相同的染色体，但是不同的细胞类型依然具备不同的特性。比如肌肉细胞和神经细胞就具有完全不同的功能。相同的基因能够让细胞发育出不同的功能，正是仰赖于两位科学家发现的调控原理。这一发现为理解生物体功能及其如何发育开辟了新的维度。</p>
+  <p>例如若沒有microRNA，细胞和组织可能无法正常发育，异常调节可能导致癌症，基因突变导致先天性聽力損失、眼睛和骨骼疾病等疾病。除此之外，基因調控出错，可能导致癌症、糖尿病或自体免疫疾病等慢性病。</p>
+  <p>小分子核糖核酸microRNA又可写为miRNA，不同于mRNA（信使核糖核酸）。与后者相关的研究获得了<a href="https://api.dw.com/api/detail/article/66982648" rel="ArticleRef">去年的诺贝尔生理或医学奖</a>。</p>
+  <p> </p>
+  <p>(综合报道)</p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.run" style="color:orange" target="_blank">https://feedx.run</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E9%95%BF%E5%B9%B3%E6%BC%AB%E6%B8%B8-%E6%88%91%E4%BB%AC%E8%A6%81%E5%8E%BB%E5%B7%B4%E9%BB%8E">
+          长平漫游：“我们要去巴黎！”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7">
+          德国军舰完成穿越南中国海
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E5%8A%A0%E6%B2%99%E6%88%98%E4%BA%89%E4%B8%80%E5%91%A8%E5%B9%B4-%E6%AC%A7%E6%B4%B2%E5%90%8C%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E8%89%B0%E9%9A%BE%E5%85%B3%E7%B3%BB">
+          加沙战争一周年：欧洲同以色列的艰难关系
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-07</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-07/%E6%AC%A7%E7%9B%9F%E5%AF%B9%E5%8D%8E%E7%94%B5%E5%8A%A8%E8%BD%A6%E5%85%B3%E7%A8%8E%E4%BC%9A%E4%B8%8D%E4%BC%9A%E9%80%82%E5%BE%97%E5%85%B6%E5%8F%8D">
+          欧盟对华电动车关税会不会适得其反？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-07/%E5%89%91%E5%AE%A2%E5%86%99%E5%AD%97%E7%9A%84%E5%9C%B0%E6%96%B9-%E6%9C%89%E4%BA%9B%E4%BA%BA%E5%9C%A8%E7%94%A8%E6%9C%80%E4%B8%A2%E8%84%B8%E7%9A%84%E6%96%B9%E6%B3%95-%E5%B8%AE%E6%88%91%E4%BB%AC-%E5%87%BA%E5%90%8D">
+            前一篇：剑客写字的地方｜有些人在用最丢脸的方法，帮我们“出名”！
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7">
+            后一篇：德国军舰完成穿越南中国海
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E5%89%91%E5%AE%A2%E5%86%99%E5%AD%97%E7%9A%84%E5%9C%B0%E6%96%B9-%E6%9C%89%E4%BA%9B%E4%BA%BA%E5%9C%A8%E7%94%A8%E6%9C%80%E4%B8%A2%E8%84%B8%E7%9A%84%E6%96%B9%E6%B3%95-%E5%B8%AE%E6%88%91%E4%BB%AC-%E5%87%BA%E5%90%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-07/%E5%8A%A0%E6%B2%99%E6%88%98%E4%BA%89%E4%B8%80%E5%91%A8%E5%B9%B4-%E6%AC%A7%E6%B4%B2%E5%90%8C%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E8%89%B0%E9%9A%BE%E5%85%B3%E7%B3%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-07/%E5%89%91%E5%AE%A2%E5%86%99%E5%AD%97%E7%9A%84%E5%9C%B0%E6%96%B9-%E6%9C%89%E4%BA%9B%E4%BA%BA%E5%9C%A8%E7%94%A8%E6%9C%80%E4%B8%A2%E8%84%B8%E7%9A%84%E6%96%B9%E6%B3%95-%E5%B8%AE%E6%88%91%E4%BB%AC-%E5%87%BA%E5%90%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-07/%E5%BE%B7%E5%9B%BD%E5%86%9B%E8%88%B0%E5%AE%8C%E6%88%90%E7%A9%BF%E8%B6%8A%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-07/%E5%8A%A0%E6%B2%99%E6%88%98%E4%BA%89%E4%B8%80%E5%91%A8%E5%B9%B4-%E6%AC%A7%E6%B4%B2%E5%90%8C%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E8%89%B0%E9%9A%BE%E5%85%B3%E7%B3%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

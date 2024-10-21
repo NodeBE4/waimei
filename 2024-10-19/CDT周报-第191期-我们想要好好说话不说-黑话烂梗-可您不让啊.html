@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+" />
+    <meta property="og:description" content="
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊" />
+    <meta property="twitter:title" content="【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712290.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC191%E6%9C%9F%EF%BC%9A%E6%88%91%E4%BB%AC%E6%83%B3%E8%A6%81%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E4%B8%8D%E8%AF%B4%E2%80%9C%E9%BB%91%E8%AF%9D%E7%83%82%E6%A2%97%E2%80%9D%EF%BC%8C%E5%8F%AF%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712290.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC191%E6%9C%9F%EF%BC%9A%E6%88%91%E4%BB%AC%E6%83%B3%E8%A6%81%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E4%B8%8D%E8%AF%B4%E2%80%9C%E9%BB%91%E8%AF%9D%E7%83%82%E6%A2%97%E2%80%9D%EF%BC%8C%E5%8F%AF%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A&d=2024-10-19&e=
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+
+
+  上期周报：【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+  过去两周中国数字时代【404文库】新增文章5篇，【每日一语】新增网语5条，【大事记】收录热点事件2件，刊登读者投稿2篇，投稿请点此。
+  编者的话：
+  
+    10月11日—18日 这一周。
+    中央网信办、教育部印发通知，宣布开展“清朗·规范网络语言文字使用”专项行动，将重点整治网络平台上常见的"不规范、不文明"用语。对于编造“网络黑话”、“网络烂梗”，“滥用隐晦表达”等问题，官方表示会予以重点打击。
+    
+    所谓的“清朗行动”其实是由网信办牵头的网络治理行动，每年都会多次落地实施。“清朗”取自“还网络空间的风清气朗”之意。实际上，该系列行动持续加剧了网络审查、收紧了言论自由。例如，2023年1..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712290.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712290.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712290.html&text=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712290.html&title=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712290.html&title=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊&body=
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712290.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712290.html&title=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊&caption=
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊&url=https://chinadigitaltimes.net/chinese/712290.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712290.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712290.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC191%E6%9C%9F%EF%BC%9A%E6%88%91%E4%BB%AC%E6%83%B3%E8%A6%81%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E4%B8%8D%E8%AF%B4%E2%80%9C%E9%BB%91%E8%AF%9D%E7%83%82%E6%A2%97%E2%80%9D%EF%BC%8C%E5%8F%AF%E6%82%A8%E4%B8%8D%E8%AE%A9%E5%95%8A&d=2024-10-19&e=
+【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊
+——
+
+
+  上期周报：【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？
+  过去两周中国数字时代【404文库】新增文章5篇，【每日一语】新增网语5条，【大事记】收录热点事件2件，刊登读者投稿2篇，投稿请点此。
+  编者的话：
+  
+    10月11日—18日 这一周。
+    中央网信办、教育部印发通知，宣布开展“清朗·规范网络语言文字使用”专项行动，将重点整治网络平台上常见的"不规范、不文明"用语。对于编造“网络黑话”、“网络烂梗”，“滥用隐晦表达”等问题，官方表示会予以重点打击。
+    
+    所谓的“清朗行动”其实是由网信办牵头的网络治理行动，每年都会多次落地实施。“清朗”取自“还网络空间的风清气朗”之意。实际上，该系列行动持续加剧了网络审查、收紧了言论自由。例如，2023年1..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712290.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1729333289000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712290.html">【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712290.html" title="【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729330631547-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>上期周报：<a href="https://chinadigitaltimes.net/chinese/712111.html" title="【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？">【CDT周报】第190期：为什么要强行让113岁的管75岁的叫母亲？</a></p>
+  <p>过去两周中国数字时代<a href="https://chinadigitaltimes.net/chinese/404-articles-archive">【404文库】</a>新增文章5篇，<a href="https://chinadigitaltimes.net/chinese/quote-of-the-day">【每日一语】</a>新增网语5条，<a href="https://chinadigitaltimes.net/chinese/chronicle-of-major-events">【大事记】</a>收录热点事件2件，刊登读者投稿2篇，投稿请<a href="https://chinadigitaltimes.net/chinese/681495.html">点此</a>。</p>
+  <h3 id="section">编者的话：</h3>
+  <blockquote>
+    <p>10月11日—18日 这一周。</p>
+    <p>中央网信办、教育部印发通知，宣布开展“清朗·规范网络语言文字使用”专项行动，将重点整治网络平台上常见的"不规范、不文明"用语。对于编造“网络黑话”、“网络烂梗”，“滥用隐晦表达”等问题，官方表示会予以重点打击。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729330631547.png" alt="file" /></p>
+    <p>所谓的“清朗行动”其实是由网信办牵头的网络治理行动，每年都会多次落地实施。“清朗”取自“还网络空间的风清气朗”之意。实际上，该系列行动持续加剧了网络审查、收紧了言论自由。例如，2023年1月，网信办要求在春节期间“严控借返乡见闻散布焦虑情绪、渲染社会阴暗面”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729330722197.png" alt="filev" /></p>
+    <p>有网友回应道，“黑话烂梗”之所以流行，关键的原因是“我们想好好说话可您不让啊”。一些抽象词语之所以出现，本就是为了规避另一些禁词，这也是为什么简中圈的表达会越发抽象，越发异化。因为当言论自由被压制的时候，就只能以另一种非规范用语去实现自由。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/2024.10.15.png" alt="img" /></p>
+    <p>早年百度贴吧因为将“傻逼”一词屏蔽，不少网民改用“伞兵”进行替代，导致官媒接连发文怒批“伞兵”一词遭到了污名化。最终百度为了让大家不再说“伞兵”，被迫把“傻逼”释放，还给网民。而由于众所周知的原因，中文互联网上衍生出数万个有关习近平的黑话，甚至包括“香蕉皮”、“胖虎”、“指南针”、“北京一男子”这类相当奇怪的名词。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331029219.png" alt="file" /></p>
+    <p>另有网友指出，在中共在极权统治下，各种“政治新话”不断被创造，而这些才是简中圈的最大污染源。它们对人们的日常交流和思考方式产生侵蚀，使基于事实、逻辑与理性的公共讨论变得困难重重。就如同将政治灾难叫做曲折探索，失业下岗叫做灵活就业，独裁专制叫做中式民主，整肃网络叫做净网行动……</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331526106.png" alt="filev" /></p>
+    <p>10月17日，中国人口与发展研究中心发布消息称，将启动“新一轮人口家庭发展状况抽样调查”，以全面分析中国百姓“不想生、不敢生的原因”。对此有网友反问“答案不是显而易见吗？不想生的原因你们心里没点数？”的确，只要我们回顾过去几年的一些黑话烂梗，就不难看出，原来谜底就在谜面上。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331383882.png" alt="filev" /></p>
+    <p>它们分别是：滥生无辜、最后一代、四不青年、人口红利、社会调剂、软肋、人矿、鸡娃…..</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331564723.png" alt="file" /></p>
+    <p>本周2024年度的诺贝尔经济学奖揭晓，获奖者是三名美国大学的经济学家（Daron Acemoglu、James A. Robinson、Simon Johnson）。而这也让前两人合著的《国家为什么会失败》（2012年出版）一书再度引发了网络热议。该书强调了制度对于一个国家经济发展中所起到的重要的作用，具体来说，“包容性制度”有助于长期经济增长，而“攫取性制度”则会阻碍经济发展。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729160163073.png" alt="imgv" /></p>
+    <p>事实上，中国现行制度就像是“攫取性政治制度+包容性经济制度”的一种混合，所谓的改革开放，就是对长期最差组合的一种被迫调整。而根据两位作者的理论，中国经济的增长注定是无法持续的，概因既得利益集团始终不愿分享权力，而经济增长极限来临时很难再有模式上的创新。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331740713.png" alt="file" /></p>
+    <p>颇为讽刺的是，早在2016年，官媒便已对这套“制度相适应理论”作出了回应。指出“习近平政治经济学”能解决中国经济新阶段的问题，彻底克服中等收入陷阱，还能为世界政治经济困局开出新药方、指明新方向。但在过去8年间，习近平的许多制度改革都强化了中共不受约束的权力，反而使得中国的“攫取性政治制度”进一步强化。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729333164189.png" alt="file" /></p>
+    <p>那么，这是否意味着我们将会必然迎来二选一的结局？其一是，以大走弯路的方式来验证诺奖得主遥遥领先的预言——“国家为什么会失败”。其二是，以成功开辟新增长模式/路径的方式，证明坚持“攫取性政治制度”不动摇也能实现经济发展。而摸索出这一新经济模式的习近平，或将凭借前无古人的巨大成就，成为新一届诺贝尔经济学奖得主。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/image-1729331891712.png" alt="file" /></p>
+  </blockquote>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【CDT周报】第191期：我们想要好好说话不说“黑话烂梗”，可您不让啊<br /><strong>作者：</strong>中国数字时代<br /><strong>发表日期：</strong>2024.10.19<br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/大事记" target="_blank">大事记</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">话语馆</a><br />        <!-- Shortcode is missing "name" attribute -->
+      </div>
+    </div>
+  </div>
+  <h3 id="section-1">一周荐读：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712251.html">【CDT关注】“今年的诺贝尔经济学奖，十年前就让中共不高兴了”</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712213.html">【404文库】读品贩子｜兴于包容、毁于榨取：2024年诺贝尔经济学奖得主简评之一《Why Nations Fail》</a></li>
+  </ul>
+  <p>十年前，《国家为什么会失败：权力、繁荣和贫穷的根源》曾在中国拥有大量读者。这本书认为，政治领域和政治领域均存在包容性制度和攫取性制度。最佳组合是包容性政治制度+包容性经济制度；最差组合当然是它的反面：攫取性政治制度+攫取性经济制度。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712215.html">【CDT关注】莽莽｜中国Z世代审核员：生存吃饭最重要</a></li>
+  </ul>
+  <p>10月14日，独立中文杂志《莽莽》发布了一篇深度对谈，它采访了一名生于1997年，自2020年起就开始从事某知名互联网企业内容审核员的陈立佳（化名）。对于成为审核员的初衷，陈立佳非常坦承，他说纯粹就是为了挣钱吃饭，并且不认可对这份工作的道德批判。</p>
+  <h3 id="section-2">一周关注：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712185.html">【网络民议】“关键是我们想好好说话您不让啊”</a></li>
+  </ul>
+  <p>近日，中央网信办、教育部印发通知，开展“清朗·规范网络语言文字使用”专项行动。专项行动聚焦部分网站平台在热搜榜单、首页首屏、发现精选等重点环节呈现的语言文字不规范、不文明现象，重点整治歪曲音、形、义，编造网络黑话烂梗，滥用隐晦表达等突出问题。有关部门还表示，将对此类行为开展打击行动……</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712255.html">【网络民议】员工擅自离岗16年，国企急催</a></li>
+  </ul>
+  <p>近日，吉林一公司4名员工擅自离岗有人达16年引关注。该公司名为吉林森工集团泉阳泉饮品有限公司是一家国有企业。@新京报 我们视频从吉林森工集团获悉，除上述4人外，另有12人擅自离岗。吉林森工集团相关负责人称，企业在职员工500余人，筛查出这16人参保但没上班。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712177.html">老鱼时评｜任泽平为啥开始吃“爱国饭”了</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712182.html">建设性意见｜明天哪只股票会涨？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712176.html">木蹊说｜鲁镇爷叔</a></li>
+  </ul>
+  <p>最近几天，很久没有露面的前恒大首席经济学家任泽平又火了。他先是在上周做出了预言，说下周股市开市就要全部涨停，所以节前建议大家持股过节。结果大家都知道了，专治各种不服的大A狠狠打了首席经济学家的脸。其实，真正有本事的专家一般都不做这种很具体的预测。毕竟。股市这玩意从来就没有人能真正预测对过，连巴菲特荣格这样的人也都是讲讲趋势啥的。你问他们明天股市是涨是跌，他们往往也是懵逼的。</p>
+  <h3 id="section-3">一周惊奇：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712197.html">亮见｜副市长的31亿和1021处房产</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712201.html">非虚构故事｜一个贪官，轻易掏空一座城</a></li>
+  </ul>
+  <p>黑龙江鸡西原副市长李传良违法所得被申请没收：涉案逾31亿，查封房产1021处。有的媒体在讲查封的房产时，用词是“千余处”，也是震惊到我了。在租房都要为一两百块钱而纠结的当下，21处房产就这样被媒体大喇喇地“余”掉了。这真是一个贪官通胀的时代啊。触目惊心的是，一个副市长的违法所得，密密麻麻填满了《人民法院报》的一整个大版还不够，又占了下一个版面的一半！突然之间，“罄竹难书”，仿佛有了具象。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712234.html">【404文库】龙言大阅｜多地公务员欠薪，两个GDP超过10万亿的经济强省，财政收支也都已失衡</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712178.html">老干体v｜地方债，终究还是中央扛下了所有</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712217.html">大佳说｜有些市场可以假装努力，但外汇不会陪你演戏</a></li>
+  </ul>
+  <p>今天一个南京的朋友来找我诉苦。他说由于地方债很不稳定，去年的目标是“保六争八”，今年很多地方改成了“保三争六”。什么意思呢？就是保证发三个月的工资，争取发六个月以上的工资。不过，他们的公积金和社保不会断。南京市某辖区的公务员和事业单位已经被拖欠工资好几个月了。最后还是通过行政命令，强行在市内各区间拆借资金，才解决了部分员工的欠薪问题，而今年后续的资金，还没有着落。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712250.html">基本常识｜四川朋友别做梦啦，拆迁暴富的时代一去不复返了</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/712248.html">木蹊说｜“川爷”千万拆迁款？一个专为韭菜定制的谣言</a></li>
+  </ul>
+  <p>这一轮关于四川拆迁的传言，和国庆前后疯狂涌入股市的浪潮，还有疫情以来彩票销售的持续火爆，背后其实都反映出中国人一夜暴富的渴望无处安放的躁狂。房地产一夜暴富的机会，没了，互联网创业一夜暴富的机会，过了，做网红一夜成名暴富的前辈们，眼看着一个个都塌房了。到底哪里还有普通中国人一夜暴富的机会呢？</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712232.html">【404文库】让悲观者前行｜我眼里的张庆方律师</a></li>
+  </ul>
+  <p>本月17日是庆方吊证案的听证日。因为他在声明中已经谢绝了朋友们的现场围观，加之某种可以意会但不宜言说的氛围越来越浓，到场围观的人应该不多，其听证会料必会波澜不惊。前几天，李仲伟律师为庆方写了一篇文章，纵述了他和庆方的交往，写的质朴有料情感真挚，我转了两次。</p>
+  <h3 id="section-4">一周讽刺：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712190.html">地球公民金建国｜不会唱国歌就是间谍吗？</a></li>
+  </ul>
+  <p>当一个人不会唱国歌、不记得建国日期、不知道“宫廷玉液酒”的下一句时，意味着他不具备多数人所拥有的“正确的集体记忆”，是污染集体纯洁性、需要被净化的杂质…这种“杂质”往往会被粗暴地归类到外部势力的阵营，给予其声讨、网暴甚至举报、封号的惩罚…明明有多种合理的解释，人们偏偏选择以间谍来为一个人盖棺论定，这不仅仅是认知的极化，更是一种用“正确的集体记忆”实现集体内部自我净化的手段。</p>
+  <h3 id="section-5">一周声音：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712259.html">张3丰的世界｜一封给走失朋友的信</a></li>
+  </ul>
+  <p>各位关注公众号“城市的地得”的朋友，未来半年你将看不到这个号的更新了，希望明年4月还有机会见到。“城市的地得”是在2021年8月开始密集更新的，我还记得当时写了一篇《必须清澈透明支持张文宏》。“城市的地得”，这个名字中有三个结构助词。它们没有实际意思，但是却又是汉语中不可缺少的。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712193.html">忘川边的但丁｜比马斯克“筷子夹火箭”更稳的，是那个社会的预期</a></li>
+  </ul>
+  <p>所以撑起哥伦布伟大探险的，不是勇气、甚至不是单纯的科技、而是稳定的预期，和支撑这种稳定预期的契约和虽然正在成型中、但已经开始发挥效力的王在法律下的法制精神。同理，我们也可以说，马斯克昨天的“筷子夹火箭“确实夹的很稳，但比他夹得更稳，或者说让他夹得如此之稳的，其实是他所生活的那个社会中更深层的某些东西。比如，最浅显的一种，一个稳定的预期。</p>
+  <h3 id="section-6">一周故事：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712211.html">正面连接｜一个阿富汗女人的来信</a></li>
+  </ul>
+  <p>阿富汗女性曾过着和我们相似的生活，但现在，她们不能上学，不能工作，不能走进公共场所，不能独自乘车，不能在家以外的地方露出身体和面部（必须穿遮蔽全身的罩袍）。最新的禁令是，她们连在街上大声说话都是违法的……女性的存在渐渐被抹去了。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712227.html">极昼工作室｜整顿职场后，这些年轻人找不到工作了</a></li>
+  </ul>
+  <p>入职第一天被辞退、到手的offer被撤销、 面试屡屡碰壁，拒绝录用的理由仅仅是求职者发起过劳动仲裁。劳动仲裁成为求职污点， 这是很多求职者正面临的困境。当在职场上遭遇违法辞退、欠薪，劳动仲裁，为了维护自己合法权益的选择，却让他们背上了职场 “案底”，不断带来新的难题。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/712257.html">真实故事计划｜替父母还债的年轻人</a></li>
+  </ul>
+  <p>一些年轻人正在艰难地偿还由父母欠下的债务。在父债子还的观念下，一些父母因经商理财失败甚至是炒股、赌博形成的债务，在他们年龄变大偿债能力下降后，被转移到了刚刚进入社会的子女身上。亲情关系，成了家人之间财务剥削的脐带。从父母身上继承的负债，成了年轻人们难以脱身的人生漩涡。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-19/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E8%83%BD%E6%8A%B5%E5%88%B6%E5%8F%B8%E9%A9%AC%E5%8D%97-%E4%B8%BA%E5%95%A5%E4%B8%8D%E8%83%BD%E6%8A%B5%E5%88%B6%E6%9D%A8%E7%AC%A0">
+          旧闻评论｜能抵制司马南，为啥不能抵制杨笠？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-19/%E6%98%8C%E8%AE%B0%E8%B4%9F%E9%A3%9F-%E5%9B%9E%E4%BA%BA%E5%A4%A7%E8%AE%B0">
+          昌记负食｜回人大记
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-18</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-18/%E5%8E%86%E5%8F%B2%E6%80%BB%E5%9C%A8%E6%8A%BC%E9%9F%B5-%E5%8F%B8%E9%A9%AC%E5%8D%97%E5%9C%A8%E5%BC%80%E5%B0%81%E5%BA%9C%E7%9B%B4%E6%92%AD%E5%91%BC%E5%94%A4%E5%8C%85%E5%85%AC-%E8%AF%B4%E5%88%B0%E5%A4%A9%E5%AD%90%E7%8A%AF%E6%B3%95%E4%B8%8E%E5%BA%B6%E6%B0%91%E5%90%8C%E7%BD%AA%E6%97%B6%E8%A2%AB%E5%B0%81%E7%A6%81">
+          历史总在押韵｜司马南在开封府直播呼唤包公，说到天子犯法与庶民同罪时被封禁
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-18</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-18/%E8%A1%A3%E8%80%85%E6%9C%9D%E6%96%B0-%E6%9C%80%E6%96%B0%E8%AF%81%E6%8D%AE%E8%AF%81%E6%98%8E-%E7%A1%AE%E6%9C%89%E8%80%81%E5%B9%B2%E9%83%A8-%E8%80%8D%E7%89%B9%E6%9D%83">
+          衣者朝新｜最新证据证明，确有老干部“耍特权”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-19/%E7%89%B9%E6%9C%97%E6%99%AE-%E8%8B%A5%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%85%A5%E5%8F%B0%E6%B9%BE-%E5%B0%86%E5%BE%81%E9%AB%98%E9%A2%9D%E5%85%B3%E7%A8%8E">
+            前一篇：特朗普：若中国进入台湾 将征高额关税
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-19/%E7%BE%8E%E5%9B%BD%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E7%88%B6%E6%AF%8D%E6%8B%92%E7%BB%9D%E7%BB%99%E5%AD%A9%E5%AD%90%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97">
+            后一篇：美国越来越多的父母拒绝给孩子接种疫苗
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-19/%E7%89%B9%E6%9C%97%E6%99%AE-%E8%8B%A5%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%85%A5%E5%8F%B0%E6%B9%BE-%E5%B0%86%E5%BE%81%E9%AB%98%E9%A2%9D%E5%85%B3%E7%A8%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-19/%E7%BE%8E%E5%9B%BD%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E7%88%B6%E6%AF%8D%E6%8B%92%E7%BB%9D%E7%BB%99%E5%AD%A9%E5%AD%90%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-19/%E6%98%8C%E8%AE%B0%E8%B4%9F%E9%A3%9F-%E5%9B%9E%E4%BA%BA%E5%A4%A7%E8%AE%B0'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-18/%E5%8E%86%E5%8F%B2%E6%80%BB%E5%9C%A8%E6%8A%BC%E9%9F%B5-%E5%8F%B8%E9%A9%AC%E5%8D%97%E5%9C%A8%E5%BC%80%E5%B0%81%E5%BA%9C%E7%9B%B4%E6%92%AD%E5%91%BC%E5%94%A4%E5%8C%85%E5%85%AC-%E8%AF%B4%E5%88%B0%E5%A4%A9%E5%AD%90%E7%8A%AF%E6%B3%95%E4%B8%8E%E5%BA%B6%E6%B0%91%E5%90%8C%E7%BD%AA%E6%97%B6%E8%A2%AB%E5%B0%81%E7%A6%81'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-19/%E7%89%B9%E6%9C%97%E6%99%AE-%E8%8B%A5%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%85%A5%E5%8F%B0%E6%B9%BE-%E5%B0%86%E5%BE%81%E9%AB%98%E9%A2%9D%E5%85%B3%E7%A8%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-19/%E7%BE%8E%E5%9B%BD%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E7%9A%84%E7%88%B6%E6%AF%8D%E6%8B%92%E7%BB%9D%E7%BB%99%E5%AD%A9%E5%AD%90%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-19/%E6%98%8C%E8%AE%B0%E8%B4%9F%E9%A3%9F-%E5%9B%9E%E4%BA%BA%E5%A4%A7%E8%AE%B0">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-18/%E5%8E%86%E5%8F%B2%E6%80%BB%E5%9C%A8%E6%8A%BC%E9%9F%B5-%E5%8F%B8%E9%A9%AC%E5%8D%97%E5%9C%A8%E5%BC%80%E5%B0%81%E5%BA%9C%E7%9B%B4%E6%92%AD%E5%91%BC%E5%94%A4%E5%8C%85%E5%85%AC-%E8%AF%B4%E5%88%B0%E5%A4%A9%E5%AD%90%E7%8A%AF%E6%B3%95%E4%B8%8E%E5%BA%B6%E6%B0%91%E5%90%8C%E7%BD%AA%E6%97%B6%E8%A2%AB%E5%B0%81%E7%A6%81">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
