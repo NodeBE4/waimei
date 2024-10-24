@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>客座评论：朝韩会打起来吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+客座评论：朝韩会打起来吗？
+——
+" />
+    <meta property="og:description" content="
+客座评论：朝韩会打起来吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="客座评论：朝韩会打起来吗？" />
+    <meta property="twitter:title" content="客座评论：朝韩会打起来吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E6%259C%259D%25E9%259F%25A9%25E4%25BC%259A%25E6%2589%2593%25E8%25B5%25B7%25E6%259D%25A5%25E5%2590%2597%25EF%25BC%259F%2Fa-70550164&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E6%259C%259D%25E9%259F%25A9%25E4%25BC%259A%25E6%2589%2593%25E8%25B5%25B7%25E6%259D%25A5%25E5%2590%2597%25EF%25BC%259F%2Fa-70550164&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F&d=2024-10-21&e=
+客座评论：朝韩会打起来吗？
+——
+
+
+  
+  邓聿文2024-10-21T09:23:57.138Z
+  
+  
+朝鲜军队规模庞大，而且拥有核武
+  
+  （德国之声中文网）朝鲜前不久在朝韩军事分界线以北的境内炸毁连接两国的铁路和公路通道，韩军方在朝鲜炸毁相关道路后则进行开枪警告射击，双方在这一段时间更在言辞上放狠话，激烈交锋，这让外界尤其东亚国家担忧半岛再起战端，因为朝韩打起来，周边国家势必卷入。
+  金正恩的“最高尊严”受损
+  朝韩此轮对抗，直接因素是韩国的无人机闯入平壤散发反朝传单。10月以来，韩国无人机三次飞临平壤上空，特别最近一次，据说传单内容有针对金正恩及其女儿的一些生活细节，被朝当局认为是韩有意要煽动朝鲜民众对领袖的不满，挑战了金正恩的“最高尊严”。金家父女的生活对其民众是最高机密，若被泄露，让民众知晓这个最高家庭的奢侈腐化生活，进而对领袖的忠诚产生怀疑乃至动摇，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E6%259C%259D%25E9%259F%25A9%25E4%25BC%259A%25E6%2589%2593%25E8%25B5%25B7%25E6%259D%25A5%25E5%2590%2597%25EF%25BC%259F%2Fa-70550164" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164&text=客座评论：朝韩会打起来吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164&title=客座评论：朝韩会打起来吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164&title=客座评论：朝韩会打起来吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=客座评论：朝韩会打起来吗？&body=
+客座评论：朝韩会打起来吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164&title=客座评论：朝韩会打起来吗？&caption=
+客座评论：朝韩会打起来吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=客座评论：朝韩会打起来吗？&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>客座评论：朝韩会打起来吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E6%259C%259D%25E9%259F%25A9%25E4%25BC%259A%25E6%2589%2593%25E8%25B5%25B7%25E6%259D%25A5%25E5%2590%2597%25EF%25BC%259F%2Fa-70550164&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F&d=2024-10-21&e=
+客座评论：朝韩会打起来吗？
+——
+
+
+  
+  邓聿文2024-10-21T09:23:57.138Z
+  
+  
+朝鲜军队规模庞大，而且拥有核武
+  
+  （德国之声中文网）朝鲜前不久在朝韩军事分界线以北的境内炸毁连接两国的铁路和公路通道，韩军方在朝鲜炸毁相关道路后则进行开枪警告射击，双方在这一段时间更在言辞上放狠话，激烈交锋，这让外界尤其东亚国家担忧半岛再起战端，因为朝韩打起来，周边国家势必卷入。
+  金正恩的“最高尊严”受损
+  朝韩此轮对抗，直接因素是韩国的无人机闯入平壤散发反朝传单。10月以来，韩国无人机三次飞临平壤上空，特别最近一次，据说传单内容有针对金正恩及其女儿的一些生活细节，被朝当局认为是韩有意要煽动朝鲜民众对领袖的不满，挑战了金正恩的“最高尊严”。金家父女的生活对其民众是最高机密，若被泄露，让民众知晓这个最高家庭的奢侈腐化生活，进而对领袖的忠诚产生怀疑乃至动摇，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E6%259C%259D%25E9%259F%25A9%25E4%25BC%259A%25E6%2589%2593%25E8%25B5%25B7%25E6%259D%25A5%25E5%2590%2597%25EF%25BC%259F%2Fa-70550164" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1729504048000-->
+<p><a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E6%9C%9D%E9%9F%A9%E4%BC%9A%E6%89%93%E8%B5%B7%E6%9D%A5%E5%90%97%EF%BC%9F/a-70550164">客座评论：朝韩会打起来吗？</a>
+——</p>
+
+<div>
+  <div>
+<i>  邓聿文<br />2024-10-21T09:23:57.138Z</i>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70532288_303.jpg" width="100%" />  <div>
+<small style="color: #999;">朝鲜军队规模庞大，而且拥有核武</small>
+  </div>
+  <p>（德国之声中文网）朝鲜前不久在朝韩军事分界线以北的境内<a href="https://api.dw.com/api/detail/article/70446626" rel="ArticleRef">炸毁连接两国的铁路和公路通道</a>，韩军方在朝鲜炸毁相关道路后则进行开枪警告射击，双方在这一段时间更在言辞上放狠话，激烈交锋，这让外界尤其东亚国家担忧半岛再起战端，因为朝韩打起来，周边国家势必卷入。</p>
+  <p><strong>金正恩的“最高尊严”受损</strong></p>
+  <p>朝韩此轮对抗，直接因素是韩国的无人机闯入平壤散发反朝传单。10月以来，韩国无人机三次飞临平壤上空，特别最近一次，据说传单内容有针对<span data-id="40877540" data-type="AUTO_TOPIC" title="Automatische Themenseite">金正恩</span>及其女儿的一些生活细节，被朝当局认为是韩有意要煽动朝鲜民众对领袖的不满，挑战了金正恩的“最高尊严”。金家父女的生活对其民众是最高机密，若被泄露，让民众知晓这个最高家庭的奢侈腐化生活，进而对领袖的忠诚产生怀疑乃至动摇，这当然会使金正恩对韩震怒。朝就指责无人机传单事件是由韩军方策划执行的，言下之意，韩国政府有意要挑起朝鲜百姓对金家政权的不满，故而作为回应，朝鲜除了放狠话，就是切断和韩国的一切联系，而炸毁朝韩边境的连接通道，表明朝鲜<a href="https://api.dw.com/api/detail/article/70525906" rel="ArticleRef">已把韩国完全看作敌国</a>，不想和韩国发生一丁点关系。</p>
+  <h3 id="section">相关图集：神秘莫测的朝鲜“金家王朝”</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16739468_303.jpg" width="100%" /><strong>一张罕见的“集体照”</strong>：在这张摄于1981年的照片上，金正男（右上）罕见的与父亲金正日共同出现。画面左上方的女性是成蕙琅，是画面中另外两名孩子的母亲。成蕙琅的另一个身份是金正男的姨妈，她的妹妹成蕙琳是金正日的妻子。1981年，成蕙琅举家逃亡韩国，这张照片也是她为了证明身份而公布于众的。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16739474_303.jpg" width="100%" /><strong>落魄“王子”？</strong>：2月13日，一位朝鲜男子在马来西亚吉隆坡去世。有关他的死因，外界众说纷纭，但他的身份却很快就得到确认：金正男（Kim Jong Nam）。45岁的他是统治朝鲜近70年的“金氏家族”一员，但长期游离于权力高层之外，据称是澳门赌场和五星级酒店的常客。在这次身亡消息传出之前，这个名字上次登上头条还是在2001年，当时他拿着假的多米尼加共和国护照前往日本，据说是要去迪士尼乐园。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/19563323_303.jpg" width="100%" /><strong>第三代领袖</strong>：也许正是因为2001年的“日本历险记”，让作为长子的金正男葬送了继承“王位”的机会，取而代之的是他同父异母兄弟金正恩（Kim Jong Un）。2010年，不到30岁的金正恩便成为朝鲜第二把手，仅次于其父金正日。人们当时便意识到，他将成为权力继承人。金正恩上台后进行了颇为严厉、“六亲不认”的整肃运动。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17292765_303.jpg" width="100%" /><strong>拿姑父开刀</strong>：这轮整肃的“牺牲品”之一便是张成泽（Jang Song-thaek）。他不但是朝鲜政权的重要人物之一，还是金正恩的姑父。张成泽的妻子金敬姬是金正日最小的妹妹。但战友加亲友的身份也没能保住这位朝鲜二号人物的命，他一次召开大会的场合被当场逮捕，最后判处死刑，罪名之一是“企图发动政变”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/17298203_303.jpg" width="100%" /><strong>金家长女</strong>：与丈夫张成泽一样，金敬姬（Kim Kyong-hui）也曾在金正恩刚刚上台时被视为权力高层的一员。但她并没有因为丈夫的倒台而遭到清洗，而是继续留在权力核心内，目前仍担任朝鲜劳动党中央政治局委员。曾有多次传出她的死讯，但最终都未能证实。不过，正如金氏家族的大部分女性成员一样，金敬姬此后甚少在公开场合露面。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16124493_303.jpg" width="100%" /><strong>颇不寻常的第一夫人</strong>：现在最为引人注目的金家女性成员，无疑是金正恩的妻子李雪主（Ri Sol-ju）。有报道称，在成为领袖妻子之前，李雪主是朝鲜一个知名歌舞团的歌手。此后多次与金正恩共同出现在媒体上的她，因为衣着时髦，外表靓丽，而让令人一贯感觉沉闷阴暗的朝鲜政坛有了些许亮色。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16739482_303.jpg" width="100%" /><strong>第一“王储”</strong>：除了妻子之外，金正恩目前最亲密的家人大概要数他的亲弟弟—金正哲（Kim Jong-chul）。与金正男一样，1981年出生的金正哲也曾被视为有望争夺“王位”，但最后并没能得到父亲的支持，据称是因为金正日觉得他太“娘娘腔”。不过他目前据信在朝鲜政权中也扮演重要角色。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/37564023_303.jpg" width="100%" /><strong>领袖的妹妹</strong>：金正恩和金正哲的母亲都是出生于日本的高容姬（Ko Yong-hui），他们两人还有一个妹妹—金與正（Kim Yo-jong）。据说，与其几位兄长一样，金與正也曾留学海外，尤其是瑞士。由于金家的神秘色彩，金與正刚刚出现在金正恩身边的时候，甚至一度被媒体误认为当时仍未公开亮相的李雪主。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/37564172_303.jpg" width="100%" /><strong>金家第四代</strong>：目前已经为外界所确知的金家第四代只有一位—金正男的儿子金汉秀（也译为金韩松，Kim Han-sol）。他不但留学国外，还曾接受过媒体采访。当时他表示，自己从来没有见过爷爷金正日和叔叔金正恩，也没有太多来自朝鲜的朋友。电视画面上的金汉秀一身韩流打扮，与寻常少年无异。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/37565692_303.jpg" width="100%" /><strong>“永远的总书记”和“永远的主席”</strong>：金日成在1948年开创“朝鲜民主主义人民共和国”，此后其子金正日继续其“遗志”，在朝鲜实行家族统治，至今持续三代。金日成死后被宪法确定为“共和国永远的主席”，而金正日去世后则被称为“永远的总书记”。尽管经济落后，平壤政权依然在“先军政策”的主导下大力发展军事实力，尤其是核武力量，并因此受到国际社会严厉制裁。
+  </div>
+  <p>对韩而言，朝鲜这个动作蕴含着非常强的敌意，而一个敌意的朝鲜是韩国的巨大威胁。金正恩日前视察朝人民军第二军指挥部的一番话就说明了这点。他强调，朝方已完全破坏并切断了连接韩国领土的公路和铁路。这不仅意味着从物理上的封闭，也意味着将同族意识和统一的认识打消。朝方以此最后宣告，今后韩国侵害朝鲜主权时，朝方武力将不受任何条件的约束。换言之，以前韩方对朝方做的此类“侵害”事情，朝方还顾忌朝韩是同一民族，把它看作民族内部矛盾，因而还有些自我约束，但现在不一样，韩国是朝鲜的敌国，对敌国的“来犯”，当然无须有道德上的约束，可以狠狠地还击。这自然会让韩国感受到脊背发凉。不过，韩国没有选择退缩，而是强硬以对，大概韩国觉得不针锋相对，会让金正恩误以为害怕他的讹诈，进而对韩国采取更加冒犯的举措。可这样一来，也许会进一步激怒金正恩，认定尹锡悦政府就是处心积虑要颠覆朝鲜政权。</p>
+  <p>当前朝韩面临的即是这样一个双方完全无信的困境局面。此种困境根本上是由金正恩政权强烈的不安感导致的。金氏政权本就极度封闭，疫情三年让朝鲜更加封闭和孤立。恰恰在这时候，美国和韩国都换了政府。<span data-id="44151841" data-type="AUTO_TOPIC" title="Automatische Themenseite">特朗普第三次和金正恩的河内会见</span>虽然不欢而散，使金正恩有种受骗上当的感觉，但拜登政府几乎是完全无视朝鲜的存在，不与朝鲜打交道，这又让他有强烈的失落感。美国不理朝鲜，致使金正恩无法打开外交局面，朝鲜的地缘政治环境无法改善。所以在过去三年，朝鲜隔不多久<a href="https://api.dw.com/api/detail/article/69861727" rel="ArticleRef">试射导弹和卫星</a>，目的是要唤起美国对朝注意。</p>
+  <p>另一方面，有着民族情怀，比较同情朝鲜的文在寅下台了，上来了一个保守的尹锡悦，后者不但讨厌金正恩，敌视朝鲜，不像文在寅政府那样主张南北和解，甚至在朝鲜有困难的时候帮它一把；而且在外交上对美亦步亦趋，在美国调解下，韩日实现了和解，原来的韩美关系变成了韩美日三角关系。三方对朝协调立场，采取一致态度，让朝鲜无法在三方之间钻空子。从而让朝鲜面对的压力更大，也使得金正恩对韩国内部政治的这个变化非常恼火。</p>
+  <p><strong>朝中俄 vs 美日韩</strong></p>
+  <p>与此同时，朝鲜和中国、俄罗斯却无法形成和美日韩那样的三角关系，主要是中国对朝有点不冷不热，虽然朝中是法律上的盟友关系，但中国不像美国罩着韩国一样罩着朝鲜。原因一是中国在发展同朝关系时，还得顾忌韩国的态度，中国不想太亲近朝鲜而把韩国完全推到美国怀抱，尽管尹锡悦政府在对华事务上呼应了美国的要求；二是朝鲜自身也不太听中国的话，不像韩国，对美国一唱一和。中国无法依靠，就只有<a href="https://api.dw.com/api/detail/article/69399723" rel="ArticleRef">依靠俄罗斯</a>，可俄罗斯也是在俄乌战争爆发后才对朝鲜热心起来，虽然俄罗斯是粮食、能源和军武大国，在这些方面能够满足朝鲜的需求，尤其是帮朝提升核武水平和战略威慑能力，然而俄毕竟也受国际制裁，力量有限，只是让金正恩政权能够存活下去，无法帮助朝鲜打开国际局面。好在今年6月普京访朝，双方签署了《俄朝全面战略伙伴关系条约》，该条约规定一方遭受第三者攻击，另一方有义务帮助，这使得金正恩增加了对抗美日韩的底气。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70424789_303.jpg" width="100%" />  <div>
+<small style="color: #999;">普京给了金正恩对抗美日韩的底气</small>
+  </div>
+  <p>上述韩美日以及朝俄关系的各自强化构成了朝韩此次冲突的背景因素，尤其是韩国对朝态度的大转变，刺痛了金正恩，以致让他作出近乎疯狂的决定，来应对所谓的来自韩国的挑衅。在去年底的劳动党八届九中全会上，金正恩即表示，朝韩关系<a href="https://api.dw.com/api/detail/article/68010646" rel="ArticleRef">不再是同族关系</a>，而是敌对的交战国关系。即使是他的父亲和爷爷，都没有把半岛北南关系做此定位。金正恩不仅是这么说的，也是这样做的，朝鲜最高人民会议废除了祖国和平统一委员会、民族经济合作局以及金刚山国际旅游局，这次又将作为朝韩交流合作象征的京义铁路线的朝方区段也炸掉，以隔绝朝韩边境地区之间的一切联络。所以，韩国的无人机事件虽然是双方冲突的直接触媒，可如果没有过去几年北南双方敌意螺旋的加深，就不至于演化到如今这个地步。</p>
+  <h3 id="section-1">相关图集：纪念停战70周年 朝中俄互动频频</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66366036_303.jpg" width="100%" /><b> 中俄座上宾</b>：朝鲜领导人金正恩与俄中代表一起观看了庆祝朝鲜战争停战70周年的庆祝晚会。两国代表显然受到平壤的高度重视，俄罗斯防长绍伊古和中国政治局委员李鸿忠的座位分别被安排在金正恩的左右。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66361900_303.jpg" width="100%" /><strong>习近平来信</strong>：这是金正恩自疫情爆发以来首次公开证实接待外宾团。根据朝鲜中央通讯社，金正恩与李鸿忠会面期间，对方转交了一份习近平的私人信函。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/62335347_303.jpg" width="100%" /><strong>疫情封锁</strong>：为应对新冠病毒疫情，朝鲜2020年初关闭边境，停止一切跨境贸易和外交访问，甚至连主要盟友中国和俄罗斯也不例外。朝中社没有提及这两个代表团访问朝鲜是否标志政策上的改变。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66365952_303.jpg" width="100%" /><strong>展示武器</strong>：金正恩与俄罗斯防长绍伊古一同参观了武器装备展示会，其中展示了朝鲜的一些弹道导弹。韩媒指出，从公开照片还可以看到与美国MQ-1“捕食者”相似的无人机。美联社称，有一些装备是朝鲜过去未曾公开的。金正恩表示这次会晤深化了两国之间战略上与传统上的关系。俄外交部表示，绍伊古会见朝鲜防长姜顺南时表示，他希望加强俄罗斯与朝鲜这个"友好国家"之间的"防务合作"。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66352615_303.jpg" width="100%" /><strong>访朝目的</strong>：绍伊古向金正恩转交了普京的亲笔信，法新社援引专家表示，俄乌前线紧张之际，俄防长前往朝鲜的一个主要目的是希望能从朝鲜获得武器支援，而朝鲜也可以借此填补国库。朝鲜之前就被指向俄罗斯提供武器，一名美国官员透露，受到西方制裁的莫斯科从平壤购买数百万枚火箭弹和炮弹。不过俄朝都表示否认。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66366006_303.jpg" width="100%" /><b> 亲往志愿军烈士陵园 </b>：1953年7月27日，朝鲜半岛签署停战协定，朝鲜把这天称为“胜利日”，今年的纪念活动中，金正恩在其妹金与正的陪伴下，访问了参加朝鲜战争的中国士兵公墓。并向毛泽东长子毛岸英烈士陵墓献上花圈。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16703681_303.jpg" width="100%" /><strong>朝鲜战争</strong>：1950年，中国曾派志愿军参与朝鲜战争。这场战事在1953年7月27日停止。不过，韩国与朝鲜并未正式签署终战宣言，严格来说双方仍处于战争状态。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/59128824_303.jpg" width="100%" /><strong>阅兵活动</strong>：停战纪念日朝鲜通常会举办盛大阅兵。韩联社表示，今年的阅兵式在夜间举行，此次或会向中俄代表团展示其核武装备。朝鲜的阅兵式之前大多在上午举行，但自2020年连续多次在夜间或深夜阅兵。图为2021年9月平壤举行民防阅兵式，庆祝建政73周年。
+  </div>
+  <p><strong>平壤舞剑 意在华府</strong></p>
+  <p>那么，朝韩的危机会不会导致双方打起来？假如金正恩恼羞成怒，命令朝军还击韩国的“挑衅”，或者搞一个类似延平岛的炮击事件，韩军不会攻击朝鲜，几乎是不可能的。因此，关键是金正恩会不会迈出射击韩国的这一步。观察家们对此的评估是，别看朝韩都摩拳擦掌，但现阶段半岛发生战争的可能性不大，金不会真正鲁莽到对韩动手，挑起战争。尽管朝鲜有军队百万，还拥有核武，但这只是用来自保，倘若发动战争，朝鲜面对的是美韩联军。两边实力完全不对等，朝鲜支撑不起一场激烈的战争。虽然俄副外长鲁登科对朝韩冲突表态称，俄朝条约规定在发生侵略的情况下，双方将相互提供军事援助，似乎有意在为朝撑腰，但真打起来，俄未必会直接派军队参战，如果不派军队参战，仅仅是军事支援，改变不了朝鲜最后被打败的结局，何况俄罗斯和乌克兰的战争打得很煎熬。但韩国也不可能主动攻朝，朝鲜被打光了可能无所谓，因为它本来就近乎一无所有，而韩国不同，一个繁荣的韩国也将毁于战火，韩国民众很难接受这个事实。此外，朝鲜毕竟<a href="https://api.dw.com/api/detail/article/70515703" rel="ArticleRef">拥有核武</a>，假如金正恩选择同归于尽，不但对半岛和周边国家，对人类都是一个灾难。韩美不能不考虑这个风险。</p>
+  <p>正如一些评论所说，朝鲜炸毁朝韩连接线，切断与韩国的一切联系，乃是一种以退为进，喊话美国的策略。金正恩表面上对韩采取一副好战姿态，但实际上这一切都是要表演给美国看，让美国大选后的新政府重视起朝鲜来，觉得朝鲜问题不能不解决。只要朝鲜问题摆在白宫的办公桌上，美朝能够谈判，金正恩就能以朝核问题为筹码，争取对朝有利局面。他最害怕的就是朝鲜被美国晾在一边，不管不问，哪怕像特朗普一样，谈判甩袖子，不欢而散，至少让朝鲜特别是金正恩能在国际上曝光，也比朝美不接触要强。所以，朝鲜这次制造和韩国的冲突，特意选在美国大选处于关键的10月。金正恩的胞妹金与正直接对美喊话，要美管束韩国，就意在要美对朝韩冲突重视。</p>
+  <p>虽然半岛局势目前看似尚处可控程度，但由于朝韩已经切断了联系管道，确实也不排除如果韩国再派无人机或气球飞入平壤上空散发反朝传单，被朝鲜在韩国一侧击落伤及韩民众，导致韩国对朝鲜回击，并进而爆发双方交火的可能性。两国处于对抗状态还不是最可怕的，最可怕的是双方完全没有互信，且又没有紧急时刻可以联系沟通的管道，这种情况下最容易因意外而发生误判。半岛眼下就是如此。</p>
+  <p> </p>
+  <p><em>邓聿文为政治评论员，独立学者，中国战略分析智库研究员兼中国战略分析杂志共同主编。</em></p>
+  <p><em>德国之声致力于为您提供客观中立的新闻报导，以及展现多种角度的评论分析。文中评论及分析仅代表作者或专家个人立场。</em></p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.run" style="color:orange" target="_blank">https://feedx.run</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-21/%E8%BE%9B%E7%93%A6%E5%B0%94%E4%B9%8B%E6%AD%BB%E5%AF%B9%E5%93%88%E9%A9%AC%E6%96%AF-%E5%8A%A0%E6%B2%99%E5%92%8C%E9%BB%8E%E5%B7%B4%E5%AB%A9%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+          辛瓦尔之死对哈马斯、加沙和黎巴嫩意味着什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA">
+          蔡英文訪布魯塞爾：現場歐洲議員怎麼說？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6">
+          专访：译者贝茨-让德国读者了解中国文学
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-20/%E7%89%B9%E6%9C%97%E6%99%AE-%E5%93%88%E9%87%8C%E6%96%AF%E4%BC%9A%E5%A6%82%E4%BD%95%E5%AF%B9%E5%BE%85%E4%B8%AD%E5%9B%BD">
+          特朗普、哈里斯会如何对待中国？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6">
+            前一篇：专访：译者贝茨-让德国读者了解中国文学
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA">
+            后一篇：蔡英文訪布魯塞爾：現場歐洲議員怎麼說？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-21/%E8%94%A1%E8%8B%B1%E6%96%87%E8%A8%AA%E5%B8%83%E9%AD%AF%E5%A1%9E%E7%88%BE-%E7%8F%BE%E5%A0%B4%E6%AD%90%E6%B4%B2%E8%AD%B0%E5%93%A1%E6%80%8E%E9%BA%BC%E8%AA%AA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-21/%E4%B8%93%E8%AE%BF-%E8%AF%91%E8%80%85%E8%B4%9D%E8%8C%A8-%E8%AE%A9%E5%BE%B7%E5%9B%BD%E8%AF%BB%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

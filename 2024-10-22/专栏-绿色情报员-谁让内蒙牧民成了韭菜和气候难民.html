@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+" />
+    <meta property="og:description" content="
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" />
+    <meta property="twitter:title" content="专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&t=%E4%B8%93%E6%A0%8F+%7C%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E8%B0%81%E8%AE%A9%E5%86%85%E8%92%99%E7%89%A7%E6%B0%91%E6%88%90%E4%BA%86%E9%9F%AD%E8%8F%9C%E5%92%8C%E6%B0%94%E5%80%99%E9%9A%BE%E6%B0%91%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&t=%E4%B8%93%E6%A0%8F+%7C%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E8%B0%81%E8%AE%A9%E5%86%85%E8%92%99%E7%89%A7%E6%B0%91%E6%88%90%E4%BA%86%E9%9F%AD%E8%8F%9C%E5%92%8C%E6%B0%94%E5%80%99%E9%9A%BE%E6%B0%91%EF%BC%9F&d=2024-10-22&e=
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+
+
+ 中国威权式环境治理造成内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。   
+   （法新社）
+  
+  
+  每年11月至隔年5月，进入中国沙尘天气的高发期。内蒙古牧民的焦虑感格外强烈，今年春、夏接连经历严重的沙尘暴和干旱，部分草原地带一片枯黄，牧民发愁又要为牲畜买草过冬了。
+  今年7月世界气象组织（WMO）发布的《2023年浮尘公报》显示，2023年中亚西部、中国大陆中北部，以及蒙古南部地区的年均地表浮尘浓度特别高，而中国的沙尘入侵范围更创下近年之最。这几年虽然北京的沙尘天气减少了，内蒙古部分地区的沙尘暴反而持续增加，反覆上演黄沙漫天的末日场景，牧民无语问苍天，到底问题出在哪里？
+  “虽然中国在气候适应方面进行了大量投资，内蒙古的集中式草原保护计划导致了非常显着的适应锁定，然后他们忽视了传统牧业知..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&text=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&title=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&title=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？&body=
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&title=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？&caption=
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？&url=https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-22
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html&t=%E4%B8%93%E6%A0%8F+%7C%E7%BB%BF%E8%89%B2%E6%83%85%E6%8A%A5%E5%91%98%EF%BC%9A%E8%B0%81%E8%AE%A9%E5%86%85%E8%92%99%E7%89%A7%E6%B0%91%E6%88%90%E4%BA%86%E9%9F%AD%E8%8F%9C%E5%92%8C%E6%B0%94%E5%80%99%E9%9A%BE%E6%B0%91%EF%BC%9F&d=2024-10-22&e=
+专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？
+——
+
+
+ 中国威权式环境治理造成内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。   
+   （法新社）
+  
+  
+  每年11月至隔年5月，进入中国沙尘天气的高发期。内蒙古牧民的焦虑感格外强烈，今年春、夏接连经历严重的沙尘暴和干旱，部分草原地带一片枯黄，牧民发愁又要为牲畜买草过冬了。
+  今年7月世界气象组织（WMO）发布的《2023年浮尘公报》显示，2023年中亚西部、中国大陆中北部，以及蒙古南部地区的年均地表浮尘浓度特别高，而中国的沙尘入侵范围更创下近年之最。这几年虽然北京的沙尘天气减少了，内蒙古部分地区的沙尘暴反而持续增加，反覆上演黄沙漫天的末日场景，牧民无语问苍天，到底问题出在哪里？
+  “虽然中国在气候适应方面进行了大量投资，内蒙古的集中式草原保护计划导致了非常显着的适应锁定，然后他们忽视了传统牧业知..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fluseqingbaoyuan%2Fgrn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1729612800000-->
+<p><a href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html">专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？</a>
+——</p>
+
+<div>
+<img src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/@@images/2a5dffc7-b12e-4548-b7b5-adcb8ecccad0.jpeg" alt="专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" title="专栏 |绿色情报员：谁让内蒙牧民成了韭菜和气候难民？" height="420" width="620" referrerpolicy="no-referrer" /> <span class="lead_image_caption">中国威权式环境治理造成内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。</span>   <div id="zoomattribute">
+<a id="single_image" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/@@images/image/social_media" data-fancybox="" data-caption="中国威权式环境治理造成内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。" title="中国威权式环境治理造成内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。"> <img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /> </a> <span class="copyright">（法新社）</span>
+  </div>
+  <!-- zoomattribute -->
+  <p>每年11<span>月至隔年</span>5<span>月，进入中国沙尘天气的高发期。内蒙古牧民的焦虑感格外强烈，今年春、夏接连经历严重的沙尘暴和干旱，部分草原地带一片枯黄，牧民发愁又要为牲畜买草过冬了。</span></p>
+  <p>今年7月世界气象组织（WMO）发布的《2023年浮尘公报》显示，2023年中亚西部、中国大陆中北部，以及蒙古南部地区的年均地表浮尘浓度特别高，而中国的沙尘入侵范围更创下近年之最。这几年虽然北京的沙尘天气减少了，内蒙古部分地区的沙尘暴反而持续增加，反覆上演黄沙漫天的末日场景，牧民无语问苍天，到底问题出在哪里？</p>
+  <p>“虽然中国在气候适应方面进行了大量投资，内蒙古的集中式草原保护计划导致了非常显着的适应锁定，然后他们忽视了传统牧业知识对于气候变化的调适能力。”美国科罗拉多州立大学社会学系副教授毛国瑞提出犀利的观点，“在由上而下的政策执行和市场化机制下，直接造成了内蒙古草原的社会和生态系统分裂，进而导致社会失序和环境退化。”</p>
+  <p>毛国瑞长期关注威权脉络下的环境治理与自然资源管理，打从2011年起，他和中国研究伙伴踏上内蒙古田野调查，足迹遍及阿拉善左旗、呼伦贝尔，以及与内蒙接壤的甘肃民勤县，深度访谈牧民、地方基层干部、林业草原局和自治区的技术官僚，2015年至2022年又前进呼伦贝尔西旗、锡林郭勒盟，总计进行超过400次访谈。此外，研究团队也投入批判政策分析，爬梳中央政府和自治区的气候适应政策，以及草原管理、水资源、工业经济发展等政策中的气候适应措施，试图了解中央和地方如何理解问题和处理角度。</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="2024年3月沙尘暴袭卷内蒙古的锡林郭勒盟，居民吃力走在二连浩特街头。（法新社）" height="758" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/2-12.jpg/@@images/1e32a6eb-97d6-4855-a743-488fdcab04ed.jpeg" title="2 (12).jpg" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+2024年3月沙尘暴袭卷内蒙古的锡林郭勒盟，居民吃力走在二连浩特街头。（法新社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="2024年3月沙尘暴袭卷内蒙古的锡林郭勒盟，居民吃力走在二连浩特街头。（法新社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/2-12.jpg" id="single_image" title="2024年3月沙尘暴袭卷内蒙古的锡林郭勒盟，居民吃力走在二连浩特街头。（法新社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>政策助长草原退化</strong></p>
+  <p>各种政策上路后，内蒙古草原发生什么事情？毛国瑞指出，内蒙古草原在大集体时代透过人民公社把草原变成农田，对草原生态造成破坏，可是因为资本的缺乏，加上人民公社的组织方法和传统放牧模式有高度重合性，当时的破坏程度有限。到1983年之后开始出现无序市场化，在“草场承包到户”实行后更加强了传统社会和生态体系统的崩解，因为他们开始推行围栏的设置，大量围栏导致草原碎片化，衍生草原退化、沙尘暴、沙漠化问题，而且定牧造成草场过度使用，整个草原变成像是癞痢头一样，这里秃一块、那里秃一块，反而使沙漠化从局部变成全线扩充的一个动力。</p>
+  <p>毛国瑞分析，中国政府在1994年实行分税制改革，把财权再集中，让它开始有行政力投射的可能性。从2002年到2010年，中央政府启动大量的“退牧还草”工程，同时推动和谐社会和新农村建设，把现代工业化的牧业生产模式带到内蒙古的社会和生态系统。2011年起开始推行“草原生态补偿奖励机制”，禁牧和减畜都给予相应的补贴，后续更运用大量党内的控制体系，建立起草原或自然资源变化的监测及评价体系。2017年又再提出生态扶贫方案，试图透过补助去消灭在草原或干旱地区的贫困问题。这些模式基本上都是一种社会与生态工程，目的是同一时间改变人口和社会，以及改变自然环境，进而符合中国共产党统治的模式，并且强化威权控制。</p>
+  <p>中国把原有的环境治理政策纳入气候适应行动方案，由中央下好全国一盘棋，集权式的治理体系背后有着许多冲突与漏洞。</p>
+  <p>毛国瑞指出，2023<span>年的数据显示，内蒙古草原</span>54%<span>都已经沙漠化了，“三北防护林工程”（西北、华北和东北）从</span>1978<span>年做到现在，沙漠化愈来愈严重，中国的气候适应报告却没有提到草原沙漠化，而所有政府执行的重点是在推动碳汇项目金融体系，以及怎么样大规模基建来解决牧区饮水或干旱问题，也就是说，它一再看到的不是生态，它看到的是经济帐。</span></p>
+  <p>从自治区到盟旗的气候适应政策文件，同样忽略了在地的社会生态动态。“从头到尾，他们没有讲到地方气候适应是为了谁而适应，或是任何关于当地气候适应所要做的事情，完全在重复由上而下的这些讯息，等于是千篇一律去翻译政府的政策。”毛国瑞说，“每次提到气候适应，你会发现除了算经济帐之外，他们总会提到中央的双碳政策，怎么样去实践碳达峰，怎么样去减少碳排，这些是作为优先目标。”</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:4030px;">
+<img alt="今年10月旅美学者毛国瑞在台湾中央研究院的学术讲座，深入剖析内蒙古的草原治理议题。（麦小田摄影）" height="2570" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/3-9.jpg/@@images/08d9e1ae-daed-45d8-a223-44ab523aace1.jpeg" title="3 (9).jpg" width="4030" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+今年10月旅美学者毛国瑞在台湾中央研究院的学术讲座，深入剖析内蒙古的草原治理议题。（麦小田摄影）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="今年10月旅美学者毛国瑞在台湾中央研究院的学术讲座，深入剖析内蒙古的草原治理议题。（麦小田摄影）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/3-9.jpg" id="single_image" title="今年10月旅美学者毛国瑞在台湾中央研究院的学术讲座，深入剖析内蒙古的草原治理议题。（麦小田摄影）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>一刀切的草原管理</strong></p>
+  <p>中国推行科学化的草原管理也备受质疑。毛国瑞指出，中国的草原保护政策来自于过时的生态概念“克莱门兹理论”，也就是牲口愈多对草原的负担影响愈大，所以保护草原就要把牲口和人从草原移开，而所有草原保育政策都是绕着“载畜量”来制定，不管是生态偿补、禁牧区或退牧还草，它都是要想办法减低载畜量，这样的单一量化指标其实提供了一个管理技术的标准化，但实施效果却与修复草原和避免公地悲剧的目标背道而驰。</p>
+  <p>为了要减低载畜量，草场开始拉上围栏，也开始承受更大的压力。“原本的草原放牧是透过社会的纽带、彼此互惠，当发生灾害的时候，你的牛羊可以到我的草场，或者是我的牛羊可以放牧到你的区域，等于是可以做到草原社会和生态的平衡。”毛国瑞说明，“可是你在草原围起栏围之后，牧区道路都不通了，所以整个社群开始解构，这才是真正造成公地悲剧。”</p>
+  <p>“另外，这种载畜量的关注它忘记一件事情，草原需要牛羊的踩踏才能够成长。”毛国瑞援引相关研究结果，“禁牧区围起来之后，前面3<span>、</span>4<span>年草会长得非常高，但是因为没有重压，植物里面的盐份出不来，所以在禁牧</span>4<span>、</span>5<span>年之后，你会看见原本的草原大规模死亡。”</span></p>
+  <p>在草原退化的同时，各种政策不断驯服牧民、套上一圈又一圈紧箍。毛国瑞指出，中国政府一方面鼓励牧民到村子里定居、养牛羊，他们开始从新西兰进口奶牛，而这些完全不符合当地生态环境；另一方面把草原变成饲料田、种植苜蓿，原本是牛羊到草原去吃，后来变成牛羊在你家，你要去买饲料，这就造成很多贫困的问题，尤其内蒙古一年有10<span>个月不是生长季节，普通的牧户往往要借钱来购买饲料。</span></p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:768px;">
+<a href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/4-9.jpg" rel="lightbox"><img alt="内蒙牧民从放牧转为养牧，买饲料养牲畜，背后凸显出草原生态系统商品化问题。（路透社）" height="511" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/4-9.jpg/@@images/3015f1bd-b391-4a03-82cd-17f500fe4894.jpeg" title="4 (9).JPG" width="768" referrerpolicy="no-referrer" /></a>    <figcaption class="image-caption">
+内蒙牧民从放牧转为养牧，买饲料养牲畜，背后凸显出草原生态系统商品化问题。（路透社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="内蒙牧民从放牧转为养牧，买饲料养牲畜，背后凸显出草原生态系统商品化问题。（路透社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/4-9.jpg" id="single_image" title="内蒙牧民从放牧转为养牧，买饲料养牲畜，背后凸显出草原生态系统商品化问题。（路透社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>牧民沦为生态卡奴</strong></p>
+  <p>“所以其中一个很重要的基础设施，就是政府建立起牧区农村信贷体系，而这个信贷体系又与生态补偿发放用的是同一张卡，也就是说，牧民开始必须要仰赖现代金融体系才能够维持生产，最后造成非常大的不公平。”毛国瑞点出草原金融化和商业资本介入让牧民成了“生态卡奴”，同时改变了生产关系和牧区景观，“大公司开始以龙头企业的模式控制整个牧业，生产更集约化、更工业化，因此造成所有牧区的资源商品化，产生很大的代谢断裂、生态的断裂。”</p>
+  <p>他以在内蒙古的调研为例，2017年自治区政府提到“草原每一个东西都是宝，包括牛羊的排泄物”，所以他们开始收集牛羊的排泄物，作为有机肥卖出去。原本当地人会把牛羊排泄物用作燃料或肥料，最后又回归草原上，现在变成饲料要从外面买进来，然后牛羊排泄物卖出去，这样的商业行为基本上造成了社会和生态尺度完全不相容，进一步削弱了社会生态系统。</p>
+  <p>那么老百姓会发生什么事？毛国瑞叹道，大户必须要迅速养肥牛羊出栏，因为他们借了很多钱去维持生产；贫户开始被移动到生态移民村，然而却无法在城镇里谋生，只好靠着固定的生态补偿款，开始不停地贷新偿旧。更者，许多牧民选择到生态移民村，因为区或旗政府提到“你过去，我让你变成农民，我让你变成种植大户”，毕竟内蒙古土地多，可是5年后地下水抽完了，你再也种不出东西来，你留不在农村，你也回不去草原。</p>
+  <p>讽刺的是，中国一再强调生态补偿这个过程，是真正由下往上解决气候变迁所带来的不平等。</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1136px;">
+<img alt="中国的草原保护政策忽略了传统牧业的气候调适能力，牧民被推向更边缘的角落。（法新社）" height="757" src="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/5-7.jpg/@@images/72149eef-8a2f-4701-ab8a-c940537766b8.jpeg" title="5 (7).jpg" width="1136" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+中国的草原保护政策忽略了传统牧业的气候调适能力，牧民被推向更边缘的角落。（法新社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="中国的草原保护政策忽略了传统牧业的气候调适能力，牧民被推向更边缘的角落。（法新社）" data-fancybox="" href="https://www.rfa.org/mandarin/zhuanlan/luseqingbaoyuan/grn-climatic-change-displaced-inner-mongolian-residents-whos-responsible-10232024093353.html/5-7.jpg" id="single_image" title="中国的草原保护政策忽略了传统牧业的气候调适能力，牧民被推向更边缘的角落。（法新社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p>说穿了，牧民像是被剥了多层皮的羊。毛国瑞在调研过程中看见一连串的恶性循环：为了活下去，他们只好回到原本的禁牧区去非法放牧，这样一来更破坏了环境，而地方政府为什么会准许他们非法放牧，因为地方政府需要罚款作为财源，它必须要去付生态补偿。</p>
+  <p>毛国瑞提出反思，长期以来，这种由上而下式的环境治理无法实际解决结构性所造成的贫困，以及生态脆弱性的起因，然而当中央政府的专项资金转移或结束的那一天，原本的科学化、工业化、市场化、资本累积都会全部崩溃，因为地方没有财源了，这就会回到最初的无序草原发展，因此造成更大的气候问题。</p>
+  <p>当年成吉思汗在暖化助力下，风光在欧亚称霸一方；如今威权体制助长了“掠夺性累积”，牧民成了无助的气候难民，草原上刮起沙尘暴，当局者可曾听见风沙里吹响的生态悲歌？</p>
+  <p>撰稿、制作和主持：麦小田 责编：许书婷</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-22/%E8%8A%AE%E6%88%90%E9%92%A2%E6%9C%8D%E5%88%91%E6%9C%9F%E6%BB%A1%E9%9C%B2%E9%9D%A2-%E5%90%A6%E8%AE%A4%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%9D%9B%E5%85%AC%E5%85%B1%E6%83%85%E5%A4%AB%E4%BC%A0%E8%A8%80">
+          芮成钢服刑期满露面 否认中国政坛公共情夫传言
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%8A%A8%E6%89%93%E9%80%A0-%E5%B7%A5%E5%8C%A0-%E8%BF%BD%E6%B1%82%E5%B7%A5%E8%89%BA%E8%BF%98%E6%98%AF%E5%AD%A6%E4%B9%A0%E9%9B%B7%E9%94%8B">
+          中国推动打造“工匠” 追求工艺还是学习雷锋？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">
+          专栏 | 网络博弈：中国抗议活动中的音乐表达有什么特点？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-22</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-22/%E8%87%AA%E7%9B%B8%E7%9F%9B%E7%9B%BE-%E5%A4%96%E8%B5%84%E4%BB%85%E5%8D%A0%E8%82%A1%E5%80%BA%E5%B8%824-%E5%A4%96%E7%AE%A1%E5%B1%80%E5%8D%BB%E6%8A%8A%E9%A1%BA%E5%B7%AE%E5%BD%92%E5%8A%9F%E5%A4%96%E8%B5%84%E5%85%A5%E5%B8%82">
+          自相矛盾？外资仅占股债市4% 外管局卻把顺差归功外资入市
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">
+            前一篇：专栏 | 网络博弈：中国抗议活动中的音乐表达有什么特点？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-22/%E6%B3%A2%E9%9F%B3%E5%92%8C%E8%8B%B1%E7%89%B9%E5%B0%94%E7%9A%84%E5%8D%B1%E6%9C%BA%E8%A2%AB%E8%AE%A4%E4%B8%BA%E5%8D%B1%E5%8F%8A%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8">
+            后一篇：波音和英特尔的危机被认为危及美国国家安全
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-22/%E6%B3%A2%E9%9F%B3%E5%92%8C%E8%8B%B1%E7%89%B9%E5%B0%94%E7%9A%84%E5%8D%B1%E6%9C%BA%E8%A2%AB%E8%AE%A4%E4%B8%BA%E5%8D%B1%E5%8F%8A%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%8A%A8%E6%89%93%E9%80%A0-%E5%B7%A5%E5%8C%A0-%E8%BF%BD%E6%B1%82%E5%B7%A5%E8%89%BA%E8%BF%98%E6%98%AF%E5%AD%A6%E4%B9%A0%E9%9B%B7%E9%94%8B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-22/%E6%B3%A2%E9%9F%B3%E5%92%8C%E8%8B%B1%E7%89%B9%E5%B0%94%E7%9A%84%E5%8D%B1%E6%9C%BA%E8%A2%AB%E8%AE%A4%E4%B8%BA%E5%8D%B1%E5%8F%8A%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%8A%A8%E6%89%93%E9%80%A0-%E5%B7%A5%E5%8C%A0-%E8%BF%BD%E6%B1%82%E5%B7%A5%E8%89%BA%E8%BF%98%E6%98%AF%E5%AD%A6%E4%B9%A0%E9%9B%B7%E9%94%8B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-22/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E6%B4%BB%E5%8A%A8%E4%B8%AD%E7%9A%84%E9%9F%B3%E4%B9%90%E8%A1%A8%E8%BE%BE%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

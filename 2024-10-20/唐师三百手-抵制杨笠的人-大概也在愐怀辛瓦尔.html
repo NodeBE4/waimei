@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+" />
+    <meta property="og:description" content="
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔" />
+    <meta property="twitter:title" content="唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712329.html&t=%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B%EF%BD%9C%E6%8A%B5%E5%88%B6%E6%9D%A8%E7%AC%A0%E7%9A%84%E4%BA%BA%EF%BC%8C%E5%A4%A7%E6%A6%82%E4%B9%9F%E5%9C%A8%E6%84%90%E6%80%80%E8%BE%9B%E7%93%A6%E5%B0%94" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712329.html&t=%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B%EF%BD%9C%E6%8A%B5%E5%88%B6%E6%9D%A8%E7%AC%A0%E7%9A%84%E4%BA%BA%EF%BC%8C%E5%A4%A7%E6%A6%82%E4%B9%9F%E5%9C%A8%E6%84%90%E6%80%80%E8%BE%9B%E7%93%A6%E5%B0%94&d=2024-10-20&e=
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：抵制杨笠的人，大概也在愐怀辛瓦尔作者：唐映红发表日期：2024.10.19来源：唐师三百手主题归类：举报文化CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  近几天，内娱和国际有两件风马牛不相及的事，乍看起来八杆子打不着，细究起来，恐怕是同一类人干出的事。
+  先说第一件事。国内某平台为了即将来临的“双11”购物节，邀请了在某档单口喜剧节目中人气正旺的女脱口秀艺人杨笠作为代言人。
+  这原本是很正常，商业平台邀请有流量的艺人，针对性地试图影响目标人群的消费。杨笠是一名优秀的脱口秀艺人，她言辞犀利地吐槽和嘲讽生活中的男权现象，给她带来流量的同时，也..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712329.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/712329.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/712329.html&text=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/712329.html&title=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/712329.html&title=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔&body=
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/712329.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/712329.html&title=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔&caption=
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔&url=https://chinadigitaltimes.net/chinese/712329.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-10-20
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/712329.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712329.html&t=%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B%EF%BD%9C%E6%8A%B5%E5%88%B6%E6%9D%A8%E7%AC%A0%E7%9A%84%E4%BA%BA%EF%BC%8C%E5%A4%A7%E6%A6%82%E4%B9%9F%E5%9C%A8%E6%84%90%E6%80%80%E8%BE%9B%E7%93%A6%E5%B0%94&d=2024-10-20&e=
+唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：抵制杨笠的人，大概也在愐怀辛瓦尔作者：唐映红发表日期：2024.10.19来源：唐师三百手主题归类：举报文化CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  近几天，内娱和国际有两件风马牛不相及的事，乍看起来八杆子打不着，细究起来，恐怕是同一类人干出的事。
+  先说第一件事。国内某平台为了即将来临的“双11”购物节，邀请了在某档单口喜剧节目中人气正旺的女脱口秀艺人杨笠作为代言人。
+  这原本是很正常，商业平台邀请有流量的艺人，针对性地试图影响目标人群的消费。杨笠是一名优秀的脱口秀艺人，她言辞犀利地吐槽和嘲讽生活中的男权现象，给她带来流量的同时，也..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F712329.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1729472209000-->
+<p><a href="https://chinadigitaltimes.net/chinese/712329.html">唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/712329.html" title="唐师三百手｜抵制杨笠的人，大概也在愐怀辛瓦尔" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/10/20241021083445518-564x300.webp" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" loading="lazy" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>抵制杨笠的人，大概也在愐怀辛瓦尔<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/唐映红" target="_blank">唐映红</a><br /><strong>发表日期：</strong>2024.10.19<br /><strong>来源：</strong><a href="https://archive.ph/Sd7Fy" target="_blank">唐师三百手</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/举报文化" target="_blank">举报文化</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>近几天，内娱和国际有两件风马牛不相及的事，乍看起来八杆子打不着，细究起来，恐怕是同一类人干出的事。</p>
+  <p>先说第一件事。国内某平台为了即将来临的“双11”购物节，邀请了在某档单口喜剧节目中人气正旺的女脱口秀艺人杨笠作为代言人。</p>
+  <p>这原本是很正常，商业平台邀请有流量的艺人，针对性地试图影响目标人群的消费。杨笠是一名优秀的脱口秀艺人，她言辞犀利地吐槽和嘲讽生活中的男权现象，给她带来流量的同时，也不时引发争议。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d1cc0a1." alt="image" /></p>
+  <p>不难看出，平台邀请她代言针对的目标人群就是她的粉丝，能够从她讲的脱口秀段子中感受到酣畅共鸣的女性消费者。“双11”购物节这个商家炮制的消费节日，要吸引的主要目标群体就是女性。</p>
+  <p>按说，即便杨笠代言令她的黑粉不爽，也就用脚投票，坚决不在平台消费就是。消费节要打动的还真不是杨笠的黑粉们，那些感觉到被冒犯郁郁不解的人群。</p>
+  <p>但是，这些杨笠的黑粉采取了令人咂舌的极端手段，通过向平台施压的方式希望平台解除与杨笠的合约。</p>
+  <p>从常识上看，在获邀代言人没有违约以及过错的情况下，解除代言，平台应该支付合同约定的违约罚金——当然，合约中应该有类似条款，否则经纪人就不合格。</p>
+  <p>无论杨笠与平台的代言合约如何拟定，黑粉们的伎俩得逞了，平台发布公告迎合了黑粉们的诉求。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d1d4d7a." alt="image" /></p>
+  <p>关于这件事，已经有不少精辟的评论，有些甚至堪称佳句。我就不置喙了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d1dda5b." alt="image" /></p>
+  <p>我要谈的只是一个小话题，抵制杨笠的那群人大概率就是缅怀辛瓦尔的同一群人。</p>
+  <p>这就说到另一件事，国际新闻报道，接任被以色列斩首的头目哈尼亚的新一任头目辛瓦尔，在一次遭遇战中，被以色列国防军击毙。</p>
+  <p>具体详情不妨移步此前的文章《<a href="https://mp.weixin.qq.com/s?__biz=MzUyNTQ0NjE1NA==&amp;mid=2247488170&amp;idx=1&amp;sn=9b77bf8404678fe032572b4f3613376c&amp;scene=21#wechat_redirect">被击毙的辛瓦尔，携带着联合国近东工程处身份证件</a>》。</p>
+  <p>辛瓦尔是策划2023年10月7日对以色列无辜平民屠杀和绑架的幕后指挥，超过1500名无辜的以色列平民以及其他国家国民惨遭屠杀或绑架，其中包括12名中华人民共和国国民。</p>
+  <p>不仅如此，辛瓦尔因为谋杀两名以色列士兵和12名巴勒斯坦平民曾经被以色列判处监禁，坐了20几年的牢。服刑期间，辛瓦尔因为罹患脑癌，由以色列医生通过开颅手术免费治愈。</p>
+  <p>2011年，辛瓦尔连同其他共1027名巴勒斯坦囚犯被以色列释放以交换被哈马斯绑架的一名士兵。</p>
+  <p>出狱后的辛瓦尔继续从事针对以色列的恐怖袭击，包括一年前屠杀和绑架超过一千五百名无辜平民的“阿克萨洪水”行动。无论从哪个角度和价值立场，这都应该是不折不扣针对无辜平民的恐怖屠杀行为。</p>
+  <p>以色列针对哈马斯领导人的斩首行动，一直都没有对辛瓦尔实施定点清除，因为他随时都带着一名加沙儿童，无论是在台下端坐，还是台上演讲。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d1e5661." alt="image" /></p>
+  <p>直到一组以色列士兵在搜寻作战中偶然遭遇出隧道拿取给养的辛瓦尔和他的保镖，意外将其击毙。</p>
+  <p>站在不同价值立场的人对辛瓦尔被击毙有着不同的感受和解读。有拍手叫好的，有掩面悼念的，在我看来都是个人的权利。</p>
+  <p>但是，缅怀辛瓦尔的人却有着与给平台施压抵制杨笠的人有着相似的德行，他们面对与他们看法或立场不一样的人时，都倾向于举报。</p>
+  <p>相对地，我从来没有看到过对击毙辛瓦尔而拍手叫好的人有过举报的现象，一例也没见过。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d1ec616." alt="image" /></p>
+  <p>从人格心理学的角度，人格是一个人跨时间、跨情境保持相对一致心理行为模式的心理品质。因此，抵制杨笠的人与缅怀辛瓦尔威胁举报观点不同其他人的人，就是有着一致心理行为模式的同一类人。</p>
+  <p>抵制杨笠的大概是一群感觉受到冒犯的男人，对国际新闻有兴趣且有着强烈表达欲和关注兴趣的，也以男人为主。以我上一篇文章的读者画像为例，对辛瓦尔有兴趣的读者，超过85%都是男性。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712329-6715a6d20005e." alt="image" /></p>
+  <p>所以，有理由认为抵制杨笠与缅怀辛瓦尔的是同一类人。他们的共同特点是：狭隘、偏激；对与自己不同的其他人有着强烈的憎恶感；热衷于依附或表现出强权，仇视弱小；偏好举报、抵制并投入实践，目的是“消灭”令他们感到憎恶的其他人。</p>
+  <p>以上。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-10-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-21/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E4%BA%B2%E7%94%9F%E6%AF%8D%E4%BA%B2%E5%8D%96%E5%AD%A9%E5%AD%90%E6%98%AF%E4%B8%AA%E6%97%A0%E8%A7%A3%E9%9A%BE%E9%A2%98">
+          基本常识｜亲生母亲卖孩子是个无解难题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-20/%E6%83%85%E5%86%B5%E6%9C%89%E7%82%B9%E5%A4%8D%E6%9D%82-%E4%B8%80%E5%AE%B6%E5%BC%80%E4%B8%9A%E5%BD%93%E5%A4%A9%E8%A2%AB%E7%AB%AF%E6%8E%89-%E8%A2%AB%E9%9A%90%E5%85%A5%E5%9C%B0%E4%B8%8B%E7%9A%84%E4%B9%A6%E5%BA%97">
+          情况有点复杂｜一家开业当天被端掉、被隐入地下的书店
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89">
+          刑辩中坚｜沈亚川：每个法院都应该有个大法庭——兼论近亲属在庭旁听权的法律意义
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-10-20</time>
+        <a href="https://nodebe4.github.io/waimei/2024-10-20/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.10.20">
+          每日一语 2024.10.20
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89">
+            前一篇：刑辩中坚｜沈亚川：每个法院都应该有个大法庭——兼论近亲属在庭旁听权的法律意义
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-10-20/%E4%B8%AD%E5%9B%BD1%E5%B9%B4%E6%9C%9F%E5%92%8C5%E5%B9%B4%E6%9C%9F%E4%BB%A5%E4%B8%8ALPR%E5%9D%87%E4%B8%8B%E8%B0%830.25">
+            后一篇：中国1年期和5年期以上LPR均下调0.25%
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-10-20/%E4%B8%AD%E5%9B%BD1%E5%B9%B4%E6%9C%9F%E5%92%8C5%E5%B9%B4%E6%9C%9F%E4%BB%A5%E4%B8%8ALPR%E5%9D%87%E4%B8%8B%E8%B0%830.25'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-10-20/%E6%83%85%E5%86%B5%E6%9C%89%E7%82%B9%E5%A4%8D%E6%9D%82-%E4%B8%80%E5%AE%B6%E5%BC%80%E4%B8%9A%E5%BD%93%E5%A4%A9%E8%A2%AB%E7%AB%AF%E6%8E%89-%E8%A2%AB%E9%9A%90%E5%85%A5%E5%9C%B0%E4%B8%8B%E7%9A%84%E4%B9%A6%E5%BA%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-10-20/%E4%B8%AD%E5%9B%BD1%E5%B9%B4%E6%9C%9F%E5%92%8C5%E5%B9%B4%E6%9C%9F%E4%BB%A5%E4%B8%8ALPR%E5%9D%87%E4%B8%8B%E8%B0%830.25">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-10-20/%E6%83%85%E5%86%B5%E6%9C%89%E7%82%B9%E5%A4%8D%E6%9D%82-%E4%B8%80%E5%AE%B6%E5%BC%80%E4%B8%9A%E5%BD%93%E5%A4%A9%E8%A2%AB%E7%AB%AF%E6%8E%89-%E8%A2%AB%E9%9A%90%E5%85%A5%E5%9C%B0%E4%B8%8B%E7%9A%84%E4%B9%A6%E5%BA%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-10-20/%E5%88%91%E8%BE%A9%E4%B8%AD%E5%9D%9A-%E6%B2%88%E4%BA%9A%E5%B7%9D-%E6%AF%8F%E4%B8%AA%E6%B3%95%E9%99%A2%E9%83%BD%E5%BA%94%E8%AF%A5%E6%9C%89%E4%B8%AA%E5%A4%A7%E6%B3%95%E5%BA%AD-%E5%85%BC%E8%AE%BA%E8%BF%91%E4%BA%B2%E5%B1%9E%E5%9C%A8%E5%BA%AD%E6%97%81%E5%90%AC%E6%9D%83%E7%9A%84%E6%B3%95%E5%BE%8B%E6%84%8F%E4%B9%89">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
