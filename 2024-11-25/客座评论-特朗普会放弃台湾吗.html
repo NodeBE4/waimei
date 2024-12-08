@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>客座评论：特朗普会放弃台湾吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+客座评论：特朗普会放弃台湾吗？
+——
+" />
+    <meta property="og:description" content="
+客座评论：特朗普会放弃台湾吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="客座评论：特朗普会放弃台湾吗？" />
+    <meta property="twitter:title" content="客座评论：特朗普会放弃台湾吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5388)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E4%25BC%259A%25E6%2594%25BE%25E5%25BC%2583%25E5%258F%25B0%25E6%25B9%25BE%25E5%2590%2597%25EF%25BC%259F%2Fa-70880522&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E4%25BC%259A%25E6%2594%25BE%25E5%25BC%2583%25E5%258F%25B0%25E6%25B9%25BE%25E5%2590%2597%25EF%25BC%259F%2Fa-70880522&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F&d=2024-11-25&e=
+客座评论：特朗普会放弃台湾吗？
+——
+
+
+  
+  邓聿文2024-11-25T14:15:53.486Z
+  
+  
+特朗普会在台湾问题上与习近平做交易吗？
+  
+  （德国之声中文网）特朗普当选后，台湾有人感到忧虑，大陆有人感到机会，忧虑或机会，都出自同一原因，即特朗普是个商人总统。商人喜欢交易，只要出得起价码，交易就可达成。正鉴于此，台湾许多人担忧特朗普会把台湾卖给大陆，而大陆很多人认为这是个和特朗普达成交易的机会，只要是钱的事，都好说，大陆出得起价码。特朗普本人也大咧咧说，如果中国（大陆）进入台湾，将对中国所有出口美国的产品加征150-200%的关税。
+  不过，台湾民众无须对特朗普在竞选期间对台湾说的一些不太友善的话太过担忧，比如他讲的要想美国保护台湾，台湾需付更多的保护费；而大陆民众也不要太期待特朗普真的会和大陆达成台湾交易的条件。在我看来，假如特朗普真的要把台湾卖给大..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E4%25BC%259A%25E6%2594%25BE%25E5%25BC%2583%25E5%258F%25B0%25E6%25B9%25BE%25E5%2590%2597%25EF%25BC%259F%2Fa-70880522" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522&text=客座评论：特朗普会放弃台湾吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522&title=客座评论：特朗普会放弃台湾吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522&title=客座评论：特朗普会放弃台湾吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=客座评论：特朗普会放弃台湾吗？&body=
+客座评论：特朗普会放弃台湾吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522&title=客座评论：特朗普会放弃台湾吗？&caption=
+客座评论：特朗普会放弃台湾吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=客座评论：特朗普会放弃台湾吗？&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>客座评论：特朗普会放弃台湾吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-11-25
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E4%25BC%259A%25E6%2594%25BE%25E5%25BC%2583%25E5%258F%25B0%25E6%25B9%25BE%25E5%2590%2597%25EF%25BC%259F%2Fa-70880522&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F&d=2024-11-25&e=
+客座评论：特朗普会放弃台湾吗？
+——
+
+
+  
+  邓聿文2024-11-25T14:15:53.486Z
+  
+  
+特朗普会在台湾问题上与习近平做交易吗？
+  
+  （德国之声中文网）特朗普当选后，台湾有人感到忧虑，大陆有人感到机会，忧虑或机会，都出自同一原因，即特朗普是个商人总统。商人喜欢交易，只要出得起价码，交易就可达成。正鉴于此，台湾许多人担忧特朗普会把台湾卖给大陆，而大陆很多人认为这是个和特朗普达成交易的机会，只要是钱的事，都好说，大陆出得起价码。特朗普本人也大咧咧说，如果中国（大陆）进入台湾，将对中国所有出口美国的产品加征150-200%的关税。
+  不过，台湾民众无须对特朗普在竞选期间对台湾说的一些不太友善的话太过担忧，比如他讲的要想美国保护台湾，台湾需付更多的保护费；而大陆民众也不要太期待特朗普真的会和大陆达成台湾交易的条件。在我看来，假如特朗普真的要把台湾卖给大..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E4%25BC%259A%25E6%2594%25BE%25E5%25BC%2583%25E5%258F%25B0%25E6%25B9%25BE%25E5%2590%2597%25EF%25BC%259F%2Fa-70880522" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1732544224000-->
+<p><a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E7%89%B9%E6%9C%97%E6%99%AE%E4%BC%9A%E6%94%BE%E5%BC%83%E5%8F%B0%E6%B9%BE%E5%90%97%EF%BC%9F/a-70880522">客座评论：特朗普会放弃台湾吗？</a>
+——</p>
+
+<div>
+  <div>
+<i>  邓聿文<br />2024-11-25T14:15:53.486Z</i>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70719422_303.jpg" width="100%" />  <div>
+<small style="color: #999;">特朗普会在台湾问题上与习近平做交易吗？</small>
+  </div>
+  <p>（德国之声中文网）<span data-id="69234616" data-type="AUTO_TOPIC" title="Automatische Themenseite">特朗普</span>当选后，台湾有人感到忧虑，大陆有人感到机会，忧虑或机会，都出自同一原因，即特朗普是个商人总统。商人喜欢交易，只要出得起价码，交易就可达成。正鉴于此，台湾许多人担忧特朗普会把台湾卖给大陆，而大陆很多人认为这是个和特朗普达成交易的机会，只要是钱的事，都好说，大陆出得起价码。特朗普本人也大咧咧说，如果中国（大陆）进入台湾，将对中国所有出口美国的产品加征150-200%的关税。</p>
+  <p>不过，台湾民众无须对特朗普在竞选期间对台湾说的一些不太友善的话太过担忧，比如他讲的要想美国保护台湾，台湾需付更多的保护费；而大陆民众也不要太期待特朗普真的会和大陆达成台湾交易的条件。在我看来，假如特朗普真的要把台湾卖给大陆，只有在一种情况下才有可能，即美国在未来四年同中国的战略竞争呈现明显颓势，军事上也不敢在西太平洋同解放军打一仗，这种情况下，趁着台湾还有价值，以一个好的价格卖给大陆，以维持美国霸权最后的体面，然后退出第一岛链和西太。</p>
+  <p><strong>台湾未来与美中关系</strong></p>
+  <p>想想看，我上面说的该情形可能性有多大？除非特朗普犯了重大的战略错误，否则，在未来四年，美国同中国的战略竞争和对抗不可能落入下风，即便打个平手，只要美国想维持在西太的存在，特朗普也不会把台湾卖给大陆。对此台湾民众大可以放宽心。这也说明，台湾对美国的战略价值，是维持美国在西太的霸权。换言之，对特朗普是否放弃台湾的问题，必须从美中战略竞争和对抗的角度，而非仅仅从美台关系的角度来看待。从前者看，台湾是美中战略竞争和对抗的关键一环。</p>
+  <p>美台关系是从属于美中关系的。台湾未来的归宿不是取决于美国如何去保护台湾，而是取决于美中战略竞争和对抗的结局如何。在这个最后的结果到来前，在整个美中战略竞争和对抗的过程中，台湾对美国都具有重要的战略价值。从而决定了，只要美中的战略竞争本质不变，台湾对美国就具有不能放弃的战略价值，就会受到美国的保护。而美中的战略竞争和对抗，至少要持续二、三十年，有的说本世纪都是。我认为，特朗普政府会把台湾问题置于美中战略竞争和对抗的这个大框架来处理的。</p>
+  <p><a href="https://api.dw.com/api/detail/article/59809065" rel="ArticleRef">延伸阅读——专访：美中关系“处于螺旋式下坠的危险局面”</a></p>
+  <p>也许有台湾民众会说，不管美中竞争的过程多长，如果最后美国失败，台湾还是会被美国卖给大陆。假如<span data-id="17455900" data-type="AUTO_TOPIC" title="Automatische Themenseite">美中战略竞争</span>的结局是如此，那台湾的确要接受被美国卖给大陆的现实。可问题在于，美国人是不会接受一个美败中胜的结局。如果美国和中国的竞争失败，不但意味着美国霸权的终结，也很大程度上意味着西方自由民主体制乃至西方文明的终结。所以，美国的设想是，美中战略竞争只能是美国完胜中国完败，没有美国失败的假设。这也就是特朗普为什么要组建一个几乎是清一色抗中鹰派的内阁班子。美国的一些超级鹰派甚至主张，只要把中国打败，美国为此承受一定的代价也是值得的。</p>
+  <p>尽管中国人常说，未有远虑，必有近忧。但太远的事情，比如未来二、三十年的事也着实很难预料，当初美国给中国最惠国待遇，同意中国加入WTO，有多少人能预料到今日中国会成为美国的对手。所以，我们还是应该更多的关注当下。有人可能会提出一个反驳，美中处于战略竞争和对抗不假，但不必非要等到争个高下成败，你死我活，在这个过程中，说不定特朗普就把台湾卖了，如果他觉得还是卖了对美国更好的话。提这种看法的人还可以历史为证，美国在共和党尼克松主政时期，也曾把台湾卖过一回，焉知特朗普就不会再卖一次台湾？</p>
+  <p><strong>美国再次放弃台湾？</strong></p>
+  <p>理论上说，不是没有可能，毕竟在特朗普眼中，一切皆可交易，而且以他目前的权势，假如执意要把台湾卖给大陆，不能说就不会发生。但是，以历史来推论特朗普也会这样做，还是要小心一点，毕竟大环境不一样。尼克松1972年秘密访华，同中国达成<a href="https://api.dw.com/api/detail/article/59618762" rel="ArticleRef">抛弃台湾</a>，准备同中国建交的交易，原因在于，美国当时的战略竞争对手是苏联及其华沙集团，而中国是苏联的死对头，在美苏中这个三角关系游戏中，美国要拉拢中国同苏联对抗，同时帮自己在越南战场脱身。作为交换条件，就是放弃台湾。可严格来说，美国也不是抛弃台湾，它放弃的只是和台湾的正式外交关系以及军事保护，而不是从此就不管台湾的安全了，否则，我们现在就不必谈论这个问题了。1979年美中建交，华盛顿转而承认北京后，它制定了一部《台湾关系法》，承诺和台湾发展非官方关系，并保护台湾的安全。这部法律从位阶看，要高于和大陆签署的三个联合公报，除了《台湾关系法》，现在还有里根时期的“六项保证”来保护台湾。</p>
+  <p>现今的战略环境恰恰倒过来，特朗普想拉俄罗斯来对抗中国。虽然由于<span data-id="60868685" data-type="AUTO_TOPIC" title="Automatische Themenseite">俄乌战争</span>，他应该拉不动普京一起抗中，但用台湾和大陆做交易，把台湾卖给大陆的概率还是非常少。哪怕大陆出的价码足够诱人，特朗普也想达成这笔交易，美国社会亦不会同意，因为这样做从根本上违背了美国的战略利益。就像我前面讲的，如果特朗普把台湾卖给大陆，谁还信任美国？美国的战略信誉会轰然倒塌，美国霸权也不复存在。没有台湾在第一岛链守着，日本也不会为美国在第一岛链守着，接着韩国、菲律宾等，纷纷会弃美而去。美国在西太的霸权不存在，等同于在全球的霸权不存在，也就等同于在和中国的战略竞争中，不溃而败。这对美国也是承受不起的战略代价。所以特朗普即便真的想拿台湾做交易，也大概率做不到。</p>
+  <p><strong>协防台湾的说与做</strong></p>
+  <p>当然，特朗普不会放弃台湾，不等于他一定会派兵来保护台湾，假如大陆武力攻台。这是两个不同的问题，虽然有一些交集，但不能划等号。美国在大陆武统台湾时是否会派兵来设防台湾，涉及很多因素，比如美国民意反对还是赞成，战争的时间长还是短等，现在没法作出一个准确的预判。从这个角度看，拜登说会出兵协防台湾，届时未必就一定会协防，特朗普说不会出兵协防，届时未必就一定不会协防，取决于战争发生时的状况。</p>
+  <p>对台湾而言，虽然特朗普竞选期间的涉台言论看起来不很舒服，然而听其言更要察其行。特朗普在第一任期对台湾总的来讲还是不错的。卖给台湾更多的武器，派高官来台，出台了<a href="https://api.dw.com/api/detail/article/43019027" rel="ArticleRef">台湾旅行法</a>等，此法是继台湾关系法后美国又一部重要的关于台湾问题的国内法。任期末尾，时任国务卿彭佩奥就根据该法解除了对台湾官员来美出访的层级和地点限制，应该说这是台美关系的重大突破。纵观特朗普第一任期的对台政策及其处理手法，虽然他本人未必对台湾有多重视，但他把台湾问题交给白宫的国安团队具体负责，而国安团队对中国是清一色鹰派，挺台抗中。</p>
+  <p>特朗普第二任期，总统的权力含金量和第一任期有很大不同，高很多，他或许不会延续第一任期对台湾问题的处理模式，而是亲抓对台对中外交。在他个人认知里，台湾可能确实显得不太重要（台积电除外），但今天的美中关系比四年前更具对抗性质，他选出的国安团队对中国也更带敌意。在美中战略对抗这个大格局面前，无论特朗普，还是他的国安团队中具体负责对台事务的人，都不会忽视台湾的战略价值，很难想象他会把台湾卖给中国大陆，即便他喜欢交易。</p>
+  <p> </p>
+  <p><em>邓聿文为政治评论员，独立学者，中国战略分析智库研究员兼中国战略分析杂志共同主编。</em></p>
+  <p><em>德国之声致力于为您提供客观中立的新闻报导，以及展现多种角度的评论分析。文中评论及分析仅代表作者或专家个人立场。</em></p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em>  </p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-11-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-25/%E5%8F%8D%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%90%91%E7%99%BD%E5%85%B0%E5%9C%B0%E5%8A%A0%E5%BE%81%E5%85%B3%E7%A8%8E-%E6%AC%A7%E7%9B%9F%E5%90%91%E4%B8%96%E8%B4%B8%E9%80%92%E4%BA%A4%E8%AF%89%E7%8A%B6">
+          反对中国向白兰地加征关税 欧盟向世贸递交诉状
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-25/%E7%A4%BE%E6%B0%91%E5%85%9A%E6%8F%90%E5%90%8D%E8%82%96%E5%B0%94%E8%8C%A8%E4%B8%BA%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA">
+          社民党提名肖尔茨为总理候选人
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4">
+          DHL货机在立陶宛坠毁 机上人员一死三伤
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-25</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-25/%E9%A9%AC%E6%96%AF%E5%85%8B%E4%B8%8E%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%88%A9%E7%9B%8A%E5%86%B2%E7%AA%81">
+          马斯克与特朗普的利益冲突
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4">
+            前一篇：DHL货机在立陶宛坠毁 机上人员一死三伤
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-25/%E7%89%B9%E6%9C%97%E6%99%AE%E6%8F%90%E5%90%8D%E8%B4%9D%E6%A3%AE%E7%89%B9%E4%BB%BB%E8%B4%A2%E9%95%BF%E5%8F%97%E6%8A%95%E8%B5%84%E4%BA%BA%E6%AC%A2%E8%BF%8E-%E6%AC%A7%E4%BA%9A%E8%82%A1%E5%B8%82%E6%98%9F%E6%9C%9F%E4%B8%80%E7%BA%B7%E7%BA%B7%E4%B8%8A%E6%89%AC">
+            后一篇：特朗普提名贝森特任财长受投资人欢迎，欧亚股市星期一纷纷上扬
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-11-25/%E7%89%B9%E6%9C%97%E6%99%AE%E6%8F%90%E5%90%8D%E8%B4%9D%E6%A3%AE%E7%89%B9%E4%BB%BB%E8%B4%A2%E9%95%BF%E5%8F%97%E6%8A%95%E8%B5%84%E4%BA%BA%E6%AC%A2%E8%BF%8E-%E6%AC%A7%E4%BA%9A%E8%82%A1%E5%B8%82%E6%98%9F%E6%9C%9F%E4%B8%80%E7%BA%B7%E7%BA%B7%E4%B8%8A%E6%89%AC'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-11-25/%E7%A4%BE%E6%B0%91%E5%85%9A%E6%8F%90%E5%90%8D%E8%82%96%E5%B0%94%E8%8C%A8%E4%B8%BA%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-11-25/%E7%89%B9%E6%9C%97%E6%99%AE%E6%8F%90%E5%90%8D%E8%B4%9D%E6%A3%AE%E7%89%B9%E4%BB%BB%E8%B4%A2%E9%95%BF%E5%8F%97%E6%8A%95%E8%B5%84%E4%BA%BA%E6%AC%A2%E8%BF%8E-%E6%AC%A7%E4%BA%9A%E8%82%A1%E5%B8%82%E6%98%9F%E6%9C%9F%E4%B8%80%E7%BA%B7%E7%BA%B7%E4%B8%8A%E6%89%AC">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-11-25/%E7%A4%BE%E6%B0%91%E5%85%9A%E6%8F%90%E5%90%8D%E8%82%96%E5%B0%94%E8%8C%A8%E4%B8%BA%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-11-25/DHL%E8%B4%A7%E6%9C%BA%E5%9C%A8%E7%AB%8B%E9%99%B6%E5%AE%9B%E5%9D%A0%E6%AF%81-%E6%9C%BA%E4%B8%8A%E4%BA%BA%E5%91%98%E4%B8%80%E6%AD%BB%E4%B8%89%E4%BC%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

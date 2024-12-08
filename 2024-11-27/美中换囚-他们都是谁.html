@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美中换囚：他们都是谁？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美中换囚：他们都是谁？
+——
+" />
+    <meta property="og:description" content="
+美中换囚：他们都是谁？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美中换囚：他们都是谁？" />
+    <meta property="twitter:title" content="美中换囚：他们都是谁？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5388)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-prisoner-swap-20241127%2F7879438.html&t=%E7%BE%8E%E4%B8%AD%E6%8D%A2%E5%9B%9A%EF%BC%9A%E4%BB%96%E4%BB%AC%E9%83%BD%E6%98%AF%E8%B0%81%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-prisoner-swap-20241127%2F7879438.html&t=%E7%BE%8E%E4%B8%AD%E6%8D%A2%E5%9B%9A%EF%BC%9A%E4%BB%96%E4%BB%AC%E9%83%BD%E6%98%AF%E8%B0%81%EF%BC%9F&d=2024-11-27&e=
+美中换囚：他们都是谁？
+——
+
+
+  
+Wed, 27 Nov 2024 23:47:30 GMT
+  
+  
+资料照 - 来自美国国土安全部2021年1月11日发表的报告《国土安全部对抗来自中华人民共和国威胁的战略行动计划》的封面。
+  
+华盛顿 —   白宫星期三(11月27日)宣布，美中在经历数月谈判后达成了一项换囚协议，三名美国人和至少一名中国人已在该协议下获释。
+  三名美国公民--德克萨斯州商人马克‧斯威丹(Mark Swidan)、纽约长岛的华裔商人李凯(Kai Li)和美国侨界领袖梁成运(John Leung)--在经历多年牢狱生活后终于重获自由，正返回美国与家人团聚。美国政府认定斯威丹和李凯是被中国政府“错误拘押”。
+  目前尚无公开信息可以核实被美国政府释放的中国公民身份。但《纽约时报》(The New York Times)报道，其中一人可能是中国国家安全部的..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-prisoner-swap-20241127%2F7879438.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html&text=美中换囚：他们都是谁？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html&title=美中换囚：他们都是谁？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html&title=美中换囚：他们都是谁？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美中换囚：他们都是谁？&body=
+美中换囚：他们都是谁？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html&title=美中换囚：他们都是谁？&caption=
+美中换囚：他们都是谁？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美中换囚：他们都是谁？&url=https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美中换囚：他们都是谁？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-11-27
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-prisoner-swap-20241127%2F7879438.html&t=%E7%BE%8E%E4%B8%AD%E6%8D%A2%E5%9B%9A%EF%BC%9A%E4%BB%96%E4%BB%AC%E9%83%BD%E6%98%AF%E8%B0%81%EF%BC%9F&d=2024-11-27&e=
+美中换囚：他们都是谁？
+——
+
+
+  
+Wed, 27 Nov 2024 23:47:30 GMT
+  
+  
+资料照 - 来自美国国土安全部2021年1月11日发表的报告《国土安全部对抗来自中华人民共和国威胁的战略行动计划》的封面。
+  
+华盛顿 —   白宫星期三(11月27日)宣布，美中在经历数月谈判后达成了一项换囚协议，三名美国人和至少一名中国人已在该协议下获释。
+  三名美国公民--德克萨斯州商人马克‧斯威丹(Mark Swidan)、纽约长岛的华裔商人李凯(Kai Li)和美国侨界领袖梁成运(John Leung)--在经历多年牢狱生活后终于重获自由，正返回美国与家人团聚。美国政府认定斯威丹和李凯是被中国政府“错误拘押”。
+  目前尚无公开信息可以核实被美国政府释放的中国公民身份。但《纽约时报》(The New York Times)报道，其中一人可能是中国国家安全部的..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-prisoner-swap-20241127%2F7879438.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1732751943000-->
+<p><a href="https://www.voachinese.com/a/us-china-prisoner-swap-20241127/7879438.html">美中换囚：他们都是谁？</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 27 Nov 2024 23:47:30 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/6C4EC1DE-E79D-43DC-806B-FF0CBDF315B4_cx0_cy9_cw0_r1_s.png" width="100%" />  <div>
+<small style="color: #999;">资料照 - 来自美国国土安全部2021年1月11日发表的报告《国土安全部对抗来自中华人民共和国威胁的战略行动计划》的封面。</small>
+  </div>
+华盛顿 —   <p style="text-align:start">白宫星期三(11月27日)宣布，美中在经历数月谈判后达成了一项换囚协议，三名美国人和至少一名中国人已在该协议下获释。</p>
+  <p style="text-align:start">三名美国公民--德克萨斯州商人马克‧斯威丹(Mark Swidan)、纽约长岛的华裔商人李凯(Kai Li)和美国侨界领袖梁成运(John Leung)--在经历多年牢狱生活后终于重获自由，正返回美国与家人团聚。美国政府认定斯威丹和李凯是被中国政府“错误拘押”。</p>
+  <p style="text-align:start">目前尚无公开信息可以核实被美国政府释放的中国公民身份。但《纽约时报》(The New York Times)<a href="https://www.nytimes.com/2024/11/27/world/asia/us-china-prisoner-swap.html" target="_blank">报道</a>，其中一人可能是中国国家安全部的情报官员徐延军(Xu Yanjun)。另据美国全国广播公司(NBC)<a href="https://www.nbcnews.com/news/world/3-americans-detained-china-are-released-rcna181993" target="_blank">报道</a>，除徐延军之外，通过服役入籍的美籍华人季超群也被纳入了换囚协议。</p>
+  <p style="text-align:start">中国通常不进行换囚行动，《纽约时报》援引旧金山人权组织“对话基金会”(Dui Hua Foundation)的创始人约翰·卡姆(John Kamm)的话说：“这表明，他们不仅想给拜登(Joe Biden)一个临别礼物，同时也在向唐纳德·特朗普(Donald Trump)释放信号，表明可能会在未来做出重要让步。”</p>
+  <ul>
+  </ul>
+<a href="/a/7759419.html"></a>  <p style="text-align:start"><strong>马克·</strong><strong>斯威丹：</strong></p>
+  <ul>
+    <li>案情回顾：2012年11月，斯威丹前往中国东莞采购材料期间，在一家酒店内与家人通话时被捕。他被指控参与毒品制造和走私网络。尽管检方没有找到包括毒品、资金流或通信记录等直接证据，他仍在2019年被判处死刑，缓期两年执行。之后，他的上诉在2020年被驳回。2023年4月，中国法院再次拒绝撤销他的死刑判决。</li>
+    <li>监禁生活：在广东江门监狱，斯威丹被迫与多名囚犯共住狭小的房间，房间内夏季温度高达46摄氏度。长期以来，他的身体状况急剧恶化，患有牙周炎等疾病，精神压力则导致他多次尝试绝食抗议，并产生自杀倾向。</li>
+    <li>家属行动：斯威丹的母亲凯瑟琳·斯威丹(Katherine Swidan)多年奔走，寻求外界关注。年逾七旬的她通过社交媒体、不计其数的新闻采访，以及与政府官员的沟通，呼吁释放儿子。她曾告诉美国之音一直关注该案件的记者：“如果我能够通过视频亲自对习近平讲话，希望获得他的怜悯以让马克自由，我会这么做的。”</li>
+    <li>美国驻华大使尼古拉斯·伯恩斯(Nicholas Burns)曾在2023年3月探访了包括斯威丹在内的至少三名美国人质。凯瑟琳·斯威丹此前告诉美国之音：“他（伯恩斯）去看了马克，当他去看马克时，他告诉马克下次我来看你的时候，希望是来带你回家。” 2023年4月25日，美国国会通过决议，要求中国立即释放斯威丹。</li>
+    <li>国际反应：联合国人权理事会任意拘押问题工作组2020年2月得出结论认为，斯威丹是被中国政府任意拘押，违反了国际法。</li>
+  </ul>
+  <p style="text-align:start"> </p>
+<a href="/a/7790145.html"></a>  <p style="text-align:start"><strong>李凯</strong></p>
+  <ul>
+    <li>案情回顾：2016年9月，李凯在上海浦东国际机场被捕。中国国家安全部门指控他与美国联邦调查局合作窃取国家机密，虽然他和他的家人否认这些指控。最终，他在2018年以间谍罪被判处10年监禁。整个审判过程匆忙而且高度保密，连他的家人和辩护律师都难以获得具体信息。据《纽约时报》报道，李凯1989年移民美国，在纽约长岛有两个加油站，还经营一个向中国出售飞机零部件的公司。在被捕之前，他每年去中国2到3次。</li>
+    <li>监禁生活：年逾六旬的李凯被关押在上海一座高戒备监狱中。近年来，他患上了胃病和高血压，但未能获得充分的医疗照顾。他的家人表示，长时间的心理压力让他的健康急剧恶化。</li>
+    <li>家属行动：李凯的儿子哈里森·李(Harrison Li)是斯坦福大学的学生，在过去几年里持续为父亲奔走。他出席了国会听证会，多次呼吁拜登政府加快外交谈判。他曾在今年8月告诉美国之音记者：“我们能做的就是再次提醒总统，我的父亲已经遭受了近8年的不公正待遇，总统必须采取行动来完成这项任务，以免为时已晚。经历过两次政府更迭，我们深知这种更迭会带来的摩擦，因此敦促总统在11月总统大选前采取行动。”</li>
+    <li>2023年3月，伯恩斯也罕见地探访了李凯。</li>
+    <li>国际反应：联合国任意拘留问题工作组2021年认定李凯是任意拘留的受害者，称对他的囚禁是“政治性的而不是犯罪”。美国国务院也认定李凯是被非法拘押。</li>
+  </ul>
+<a href="/a/7791091.html"></a>  <p style="text-align:start"><strong>梁成运</strong></p>
+  <ul>
+    <li>案情回顾：79岁的梁成运是持有香港永久居民身份的美国公民。他长期以来公开支持一些亲北京立场，比如，他认为台湾是中国的一部分。也曾参与促进美中关系的活动。《纽约时报》援引美国官员说，他为美国联邦调查局提供情报，重点监视中国外交官和商业代表的在美活动。2021年，梁在苏州被中国国家安全部门以间谍罪拘捕，并于2023年5月被判处无期徒刑。</li>
+    <li>特殊背景：中国国家安全部去年9月在微信公众号上披露梁成运案件的相关细节，称梁自1989年起为美国情报机构工作，收集中国政府官员和外交人员的信息。文中指称他通过贴靠刺探、监控窃密、钓鱼执法等方式为美间谍情报机关搜集大量涉华情报，并称美国情报机关授予他“功勋奖牌”。“为了提升梁成运在华人华侨中的影响力，美方提供资金，指挥他通过捐款等方式担任了多个华侨社团的会长、荣誉会长、理事长。为了扩大梁成运在中国的知名度，美方指挥其赴中国开展慈善捐款，设法打造‘爱国慈善家’的‘假面具’”中国国安部称。香港《星岛日报》曾引述美国华文媒体称，梁成运活跃于德克萨斯州和奥克拉荷马州，是梁氏文化交流基金会主席，同时也兼任德州中国和平统一促进会会长和华盛顿中国和统会理事等众多侨团职务。梁成运和中国官方有过不少互动，网上也流传着梁成运和中国前国务委员、前外交部长杨洁篪在人民大会堂合影。另据中国官媒新华网报道，2012年7月，梁成运曾为“休斯敦－南京”友好协会主席。 2015年5月，美国南部地区侨胞在休斯敦联合举行座谈会，出生在香港的梁成运说，“一国两制”不仅能保持香港的繁荣稳定，也能促进和保持台湾地区的繁荣稳定。</li>
+    <li>监禁生活：梁在被拘期间一度与外界失联。《纽约时报》援引一名官员的话称，联邦调查局曾在2021年劝阻他前往中国。“但他还是被中国当局逮捕并带到一个未公开的拘留地点。在长达两年多的时间里，他的朋友和家人一直没有他的消息。”</li>
+  </ul>
+  <p style="text-align:start"> </p>
+  <p style="text-align:start"><strong>中国囚犯：徐延军、季超群？</strong></p>
+  <p style="text-align:start">目前尚无公开确认的信息核实中国换回那些囚犯，但据《纽约时报》报道，在谈判换囚协议期间，多名美国官员透露他们正在讨论关于释放徐延军的事宜。</p>
+  <p style="text-align:start">徐延军是中国国安部情报官员，自2022年被判20年监禁以来一直在美国服刑。但根据联邦监狱管理局星期三显示的记录，徐延君的状态已被标记为“未在联邦监狱局拘押中”。这表明他很可能被纳入了这份换囚协议。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/b0a21797-84ec-44af-a727-88563813d7be_w900.jpg" alt="联邦监狱管理局系统中徐延军记录的结果截图。（2024年11月27日）" border="0" />    <div>
+<small style="color: #999;">联邦监狱管理局系统中徐延军记录的结果截图。（2024年11月27日）</small>
+    </div>
+  </div>
+  <p style="text-align:start">美国全国广播公司（NBC）援引一名美国官员的话报道说，美国作为交换条件释放的中国人还包括中国国安部情报官徐延军和中国公民季超群(音译，Ji Chaoqun)。</p>
+  <p style="text-align:start"><strong>徐延军</strong></p>
+  <ul>
+    <li>身份背景：徐延军是中国国家安全部的一名情报官员，具体隶属于江苏省国家安全厅。他是首位在美国境外被引渡、起诉并接受审判的中国情报人员。</li>
+    <li>案情回顾：徐延军于2018年4月在比利时被捕。当时，他试图通过安排会面，从一名美国航空公司员工手中获取敏感技术信息。这名员工实际上是美国联邦调查局安排的“诱饵”。根据美国司法部的起诉书，徐延军试图窃取GE航空航天公司(GE Aviation)的商业机密。这家公司是美国领先的航空发动机制造商，其技术对军事和商业领域至关重要。徐延军被指控策划招募公司内部人员，获取与航空技术相关的敏感信息。</li>
+    <li>监禁生活：在比利时被捕后，徐延军被引渡至美国，成为首位被引渡到美国接受间谍审判的中国情报官员。2021年11月，美国俄亥俄州联邦法院裁定他犯有共谋经济间谍活动、企图窃取商业机密等罪名。2022年11月，徐延军被判处20年监禁。美国司法部将徐延军的案件描述为“中国国家情报部门系统性窃取美国先进技术的典型例子”。</li>
+  </ul>
+  <p style="text-align:start"> </p>
+<a href="/a/6837563.html"></a>  <p style="text-align:start">季超群</p>
+  <ul>
+    <li>案情回顾：季超群2018年在芝加哥被捕时27岁，他出生于中国北京。2013年8月，他以学生签证进入美国，就读于芝加哥的伊利诺伊理工学院(Illinois Institute of Technology)，攻读电子工程硕士学位。毕业后，他于2016年加入美国陆军预备役项目(MAVNI)，通过服役换取了美国公民身份。季超群被控违反《外国代理人登记法》（FARA），未注册的情况下充当中国政府代理人。他的主要任务包括为中国国家安全部的江苏分支机构搜集美国国防承包商雇员的信息，并试图招募他们为中国工作。法庭文件显示，季超群在中国期间结识了三名中国情报官员，其中一人与他保持长期联系。</li>
+    <li>活动细节：季超群在研究生期间受命购买八名归化美国公民的背景调查数据，这些人均出生于台湾或中国，涉及高科技或航空航天工业领域，其中七人为美国国防承包商工作。季超群还试图获取一家未具名的美国航空发动机供应商的技术信息，该公司从事与军方相关的航空研究。他通过接触公司工程师，试图获取敏感数据并将其传递给中国情报部门。</li>
+    <li>监禁生活： 2022年，他被美国联邦法院判处8年监禁，罪名包括非法搜集信息并将其传递给中国国家安全部，以及试图招募美国科技和航空领域的从业人员为中国工作。</li>
+  </ul>
+<a href="/a/6765640.html"></a><br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.site" style="color:orange" target="_blank">https://feedx.site</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-11-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-27/%E5%BE%B7%E6%83%85%E6%8A%A5%E4%B8%BB%E7%AE%A1-%E4%BF%84%E7%BD%97%E6%96%AF%E7%9A%84%E7%A0%B4%E5%9D%8F%E8%A1%8C%E5%8A%A8%E6%9C%89%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4%E5%8C%97%E7%BA%A6%E5%8A%A8%E7%94%A8%E7%AC%AC%E4%BA%94%E6%9D%A1%E5%85%B1%E5%90%8C%E9%98%B2%E5%BE%A1%E6%9D%A1%E6%AC%BE">
+          德情报主管：俄罗斯的破坏行动有可能导致北约动用第五条共同防御条款
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-27/%E6%8B%9C%E7%99%BB%E5%B0%86%E8%AE%BF%E9%97%AE%E5%AE%89%E5%93%A5%E6%8B%89-%E5%BC%BA%E8%B0%83-%E6%B4%9B%E6%AF%94%E6%89%98%E8%B5%B0%E5%BB%8A-%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7-%E4%BB%A5%E6%AD%A4%E5%9C%A8%E9%9D%9E%E6%B4%B2%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD">
+          拜登将访问安哥拉，强调“洛比托走廊”的重要性，以此在非洲对抗中国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A">
+          美两党议员欢迎被中国不当拘押的美国公民获释回家；美国务院调低前往中国的旅行警告
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-27</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-27/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%BA%E4%BA%8C%E5%BA%A6%E6%89%A7%E6%94%BF%E5%8A%A0%E5%BF%AB%E5%87%86%E5%A4%87,%E5%AF%B9%E5%8F%B0%E6%94%BF%E7%AD%96%E6%98%AF%E5%90%A6%E6%9C%89%E5%8F%98%E5%BC%95%E5%85%B3%E6%B3%A8">
+          特朗普为二度执政加快准备,对台政策是否有变引关注
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A">
+            前一篇：美两党议员欢迎被中国不当拘押的美国公民获释回家；美国务院调低前往中国的旅行警告
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-27/%E6%9C%AC%E7%94%B02025%E5%B9%B4%E5%9C%A8%E5%8D%B0%E5%BA%A6%E9%94%80%E5%94%AE%E7%94%B5%E5%8A%A8%E4%BA%8C%E8%BD%AE%E8%BD%A6">
+            后一篇：本田2025年在印度销售电动二轮车
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-11-27/%E6%9C%AC%E7%94%B02025%E5%B9%B4%E5%9C%A8%E5%8D%B0%E5%BA%A6%E9%94%80%E5%94%AE%E7%94%B5%E5%8A%A8%E4%BA%8C%E8%BD%AE%E8%BD%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-11-27/%E6%8B%9C%E7%99%BB%E5%B0%86%E8%AE%BF%E9%97%AE%E5%AE%89%E5%93%A5%E6%8B%89-%E5%BC%BA%E8%B0%83-%E6%B4%9B%E6%AF%94%E6%89%98%E8%B5%B0%E5%BB%8A-%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7-%E4%BB%A5%E6%AD%A4%E5%9C%A8%E9%9D%9E%E6%B4%B2%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-11-27/%E6%9C%AC%E7%94%B02025%E5%B9%B4%E5%9C%A8%E5%8D%B0%E5%BA%A6%E9%94%80%E5%94%AE%E7%94%B5%E5%8A%A8%E4%BA%8C%E8%BD%AE%E8%BD%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-11-27/%E6%8B%9C%E7%99%BB%E5%B0%86%E8%AE%BF%E9%97%AE%E5%AE%89%E5%93%A5%E6%8B%89-%E5%BC%BA%E8%B0%83-%E6%B4%9B%E6%AF%94%E6%89%98%E8%B5%B0%E5%BB%8A-%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7-%E4%BB%A5%E6%AD%A4%E5%9C%A8%E9%9D%9E%E6%B4%B2%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-11-27/%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E6%AC%A2%E8%BF%8E%E8%A2%AB%E4%B8%AD%E5%9B%BD%E4%B8%8D%E5%BD%93%E6%8B%98%E6%8A%BC%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E8%8E%B7%E9%87%8A%E5%9B%9E%E5%AE%B6-%E7%BE%8E%E5%9B%BD%E5%8A%A1%E9%99%A2%E8%B0%83%E4%BD%8E%E5%89%8D%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%85%E8%A1%8C%E8%AD%A6%E5%91%8A">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
