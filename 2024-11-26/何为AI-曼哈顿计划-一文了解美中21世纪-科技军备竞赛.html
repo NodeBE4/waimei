@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+" />
+    <meta property="og:description" content="
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”" />
+    <meta property="twitter:title" content="何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-agi-20241126%2F7878316.html&t=%E4%BD%95%E4%B8%BAAI%E2%80%9C%E6%9B%BC%E5%93%88%E9%A1%BF%E8%AE%A1%E5%88%92%E2%80%9D%EF%BC%9F%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E7%BE%8E%E4%B8%AD21%E4%B8%96%E7%BA%AA%E2%80%9C%E7%A7%91%E6%8A%80%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-agi-20241126%2F7878316.html&t=%E4%BD%95%E4%B8%BAAI%E2%80%9C%E6%9B%BC%E5%93%88%E9%A1%BF%E8%AE%A1%E5%88%92%E2%80%9D%EF%BC%9F%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E7%BE%8E%E4%B8%AD21%E4%B8%96%E7%BA%AA%E2%80%9C%E7%A7%91%E6%8A%80%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B%E2%80%9D&d=2024-11-26&e=
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+
+
+  
+Wed, 27 Nov 2024 01:06:35 GMT
+  
+  
+成立于2021年的美国国家人工智能计划办公室徽章。
+  
+华盛顿 —   美国当选总统唐纳德·特朗普(Donald Trump)再度入主白宫之前，美国国会下属的美中经济与安全审查委员会(USCC)在其上周发布的年度报告中提议，美国需启动一个类似“曼哈顿计划”的AI研发计划，与中国竞速开发并获取“通用人工智能(AGI)”。
+  特朗普今年6月在接受“Impaulsive”播客采访时表示：“我们必须站在(AI的)最前沿。我们必须领先于中国，中国是首要威胁。”鉴于特朗普这样的态度，美国科技界人士预测，新政府可能会支持这样的项目。
+  AGI可以像人一样学习、理解和应对不同领域的问题，而不仅局限于某一特定任务。AGI还有可能通过持续优化和扩展..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-agi-20241126%2F7878316.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html&text=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html&title=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html&title=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”&body=
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html&title=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”&caption=
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”&url=https://www.voachinese.com/a/us-china-agi-20241126/7878316.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-11-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/us-china-agi-20241126/7878316.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-agi-20241126%2F7878316.html&t=%E4%BD%95%E4%B8%BAAI%E2%80%9C%E6%9B%BC%E5%93%88%E9%A1%BF%E8%AE%A1%E5%88%92%E2%80%9D%EF%BC%9F%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E7%BE%8E%E4%B8%AD21%E4%B8%96%E7%BA%AA%E2%80%9C%E7%A7%91%E6%8A%80%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B%E2%80%9D&d=2024-11-26&e=
+何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”
+——
+
+
+  
+Wed, 27 Nov 2024 01:06:35 GMT
+  
+  
+成立于2021年的美国国家人工智能计划办公室徽章。
+  
+华盛顿 —   美国当选总统唐纳德·特朗普(Donald Trump)再度入主白宫之前，美国国会下属的美中经济与安全审查委员会(USCC)在其上周发布的年度报告中提议，美国需启动一个类似“曼哈顿计划”的AI研发计划，与中国竞速开发并获取“通用人工智能(AGI)”。
+  特朗普今年6月在接受“Impaulsive”播客采访时表示：“我们必须站在(AI的)最前沿。我们必须领先于中国，中国是首要威胁。”鉴于特朗普这样的态度，美国科技界人士预测，新政府可能会支持这样的项目。
+  AGI可以像人一样学习、理解和应对不同领域的问题，而不仅局限于某一特定任务。AGI还有可能通过持续优化和扩展..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fus-china-agi-20241126%2F7878316.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1732671542000-->
+<p><a href="https://www.voachinese.com/a/us-china-agi-20241126/7878316.html">何为AI“曼哈顿计划”？一文了解美中21世纪“科技军备竞赛”</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 27 Nov 2024 01:06:35 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/B8C59220-A94A-439C-81F5-142A78DE2EC6_cx1_cy17_cw98_r1_s.png" width="100%" />  <div>
+<small style="color: #999;">成立于2021年的美国国家人工智能计划办公室徽章。</small>
+  </div>
+华盛顿 —   <p style="text-align:start">美国当选总统唐纳德·特朗普(Donald Trump)再度入主白宫之前，美国国会下属的美中经济与安全审查委员会(USCC)在其上周发布的年度报告中提议，美国需启动一个类似“曼哈顿计划”的AI研发计划，与中国竞速开发并获取“通用人工智能(AGI)”。</p>
+  <p style="text-align:start">特朗普今年6月在接受“Impaulsive”播客<a href="https://www.youtube.com/watch?v=xrFdHO7FH8w" target="_blank">采访</a>时表示：“我们必须站在(AI的)最前沿。我们必须领先于中国，中国是首要威胁。”鉴于特朗普这样的态度，美国科技界人士预测，新政府可能会支持这样的项目。</p>
+  <p style="text-align:start">AGI可以像人一样学习、理解和应对不同领域的问题，而不仅局限于某一特定任务。AGI还有可能通过持续优化和扩展其能力，达到甚至超越人类智能的表现。因此它也被视为一项巨大潜力和风险并存的技术，目前仍在探索阶段。“曼哈顿计划”指的是二战期间美国政府与私营部门之间的大规模合作项目，最终促成了原子弹研制成功。</p>
+  <p style="text-align:start">USCC在报告中建议赋予行政部门向人工智能、云计算和数据中心公司授予多年合同和资金的权力，整合政府、企业和科研机构的力量，以加速AGI的突破，确立“美国在AGI领域的领导地位”。</p>
+<a href="/a/7870199.html"></a>  <p style="text-align:start">USCC报告发表之后，全球“技术领域”投资之王、美国风投四巨头之一维诺德·科斯拉(Vinod Khosla)在彭博社(Bloomberg News)<a href="https://www.bloomberg.com/opinion/articles/2024-11-21/how-the-us-can-win-the-ai-race-against-china-vinod-khosla" target="_blank">撰文</a>称说，人工智能正准备迈出巨大的一步，对美国乃至全球产生深远影响。他呼吁特朗普政府与科技行业携手合作。</p>
+  <p style="text-align:start">“特朗普政府和科技行业需要从现在开始携手合作，为这一技术革命做好准备，因为它将塑造美国从经济实力到计算领域相较于中国的竞争优势等方方面面，”他写道。他还说他投资的公司OpenAI最近发布了一种系统，能够通过推理得出答案，而不是单纯依靠预测。全球其他领先的人工智能公司也在开发类似的系统。</p>
+  <p style="text-align:start">从政策规划到技术研发，美中两个世界最大经济体正以不同的方式争夺这一未来科技的主导权。专家指出，这场竞赛不仅是技术的比拼，对两个国家的经济竞争力和国家安全起到重要作用，甚至影响着全球的价值观和未来人类社会的走向。</p>
+  <p style="text-align:start">本文将简要介绍AI曼哈顿计划以及美中两国在该领域竞争的现状。</p>
+  <p style="text-align:start"><strong>AGI到底为何物？</strong></p>
+  <p style="text-align:start">人工智能分为狭义人工智能(Artificial Narrow Intelligence, ANI)和通用人工智能(Artificial General Intelligence, AGI)。</p>
+  <p style="text-align:start">AGI指的是一种能够像人类一样灵活思考、自主学习、自动推理并创新解决问题的智能系统。与当前专注于特定任务的狭义人工智能不同，AGI具备通用性，能够在多个领域中自由应用，无需人为设计的明确指导。</p>
+  <ul>
+    <li>自主学习与适应能力：狭义人工智能往往只能完成被设计的特定任务，例如谷歌搜索、导航系统、流媒体推荐算法和语音助手等功能都可以理解指令，但无法进行复杂推理。而AGI则能够从经验中自动推理和自主学习，以适应新环境中的新任务。例如，AGI系统不仅能在下棋中击败对手，还能理解棋盘策略的逻辑，并将这种逻辑举一反三、触类旁通地应用于经济建模或医疗诊断等完全不同的领域。</li>
+    <li>多功能：AGI不局限于单一领域，而是能够跨越多个学科。例如，AGI可以既胜任工程设计，又能够撰写科学论文，甚至创作音乐或艺术。</li>
+    <li>可扩展性与持续改进：AGI系统能够基于已有知识不断改进其自身性能，并在处理新问题时迅速适应。例如，当前的AI可能需要数以百万计的示例数据进行训练，而AGI有望通过少量的数据甚至仅凭观察来完成复杂任务。</li>
+  </ul>
+  <p style="text-align:start"> </p>
+  <p style="text-align:start"><strong>AGI的重要性</strong></p>
+  <p style="text-align:start">AGI被视为具有颠覆性潜力，可能彻底改变人类社会的运作方式，并被视为“下一次工业革命”的核心驱动力。</p>
+  <p style="text-align:start">例如在金融领域，AGI不仅可以执行金融分析，还能跨领域理解经济学理论、预测地缘政治风险对市场的影响，自主制定投资战略。AGI能够像人类一样“思考”投资的逻辑，而不是单纯依赖历史数据。比如在癌症研究中，AGI可能发现人类科学家尚未察觉的治疗路径；等等。</p>
+  <p style="text-align:start">军事上，AGI被视为可“改变游戏规则”的技术。它可以通过自主决策优化战场指挥，增强智能武器的精准打击能力，强化网络安全与攻击效率，并提升情报分析和后勤管理的精准度。但AGI的军事应用也正引发失控风险和伦理挑战相关的担忧，有人担心该技术能将电影中的“杀手机器人”带到现实生活中，并使无人化战争泛滥。</p>
+  <p style="text-align:start">USCC委员会成员雅各布·赫尔伯格(Jacob Helberg)对《华盛顿邮报》(Washington Post)<a href="https://www.washingtonpost.com/national-security/2024/11/19/china-congress-trade-tariffs-ai/" target="_blank">表示</a>，AGI将带来军事能力上“完全的体系性转变”。</p>
+  <p style="text-align:start">“即将到来的变化之深远难以言喻。OpenAI的新推理模型可以在复杂问题上给出相当于甚至略超高水平博士毕业生水准的答案。它将加速科学研究的进程，提高经济产出，帮助企业发现新的收入来源，同时提升员工的生产力，” 科斯拉在刊于彭博社的文章中写道，“全球用户还将能够以免费或低成本的方式获得由人工智能驱动的医生、科学家、会计师、设计师、结构工程师、软件工程师等专业服务。”</p>
+  <p style="text-align:start">“历史告诉我们，那些能够率先利用技术快速变革时期的国家，往往能够对全球力量平衡造成重大影响，”赫尔伯格对路透社(Reuters)<a href="https://www.reuters.com/technology/artificial-intelligence/us-government-commission-pushes-manhattan-project-style-ai-initiative-2024-11-19/" target="_blank">表示</a>，“中国正在全力冲刺AGI……我们必须非常认真对待这一威胁。”</p>
+  <p style="text-align:start">不过AGI目前尚不存在，它在科学界仍是一个充满争议和猜测的话题。一些专家认为，随着技术的快速进步，AGI 的诞生可能指日可待；而另一些人则认为，由于不可逾越的伦理、技术和哲学挑战，真正的AGI可能无法实现。</p>
+  <p style="text-align:start"><strong>当下的AGI</strong><strong>技术雏形</strong></p>
+  <p style="text-align:start">尽管AGI尚未真正实现，但在美国，现有技术中已出现了某些具有AGI潜质的雏形：</p>
+  <ul>
+    <li>GPT模型系列：OpenAI的GPT系列（例如ChatGPT）展现了多领域能力，如语言生成、代码编写和创意写作。尽管GPT仍属于狭义AI，但它的通用性表现出AGI的雏形潜力。例如，GPT可以在回答编程问题的同时，创作一首关于未来技术的诗。</li>
+    <li>DeepMind的Alpha系列：谷歌旗下的DeepMind开发的AlphaGo成功击败了围棋世界冠军，其开发的AlphaFold破解了蛋白质折叠这一生物学难题，展现了AI的跨领域应用潜力。</li>
+    <li>Tesla的全自动驾驶系统：特斯拉的AI系统能够实时处理来自传感器的数据，理解复杂的交通场景，并作出自主决策，展现了AI在动态环境中的自适应能力。</li>
+  </ul>
+  <p style="text-align:start"> </p>
+  <p style="text-align:start">中国目前也已有一些具备AGI雏形特性的产品和技术方向，比如百度的文心一言(Ernie Bot)具备自然语言处理、逻辑推理和跨领域任务的能力；阿里巴巴的通义千问能够处理文本、语音、图像等多种形式的输入，支持多领域任务，显示出一定的通用能力；华为的盘古大模型也在跨领域任务处理上表现出色；商汤科技的多模态AI系统将视觉、语音和自然语言结合在一起，用于复杂场景的感知和决策；等等。</p>
+  <p style="text-align:start"><strong>美中AI竞争态势</strong></p>
+  <p style="text-align:start">USCC报告称，截至2024年6月，中国有50家公司正在开发AI模型，而美国仅有少数几家大型公司从事人工智能模型的研发。</p>
+  <p style="text-align:start">不过，美联社(Associate Press)11月21日援引斯坦福大学最新发布的指数<a href="https://apnews.com/article/ai-us-china-competition-stanford-index-uk-india-c8eb9be0253eb39776c3e38d05f1a329" target="_blank">报道</a>称，美国在AI技术开发方面领先全球，在研究及其他各项重要的AI创新指标上超越中国。</p>
+  <p style="text-align:start">目前并没有一套世界公认的标准来衡量全球AI领导地位，但斯坦福大学的这一指数尝试通过多维度衡量AI产业的“活力”进行排名，包括研究和投资规模，以及在预防技术潜在危害方面的责任感，等等。</p>
+  <p style="text-align:start">“美国和中国之间的差距实际上在扩大，”斯坦福AI指数委员会主任雷·佩罗(Ray Perrault)对美联社表示，“至少在企业创立和企业注资这两方面，美国的投资规模更大。”</p>
+  <p style="text-align:start">斯坦福的报告显示，美国在私人AI投资方面遥遥领先，去年达到672亿美元，而中国仅为78亿美元。</p>
+  <p style="text-align:start">联合国知识产权机构今年早些时候表示，中国在生成式AI领域的专利申请数量远超其他国家。斯坦福的这份排名将此视为中国在AI创新方面强劲增长的一个指标，但认为这还不足以使中国处于领先地位。报告指出，“中国专注于开发尖端人工智能技术，并不断增加研发投入，这使其成为人工智能领域的重要力量。”</p>
+  <p style="text-align:start">但据《哈佛深红报》(The Harvard Crimson)11月19日的<a href="https://www.thecrimson.com/article/2024/11/19/eric-schmidt-china-ai-iop-forum/" target="_blank">报道</a>，前谷歌首席执行官埃里克·施密特(Eric E. Schmidt)在哈佛大学肯尼迪政治学院举办的一个论坛上表示，在开发更强大人工智能的竞赛中，美国正落后于中国。</p>
+  <p style="text-align:start">该报指出，施密特的这一判断显示他在此问题上的立场变化。就在去年10月，他曾在同一论坛上表示，美国在人工智能开发方面领先于中国。</p>
+  <p style="text-align:start">《哈佛深红报》报道称，施密特在论坛上指出，除了像美国一样拥有优秀的工程师、强大的芯片和庞大的数据资源，中国还受益于更充足的电力来支持AI模型的训练，以及中国政府对AI相关企业的补贴。</p>
+  <p style="text-align:start">上一届特朗普政府和拜登政府都在限制中国获取美国先进芯片和相关技术方面出台一系列举措，限制中国获得美国及其盟友的先进的芯片。不过施密特表示，中国公司已经通过开发自己的强大芯片，在硬件开发上“追平”了美国。</p>
+  <p style="text-align:start">美国风投四巨头之一科斯拉也在自己的文章中提到了美中在人工智能竞赛中截然不同的策略。“中国的战略以集中式规划为特点，通过直接的国家资金投入支持特定的人工智能项目，并建立国家级计算中心，”科斯拉写道，“相比之下，美国主要依靠私人企业推动人工智能发展，许多企业采用开源模型。美国政府的支持相对有限，直到最近才对该行业施加了一些出口管制。”</p>
+  <p style="text-align:start"><strong>AI竞赛也是价值观和治理模式的较量</strong></p>
+  <p style="text-align:start">除了通过大量投资最先进的AI技术，力图在战略上超越美国及其盟友之外，中国还试图利用AI驱动的新型监控和压制手段，加强其非自由主义的治理模式--不仅在国内推广，也向全球输出。</p>
+  <p style="text-align:start">“美国和中国不仅在争夺人工智能（AI）创新的领导地位，还在竞争谁的价值观将引导全球AI应用，”华盛顿智库大西洋理事会(Atlantic Council)<a href="https://www.atlanticcouncil.org/content-series/strategic-insights-memos/assessing-us-china-tech-competition-in-the-global-south/" target="_blank">写道</a>，“在人工智能领域，中国延续了其在其他技术领域一贯的策略，采取多层次的方法推动全球南方的AI发展，最终服务于其自身的经济和外交利益。”</p>
+  <p style="text-align:start">该智库的报告指出，通过“数字丝绸之路”等倡议，中国在技术和基础设施项目上进行了大规模投资。华为、中兴、商汤等中国科技企业为多个数字基础设施项目提供了数千万至数亿美元的融资和投资，包括光纤电缆建设、硬件设备采购、监控摄像头安装，以及面向公共部门数字化的人工智能应用。此外，中国还在联合国、七十七国集团(G77)和金砖国家(BRICS)等国际论坛上推广其AI治理模式，部分目的是削弱西方数字治理模式的影响力。</p>
+  <p style="text-align:start">“中美在人工智能和新兴技术上的竞争，最终会带来超越数字领域的广泛影响。自由和开放社会的核心价值观正面临挑战，而那些能够长期保持优势的国家和联盟，将在经济和国家安全方面占据更大的优势，”华盛顿智库布鲁金斯学会(Brookings Institution)<a href="https://www.brookings.edu/articles/succeeding-in-the-ai-competition-with-china-a-strategy-for-action/" target="_blank">写道</a>，“幸运的是，美国可以与民主国家的盟友和合作伙伴合作，共同采取行动，在人工智能时代守护民主和自由的价值观。”</p>
+  <p style="text-align:start"><strong>特朗普新政府对美中AI</strong><strong>竞赛的态度</strong></p>
+  <p style="text-align:start">2019年2月，时任总统的特朗普签署了美国首个关于AI的行政命令，提出了从国家战略层面推动AI技术发展的战略，确保美国在该领域领先世界。2020年12月，美国国会通过了两党支持的《国家AI倡议法案》，其中包括对非国防领域AI研发的资金支持。</p>
+  <p style="text-align:start">2020年12月，特朗普又签署了一项题为 “促进联邦政府中可信赖的AI应用”的行政命令，为联邦机构采用AI技术制定了指导原则。</p>
+  <p style="text-align:start">在美国2024年大选共和党党纲中，共和党呼吁废除拜登2023年关于AI的行政命令，认为该命令过度限制了AI技术的发展。</p>
+  <p style="text-align:start">特朗普将美中在AI领域的竞争称为“一场改变世界的竞赛”。他表示，通过他的能源政策产生的大量电力将帮助美国科技巨头在这场AI军备竞赛中取胜。</p>
+  <p style="text-align:start">“在竞选期间，特朗普及其对手、副总统卡玛拉·哈里斯都明确表示，他们认识到确保美国在全球AI竞赛中获胜的重要性。上一届国会的许多与人工智能相关的法案都体现了两党的合作，而人工智能政策--尤其是在涉及中国的问题上--可能会成为特朗普任期内两党少有的共识领域之一。”科斯拉这样预测。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E4%BB%A5%E8%89%B2%E5%88%97%E6%89%93%E5%87%BB%E5%8F%99%E5%88%A9%E4%BA%9A%E9%9C%8D%E5%A7%86%E6%96%AF%E7%9C%81%E5%A2%83%E5%86%85%E7%9B%AE%E6%A0%87">
+          以色列打击叙利亚霍姆斯省境内目标
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E7%AD%BE%E7%BD%B2%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B%E6%9D%83%E5%8A%9B%E4%BA%A4%E6%8E%A5%E7%9A%84%E4%B8%8B%E4%B8%80%E9%98%B6%E6%AE%B5">
+          特朗普宣布签署文件开始权力交接的下一阶段
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%BB%8E%E5%B7%B4%E5%AB%A9%E7%9C%9F%E4%B8%BB%E5%85%9A%E8%BE%BE%E6%88%90%E5%81%9C%E7%81%AB">
+          以色列与黎巴嫩真主党达成停火
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E7%BE%8E%E5%8F%82%E8%AE%AE%E5%91%98%E8%AE%BF%E5%8F%B0%E4%BC%9A%E8%B5%96%E6%B8%85%E5%BE%B7-%E5%9C%A8%E7%BE%8E%E6%94%BF%E5%BA%9C%E4%BA%A4%E6%8E%A5%E4%B9%8B%E9%99%85%E8%A1%A8%E8%BE%BE%E5%9B%BD%E4%BC%9A%E5%AF%B9%E5%8F%B0%E6%B9%BE%E7%9A%84%E8%B7%A8%E5%85%9A%E6%B4%BE%E6%94%AF%E6%8C%81">
+          美参议员访台会赖清德：在美政府交接之际表达国会对台湾的跨党派支持
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-26/Jamieson-Greer%E6%88%96%E4%BB%BB%E7%BE%8E%E5%9B%BD%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8">
+            前一篇：Jamieson Greer或任美国贸易代表
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-26/%E9%9B%B7%E5%85%8B%E8%90%A8%E6%96%AF%E7%BA%AF%E7%94%B5%E8%BD%BF%E8%B7%91LF-ZC%E6%8A%95%E4%BA%A7%E6%97%B6%E9%97%B4%E6%8E%A8%E8%BF%9F%E5%88%B02027%E5%B9%B4">
+            后一篇：雷克萨斯纯电轿跑LF-ZC投产时间推迟到2027年
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/Jamieson-Greer%E6%88%96%E4%BB%BB%E7%BE%8E%E5%9B%BD%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E9%9B%B7%E5%85%8B%E8%90%A8%E6%96%AF%E7%BA%AF%E7%94%B5%E8%BD%BF%E8%B7%91LF-ZC%E6%8A%95%E4%BA%A7%E6%97%B6%E9%97%B4%E6%8E%A8%E8%BF%9F%E5%88%B02027%E5%B9%B4'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E7%AD%BE%E7%BD%B2%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B%E6%9D%83%E5%8A%9B%E4%BA%A4%E6%8E%A5%E7%9A%84%E4%B8%8B%E4%B8%80%E9%98%B6%E6%AE%B5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%BB%8E%E5%B7%B4%E5%AB%A9%E7%9C%9F%E4%B8%BB%E5%85%9A%E8%BE%BE%E6%88%90%E5%81%9C%E7%81%AB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-11-26/Jamieson-Greer%E6%88%96%E4%BB%BB%E7%BE%8E%E5%9B%BD%E8%B4%B8%E6%98%93%E4%BB%A3%E8%A1%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-11-26/%E9%9B%B7%E5%85%8B%E8%90%A8%E6%96%AF%E7%BA%AF%E7%94%B5%E8%BD%BF%E8%B7%91LF-ZC%E6%8A%95%E4%BA%A7%E6%97%B6%E9%97%B4%E6%8E%A8%E8%BF%9F%E5%88%B02027%E5%B9%B4">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-11-26/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E7%AD%BE%E7%BD%B2%E6%96%87%E4%BB%B6%E5%BC%80%E5%A7%8B%E6%9D%83%E5%8A%9B%E4%BA%A4%E6%8E%A5%E7%9A%84%E4%B8%8B%E4%B8%80%E9%98%B6%E6%AE%B5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-11-26/%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%BB%8E%E5%B7%B4%E5%AB%A9%E7%9C%9F%E4%B8%BB%E5%85%9A%E8%BE%BE%E6%88%90%E5%81%9C%E7%81%AB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

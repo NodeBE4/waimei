@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+" />
+    <meta property="og:description" content="
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？" />
+    <meta property="twitter:title" content="从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjingmao%2Fjj-china-off-site-law-enforcement-intensifies-11262024104853.html&t=%E4%BB%8E%22%E6%80%95%E9%AC%BC%E5%81%9C%E4%B8%9A%22%E5%88%B0%22%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E%22+%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%BC%81%E8%BA%B2%E5%BE%97%E8%BF%87%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjingmao%2Fjj-china-off-site-law-enforcement-intensifies-11262024104853.html&t=%E4%BB%8E%22%E6%80%95%E9%AC%BC%E5%81%9C%E4%B8%9A%22%E5%88%B0%22%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E%22+%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%BC%81%E8%BA%B2%E5%BE%97%E8%BF%87%E5%90%97%EF%BC%9F&d=2024-11-26&e=
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+
+
+ 一名中国警察从警车内拍照   
+   美联社图片
+  
+  
+  在"远洋捕捞"成为2024年热词后，潮汕地区商家为躲避检查纷纷闭店引发热议。中国大陆的民营企业现在的状况到底如何？他们如何看待这种现象及其根源？在经济下行、盘剥日益加重的环境下，他们又有着怎样的心态？
+  
+    跨省“远洋捕捞”打击广东民企　异地趋利性执法引发深度反弹
+    
+      
+ 广东消防检查引发商铺关门潮 地方经济再受冲击 
+      
+    
+     "干垮一个企业太简单"　中国乱收罚款现象严重 
+  
+  民营企业在中国的生存状况正越来越艰难。
+  上周三，浙江省检察院在新闻发布会上通报的另一起案件也引发网友热议：两名外省警察，以办案为名，在江苏抓捕了一名企业家，该企业家在浙江跳车逃跑并报警。浙江警方抓获外地警察后，以“滥用职..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjingmao%2Fjj-china-off-site-law-enforcement-intensifies-11262024104853.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html&text=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html&title=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html&title=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？&body=
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html&title=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？&caption=
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？&url=https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>从"怕鬼停业"到"远洋捕捞" 中国民企躲得过吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-11-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjingmao%2Fjj-china-off-site-law-enforcement-intensifies-11262024104853.html&t=%E4%BB%8E%22%E6%80%95%E9%AC%BC%E5%81%9C%E4%B8%9A%22%E5%88%B0%22%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E%22+%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%BC%81%E8%BA%B2%E5%BE%97%E8%BF%87%E5%90%97%EF%BC%9F&d=2024-11-26&e=
+从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？
+——
+
+
+ 一名中国警察从警车内拍照   
+   美联社图片
+  
+  
+  在"远洋捕捞"成为2024年热词后，潮汕地区商家为躲避检查纷纷闭店引发热议。中国大陆的民营企业现在的状况到底如何？他们如何看待这种现象及其根源？在经济下行、盘剥日益加重的环境下，他们又有着怎样的心态？
+  
+    跨省“远洋捕捞”打击广东民企　异地趋利性执法引发深度反弹
+    
+      
+ 广东消防检查引发商铺关门潮 地方经济再受冲击 
+      
+    
+     "干垮一个企业太简单"　中国乱收罚款现象严重 
+  
+  民营企业在中国的生存状况正越来越艰难。
+  上周三，浙江省检察院在新闻发布会上通报的另一起案件也引发网友热议：两名外省警察，以办案为名，在江苏抓捕了一名企业家，该企业家在浙江跳车逃跑并报警。浙江警方抓获外地警察后，以“滥用职..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjingmao%2Fjj-china-off-site-law-enforcement-intensifies-11262024104853.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--NaN-->
+<p><a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html">从”怕鬼停业”到”远洋捕捞” 中国民企躲得过吗？</a>
+——</p>
+
+<div>
+<img src="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/@@images/206bc90c-26a7-4f0b-a990-661020ebcf1e.jpeg" alt="从&quot;怕鬼停业&quot;到&quot;远洋捕捞&quot;　中国民企躲得过吗？" title="从&quot;怕鬼停业&quot;到&quot;远洋捕捞&quot;　中国民企躲得过吗？" height="409" width="620" referrerpolicy="no-referrer" /> <span class="lead_image_caption">一名中国警察从警车内拍照</span>   <div id="zoomattribute">
+<a id="single_image" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/@@images/image/social_media" data-fancybox="" data-caption="一名中国警察从警车内拍照" title="一名中国警察从警车内拍照"> <img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /> </a> <span class="copyright">美联社图片</span>
+  </div>
+  <!-- zoomattribute -->
+  <p>在"远洋捕捞"成为2024年热词后，潮汕地区商家为躲避检查纷纷闭店引发热议。中国大陆的民营企业现在的状况到底如何？他们如何看待这种现象及其根源？在经济下行、盘剥日益加重的环境下，他们又有着怎样的心态？</p>
+  <ul>
+    <li><span class="result-title"><a class="state-published" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql2-china-cracksdown-on-private-enterprise-in-guangdong-10292024042904.html"><strong>跨省“远洋捕捞”打击广东民企　异地趋利性执法引发深度反弹</strong></a></span></li>
+    <li>
+      <div class="teaserimg">
+<a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql-chaozhou-shantou-guangdong-inspections-stores-shops-stalls-shutdown-11242024235218.html"> </a><span class="result-title"><strong><a class="state-published" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql-chaozhou-shantou-guangdong-inspections-stores-shops-stalls-shutdown-11242024235218.html">广东消防检查引发商铺关门潮 地方经济再受冲击</a> </strong></span>
+      </div>
+    </li>
+    <li><span class="result-title"> <a class="state-published" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/hcm1-china-taxation-local-economy-fine-private-enterprise-08202024040559.html" rel="noopener" target="_blank"><strong>"干垮一个企业太简单"　中国乱收罚款现象严重</strong></a> </span><span class="result-title"></span><span style="font-weight: 400;"><span class="result-title"><strong><a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql2-04232024085907.html" rel="noopener" target="_blank"></a></strong></span></span><span class="result-title"><strong></strong></span></li>
+  </ul>
+  <p>民营企业在中国的生存状况正越来越艰难。</p>
+  <p>上周三，浙江省检察院在新闻发布会上通报的另一起案件也引发网友热议：两名外省警察，以办案为名，在江苏抓捕了一名企业家，该企业家在浙江跳车逃跑并报警。浙江警方抓获外地警察后，以“滥用职权罪”将二人分别判刑七个月和八个月。</p>
+  <p>一位有40余万粉丝的法律博主评价说：“正规警察进入敲诈勒索行业，这就是当前最大的悲哀。”</p>
+  <p>两天后，地处中国东南沿海的广东两个地区的商户纷纷贴出停业通知，以避免即将到来政府检查。“对抗检查”因商户们公示的理由变成了一场搞笑的行为艺术：“猪脚被偷、”“夫妻吵架”、“怕鬼”。</p>
+  <p>“现在在中国做企业没有一个人会感觉自己是安全的。”旅美中国企业家胡力任对自由亚洲电台表示，“虽然中国的宣传部门都是在倡导保护民营企业，但实质他们所做的完全相反。”</p>
+  <p>在中国经商的Z先生在电话中向自由亚洲电台表示，“不论是政府检查还是‘远洋捕捞’，这些在中国都是潜规则，我们做企业的都见怪不怪了，因为只有办案子，他们才有钱。”</p>
+  <p>远洋捕捞，是比喻司法机关出于利益的追求 ，跨区域、有针对性地对外地民营企业进行的执法活动，往往伴随着罚款、查封和冻结账户。</p>
+  <p>美国光传媒创始人王安娜曾在中国经营企业多年，她对自由亚洲电台表示，“中国的中小微民营企业一直受各级政府、各个方面的盘剥，包括街道办事处、派出所、消防、税务……不只‘远洋捕捞’，各个政府、各个部门其实都是趋利性的，只有程度深浅、明显与不明显的区别。民营企业在中国，每天的生活就是等着各种罚款、各种检查、各种借口。”</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1280px;">
+<img alt="一辆警车驶过北京街头的中国法治宣传墙（美联社）" height="853" src="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/ap16363279242503.jpg/@@images/5b3ad788-1973-4503-a498-cd53c6acf309.jpeg" title="AP16363279242503.jpg" width="1280" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+一辆警车驶过北京街头的中国法治宣传墙（美联社）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="一辆警车驶过北京街头的中国法治宣传墙（美联社）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/ap16363279242503.jpg" id="single_image" title="一辆警车驶过北京街头的中国法治宣传墙（美联社）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>“远洋捕捞”存在已久</strong></p>
+  <p>”远洋捕捞“在2024年成为一个热词，但其实存在已久，以前的名词叫做“异地办案”。律师游飞翥就代理过很多起这样的案子。</p>
+  <p>他向自由亚洲电台举例说，他在2019年接手的一个案子与通报案例非常类似。一个重庆的企业家，被江西修水县警察以“传唤”名义带走。在车上，警察对他说，他将被以“非法经营罪”起诉，但如果他能掏2000万给他们，就放他走。企业家没有同意。</p>
+  <p>“七名被告都不是江西人，也不在江西经营，但江西修水县说他们在网上卖的书有问题，卖到他们这个县里去了，所以他们就去抓人。七名被告都是从重庆、贵州、河北抓去的。”游飞翥在电话中评论说：“这个理由当然是很可笑的。如果这个理由成立，那卖到美国的东西，美国是不是也要去中国执法了。”</p>
+  <p>但他没能帮助委托人获得胜诉。最终，这起“非法经营”案件的七名被告人均被判刑，其中第一被告被判4年半，罚金450万；第二被告判处3年有期徒刑，罚金450万，第三被告判处两年有期徒刑，罚金50万。</p>
+  <p>另一位中国律师向自由亚洲电台证实，他接过许多类似咨询，有些可能算不上是“捕捞”，因为金额不大，大多是以银行帐户上有一笔有问题的款项为名，冻结账户，被警方带去做笔录，笔录之后警方就表示：如能交一笔钱取保候审，可以算了，金额通常是几万元人民币。</p>
+  <p>“但这个根本并不是取保候审，因为都是私人转账，警方也不给开任何手续。我还接到一个案子，取保候审交了五六万，警方开具的取保决定书只写了两万。但这为什么也不是取保候审呢？因为这个案子永远不会审的，如果审理，保证金就要退还。不审，就不用退还。那就不是取保候审。这种事情太多了。他们一直是这样执法的方式去抢劫。”这名律师表示。出于安全考虑，这名律师选择不公开姓名。</p>
+  <p>王安娜分析说，“各地政府不敢动国企，不敢去外资，最后只有民营企业能成为砧板上的肥肉。”这个砧板有时来自外省，更多是本地。</p>
+  <p>她感触最深的是消防和税务部门。曾有消防部门检查后，表示她所使用的门不具备消防功能。“其实是有的，但他们就说必须要买指定厂家的门。这个指定厂家就是消防局几个人私下开的。这个所谓的消防门，价格比市面上翻一倍。就这样的事，我们经营企业的每天都要遇到。”</p>
+  <p>王安娜认为，“远洋捕捞”在2024成为热词，或是因为“近海”已经很难有收获了。让她产生这种判断 的信息之一，是陕西省咸阳市乾县公安局发布的一则征集犯罪线索的通告。“这个通告说，要征集中小微民营企业内部的犯罪线索，我看了不只是震惊，而且是后背发凉，就是说现在大企业已经抢得差不多了，到中小微企业了。”</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1164px;">
+<img alt="2024年11月14日，陕西乾县警方发通告称，征集中小微民企内部腐败、犯罪线索。（微博）" height="923" src="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/capturea.jpg/@@images/0cdd024a-8410-430b-a716-9dd69394644b.jpeg" title="Capturea.JPG" width="1164" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+2024年11月14日，陕西乾县警方发通告称，征集中小微民企内部腐败、犯罪线索。（微博）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="2024年11月14日，陕西乾县警方发通告称，征集中小微民企内部腐败、犯罪线索。（微博）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/capturea.jpg" id="single_image" title="2024年11月14日，陕西乾县警方发通告称，征集中小微民企内部腐败、犯罪线索。（微博）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>“套路”与利益根源</strong></p>
+  <p>媒体分析，今年大规模的“远洋捕捞”发生，与贫困地区的财政吃紧有关。</p>
+  <p>据中国财政部官网：今年1至9月，全国一般公共预算收入同比下降2.2%，其中，全国税收收入同比下降5.3%，国有土地使用权出让收入同比下降24.6%。同时，以“罚款”为主要表现形式的非税收入，却同比增长了13.5%。</p>
+  <p>但在东南沿海经商的Z先生看来，这种向民营企业“打草谷”的现象与贫富无关。他经历过一个案子，南京警方到深圳去执法，扣押了二次销售的苹果手机，以销售假货为由，要求经营者“掏钱平事”，“要100万、200万”。“还有一次，深圳警方到江苏盐城去办案，一次去了100多个人。”他说，“这和贫富无关，现在是全民捞钱。”</p>
+  <p>游飞翥看来，变化来自于异地执法与本地利益的冲突。按照中国相关规定，异地执法需要与本地司法机关联合办案，但最近曝光的案例，基本是司法机构到异地去单独执法。</p>
+  <p>2021年3月，义乌警方公开发布了《义乌公安致全国各地公安机关的一封信》，信中提到，电信网络诈骗案件犯罪团伙与地下钱庄勾结，将诈骗赃款直接变现成货款转给经营户进行洗白，造成义乌经营户银行账户被全国各地公安机关冻结情况频发。公开信说：冻钱很容易，但问题是这往往一刀切，转来一笔1万，但“防诈骗大数据”分析那有嫌疑，可能就连着整张卡里原有的20万都一块冻结了。更棘手的是，冻结没有期限，三年五年都行——冻完哪怕以“案情复杂”为由，随便拖上一段时间，小商户根本撑不起，最后就衍生出权力寻租的机会，塞点钱，“经查无犯罪事实”就解封了。”</p>
+  <p>这相当于变相公开了异地执法与“远洋捕捞“的套路。</p>
+  <p>王安娜分析说：“警方愿意去外省办案，因为本地企业或多或少在本地都有一些人脉，警方很难把案件扩大，去外省，一个经常用的方式就把民事案子转成刑事，然后把刑事案子往黑社会上套，案子一涉黑，财产就都要被没收，就大获全胜。但如果你只是普通的经济纠纷，官司打来打去他也没什么好处。”</p>
+  <p>Z先生认为，“不找当地警方，一种可能是怕当地有地方保护，二是如果当地警方能办？我还用舟车劳顿跑来吗？我能捞到什么好处？”</p>
+  <p>游飞翥就有类似的经历。广东一家地方法院到广西某地去冻结一个企业的账户，但广西本地法院听到消息，先行冻结了该企业约四十亿的资产，导致广东司法部门只冻结了两个亿。</p>
+  <p>多年代理案件的经验，他还发现了规律：“很多县城警方，办一类案子办顺了，它就专门办这类案子。比如江西修水，主要是就去抓知识产权和著作权；还有河南商丘，主要是销售假冒伪劣商品的案子。他们就是拿着锤子找钉子，全国各地找案源。”互联网商业又为这种模式提供了便利因素，“都是在网上卖，只要有一例卖到他们那里，就可以去抓人、冻结账户，全国都可以抓。”</p>
+  <p>但多位自由亚洲采访的人士分析，像浙江警方抓捕外地警务人员并判刑非常少见。游飞翥说：“肯定是有了利益冲突。你把我这边的肥羊牵走了，把我这边的企业生态破坏了，整一个企业可能上上下下就有几千人失业了。”</p>
+  <p>他认为这也属于一种警告：“什么滥用职权？立案要分管副局长签字的，开着警车，拿着警用设备，什么手续都没有，他敢跑到外省去抓人？而且哪个企业有钱，有多少钱，他们其实都是先查好了才去的，不可能跑这么远抓一个没有钱的。”</p>
+  <p>王安娜分析说：“这两个办案人员就是县公安局的，小萝卜头，浙江的检察院也不怕，拿他们开刀最合适，要是省级的，他可能就会考虑；第二是我觉得他们抓的这个商人，可能也不是普通商人，在公检法或者政府也有关系。”</p>
+  <p><strong>不受监管的权力</strong></p>
+  <p>不过，多位人士对自由亚洲表示，中国民营企业多多少都有自己的“不合法”把柄。</p>
+  <p>王安娜解释说，这是中国特有的土壤导致的。“中国制定法律都是各个部门负责起草，他们起草的时候都是使本地部门的利益合法化、最大化，但各个部门之前是不通气的，在办企业的时候就很可能躲得过这里躲不过那里。”</p>
+  <p>Z先生也赞同，“比如本来企业是合理避税，不只合理，而且是合理合法，但税务局非要说你逃税，那就要罚。”而中国企业家的心态大多“多一事不如少一事”，愿意“破财免灾”，“所以可能也助长这种风气”。</p>
+  <p>但在游飞翥的经验里，破财通常不免灾。“有两种情况。一是给私人塞钱，他怕你举报，可能会给你稍稍运作一下，但也有很多人是拿了钱不办事的。第二种情况，司法机关查封你的厂房，拉走你的原材料，他拿了你上千万资产，那必须给你定罪，不然怎么能没收这么多钱呢？不定罪他就得把钱还给你。所以金额越大，罪名就越重，因为要符合这些资产的法律标准。这个时候可合法了。”</p>
+  <p>今年早些时候，中国人大代表、同为企业家的58同城董事长姚劲波晒出的一封来自最高人民法院的感谢信。根据信中信息，姚劲波建言有关部门破解地方政府的“”趋利性执法“，严格规范跨区域执法司法的审批流程，同时建议“罚没款应归中央财政”。这也是中国大陆法律人士的普遍建议。</p>
+  <p></p>
+  <figure class="image-richtext image-inline captioned" style="width:1209px;">
+<img alt="姚劲波在朋友圈发布最高法的感谢信（图源：澎湃新闻）" height="971" src="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/59da52b26ce25728670b53cb570853d15e0367009ad86cd57684611f8c224fe1-67656e90-6f8e6e4365b095fb.jpg/@@images/9ed5089d-225e-4d18-bba6-fabab534c817.jpeg" title="姚劲波在朋友圈发布最高法的感谢信（来源：澎湃新闻）.jpg" width="1209" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+姚劲波在朋友圈发布最高法的感谢信（图源：澎湃新闻）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="姚劲波在朋友圈发布最高法的感谢信（图源：澎湃新闻）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/jingmao/jj-china-off-site-law-enforcement-intensifies-11262024104853.html/59da52b26ce25728670b53cb570853d15e0367009ad86cd57684611f8c224fe1-67656e90-6f8e6e4365b095fb.jpg" id="single_image" title="姚劲波在朋友圈发布最高法的感谢信（图源：澎湃新闻）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p>最高法回复：“将认真研究、积极改进”。</p>
+  <p>但Z先生认为，这并不能扭转目前的现状。“最重要的私欲。比如说量刑，可以判你一到五年，那到底是一年还是五年呢？那就要谈。你明白哦！我有个朋友，在里面，按照正常的司法程序是能够取保候审的，但现在人家要600 万人民币才行，你就要跑关系啊，你明白我什么意思吧？”</p>
+  <p>王安娜说，“最重要的是在办案子的过程中，每个人都有个人好处。他给公家罚100万，但他自己可能捞200万，这才是他的动力根源。所以罚款归中央并不会减轻办案的动力，因为他的动力是在私人落200 万的好处那里，为什么我要停止呢？不会停止。”</p>
+  <p>“根本原因是权力不受监督，同时违法成本太低。”Z先生说，“现在公布出来的贪官，贪污 30 个亿、20 个亿的，最后也就是终身监禁，以前偷了点东西都会死刑。大家都是抱着大公无私的精神去远洋捕捞的吗？在这种情况下你不是去做拒绝合法的远洋捕捞的，说来说去，不是为了把什么东西给国家，主要是为了给自己。”</p>
+  <p><strong>企业家的报复：留下债务，人变现</strong></p>
+  <p>多位受访人士表示，中国的营商环境，使得多数民营企业家已经失去了对经济的信心。</p>
+  <p>王安娜观察到民营企业有两种情况。“一种是直接躺平，大摊子收缩成小摊子，小摊子直接关掉；另一种是只做和政府有关的生意，政府有项目就做点，没有就算了。”她说，甚至有人和她谈起了“三反五反”、“反对投机倒把”这些历史词汇。</p>
+  <p>胡力任则认为，即使浙江政府抛出“检察护企”的烟雾弹也于事无补。“浙江开新闻发布会抛出这个案例，意思就是说，你们不要跑，我们会保护你的。但没有用，因为在这个案例背后有千千万万个这种案例，他们是不管的。”</p>
+  <p>他看到的现象是：一部分人关掉企业，直接养老。“现在只要有互联网，和外界的联系是不断的，所以大家都把生意关了，组团跑到云南、贵州这些生态比较好的地区去，每天晒晒太阳，反正钱也赚够了。”</p>
+  <p>另一部分人采取了更极端的做法：“把债务留在国内，人跑出来了。现在中国企业家满世界跑，美国、加拿大、欧美、澳大利亚……这其实也是一种报复：我以前为你交了那么多税收，现在我的企业完蛋了，主要原因是什么？是你政府不作为，是你恶意封城，是你把整个国家的经济搞垮了，而且没有任何补救方式，对吧？那么他们就想办法把债务留在国内，然后自己想办法悄悄变现走人。”</p>
+  <p>根据人民法院公告网的相关数据，仅2024年上半年，中国就有超100家房企、60家家装、30家照明企业发布了破产或清算公告，据世界化工网统计，2024年中国有超过1000家化工企业宣告破产，另据中国工商注册资料平台企查查数据显示，2024年中国餐饮店注册数量减少约100万家。</p>
+  <p>“最惨的还是老百姓，因为最终都是老百姓买单。”胡力任说。</p>
+  <p>责编：李亚千    网编：瑞哲</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E7%89%B9%E6%9C%97%E6%99%AE%E5%9B%A0%E8%8A%AC%E5%A4%AA%E5%B0%BC%E8%A6%81%E5%8A%A0%E5%BE%81%E4%B8%AD%E5%9B%BD%E9%A2%9D%E5%A4%96%E5%85%B3%E7%A8%8E-%E8%B4%B8%E6%98%93%E6%88%98%E7%81%AB%E5%B7%B2%E7%87%83">
+          特朗普因芬太尼要加征中国额外关税 贸易战火已燃？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1">
+          澳洲学者写“左祸”对中国影响 批习近平极权复辟导致动荡
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E6%A0%BC%E9%9B%B7%E8%80%81%E5%B8%88%E8%A2%AB%E7%A6%81%E6%AD%8C%E6%9B%B2-%E6%8A%8A%E9%98%B2%E7%81%AB%E5%A2%99%E6%8B%86%E6%AF%81">
+          专栏 | 网络博弈：格雷老师被禁歌曲《把防火墙拆毁》
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-11-26</time>
+        <a href="https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%93%E6%A0%8F-%E5%86%9B%E4%BA%8B%E6%97%A0%E7%A6%81%E5%8C%BA-%E7%89%B9%E6%9C%97%E6%99%AE2.0-%E5%BC%BA%E5%8A%BF%E9%81%8F%E5%88%B6%E4%B8%AD%E5%9B%BD%E8%83%81%E8%BF%AB%E6%80%A7%E6%89%A9%E5%BC%A0">
+          专栏 | 军事无禁区：特朗普2.0－强势遏制中国胁迫性扩张
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%83%E5%9B%BD%E9%9B%86%E5%9B%A2%E6%88%96%E5%B0%86%E5%8A%A0%E5%A4%A7%E5%8A%9B%E5%BA%A6-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8F%B4%E4%BF%84%E6%96%BD%E5%8E%8B">
+            前一篇：七国集团或将加大力度 对中国援俄施压
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1">
+            后一篇：澳洲学者写“左祸”对中国影响 批习近平极权复辟导致动荡
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%83%E5%9B%BD%E9%9B%86%E5%9B%A2%E6%88%96%E5%B0%86%E5%8A%A0%E5%A4%A7%E5%8A%9B%E5%BA%A6-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8F%B4%E4%BF%84%E6%96%BD%E5%8E%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E6%A0%BC%E9%9B%B7%E8%80%81%E5%B8%88%E8%A2%AB%E7%A6%81%E6%AD%8C%E6%9B%B2-%E6%8A%8A%E9%98%B2%E7%81%AB%E5%A2%99%E6%8B%86%E6%AF%81'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%83%E5%9B%BD%E9%9B%86%E5%9B%A2%E6%88%96%E5%B0%86%E5%8A%A0%E5%A4%A7%E5%8A%9B%E5%BA%A6-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8F%B4%E4%BF%84%E6%96%BD%E5%8E%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-11-26/%E6%BE%B3%E6%B4%B2%E5%AD%A6%E8%80%85%E5%86%99-%E5%B7%A6%E7%A5%B8-%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%BD%B1%E5%93%8D-%E6%89%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9E%81%E6%9D%83%E5%A4%8D%E8%BE%9F%E5%AF%BC%E8%87%B4%E5%8A%A8%E8%8D%A1">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-11-26/%E4%B8%93%E6%A0%8F-%E7%BD%91%E7%BB%9C%E5%8D%9A%E5%BC%88-%E6%A0%BC%E9%9B%B7%E8%80%81%E5%B8%88%E8%A2%AB%E7%A6%81%E6%AD%8C%E6%9B%B2-%E6%8A%8A%E9%98%B2%E7%81%AB%E5%A2%99%E6%8B%86%E6%AF%81">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
