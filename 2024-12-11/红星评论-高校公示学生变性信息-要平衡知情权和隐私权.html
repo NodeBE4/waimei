@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>红星评论｜高校公示学生变性信息，要平衡知情权和隐私权 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+" />
+    <meta property="og:description" content="
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="红星评论｜高校公示学生变性信息，要平衡知情权和隐私权" />
+    <meta property="twitter:title" content="红星评论｜高校公示学生变性信息，要平衡知情权和隐私权" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5408)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713877.html&t=%E7%BA%A2%E6%98%9F%E8%AF%84%E8%AE%BA%EF%BD%9C%E9%AB%98%E6%A0%A1%E5%85%AC%E7%A4%BA%E5%AD%A6%E7%94%9F%E5%8F%98%E6%80%A7%E4%BF%A1%E6%81%AF%EF%BC%8C%E8%A6%81%E5%B9%B3%E8%A1%A1%E7%9F%A5%E6%83%85%E6%9D%83%E5%92%8C%E9%9A%90%E7%A7%81%E6%9D%83" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713877.html&t=%E7%BA%A2%E6%98%9F%E8%AF%84%E8%AE%BA%EF%BD%9C%E9%AB%98%E6%A0%A1%E5%85%AC%E7%A4%BA%E5%AD%A6%E7%94%9F%E5%8F%98%E6%80%A7%E4%BF%A1%E6%81%AF%EF%BC%8C%E8%A6%81%E5%B9%B3%E8%A1%A1%E7%9F%A5%E6%83%85%E6%9D%83%E5%92%8C%E9%9A%90%E7%A7%81%E6%9D%83&d=2024-12-11&e=
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+
+
+  
+    大众知情权与个人隐私权如何平衡兼顾？
+  
+  近日，一份盖有华中科技大学同济医学院护理学院公章的公示在网上流传。据潇湘晨报报道，该公示称，护理学院一名学生向学院提交了个人基本身份信息变更申请，因进行性别重置手术缘由，申请其性别信息由男变更为女。公示中详细写明了该学生姓名、所在专业和班级和身份证号码等信息。
+  
+  一个原来的男同学突然成了“女同学”，其大学生活场景，势必会紧随性别变更而变更。比如，宿舍、如厕等等都会有所变化，而且与其在同一空间场景生活的其他人也不得不适应这种变化。及时公示其性别变更，不论是保护他人的知情权，还是维护校园秩序，避免、减少误解和冲突，都很有必要。
+  性别变更虽是个人行为，但由“他”变为“她”，又关联众人的生活权益。与其一起生活，首先是让他人知晓，保障大众知情权。事实上，该..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713877.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/713877.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/713877.html&text=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/713877.html&title=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/713877.html&title=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权&body=
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/713877.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/713877.html&title=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权&caption=
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=红星评论｜高校公示学生变性信息，要平衡知情权和隐私权&url=https://chinadigitaltimes.net/chinese/713877.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>红星评论｜高校公示学生变性信息，要平衡知情权和隐私权</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/713877.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713877.html&t=%E7%BA%A2%E6%98%9F%E8%AF%84%E8%AE%BA%EF%BD%9C%E9%AB%98%E6%A0%A1%E5%85%AC%E7%A4%BA%E5%AD%A6%E7%94%9F%E5%8F%98%E6%80%A7%E4%BF%A1%E6%81%AF%EF%BC%8C%E8%A6%81%E5%B9%B3%E8%A1%A1%E7%9F%A5%E6%83%85%E6%9D%83%E5%92%8C%E9%9A%90%E7%A7%81%E6%9D%83&d=2024-12-11&e=
+红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+——
+
+
+  
+    大众知情权与个人隐私权如何平衡兼顾？
+  
+  近日，一份盖有华中科技大学同济医学院护理学院公章的公示在网上流传。据潇湘晨报报道，该公示称，护理学院一名学生向学院提交了个人基本身份信息变更申请，因进行性别重置手术缘由，申请其性别信息由男变更为女。公示中详细写明了该学生姓名、所在专业和班级和身份证号码等信息。
+  
+  一个原来的男同学突然成了“女同学”，其大学生活场景，势必会紧随性别变更而变更。比如，宿舍、如厕等等都会有所变化，而且与其在同一空间场景生活的其他人也不得不适应这种变化。及时公示其性别变更，不论是保护他人的知情权，还是维护校园秩序，避免、减少误解和冲突，都很有必要。
+  性别变更虽是个人行为，但由“他”变为“她”，又关联众人的生活权益。与其一起生活，首先是让他人知晓，保障大众知情权。事实上，该..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713877.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733936423000-->
+<p><a href="https://chinadigitaltimes.net/chinese/713877.html">红星评论｜高校公示学生变性信息，要平衡知情权和隐私权</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/713877.html" title="红星评论｜高校公示学生变性信息，要平衡知情权和隐私权" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/01/w1376h5504fitscale-down-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <blockquote>
+    <p>大众知情权与个人隐私权如何平衡兼顾？</p>
+  </blockquote>
+  <p>近日，一份盖有华中科技大学同济医学院护理学院公章的公示在网上流传。据潇湘晨报报道，该公示称，护理学院一名学生向学院提交了个人基本身份信息变更申请，因进行性别重置手术缘由，申请其性别信息由男变更为女。公示中详细写明了该学生姓名、所在专业和班级和身份证号码等信息。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/post-713877-67599ed0d37b5.png" alt="img" /></p>
+  <p>一个原来的男同学突然成了“女同学”，其大学生活场景，势必会紧随性别变更而变更。比如，宿舍、如厕等等都会有所变化，而且与其在同一空间场景生活的其他人也不得不适应这种变化。及时公示其性别变更，不论是保护他人的知情权，还是维护校园秩序，避免、减少误解和冲突，都很有必要。</p>
+  <p>性别变更虽是个人行为，但由“他”变为“她”，又关联众人的生活权益。与其一起生活，首先是让他人知晓，保障大众知情权。事实上，该学生申请性别信息变更，正是想以变更后的新身份，重新融入学校生活。显而易见，是希望通过性别变更申请，让更多同学适应其新身份带来的一系列生活变化。</p>
+  <p>但性别变更信息的公示，又事关当事人的个人隐私，也理应得到保护。大众知情权与个人隐私权如何平衡兼顾？</p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>高校公示学生变性信息，要平衡知情权和隐私权<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/红星新闻" target="_blank">彭志强</a><br /><strong>发表日期：</strong>2024.12.11<br /><strong>来源：</strong><a href="https://web.archive.org/web/20241211141816/https://mp.weixin.qq.com/s/VQThh6Vl1YNdmBpkYgszPw" target="_blank">微信公众号“红星评论”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/LGBTQ" target="_blank"> LGBTQ</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E8%AF%9D%E8%AF%AD%E9%A6%86" target="_blank" rel="noopener">话语馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>从报道看，涉事学校的这份公示，详细写明了该学生姓名、所在专业和班级和身份证号码等个人敏感信息。虽是纸质，但也避免不了被拍照，在公共平台广而告之，存在被不当使用的风险。不少网友认为，此举严重侵犯了该学生的个人隐私权，担心这样的公示会导致个人信息被滥用，从而引发更难以预料的后果。</p>
+  <p>这样的担心，不是没有道理。尽管该学生申请性别信息变更，可能已做好一定的心理准备，但其承受能力也有一个范围。至少在上学期间，这个范围是限于校内，而非全网全社会。</p>
+  <p>为何要进行如此详细的公示，基于哪些相关规定，涉事学校相关负责人表示，此事涉及学工和教务，“目前我也没有得到这个相关的授权，具体情况我也不太清楚。”这样的说法显然无法回应公众关切。</p>
+  <p>出于程序上的必要，公示学生性别变更信息，既需要一定范围的公开透明，充分保障大众知情权，也需要在更大范围通盘考虑，采取必要的手段规避敏感信息被泄露，切实保护学生的个人隐私。</p>
+  <p>此事也提醒更多学校，在公示类似学生的个人信息时，要谨慎为之。既要保证公众的知情权和公示的真实性，又要兼顾学生的个人隐私权。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E5%B9%B4%E7%BB%88%E4%B8%93%E9%A2%98-13%E6%9D%A1%E7%94%9F%E5%91%BD%E6%8D%A2%E4%B8%8D%E6%9D%A51%E6%9D%A1%E7%83%AD%E6%90%9C-2024%E5%B9%B4%E5%BA%A6-%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD">
+          【年终专题】“13条生命换不来1条热搜”……2024年度“每日一语”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3">
+          Lola｜历史的唯一出口
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86">
+          【朋友圈】山西和顺县“收留”女硕士事件时间线整理
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E5%90%BE%E6%88%91%E4%BA%94%E6%9C%A8-%E5%85%B3%E4%BA%8E%E5%A5%B3%E7%A1%95%E5%A3%AB%E8%A2%AB-%E6%94%B6%E7%95%99-%E5%87%A0%E7%82%B9%E7%96%91%E9%97%AE%E4%B8%8E%E4%B8%80%E5%B0%81%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%94%B3%E8%AF%B7">
+          吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-11/%E5%8F%B0%E6%B9%BE%E8%A6%81%E6%B1%82%E5%8C%97%E4%BA%AC%E5%81%9C%E6%AD%A2%E5%AF%B9%E5%8F%B0%E5%86%9B%E4%BA%8B%E6%81%AB%E5%90%93%E5%92%8C%E4%B8%80%E5%88%87%E5%8D%B1%E5%AE%B3%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%B9%B3%E7%A8%B3%E5%AE%9A%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7%E8%A1%8C%E4%B8%BA">
+            前一篇：台湾要求北京停止对台军事恫吓和一切危害区域和平稳定的非理性行为
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3">
+            后一篇：Lola｜历史的唯一出口
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/%E5%8F%B0%E6%B9%BE%E8%A6%81%E6%B1%82%E5%8C%97%E4%BA%AC%E5%81%9C%E6%AD%A2%E5%AF%B9%E5%8F%B0%E5%86%9B%E4%BA%8B%E6%81%AB%E5%90%93%E5%92%8C%E4%B8%80%E5%88%87%E5%8D%B1%E5%AE%B3%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%B9%B3%E7%A8%B3%E5%AE%9A%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7%E8%A1%8C%E4%B8%BA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-11/%E5%8F%B0%E6%B9%BE%E8%A6%81%E6%B1%82%E5%8C%97%E4%BA%AC%E5%81%9C%E6%AD%A2%E5%AF%B9%E5%8F%B0%E5%86%9B%E4%BA%8B%E6%81%AB%E5%90%93%E5%92%8C%E4%B8%80%E5%88%87%E5%8D%B1%E5%AE%B3%E5%8C%BA%E5%9F%9F%E5%92%8C%E5%B9%B3%E7%A8%B3%E5%AE%9A%E7%9A%84%E9%9D%9E%E7%90%86%E6%80%A7%E8%A1%8C%E4%B8%BA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-11/Lola-%E5%8E%86%E5%8F%B2%E7%9A%84%E5%94%AF%E4%B8%80%E5%87%BA%E5%8F%A3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

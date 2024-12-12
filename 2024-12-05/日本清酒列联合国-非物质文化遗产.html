@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>日本清酒列联合国“非物质文化遗产” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+日本清酒列联合国“非物质文化遗产”
+——
+" />
+    <meta property="og:description" content="
+日本清酒列联合国“非物质文化遗产”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="日本清酒列联合国“非物质文化遗产”" />
+    <meta property="twitter:title" content="日本清酒列联合国“非物质文化遗产”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5408)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%2597%25A5%25E6%259C%25AC%25E6%25B8%2585%25E9%2585%2592%25E5%2588%2597%25E8%2581%2594%25E5%2590%2588%25E5%259B%25BD%25E2%2580%259C%25E9%259D%259E%25E7%2589%25A9%25E8%25B4%25A8%25E6%2596%2587%25E5%258C%2596%25E9%2581%2597%25E4%25BA%25A7%25E2%2580%259D%2Fa-70968130&t=%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%2597%25A5%25E6%259C%25AC%25E6%25B8%2585%25E9%2585%2592%25E5%2588%2597%25E8%2581%2594%25E5%2590%2588%25E5%259B%25BD%25E2%2580%259C%25E9%259D%259E%25E7%2589%25A9%25E8%25B4%25A8%25E6%2596%2587%25E5%258C%2596%25E9%2581%2597%25E4%25BA%25A7%25E2%2580%259D%2Fa-70968130&t=%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D&d=2024-12-05&e=
+日本清酒列联合国“非物质文化遗产”
+——
+
+
+  
+2024-12-05T10:10:14.394Z
+  
+  
+
+  
+  （德国之声中文网）周三（12月11日）联合国教科文组织（UNESCO）将日本清酒（Sake）列入其“人类非物质文化遗产”名录。
+  日本驻联合国教科文组织大使加纳雄大表示：“这对日本和日本人民意义重大，这将有助于重新唤起人们对传统清酒酿造的兴趣。”
+  日本代表团指出，联合国教科文组织的认可不仅体现了制作高品质清酒的技艺知识，也赞颂了一项可追溯到约1000年前的传统。在日本11世纪著名小说《源氏物语》中，清酒是高雅的平安宫廷的首选饮品。
+  相关图集：2023世界遗产 普洱茶林、波斯驿站入选
+  
+比利时和法国的第一次世界大战纪念地点：联合国教科文组织将一战时期西部战线的各个纪念地点列入其世界遗产名录中。1914年至1918年间，盟军在此与德国军队发生过冲突..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%2597%25A5%25E6%259C%25AC%25E6%25B8%2585%25E9%2585%2592%25E5%2588%2597%25E8%2581%2594%25E5%2590%2588%25E5%259B%25BD%25E2%2580%259C%25E9%259D%259E%25E7%2589%25A9%25E8%25B4%25A8%25E6%2596%2587%25E5%258C%2596%25E9%2581%2597%25E4%25BA%25A7%25E2%2580%259D%2Fa-70968130" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130&text=日本清酒列联合国“非物质文化遗产”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130&title=日本清酒列联合国“非物质文化遗产”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130&title=日本清酒列联合国“非物质文化遗产”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=日本清酒列联合国“非物质文化遗产”&body=
+日本清酒列联合国“非物质文化遗产”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130&title=日本清酒列联合国“非物质文化遗产”&caption=
+日本清酒列联合国“非物质文化遗产”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=日本清酒列联合国“非物质文化遗产”&url=https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>日本清酒列联合国“非物质文化遗产”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%2597%25A5%25E6%259C%25AC%25E6%25B8%2585%25E9%2585%2592%25E5%2588%2597%25E8%2581%2594%25E5%2590%2588%25E5%259B%25BD%25E2%2580%259C%25E9%259D%259E%25E7%2589%25A9%25E8%25B4%25A8%25E6%2596%2587%25E5%258C%2596%25E9%2581%2597%25E4%25BA%25A7%25E2%2580%259D%2Fa-70968130&t=%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D&d=2024-12-05&e=
+日本清酒列联合国“非物质文化遗产”
+——
+
+
+  
+2024-12-05T10:10:14.394Z
+  
+  
+
+  
+  （德国之声中文网）周三（12月11日）联合国教科文组织（UNESCO）将日本清酒（Sake）列入其“人类非物质文化遗产”名录。
+  日本驻联合国教科文组织大使加纳雄大表示：“这对日本和日本人民意义重大，这将有助于重新唤起人们对传统清酒酿造的兴趣。”
+  日本代表团指出，联合国教科文组织的认可不仅体现了制作高品质清酒的技艺知识，也赞颂了一项可追溯到约1000年前的传统。在日本11世纪著名小说《源氏物语》中，清酒是高雅的平安宫廷的首选饮品。
+  相关图集：2023世界遗产 普洱茶林、波斯驿站入选
+  
+比利时和法国的第一次世界大战纪念地点：联合国教科文组织将一战时期西部战线的各个纪念地点列入其世界遗产名录中。1914年至1918年间，盟军在此与德国军队发生过冲突..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%2597%25A5%25E6%259C%25AC%25E6%25B8%2585%25E9%2585%2592%25E5%2588%2597%25E8%2581%2594%25E5%2590%2588%25E5%259B%25BD%25E2%2580%259C%25E9%259D%259E%25E7%2589%25A9%25E8%25B4%25A8%25E6%2596%2587%25E5%258C%2596%25E9%2581%2597%25E4%25BA%25A7%25E2%2580%259D%2Fa-70968130" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733393824000-->
+<p><a href="https://www.dw.com/zh/%E6%97%A5%E6%9C%AC%E6%B8%85%E9%85%92%E5%88%97%E8%81%94%E5%90%88%E5%9B%BD%E2%80%9C%E9%9D%9E%E7%89%A9%E8%B4%A8%E6%96%87%E5%8C%96%E9%81%97%E4%BA%A7%E2%80%9D/a-70968130">日本清酒列联合国“非物质文化遗产”</a>
+——</p>
+
+<div>
+  <div>
+<em><br />2024-12-05T10:10:14.394Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/65509554_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>（德国之声中文网）周三（12月11日）<span data-id="41538715" data-type="AUTO_TOPIC" title="Automatische Themenseite">联合国教科文组织（UNESCO）</span>将日本清酒（Sake）列入其“人类非物质文化遗产”名录。</p>
+  <p><span data-id="40355223" data-type="AUTO_TOPIC" title="Automatische Themenseite">日本</span>驻联合国教科文组织大使加纳雄大表示：“这对日本和日本人民意义重大，这将有助于重新唤起人们对传统清酒酿造的兴趣。”</p>
+  <p>日本代表团指出，联合国教科文组织的认可不仅体现了制作高品质清酒的技艺知识，也赞颂了一项可追溯到约1000年前的传统。在日本11世纪著名小说《源氏物语》中，清酒是高雅的平安宫廷的首选饮品。</p>
+  <h3 id="section">相关图集：2023世界遗产 普洱茶林、波斯驿站入选</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66881050_303.jpg" width="100%" /><strong>比利时和法国的第一次世界大战纪念地点</strong>：联合国教科文组织将一战时期西部战线的各个纪念地点列入其世界遗产名录中。1914年至1918年间，盟军在此与德国军队发生过冲突。这些遗址从比利时北部一直延伸到法国东部，其中包括埋葬着不同国籍士兵的大型墓地和规模较小的墓园。图中是位于比利时佐内贝克的泰恩科特（Tyne Cot）英联邦公墓。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66875610_303.jpg" width="100%" /><strong>卢旺达的4座种族灭绝纪念园区</strong>：1994年卢旺达针对图西族（Tutsi）的种族灭绝事件造成约80万至100万人死亡，全国各地分布着多个纪念场所以纪念这些可怕的罪行。如今，尼亚马塔、穆拉比、比塞塞罗和吉索齐纪念遗址被列入世界遗产名录。图中位于吉索齐的基加利种族灭绝纪念园区便是约25万名受害者的最后安息之地。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740287_303.jpg" width="100%" /><strong>印度的曷萨拉寺庙</strong>：过去曷萨拉王朝（Hoysala）在位期间建造了1500多座寺庙，如今其中仅存约100座，这些石雕的特色在于其细节丰富的工艺和结构。其中，位于卡纳塔克邦贝鲁尔的 Chennakeshava寺庙（如图）是最经典的曷萨拉建筑之一。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740344_303.jpg" width="100%" /><strong>突尼斯的杰尔巴岛</strong>：在古代，杰尔巴岛（Djerba）是北非最重要的海港。几个世纪以来，许多不同的民族和文化在岛上留下了自己的印记。包含梅宁克斯古城的考古遗址、埃尔格里巴犹太教堂和许多美丽的清真寺都体现了这种文化的多样性。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740314_303.jpg" width="100%" /><strong>丹麦的维京环形堡垒</strong>：维京时代的五座环形堡垒历史可以追溯到10世纪，是应国王蓝牙哈拉尔（Harald "Bluetooth" Gormsson）的指示而建立的。令人印象深刻的对称结构除了具有防御目的，也同时是力量的展示。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66686832_303.jpg" width="100%" /><strong>德国埃尔福特的中世纪犹太遗产</strong>：在中世纪时期，埃尔福特是一个繁荣的犹太社区所在地。众多的建筑物和文物见证了这段丰富的历史，其中包括该市的旧犹太会堂，部分历史可追溯至11世纪。它被认为是欧洲最古老、最大、保存最完好的中世纪犹太会堂之一。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740256_303.jpg" width="100%" /><strong>韩国的伽倻古墓群</strong>：如今的韩国洛东江流域周围在公元42年到532年由伽倻（Gaya）联盟掌控，时至今日仍存有数百座伽倻时代的古墓。后人透过墓中出土的土器、铁器、饰品等文物了解当时的历史文化。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740334_303.jpg" width="100%" /><strong>危地马拉的阿巴赫·塔卡利克遗址</strong>：危地马拉的阿巴赫·塔卡利克（Takalik Abaj）曾经是玛雅贸易中心。在这里能找到可追溯至公元前九世纪的玛雅和奥尔梅克文化遗迹，包括寺庙遗址、刻有复杂铭文的巨石、雕塑等。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66740257_303.jpg" width="100%" /><strong>西班牙梅诺卡岛的巨石纪念碑</strong>：塔拉约特（Talayot）文化的大型石碑散布在西班牙梅诺卡岛（Menorca）上。这些令人印象深刻的铁器时代巨石遗址是考古学家的宝库，也吸引了大量游客。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862731_303.jpg" width="100%" /><strong>中国的普洱景迈山古茶林</strong>：联合国教科文组织称，位於雲南普洱的景迈山古茶林拥有千年的特殊文化景观，包括与古茶树生长密切相关的森林生态系统培育、原生态民族村落和丰富的民俗文化。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862644_303.jpg" width="100%" /><strong>加拿大的克朗代克地区</strong>：位于加拿大西北部的克朗代克地区（Trondeck-Klondige）在世界遗产名录上获得了一席之地。除了自然美景之外，这个育空河（Yukon）沿岸的地区还反映了原住民与19世纪末克朗代克淘金热造成前所未有变化的抗争历史。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862656_303.jpg" width="100%" /><strong>法国尼姆的方形神殿</strong>：方形神殿（Maison Carrée）建于公元1世纪，位于当时罗马殖民地内马苏斯（Nemausus，今法国尼姆）。它是与皇室崇拜有关的早期罗马神庙典范，其建筑和精致的装饰象征性地传达了罗马帝国的开国君主奥古斯都的思想意識。他将古罗马从共和国过渡到帝国，开启了一个被称为「罗马治世」（Pax Romana）的新黄金时代。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66743027_303.jpg" width="100%" /><strong>埃塞俄比亚的巴莱山国家公园</strong>：埃塞俄比亚南部雄伟的巴莱山脉（Bale Mountains）拥有丰富的生物多样性、错综复杂的洞穴系统和天然热带常绿林哈伦纳森林。访客很容易能在这个地区发现独特的鸟类和哺乳动物。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862668_303.jpg" width="100%" /><strong>俄罗斯的喀山联邦大学天文台</strong>：位于喀山联邦大学的喀山市天文台（Kazan Observatorium）建于1837年，其建筑和历史悠久的天文仪器是从古典天文学向现代天体物理学过渡的见证。这个被列为世界遗产的天文台分布在两个地点：喀山的市中心以及进行天文观测的市郊森林区。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862719_303.jpg" width="100%" /><strong>柬埔寨贡开的考古遗址</strong>：联合国教科文组织称，柬埔寨的贡开（Koh Ker）考古遗址是一个神圣的城市建筑群，拥有众多寺庙和圣所，以及雕塑、铭文、壁画和考古遗迹。这个寺庙建筑群建于10世纪，在928年至944年吴哥王朝期间曾是首都。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66862709_303.jpg" width="100%" /><strong>伊朗的波斯商队驿站</strong>：波斯商队驿站（Caravanserai）在过去为旅人提供住宿、歇息和照料牲口等服务，联合国教科文组织提到，这些驿站历经多个世纪而建成，为「商队、朝圣者和其他旅行者提供了住所、食物和水」。它们的位置绵延数千公里，取决于水资源、地理和安全等条件。
+  </div>
+  <p>加纳雄大表示：“清酒被认为是一种神圣的礼物，对于日本的社会和文化活动至关重要。”</p>
+  <p>米是这种酒类产品的关键。要被归类为日本清酒，其原料米必须是日本米。</p>
+  <p>日本的酿酒厂怀抱希望，认为列入名录可能会促进该国的出口经济，因为随着世界尤其是美国对日本美食的兴趣日益浓厚，清酒的受欢迎程度正在上升。根据日本酒造组合中央会（JSS）的数据，清酒出口量每年超过2.65亿美元，主要出口到美国和中国。</p>
+  <p>除了清酒外，在巴拉圭卢克举行的会议上，<a href="https://api.dw.com/api/detail/article/65893089" rel="ArticleRef">联合国教科文组织</a>保护人类文化遗产委员会的成员投票表决，将包括巴西白乳酪、加勒比海木薯面包和巴勒斯坦橄榄油皂在内的45种文化习俗和产品列入名录。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/68330266_303.jpg" width="100%" />  <div>
+<small style="color: #999;">UNESCO表示，在中国，春节标志着新年的开始，“为中国民众提供了认同感和持续感”（图为北京地坛公园的春节灯笼装饰）</small>
+  </div>
+  <p>中国的“春节”也申遗成功。联合国教科文组织表示，在中国，春节标志着新年的开始，“该遗产项目为中国民众提供了认同感和持续感。”</p>
+  <p>迄今，包括京剧、中国剪纸、24节气在内，中国共有44个项目列入UNESCO非物质文化遗产名录、名册，总数世界第一。</p>
+  <p>（美联社等）</p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+  <h3 id="section-1">相关图集：德国境内的世界文化遗产</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/47175842_303.jpg" width="100%" /><strong>巴特基辛根疗养公园</strong>：2021年，德国有三处疗养胜地被选入“欧洲温泉疗养胜地”（Great Spas of Europe）。它们分别位于巴登巴登（Baden Baden），巴特埃姆斯（Bad Ems）和巴特基辛根（Bad Kissingen）。那里的气候条件宜人，治疗性温泉疗效显著，深受宾客的喜爱。其中巴特基辛根疗养公园1911年就开始营业了。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58262748_303.jpg" width="100%" /><strong>达姆施塔特的玛蒂尔德高地</strong>：黑森末代大公恩斯特·路德维希（Großherzog Ernst Ludwig）在1899年建立了达姆施塔特艺术家营地。23位艺术家花费16年的时间创造了一个由青年派（Jugendstil）建筑、俄罗斯小教堂、雕塑花园和喷泉组成的独特建筑群。艺术家营地位于玛蒂尔德高地（Mathildenhöhe），这一营地在2021年被评为世界文化遗产。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18562501_303.jpg" width="100%" /><strong>汉堡仓库城</strong>：这些1885年至1927年期间建造的大型仓库位于易北河上绵延超过1.1公里的一系列狭窄岛屿上。这些红砖建筑一边是水，一边是街道。现如今，汉堡的仓库城（Speicherstadt）内坐落着几家博物馆和世界上最大的铁路模型微缩景观——汉堡迷你世界。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/39813580_303.jpg" width="100%" /><strong>拜罗伊特侯爵歌剧院</strong>：1750年建造的拜罗伊特侯爵歌剧院（Das Markgräfliche Opernhaus）是巴洛克戏剧文化的一个亮点。歌剧院内部装饰由当时欧洲最主要的剧院建筑师比比亚纳（Giuseppe Galli Bibiena）设计，其华丽程度不亚于维也纳或巴黎的建筑。虽然拜罗伊特在18世纪末没落为一个无足轻重的地方性城市，但是歌剧院这座建筑却经受住时间的考验，几乎没有变化。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58240734_303.jpg" width="100%" /><strong>科隆大教堂</strong>：科隆大教堂（Kölner Dom）是德国最知名的风景名胜之一。大教堂1248年奠基，当时是为所谓的东方三贤士的遗骨创造一个庄严的环境。大教堂直到1880年才完工建成。拿破仑的士兵曾把它当作马厩。科隆人热爱他们的大教堂，有无数的歌曲都是为它谱写的。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56726930_303.jpg" width="100%" /><strong>包豪斯</strong>：创立于魏玛时期的包豪斯艺术和建筑学院给世界艺术及建筑设计的思维及工作方式掀起了一场革命。包豪斯创办人沃尔特·格罗皮乌斯（Walter Gropius）和他的同事们的建筑创造了一种新的造形语言，决定性地塑造了20世纪的建筑和艺术。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/49253390_303.jpg" width="100%" /><strong>雷根斯堡</strong>：歌德曾经写过："雷根斯堡（Regensburg）的地理位置非常好。这座城市会影响一片地区"。在中世纪，雷根斯堡是神圣罗马帝国的一个政治中心，也是欧洲中心地带繁荣的贸易中心。2006年，雷根斯堡以其多瑙河畔保存完整的中世纪老城得以在世界遗产名录中占有一席之地。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16064818_303.jpg" width="100%" /><strong>修道院之岛赖兴瑙</strong>：公元724年，苦行僧皮尔名（Pirmin）在“富饶的草地”建起一座修道院。这座本笃会修道院在800至1100年间发展成为神圣罗马帝国的一个知识和文化中心。在赖兴瑙岛（Reichenau）上有三座9至11世纪建造的罗曼式建筑风格的教堂可供参观。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56081753_303.jpg" width="100%" /><strong>瓦尔特堡</strong>：瓦尔特堡（Wartburg）位于图林根。当年萨克森选帝侯腓特烈三世（Friedrich III der Weise）在宗教改革者马丁·路德受到通缉后，将其藏在瓦尔特堡的城堡中。也正是在这里马丁·路德将圣经翻译成德语。据说马丁·路德还向魔鬼扔过墨水瓶。1999年瓦尔特堡被评为世界文化遗产。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/51740631_303.jpg" width="100%" /><strong>奎德林堡</strong>：奎德林堡（Quedlinburg）拥有1300多座保存完好、先后建于800多年间的木桁架结构房屋。这个位于哈尔茨山脚下的小城如今已不为人知，但在中世纪，它是一个重要的政治中心，居民富庶。从城堡山上往下看，尖尖的房顶和无数塔楼就像是一座弯弯曲曲的迷宫。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/16023888_303.jpg" width="100%" /><strong>特里尔</strong>：有些看法认为，特里尔（Trier）是德国最古老的城市。公元前16年，古罗马人建立了特里尔城，这里逐渐发展为古罗马帝国最大和最重要的城市之一。公元2世纪修建的尼格拉城门（Porta Nigra，又称黑城门）成为特里尔标志性的建筑物，1986年与特里尔其他古罗马遗址及大教堂一起被联合国教科文组织指定为世界文化遗产。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/19166261_303.jpg" width="100%" /><strong>瓦登海</strong>：位于丹麦、德国和荷兰北海海岸的瓦登海（Wattenmeer，也称北海浅滩）在2009年被联合国教科文组织评为世界自然遗产。这个世界上最大的连片泥滩和沙地是1万多种动物和植物的家园，也是每年数百万候鸟的中转站。
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E5%B0%B9%E9%94%A1%E6%82%A6%E9%9D%A2%E4%B8%B4%E5%9B%BD%E4%BC%9A%E5%BC%B9%E5%8A%BE-%E6%89%A7%E6%94%BF%E5%85%9A%E7%A7%B0%E4%BB%8D%E5%B0%86%E5%8A%9B%E6%8C%BA%E6%80%BB%E7%BB%9F">
+          尹锡悦面临国会弹劾 执政党称仍将力挺总统
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E5%8F%B2%E4%B8%8A%E6%9C%80%E7%9F%AD%E5%91%BD-%E6%B3%95%E5%9B%BD%E5%B7%B4%E5%B0%BC%E8%80%B6%E6%94%BF%E5%BA%9C%E8%A2%AB%E6%8E%A8%E7%BF%BB">
+          史上最短命：法国巴尼耶政府被推翻
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-04</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-04/%E5%B0%B9%E9%94%A1%E6%82%A6%E8%AF%AF%E5%88%A4%E6%9D%83%E5%8A%9B%E5%BC%95%E5%8F%91%E5%8A%A8%E8%8D%A1-%E9%9F%A9%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%8F%8A%E5%9B%BD%E9%99%85%E5%9C%B0%E4%BD%8D%E5%8F%97%E5%86%B2%E5%87%BB">
+          尹锡悦误判权力引发动荡  韩国经济及国际地位受冲击
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-04</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-04/%E5%B0%B9%E9%94%A1%E6%82%A6%E8%AF%AF%E5%88%A4%E6%9D%83%E5%8A%9B%E5%BC%95%E5%8F%91%E6%94%BF%E6%B2%BB%E5%8A%A8%E8%8D%A1-%E9%9F%A9%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%8F%8A%E5%9B%BD%E9%99%85%E5%9C%B0%E4%BD%8D%E9%81%AD%E5%8F%97%E5%86%B2%E5%87%BB">
+          尹锡悦误判权力引发政治动荡  韩国经济及国际地位遭受冲击
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-05/Google-DeepMind-%E7%A7%B0%E5%85%B6%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5%E6%A8%A1%E5%9E%8B-GenCast-%E6%AF%94%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E6%9B%B4%E5%87%86%E7%A1%AE">
+            前一篇：Google DeepMind 称其天气预报模型 GenCast 比传统方法更准确
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%8E%E5%B9%B4%E5%85%A8%E7%90%83%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%95%E8%B5%84%E5%B0%86-1.5-%E5%80%8D%E4%BA%8E%E9%98%BF%E6%B3%A2%E7%BD%97%E8%AE%A1%E5%88%92">
+            后一篇：明年全球云计算投资将 1.5 倍于阿波罗计划
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/Google-DeepMind-%E7%A7%B0%E5%85%B6%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5%E6%A8%A1%E5%9E%8B-GenCast-%E6%AF%94%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E6%9B%B4%E5%87%86%E7%A1%AE'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E6%98%8E%E5%B9%B4%E5%85%A8%E7%90%83%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%95%E8%B5%84%E5%B0%86-1.5-%E5%80%8D%E4%BA%8E%E9%98%BF%E6%B3%A2%E7%BD%97%E8%AE%A1%E5%88%92'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E5%8F%B2%E4%B8%8A%E6%9C%80%E7%9F%AD%E5%91%BD-%E6%B3%95%E5%9B%BD%E5%B7%B4%E5%B0%BC%E8%80%B6%E6%94%BF%E5%BA%9C%E8%A2%AB%E6%8E%A8%E7%BF%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-04/%E5%B0%B9%E9%94%A1%E6%82%A6%E8%AF%AF%E5%88%A4%E6%9D%83%E5%8A%9B%E5%BC%95%E5%8F%91%E5%8A%A8%E8%8D%A1-%E9%9F%A9%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%8F%8A%E5%9B%BD%E9%99%85%E5%9C%B0%E4%BD%8D%E5%8F%97%E5%86%B2%E5%87%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-05/Google-DeepMind-%E7%A7%B0%E5%85%B6%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5%E6%A8%A1%E5%9E%8B-GenCast-%E6%AF%94%E4%BC%A0%E7%BB%9F%E6%96%B9%E6%B3%95%E6%9B%B4%E5%87%86%E7%A1%AE">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%8E%E5%B9%B4%E5%85%A8%E7%90%83%E4%BA%91%E8%AE%A1%E7%AE%97%E6%8A%95%E8%B5%84%E5%B0%86-1.5-%E5%80%8D%E4%BA%8E%E9%98%BF%E6%B3%A2%E7%BD%97%E8%AE%A1%E5%88%92">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-05/%E5%8F%B2%E4%B8%8A%E6%9C%80%E7%9F%AD%E5%91%BD-%E6%B3%95%E5%9B%BD%E5%B7%B4%E5%B0%BC%E8%80%B6%E6%94%BF%E5%BA%9C%E8%A2%AB%E6%8E%A8%E7%BF%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-04/%E5%B0%B9%E9%94%A1%E6%82%A6%E8%AF%AF%E5%88%A4%E6%9D%83%E5%8A%9B%E5%BC%95%E5%8F%91%E5%8A%A8%E8%8D%A1-%E9%9F%A9%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%8F%8A%E5%9B%BD%E9%99%85%E5%9C%B0%E4%BD%8D%E5%8F%97%E5%86%B2%E5%87%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

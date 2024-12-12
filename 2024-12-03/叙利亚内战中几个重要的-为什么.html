@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>叙利亚内战中几个重要的“为什么” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+叙利亚内战中几个重要的“为什么”
+——
+" />
+    <meta property="og:description" content="
+叙利亚内战中几个重要的“为什么”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="叙利亚内战中几个重要的“为什么”" />
+    <meta property="twitter:title" content="叙利亚内战中几个重要的“为什么”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5408)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258F%2599%25E5%2588%25A9%25E4%25BA%259A%25E5%2586%2585%25E6%2588%2598%25E4%25B8%25AD%25E5%2587%25A0%25E4%25B8%25AA%25E9%2587%258D%25E8%25A6%2581%25E7%259A%2584%25E2%2580%259C%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E2%2580%259D%2Fa-70947651&t=%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258F%2599%25E5%2588%25A9%25E4%25BA%259A%25E5%2586%2585%25E6%2588%2598%25E4%25B8%25AD%25E5%2587%25A0%25E4%25B8%25AA%25E9%2587%258D%25E8%25A6%2581%25E7%259A%2584%25E2%2580%259C%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E2%2580%259D%2Fa-70947651&t=%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D&d=2024-12-03&e=
+叙利亚内战中几个重要的“为什么”
+——
+
+
+  
+Jennifer Holleis2024-12-03T13:35:54.873Z
+  
+  
+战火中的阿勒颇城区
+  
+  （德国之声中文网）上周末，在叛军武装出其不意地攻占了阿勒颇的大部分地区后，俄罗斯和叙利亚战机对这座叙利亚第二大城市的郊区进行了轰炸。
+  这场战斗的爆发结束了叙利亚内战相对平静的四年时间。
+  目前的战况如何？
+  周三（11月27日），伊斯兰主义武装组织沙姆解放组织（Hayat Tahrir al-Sham，简称HTS）对总统阿萨德（Bashar Assad）领导的政府军发起了突然袭击。
+  周五，在沙姆解放组织的领导下，亲土耳其叛军成功占领了阿勒颇以及周边数十个村庄。
+  据报道，他们的下一个目标是攻占哈马（Hama）市。
+  国际危机组织叙利亚分析师娜娜尔·哈瓦奇（Nanar Hawach）向德国之声表示..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258F%2599%25E5%2588%25A9%25E4%25BA%259A%25E5%2586%2585%25E6%2588%2598%25E4%25B8%25AD%25E5%2587%25A0%25E4%25B8%25AA%25E9%2587%258D%25E8%25A6%2581%25E7%259A%2584%25E2%2580%259C%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E2%2580%259D%2Fa-70947651" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651&text=叙利亚内战中几个重要的“为什么”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651&title=叙利亚内战中几个重要的“为什么”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651&title=叙利亚内战中几个重要的“为什么”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=叙利亚内战中几个重要的“为什么”&body=
+叙利亚内战中几个重要的“为什么”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651&title=叙利亚内战中几个重要的“为什么”&caption=
+叙利亚内战中几个重要的“为什么”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=叙利亚内战中几个重要的“为什么”&url=https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>叙利亚内战中几个重要的“为什么”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-03
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258F%2599%25E5%2588%25A9%25E4%25BA%259A%25E5%2586%2585%25E6%2588%2598%25E4%25B8%25AD%25E5%2587%25A0%25E4%25B8%25AA%25E9%2587%258D%25E8%25A6%2581%25E7%259A%2584%25E2%2580%259C%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E2%2580%259D%2Fa-70947651&t=%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D&d=2024-12-03&e=
+叙利亚内战中几个重要的“为什么”
+——
+
+
+  
+Jennifer Holleis2024-12-03T13:35:54.873Z
+  
+  
+战火中的阿勒颇城区
+  
+  （德国之声中文网）上周末，在叛军武装出其不意地攻占了阿勒颇的大部分地区后，俄罗斯和叙利亚战机对这座叙利亚第二大城市的郊区进行了轰炸。
+  这场战斗的爆发结束了叙利亚内战相对平静的四年时间。
+  目前的战况如何？
+  周三（11月27日），伊斯兰主义武装组织沙姆解放组织（Hayat Tahrir al-Sham，简称HTS）对总统阿萨德（Bashar Assad）领导的政府军发起了突然袭击。
+  周五，在沙姆解放组织的领导下，亲土耳其叛军成功占领了阿勒颇以及周边数十个村庄。
+  据报道，他们的下一个目标是攻占哈马（Hama）市。
+  国际危机组织叙利亚分析师娜娜尔·哈瓦奇（Nanar Hawach）向德国之声表示..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258F%2599%25E5%2588%25A9%25E4%25BA%259A%25E5%2586%2585%25E6%2588%2598%25E4%25B8%25AD%25E5%2587%25A0%25E4%25B8%25AA%25E9%2587%258D%25E8%25A6%2581%25E7%259A%2584%25E2%2580%259C%25E4%25B8%25BA%25E4%25BB%2580%25E4%25B9%2588%25E2%2580%259D%2Fa-70947651" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733233624000-->
+<p><a href="https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%86%85%E6%88%98%E4%B8%AD%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E2%80%9C%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9D/a-70947651">叙利亚内战中几个重要的“为什么”</a>
+——</p>
+
+<div>
+  <div>
+<em>Jennifer Holleis<br />2024-12-03T13:35:54.873Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70935486_303.jpg" width="100%" />  <div>
+<small style="color: #999;">战火中的阿勒颇城区</small>
+  </div>
+  <p>（德国之声中文网）上周末，在叛军武装出其不意地攻占了阿勒颇的大部分地区后，俄罗斯和<span data-id="40349622" data-type="AUTO_TOPIC" title="Automatische Themenseite">叙利亚</span>战机对这座叙利亚第二大城市的郊区进行了轰炸。</p>
+  <p><a href="https://api.dw.com/api/detail/article/70927801" rel="ArticleRef">这场战斗的爆发</a>结束了叙利亚内战相对平静的四年时间。</p>
+  <p><strong>目前的战况如何？</strong></p>
+  <p>周三（11月27日），伊斯兰主义武装组织沙姆解放组织（Hayat Tahrir al-Sham，简称HTS）对总统<span data-id="41538679" data-type="AUTO_TOPIC" title="Automatische Themenseite">阿萨德</span>（Bashar Assad）领导的政府军发起了突然袭击。</p>
+  <p>周五，在沙姆解放组织的领导下，亲土耳其叛军成功占领了阿勒颇以及周边数十个村庄。</p>
+  <p>据报道，他们的下一个目标是攻占哈马（Hama）市。</p>
+  <p>国际危机组织叙利亚分析师娜娜尔·哈瓦奇（Nanar Hawach）向德国之声表示："周日，大量政府军增援部队抵达哈马，并开始向北推进，夺回了一些城镇和村庄。"</p>
+  <p>哈瓦奇预测，一场大规模反攻迫在眉睫，接下来的几周和几个月，叙利亚内战可能会再次进入"高强度"阶段。</p>
+  <p>争夺哈马在<span data-id="17456403" data-type="AUTO_TOPIC" title="Automatische Themenseite">内战</span>中的重要性早在 2015 年就有所显现。</p>
+  <p>自 2011年叙利亚民众开始争取民主变革以来，反对武装最初在与政府军的斗争中取得了一定进展。</p>
+  <p>然而，2015 年，在俄罗斯和伊朗加强对叙利亚政府的军事援助后，阿萨德的部队得以在哈马地区遏制住反对武装攻势。</p>
+  <p>随后几年，无数次针对反对武装的空袭帮助阿萨德政府军重新夺回了大部分先前失去的领土。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/70937862_303.jpg" width="100%" />  <div>
+<small style="color: #999;">2024年12月1日，阿勒颇战斗中反政府武装部队战士</small>
+  </div>
+  <p><strong>叙利亚有哪些反对派武装？</strong></p>
+  <p>当前发动攻势的主力是亲土耳其的沙姆解放组织。</p>
+  <p>该组织在 2018 年被美国列为外国恐怖组织，此前曾隶属于另一被美国认定为恐怖组织的基地组织（al-Qaida）。</p>
+  <p>沙姆解放组织控制着叙利亚东北部的伊德利卜（Idlib）地区，该地已成为叙利亚最后的反对武装堡垒。</p>
+  <p>根据联合国的统计，伊德利卜约有 400 万叙利亚国内流离失所的难民。</p>
+  <p>然而，沙姆解放组织领导的武装力量似乎不仅仅试图夺回阿萨德政府军控制的地区。</p>
+  <p>与此同时，叙利亚反对武装"叙利亚国民军"（Syrian National Army，简称 SNA）的一些土耳其支持派系发起了名为"自由黎明"（Dawn of Freedom）的行动，目标是叙利亚东北部的库尔德人占多数的地区。</p>
+  <p>土耳其与叙利亚北部接壤，长期反对大马士革政府，并经常袭击库尔德自治区，同时将叙利亚民主力量（Syrian Democratic Forces，简称 SDF）等组织贴上"恐怖主义"标签。</p>
+  <h3 id="section">相关图集：叙利亚十年战争</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862116_303.jpg" width="100%" /><strong>在拉卡（Rakka）的破碎记忆</strong>：2019年，拉卡，一位妇女推着婴儿车穿过被摧毁的城市。摄影师哈马姆（Abood Hamam）说："2017年，我开始拍摄我的家乡。这里的每个角落都有我的回忆。他们摧毁了所有这一切。我的照片总有一天会成为历史文献。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862043_303.jpg" width="100%" /><strong>一幅画面，无尽伤痛</strong>：2020年，伊德利卜（Idlib）：两个儿子痛悼被炸死的母亲。战争开始时，摄影师阿尔赛义德（Ghaith Alsayed）本人只有17岁。他的兄弟也在一次爆炸中丧生。他说："当我拍下这张照片的时候，我兄弟被炸死时的所有恐怖感重现心中，我突然也哭了"。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862024_303.jpg" width="100%" /><strong>迷失在瓦砾中</strong>：比尼什（Binish），2020年4月，一位妇女牵着她的女儿。在扎耶特（Mohannad Zayat）的照片中，她们犹如废墟荒漠中的渺小生物。她们想在一所被毁的学校里找到栖身之所。这是一个危险的避难所，但聊胜于无。附近的流离失所者营地，已无空置帐篷。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862012_303.jpg" width="100%" /><strong>从弹坑里喝水</strong>：2013年6月，阿勒颇（Aleppo）：一处水管在一次袭击中被毁。这个男孩立刻从满满的弹坑里喝水。摄影师萨尔曼（Muzzafar Salman）："那时，有人说这照片不真实。还说，我该给孩子干净水。但我认为，要想改变现实，首先就要展示现实。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862000_303.jpg" width="100%" /><strong>逃离古塔（ Ghouta）</strong>：2018年3月，逃离古塔，一男子用行李箱装着孩子前往该通向自由之路的出口。摄影师萨纳迪基（Omar Sanadiki）写道："毕竟，叙利亚战争不仅改变了这个国家。它也改变了我们—— 如何看待人民，如何拍摄照片，以向世界传递人道主义信息。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862091_303.jpg" width="100%" /><strong>生存下去 坚持下去</strong>：2017年，大马士革郊区：穆罕默德（Umm Mohammed）和丈夫坐在被摧毁的房子里 —— 仿佛什么都没有发生。摄影师杜米（Sameer Al-Doumy）说："这个女人是我遇到的印象最深刻的人之一。她受重伤，不久之后，她丈夫也受了重伤。她留在家里照料丈夫。在我看来，她的韧性反映了叙利亚人的真实面貌。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56861988_303.jpg" width="100%" /><strong>母亲痛悼儿子</strong>：2017年，达拉（Daraa）地区。这一年的开斋节没什么值得庆祝的。摄影师阿巴兹德（Mohamad Abazeed）讲述道："2017年，我陪同这名女子在开斋节第一天去看望她儿子的坟墓。其间，我自己也哭了，但我拭去眼泪，以便还能拍照。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862873_303.jpg" width="100%" /><strong>轮椅上的童年</strong>：2013年12月，大马士革。五岁的阿雅在轮椅上等侯父亲为她做饭。在去学校的路上，一发炮弹击中了她。她告诉说："那天我穿棕色的鞋子。先看到鞋子在空中飞过，然后看到，我的腿也跟着飞了起来。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862079_303.jpg" width="100%" /><strong>叙利亚特技演员</strong>：阿勒颇附近的卡弗尔诺兰镇（Kafr Nouran）。叙利亚田径运动员们把废墟变成了一个大胆的杂技训练场所。阿纳斯-阿尔卡布特利（Anas Alkharboutli）的照片显示：即使在混凝土废墟中，也能从事极限运动和特技运动。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862069_303.jpg" width="100%" /><strong>希望有一个新的开始</strong>：2020年，停火协议签署后，这家人回到伊德利卜南部的家中。苏莱曼（Ali Haj Suleiman）拍这张照片时，心情很复杂："我为这些人能重返家乡感到高兴。同时又很伤感，因为我自己也流离失所——回不去了。"
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/56862104_303.jpg" width="100%" /><strong>古罗马遗产</strong>：这也是战火中的叙利亚：位于德拉地区的博斯拉古罗马圆形剧场，2018年被一场暴雨浸泡。（注：本图集中的所有照片均由联合国人道主义事务协调厅提供，但不能保证来自第三方信息的准确性。与它们的合作并不意味着联合国参与了照片的拍摄。）
+  </div>
+  <p><strong> 俄罗斯和伊朗为什么支持阿萨德？</strong></p>
+  <p>尽管俄罗斯正陷于乌克兰战争，<a href="https://api.dw.com/api/detail/article/69766129" rel="ArticleRef">支持阿萨德仍为莫斯科带来多重战略利益</a>。</p>
+  <p>和叙利亚结盟增强了俄罗斯在该地区的战略影响力，并为其军队和雇佣军提供了部署乌克兰战场前的训练机会。</p>
+  <p>克里姆林宫发言人德米特里·佩斯科夫（Dmitry Peskov）在一次新闻发布会上表示，俄罗斯将"当然继续支持巴沙尔·阿萨德"，并将制定"稳定局势的必要立场"。</p>
+  <p>支持阿萨德同时也促进了俄罗斯与伊朗的关系紧密化，伊朗已成为俄罗斯的重要盟友。</p>
+  <p>阿萨德政权是伊朗所谓<a href="https://api.dw.com/api/detail/article/66905287" rel="ArticleRef">"抵抗轴心"</a>的重要一环。该轴心是由一系列<a href="https://api.dw.com/api/detail/article/67387689" rel="ArticleRef">视美国和以色列为主要敌人</a>的国家和民兵组成，其他成员包括黎巴嫩的真主党和也门的胡塞武装。</p>
+  <p>与俄罗斯总统普京类似，伊朗总统佩泽什基安也向阿萨德保证，将提供一切必要的支持以镇压此次反叛。</p>
+  <p>此外，总部位于伦敦的反对派组织叙利亚人权观察周一（12月2日）报告称，约 200 名受伊朗指挥的伊拉克战斗人员乘皮卡车进入叙利亚，在阿勒颇附近协助政府军反攻。</p>
+  <p><strong>为什么此时重燃战火？</strong></p>
+  <p>"亲土耳其的反对武装在叙利亚发动攻势，恰逢以色列与真主党之间的停火协议刚刚实施之后，这绝非偶然，"中东问题分析师及联合国顾问洛伦佐·特龙贝塔（Lorenzo Trombetta）告诉德国之声。</p>
+  <p>真主党被包括美国和德国在内的多个国家认定为恐怖组织，由伊朗资助、装备和训练。与以色列在黎巴嫩边界长达一年的战斗已使其被显著削弱。</p>
+  <p>"此外，这场亲土耳其攻势导致伊朗及其支持的力量在整个中东地区的阵线进一步削弱，"特龙贝塔补充道。</p>
+  <p>伊朗在与以色列的最新交锋中防御力量也有所受挫。</p>
+  <p>以色列还加大了对叙利亚境内伊朗基地的攻击，并切断了黎巴嫩与叙利亚之间的补给线路。</p>
+  <p>而叙利亚的另一个重要盟友俄罗斯，因其近三年来忙于对乌克兰的战争而无暇他顾。</p>
+  <p>尽管目前尚无法预测叙利亚局势的具体走向，国际危机组织的哈瓦奇表示，有一件事似乎是不可避免的："不幸的是，平民百姓将承受这些冲突带来的最大苦难，"她告诉德国之声。</p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.site" style="color:orange" target="_blank">https://feedx.site</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-03</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-03/%E5%BE%B7%E5%9B%BD%E8%BE%BE%E5%85%8B%E6%96%AF%E6%8C%87%E6%95%B0%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B42%E4%B8%87%E7%82%B9">
+          德国达克斯指数首次突破2万点
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-03</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-03/%E4%BD%A0%E6%95%A2%E4%BF%A1-%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%B4%B5%E9%A6%99%E8%95%89-%E5%B0%B1%E8%BF%99%E6%A0%B7%E8%A2%AB%E5%90%83%E6%8E%89%E4%BA%86">
+          你敢信？ “史上最贵香蕉”就这样被吃掉了？ ！
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-03</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-03/%E5%A4%A9%E4%B8%8B%E4%B8%8D%E5%A4%AA%E5%B9%B3-%E5%85%A8%E7%90%83%E5%86%9B%E7%81%AB%E4%BA%A4%E6%98%93%E7%81%AB%E7%88%86">
+          天下不太平 全球军火交易火爆
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-03</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-03/%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6%E8%B4%A7%E5%B8%81-%E7%89%B9%E6%9C%97%E6%99%AE%E7%9A%84%E5%85%B3%E7%A8%8E%E5%A8%81%E8%83%81%E5%90%88%E7%90%86%E5%90%97">
+          金砖国家货币：特朗普的关税威胁合理吗？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-03/%E5%B9%B8%E7%A6%8F%E8%88%AA%E7%A9%BA%E9%95%BF%E6%9C%9F%E6%AC%A0%E8%96%AA-%E9%A3%9E%E8%A1%8C%E5%91%98%E4%B8%8E%E7%A9%BA%E4%B9%98%E5%85%BC%E8%81%8C%E9%80%81%E5%A4%96%E5%8D%96">
+            前一篇：幸福航空长期欠薪 飞行员与空乘兼职送外卖
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-03/%E7%B4%A2%E5%B0%BC%E5%85%B1%E7%94%9F%E4%BA%A7%E4%BA%86-160,636,885-%E5%8F%B0-PS2-%E6%B8%B8%E6%88%8F%E6%9C%BA">
+            后一篇：索尼共生产了 160,636,885 台 PS2 游戏机
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-03/%E5%B9%B8%E7%A6%8F%E8%88%AA%E7%A9%BA%E9%95%BF%E6%9C%9F%E6%AC%A0%E8%96%AA-%E9%A3%9E%E8%A1%8C%E5%91%98%E4%B8%8E%E7%A9%BA%E4%B9%98%E5%85%BC%E8%81%8C%E9%80%81%E5%A4%96%E5%8D%96'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-03/%E7%B4%A2%E5%B0%BC%E5%85%B1%E7%94%9F%E4%BA%A7%E4%BA%86-160,636,885-%E5%8F%B0-PS2-%E6%B8%B8%E6%88%8F%E6%9C%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-03/%E4%BD%A0%E6%95%A2%E4%BF%A1-%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%B4%B5%E9%A6%99%E8%95%89-%E5%B0%B1%E8%BF%99%E6%A0%B7%E8%A2%AB%E5%90%83%E6%8E%89%E4%BA%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-03/%E5%A4%A9%E4%B8%8B%E4%B8%8D%E5%A4%AA%E5%B9%B3-%E5%85%A8%E7%90%83%E5%86%9B%E7%81%AB%E4%BA%A4%E6%98%93%E7%81%AB%E7%88%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-03/%E5%B9%B8%E7%A6%8F%E8%88%AA%E7%A9%BA%E9%95%BF%E6%9C%9F%E6%AC%A0%E8%96%AA-%E9%A3%9E%E8%A1%8C%E5%91%98%E4%B8%8E%E7%A9%BA%E4%B9%98%E5%85%BC%E8%81%8C%E9%80%81%E5%A4%96%E5%8D%96">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-03/%E7%B4%A2%E5%B0%BC%E5%85%B1%E7%94%9F%E4%BA%A7%E4%BA%86-160,636,885-%E5%8F%B0-PS2-%E6%B8%B8%E6%88%8F%E6%9C%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-03/%E4%BD%A0%E6%95%A2%E4%BF%A1-%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%B4%B5%E9%A6%99%E8%95%89-%E5%B0%B1%E8%BF%99%E6%A0%B7%E8%A2%AB%E5%90%83%E6%8E%89%E4%BA%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-03/%E5%A4%A9%E4%B8%8B%E4%B8%8D%E5%A4%AA%E5%B9%B3-%E5%85%A8%E7%90%83%E5%86%9B%E7%81%AB%E4%BA%A4%E6%98%93%E7%81%AB%E7%88%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
