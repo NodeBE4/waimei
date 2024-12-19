@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+" />
+    <meta property="og:description" content="
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请" />
+    <meta property="twitter:title" content="吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5391)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713873.html&t=%E5%90%BE%E6%88%91%E4%BA%94%E6%9C%A8%EF%BD%9C%E5%85%B3%E4%BA%8E%E5%A5%B3%E7%A1%95%E5%A3%AB%E8%A2%AB%E2%80%9C%E6%94%B6%E7%95%99%E2%80%9D%EF%BC%8C%E5%87%A0%E7%82%B9%E7%96%91%E9%97%AE%E4%B8%8E%E4%B8%80%E5%B0%81%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%94%B3%E8%AF%B7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713873.html&t=%E5%90%BE%E6%88%91%E4%BA%94%E6%9C%A8%EF%BD%9C%E5%85%B3%E4%BA%8E%E5%A5%B3%E7%A1%95%E5%A3%AB%E8%A2%AB%E2%80%9C%E6%94%B6%E7%95%99%E2%80%9D%EF%BC%8C%E5%87%A0%E7%82%B9%E7%96%91%E9%97%AE%E4%B8%8E%E4%B8%80%E5%B0%81%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%94%B3%E8%AF%B7&d=2024-12-11&e=
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：关于女硕士被“收留”，几点疑问与一封信息公开申请作者：吾我五木发表日期：2024.12.10来源：微信公众号“吾我五木”主题归类：人口拐卖CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  “山西和顺女硕士被‘收留’事件”自曝光以来，引发了社会广泛关注。根据和顺县公安局于12月3日发布的警情通报，该事件最初被描述为卜女士被张某“收留”，这种避重就轻的表述也进一步引发了公众对于案件性质及处理方式的普遍质疑。与此同时，卜女士作为精神病患者的遭遇，也不可避免地让人联想起近三年前的“丰县铁链女事件”，两起事件之间存在着令人不安的相似之处。
+ ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713873.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/713873.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/713873.html&text=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/713873.html&title=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/713873.html&title=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请&body=
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/713873.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/713873.html&title=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请&caption=
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请&url=https://chinadigitaltimes.net/chinese/713873.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/713873.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713873.html&t=%E5%90%BE%E6%88%91%E4%BA%94%E6%9C%A8%EF%BD%9C%E5%85%B3%E4%BA%8E%E5%A5%B3%E7%A1%95%E5%A3%AB%E8%A2%AB%E2%80%9C%E6%94%B6%E7%95%99%E2%80%9D%EF%BC%8C%E5%87%A0%E7%82%B9%E7%96%91%E9%97%AE%E4%B8%8E%E4%B8%80%E5%B0%81%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%E7%94%B3%E8%AF%B7&d=2024-12-11&e=
+吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：关于女硕士被“收留”，几点疑问与一封信息公开申请作者：吾我五木发表日期：2024.12.10来源：微信公众号“吾我五木”主题归类：人口拐卖CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  “山西和顺女硕士被‘收留’事件”自曝光以来，引发了社会广泛关注。根据和顺县公安局于12月3日发布的警情通报，该事件最初被描述为卜女士被张某“收留”，这种避重就轻的表述也进一步引发了公众对于案件性质及处理方式的普遍质疑。与此同时，卜女士作为精神病患者的遭遇，也不可避免地让人联想起近三年前的“丰县铁链女事件”，两起事件之间存在着令人不安的相似之处。
+ ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713873.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733925121000-->
+<p><a href="https://chinadigitaltimes.net/chinese/713873.html">吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/713873.html" title="吾我五木｜关于女硕士被“收留”，几点疑问与一封信息公开申请" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-10-19.41.08-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>关于女硕士被“收留”，几点疑问与一封信息公开申请<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/吾我五木" target="_blank">吾我五木</a><br /><strong>发表日期：</strong>2024.12.10<br /><strong>来源：</strong><a href="https://web.archive.org/web/20241211135433/https://mp.weixin.qq.com/s/EYcau0NKrFzhArG1eXRf3Q" target="_blank">微信公众号“吾我五木”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/人口拐卖" target="_blank">人口拐卖</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>“山西和顺女硕士被‘收留’事件”自曝光以来，引发了社会广泛关注。根据和顺县公安局于12月3日发布的警情通报，该事件最初被描述为<strong>卜女士被张某“收留”</strong>，这种避重就轻的表述也进一步引发了公众对于案件性质及处理方式的普遍质疑。与此同时，卜女士作为精神病患者的遭遇，也不可避免地让人联想起近三年前的“丰县铁链女事件”，两起事件之间存在着令人不安的相似之处。</p>
+  <p>就我的观察，对于该事件，公众至少存在三点疑问，需要公权力机关予以正面回应：</p>
+  <p><strong>1、张某是否构成犯罪？</strong>具体而言，卜女士作为精神分裂症患者，张某在明知卜女士精神异常的情况下仍与其发生性关系并生育子女，是否构成强奸？张某“收留”卜女士的行为，是否构成“非法拘禁”乃至“虐待”？</p>
+  <p><strong>2、卜女士的遭遇是否涉及人口拐卖？</strong>卜女士家位于晋中市榆次区，距离张某家和顺县石叠村上百公里，卜女士作为精神分裂症患者，如何能够走失上百公里的距离，在此过程中，是否涉及人口拐卖的行为？</p>
+  <p><strong>3、相关部门工作人员是否存在失职行为？</strong>卜女士走失的时间达十余年，而相关部门早就知晓卜女士患有精神疾病以及被“收留”的事实，为何一直没有依法惩处张某的犯罪行为，又为何一直未能妥善安置卜女士？相关部门是否尽到了应有的职责，相关工作人员（如民警）是否存在失职行为？</p>
+  <p>对该事件，和顺县联合调查组于12月10日发布了最新通报（详见<a href="https://mp.weixin.qq.com/s?__biz=MzU2MzA2ODk3Nw==\&amp;mid=2247985447\&amp;idx=1\&amp;sn=9631aea0cf10fd9eefce2054f4745c4f\&amp;scene=21#wechat_redirect"><em>《最新通报：“卜某走失被找回”事件涉案人员已被采取刑事强制措施》</em></a>），对于第一点疑问已进行了正面回应，认为张某确实涉嫌强奸罪，并已对其采取了刑事强制措施。但对于其余两点疑问，还有待于后续的进一步调查。</p>
+  <p>基于目前的信息，我想再聊聊，公众（包括我自己）为何会产生以上这些疑问，以及基于这些疑问，我们能够做些什么。</p>
+  <p>12月初，“山西新闻网”发布了一则《和顺县公安局：用行动诠释责任 以服务温暖人心》的新闻报道，在该报道当中，存在如下表述：2011年，青城镇石叠村村民张某某收留了一名患精神疾病女子，后二人组建家庭，并生育一儿一女，在和顺县公安局人口中心和青城派出所的共同努力下，为其两个孩子解决了户口难题。由于该女子无法正常交流，说不出自己的姓名和来历，民警多次去其家里了解情况，采集血样，同时进行全国人像比对，辨认了300多条人员信息，对相似度接近的人员逐一核实，但却一直未能确定其身份。十几年来，和顺县公安局民警帮助其寻找家人的工作从未放弃。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/post-713873-675995b7df89e." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">▲“山西新闻网”的报道</span>  <p>暂且不论该报道对事件“丧事喜办”的错误定性（把犯罪美化为善举），从该报道本身，至少可以看出两个事实：</p>
+  <p><strong>1、在十几年前，和顺县公安局就已经知晓卜女士属于精神病患者、张某与卜女士“组建家庭”乃至生儿育女的事实；</strong></p>
+  <p><strong>2、十几年来，和顺县公安局一直在帮助卜女士寻亲。</strong></p>
+  <p>其中，若第1项事实属实，那就意味着，和顺县公安局在明知张某强奸卜女士的情况下，仍纵容这一犯罪行为长达10余年，其间也并未履行对精神病人的救助义务，由此可推知公权力机关存在渎职。</p>
+  <p>对于第2项事实，即和顺县公安局十年如一日地在帮卜女士寻亲，我认为该说法存在太多疑点，这也对应到公众的第三点疑问，即<strong>公权力机关的工作人员到底是否存在失职行为？</strong></p>
+  <hr />
+  <p>首先，根据公众的朴素认知：公安部门花了十几年时间都没能找到卜女士的家人，为何在志愿者介入之后，就能在短短几天内成功寻亲？难道整个公安部门的资源和能力还不及一位志愿者？对此只有两种可能：要么是公权力机关的失职，要么就是公权力机关的无能。</p>
+  <hr />
+  <p>其次，在“丰县生育八孩女子事件”发生以后，2022年3月2日，公安部曾部署了全国公安机关开展打击拐卖妇女儿童犯罪专项行动（详见<a href="https://mp.weixin.qq.com/s?__biz=MzAwMzMxMDUxNg==\&amp;mid=2650313563\&amp;idx=1\&amp;sn=7e5cb5e0f4e64e41a9a8c0f8c77f1061\&amp;scene=21#wechat_redirect"><em>《公安部决定：开展打击拐卖妇女儿童犯罪专项行动！》</em></a>），专项行动明确要求：<strong>公安部要求，要集中摸排一批线索，特别是对来历不明的流浪乞讨、智力障碍、精神疾病、聋哑残疾等妇女儿童要全面摸排，确保底数清、情况明</strong>。要深化“百万警进千万家”活动，会同社区、街道和村组深入群众家庭，走访福利院、救助管理机构等，全面梳理排查侵害妇女儿童权益线索，重点排查疑似被拐人员，充分发挥民政、卫健、妇联等部门职能优势，在福利救助、卫生健康服务、走访慰问等工作中及时发现拐卖犯罪线索。要建立健全举报机制，广泛发动群众揭发检举涉拐线索。<strong>对疑似被拐人员和寻亲人员，要第一时间采集DNA等信息，加强信息研判，为专项行动提供有力支撑</strong>。</p>
+  <p>根据打拐专项行动的要求，至少在2022年，和顺县相关部门应当已经对患有精神疾病的卜女士的情况进行了彻底的摸排；相应的，至少在2022年，和顺县公安部门就应当对张某涉嫌“强奸”卜女士等犯罪行为进行了应有的惩处。然而事实却是，到了2024年底，官方媒体仍将张某的行为错误地报道为善举，而卜女士甚至至今尚未获得户口。这种情况无疑构成了失职。</p>
+  <p>此外，根据打拐专项行动的要求，“对疑似被拐人员和寻亲人员，要第一时间采集DNA等信息，加强信息研判。”因此，至少在2022年，和顺县公安部门就应当加强对卜女士的寻亲力度，而不至于拖到2024年底，在志愿者的介入之下才实现家庭团聚。</p>
+  <p>基于上述事实与分析，我认为和顺县相关部门对2022年公安部打拐专项行动的执行力度不足，同时，我也难以相信和顺县公安部门一直在全力以赴地帮助卜女士寻亲。对此问题，希望后续官方的调查能够予以重点关注，也希望公众能够持续进行监督及发声。</p>
+  <p>最后，有必要再聊一下本案是否涉及拐卖妇女的问题。</p>
+  <p>在公众心目中，此次“山西和顺女硕士被‘收留’事件”无疑唤起了人们对三年前“丰县铁链女事件”的记忆，两起事件之间存在着令人不安的相似之处。自然而然地，人们也会担忧卜女士是否也像小花梅一样，不幸成为了人口拐卖的受害者。</p>
+  <p>在10号的通报当中，官方的表述是：<strong>截至目前，尚未发现卜某被拐卖的线索和证据，公安机关仍在深入调查。</strong></p>
+  <p>关于卜女士是否真的遭遇了拐卖，还有待于后续的进一步调查。但如上所述，我认为和顺县相关部门对2022年公安部打拐专项行动的执行力度不足。事实上，国务院于2013年便发布了《中国反对拐卖人口行动计划（2013—2020年）》（以下简称为《行动计划》），对于2013至2020年度的反拐工作进行了整体部署。根据《行动计划》“保障措施”一章的规定，“县级以上地方政府要逐级建立协调机制，组织协调和督导检查反拐工作，并制定本地区《行动计划》<strong>实施细则</strong>和<strong>年度实施方案</strong>。”“将反拐工作纳入社会管理综合治理考核范畴以及相关部门、机构的目标管理和考核体系，<strong>考核结果</strong>送干部主管部门，作为对相关领导班子和领导干部综合考核评价的重要依据。”基于此，我向和顺县政府提交了《政府信息公开申请书》，申请公开前述事项，以了解和顺县政府在打击拐卖人口犯罪方面的工作开展情况，这也是公民行使监督权利的表现。</p>
+  <p>我起草的《政府信息公开申请书》全文如下：</p>
+  <p><strong>政府信息公开申请书</strong></p>
+  <p><strong>申请人：</strong>颜森林，男，19XX年X月X日出生，汉族</p>
+  <p><strong>身份证号：</strong>5XXXXXXXX</p>
+  <p><strong>联系地址：</strong>成都市XXXXXXX</p>
+  <p><strong>联系电话：</strong>15XXXXXX</p>
+  <p><strong>联系邮箱：</strong>15XXXXXX@163.com</p>
+  <p><strong>被申请人：</strong>晋中市和顺县人民政府</p>
+  <p><strong>法定代表人、县长：</strong>李雪</p>
+  <p><strong>被申请人地址：</strong>山西省晋中市和顺县新华街3号</p>
+  <p><strong>申请公开事项：</strong></p>
+  <p><strong>      一、被申请人所制定的和顺县地区《中国反对拐卖人口行动计划（2013—2020年）》实施细则；</strong></p>
+  <p><strong>      二、2013至2020年度，被申请人就《中国反对拐卖人口行动计划（2013—2020年）》所制定的各年度实施方案；</strong></p>
+  <p><strong>      三、2013至2020年度，被申请人就反拐工作对相关部门、机构的考核结果。</strong></p>
+  <p><strong>事实与理由：</strong></p>
+  <p>      近日，“山西和顺女硕士被‘收留’事件”（即“卜某走失被找回事件”）引发了社会广泛关注。2022年3月2日，公安部曾部署了全国公安机关开展打击拐卖妇女儿童犯罪专项行动（以下简称“打拐专项行动”），根据打拐专项行动的要求，至少在2022年，和顺县相关部门应当已经对患有精神疾病的卜女士的情况进行了彻底的摸排；相应的，至少在2022年，和顺县公安部门就应当对张某涉嫌“强奸”卜某等犯罪行为进行了应有的惩处；此外，根据打拐专项行动的要求，“对疑似被拐人员和寻亲人员，要第一时间采集DNA等信息，加强信息研判。”因此，至少在2022年，和顺县相关部门就应当加强对卜女士的寻亲力度，而不至于拖到2024年底，在志愿者的介入之下才实现家庭团聚。有鉴于此，我认为和顺县相关部门对2022年公安部打拐专项行动的执行力度不足。</p>
+  <p>      事实上，国务院于2013年便发布了《中国反对拐卖人口行动计划（2013—2020年）》（以下简称为《行动计划》），对于2013至2020年度的反拐工作进行了整体部署，该《行动计划》于2021年已进行了更新。因此，申请人认为，《行动计划》在2013至2020年度应当已在全国各地得到了有效实施，和顺县自然亦不例外。</p>
+  <p>      根据《行动计划》“保障措施”一章的规定，“县级以上地方政府要逐级建立协调机制，组织协调和督导检查反拐工作，并制定本地区《行动计划》<strong>实施细则</strong>和<strong>年度实施方案</strong>。”“将反拐工作纳入社会管理综合治理考核范畴以及相关部门、机构的目标管理和<strong>考核体系</strong>，考核结果送干部主管部门，作为对相关领导班子和领导干部综合考核评价的重要依据。”基于此，申请人特申请公开前述申请事项，以了解被申请人在打击拐卖人口犯罪方面的工作开展情况，这也是申请人行使公民监督权利的表现。</p>
+  <p>      根据《中华人民共和国政府信息公开条例》（以下简称为《信息公开条例》）第十三条之规定：“除本条例第十四条、第十五条、第十六条规定的政府信息外，政府信息应当公开。”申请人认为，申请人所申请公开的事项并不属于第十四条、第十五条、第十六条所规定的禁止公开的情形，故应当依法公开。</p>
+  <p>      根据《信息公开条例》第十九条之规定：“对涉及公众利益调整、需要公众广泛知晓或者需要公众参与决策的政府信息，行政机关应当主动公开。”申请人认为，《行动计划》实施细则、《行动计划》年度实施方案及反拐工作考核结果，均事关广大人民群众的生命财产安全，关涉广大人民群众的基本权利及根本利益，必然涉及公众利益，故申请人认为上述信息需要公众广泛知晓，被申请人亦应当主动公开。</p>
+  <p>      同时，根据《信息公开条例》第二十七条之规定：“除行政机关主动公开的政府信息外，公民、法人或者其他组织可以向地方各级人民政府、对外以自己名义履行行政管理职能的县级以上人民政府部门（含本条例第十条第二款规定的派出机构、内设机构）申请获取相关政府信息。”故申请人有权申请获取前述相关政府信息。</p>
+  <p>      综上所述，申请人要求被申请人（晋中市和顺县人民政府），公开以下信息：</p>
+  <p><strong>      （1）被申请人所制定的和顺县地区《中国反对拐卖人口行动计划（2013—2020年）》实施细则；</strong></p>
+  <p><strong>      （2）2013至2020年度，被申请人就《中国反对拐卖人口行动计划（2013—2020年）》所制定的各年度实施方案；</strong></p>
+  <p><strong>      （3）2013至2020年度，被申请人就反拐工作对相关部门、机构的考核结果。</strong></p>
+  <p>      倘若申请人所申请公开信息不属于被申请人负责公开的，应当根据《政府信息公开条例》第三十六条第（五）项之规定，明确告知申请人并说明理由；能够确定负责公开该政府信息的行政机关的，应告知申请人该行政机关的名称、联系方式，以便申请人后续另行申请。</p>
+  <p>      被申请人自收到申请人的申请书之日起，必须在法定期限内，按照法律的规定，通过邮寄（可邮寄至上述<strong>申请人联系地址</strong>）或电子送达（可发送至上述<strong>申请人联系邮箱</strong>）的形式，向申请人作出书面告知答复。若被申请人逾期不答复或答复信息不符合法律规定，则申请人将保留依法提起行政诉讼的权利。</p>
+  <p>      打击拐卖人口犯罪事关每一位公民的基本尊严，希望被申请人能够本着“依法行政”、“阳光政府”、“公开透明”等行政理念，依法及时公开相关政府信息。</p>
+  <p> </p>
+  <p>      此致</p>
+  <p>和顺县人民政府</p>
+  <p>申请人（签名）：        </p>
+  <p>日期：2024年12月11日</p>
+  <p> </p>
+  <p>附：申请人身份证复印件一份</p>
+  <p>除了《政府信息公开申请书》，我也同步按照和顺县官网“申请指南”的要求（网址链接：http\://www.heshun.gov.cn/zwgk/zfysqgk/sqzn），准备了如下的《政府信息公开申请表》：</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/post-713873-675995b880acb." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">▲《政府信息公开申请表》</span>  <hr />
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/post-713873-675995b91ea48." alt="Image" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">▲邮寄记录</span>  <p>截至本文发出之时，我已将上述《信息公开申请书》及《信息公开申请表》寄出，接下来，就是等待和顺县的答复。</p>
+  <p>有兴趣的朋友，也可参考我的内容来申请信息公开，这件事并不难，按照和顺县官网“申请指南”的要求（网址链接：<a href="http://www.heshun.gov.cn/zwgk/zfysqgk/sqzn）准备材料即可">http://www.heshun.gov.cn/zwgk/zfysqgk/sqzn）准备材料即可</a>。</p>
+  <p>——颜森林</p>
+  <p>2024/12/11</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E7%BA%A2%E6%98%9F%E8%AF%84%E8%AE%BA-%E9%AB%98%E6%A0%A1%E5%85%AC%E7%A4%BA%E5%AD%A6%E7%94%9F%E5%8F%98%E6%80%A7%E4%BF%A1%E6%81%AF-%E8%A6%81%E5%B9%B3%E8%A1%A1%E7%9F%A5%E6%83%85%E6%9D%83%E5%92%8C%E9%9A%90%E7%A7%81%E6%9D%83">
+          红星评论｜高校公示学生变性信息，要平衡知情权和隐私权
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86">
+          【朋友圈】山西和顺县“收留”女硕士事件时间线整理
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/404%E6%96%87%E5%BA%93-%E6%AD%A3%E9%9D%A2%E8%BF%9E%E6%8E%A5-%E4%B8%80%E5%9C%BA%E4%BA%8B%E5%85%88%E5%BC%A0%E6%89%AC%E7%9A%84%E6%B6%88%E9%98%B2%E6%A3%80%E6%9F%A5">
+          【404文库】正面连接｜一场事先张扬的消防检查
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E6%88%BF%E4%B8%9C%E8%80%81%E5%86%AF-%E6%97%A5%E6%9C%AC%E7%9A%84%E5%9C%B0%E9%93%81%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E9%9C%80%E8%A6%81%E5%AE%89%E6%A3%80">
+          房东老冯｜日本的地铁为什么不需要安检
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-11/%E9%A9%AC%E8%8B%B1%E4%B9%9D%E5%8D%B3%E5%B0%86%E5%87%BA%E8%AE%BF%E5%93%88%E5%B0%94%E6%BB%A8%E5%92%8C%E6%88%90%E9%83%BD">
+            前一篇：马英九即将出访哈尔滨和成都
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-11/%E5%BE%AE%E8%BD%AF%E5%85%81%E8%AE%B8%E5%9C%A8%E6%97%A7%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%AE%89%E8%A3%85-Windows-11">
+            后一篇：微软允许在旧设备上安装 Windows 11
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/%E9%A9%AC%E8%8B%B1%E4%B9%9D%E5%8D%B3%E5%B0%86%E5%87%BA%E8%AE%BF%E5%93%88%E5%B0%94%E6%BB%A8%E5%92%8C%E6%88%90%E9%83%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/%E5%BE%AE%E8%BD%AF%E5%85%81%E8%AE%B8%E5%9C%A8%E6%97%A7%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%AE%89%E8%A3%85-Windows-11'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-11/404%E6%96%87%E5%BA%93-%E6%AD%A3%E9%9D%A2%E8%BF%9E%E6%8E%A5-%E4%B8%80%E5%9C%BA%E4%BA%8B%E5%85%88%E5%BC%A0%E6%89%AC%E7%9A%84%E6%B6%88%E9%98%B2%E6%A3%80%E6%9F%A5'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-11/%E9%A9%AC%E8%8B%B1%E4%B9%9D%E5%8D%B3%E5%B0%86%E5%87%BA%E8%AE%BF%E5%93%88%E5%B0%94%E6%BB%A8%E5%92%8C%E6%88%90%E9%83%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-11/%E5%BE%AE%E8%BD%AF%E5%85%81%E8%AE%B8%E5%9C%A8%E6%97%A7%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%AE%89%E8%A3%85-Windows-11">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-11/%E6%9C%8B%E5%8F%8B%E5%9C%88-%E5%B1%B1%E8%A5%BF%E5%92%8C%E9%A1%BA%E5%8E%BF-%E6%94%B6%E7%95%99-%E5%A5%B3%E7%A1%95%E5%A3%AB%E4%BA%8B%E4%BB%B6%E6%97%B6%E9%97%B4%E7%BA%BF%E6%95%B4%E7%90%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-11/404%E6%96%87%E5%BA%93-%E6%AD%A3%E9%9D%A2%E8%BF%9E%E6%8E%A5-%E4%B8%80%E5%9C%BA%E4%BA%8B%E5%85%88%E5%BC%A0%E6%89%AC%E7%9A%84%E6%B6%88%E9%98%B2%E6%A3%80%E6%9F%A5">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

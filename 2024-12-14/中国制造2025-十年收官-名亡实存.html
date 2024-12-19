@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>《中国制造2025》十年收官，名亡实存？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+《中国制造2025》十年收官，名亡实存？
+——
+" />
+    <meta property="og:description" content="
+《中国制造2025》十年收官，名亡实存？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="《中国制造2025》十年收官，名亡实存？" />
+    <meta property="twitter:title" content="《中国制造2025》十年收官，名亡实存？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5391)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fmic-2025-us-china-20241214%2F7901148.html&t=%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A02025%E3%80%8B%E5%8D%81%E5%B9%B4%E6%94%B6%E5%AE%98%EF%BC%8C%E5%90%8D%E4%BA%A1%E5%AE%9E%E5%AD%98%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fmic-2025-us-china-20241214%2F7901148.html&t=%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A02025%E3%80%8B%E5%8D%81%E5%B9%B4%E6%94%B6%E5%AE%98%EF%BC%8C%E5%90%8D%E4%BA%A1%E5%AE%9E%E5%AD%98%EF%BC%9F&d=2024-12-14&e=
+《中国制造2025》十年收官，名亡实存？
+——
+
+
+  
+Sat, 14 Dec 2024 13:12:35 GMT
+  
+  
+中国领导人习近平（左）于2015年10月21日对英国进行国事访问期间，在伦敦参观了中国科技公司华为技术有限公司，并由华为总裁任正非陪同讲解。
+  
+华盛顿 —   十年前，中国政府推出了雄心勃勃的《中国制造2025》计划，试图让中国从“世界工厂”华丽转身为高科技制造业强国。但这项计划在实施过程中引发了美欧等国对不公平竞争的担忧，第一届特朗普政府更是将该计划作为其对中国实施“301条款”行动的重中之重。为了减少国际压力，2018年前后，《中国制造2025》逐渐淡出了中国官方的叙事，但中国看上去并未放弃，只是改换了名称继续推进这项计划。
+  2025年是《中国制造2025计划》的收官之年，也是唐纳德·特朗普(Donald Trump)再次当选美国总统，美中贸..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fmic-2025-us-china-20241214%2F7901148.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html&text=《中国制造2025》十年收官，名亡实存？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html&title=《中国制造2025》十年收官，名亡实存？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html&title=《中国制造2025》十年收官，名亡实存？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=《中国制造2025》十年收官，名亡实存？&body=
+《中国制造2025》十年收官，名亡实存？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html&title=《中国制造2025》十年收官，名亡实存？&caption=
+《中国制造2025》十年收官，名亡实存？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=《中国制造2025》十年收官，名亡实存？&url=https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>《中国制造2025》十年收官，名亡实存？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fmic-2025-us-china-20241214%2F7901148.html&t=%E3%80%8A%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A02025%E3%80%8B%E5%8D%81%E5%B9%B4%E6%94%B6%E5%AE%98%EF%BC%8C%E5%90%8D%E4%BA%A1%E5%AE%9E%E5%AD%98%EF%BC%9F&d=2024-12-14&e=
+《中国制造2025》十年收官，名亡实存？
+——
+
+
+  
+Sat, 14 Dec 2024 13:12:35 GMT
+  
+  
+中国领导人习近平（左）于2015年10月21日对英国进行国事访问期间，在伦敦参观了中国科技公司华为技术有限公司，并由华为总裁任正非陪同讲解。
+  
+华盛顿 —   十年前，中国政府推出了雄心勃勃的《中国制造2025》计划，试图让中国从“世界工厂”华丽转身为高科技制造业强国。但这项计划在实施过程中引发了美欧等国对不公平竞争的担忧，第一届特朗普政府更是将该计划作为其对中国实施“301条款”行动的重中之重。为了减少国际压力，2018年前后，《中国制造2025》逐渐淡出了中国官方的叙事，但中国看上去并未放弃，只是改换了名称继续推进这项计划。
+  2025年是《中国制造2025计划》的收官之年，也是唐纳德·特朗普(Donald Trump)再次当选美国总统，美中贸..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fmic-2025-us-china-20241214%2F7901148.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734183543000-->
+<p><a href="https://www.voachinese.com/a/mic-2025-us-china-20241214/7901148.html">《中国制造2025》十年收官，名亡实存？</a>
+——</p>
+
+<div>
+  <div>
+<em>Sat, 14 Dec 2024 13:12:35 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/F788B0AA-D101-4C11-AC98-9F5A9269A8A2_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">中国领导人习近平（左）于2015年10月21日对英国进行国事访问期间，在伦敦参观了中国科技公司华为技术有限公司，并由华为总裁任正非陪同讲解。</small>
+  </div>
+华盛顿 —   <p style="text-align:start">十年前，中国政府推出了雄心勃勃的《中国制造2025》计划，试图让中国从“世界工厂”华丽转身为高科技制造业强国。但这项计划在实施过程中引发了美欧等国对不公平竞争的担忧，第一届特朗普政府更是将该计划作为其对中国实施“301条款”行动的重中之重。为了减少国际压力，2018年前后，《中国制造2025》逐渐淡出了中国官方的叙事，但中国看上去并未放弃，只是改换了名称继续推进这项计划。</p>
+  <p style="text-align:start">2025年是《中国制造2025计划》的收官之年，也是唐纳德·特朗普(Donald Trump)再次当选美国总统，美中贸易战和科技竞争的紧张局势很可能进一步升级之际。这项被中国视为推动中国从“中国制造”转向“中国智造”的计划到底执行的怎么样了？在未来的美中科技竞争中又将扮演什么样的角色？</p>
+  <p style="text-align:start"><strong>从“2025中国制造”转向“新质生产力”</strong></p>
+  <p style="text-align:start">北京把“中国制造2025”称之为“实施制造强国战略第一个十年的行动纲领”。这项跨越十年的战略旨在推动中国经济从低附加值的传统制造业向高附加值的高科技产业转型，被视为中国突破“中等收入陷阱”、实现经济结构升级的重要工具。</p>
+  <p style="text-align:start">该计划瞄准10大关键领域，包括信息技术、机器人、航空航天、新能源汽车、新材料等等，并设定了关键绩效指标。这些领域正是所谓的第四次工业革命的核心。(第四次工业革命指的是将大数据、云计算等新兴技术融入全球制造业供应链。)</p>
+  <p style="text-align:start">“北京的最终目标是减少中国对外国技术的依赖，并在全球市场推广中国的高科技制造企业，”纽约智库外交事务委员会(Council on Foreign Relations)<a href="https://www.cfr.org/backgrounder/made-china-2025-threat-global-trade" target="_blank">写道</a>。</p>
+  <p style="text-align:start">相比中国以前的产业政策，《中国制造2025》明确了中国不仅要追赶全球技术前沿，还要取得领导地位的野心。</p>
+  <p style="text-align:start">“其没有明说的目标是削弱并取代美国的经济霸权，”被特朗普提名为下一任国务卿的共和党联邦参议员马可·鲁比奥(Marco Rubio)今年9月在《华盛顿邮报》中<a href="https://www.washingtonpost.com/opinions/2024/09/09/marco-rubio-made-in-china-threat/" target="_blank">刊文</a>称。</p>
+  <p style="text-align:start">某种程度上，正是《中国制造2025》引燃了2018年的美中贸易战。上一届特朗普政府将《中国制造2025》作为其对中国实施“301条款”行动(包括加征关税)的重中之重，指控中国在技术转让、知识产权和创新方面的政策干预市场正常运作、破坏公平竞争。</p>
+  <p style="text-align:start">为减少国际压力，中国官方媒体也被要求在报道中避免直接使用“中国制造2025”这一名称。在2019年的全国人民代表大会开幕式上，时任国务院总理李克强并未提及《中国制造2025》。这是自该计划首次提出以来，他首次在年度政府工作报告中完全不提及该计划。</p>
+<a href="/a/4651130.html"></a>  <p style="text-align:start">但是，《中国制造2025》的核心目标和动力早就融入中国的第十四个“五年计划”和其他各种相关的专项政策中，它也深度融入了中国领导人习近平倡导的“高质量发展”和“新质生产力”等战略中。</p>
+  <p style="text-align:start"> </p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/5a222b3e-8d27-4dc5-bb1a-89d750b13a3e_w900.jpg" alt="一家北京商场内的华为专卖店在展示最新产品可折叠手机Mate XT。（2024年9月10日）" border="0" />    <div>
+<small style="color: #999;">一家北京商场内的华为专卖店在展示最新产品可折叠手机Mate XT。（2024年9月10日）</small>
+    </div>
+  </div>
+  <p style="text-align:start">“整合科技创新资源，引领发展战略性新兴产业和未来产业，加快形成新质生产力，”习近平在2023年9月首次提出了“新质生产力”的概念，被外界视为“中国制造2025”的延续与升级。</p>
+  <p style="text-align:start">相较于“中国制造2025”计划，“新质生产力”更加注重颠覆性技术创新，例如量子计算、核聚变、深海采矿和基因工程等“未来产业”成为重点，同时也更进一步推行“新型举国体制”，通过更集中的资源调配和政策协调，支持基础科学研究和企业技术研发。</p>
+  <p style="text-align:start">中国未来的产业政策更可能将“新质生产力”“高质量发展”等战略融入该国的“五年计划”和“十年规划”中。定调中国长期经济大战略的二十届三中全会也明确了“以新质生产力更好赋能高质量发展”的大方向。</p>
+  <p style="text-align:start">美国现任的乔·拜登(Joe Biden)政府延续了第一届特朗普政府的对华科技政策。拜登甚至在他离任前还对中国打出了他在美中“芯片战”中可能的最后一拳。观察人士说，特朗普2.0可能会以更强硬的方式扩大华盛顿对中国的战略技术封锁。《中国制造2025》背后的最大驱动力和决心--自主掌控先进技术，降低外部供应链依赖--可能只会愈发坚定。</p>
+<a href="/a/7886508.html"></a>  <p style="text-align:start">《中国制造2025》的成败不仅关乎着中国的国家战略，也影响了全球产业格局与技术权力的分配。有关这项被认为“名亡实存”的中国国家战略，以下是你所需要了解的概况。</p>
+  <p style="text-align:start"><strong>2015年前的中国产业状况和“中国智造”十大关键领域</strong></p>
+  <ul>
+    <li style="text-align:start">在2015年之前，中国制造业主要集中于全球价值链的低端，以生产低成本、低附加值产品为主，“量大价低”。面对中国制造业劳动力成本上升、全球竞争加剧、经济增长放缓等压力，中国依赖廉价劳动力的传统模式难以为继。</li>
+    <li>在2015年，大部分中国计算机芯片、操作系统及工业软件均依赖进口，航空航天领域也几乎完全由波音和空客垄断。中国政府认识到依赖海外技术可能成为经济发展的致命短板。</li>
+    <li>外部的技术封锁加剧了中国对国家安全和经济安全的担忧，也加剧了中国发展自主技术的危机感。</li>
+  </ul>
+  <p> </p>
+  <p>“中国制造2025”因此成为推动中国技术自立、降低外部依赖的重要工具。根据中国国务院于2015年发布的相关文件，“中国制造2025”计划旨在推动以下领域的“突破发展”。</p>
+  <ul>
+    <li>新一代信息技术产业（包括芯片、5G、工业软件等技术）</li>
+    <li>高档数控机床和机器人</li>
+    <li>航空航天装备</li>
+    <li>海洋工程装备及高技术船舶</li>
+    <li>先进轨道交通装备</li>
+    <li>节能与新能源汽车</li>
+    <li>电力装备</li>
+    <li>农机装备</li>
+    <li>新材料</li>
+    <li>生物医药及高性能医疗器械</li>
+  </ul>
+  <p style="text-align:start"> </p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/B08BCE47-E313-4F6B-A3A3-3034D6C4E2DF_w900.jpg" alt="在北京第21届国际科技产业博览会上有人在通过显微镜看电脑芯片。 （2018年5月17日）" border="0" />    <div>
+<small style="color: #999;">在北京第21届国际科技产业博览会上有人在通过显微镜看电脑芯片。 （2018年5月17日）</small>
+    </div>
+  </div>
+  <p style="text-align:start"><strong>十大领域的突破状况</strong></p>
+  <p style="text-align:start">虽然《中国制造2025》官方文件没有具体设定量化的市场份额目标，但中国有一份相对更低调的<a href="https://www.gov.cn/xinwen/2018-01/29/content_5261911.htm" target="_blank">非官方文件</a>--《    <中国制造2025>重点领域技术创新绿皮书—技术路线图》。这份被广泛称为“绿皮书”的文件中详细列出了具体的量化指标。例如，到2025年，新能源汽车在中国市场的占有率目标为90%，移动通讯设备为80%，工业机器人为70%；集成电路(芯片)在全球市场的份额目标为56%，通用飞机为40%，等等。&lt;/p&gt;      <p style="text-align:start">《南华早报》在今年4月从这些官方文件中整理出了《中国制造2025》所覆盖的260多项具体目标，并通过调查分析得出以下<a href="https://www.scmp.com/news/china/science/article/3260307/made-china-2025-china-meets-most-targets-manufacturing-plan-proving-us-tariffs-and-sanctions" target="_blank">结论</a>：“超过86%的目标已经实现，另有一些目标预计将在今年或明年完成。同时，部分目标--如电动汽车和可再生能源的生产--已远远超出预期。”</p>
+      <p style="text-align:start">被特朗普提名为下一任国务卿的共和党联邦参议员马可·鲁比奥(Marco Rubio)在今年9月也针对《中国制造2025》的完成情况发布<a href="https://www.rubio.senate.gov/rubio-releases-report-the-world-china-made-made-in-china-2025-nine-years-later/" target="_blank">报告</a>。当中显示，该计划所涉及的十大关键领域中，有4项已被中国“成功征服“，有5项实现“部分完成目标”，有1项“完全失败”。</p>
+      <p style="text-align:start">鲁比奥的评估--</p>
+      <p style="text-align:start"> </p>
+      <p style="text-align:start">四个领域“成功征服”</p>
+      <ul>
+        <li>电动汽车：中国出口的电动汽车（以及内燃机汽车）数量超过其他任何国家。</li>
+        <li>能源与电力生产：中国在核反应堆技术方面处于全球领先地位，并掌控了全球80%以上的太阳能供应链。</li>
+        <li>高铁：中国建成了约28,000英里的高铁线路。</li>
+        <li>造船：中国的造船能力已是美国的200倍，并超越了其他主要造船强国。</li>
+      </ul>
+      <p style="text-align:start">五个领域“部分实现目标”</p>
+      <ul>
+        <li>航空航天：中国的商用航空业表现令人失望，但其航天工业相对成功，中国无人机制造商占据了美国商业市场90%的份额。</li>
+        <li>生物技术：尽管中国的生物技术企业仍依赖西方资本和专业知识，但它们正在研发新的药物和治疗方法。</li>
+        <li>新材料：中国已建立了庞大的新材料研发基础，但成果仍显不足。</li>
+        <li>机器人与机床：中国的机器人公司正逐步侵占国际企业的国内市场份额。</li>
+        <li>半导体：尽管美国的出口管制未能阻止中国的芯片企业，中国在“成熟节点”芯片生产方面已接近全球领先地位。</li>
+      </ul>
+      <p style="text-align:start">一个领域“完全未达标”</p>
+      <ul>
+        <li>农业机械。</li>
+      </ul>
+      <p> </p>
+      <p style="text-align:start">其他媒体和机构也对《中国制造2025》做出过评估。比如香港《南华早报》认为，中国在十大关键领域都取得了相当的进展。与鲁比奥的评估不同，《南华早报》认为，在农业机械方面，中国通过无人机和自动化播种设备提升了农业生产力，但在智能仪表和在线成分分析设备领域，仍对外资品牌有较大依赖。</p>
+      <p style="text-align:start"> </p>
+<div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/A49A7BBE-A270-46E0-A5C6-44304581C58D_w900.jpg" alt="资料照：中国北京国际科技产品展销会展出的机器人和无人机。（2018年5月17日）" border="0" />        <div>
+<small style="color: #999;">资料照：中国北京国际科技产品展销会展出的机器人和无人机。（2018年5月17日）</small>
+        </div>
+      </div>      <p style="text-align:start"><strong>与其他国家的产业政策有何不同？</strong></p>
+      <p style="text-align:start">中国并不是唯一一个通过产业政策支持本国工业的国家。工业政策曾是日本在20世纪70年代和80年代实现经济快速增长的核心。东亚“四小龙”（包括韩国、台湾、香港和新加坡）也采取了类似的政策来推动经济增长。德国也在2013年推出了“工业4.0”计划。</p>
+      <p style="text-align:start">“包括美国在内的发达工业化国家在自身经济发展过程中也依赖于国家干预和保护主义政策。美国通过关税和补贴扶持新兴产业的成长，积极引进来自更先进国家的技术，并对外国投资实行严格监管，” 加拿大不列颠哥伦比亚大学公共政策和全球事务学院的副教授克里斯汀·霍普韦尔(Kristen Hopewell)在《华盛顿邮报》中<a href="https://www.washingtonpost.com/news/monkey-cage/wp/2018/05/03/what-is-made-in-china-2025-and-why-is-it-a-threat-to-trumps-trade-goals/" target="_blank">写道</a>。</p>
+      <p style="text-align:start">但是，《中国制造2025》的不同之处在于--</p>
+      <ul>
+        <li>《中国制造2025》在实施过程中引发了国际社会对该政策可能引发不公平竞争的担忧，包括对外企的歧视性待遇、强制技术转让、知识产权盗窃等问题。美国企业长期抱怨称，中国通过各种手段迫使它们转让包括工业设计和专利在内的知识产权，同时中国实体还广泛涉嫌窃取美国商业机密。相比之下，日本和东亚“四小龙”在其工业化进程中也曾依赖政府扶持和保护主义政策，但未曾因大规模知识产权争端或技术转让问题引发如此大的国际争议。</li>
+        <li>《中国制造2025》的核心动力是自给自足，更强调减少对外国供应链的依赖。</li>
+        <li>《中国制造2025》是国家主导型的产业政策，制定了详细的技术发展路线图，通过巨额财政补贴、政策倾斜和行业标准制定直接介入技术研发和产业升级过程。诸如德国的“工业4.0”计划、日本的制造业数字化升级战略以及美国的“工业互联网革命”等产业政策则更多聚焦于为企业提供框架性支持和技术指导，在深度和广度上无法和《中国制造2025》相提并论。</li>
+      </ul>
+ &lt;/div&gt; </中国制造2025>
+</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%93%E8%AE%BF%E5%86%AF%E5%B4%87%E4%B9%89-%E4%B8%AD%E6%BE%B3%E5%85%B3%E7%B3%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%BB%8E%E7%83%AD%E7%BB%9C%E8%B5%B0%E5%90%91%E9%9A%94%E9%98%82%E7%9A%84">
+          专访冯崇义：中澳关系是怎样从热络走向隔阂的？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B0%B9%E9%94%A1%E6%82%A6%E9%9D%A2%E4%B8%B4%E5%BC%B9%E5%8A%BE%E8%AA%93%E8%A8%80%E5%86%B3%E4%B8%8D%E6%94%BE%E5%BC%83-%E5%85%B6%E6%94%BF%E6%B2%BB%E5%91%BD%E8%BF%90%E4%BA%A4%E7%94%B1%E5%AE%AA%E6%B3%95%E6%B3%95%E9%99%A2%E5%86%B3%E5%AE%9A">
+          尹锡悦面临弹劾誓言决不放弃，其政治命运交由宪法法院决定
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E8%B7%AF%E9%80%8F%E7%8B%AC%E5%AE%B6-%E5%B7%A9%E5%9B%BA%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E6%94%AF%E6%8C%81-%E7%BE%8E%E8%B4%A2%E9%95%BF%E8%80%B6%E4%BC%A6%E7%A7%B0%E4%B8%8D%E6%8E%92%E9%99%A4%E5%88%B6%E8%A3%81%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C">
+          路透独家：巩固对乌克兰支持 美财长耶伦称不排除制裁中国银行
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E5%BF%AB%E8%AE%AF-%E9%9F%A9%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%80%9A%E8%BF%87%E6%80%BB%E7%BB%9F%E5%B0%B9%E9%94%A1%E6%82%A6%E5%BC%B9%E5%8A%BE%E6%A1%88">
+          快讯：韩国国会通过总统尹锡悦弹劾案
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-14/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B0%81%E7%A6%81%E6%B6%88%E6%81%AF%E5%BA%94%E7%94%A8-Viber">
+            前一篇：俄罗斯封禁消息应用 Viber
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-14/Tiktok%E7%A6%81%E4%BB%A4-%E6%B3%95%E9%99%A2%E9%A9%B3%E5%9B%9E%E7%B4%A7%E6%80%A5%E5%8A%A8%E8%AE%AE-%E6%8B%9C%E7%99%BB%E5%B0%86%E5%86%B3%E5%AE%9A%E6%98%AF%E5%90%A6%E5%BB%B6%E6%9C%9F">
+            后一篇：Tiktok禁令：法院驳回紧急动议，拜登将决定是否延期
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B0%81%E7%A6%81%E6%B6%88%E6%81%AF%E5%BA%94%E7%94%A8-Viber'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/Tiktok%E7%A6%81%E4%BB%A4-%E6%B3%95%E9%99%A2%E9%A9%B3%E5%9B%9E%E7%B4%A7%E6%80%A5%E5%8A%A8%E8%AE%AE-%E6%8B%9C%E7%99%BB%E5%B0%86%E5%86%B3%E5%AE%9A%E6%98%AF%E5%90%A6%E5%BB%B6%E6%9C%9F'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E5%B0%B9%E9%94%A1%E6%82%A6%E9%9D%A2%E4%B8%B4%E5%BC%B9%E5%8A%BE%E8%AA%93%E8%A8%80%E5%86%B3%E4%B8%8D%E6%94%BE%E5%BC%83-%E5%85%B6%E6%94%BF%E6%B2%BB%E5%91%BD%E8%BF%90%E4%BA%A4%E7%94%B1%E5%AE%AA%E6%B3%95%E6%B3%95%E9%99%A2%E5%86%B3%E5%AE%9A'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E8%B7%AF%E9%80%8F%E7%8B%AC%E5%AE%B6-%E5%B7%A9%E5%9B%BA%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E6%94%AF%E6%8C%81-%E7%BE%8E%E8%B4%A2%E9%95%BF%E8%80%B6%E4%BC%A6%E7%A7%B0%E4%B8%8D%E6%8E%92%E9%99%A4%E5%88%B6%E8%A3%81%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-14/%E4%BF%84%E7%BD%97%E6%96%AF%E5%B0%81%E7%A6%81%E6%B6%88%E6%81%AF%E5%BA%94%E7%94%A8-Viber">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-14/Tiktok%E7%A6%81%E4%BB%A4-%E6%B3%95%E9%99%A2%E9%A9%B3%E5%9B%9E%E7%B4%A7%E6%80%A5%E5%8A%A8%E8%AE%AE-%E6%8B%9C%E7%99%BB%E5%B0%86%E5%86%B3%E5%AE%9A%E6%98%AF%E5%90%A6%E5%BB%B6%E6%9C%9F">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B0%B9%E9%94%A1%E6%82%A6%E9%9D%A2%E4%B8%B4%E5%BC%B9%E5%8A%BE%E8%AA%93%E8%A8%80%E5%86%B3%E4%B8%8D%E6%94%BE%E5%BC%83-%E5%85%B6%E6%94%BF%E6%B2%BB%E5%91%BD%E8%BF%90%E4%BA%A4%E7%94%B1%E5%AE%AA%E6%B3%95%E6%B3%95%E9%99%A2%E5%86%B3%E5%AE%9A">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-14/%E8%B7%AF%E9%80%8F%E7%8B%AC%E5%AE%B6-%E5%B7%A9%E5%9B%BA%E5%AF%B9%E4%B9%8C%E5%85%8B%E5%85%B0%E6%94%AF%E6%8C%81-%E7%BE%8E%E8%B4%A2%E9%95%BF%E8%80%B6%E4%BC%A6%E7%A7%B0%E4%B8%8D%E6%8E%92%E9%99%A4%E5%88%B6%E8%A3%81%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

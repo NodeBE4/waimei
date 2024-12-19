@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX 老实报新闻 少整妖蛾子">
+    <meta property="og:description" content="git.io/JJCxX 老实报新闻 少整妖蛾子" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5391)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage10%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage10%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage10%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page10/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page10/&text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page10/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page10/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page10/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page10/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&url=https://nodebe4.github.io/waimei/page10/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%B9%B8%E7%A6%8F%E8%88%AA%E7%A9%BA%E9%95%BF%E6%9C%9F%E6%AC%A0%E8%96%AA-%E9%A3%9E%E8%A1%8C%E5%91%98%E4%B8%8E%E7%A9%BA%E4%B9%98%E5%85%BC%E8%81%8C%E9%80%81%E5%A4%96%E5%8D%96">
+      
+        幸福航空长期欠薪 飞行员与空乘兼职送外卖
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql2-joyair-payroll-arrears-12032024025850.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%8D%8F%E8%AE%AE%E8%83%8C%E5%90%8E%E7%9A%84%E7%A7%98%E5%AF%86-%E4%B8%89%E5%90%8D%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%9C%A8%E4%B8%AD%E7%BE%8E%E6%8D%A2%E5%9B%9A%E5%90%8E%E8%8E%B7%E5%87%86%E7%A6%BB%E5%BC%80%E4%B8%AD%E5%9B%BD">
+      
+        协议背后的秘密：三名维吾尔人在中美换囚后获准离开中国
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/my-uyghurs-china-united-states-12032024104237.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E5%A4%9A%E5%9C%B0%E9%93%B6%E8%A1%8C%E5%8F%96%E6%AC%BE%E9%9C%80%E8%AF%81%E6%98%8E%E8%B5%84%E9%87%91%E6%9D%A5%E6%BA%90-%E5%BC%95%E5%8F%91%E8%B4%A8%E7%96%91">
+      
+        中国多地银行取款需证明资金来源 引发质疑
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql1-china-bank-withdraw-money-proof-limit-12032024005208.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+      
+        中国公安部部长王小洪访问古巴 与古巴领导人讨论网络安全等问题
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/jj1-china-public-security-minister-visits-cuba-12022024150828.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E8%8E%B7%E5%88%917%E5%B9%B4%E7%9A%84-%E9%A6%99%E6%B8%AF47%E4%BA%BA%E6%A1%88-%E4%B9%8B%E8%B5%B5%E5%AE%B6%E8%B4%A4%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+      
+           获刑7年的“香港47人案”之赵家贤的案情及简历   
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/747.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E9%AB%98%E5%96%84%E6%96%87%E5%9B%BD%E6%8A%95%E8%AF%81%E5%88%B8%E6%BC%94%E8%AE%B2%E5%8E%9F%E6%96%87-%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E5%90%8E-%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%80%9F%E8%A6%81%E5%9B%9E%E5%88%B0%E6%AD%A3%E5%B8%B8%E6%B0%B4%E5%B9%B3-%E5%B9%B3%E5%9D%87%E9%9C%80%E8%A6%819%E5%B9%B4">
+      
+        高善文国投证券演讲原文：泡沫破灭后，经济增速要回到正常水平，平均需要9年
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713727.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E5%A4%BA%E5%8F%96%E4%B8%AD%E9%83%A8%E5%9F%8E%E5%B8%82%E5%93%88%E9%A9%AC">
+      
+        叙利亚反政府武装夺取中部城市哈马
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/syrian-rebels-take-central-city-of-hama-20241206/7890576.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E-%E5%9D%9A%E5%86%B3%E5%8F%8D%E5%AF%B9%E4%BB%A5-%E8%AF%88%E9%AA%97-%E7%9A%84%E5%90%8D%E4%B9%89%E8%BF%AB%E5%AE%B3%E4%B8%B4%E6%B1%BE%E5%9C%A3%E7%BA%A6%E5%AE%B6%E5%9B%AD%E6%95%99%E4%BC%9A-%E5%8F%91%E5%B8%83%E7%AC%AC%E4%BA%8C%E6%89%B9%E8%81%94%E5%90%8D%E5%90%8D%E5%8D%95">
+      
+           联合声明：坚决反对以“诈骗”的名义迫害临汾圣约家园教会（发布第二批联名名单）
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/blog-post_7.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%BE%8E%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E4%B8%80%E9%A1%B9%E6%95%99%E8%82%B2%E6%B3%95%E6%A1%88-%E6%97%A8%E5%9C%A8%E5%90%91%E9%AB%98%E4%B8%AD%E7%94%9F%E6%99%AE%E5%8F%8A%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E7%9A%84%E5%8D%B1%E5%AE%B3">
+      
+        美众议院通过一项教育法案，旨在向高中生普及共产主义的危害
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/house-passes-act-to-teach-communism-s-history-in-schools-20241206/7890590.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E8%91%97%E5%90%8D%E4%BA%BA%E6%9D%83%E6%8D%8D%E5%8D%AB%E8%80%85%E5%BC%A0%E5%B1%95%E5%A5%B3%E5%A3%AB%E9%81%AD%E7%BE%81%E6%8A%BC100%E5%A4%A9-%E6%A1%88%E4%BB%B6%E5%89%8D%E6%99%AF%E4%BB%8D%E4%B8%8D%E6%98%8E%E6%9C%97">
+      
+           著名人权捍卫者张展女士遭羁押100天  案件前景仍不明朗      
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/100.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/VOA%E4%B8%93%E8%AE%BF%E5%89%8D%E4%B9%8C%E5%85%8B%E5%85%B0%E6%80%BB%E7%BB%9F%E6%B3%A2%E7%BD%97%E7%94%B3%E7%A7%91-%E5%8F%AF%E4%BB%A524%E5%B0%8F%E6%97%B6%E7%BB%93%E6%9D%9F%E6%88%98%E4%BA%89">
+      
+        VOA专访前乌克兰总统波罗申科：可以24小时结束战争
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/voa-interview-former-ukrainian-president-poroshenko-could-end-war-in-24-hours-20241206/7890606.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%9C%80%E9%AB%98%E5%B1%82%E7%BB%8F%E6%B5%8E%E5%B7%A5%E4%BD%9C%E4%BC%9A%E8%AE%AE%E5%89%8D-%E7%BD%91%E4%B8%8A%E4%B8%A4%E5%88%99%E6%89%B9%E8%AF%84%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E7%8A%B6%E5%86%B5%E7%9A%84%E8%AE%BA%E8%BF%B0%E8%A2%AB%E5%B1%8F%E8%94%BD">
+      
+        最高层经济工作会议前，网上两则批评中国经济状况的论述被屏蔽
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/two-critical-online-views-on-china-s-economy-vanish-ahead-of-policy-meeting-20241206/7890307.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E5%BE%AE%E8%B0%83%E7%BB%8F%E6%B5%8E%E5%88%BA%E6%BF%80%E4%B8%BE%E6%8E%AA-%E5%BA%94%E5%AF%B9%E7%BE%8E%E5%9B%BD%E6%96%B0%E6%94%BF%E5%BA%9C%E4%B8%8A%E5%8F%B0">
+      
+        中国微调经济刺激举措，应对美国新政府上台
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-fine-tunes-economic-stimulus-as-it-braces-for-new-us-administration-20241206/7890329.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E5%B1%95%E7%A4%BA%E6%96%B0%E5%9E%8B%E4%B8%AD%E7%A8%8B-%E5%9C%B0%E7%8B%B1-%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%AF%BC%E5%BC%B9">
+      
+        泽连斯基展示新型中程“地狱”无人机导弹
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/elenskyy-reveals-new-medium-range-peklo-drone-missile-20241206/7890263.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%8E%A8%E7%89%B9%E4%B8%8A%E7%9A%84%E4%B8%AD%E5%9B%BD-%E7%89%B9%E6%9C%97%E6%99%AE%E6%96%B0%E4%BB%BB%E5%91%BD%E7%9A%84%E9%A9%BB%E5%8D%8E%E5%A4%A7%E4%BD%BF%E5%AF%B9%E4%B8%AD%E5%9B%BD%E4%BC%9A%E6%98%AF%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6-%E7%BE%8E%E5%9B%BD%E4%BA%BA%E4%B9%9F%E5%BE%88%E7%BA%A0%E7%BB%93">
+      
+        推特上的中国：特朗普新任命的驻华大使对中国会是什么态度？美国人也很纠结
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-on-twitter-perdue-20241206/7890192.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%BB%8E10%E6%9C%88%E7%9A%84%E9%A2%93%E5%8A%BF%E5%8F%8D%E5%BC%B9-%E7%BE%8E%E5%9B%BD11%E6%9C%88%E5%B0%B1%E4%B8%9A%E5%B8%82%E5%9C%BA%E6%96%B0%E5%A2%9E22.7%E4%B8%87%E4%BB%BD%E5%B7%A5%E4%BD%9C">
+      
+        从10月的颓势反弹，美国11月就业市场新增22.7万份工作
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-added-a-strong-227-000-jobs-in-november-in-bounce-back-from-october-slowdown-20241206/7890235.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%BE%8E%E4%B8%AD%E5%9B%9A%E7%8A%AF%E4%BA%A4%E6%8D%A2%E4%BF%83%E6%88%90%E7%BB%B4%E5%90%BE%E5%B0%94%E5%AE%B6%E5%BA%AD%E5%9B%A2%E8%81%9A">
+      
+        美中囚犯交换促成维吾尔家庭团聚
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-china-prisoner-exchange-reunites-uighur-families-20241207/7889934.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%BE%8E%E5%9B%BD%E4%BC%9A%E5%90%AC%E8%AF%81%E4%BC%9A%E8%81%9A%E7%84%A6%E4%B8%AD%E5%85%B1%E4%BF%AE%E6%94%B9%E5%8E%86%E5%8F%B2-%E5%85%AD%E5%9B%9B%E5%AD%A6%E8%80%85-%E5%AF%B9%E5%8E%86%E5%8F%B2%E6%9C%80%E5%A4%A7%E7%9A%84%E6%AD%AA%E6%9B%B2%E5%B0%B1%E6%98%AF%E4%B8%AD%E5%85%B1%E5%8A%AB%E6%8C%81%E4%BA%86-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E7%A7%B0">
+      
+        美国会听证会聚焦中共修改历史 六四学者：对历史最大的歪曲就是中共劫持了“中国”名称
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/cecc-preservation-history-china-20241206/7890142.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%B3%95%E9%99%A2%E5%88%A4TikTok%E8%B4%A5%E8%AF%89-%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98-%E7%BE%8E%E5%9B%BD%E4%BA%BA%E6%B0%91%E7%9A%84%E8%83%9C%E5%88%A9-%E4%B8%AD%E5%85%B1%E7%9A%84%E6%8D%9F%E5%A4%B1">
+      
+        法院判TikTok败诉 美两党议员：美国人民的胜利，中共的损失
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-congress-bipartisan-reax-tiktok-20241206/7890150.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E9%87%91%E7%A0%96%E5%B8%81-%E9%81%A5%E9%81%A5%E6%97%A0%E6%9C%9F-%E4%BA%BA%E6%B0%91%E5%B8%81%E9%9A%BE%E4%BB%A3%E7%BE%8E%E5%85%83-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%BA%E4%BD%95%E8%AD%A6%E5%91%8A%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6">
+      
+        “金砖币”遥遥无期，人民币难代美元 特朗普为何警告金砖国家？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/brics-trump-dollar-20241206/7888979.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E7%AB%8B%E5%9C%BA%E5%8F%8D%E8%BD%AC-%E8%A3%81%E5%AE%9A%E9%A6%96%E8%BD%AE%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E6%8A%95%E7%A5%A8%E7%BB%93%E6%9E%9C%E6%97%A0%E6%95%88">
+      
+        罗马尼亚最高法院立场反转，裁定首轮总统大选投票结果无效
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/romania-s-top-court-annuls-first-round-of-presidential-vote-won-by-far-right-candidate-20241206/7889728.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E4%B8%80%E8%89%98%E6%B8%94%E8%88%B9%E5%9C%A8%E7%B4%A2%E9%A9%AC%E9%87%8C%E6%B5%B7%E5%9F%9F%E9%81%AD%E5%8A%AB%E6%8C%81-%E8%88%B9%E5%91%98%E7%9B%AE%E5%89%8D%E5%AE%89%E5%85%A8">
+      
+        中国一艘渔船在索马里海域遭劫持，船员目前安全
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/a-chinese-vessel-has-been-hijacked-off-the-somali-coast-officials-say-20241206/7889765.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%9B%A0%E5%9B%BD%E5%AE%89%E6%B3%95%E8%8E%B7%E5%88%91%E5%90%8E%E6%8F%90%E5%89%8D%E8%8E%B7%E9%87%8A%E5%8F%97%E9%98%BB%E7%9A%84%E9%A9%AC%E4%BF%8A%E6%96%87%E5%8F%B8%E6%B3%95%E5%A4%8D%E6%A0%B8%E8%A2%AB%E9%A6%99%E6%B8%AF%E6%B3%95%E9%99%A2%E9%A9%B3%E5%9B%9E">
+      
+        因国安法获刑后提前获释受阻的马俊文司法复核被香港法院驳回
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/hong-kong-court-rejects-first-legal-challenge-to-new-security-law-20241206/7889605.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%8F%B0%E6%B9%BE%E6%80%BB%E7%BB%9F%E8%B5%96%E6%B8%85%E5%BE%B7%E7%BB%93%E6%9D%9F%E5%8D%97%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%87%BA%E8%AE%BF-%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8-%E5%B7%B2%E5%B0%B1%E8%B5%96-%E8%BF%87%E5%A2%83-%E7%BE%8E%E5%9B%BD%E6%8F%90%E5%87%BA%E4%BA%A4%E6%B6%89">
+      
+        台湾总统赖清德结束南太平洋出访 中国外交部：已就赖“过境”美国提出交涉
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/how-will-china-react-to-lai-ching-te-s-visit-abroad-20241206/7889688.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E8%88%86%E8%AE%BA%E7%83%AD%E8%AE%AE%E7%BE%8E%E9%A9%BB%E5%8D%8E%E5%A4%A7%E4%BD%BF%E4%BA%BA%E9%80%89-%E5%8F%8D%E5%8D%8E%E5%8F%8B%E5%8F%B0-%E5%88%86%E6%9E%90-%E7%8F%80%E6%9D%9C%E5%B0%86%E6%89%AE-%E7%99%BD%E8%84%B8">
+      
+        中国舆论热议美驻华大使人选“反华友台” 分析：珀杜将扮“白脸”
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-s-reaction-to-david-perdue-to-be-ambassador-to-china-20241206/7889721.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E5%AF%B9%E5%85%B3%E9%94%AE%E9%AB%98%E7%A7%91%E6%8A%80%E6%9D%90%E6%96%99%E7%9A%84%E7%A6%81%E4%BB%A4%E5%8F%AF%E8%83%BD%E5%AF%B9%E7%BE%8E%E5%9B%BD%E9%AB%98%E7%A7%91%E6%8A%80%E8%A1%8C%E4%B8%9A%E5%8F%8A%E6%95%B4%E4%BD%93%E7%BB%8F%E6%B5%8E%E4%BA%A7%E7%94%9F%E5%B9%BF%E6%B3%9B%E5%BD%B1%E5%93%8D">
+      
+        中国对关键高科技材料的禁令可能对美国高科技行业及整体经济产生广泛影响
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/china-sets-precedent-by-banning-others-from-selling-goods-to-us-20241206/7889573.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/TikTok%E8%B4%A5%E8%AF%89-%E9%9D%A2%E4%B8%B4%E7%A6%81%E4%BB%A4-%E7%89%B9%E6%9C%97%E6%99%AE%E9%87%8D%E8%BF%94%E7%99%BD%E5%AE%AB-%E8%83%BD%E5%90%A6%E4%BB%A4%E5%AE%83%E7%BB%9D%E5%A4%84%E9%80%A2%E7%94%9F">
+      
+        TikTok败诉，面临禁令 特朗普重返白宫，能否令它绝处逢生？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/trump-tiktok-20241206/7884592.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E8%B4%A2%E6%94%BF%E9%83%A8-%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD%E6%8B%9F%E7%BB%99%E4%BA%88%E6%9C%AC%E5%9B%BD%E4%BA%A7%E5%93%8120-%E4%BB%B7%E6%A0%BC%E4%BC%98%E6%83%A0">
+      
+        中国财政部：政府采购拟给予本国产品20%价格优惠
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E4%B8%AD%E5%9B%BD%E8%B4%A2%E6%94%BF%E9%83%A8%EF%BC%9A%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD%E6%8B%9F%E7%BB%99%E4%BA%88%E6%9C%AC%E5%9B%BD%E4%BA%A7%E5%93%8120%%E4%BB%B7%E6%A0%BC%E4%BC%98%E6%83%A0/a-70988229" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%99%AE%E9%87%91%E8%AE%BF%E9%97%AE%E7%99%BD%E4%BF%84%E7%BD%97%E6%96%AF-%E4%B8%A4%E5%9B%BD%E5%8D%B3%E5%B0%86%E7%AD%BE%E7%BD%B2%E5%AE%89%E4%BF%9D%E6%9D%A1%E7%BA%A6">
+      
+        普金访问白俄罗斯，两国即将签署安保条约
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/russia-and-belarus-to-sign-treaty-on-security-guarantees-kremlin-says-20241206/7889596.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E8%91%A3%E5%86%9B%E7%8E%B0%E8%BA%AB%E4%B8%8A%E6%B5%B7%E8%BE%9F%E8%B0%A3-%E8%A7%82%E5%AF%9F%E4%BA%BA%E5%A3%AB-%E6%81%90%E5%9B%A0%E4%BE%9B%E5%87%BA%E8%8B%97%E5%8D%8E%E7%BD%AA%E8%AF%81%E8%80%8C%E6%88%B4%E7%BD%AA%E7%AB%8B%E5%8A%9F%E4%B8%AD">
+      
+        董军现身上海辟谣? 观察人士：恐因供出苗华罪证而戴罪立功中
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/dong-jun-s-public-appearance-fuels-speculation-about-china-s-military-shakeup-20241206/7889650.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%8F%91%E7%8E%B0%E9%97%B4%E8%B0%8D%E8%BD%AF%E4%BB%B6-Pegasus">
+      
+        普通用户手机上发现间谍软件 Pegasus
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79980" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%9C%8B%E8%A1%B0-%E4%B8%AD%E5%9B%BD-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E8%A2%AB%E7%BD%91%E7%BB%9C%E7%A6%81%E8%A8%80">
+      
+        “看衰”中国，经济学家被网络禁言
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E2%80%9C%E7%9C%8B%E8%A1%B0%E2%80%9D%E4%B8%AD%E5%9B%BD%EF%BC%8C%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E8%A2%AB%E7%BD%91%E7%BB%9C%E7%A6%81%E8%A8%80/a-70987335" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%AB%8B%E9%99%B6%E5%AE%9B%E6%80%BB%E7%BB%9F-%E6%B3%A2%E7%BD%97%E7%9A%84%E6%B5%B7%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86-%E6%9C%89%E7%9B%B8%E5%BD%93%E9%AB%98%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7-%E8%A2%AB%E4%BA%BA%E6%95%85%E6%84%8F%E5%89%B2%E6%96%AD">
+      
+        立陶宛总统：波罗的海海底电缆“有相当高的可能性”被人故意割断
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/lithuania-sees-quite-high-probability-that-baltic-sea-cables-were-intentionally-cut-20241206/7889569.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/NBA%E7%90%83%E8%B5%9B%E6%98%8E%E5%B9%B4%E5%B0%86%E9%87%8D%E8%BF%94%E4%B8%AD%E5%9B%BD">
+      
+        NBA球赛明年将重返中国 
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/NBA%E7%90%83%E8%B5%9B%E6%98%8E%E5%B9%B4%E5%B0%86%E9%87%8D%E8%BF%94%E4%B8%AD%E5%9B%BD%20/a-70986119" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%95%99%E5%AE%97%E6%9C%89%E4%BA%86%E6%94%B9%E8%A3%85%E8%BF%87%E7%9A%84%E5%A5%94%E9%A9%B0%E6%95%99%E5%AE%97%E7%BA%AF%E7%94%B5%E6%B1%BD%E8%BD%A6">
+      
+        教宗有了改装过的奔驰教宗纯电汽车
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79979" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%8F%99%E5%88%A9%E4%BA%9A%E7%AC%AC4%E5%A4%A7%E5%9F%8E%E5%B8%82%E5%93%88%E9%A9%AC%E5%A4%B1%E5%AE%88-%E9%A6%96%E9%83%BD%E5%A4%A7%E9%A9%AC%E5%A3%AB%E9%9D%A9%E5%91%8A%E6%80%A5">
+      
+        叙利亚第4大城市哈马失守 首都大马士革告急  
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%8F%99%E5%88%A9%E4%BA%9A%E7%AC%AC4%E5%A4%A7%E5%9F%8E%E5%B8%82%E5%93%88%E9%A9%AC%E5%A4%B1%E5%AE%88%20%E9%A6%96%E9%83%BD%E5%A4%A7%E9%A9%AC%E5%A3%AB%E9%9D%A9%E5%91%8A%E6%80%A5%20%20/a-70984435" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E9%9D%9E%E4%BA%BA%E7%B1%BB%E5%8A%A8%E7%89%A9%E6%B2%A1%E6%9C%89%E5%8F%91%E7%8E%B0%E4%B8%8D%E5%85%AC%E5%B9%B3%E5%8E%8C%E6%81%B6%E7%9A%84%E8%AF%81%E6%8D%AE">
+      
+        非人类动物没有发现不公平厌恶的证据
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79978" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E8%A2%AB%E6%B8%97%E9%80%8F%E5%8D%96%E6%83%85%E6%8A%A5%E7%BB%99%E4%B8%AD%E5%9B%BD-%E5%8F%B0%E6%B9%BE%E6%80%BB%E7%BB%9F%E5%BA%9C%E7%BB%B4%E5%AE%89%E5%AE%AA%E5%85%B5%E8%A2%AB%E8%B5%B7%E8%AF%89">
+      
+        被渗透卖情报给中国 台湾总统府维安宪兵被起诉
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/taiwan-president-office-mps-being-chinese-spy-20241206/7889458.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E9%9F%A9%E5%9B%BD%E6%89%A7%E6%94%BF%E5%85%9A%E8%A6%81%E6%B1%82%E6%80%BB%E7%BB%9F%E5%81%9C%E8%81%8C-%E5%9B%BD%E5%AE%B6%E9%9D%A2%E4%B8%B4%E5%B7%A8%E5%A4%A7%E5%8D%B1%E9%99%A9">
+      
+        韩国执政党要求总统停职：国家面临巨大危险
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E9%9F%A9%E5%9B%BD%E6%89%A7%E6%94%BF%E5%85%9A%E8%A6%81%E6%B1%82%E6%80%BB%E7%BB%9F%E5%81%9C%E8%81%8C%EF%BC%9A%E5%9B%BD%E5%AE%B6%E9%9D%A2%E4%B8%B4%E5%B7%A8%E5%A4%A7%E5%8D%B1%E9%99%A9/a-70982265" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/Linux-6.12-%E8%A2%AB%E9%80%89%E4%B8%BA%E6%9C%80%E6%96%B0%E7%9A%84%E9%95%BF%E6%9C%9F%E6%94%AF%E6%8C%81%E5%86%85%E6%A0%B8">
+      
+        Linux 6.12 被选为最新的长期支持内核
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79977" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%A0%B4%E7%BA%AA%E5%BD%95-%E4%B8%96%E7%95%8C%E9%93%B6%E8%A1%8C%E5%AE%A3%E5%B8%83%E6%8D%90%E5%8A%A9%E7%A9%B7%E5%9B%BD%E8%A1%A5%E5%85%85%E8%B5%84%E9%87%91%E8%BE%BE1000%E4%BA%BF%E7%BE%8E%E5%85%83">
+      
+        破纪录！世界银行宣布捐助穷国补充资金达1000亿美元
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/world-bank-announces-record-100-bn-support-for-world-s-poorest-countries-20241206/7889445.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%8F%A4%E5%B7%B4%E5%86%8D%E6%AC%A1%E9%81%AD%E9%81%87%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%96%AD%E7%94%B5">
+      
+        古巴再次遭遇大规模断电
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79976" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E9%98%B2%E9%95%BF%E8%91%A3%E5%86%9B%E5%85%AC%E5%BC%80%E9%9C%B2%E9%9D%A2-%E8%8B%B1%E5%AA%92%E6%9B%BE%E6%8A%A5%E9%81%93%E7%A7%B0%E5%85%B6%E6%B6%89%E8%B4%AA%E8%85%90%E8%A2%AB%E6%9F%A5">
+      
+        中国防长董军公开露面 英媒曾报道称其涉贪腐被查
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E4%B8%AD%E5%9B%BD%E9%98%B2%E9%95%BF%E8%91%A3%E5%86%9B%E5%85%AC%E5%BC%80%E9%9C%B2%E9%9D%A2%20%E8%8B%B1%E5%AA%92%E6%9B%BE%E6%8A%A5%E9%81%93%E7%A7%B0%E5%85%B6%E6%B6%89%E8%B4%AA%E8%85%90%E8%A2%AB%E6%9F%A5/a-70981136" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%BC%94%E6%97%A0%E6%B3%95%E8%B5%A2%E5%BE%97%E5%B0%8A%E6%95%AC-%E8%B5%96%E6%B8%85%E5%BE%B7%E5%91%BC%E5%90%81%E5%8C%97%E4%BA%AC-%E4%B8%BE%E8%B5%B7%E6%8B%B3%E5%A4%B4%E4%B8%8D%E5%A6%82%E5%BC%A0%E5%BC%80%E5%8F%8C%E6%89%8B">
+      
+        中国军演无法赢得尊敬 赖清德呼吁北京“举起拳头不如张开双手”
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/lai-ching-te-urges-china-to-unclench-its-fists-20241206/7889427.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%BE%B7%E5%A4%96%E4%BA%A4%E9%83%A8-%E5%8F%B0%E6%B5%B7%E9%97%9C%E4%B9%8E%E5%BE%B7%E5%9C%8B%E5%88%A9%E7%9B%8A-%E8%88%87%E5%8F%8D%E5%B0%8D%E9%BB%A8%E5%B0%B1-%E5%B0%8D%E8%8F%AF%E6%88%B0%E7%95%A5-%E6%9C%89%E5%85%B1%E8%AD%98">
+      
+        德外交部：台海關乎德國利益 與反對黨就「對華戰略」有共識 
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%BE%B7%E5%A4%96%E4%BA%A4%E9%83%A8%EF%BC%9A%E5%8F%B0%E6%B5%B7%E9%97%9C%E4%B9%8E%E5%BE%B7%E5%9C%8B%E5%88%A9%E7%9B%8A%20%E8%88%87%E5%8F%8D%E5%B0%8D%E9%BB%A8%E5%B0%B1%E3%80%8C%E5%B0%8D%E8%8F%AF%E6%88%B0%E7%95%A5%E3%80%8D%E6%9C%89%E5%85%B1%E8%AD%98%20/a-70975739" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%9C%A3%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF%E5%92%8C%E5%9C%A3%E8%AF%9E%E8%80%81%E4%BA%BA-%E8%B0%81%E6%98%AF%E8%B0%81">
+      
+        圣尼古拉斯和圣诞老人——谁是谁？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%9C%A3%E5%B0%BC%E5%8F%A4%E6%8B%89%E6%96%AF%E5%92%8C%E5%9C%A3%E8%AF%9E%E8%80%81%E4%BA%BA%E2%80%94%E2%80%94%E8%B0%81%E6%98%AF%E8%B0%81%EF%BC%9F/a-70975217" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/CDT%E6%8A%A5%E5%91%8A%E6%B1%87-%E4%BA%9A%E6%B4%B2%E5%8D%8F%E4%BC%9A-%E5%85%A8%E7%90%83%E5%AF%B9%E5%8D%8E%E5%A5%BD%E6%84%9F%E5%BA%A6%E5%B9%B3%E5%9D%87%E5%80%BC%E4%B8%BA-12-%E5%A4%96%E4%BA%8C%E7%AF%87">
+      
+        【CDT报告汇】亚洲协会：全球对华好感度平均值为 -12%（外二篇）
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713709.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%9B%9E%E5%BF%86%E5%BD%95%E5%9C%A8%E7%BE%8E%E5%87%BA%E7%89%88-%E9%BB%98%E5%85%8B%E5%B0%94%E4%B8%8E%E5%A5%A5%E5%B7%B4%E9%A9%AC%E5%AF%B9%E8%B0%88">
+      
+        回忆录在美出版 默克尔与奥巴马对谈
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%9B%9E%E5%BF%86%E5%BD%95%E5%9C%A8%E7%BE%8E%E5%87%BA%E7%89%88%20%E9%BB%98%E5%85%8B%E5%B0%94%E4%B8%8E%E5%A5%A5%E5%B7%B4%E9%A9%AC%E5%AF%B9%E8%B0%88/a-70946211" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E4%B8%BB%E5%BC%B5%E5%8F%8B%E5%8F%B0%E6%8A%97%E4%B8%AD-%E7%8D%B2%E5%B7%9D%E6%99%AE%E6%8F%90%E5%90%8D%E7%9A%84%E7%BE%8E%E9%A7%90%E8%8F%AF%E5%A4%A7%E4%BD%BF%E6%98%AF%E8%AA%B0">
+      
+        主張友台抗中 獲川普提名的美駐華大使是誰？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E4%B8%BB%E5%BC%B5%E5%8F%8B%E5%8F%B0%E6%8A%97%E4%B8%AD%20%E7%8D%B2%E5%B7%9D%E6%99%AE%E6%8F%90%E5%90%8D%E7%9A%84%E7%BE%8E%E9%A7%90%E8%8F%AF%E5%A4%A7%E4%BD%BF%E6%98%AF%E8%AA%B0%EF%BC%9F/a-70979477" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%B0%8F%E7%B1%B3%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6%E5%AD%A3%E5%BA%A6%E9%94%80%E9%87%8F%E8%B6%85%E8%BF%87%E4%B8%B0%E7%94%B0">
+      
+        小米电动汽车季度销量超过丰田
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79975" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%B0%94%E6%B8%A9%E5%8D%87%E9%AB%98%E5%8A%A0%E5%89%A7%E7%89%A9%E7%A7%8D%E7%81%AD%E7%BB%9D%E9%A3%8E%E9%99%A9">
+      
+        气温升高加剧物种灭绝风险
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79974" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/GitLab-%E4%BB%BB%E5%91%BD-Bill-Staple-%E4%B8%BA%E6%96%B0-CEO">
+      
+        GitLab 任命 Bill Staple 为新 CEO
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79973" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%B0%B9%E9%94%A1%E6%82%A6%E6%88%92%E4%B8%A5%E9%A3%8E%E6%B3%A2-%E5%B0%86%E9%9D%A2%E4%B8%B4%E5%9B%BD%E4%BC%9A%E5%BC%B9%E5%8A%BE">
+      
+        尹锡悦戒严风波 将面临国会弹劾
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%B0%B9%E9%94%A1%E6%82%A6%E6%88%92%E4%B8%A5%E9%A3%8E%E6%B3%A2%20%E5%B0%86%E9%9D%A2%E4%B8%B4%E5%9B%BD%E4%BC%9A%E5%BC%B9%E5%8A%BE/a-70970427" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%BE%E4%B8%8A-%E5%BE%B7%E5%9B%BD%E5%9C%A8%E7%BC%A9%E5%B0%8F">
+      
+        客座评论：在中国的世界地图上，德国在缩小
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#德国之声" class="tag">
+        德国之声
+      </a>
+      
+
+      
+      <a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E4%B8%96%E7%95%8C%E5%9C%B0%E5%9B%BE%E4%B8%8A%EF%BC%8C%E5%BE%B7%E5%9B%BD%E5%9C%A8%E7%BC%A9%E5%B0%8F/a-70945700" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%AF%8F%E6%97%A5%E4%BA%BA%E7%89%A9-%E5%86%9C%E6%9D%91%E5%A6%87%E5%A5%B3%E5%9C%9F%E5%9C%B0%E6%9D%83-%E6%9C%80%E6%BC%AB%E9%95%BF%E7%9A%84%E6%8A%97%E4%BA%89">
+      
+        每日人物｜农村妇女土地权，最漫长的抗争
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713717.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E7%BE%8E%E8%81%94%E7%A4%BE-NBA%E6%98%8E%E5%B9%B4%E5%B0%86%E9%87%8D%E8%BF%94%E4%B8%AD%E5%9B%BD-%E4%B8%BE%E5%8A%9E%E4%B8%A4%E5%9C%BA%E5%AD%A3%E5%89%8D%E8%B5%9B">
+      
+        美联社：NBA明年将重返中国 举办两场季前赛
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/nba-returning-to-china-for-preseason-games-in-2025-20241206/7889396.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%9E%97%E4%B8%89%E5%9C%9F-%E8%A2%81%E6%BA%90-%E7%94%B7%E4%BA%BA%E5%8F%AF%E4%BB%A5%E7%A7%B0%E8%87%AA%E5%B7%B1%E4%B8%BA%E5%A5%B3%E6%9D%83%E4%B8%BB%E4%B9%89%E8%80%85%E4%B9%88">
+      
+        林三土｜袁源：男人可以称自己为女权主义者么？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713718.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%8A%BC%E6%B2%99%E9%BE%99yashl-%E8%BF%99%E4%B8%AA%E6%97%B6%E4%BB%A3%E8%B6%85%E8%B6%8A%E7%90%BC%E7%91%B6%E4%BA%86%E5%90%97">
+      
+        押沙龙yashl｜这个时代超越琼瑶了吗？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713721.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E9%A1%B9%E6%A0%8B%E6%A2%81-%E5%BB%BA%E8%AE%AE%E9%83%91%E5%B7%9E%E7%BB%99%E5%85%AC%E5%8A%A1%E5%91%98%E5%8F%91%E6%AC%A2%E4%B9%90%E8%B1%86%E4%BD%9C%E4%B8%BA%E5%B7%A5%E8%B5%84">
+      
+        项栋梁｜建议郑州给公务员发欢乐豆作为工资
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713719.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%85%AC%E5%AE%89%E4%B8%8D%E6%87%82%E6%B3%95%E6%9C%80%E5%8F%AF%E6%80%95-%E7%B2%BE%E7%A5%9E%E5%A4%B1%E5%B8%B8%E5%A5%B3%E7%A1%95%E5%A3%AB%E8%83%BD%E8%A2%AB%E5%A5%BD%E5%BF%83-%E6%94%B6%E7%95%99-%E7%94%9F%E5%AD%A9%E5%AD%90%E5%90%97">
+      
+        基本常识｜公安不懂法最可怕，精神失常女硕士能被好心“收留”生孩子吗？
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713715.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.12.5">
+      
+        每日一语 2024.12.5
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代" class="tag">
+        中国数字时代
+      </a>
+      
+
+      
+      <a href="https://chinadigitaltimes.net/chinese/713713.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-06/%E5%85%BB%E4%B9%90%E5%A4%9A%E6%9C%AC%E7%A4%BE%E5%85%B3%E9%97%AD%E4%B8%8A%E6%B5%B7%E5%B7%A5%E5%8E%82">
+      
+        养乐多本社关闭上海工厂
+      </a>
+      <time>2024-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/57463-2024-12-06-15-03-36.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2024-12-05</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E9%9F%A9%E6%89%A7%E6%94%BF%E5%85%9A%E7%AB%8B%E5%9C%BA%E8%BD%AC%E5%8F%98%E8%A6%81%E6%B1%82%E6%80%BB%E7%BB%9F%E5%B0%BD%E5%BF%AB%E5%81%9C%E8%81%8C-%E5%9C%A8%E9%87%8E%E5%85%9A%E4%B8%A5%E9%98%B2%E5%86%8D%E6%AC%A1%E6%88%92%E4%B8%A5">
+      
+        韩执政党立场转变要求总统尽快停职 在野党严防再次戒严
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/sk-s-governing-party-head-supports-suspending-yoon-s-powers-20241206/7889380.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/OpenAI-%E6%8E%A8%E5%87%BA-200-%E7%BE%8E%E5%85%83%E6%9C%88%E8%B4%B9%E7%9A%84-ChatGPT-Pro">
+      
+        OpenAI 推出 200 美元月费的 ChatGPT Pro
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#Solidot" class="tag">
+        Solidot
+      </a>
+      
+
+      
+      <a href="https://www.solidot.org/story?sid=79972" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%85%A8%E7%90%83EV%E5%AD%A3%E5%BA%A6%E9%94%80%E9%87%8F-%E5%B0%8F%E7%B1%B3%E8%B6%85%E4%B8%B0%E7%94%B0">
+      
+        全球EV季度销量：小米超丰田
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/china/ccompany/57460-2024-12-06-13-49-20.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%91%BC%E5%90%81-%E9%87%8D%E5%BB%BA%E6%B0%91%E4%B8%BB%E5%86%9B%E7%81%AB%E5%BA%93-%E7%BE%8E%E4%B8%A4%E5%85%9A%E8%AE%AE%E5%91%98%E7%A7%B0-%E4%BB%A5%E5%AE%9E%E5%8A%9B%E6%B1%82%E5%92%8C%E5%B9%B3-%E6%98%AF%E9%98%B2%E6%AD%A2%E7%BE%8E%E4%B8%AD%E5%86%B2%E7%AA%81%E5%85%B3%E9%94%AE">
+      
+        呼吁“重建民主军火库” 美两党议员称“以实力求和平”是防止美中冲突关键
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/us-house-hearing-defense-industrial-base-20241205/7889323.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%B4%9B%E6%9D%89%E7%9F%B6%E4%B8%BE%E8%A1%8C-%E4%BA%BA%E9%81%93%E4%B8%AD%E5%9B%BD-%E5%B9%B4%E4%BC%9A-%E4%B8%8E%E4%BC%9A%E8%80%85%E4%B8%BA%E4%B8%AD%E5%9B%BD%E6%94%BF%E6%B2%BB%E7%8A%AF%E7%AD%BE%E5%8D%A1%E9%80%81%E6%B8%A9%E6%9A%96">
+      
+        洛杉矶举行"人道中国"年会 与会者为中国政治犯签卡送温暖
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/renquanfazhi/sc-china-rights-group-holds-annual-meeting-in-la-12022024111827.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%94%B6%E7%B4%A7%E7%A7%BB%E6%B0%91%E9%9A%BE%E6%B0%91%E6%94%BF%E7%AD%96-%E7%A6%BB%E6%95%A3%E6%B8%AF%E4%BA%BA%E5%BF%A7%E5%BF%83%E4%BD%86%E4%B8%8D%E6%94%BE%E5%BC%83">
+      
+        加拿大收紧移民难民政策 离散港人忧心但不放弃
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/lf-canada-tightens-immigration-and-refuge-policy-12022024142629.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B">
+      
+        "小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E7%89%B9%E6%9C%97%E6%99%AE%E5%AE%A3%E5%B8%83%E6%8F%90%E5%90%8D%E5%89%8D%E5%8F%82%E8%AE%AE%E5%91%98%E7%8F%80%E6%9D%9C%E5%87%BA%E4%BB%BB%E7%BE%8E%E5%9B%BD%E9%A9%BB%E4%B8%AD%E5%9B%BD%E5%A4%A7%E4%BD%BF">
+      
+        特朗普宣布提名前参议员珀杜出任美国驻中国大使
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/trump-picks-former-senator-david-perdue-to-be-ambassador-to-china/7889347.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6">
+      
+        马龙等中国访台成员与台大学生产生"认知摩擦"
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/ec-ntu-students-protest-chinese-student-delegation-12032024083932.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E7%BE%8E%E6%99%BA%E5%BA%93%E6%8A%A5%E5%91%8A-%E4%B8%AD%E5%9B%BD%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E6%88%96%E5%AF%B9%E7%BE%8E%E9%98%B2%E5%8A%A1%E6%9E%84%E6%88%90%E9%87%8D%E5%A4%A7%E5%A8%81%E8%83%81">
+      
+        美智库报告：中国激光雷达或对美防务构成重大威胁
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/jw5-china-laser-radar-major-threat-us-defense-12022024151412.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%B5%81%E4%BA%A1%E4%BA%BA%E5%A3%AB-%E5%9B%9E%E9%A1%BE%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E4%B8%AD%E5%9B%BD%E6%AC%A0%E4%B8%96%E7%95%8C%E4%B8%80%E4%B8%AA%E4%BA%A4%E4%BB%A3">
+      
+        流亡人士：回顾新冠疫情 中国欠世界一个交代
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/huanjing/hx-guo-bin-interview-covid-19-pandemic-china-12032024091601.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%B9%B8%E7%A6%8F%E8%88%AA%E7%A9%BA%E9%95%BF%E6%9C%9F%E6%AC%A0%E8%96%AA-%E9%A3%9E%E8%A1%8C%E5%91%98%E4%B8%8E%E7%A9%BA%E4%B9%98%E5%85%BC%E8%81%8C%E9%80%81%E5%A4%96%E5%8D%96">
+      
+        幸福航空长期欠薪 飞行员与空乘兼职送外卖
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql2-joyair-payroll-arrears-12032024025850.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%8D%8F%E8%AE%AE%E8%83%8C%E5%90%8E%E7%9A%84%E7%A7%98%E5%AF%86-%E4%B8%89%E5%90%8D%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%9C%A8%E4%B8%AD%E7%BE%8E%E6%8D%A2%E5%9B%9A%E5%90%8E%E8%8E%B7%E5%87%86%E7%A6%BB%E5%BC%80%E4%B8%AD%E5%9B%BD">
+      
+        协议背后的秘密：三名维吾尔人在中美换囚后获准离开中国
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/my-uyghurs-china-united-states-12032024104237.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E4%B8%AD%E5%9B%BD%E5%A4%9A%E5%9C%B0%E9%93%B6%E8%A1%8C%E5%8F%96%E6%AC%BE%E9%9C%80%E8%AF%81%E6%98%8E%E8%B5%84%E9%87%91%E6%9D%A5%E6%BA%90-%E5%BC%95%E5%8F%91%E8%B4%A8%E7%96%91">
+      
+        中国多地银行取款需证明资金来源 引发质疑
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql1-china-bank-withdraw-money-proof-limit-12032024005208.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+      
+        中国公安部部长王小洪访问古巴 与古巴领导人讨论网络安全等问题
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台" class="tag">
+        自由亚洲电台
+      </a>
+      
+
+      
+      <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/jj1-china-public-security-minister-visits-cuba-12022024150828.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/2024%E5%B9%B411%E6%9C%88%E8%8E%B7%E7%9F%A564%E5%90%8D%E4%B8%AD%E5%9B%BD%E6%B3%95%E8%BD%AE%E5%8A%9F%E5%AD%A6%E5%91%98%E9%81%AD%E6%9E%89%E5%88%A4">
+      
+        2024年11月获知64名中国法轮功学员遭枉判
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/20241164.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%9C%A8%E4%B8%9C%E5%8D%97%E4%BA%9A%E8%AF%88%E9%AA%97%E4%B8%AD%E5%BF%83-%E4%BA%BA%E5%8F%A3%E8%B4%A9%E8%BF%90%E6%97%A5%E7%9B%8A%E4%B8%A5%E9%87%8D">
+      
+        在东南亚诈骗中心，人口贩运日益严重
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/in-southeast-asia-s-scam-centers-human-trafficking-worsening-20241205/7889312.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E8%B6%8A%E5%8D%97%E8%AE%A1%E5%88%92%E5%BB%BA%E5%8D%97%E5%8C%97%E9%AB%98%E9%93%81-%E4%B8%AD%E5%9B%BD%E8%B5%84%E6%9C%AC%E5%85%B3%E6%B3%A8">
+      
+        越南计划建南北高铁，中国资本关注
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/propertiesconstruction/57458-2024-12-06-10-46-32.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%97%A5%E6%BE%B3%E4%BC%81%E4%B8%9A%E5%9C%A8%E5%8A%A0%E6%B7%B1%E4%BE%9B%E5%BA%94%E9%93%BE%E5%90%88%E4%BD%9C-%E8%A7%84%E9%81%BF%E4%B8%AD%E5%9B%BD%E9%A3%8E%E9%99%A9">
+      
+        日澳企业在加深供应链合作，规避中国风险
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/ienvironment/57457-2024-12-06-10-41-23.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E7%BE%8E%E5%9B%BD%E8%82%A1%E5%B8%82%E5%85%A8%E7%90%83%E5%90%B8%E9%87%91-%E6%80%BB%E5%B8%82%E5%80%BC%E8%B6%85%E4%B8%96%E7%95%8C%E4%B8%80%E5%8D%8A">
+      
+        美国股市全球吸金，总市值超世界一半
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/stockforex/57456-2024-12-06-09-40-44.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%8F%8D%E7%BE%8E%E8%BD%B4%E5%BF%83%E6%B5%AE%E7%8E%B0%E4%BB%A4%E4%BA%BA%E6%8B%85%E5%BF%A7-%E4%BD%86%E5%B0%9A%E6%9C%AA%E4%BB%A5%E9%9B%86%E5%9B%A2%E5%BD%A2%E5%BC%8F%E5%AF%B9%E6%8A%97%E7%BE%8E%E5%9B%BD%E5%8F%8A%E5%85%B6%E7%9B%9F%E5%8F%8B">
+      
+        反美轴心浮现令人担忧，但尚未以集团形式对抗美国及其盟友
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/emerging-anti-us-axis-worrisome-but-not-acting-as-a-bloc-20241205/7888982.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%8F%B0%E6%B9%BE%E9%99%86%E5%A7%94%E4%BC%9A%E6%B0%91%E8%B0%83-%E8%BF%919%E6%88%90%E5%8F%B0%E6%B9%BE%E4%BA%BA%E4%B8%8D%E8%AE%A4%E5%90%8C%E4%B8%AD%E5%9B%BD%E5%AF%B9%E5%8F%B0%E5%A4%8D%E5%90%88%E6%80%A7%E6%96%BD%E5%8E%8B">
+      
+        台湾陆委会民调：近9成台湾人不认同中国对台复合性施压
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/new-poll-shows-taiwanese-want-status-quo-and-oppose-chinas-pressur-campaign-20241205/7889015.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%B2%B3%E5%8D%97%E7%9C%81%E8%AE%B8%E6%98%8C%E5%B8%82%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E4%B8%AD%E5%BF%83%E4%B8%8B%E8%BE%BE%E7%9A%84-%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E7%A8%BD%E6%A0%B8%E5%91%8A%E7%9F%A5%E4%B9%A6-%E5%BE%88%E8%8D%92%E5%94%90-%E5%90%8D%E4%B8%BA%E7%A8%BD%E6%A0%B8-%E5%AE%9E%E4%B8%BA%E7%BA%B5%E5%AE%B9%E9%80%83%E9%81%BF%E7%A4%BE%E4%BF%9D%E9%87%91%E5%BE%81%E6%94%B6">
+      
+           河南省许昌市社会保险中心下达的《社会保险稽核告知书》很荒唐，名为稽核，实为纵容逃避社保金征收   
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/blog-post_6.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E8%81%94%E5%90%88%E5%A3%B0%E6%98%8E-%E6%81%B3%E8%AF%B7ICE%E6%9A%82%E7%BC%93%E9%80%92%E8%A7%A3%E6%AE%B5%E6%98%A5%E9%9C%9E%E5%A5%B3%E5%A3%AB%E4%B9%A6">
+      
+           联合声明：恳请ICE暂缓递解段春霞女士书      
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#维权网" class="tag">
+        维权网
+      </a>
+      
+
+      
+      <a href="https://wqw2010.blogspot.com/2024/12/ice.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%8D%B0%E5%B0%BC%E9%80%AE%E6%8D%95%E4%B8%80%E5%90%8D%E5%9B%A0%E6%8D%AE%E7%A7%B0%E5%8F%82%E4%B8%8E%E4%B8%BA%E7%BD%91%E7%BB%9C%E8%B5%8C%E5%8D%9A%E7%BB%84%E7%BB%87%E6%B4%97%E9%92%B1%E8%80%8C%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%9A%E7%BC%89%E7%9A%84%E4%B8%AD%E5%9B%BD%E7%94%B7%E5%AD%90">
+      
+        印尼逮捕一名因据称参与为网络赌博组织洗钱而被北京通缉的中国男子
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/indonesia-arrests-a-chinese-man-wanted-by-beijing-over-money-laundering-charges-20241205/7889001.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%9C%A8%E8%A5%BF%E6%B5%B7%E5%B2%B8%E5%8F%91%E7%94%9F7%E7%BA%A7%E5%9C%B0%E9%9C%87%E5%90%8E-%E7%BE%8E%E5%9B%BD%E5%AE%B6%E6%B0%94%E8%B1%A1%E5%B1%80%E4%B8%80%E5%BA%A6%E5%8F%91%E5%87%BA%E6%B5%B7%E5%95%B8%E8%AD%A6%E6%8A%A5">
+      
+        在西海岸发生7级地震后，美国家气象局一度发出海啸警报
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/the-national-weather-service-cancels-tsunami-warning-for-the-u-s-west-coast-after-7-0-earthquake-20241205/7888958.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%9B%BD%E9%99%85%E7%89%B9%E8%B5%A6%E7%A7%B0%E4%BB%A5%E8%89%B2%E5%88%97%E5%9C%A8%E5%8A%A0%E6%B2%99%E5%AE%9E%E6%96%BD%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D-%E4%BB%A5%E8%89%B2%E5%88%97%E9%A9%B3%E6%96%A5%E5%85%B6%E6%92%92%E8%B0%8E">
+      
+        国际特赦称以色列在加沙实施种族灭绝，以色列驳斥其撒谎
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/amnesty-international-says-israel-committing-genocide-in-gaza-20241205/7888929.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E5%B8%83%E6%9E%97%E8%82%AF%E4%B8%8E%E6%8B%89%E5%A4%AB%E7%BD%97%E5%A4%AB%E5%90%8C%E5%9C%BA%E4%BC%9A%E8%AE%AE%E9%92%88%E9%94%8B%E7%9B%B8%E5%AF%B9-%E6%8C%87%E8%B4%A3%E5%AF%B9%E6%96%B9%E9%80%A0%E6%88%90%E4%B9%8C%E5%85%8B%E5%85%B0%E5%B1%80%E5%8A%BF%E5%8D%87%E7%BA%A7">
+      
+        布林肯与拉夫罗夫同场会议针锋相对，指责对方造成乌克兰局势升级
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/lavrov-blinken-trade-blame-for-escalating-ukraine-tensions-20241205/7888860.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E4%B8%80%E5%90%8D%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E5%AE%98%E5%9B%A0%E6%95%A6%E4%BF%83%E5%B7%B4%E6%8B%89%E5%9C%AD%E8%AE%AE%E5%91%98%E6%8A%9B%E5%BC%83%E5%8F%B0%E6%B9%BE%E8%80%8C%E8%A2%AB%E9%A9%B1%E9%80%90">
+      
+        一名中国外交官因敦促巴拉圭议员抛弃台湾而被驱逐
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/paraguay-kicks-out-a-visiting-chinese-envoy-for-urging-its-lawmakers-to-turn-their-backs-on-taiwan-20241205/7888872.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%8A%A5%E9%81%93-%E9%99%A4%E4%BC%97%E8%AE%AE%E9%95%BF%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%A4%96-%E5%8F%B0%E6%B9%BE%E6%80%BB%E7%BB%9F%E8%B5%96%E6%B8%85%E5%BE%B7%E5%9C%A8%E5%85%B3%E5%B2%9B%E6%9C%9F%E9%97%B4%E8%BF%98%E4%B8%8E%E5%85%B6%E4%BB%96%E7%BE%8E%E5%9B%BD%E4%BC%9A%E9%A2%86%E8%A2%96%E9%80%9A%E8%AF%9D">
+      
+        报道：除众议长约翰逊外，台湾总统赖清德在关岛期间还与其他美国会领袖通话
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/taiwanese-president-lai-reportedly-has-phone-talks-from-guam-with-us-congress-leaders-20241204/7888844.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E8%A1%B0%E9%80%80%E5%B9%B4%E8%BD%BB%E4%BA%BA%E9%81%AD%E6%AE%83-%E8%8A%82%E8%A1%A3%E7%BC%A9%E9%A3%9F-%E6%B1%82%E5%8A%A9%E6%97%A0%E6%9C%9B">
+      
+        中国经济衰退年轻人遭殃 节衣缩食 求助无望
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/chinas-lifeless-millennials-struggling-with-rising-cost-of-living-20241205/7888849.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E4%B8%80%E5%8D%8A%E4%BB%A5%E4%B8%8A%E5%9C%A8%E5%8D%8E%E8%8B%B1%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E7%8E%AF%E5%A2%83%E5%A4%A7%E5%A4%B1%E6%89%80%E6%9C%9B">
+      
+        一半以上在华英国企业对中国商业环境大失所望
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/fifty-eight-percent-of-uk-companies-found-it-more-difficult-to-operate-in-china-20241205/7888864.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E7%BE%8E%E5%85%83%E4%B9%8B%E5%A4%96%E5%8F%AA%E6%9C%89%E6%97%A5%E5%85%83%E5%9C%A8%E5%8D%87%E5%80%BC">
+      
+        美元之外只有日元在升值
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/stockforex/57451-2024-12-06-05-00-46.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%AC%A7%E7%BE%8E%E4%B8%A4%E5%A4%A7%E8%BD%A6%E4%BC%81%E4%B8%AD%E5%9B%BD%E4%B8%9A%E5%8A%A1%E9%99%B7%E9%87%8D%E7%BB%84%E5%9B%B0%E5%A2%83">
+      
+        欧美两大车企中国业务陷重组困境
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/icar/57452-2024-12-06-05-00-41.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/Tokyo-Electron%E7%9A%84%E5%8F%B0%E5%8D%97%E6%9C%8D%E5%8A%A1%E5%9F%BA%E5%9C%B0%E7%AB%A3%E5%B7%A5,%E5%8F%AF%E5%AE%B9%E7%BA%B3%E8%B6%85%E5%8D%83%E4%BA%BA">
+      
+        Tokyo Electron的台南服务基地竣工,可容纳超千人
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/57437-2024-12-06-05-00-02.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%9E%97%E5%9F%B9%E7%91%9E-%E7%A7%91%E6%8A%80%E5%8A%A0%E4%B8%8A%E6%9E%81%E6%9D%83-%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%94%B9%E5%8F%98%E4%BA%BA%E6%80%A7">
+      
+        林培瑞：科技加上极权，会不会改变人性？
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/will-chinese-technology-plus-totalitarianism-change-human-nature-20241205/7888681.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E6%97%A5%E6%9C%AC%E5%90%91%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%8F%90%E4%BE%9B%E4%B8%80%E5%8D%83%E5%A4%9A%E4%B8%87%E7%BE%8E%E5%85%83%E7%9A%84%E6%8F%B4%E5%8A%A9-%E6%8F%90%E5%8D%87%E5%85%B6%E6%B5%B7%E4%B8%8A%E6%84%9F%E7%9F%A5%E8%83%BD%E5%8A%9B">
+      
+        日本向菲律宾提供一千多万美元的援助 提升其海上感知能力
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/japan-grants-philippines-11-mln-in-security-aid-to-bolster-defences-220241205/7888415.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2024-12-05/%E8%87%B4%E5%91%BD%E4%B8%AD%E5%9B%BD-%E4%BD%9C%E8%80%85%E7%BA%B3%E7%93%A6%E7%BD%97%E5%86%8D%E5%87%BA%E5%B1%B1-%E5%B0%86%E5%AF%B9%E5%8D%8E%E5%BC%BA%E7%A1%AC%E8%B4%B8%E6%98%93%E6%94%BF%E7%AD%96%E8%BF%9B%E8%A1%8C%E5%88%B0%E5%BA%95">
+      
+        《致命中国》作者纳瓦罗再出山 将对华强硬贸易政策进行到底？
+      </a>
+      <time>2024-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#美国之音" class="tag">
+        美国之音
+      </a>
+      
+
+      
+      <a href="https://www.voachinese.com/a/navarro-china-20241205/7888589.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page9/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page11/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page9/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page11/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page9/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page11/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
