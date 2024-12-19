@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇） – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+" />
+    <meta property="og:description" content="
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" />
+    <meta property="twitter:title" content="【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713892.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E8%80%81%E6%9D%BF%E5%BF%83%E6%83%85%E4%B8%8D%E5%A5%BD%EF%BC%8C%E4%BB%8A%E6%97%A5%E5%BA%97%E4%BC%91%EF%BC%9B%E6%80%95%E9%AC%BC%EF%BC%8C%E4%BB%8A%E5%A4%A9%E4%BC%91%E6%81%AF%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713892.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E8%80%81%E6%9D%BF%E5%BF%83%E6%83%85%E4%B8%8D%E5%A5%BD%EF%BC%8C%E4%BB%8A%E6%97%A5%E5%BA%97%E4%BC%91%EF%BC%9B%E6%80%95%E9%AC%BC%EF%BC%8C%E4%BB%8A%E5%A4%A9%E4%BC%91%E6%81%AF%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-12-12&e=
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+
+
+  
+  
+    
+    
+  
+      
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）来源：高善文、正面连接、三联生活周刊        主题归类：中国经济、工人权益 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”进行收听，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713892.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/713892.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/713892.html&text=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/713892.html&title=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/713892.html&title=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）&body=
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/713892.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/713892.html&title=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）&caption=
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）&url=https://chinadigitaltimes.net/chinese/713892.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/713892.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713892.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E8%80%81%E6%9D%BF%E5%BF%83%E6%83%85%E4%B8%8D%E5%A5%BD%EF%BC%8C%E4%BB%8A%E6%97%A5%E5%BA%97%E4%BC%91%EF%BC%9B%E6%80%95%E9%AC%BC%EF%BC%8C%E4%BB%8A%E5%A4%A9%E4%BC%91%E6%81%AF%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-12-12&e=
+【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）
+——
+
+
+  
+  
+    
+    
+  
+      
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）来源：高善文、正面连接、三联生活周刊        主题归类：中国经济、工人权益 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”进行收听，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F713892.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734040756000-->
+<p><a href="https://chinadigitaltimes.net/chinese/713892.html">【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/713892.html" title="【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/12/6103-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" srcset="https://chinadigitaltimes.net/chinese/files/2024/12/6103-564x300.png 564w, https://chinadigitaltimes.net/chinese/files/2024/12/6103.png 1172w" sizes="(max-width: 564px) 100vw, 564px" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/6103.png" alt="" width="1024" height="545" class="size-large wp-image-672171" /></p>
+  <div style="text-align:center;margin-top:26px;margin-bottom:26px">
+    <!-- iframe plugin v.5.1 wordpress.org/plugins/iframe/ -->
+    <iframe loading="lazy" src="https://open.firstory.me/embed/story/cm4lq82x50axe01vo8cfh13vl" height="180" width="700" scrolling="yes" class="iframe-class" frameborder="0"></iframe>
+  </div>
+  <p>    <iframe loading="lazy" title="【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）" width="1080" height="608" src="https://www.youtube.com/embed/S3sg_7kDRsM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【404文库】“老板心情不好，今日店休；怕鬼，今天休息”（外二篇）<br /><strong>来源：</strong><a href="https://chinadigitaltimes.net/space/高善文" target="_blank">高善文</a>、<a href="https://chinadigitaltimes.net/space/正面连接" target="_blank">正面连接</a>、<a href="https://chinadigitaltimes.net/space/三联生活周刊" target="_blank">三联生活周刊</a>        <p><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中国经济" target="_blank">中国经济</a>、<a href="https://chinadigitaltimes.net/space/工人权益" target="_blank">工人权益</a> <br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E6%97%B6%E9%97%B4%E9%A6%86" target="_blank" rel="noopener">时间馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          <p><a href="https://chinadigitaltimes.net/chinese/404-archives">《404档案馆》</a>讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“<a href="https://open.firstory.me/user/cdt">404档案馆</a>”进行收听，视频节目可在Youtube“<a href="https://www.youtube.com/channel/UCwXewCWwaK1-yec8niJLrqg">中国数字时代· 404档案馆</a>”频道收看。</p>
+          <p>欢迎来到404档案馆，在这里，我们一起穿越<a href="https://chinadigitaltimes.net/space/%E5%9B%BD%E5%AE%B6%E9%98%B2%E7%81%AB%E5%A2%99">中国数字高墙</a>。</p>
+          <p>尽管中国的<a href="https://chinadigitaltimes.net/space/%E8%A8%80%E8%AE%BA%E5%AE%A1%E6%9F%A5">言论审查</a>和舆论管控日趋严峻，<a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86">国家对公民的监控</a>也无处不在，但我们依然可以看那些不服从的个体，顶着被删号、被约谈、甚至被监禁的风险，对不公义勇敢发出自己的声音。</p>
+          <p>中国数字时代在<a href="https://chinadigitaltimes.net/chinese/404-articles-archive">“404文库”</a>栏目中长期收录这些被当局审查机制删除的声音。如果您也不希望这些声音就这样消失，请随手将它们转发给您可以转发的任何人。</p>
+          <p>在本期的【404文库】栏目中，我们将选读过去一周中引起舆论关注的三篇404文章。</p>
+          <h2 id="section">一、<a href="https://chinadigitaltimes.net/chinese/713727.html">高善文国投证券演讲｜泡沫破灭后，经济增速要回到正常水平，平均需要9年</a></h2>
+          <p>近日，经济学家高善文在国投证券会议上发表演讲，该演讲中，他提及目前中国经济所面临的一些困境，并提出一些反思和纠正措施。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/202412041733269247816692.png" alt="img" /></p>
+          <p>但显然，高善文的言论与中共当局长期以来宣传的经济光明论相悖。因此，该演讲内容在微信等多平台遭到删除。高善文的个人微信公众号也被当局封禁。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/GeC1DuQacAABi_1.jpeg" alt="img" /></p>
+          <p>演讲部分内容提到：</p>
+          <blockquote>
+            <p>看中国30多个省级行政区的数据，纵轴是疫情前的消费增长情况，横轴是人口老化程度。</p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/疫情前年轻人.jpg" alt="img" /></p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/疫情后年轻人.jpg" alt="img" /></p>
+            <p>疫情前：年轻人占比与消费不相关。</p>
+            <p>疫情后：年轻人占比越高的省份消费越差。</p>
+            <p>一个省人口越年轻，消费增长越慢；一个省人口越老，消费增长越快。这个结论有些反直觉，被市场参与者归纳为三句话：生机勃勃的老年人，死气沉沉的年轻人和生无可恋的中年人。</p>
+            <p>对老年人而言，未来可预期的退休金是可以按时发放，每年稳定增长，并高于通胀水平，收入预期没有任何影响，可以继续搞夕阳红，跳广场舞。</p>
+            <p>对年轻人而言，收入预期大幅下修，收入增长确定性大幅下修，找不到工作，找到的工作与预期有显著落差，年轻人纷纷节衣缩食关灯吃面。</p>
+            <p>我们看另一个数据：省级行政区的消费情况，和省会城市二手房价的涨幅。</p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/疫情前房价.jpg" alt="img" /></p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/疫情后房价.jpg" alt="img" /></p>
+            <p>疫情前，消费和房价几乎不相关。疫情后，房价下跌严重的地区消费更差。我们倾向于认为，疫情后，买房人总体是年轻人，一个地区的年轻人对未来越没有信心，他们的消费越弱，买房的意愿也会越弱。没有收入预期，没有消费能力，也不敢买房。</p>
+            <p>这一模式所得到的结果，和我们观察地区人口老化的结果，指向了类似的结论：年轻人收入预期下滑，消费信心和购房意愿都被显著抑制；但老年群体的收入预期没有被限制，生活幸福感强。</p>
+            <p>为什么会发生这种情况？</p>
+            <p>我们观察城镇和乡村就业人员数据，乡村就业人员累计增加了4100万人，与城镇就业人员的减少数量相当接近。</p>
+            <p>一个可能的解释：疫情后城镇创造就业能力的显著恶化，大量就业人口返回或者滞留在乡村，回老家之后，城镇失业率数据不显示，但在总就业人口中反映出来。</p>
+            <p>另一部分可能离开了劳动力队伍，四十多岁，工作没有了，公司破产了，开滴滴，在家炒股，或者在家呆着，在就业和失业数据上都看不到。</p>
+          </blockquote>
+          <h2 id="section-1">二、<a href="https://chinadigitaltimes.net/chinese/713837.html">正面连接｜一场事先张扬的消防检查</a></h2>
+          <blockquote>
+            <p>11月底，潮州和汕头的很多商户关门停业。社交媒体传闻，国务院巡查组要到潮州和汕头开展安全生产和消防检查，如不合格就会罚款。传言中的罚款金额从几千到数十万不等。</p>
+            <p>传闻多是微信截图，从抖音传到微博、小红书，迅速发酵、蔓延，又与线下的风声一起，编织成一个密不透风的巨网。商户们害怕被罚，却不知道怎么做才能避免被罚，只好躲避。</p>
+            <p>11月23日到27日，我们来到潮州和汕头，试图还原和理解这场风波。</p>
+          </blockquote>
+          <p>上述文字来自微信公众号“正面连接”发布的被删除的文章《一场事先张扬的消防检查》，文中提到11月底潮汕大量店铺关门闭店“非暴力不合作”事件。</p>
+          <p>文中接着写道：</p>
+          <blockquote>
+            <p>11月20日至23日，网传的街景影像中，潮州商家“集体关门”：多家工厂停工，沿街相连的商铺大门紧闭，路上连车辆和行人也少见。网上流传各种卷帘门上的闭店告示：老板心情不好，今日店休；猪脚被偷，休息一天；夫妻吵架，休息一天；怕鬼，今天休息。</p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.14.49.png" alt="img" /></p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.15.02.png" alt="img" /></p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.15.13.png" alt="img" /></p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.15.27.png" alt="img" /></p>
+            <p>还有潮州古城最著名的牌坊街，不少商铺闭店，明显比平日萧条。牌坊街是潮州最为吸引游客的景点之一，22座牌坊列于中间，两侧是骑楼建筑。一位抖音用户在视频中笑称：“今晚的牌坊街是真的来看牌坊的，大年三十都没这么安静。”她的镜头里，只有高大的牌坊矗立在街道中央，两旁商铺大门紧闭，往日熙熙攘攘的游客也不见了。</p>
+            <p>那时，潮州正在经历一场全国性的安全生产和消防检查。今年11月，22个国务院巡查组陆续进驻全国各省份，坊间称之为“国考”。广东省的检查时间为11月19日至28日，巡查城市为潮州和汕头。</p>
+            <p>商家“集体关门”是因为一些罚款传闻。根据网传抖音截图，一个IP地址为广东的用户称，一个灭火器外面卖五六十，但如果由相关部门来整改，就会变成两三百。另有自称是潮州商家的用户在微博评论区发言：抓到就罚好几万，不开门一天损失才几百，“我们不敢开啊”。</p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/GdNcpN2bUAAF6R8.jpeg" alt="img" /></p>
+            <p>除了罚款，商户们的恐惧还来源于对消防检查标准的疑惑，他们不知道对方会挑出什么问题，不知道自己做得对不对。</p>
+          </blockquote>
+          <h2 id="section-2">三、<a href="https://chinadigitaltimes.net/chinese/713769.html">三联生活周刊｜深江铁路5标段塌陷之后</a></h2>
+          <p>12月4日晚，位于深圳宝安区航城街道洲石路的深江铁路5标段施工现场突发地面坍塌，13名现场作业人员失联。对此，三联生活周刊发布调查报道，但该报道遭到审查删除。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.15.49.png" alt="img" /></p>
+          <p>作者写道：</p>
+          <blockquote>
+            <p>封路是从下午4点左右开始的。李欣的杂货店紧挨洲石路，这条8车道的城市主干道穿过深圳宝安区西南角，周边分布着多个工业区和一个大型学校，平时车流量很大，上下班高峰经常拥堵。12月4日这天下午，李欣注意到交警在路上指挥绕行，到下午4点左右，道路南向只留出一条机动车道和非机动车道允许通行。李欣当时听路过这条封路段的人说，“修高铁有一点点塌陷”，“路面有些裂开”。</p>
+            <p>晚上9点，洲石路的机动车道和非机动车道全部封锁，下班的人需要绕道回家。路边五金店老板庄辉告诉本刊，9点左右他接到街道工作人员通知，让他早点打烊回家，但没有解释原因。晚上接近11点，通知变成了“强制转移”。当时李欣的店还没打烊，街道办和民警到店里来，“没有讲具体是发生什么事，就说前面有危险，要强制转移”。家也在附近的李欣只好和家人到两公里外的鹤洲村找了个宾馆。</p>
+            <p>晚上11点左右，住在宝州工业区宿舍的王蕊听到楼下有大喇叭声传来，“所有人带好随身物品下楼集合”。“特别大声。”王蕊说自己“睡得懵懵的”，一开始没理会，只觉得烦躁，以为是后面的学校在开广播，给学生播放通知。直到听见隔壁宿舍不断有人开门、下楼的脚步声，王蕊才察觉到不对劲。她睡衣也没换就也跟着往楼下走。刚下到一层，就听到“外面塌得哄哄地响，像打雷。”夜色漆黑，王蕊模糊看到大门口方向，那里紧挨着洲石路，有一棵树掉下去了。</p>
+            <p>跑出来的人被要求远离塌陷位置。在王蕊前面的是一个中年男性工人，他拉着管理人员，说“哥哥掉下去了，联系不上了”。他一直拨着哥哥的电话。大门被坍塌堵住了，要出去只能砸围墙，“砸了半小时左右，没全部砸平，要抬一下脚才能出去，电瓶车都骑不出来。”在等待砸墙的时间里，王蕊跑回家里换了件衣服，“只拿了身份证，充电器都没来得及拿，拿东西的时候手都在发抖，被吓到了。”</p>
+            <p>12月5日凌晨，深圳市宝安区应急管理局发布情况通报称，12月4日23时许，位于宝安区航城街道洲石路的深江铁路5标段施工现场突发地面坍塌，接施工单位报告，13名现场作业人员失联。根据央视新闻发布的现场图片，坍塌位置的坑洞宽度横跨洲石路的7个车道，一直延伸到宝州工业区内的楼房下，坑深数十米，裸露出砖红色土，坑内积有水土混合的泥浆。</p>
+          </blockquote>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/截屏2024-12-12-下午1.16.01.png" alt="img" /></p>
+          <p>以上是本期选读的三篇404文章。文章全文见中国数字时代网站。这些作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。</p>
+          <p>中国数字时代 CDT 致力于记录和传播中文互联网上被审查的信息，以及人们与审查对抗的努力。欢迎大家通过<a href="https://t.me/cdtmedia_bot" title="电报(Telegram)平台">电报(Telegram)平台</a> 向我们投稿，为记录和对抗中国网络审查作出你的贡献！</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2022/05/404给CDT-QR-code-1.jpg" alt="cdtimg" /></p>
+          <p>了解更多投稿信息，请阅读<a href="https://chinadigitaltimes.net/chinese/telegrambot" title="中国数字时代征稿说明">中国数字时代征稿说明</a></p>
+          <p><strong>欢迎读者访问 <a href="https://open.firstory.me/user/cdt/platforms &quot;CDT播客&quot;">CDT播客</a> 和 <a href="https://www.youtube.com/@CDTChinese/videos" title="CDT视频">CDT视频</a> 收听/观看更多相关内容。</strong></p>
+ &lt;/div&gt;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-13</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-13/%E6%96%B0%E4%BA%AC%E6%8A%A5-%E6%B7%B1%E5%9C%B3%E4%BD%8F%E5%AE%85%E7%87%83%E6%B0%94%E7%88%86%E7%82%B8%E8%83%8C%E5%90%8E-%E6%97%A0%E4%BA%BA%E5%B1%85%E4%BD%8F%E7%9A%84%E6%88%BF%E5%B1%8B%E5%92%8C%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E7%87%83%E6%B0%94%E5%85%A5%E6%88%B7%E5%AE%89%E6%A3%80">
+          新京报｜深圳住宅燃气爆炸背后：无人居住的房屋和被忽视的燃气入户安检
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-13</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-13/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E8%B4%A7%E5%B8%81%E6%94%BF%E7%AD%96%E7%BD%95%E8%A7%81%E5%A4%A7%E8%BD%AC%E5%90%91-%E4%BC%9A%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E5%B8%A6%E6%9D%A5%E5%93%AA%E4%BA%9B%E9%87%8D%E8%A6%81%E5%BD%B1%E5%93%8D">
+          三联生活周刊｜货币政策罕见大转向，会给普通人带来哪些重要影响？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-12</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%A4%E8%80%81%E6%9D%BF%E7%9A%84%E8%80%81%E5%B7%A2-%E8%BF%9E%E5%87%BA%E6%98%8F%E6%8B%9B-%E5%B9%BF%E5%B7%9E%E6%80%8E%E4%B9%88%E4%BA%86">
+          古老板的老巢｜连出昏招！广州怎么了？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-11</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-11/%E5%B9%B4%E7%BB%88%E4%B8%93%E9%A2%98-13%E6%9D%A1%E7%94%9F%E5%91%BD%E6%8D%A2%E4%B8%8D%E6%9D%A51%E6%9D%A1%E7%83%AD%E6%90%9C-2024%E5%B9%B4%E5%BA%A6-%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD">
+          【年终专题】“13条生命换不来1条热搜”……2024年度“每日一语”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-12/%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E5%9B%A2%E9%98%9F%E8%AF%81%E5%AE%9E-%E7%89%B9%E6%9C%97%E6%99%AE%E9%82%80%E8%AF%B7%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%AD%89%E4%B8%96%E7%95%8C%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%87%BA%E5%B8%AD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC">
+            前一篇：当选总统团队证实：特朗普邀请习近平等世界领导人出席总统就职典礼
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%B0%E7%B1%8D%E7%BD%91%E7%BA%A2-%E5%8D%A7%E5%BA%95-%E6%8B%8D%E6%91%84%E4%B8%AD%E5%85%B1%E7%BB%9F%E6%88%98%E6%89%8B%E6%AE%B5-%E5%AD%A6%E8%80%85-%E7%BD%95%E8%A7%81%E5%8F%96%E5%BE%97%E7%9B%B4%E6%8E%A5%E8%AF%81%E6%8D%AE">
+            后一篇：台籍网红“卧底”拍摄中共统战手段 学者：罕见取得直接证据
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-12/%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E5%9B%A2%E9%98%9F%E8%AF%81%E5%AE%9E-%E7%89%B9%E6%9C%97%E6%99%AE%E9%82%80%E8%AF%B7%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%AD%89%E4%B8%96%E7%95%8C%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%87%BA%E5%B8%AD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%B0%E7%B1%8D%E7%BD%91%E7%BA%A2-%E5%8D%A7%E5%BA%95-%E6%8B%8D%E6%91%84%E4%B8%AD%E5%85%B1%E7%BB%9F%E6%88%98%E6%89%8B%E6%AE%B5-%E5%AD%A6%E8%80%85-%E7%BD%95%E8%A7%81%E5%8F%96%E5%BE%97%E7%9B%B4%E6%8E%A5%E8%AF%81%E6%8D%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-13/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E8%B4%A7%E5%B8%81%E6%94%BF%E7%AD%96%E7%BD%95%E8%A7%81%E5%A4%A7%E8%BD%AC%E5%90%91-%E4%BC%9A%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E5%B8%A6%E6%9D%A5%E5%93%AA%E4%BA%9B%E9%87%8D%E8%A6%81%E5%BD%B1%E5%93%8D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%A4%E8%80%81%E6%9D%BF%E7%9A%84%E8%80%81%E5%B7%A2-%E8%BF%9E%E5%87%BA%E6%98%8F%E6%8B%9B-%E5%B9%BF%E5%B7%9E%E6%80%8E%E4%B9%88%E4%BA%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-12/%E5%BD%93%E9%80%89%E6%80%BB%E7%BB%9F%E5%9B%A2%E9%98%9F%E8%AF%81%E5%AE%9E-%E7%89%B9%E6%9C%97%E6%99%AE%E9%82%80%E8%AF%B7%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%AD%89%E4%B8%96%E7%95%8C%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%87%BA%E5%B8%AD%E6%80%BB%E7%BB%9F%E5%B0%B1%E8%81%8C%E5%85%B8%E7%A4%BC">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%B0%E7%B1%8D%E7%BD%91%E7%BA%A2-%E5%8D%A7%E5%BA%95-%E6%8B%8D%E6%91%84%E4%B8%AD%E5%85%B1%E7%BB%9F%E6%88%98%E6%89%8B%E6%AE%B5-%E5%AD%A6%E8%80%85-%E7%BD%95%E8%A7%81%E5%8F%96%E5%BE%97%E7%9B%B4%E6%8E%A5%E8%AF%81%E6%8D%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-13/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E8%B4%A7%E5%B8%81%E6%94%BF%E7%AD%96%E7%BD%95%E8%A7%81%E5%A4%A7%E8%BD%AC%E5%90%91-%E4%BC%9A%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E5%B8%A6%E6%9D%A5%E5%93%AA%E4%BA%9B%E9%87%8D%E8%A6%81%E5%BD%B1%E5%93%8D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-12/%E5%8F%A4%E8%80%81%E6%9D%BF%E7%9A%84%E8%80%81%E5%B7%A2-%E8%BF%9E%E5%87%BA%E6%98%8F%E6%8B%9B-%E5%B9%BF%E5%B7%9E%E6%80%8E%E4%B9%88%E4%BA%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

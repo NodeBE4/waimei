@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+" />
+    <meta property="og:description" content="
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”" />
+    <meta property="twitter:title" content="薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbo-guagua-says-no-beef-with-xi-20241205%2F7888053.html&t=%E8%96%84%E7%93%9C%E7%93%9C%E7%AA%81%E5%8F%91%E9%95%BF%E6%96%87%E4%B8%BA%E7%88%B6%E6%AF%8D%E6%8A%B1%E5%B1%88%EF%BC%9A%E2%80%9C%E8%96%84%E4%B9%A0%E4%B8%A4%E5%AE%B6%E4%B8%8D%E6%9B%BE%E6%9C%89%E8%BF%87%E8%8A%82%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbo-guagua-says-no-beef-with-xi-20241205%2F7888053.html&t=%E8%96%84%E7%93%9C%E7%93%9C%E7%AA%81%E5%8F%91%E9%95%BF%E6%96%87%E4%B8%BA%E7%88%B6%E6%AF%8D%E6%8A%B1%E5%B1%88%EF%BC%9A%E2%80%9C%E8%96%84%E4%B9%A0%E4%B8%A4%E5%AE%B6%E4%B8%8D%E6%9B%BE%E6%9C%89%E8%BF%87%E8%8A%82%E2%80%9D&d=2024-12-05&e=
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+
+
+  
+Thu, 05 Dec 2024 10:55:45 GMT
+  
+  
+薄熙来夫妇和儿子薄瓜瓜。(美联社：2012年5月25日)
+  
+  重庆前市委书记薄熙来儿子薄瓜瓜(本名薄旷逸)的社交平台X账号“Kuangyi (Guagua) Bo”星期四(12月5日)突然发布超过二千字的长文，细数与澄清多年来被媒体“断章取义”的多项报道、否认其拥有“海外巨额资产”，并称 一直以来“只持有中国护照”。他还为身陷囹圄的父母抱屈，称“薄习两家不曾有过节”，而父亲并“无政治野心”。
+   
+  成台湾女婿
+   
+  “红三代”薄瓜瓜上个月才与台湾地方望族第三代结亲，他到台湾与罗东博爱医院创办人许文政的孙女许惠瑜举行婚宴，并成为台湾媒体追逐报道的焦点。但中国媒体则因薄熙来案仍是禁忌的情况下，对此噤声而只字未见于报道，连中国国台办发..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbo-guagua-says-no-beef-with-xi-20241205%2F7888053.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html&text=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html&title=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html&title=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”&body=
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html&title=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”&caption=
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”&url=https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbo-guagua-says-no-beef-with-xi-20241205%2F7888053.html&t=%E8%96%84%E7%93%9C%E7%93%9C%E7%AA%81%E5%8F%91%E9%95%BF%E6%96%87%E4%B8%BA%E7%88%B6%E6%AF%8D%E6%8A%B1%E5%B1%88%EF%BC%9A%E2%80%9C%E8%96%84%E4%B9%A0%E4%B8%A4%E5%AE%B6%E4%B8%8D%E6%9B%BE%E6%9C%89%E8%BF%87%E8%8A%82%E2%80%9D&d=2024-12-05&e=
+薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”
+——
+
+
+  
+Thu, 05 Dec 2024 10:55:45 GMT
+  
+  
+薄熙来夫妇和儿子薄瓜瓜。(美联社：2012年5月25日)
+  
+  重庆前市委书记薄熙来儿子薄瓜瓜(本名薄旷逸)的社交平台X账号“Kuangyi (Guagua) Bo”星期四(12月5日)突然发布超过二千字的长文，细数与澄清多年来被媒体“断章取义”的多项报道、否认其拥有“海外巨额资产”，并称 一直以来“只持有中国护照”。他还为身陷囹圄的父母抱屈，称“薄习两家不曾有过节”，而父亲并“无政治野心”。
+   
+  成台湾女婿
+   
+  “红三代”薄瓜瓜上个月才与台湾地方望族第三代结亲，他到台湾与罗东博爱医院创办人许文政的孙女许惠瑜举行婚宴，并成为台湾媒体追逐报道的焦点。但中国媒体则因薄熙来案仍是禁忌的情况下，对此噤声而只字未见于报道，连中国国台办发..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbo-guagua-says-no-beef-with-xi-20241205%2F7888053.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733396343000-->
+<p><a href="https://www.voachinese.com/a/bo-guagua-says-no-beef-with-xi-20241205/7888053.html">薄瓜瓜突发长文为父母抱屈：“薄习两家不曾有过节”</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 05 Dec 2024 10:55:45 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/432BEBC3-B27F-4FAF-B295-5011E2618718_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">薄熙来夫妇和儿子薄瓜瓜。(美联社：2012年5月25日)</small>
+  </div>
+  <p>重庆前市委书记薄熙来儿子薄瓜瓜(本名薄旷逸)的社交平台X账号“Kuangyi (Guagua) Bo”星期四(12月5日)突然发布超过二千字的长文，细数与澄清多年来被媒体“断章取义”的多项报道、否认其拥有“海外巨额资产”，并称 一直以来“只持有中国护照”。他还为身陷囹圄的父母抱屈，称“薄习两家不曾有过节”，而父亲并“无政治野心”。</p>
+  <p> </p>
+  <p><strong>成台湾女婿</strong></p>
+  <p> </p>
+  <p>“红三代”薄瓜瓜上个月才与台湾地方望族第三代结亲，他到台湾与罗东博爱医院创办人许文政的孙女许惠瑜举行婚宴，并成为台湾媒体追逐报道的焦点。但中国媒体则因薄熙来案仍是禁忌的情况下，对此噤声而只字未见于报道，连中国国台办发言人被问及时都拒绝对此发表评论。</p>
+  <p> </p>
+  <p>这个具有蓝勾勾认证的X账号“Kuangyi (Guagua) Bo”从2013年8月设立，有1.3万个追随者，但公开显示的帖子仅星期四这一篇。美国之音无法独立核实这个帐号是否为薄瓜瓜本人。</p>
+  <p> </p>
+  <p>薄瓜瓜在X的这篇长帖中开门见山表示，他本希望“保持低调”，不回应近期被持续炒作以及引发猜测的媒体报道，称“十二年来，我们所有当事人未曾对外讲一句自辩的话…本习以为常”，但因为“新婚”而被翻旧账，才在此做个简略答复”。</p>
+  <p> </p>
+  <p>他在文中首先驳斥当年美国媒体说他爱开“超跑”法拉利、吃个饭都要穿“tux”(晚礼服)、被牛津大学退学的种种传闻，否认薄家拥有“海外巨额资产”，并称：“要是有，我们何必辛苦挣钱？当年几百人的调查组，几经周折，盘计我父母几十年历程，也没找到这口中的‘上亿家产’。 所以，若有人知晓，请告诉组织，也请告诉我！”</p>
+  <p> </p>
+  <p>对于外界质疑其具有外国籍身分，薄瓜瓜对外宣示说：“一直以来，我也只持有中国护照，2016年从新补过。”</p>
+  <p> </p>
+  <p><strong>薄熙来</strong><strong>“</strong><strong>过失三处</strong><strong>”</strong></p>
+  <p> </p>
+  <p>接着，他开始高调谈论有关薄家的政治遭遇，详细陈述其父亲薄熙来的“过失三处”： “其一，他一向单纯认为，只要埋头苦干，专注民生和经济，就算是好领导。但也正因如此，他不善一对一的沟通，忽略了人之常情，让人觉得他独来独往，甚至盛气逼人，不和谐。”</p>
+  <p> </p>
+  <p>“其二，唱红，事与愿违。”薄瓜瓜在文中表示，薄熙来让“唱红”席卷成运动、一发不可收拾，是其管理不当所致，他本来是“觉得人们赚到钱以后，是需要有点精神的”，因此提倡多读中西经典、唱传统红歌。“中国没几家比我们更痛恨文革。我爸爸当时丧母入狱，家破人亡；我姥姥当时看到我从798 画廊买回来的有文革标语的包，都会头晕。”</p>
+  <p> </p>
+  <p>他说，薄熙来的第三项过失是“打黑，用人不当”与“启用王立军，(造成)骑虎难下”的情形。“王(立军)最初来到我们视野时，是铁岭一位英雄警察，重用他，本以为他铁面无私，敢于跟黑势力拼。一路提拔后，他却权欲熏心，打黑成为黑打，滥用职权，目中无人。”</p>
+  <p> </p>
+  <p>薄瓜瓜并指控王立军对其母亲谷开来下药：“王(立军)知道我妈妈火眼金睛，便借着她身体虚弱，自称懂法医，成为她的健康总管，随之持续给她下药，令她长期卧床不起，足不出户。当我爸爸察觉后，开始疏远王，但为时已晚。”</p>
+  <p> </p>
+  <p>薄瓜瓜也为母亲谷开来2012年涉及英国商人海伍德(Neil Heywood)谋杀案而被判处死刑抱不平，他说：“王立军…对他(海伍德)一直极度关注，邀他来渝，安排他入住王实际拥有的楼，让我妈妈去会面…作为律师，我看证据不足。又有那个律师对此事看到证据充足？”</p>
+  <p> </p>
+  <p><strong>向习近平喊话</strong></p>
+  <p> </p>
+  <p>最后，薄瓜瓜对中国国家主席习近平喊话说：“薄习两家不曾有过节，上辈过世，爷爷曾赠祭文…我父亲从未妄想与其争锋，并早表态会全力助为。我父母入狱也与他无关，但不断有人挑拨离间，还有那些不知情的人，自报奋勇，瞎揣摩上级心思。”</p>
+  <p> </p>
+  <p>他并以 “一个没有敌人的人，是不会有朋友的。但凭我父母一生所受之屈，名声扫地，又何足挂齿？”作为最后结语，称他自己“毛病虽多，但腰板是直的”，并对仍在服刑关押的父母说：“不管我们相距多远，他们照样是我最崇拜，最亲近的人。＂</p>
+  <p> </p>
+  <p>薄瓜瓜的祖父是中共建政元老之一的薄一波，父亲薄熙来历任辽宁省省长、商务部部长，他在重庆执政时开启“唱红打黑”，提倡毛泽东时代的“红文化”，执政风格红极一时，又因极具人格魅力，并且在媒体面前能言善道，在当时被视为是与现任中共总书记习近平角逐大位的竞争对手。</p>
+  <p> </p>
+  <p>2012年2月初，薄熙来在发生王立军事件、海伍德命案后落马，2013年9月因被犯受贿罪、贪污罪、滥用职权罪，被处以无期徒刑、剥夺政治权利终身，并没收个人全部财产。谷开来则在2012年就因故意杀人罪被判处死刑，缓期二年执行，剥夺政治权利终身。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%A7%86%E5%AF%9F%E5%86%9B%E9%98%9F%E5%BC%BA%E8%B0%83%E4%B8%89%E4%B8%AA-%E7%BB%9D%E5%AF%B9-%E8%91%A3%E5%86%9B%E7%8E%B0%E8%BA%AB%E4%B8%8A%E6%B5%B7%E5%BC%95%E8%B5%B7%E5%A4%96%E7%95%8C%E5%85%B4%E8%B6%A3">
+          习近平视察军队强调三个“绝对”，董军现身上海引起外界兴趣
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E9%A6%99%E6%B8%AF%E5%AE%A3%E5%B8%83%E4%B8%A4%E5%90%8D%E4%B8%BB%E8%A6%81%E6%94%BF%E5%BA%9C%E5%AE%98%E5%91%98%E4%B8%8B%E5%8F%B0%E4%BB%A5%E6%8F%90%E5%8D%87%E7%A4%BE%E4%BC%9A%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%95%88%E7%9B%8A">
+          香港宣布两名主要政府官员下台以提升社会与经济效益
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4">
+          “春节”申遗成功 中国网民贺文化振兴
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-05</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-05/%E6%AF%94%E7%89%B9%E5%B8%81%E9%A6%96%E6%AC%A1%E7%AA%81%E7%A0%B410%E4%B8%87%E7%BE%8E%E5%85%83%E5%A4%A7%E5%85%B3">
+          比特币首次突破10万美元大关
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4">
+            前一篇：“春节”申遗成功 中国网民贺文化振兴
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-05/%E8%8F%81%E5%9F%8E%E5%AD%90-%E6%8A%8A%E5%B8%B8%E8%AF%86%E5%BF%B5%E4%B8%80%E9%81%8D%E9%83%BD%E6%98%AF%E6%9C%89%E5%8A%9B%E9%87%8F%E7%9A%84">
+            后一篇：菁城子｜把常识念一遍都是有力量的
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E8%8F%81%E5%9F%8E%E5%AD%90-%E6%8A%8A%E5%B8%B8%E8%AF%86%E5%BF%B5%E4%B8%80%E9%81%8D%E9%83%BD%E6%98%AF%E6%9C%89%E5%8A%9B%E9%87%8F%E7%9A%84'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E9%A6%99%E6%B8%AF%E5%AE%A3%E5%B8%83%E4%B8%A4%E5%90%8D%E4%B8%BB%E8%A6%81%E6%94%BF%E5%BA%9C%E5%AE%98%E5%91%98%E4%B8%8B%E5%8F%B0%E4%BB%A5%E6%8F%90%E5%8D%87%E7%A4%BE%E4%BC%9A%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%95%88%E7%9B%8A'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-05/%E8%8F%81%E5%9F%8E%E5%AD%90-%E6%8A%8A%E5%B8%B8%E8%AF%86%E5%BF%B5%E4%B8%80%E9%81%8D%E9%83%BD%E6%98%AF%E6%9C%89%E5%8A%9B%E9%87%8F%E7%9A%84">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-05/%E9%A6%99%E6%B8%AF%E5%AE%A3%E5%B8%83%E4%B8%A4%E5%90%8D%E4%B8%BB%E8%A6%81%E6%94%BF%E5%BA%9C%E5%AE%98%E5%91%98%E4%B8%8B%E5%8F%B0%E4%BB%A5%E6%8F%90%E5%8D%87%E7%A4%BE%E4%BC%9A%E4%B8%8E%E7%BB%8F%E6%B5%8E%E6%95%88%E7%9B%8A">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-05/%E6%98%A5%E8%8A%82-%E7%94%B3%E9%81%97%E6%88%90%E5%8A%9F-%E4%B8%AD%E5%9B%BD%E7%BD%91%E6%B0%91%E8%B4%BA%E6%96%87%E5%8C%96%E6%8C%AF%E5%85%B4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

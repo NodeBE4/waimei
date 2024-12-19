@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+" />
+    <meta property="og:description" content="
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！" />
+    <meta property="twitter:title" content="    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2Fblog-post_64.html&t=++++%E8%B0%A2%E6%96%87%E9%A3%9E%EF%BC%9A%E4%B8%96%E7%95%8C%E4%BA%BA%E6%9D%83%E6%97%A5%E8%AF%B4%E8%AF%B4%E6%88%91%E4%BB%AC%E4%BA%BA%E6%9D%83%E6%8D%8D%E5%8D%AB%E8%80%85%E7%9A%84%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%E5%90%A7%EF%BC%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2Fblog-post_64.html&t=++++%E8%B0%A2%E6%96%87%E9%A3%9E%EF%BC%9A%E4%B8%96%E7%95%8C%E4%BA%BA%E6%9D%83%E6%97%A5%E8%AF%B4%E8%AF%B4%E6%88%91%E4%BB%AC%E4%BA%BA%E6%9D%83%E6%8D%8D%E5%8D%AB%E8%80%85%E7%9A%84%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%E5%90%A7%EF%BC%81&d=2024-12-10&e=
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+
+
+  
+  
+  2020年4月29日上午，我发表“祭林昭”，当晚抓捕我的是两个穿黑衣的彪形大汉（目测体重在90公斤左右），躲在黑暗的角落里等着我，当我想要绕过去的时候，两条壮汉二话不说，直接就把我按倒在地上，并且持续按了很久。到了办案中心，我才发现，他们的圆领T恤胸前印着“烙铁头”三个字。
+  有什么人权可言？        
+
+  2022年5月28日，我和资兴看守所的146个人一起转移到郴州看守所。在“401”号监室里，由于我不愿蹲下，一个人渣趁我不备，抬手就是一巴掌打在我脸上。我毫不犹豫的一脚把他踹开，然后就是几个人渣对我群起殴之，我被迫奋起反抗。        
+
+  没想到，一个被称为“李所”的人进来了以后，又是趁我不备一巴掌打在我脸上（我之前进过几个看守所，坐牢六年多了，没被警察打过）。在他走后，受到暗示和鼓..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2Fblog-post_64.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://wqw2010.blogspot.com/2024/12/blog-post_64.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://wqw2010.blogspot.com/2024/12/blog-post_64.html&text=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://wqw2010.blogspot.com/2024/12/blog-post_64.html&title=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://wqw2010.blogspot.com/2024/12/blog-post_64.html&title=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！&body=
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://wqw2010.blogspot.com/2024/12/blog-post_64.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://wqw2010.blogspot.com/2024/12/blog-post_64.html&title=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！&caption=
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！&url=https://wqw2010.blogspot.com/2024/12/blog-post_64.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>    谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#维权网 ">
+          维权网
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://wqw2010.blogspot.com/2024/12/blog-post_64.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="维权网的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#维权网 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2Fblog-post_64.html&t=++++%E8%B0%A2%E6%96%87%E9%A3%9E%EF%BC%9A%E4%B8%96%E7%95%8C%E4%BA%BA%E6%9D%83%E6%97%A5%E8%AF%B4%E8%AF%B4%E6%88%91%E4%BB%AC%E4%BA%BA%E6%9D%83%E6%8D%8D%E5%8D%AB%E8%80%85%E7%9A%84%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%E5%90%A7%EF%BC%81&d=2024-12-10&e=
+谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！
+——
+
+
+  
+  
+  2020年4月29日上午，我发表“祭林昭”，当晚抓捕我的是两个穿黑衣的彪形大汉（目测体重在90公斤左右），躲在黑暗的角落里等着我，当我想要绕过去的时候，两条壮汉二话不说，直接就把我按倒在地上，并且持续按了很久。到了办案中心，我才发现，他们的圆领T恤胸前印着“烙铁头”三个字。
+  有什么人权可言？        
+
+  2022年5月28日，我和资兴看守所的146个人一起转移到郴州看守所。在“401”号监室里，由于我不愿蹲下，一个人渣趁我不备，抬手就是一巴掌打在我脸上。我毫不犹豫的一脚把他踹开，然后就是几个人渣对我群起殴之，我被迫奋起反抗。        
+
+  没想到，一个被称为“李所”的人进来了以后，又是趁我不备一巴掌打在我脸上（我之前进过几个看守所，坐牢六年多了，没被警察打过）。在他走后，受到暗示和鼓..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2Fblog-post_64.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733873580002-->
+<p><a href="https://wqw2010.blogspot.com/2024/12/blog-post_64.html">谢文飞：世界人权日说说我们人权捍卫者的亲身经历吧！</a>
+——</p>
+
+<div>
+  <p><span></span></p>
+<a name="more"></a><span lang="EN-US" style="font-family: 宋体; font-size: 12pt;"><br /></span>  <p></p>
+  <p><span lang="EN-US" style="font-family: 宋体; font-size: 12pt;">2020</span><span style="font-family: 宋体; font-size: 12pt;">年<span lang="EN-US">4</span>月<span lang="EN-US">29</span>日上午，我发表“祭林昭”，当晚抓捕我的是两个穿黑衣的彪形大汉（目测体重在<span lang="EN-US">90</span>公斤左右），躲在黑暗的角落里等着我，当我想要绕过去的时候，两条壮汉二话不说，直接就把我按倒在地上，并且持续按了很久。到了办案中心，我才发现，他们的圆领<span lang="EN-US">T</span>恤胸前印着“烙铁头”三个字。</span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">有什么人权可言？<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2022</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">5</span>月<span lang="EN-US">28</span>日，我和资兴看守所的<span lang="EN-US">146</span>个人一起转移到郴州看守所。在“<span lang="EN-US">401</span>”号监室里，由于我不愿蹲下，一个人渣趁我不备，抬手就是一巴掌打在我脸上。我毫不犹豫的一脚把他踹开，然后就是几个人渣对我群起殴之，我被迫奋起反抗。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">没想到，一个被称为“李所”的人进来了以后，又是趁我不备一巴掌打在我脸上（我之前进过几个看守所，坐牢六年多了，没被警察打过）。在他走后，受到暗示和鼓励的一群（至少有七八个）人渣一拥而上，我再也没有了反抗的余地，直接被打倒。被打得头昏眼花，头痛欲裂，头上起了好几个包，只觉得天旋地转，摇摇欲坠。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">李某辉副所长把我带到谈话室以后，我要求去治疗和检查一下伤势，被泠酷地拒绝。接着就要把我丢回“<span lang="EN-US">401</span>”监室去。我说那就让他们打死算了。他说在我这里打死个人就和打死条狗一样。埋都不用埋，直接拉去焚尸炉烧掉就是了，我们这里离火化厂很近（我第一次知道我离焚尸炉这么近）。我只觉得头痛到了极点，好像马上就要炸裂一样，就和孙悟空被唐僧念紧箍咒，在地上疯狂打滚之后的情形一样。再加上急怒攻心，顿时栽倒在地。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">李副所长叫人把我拖到了单间“<span lang="EN-US">6011</span>”。我醒来发现被丢在水泥地板上，地上有一滩水，头挨着厕所坑，一双袜子被磨烂了。旁边有一张由水泥固定的木板单人床。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">我的头连续几天头痛欲裂，头上的包很多天不见消肿。连续四天按报警，要求去医院检查身体被拒绝。绝食抗议了三天毫无成效。并且没有人承认我被打了。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">有什么人权可言？！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2023</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">5</span>月<span lang="EN-US">30</span>日，我从资兴看守所“下队”到郴州监狱。到监狱的第一时间，就叫我们从资兴看守所送去的<span lang="EN-US">14</span>个人，脱光衣服集体蹲在地上蛙跳。我不愿意。结果，在我被送达监狱的一个小时之内，就被关进了收押中心二楼<span lang="EN-US">0.18</span>平方米的铁笼子。那天室内温度<span lang="EN-US">30</span>摄氏度，<span lang="EN-US">8</span>个多小时，我只喝了一小汤匙水，没有吃任何东西，身上的衣服被汗浸湿透了好几次。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">当晚又被关进了五楼的“高度戒备监区”，在<span lang="EN-US">0.7</span>平方米的铁笼子里两个星期，每天待在铁笼子里<span lang="EN-US">15</span>个小时以上。连续六天不准我洗澡；连续几天不准我喝水、上厕所。我绝食抗议了几天也无效。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">姓梁的监区长当着十几个（被关铁笼子的有<span lang="EN-US">8</span>人，加“绿马甲”好几个）人的面说：<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">“这个人（指我）给我关死一点，不要给他喝水，不要给他放水（指上厕所）。只要不让他死在这里就行了。”<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">于是，我愤而提出要求上“老虎凳”。不到两个小时，我的“愿望”就被满足了。上了老虎凳不到十分钟，我双手就肿起来了，头上的汗珠滚滚而下，很快就汇成了汗水的洪流。衣服也很快就湿透了。——由于老虎凳是为比我高十公分的人设计的，我是被拼命往前拉，费了很大的劲才把手铐上去的。我的状况，在围观的人看来很不妙。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">几个小时后从老虎凳下来之后，连续五天，我的右手虎口麻木，大拇指不能正常活动。两个月后，大拇指还有被低电压电流连接的麻木感。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">有什么人权可言？！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2023</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">6</span>月<span lang="EN-US">8</span>日，在一份监狱要求我填写的档案资料上，我写道：<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">“自从我<span lang="EN-US">5</span>月<span lang="EN-US">30</span>日来到郴州监狱之后，我没有被当作一个真正的人来对待。无论我作为一个自然人，还是一个被关押的犯人，或是一个政治犯，哪怕是一个罪大恶极的犯人，我都享有一个人最基本的人权。个体人格尊严是全人类整体人格尊严的一部份，人类的整体人格尊严是由每一个个体的人格尊严集合而成。监狱即使要达到某种“改造”人的目的，也不能以践踏和牺牲人类的人格尊严为代价。”<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2023</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">6</span>月<span lang="EN-US">25</span>日，我被送往湖南省长杀监狱。我的两箱书不准带进去，就连只拿一本《唐诗三百首》和一本《四书章句集注》也被拒绝。美其名曰“零带入”——这是雷建华监狱长亲自改革的监管措施，是雷监狱长的权威的极致体现之一。和我同一天送到长沙监狱收押中心的一个<span lang="EN-US">42</span>岁来自广西柳州的犯人，<span lang="EN-US">7</span>月初就死了。我没有看到任何人承担相应的责任。在收押中心将近两个月，我们不准读书写字，我三次提出借阅书柜里的《史记》也遭拒绝。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2023</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">8</span>月<span lang="EN-US">21</span>日，我下队到了四监区以后，连续五天因为我不愿无缘无故的被命令蹲下，而被按在走廊上。为的是“杀鸡给猴看”。<span lang="EN-US">2023</span>年<span lang="EN-US">8</span>月<span lang="EN-US">27</span>日，我因为拒绝被强制要求唱红歌，被犯人和警察先后殴打。监区最高大的谢某军警官一脚把我踢飞后说：<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">“涉及到政治原因，打了也白打。不服你就去纪委告去检察院告，去监狱长那里去告，你去哪里告我都不怕！”<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">——有什么人权可言？！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2023</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">8</span>月<span lang="EN-US">29</span>日，我由于不准上厕所，憋尿憋得太久，等到集体“放水”的时候，我一泡尿断断续续撒了<span lang="EN-US">20</span>分钟才撒完。撒出来的尿像被切断成一截一截的。就在当天，我被警官口头作出惩罚：<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">每天上午、下午打开水的时候，只准给我打别人的<span lang="EN-US">1/3</span>至<span lang="EN-US">1/2</span>的份量；每天只准我上午、下午分别上一次厕所。庆幸的是，我遇到了稍有良知的“吴妈妈”，这个处罚没有被严格执行。一个星期后，让我恢复到完全按“规定”的规格打开水和放水。但每天只准打两次开水的规矩，直到我<span lang="EN-US">2024</span>年<span lang="EN-US">10</span>月<span lang="EN-US">29</span>日回家也没有打破。我几乎每天上午和下午，都要在焦渴中等上两到三个小时才能喝上开水。哪怕前列腺炎有多严重，也得不到有效治疗。且在<span lang="EN-US">2023</span>年<span lang="EN-US">8</span>月<span lang="EN-US">21</span>日至<span lang="EN-US">2023</span>年<span lang="EN-US">12</span>月<span lang="EN-US">30</span>日期间，我和其他人“打报告”上厕所，总共只有<span lang="EN-US">8</span>次，有<span lang="EN-US">5</span>次被硬生生地挡了回来。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">有什么人权可言？<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">简直是连动物都不如！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">在长沙监狱服刑一年四个月，我只读了五本书，还没有在河源监狱一个月读的书多。因为我在长沙监狱要么是被禁止读书，要么就是根本没有时间和精力读书。我持续练了六年的书法之路被硬生生斩断。毛笔都没摸过。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">正如我在写给雷监狱长的那封永远得不到回应的信里所写的，自从我的两箱书被挡在长沙监狱门外的那一刻起，我在长沙监狱里的服刑生涯就注意是一场恶梦！因为对于持续读了十几年书的我来说，如果有书可以读的话，哪怕身处地狱我也能够忍受；反之，即使是在天堂，如果禁止我读书的话，我也觉得是身在地狱之中。感谢长沙监狱教狱科，在<span lang="EN-US">2024</span>年<span lang="EN-US">3</span>月<span lang="EN-US">3</span>日我被警察打了，投诉无门之后，<span lang="EN-US">3</span>月<span lang="EN-US">8</span>日给我转了一本弗朗西斯<span lang="EN-US">.</span>福山先生的《政治秩序与政治衰败》，使我渐渐地活过来了。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">在<span lang="EN-US">2024</span>年<span lang="EN-US">8</span>月份严格执行“<span lang="EN-US">9511</span>”之前的一年一个月里，我们平均每周工作时间超过<span lang="EN-US">60</span>个小时。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">在<span lang="EN-US">2024</span>年<span lang="EN-US">3</span>月<span lang="EN-US">23</span>日搬到长沙监狱新址以后，有一个多月，我们甚至被强制要求加中班（我本人加过一次，在<span lang="EN-US">170</span>多个人的中队里，每天至少有几十个人被强制要求加中班）。一直以来，完不成任务的人，被各种各样的惩罚伺候。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">在新址，为了追求所谓的“就餐秩序”，每天上午和下午收工之前，就让人把我们吃的用不锈钢盘子装的饭菜摆在不锈钢桌上，等我们吃饭的时候，饭菜基本上都是冰凉的。即使是在<span lang="EN-US">3</span>月份，很多人因为身体不好，还穿着棉衣的情况下也是这样。我反映了多次，毫无改善。我记得，我们家十几年前养猪的时候，我家的猪都要吃热的猪潲，泠的根本不吃。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">我做为一个人权捍卫者，却落到了连猪都不如的境地。有什么人权可言呢！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">……<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">很多人会说，我们的监狱法第七条不是堂而皇之地规定了，要保障服刑人员的权利以及我们的人格尊严受到保护的吗？我相信，真正清醒的人都清楚，我们离法治社会还有（在短期内如果不是越来越远的话）很遥远的距离。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">况且，我们的雷监狱长在大会上公开讲话时说，我们的身份是罪犯，是通常所说的“坏人”（关于这点我要严正抗议，并且在时机成熟之后要求雷监狱长公开承认错误）就是要接受惩罚的；而且长沙监狱已经太好了，好到了中国第一流、湖南第一的地步。再好的话，就会导致那些生活不如意的人，在狄更斯的指引下，来投奔长沙监狱了。雷监狱长在大会上还要求我们罪犯，要时时刻刻记住那墙上的“灵魂三问”——那是与“康德三问”完全悖反的东西。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">因此，在雷监狱长的英明领导之下，在他的雷厉风行的淫威下，鲜有人敢去投诉的。即使投诉，就像我在被打之后，写给驻监检察官的信暨要求会见我的律师张磊律师要求申诉的信，遭到被当着我的面撕毁的下场。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">在中国的监狱里，尤其是在我们长沙监狱里，不要再跟我提什么人权！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">这就是长沙监狱掷地有声的宣言！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">法国思想家伊佐说：<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">考察一国之文明程度，视其监狱管理制度可决也。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">诚哉斯言！<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;"><strong>——人权捍卫者谢文飞冒死书于<span lang="EN-US">2024</span>年世界人权日</strong><span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;"></span></p>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNE76z8E0i68K_Tlo8pwAczJDkfYskkNbOpbPIUIaQf3mYfUlrfFECcBxuggAMbtE1_ofs0Xy3dg26gAf6Z9TUL8iw_2biVcSbCCOHP4vEiv4SBCLmtEoNKykfNkfd-zUn1uE17aVRglw0qBcGmkV1HAz7CZeepDMZkF6SdKb-BlsOVAnclecBKLTX4vJ/s900/GY_8zhXXsAA0pB5.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="900" data-original-width="900" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvNE76z8E0i68K_Tlo8pwAczJDkfYskkNbOpbPIUIaQf3mYfUlrfFECcBxuggAMbtE1_ofs0Xy3dg26gAf6Z9TUL8iw_2biVcSbCCOHP4vEiv4SBCLmtEoNKykfNkfd-zUn1uE17aVRglw0qBcGmkV1HAz7CZeepDMZkF6SdKb-BlsOVAnclecBKLTX4vJ/s320/GY_8zhXXsAA0pB5.jpg" width="320" /></a>
+  </div>
+  <p></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#维权网 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-10</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-10/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%917%E5%B9%B4%E7%9A%84%E5%8E%9F-%E5%85%89%E6%98%8E%E6%97%A5%E6%8A%A5-%E8%AF%84%E8%AE%BA%E9%83%A8%E5%89%AF%E4%B8%BB%E4%BB%BB%E8%91%A3%E9%83%81%E7%8E%89%E4%B8%8D%E6%9C%8D%E5%88%A4%E5%86%B3-%E5%B7%B2%E5%90%91%E5%8C%97%E4%BA%AC%E5%B8%82%E9%AB%98%E9%99%A2%E6%8F%90%E5%87%BA%E4%B8%8A%E8%AF%89">
+             一审获刑7年的原《光明日报》评论部副主任董郁玉不服判决 已向北京市高院提出上诉   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-10</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-10/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%917%E5%B9%B4%E7%9A%84%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%98%AE%E6%99%93%E5%AF%B0-%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3-%E6%A1%88%E5%B0%86%E4%BA%8E2024%E5%B9%B412%E6%9C%8813%E6%97%A5%E4%B8%8B%E5%8D%882-00%E5%9C%A8%E4%B8%8A%E6%B5%B7%E9%AB%98%E9%99%A2%E4%BA%8C">
+             一审获刑7年的网络工程师阮晓寰（编程随想）案将于2024年12月13日下午2:00在上海高院二审宣判   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-10</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-10/%E9%87%8D%E5%BA%86%E5%B8%82%E5%89%8D%E6%94%BF%E5%8D%8F%E5%A7%94%E5%91%98%E5%85%AC%E6%B0%91%E5%88%98%E6%96%87%E5%BF%97%E5%AE%9E%E5%90%8D%E5%8F%91%E8%A1%A8%E4%BA%BA%E6%9D%83%E8%8A%82%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A3%B0%E6%98%8E">
+             重庆市前政协委员公民刘文志实名发表人权节的个人声明   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-10</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-10/%E7%8B%B1%E4%B8%AD%E4%BA%BA%E6%9D%83%E6%8D%8D%E5%8D%AB%E8%80%85%E5%AE%8B%E6%B3%BD%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B7%AF">
+             狱中人权捍卫者宋泽的人生路   
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-10/%E7%BE%8E%E5%8F%B0%E5%AE%A3%E5%B8%83%E7%BE%8E%E5%8F%B021%E4%B8%96%E7%BA%AA%E8%B4%B8%E6%98%93%E5%80%A1%E8%AE%AE%E9%A6%96%E6%89%B9%E5%8D%8F%E8%AE%AE%E6%AD%A3%E5%BC%8F%E7%94%9F%E6%95%88">
+            前一篇：美台宣布美台21世纪贸易倡议首批协议正式生效
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-10/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E4%BF%AF%E6%AD%A6%E8%A3%85%E4%BB%BB%E5%91%BD%E4%B8%B4%E6%97%B6%E6%94%BF%E5%BA%9C%E9%A6%96%E8%84%91">
+            后一篇：叙利亚反政俯武装任命临时政府首脑
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-10/%E7%BE%8E%E5%8F%B0%E5%AE%A3%E5%B8%83%E7%BE%8E%E5%8F%B021%E4%B8%96%E7%BA%AA%E8%B4%B8%E6%98%93%E5%80%A1%E8%AE%AE%E9%A6%96%E6%89%B9%E5%8D%8F%E8%AE%AE%E6%AD%A3%E5%BC%8F%E7%94%9F%E6%95%88'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-10/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E4%BF%AF%E6%AD%A6%E8%A3%85%E4%BB%BB%E5%91%BD%E4%B8%B4%E6%97%B6%E6%94%BF%E5%BA%9C%E9%A6%96%E8%84%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-10/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%917%E5%B9%B4%E7%9A%84%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%98%AE%E6%99%93%E5%AF%B0-%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3-%E6%A1%88%E5%B0%86%E4%BA%8E2024%E5%B9%B412%E6%9C%8813%E6%97%A5%E4%B8%8B%E5%8D%882-00%E5%9C%A8%E4%B8%8A%E6%B5%B7%E9%AB%98%E9%99%A2%E4%BA%8C'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-10/%E9%87%8D%E5%BA%86%E5%B8%82%E5%89%8D%E6%94%BF%E5%8D%8F%E5%A7%94%E5%91%98%E5%85%AC%E6%B0%91%E5%88%98%E6%96%87%E5%BF%97%E5%AE%9E%E5%90%8D%E5%8F%91%E8%A1%A8%E4%BA%BA%E6%9D%83%E8%8A%82%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A3%B0%E6%98%8E'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-10/%E7%BE%8E%E5%8F%B0%E5%AE%A3%E5%B8%83%E7%BE%8E%E5%8F%B021%E4%B8%96%E7%BA%AA%E8%B4%B8%E6%98%93%E5%80%A1%E8%AE%AE%E9%A6%96%E6%89%B9%E5%8D%8F%E8%AE%AE%E6%AD%A3%E5%BC%8F%E7%94%9F%E6%95%88">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-10/%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E4%BF%AF%E6%AD%A6%E8%A3%85%E4%BB%BB%E5%91%BD%E4%B8%B4%E6%97%B6%E6%94%BF%E5%BA%9C%E9%A6%96%E8%84%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<维权网>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-10/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%917%E5%B9%B4%E7%9A%84%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E9%98%AE%E6%99%93%E5%AF%B0-%E7%BC%96%E7%A8%8B%E9%9A%8F%E6%83%B3-%E6%A1%88%E5%B0%86%E4%BA%8E2024%E5%B9%B412%E6%9C%8813%E6%97%A5%E4%B8%8B%E5%8D%882-00%E5%9C%A8%E4%B8%8A%E6%B5%B7%E9%AB%98%E9%99%A2%E4%BA%8C">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<维权网>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-10/%E9%87%8D%E5%BA%86%E5%B8%82%E5%89%8D%E6%94%BF%E5%8D%8F%E5%A7%94%E5%91%98%E5%85%AC%E6%B0%91%E5%88%98%E6%96%87%E5%BF%97%E5%AE%9E%E5%90%8D%E5%8F%91%E8%A1%A8%E4%BA%BA%E6%9D%83%E8%8A%82%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A3%B0%E6%98%8E">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
