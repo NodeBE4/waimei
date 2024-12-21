@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+" />
+    <meta property="og:description" content="
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？" />
+    <meta property="twitter:title" content="让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5385)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fuk-prince-andrew-china-ufwd-spy-20241214%2F7901507.html&t=%E8%AE%A9%E5%AE%89%E5%BE%B7%E9%B2%81%E7%8E%8B%E5%AD%90%E9%99%B7%E5%85%A5%E6%B8%97%E9%80%8F%E4%BA%89%E8%AE%AE%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BC%99%E4%BC%B4%E7%A9%B6%E7%AB%9F%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fuk-prince-andrew-china-ufwd-spy-20241214%2F7901507.html&t=%E8%AE%A9%E5%AE%89%E5%BE%B7%E9%B2%81%E7%8E%8B%E5%AD%90%E9%99%B7%E5%85%A5%E6%B8%97%E9%80%8F%E4%BA%89%E8%AE%AE%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BC%99%E4%BC%B4%E7%A9%B6%E7%AB%9F%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F&d=2024-12-14&e=
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+
+
+  
+Sat, 14 Dec 2024 20:33:48 GMT
+  
+  
+资料照：2024年3月31日，英国约克公爵安德鲁王子抵达温莎城堡的圣乔治教堂参加复活节圣餐仪式。
+  
+华盛顿 —   在英国约克公爵安德鲁王子的一位商业伙伴被怀疑是中国间谍并被禁止入境英国后，他的办公室发表声明，称王子已停止与该人士的“所有接触”，强调双方“从未讨论过任何敏感话题”。这个案子迅速引发公众对英国王室成员与外国势力之间关系的广泛讨论。中国驻英大使馆则发表声明，指责英方一些人编造“间谍”故事，诬蔑抹黑中国。与此同时，多名英国议员和政界人士呼吁公开这位神秘商人的身份。
+  这位在英国的法庭文件中匿名为“H6”的中国商人被英国禁止入境后在2023年向特别移民上诉委员会(SIAC)提出上诉。该委员会星期四(12月12日)维持了英国内政部..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fuk-prince-andrew-china-ufwd-spy-20241214%2F7901507.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html&text=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html&title=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html&title=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？&body=
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html&title=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？&caption=
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？&url=https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fuk-prince-andrew-china-ufwd-spy-20241214%2F7901507.html&t=%E8%AE%A9%E5%AE%89%E5%BE%B7%E9%B2%81%E7%8E%8B%E5%AD%90%E9%99%B7%E5%85%A5%E6%B8%97%E9%80%8F%E4%BA%89%E8%AE%AE%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BC%99%E4%BC%B4%E7%A9%B6%E7%AB%9F%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F&d=2024-12-14&e=
+让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？
+——
+
+
+  
+Sat, 14 Dec 2024 20:33:48 GMT
+  
+  
+资料照：2024年3月31日，英国约克公爵安德鲁王子抵达温莎城堡的圣乔治教堂参加复活节圣餐仪式。
+  
+华盛顿 —   在英国约克公爵安德鲁王子的一位商业伙伴被怀疑是中国间谍并被禁止入境英国后，他的办公室发表声明，称王子已停止与该人士的“所有接触”，强调双方“从未讨论过任何敏感话题”。这个案子迅速引发公众对英国王室成员与外国势力之间关系的广泛讨论。中国驻英大使馆则发表声明，指责英方一些人编造“间谍”故事，诬蔑抹黑中国。与此同时，多名英国议员和政界人士呼吁公开这位神秘商人的身份。
+  这位在英国的法庭文件中匿名为“H6”的中国商人被英国禁止入境后在2023年向特别移民上诉委员会(SIAC)提出上诉。该委员会星期四(12月12日)维持了英国内政部..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fuk-prince-andrew-china-ufwd-spy-20241214%2F7901507.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734208743000-->
+<p><a href="https://www.voachinese.com/a/uk-prince-andrew-china-ufwd-spy-20241214/7901507.html">让安德鲁王子陷入渗透争议的中国商业伙伴究竟做了什么？</a>
+——</p>
+
+<div>
+  <div>
+<em>Sat, 14 Dec 2024 20:33:48 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/c8a4a4b9-a449-4765-8d2a-37281cdae332_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照：2024年3月31日，英国约克公爵安德鲁王子抵达温莎城堡的圣乔治教堂参加复活节圣餐仪式。</small>
+  </div>
+华盛顿 —   <p>在英国约克公爵安德鲁王子的一位商业伙伴被怀疑是中国间谍并被禁止入境英国后，他的办公室发表声明，称王子已停止与该人士的“所有接触”，强调双方“从未讨论过任何敏感话题”。这个案子迅速引发公众对英国王室成员与外国势力之间关系的广泛讨论。中国驻英大使馆则发表声明，指责英方一些人编造“间谍”故事，诬蔑抹黑中国。与此同时，多名英国议员和政界人士呼吁公开这位神秘商人的身份。</p>
+  <p>这位在英国的法庭文件中匿名为“H6”的中国商人被英国禁止入境后在2023年向特别移民上诉委员会(SIAC)提出上诉。该委员会星期四(12月12日)维持了英国内政部早前禁止他入境的决定，以书面裁决驳回其上诉。这让他与安德鲁王子的关系首次曝光。</p>
+  <p><strong>安德鲁王子：已停止与H6的“所有接触”</strong></p>
+  <p>安德鲁王子办公室12月13日晚间发表声明，坚称他已根据英国政府的建议“停止”与H6的“所有接触”。声明说，安德鲁王子是“通过官方渠道”认识这名男子的，而且“从未讨论过任何敏感问题”。</p>
+  <p>声明并未说明他是何时停止与H6的接触的，也没有提及他与这个人交往的时间有多长。声明说，他“无法就国家安全相关事宜发表进一步评论”。</p>
+  <p><strong>H6的背景及与安德鲁王子的密切关系</strong><br /><br />公开的法庭<a href="https://www.judiciary.uk/wp-content/uploads/2024/12/H6-v-SSHD-OPEN-Judgment-final-for-hand-down-FINAL.pdf" target="_blank">裁决</a>显示，H6是一名出生于1974年的中国公民。他在中国完成大学教育后，曾在政府部门工作数年。2002年，他前往英国深造，在伦敦学习语言一年后，进入约克大学攻读公共管理与公共政策硕士学位。毕业后，H6选择留在英国，并于2005年创立了一家公司，最初提供旅游服务，随后扩展至投资与咨询领域。2013年，H6获得了英国的永久居留权。<br /><br />尽管H6从事的是商业活动，但他与安德鲁王子建立的关系以及在某些关键事务中的特殊地位，引发了英国政府的高度关注。根据案件材料，H6是英国48家集团俱乐部(48 Group Club)的荣誉成员。这一俱乐部成员包括多位英国知名人士。英国内政部认为，H6的这一身份可能为他提供了发展关系的机会，而这些关系可能被中国利用以实现政治干预的目的。<br /><br />判决书揭示，H6与安德鲁王子的关系异常紧密，这种联系通过多封信件展现得尤为明显。其中一封日期为2020年3月30日的信件，由安德鲁王子的高级顾问多米尼克·汉普郡(Dominic Hampshire)撰写，明确表达了H6在王子私人圈层中的重要性。<br /><br />信中写道：“你应该清楚自己与王子及其家人之间关系的力量……在他最亲近的内部圈子之外，你处于众多人梦寐以求的位置。”</p>
+  <p>信件还提到，两人曾合作“绕过那些不完全信任的人”，显示出H6不仅是王子的代表，还在其决策过程中具有一定的影响力。<br /><br />另一封2020年10月22日的信件进一步确认，H6被授权代表安德鲁王子在中国参与有关“欧亚基金”(Eurasia Fund)的投资事务。这些文件表明，H6在王子的商务事务中扮演了核心角色。<br /><br /><strong>从贸易特使到争议人物：安德鲁王子的中国联系</strong><br /><br />安德鲁王子与中国的联系由来已久。自2001年被任命为英国国际贸易与投资特别代表以来，他频繁访问中国，推动中英贸易合作。2010年后，随着英国政府改善对华关系，王子的访华次数显著增加。他还多次作为中国人民外交学会(CPIFA)的客人参与活动，而CPIFA被认为与中国统战部关系密切，甚至被视为对外影响力的工具。<br /><br />2014年，安德鲁王子发起了“龙门创将”(Pitch@Palace)项目，旨在支持全球创业者，并积极寻求与中国的合作。<br /><br />安德鲁王子曾公开赞扬中国“一带一路”倡议，并在伦敦主持习近平主席著作《治国理政》的多语言版本发布会，进一步体现了他与中方的密切联系。即使在2019年因与杰弗里·爱泼斯坦(Jeffrey Epstein)的关系退出公共职务后，安德鲁王子仍与中国保持互动。</p>
+  <p>在2019年10月举行的第15届世界华商大会的开幕式上，安德鲁王子宣读了中国国家主席习近平发来的贺信，信中提到：“您对发展中英关系的承诺，尤其是在促进中英两国在科学、技术和创新领域的合作方面的贡献，以及您为第15届世界华商大会所作的个人努力，深受赞赏。”</p>
+  <p>2020年2月，他邀请中国驻英国大使参加了自己的生日宴会。<br /><br /><strong>国家安全担忧与法庭评估</strong><br /><br />在2021年的一次港口检查中，英国政府从H6的设备中发现了多份文件。这些文件揭示了H6在安德鲁王子的事务中扮演的重要角色，包括如何处理王子的财务期望以及推进商业合作。<br /><br />法庭文件指出，H6与王子的关系可能被利用来服务中国统战部的政治干预目标。英国内政部认为，H6在王子最脆弱的时期赢得了他的高度信任，而这种信任正是潜在的国家安全风险所在。特别是H6淡化了其与中国统战部的关系，这种不透明性进一步加剧了英国政府的担忧。<br /><br />英国内政部认为，H6代表中国统一战线工作部(UFWD)从事隐蔽和欺骗性活动，其与安德鲁王子的密切关系可能被利用来进行政治干预。SIAC支持了内政部的决定，认为H6对英国国家安全构成潜在威胁。法庭文件揭示，在H6的设备中发现了一封发往北京统战部的信件、一份含有统战部成员名单的文件，以及一条H6自称是中国人民政治协商会议(CPPCC)海外代表的短信。政协是中国统战系统的重要组成部分。<br /><br />裁决书引用了内政部的评估：“内政大臣有理由相信你正在或曾经代表统一战线工作部从事隐蔽和欺骗性活动，UFWD是中国共产党国家机器的一个分支。据报道，UFWD的职责是进行政治干预，包括针对英国的民主进程。因此，我们认为你可能对英国国家安全构成威胁。”<br /><br />不过，H6的法律团队则辩称，这些通信仅反映他作为商业中介人的正常工作，没有任何实质性证据显示他从事了非法或不当活动。然而，最终内政部的评估被法庭接受，认定H6的活动对英国国家安全构成潜在威胁，其继续留在英国不符合公共利益。<br /><br />此外，H6的法律团队称，内政部将H6的48家集团俱乐部会员身份作为关注点，体现了对其中国国籍的歧视。辩护方强调，该俱乐部本身及其他成员并无任何违法行为的指控，内政部的决定是基于H6的中国背景及其与中国国家的潜在关联，而非任何实质性证据。<br /><br />对于H6团队的辩护，法官在判决中提到：“虽然H6声称与统战部的接触是不可避免的，但其与统战部的联系显然超出了常规交流的范围。他未能对此提供完整和透明的解释。”<br /><br /><strong>英国对中国渗透活动保持高度警惕</strong><br /><br />英国工党北萨默塞特党少数民族事务官员何越(Yue He Parkinson)对美国之音表示，这个案件让她对英国政府在MI5等组织的独立性上印象深刻。</p>
+  <p>她说：“即便在一些试图迎合中国政府的政治压力下，MI5仍然将国家安全视为唯一的判断标准。这次对H6的行动再次验证了英国情报部门对潜在威胁的高度警觉。”<br /><br />何越还提到，她的一位与MI5相关的朋友曾透露，“MI5一直在关注来自中国大陆的移民动态。”</p>
+  <p>近年来，英国政府和议会对中国在英国的渗透活动表示出越来越大的担忧。英国情报部门指出，中国通过统战部等机构，在全球范围内开展包括政治渗透、经济间谍和技术盗窃在内的广泛活动。2022年，安全部门指称，长期资助英国政客的华裔律师李贞驹(Christine Lee)利用与英国政界人士的密切关系，为中国政府收集情报，影响英国的政策制定。不过李贞驹并未被起诉。2023年7月，李贞驹因被军情5处称为中国代理人而对该机构提出状告。</p>
+  <p>军情五处总监在H6案件中强调，中国通过中国共产党下属机构如UFWD开展政治干预活动，对英国构成威胁。这些机构被描述为“正在进行耐心、资金充足的欺骗性活动，以购买和施加影响力”。<br /><br />出于对中国在科技、学术和商业领域的渗透的高度担忧，在华为5G技术问题上，英国最终选择将其排除在核心网络之外，以保护国家安全。但是在新工党上台之后，英国对华态度有所改变。英国工党新首相在近期拒绝就香港45人案进行评论。<br /><br /><strong>议员呼吁解除H6的匿名</strong></p>
+  <p>由于H6的真实身份在法庭文件中被隐去并要求匿名，多名英国议员和政界人士呼吁公开这位神秘商人的身份。</p>
+  <p>前内政大臣苏埃拉·布拉夫曼在接受英国媒体采访时表示：“披露这名被指控的中国间谍的身份符合公共利益和国家安全利益。我们正不断受到来自中国等敌对国家的威胁和攻击。”</p>
+  <p>影子内阁大臣克里斯·菲尔普也对媒体表示：“揭露外国间谍的身份至关重要——这与李贞驹案类似，公开信息或许能促使更多人提供相关线索。”</p>
+  <p><strong>H6的真实身份</strong></p>
+  <p>美国之音经过调查后发现，H6的背景与公开资料中的中国商人杨腾波的信息高度吻合。根据2005年他接受英国广播公司采访的文章，杨腾波同样出生于1974年，于云南大学毕业，在英国学习一年语言后后于英国约克大学读公共政策硕士。他此后在英国创立了汉普集团，并且现任中国政协十三届二次会议海外列席代表、英国中华总商会执行主席、第十五届世界华商大会工作委员会执行主席。</p>
+  <p>汉普集团成立于2005年，总部位于伦敦，以促进中英两国商业合作为目标。集团业务涵盖金融投资、房地产开发和跨境咨询服务，在英国华人社区中有一定影响力。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/6665cb2f-239a-48ee-9813-dfb5db267c11_w900.jpg" alt="汉普集团位于伦敦圣詹姆斯广场33号的的办公室外景。" border="0" />    <div>
+<small style="color: #999;">汉普集团位于伦敦圣詹姆斯广场33号的的办公室外景。</small>
+    </div>
+  </div>
+  <p>根据中国官媒《环球时报》报道，在2019年10月举行的第15届世界华商大会上，杨腾波担任大会执行主席并表示：“本次大会旨在为中国企业与英国市场之间搭建经济与贸易合作的桥梁。在脱欧的背景下，这次大会为英国向全球华商展示其独特优势提供了绝佳机会。”</p>
+  <p>美国之音查看了杨腾波在中关村论坛上的资料信息，其中提到：“根据作为主要发起人，杨腾波先生还促成了英国约克公爵安德鲁王子发起的、支持青年创业者的创投平台——“龙门创将”(Pitch@Palace)落地中国”。</p>
+  <p>“杨腾波先生带领的企业连续多年荣获中国驻英国大使馆、英国中资企业协会颁发的年度贡献奖、最佳会员奖；2010年荣获英国48家集团“荣誉会员奖”。2009年4月，杨腾波先生在伦敦受到胡锦涛主席的亲切接见。”</p>
+  <p>自由亚洲电台的<a href="https://www.rfa.org/english/china/2024/12/13/chinese-spy-uk-prince-andrew-yang-tengbo/" target="_blank">英文报道</a>披露H6就是Tengbo Yang，并刊登了他的相关照片。</p>
+  <p>美国之音通过电邮向H6的代理律师、他所属的48集团以及中国驻英国大使馆发出核实与置评的请求，但截至发稿时还未得到回复。</p>
+  <p><strong>华人社区对H6案件的反应</strong></p>
+  <p>英国的华人社区对这起案件表示了深切的关注。</p>
+  <p>前英国广播公司中文部总编辑、资深中国观察人士张皓宇在接受美国之音采访时表示，英国对中国市场的看重带来了安全上的隐患。</p>
+  <p>“在过去的几十年里，英国人一直对中国市场非常感兴趣，我认为这是一个许多英国上层人士，无论是前政府官员还是商人，仍然抱有很多幻想的市场。但是自十八大以来，中国发生的变化，许多人并不完全理解，或者他们理解但仍然不愿意承认这个现实，”他说。</p>
+  <p>张皓宇说，中国现在正在向极权主义转变，每一个机构和每一个个人都受党的指挥，而党完全在习近平一个人的控制之下，而这是一个威胁。</p>
+  <p>“这种向极权主义的转变，大多数人没有看到。他们仍然存在幻想。我认为这可能是最大的问题之一。现在这直接威胁到英国的安全。”<br /><br />与此同时，一位匿名接受美国之音采访、已移民英国多年的华人商人陈华(化名)表示，H6案让不少海外华人感到蒙羞。</p>
+  <p>他说：“并不是所有华人都与中共有联系。我们中许多人选择移民海外，是为了享受这里的自由和民主，远离极权的控制，而不是继续与中共政权合作。”</p>
+  <p>他进一步强调，这起案件可能导致对海外华人群体的不信任加剧。</p>
+  <p>“这种不信任不仅对我们个人有伤害，也会阻碍华人群体融入主流社会的努力，”他说。<br /><br />这位商人呼吁，英国社会在面对类似案件时应避免将个体行为泛化为对整个华人社区的怀疑。</p>
+  <p>他说：“我们选择定居英国，是希望成为这里自由社会的一部分，而不是被视为某种威胁。”<br /><br />观察人士认为，H6案件凸显了中国统战部在英国的活动范围和影响力，同时也暴露了英国王室成员可能被外国势力利用的风险。这一事件无疑将对中英关系产生深远影响，也引发了人们对国家安全与国际交往平衡的思考。</p>
+  <p><strong>中国驻英大使馆谴责英方一些人“诬蔑抹黑”中国</strong></p>
+  <p>针对H6因涉嫌与中国统战部有联系而被禁止入境英国的报道，中国驻英国大使馆发言人进行了反驳。</p>
+  <p>大使馆发言人以答记者问的形式发表<a href="http://gb.china-embassy.gov.cn/chn/lcbt/sgryr/202412/t20241213_11544067.htm" target="_blank">声明</a>说：“英方一些人总是热衷于捕风捉影，编造各种针对中国的‘间谍’故事，这是典型的贼喊捉贼。其目的是诬蔑抹黑中国，破坏中英正常人员往来。我们对此予以强烈谴责。</p>
+  <p>声明特别提到，中共的统一战线工作，“旨在团结各党派、各阶层、各民族、各团体以及各界人士，促进中国共产党与党外人士的合作”。</p>
+  <p>“英方一些人动辄拿中国的统战工作说事、诋毁中国政治制度，其用心十分险恶，但决不可能得逞，”这位发言人说。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E4%BF%84%E7%BD%97%E6%96%AF-%E5%9C%A8%E5%BA%93%E5%B0%94%E6%96%AF%E5%85%8B%E4%BD%BF%E7%94%A8%E6%9C%9D%E9%B2%9C%E5%86%9B%E4%BA%BA">
+          泽连斯基：俄罗斯“在库尔斯克使用朝鲜军人”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6">
+          布林肯：美国在与废黜阿萨德的叙利亚反政府武装直接接触
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92">
+          一旦权在手便把令来行，代总统韩德洙下令军方加强安全警戒
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-14</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-14/%E9%83%A8%E5%88%86%E9%A9%BB%E6%97%A5%E7%BE%8E%E5%86%9B%E4%BE%9D%E7%BE%8E%E6%97%A5%E5%8D%8F%E8%AE%AE%E5%BC%80%E5%A7%8B%E7%A6%BB%E5%BC%80%E5%86%B2%E7%BB%B3%E5%9F%BA%E5%9C%B0%E8%BF%81%E5%BE%80%E5%85%B3%E5%B2%9B">
+          部分驻日美军依美日协议开始离开冲绳基地迁往关岛
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92">
+            前一篇：一旦权在手便把令来行，代总统韩德洙下令军方加强安全警戒
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6">
+            后一篇：布林肯：美国在与废黜阿萨德的叙利亚反政府武装直接接触
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-14/%E5%B8%83%E6%9E%97%E8%82%AF-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E4%B8%8E%E5%BA%9F%E9%BB%9C%E9%98%BF%E8%90%A8%E5%BE%B7%E7%9A%84%E5%8F%99%E5%88%A9%E4%BA%9A%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%AD%A6%E8%A3%85%E7%9B%B4%E6%8E%A5%E6%8E%A5%E8%A7%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-14/%E4%B8%80%E6%97%A6%E6%9D%83%E5%9C%A8%E6%89%8B%E4%BE%BF%E6%8A%8A%E4%BB%A4%E6%9D%A5%E8%A1%8C-%E4%BB%A3%E6%80%BB%E7%BB%9F%E9%9F%A9%E5%BE%B7%E6%B4%99%E4%B8%8B%E4%BB%A4%E5%86%9B%E6%96%B9%E5%8A%A0%E5%BC%BA%E5%AE%89%E5%85%A8%E8%AD%A6%E6%88%92">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

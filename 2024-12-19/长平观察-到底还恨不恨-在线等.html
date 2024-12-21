@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>长平观察：“到底还恨不恨？在线等！”  – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+长平观察：“到底还恨不恨？在线等！”
+——
+" />
+    <meta property="og:description" content="
+长平观察：“到底还恨不恨？在线等！”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="长平观察：“到底还恨不恨？在线等！” " />
+    <meta property="twitter:title" content="长平观察：“到底还恨不恨？在线等！” " />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5385)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%2595%25BF%25E5%25B9%25B3%25E8%25A7%2582%25E5%25AF%259F%25EF%25BC%259A%25E2%2580%259C%25E5%2588%25B0%25E5%25BA%2595%25E8%25BF%2598%25E6%2581%25A8%25E4%25B8%258D%25E6%2581%25A8%25EF%25BC%259F%25E5%259C%25A8%25E7%25BA%25BF%25E7%25AD%2589%25EF%25BC%2581%25E2%2580%259D%2520%2Fa-71090358&t=%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D+" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%2595%25BF%25E5%25B9%25B3%25E8%25A7%2582%25E5%25AF%259F%25EF%25BC%259A%25E2%2580%259C%25E5%2588%25B0%25E5%25BA%2595%25E8%25BF%2598%25E6%2581%25A8%25E4%25B8%258D%25E6%2581%25A8%25EF%25BC%259F%25E5%259C%25A8%25E7%25BA%25BF%25E7%25AD%2589%25EF%25BC%2581%25E2%2580%259D%2520%2Fa-71090358&t=%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D+&d=2024-12-19&e=
+长平观察：“到底还恨不恨？在线等！”
+——
+
+
+  
+  长平2024-12-18T10:00:32.953Z
+  
+  
+对比今年1-10月累计数据，中国赴日游客增长率达到惊人的214%（资料图片）
+  
+  （德国之声中文网）到了2024年的年底，中国爱国网民有些彷徨。当局似乎正在张开双臂欢迎外国游客，这与他们高高竖起的旗帜——警惕境外势力与仇恨西方敌人——多少有些错位。
+  中国国家移民管理局12月17日发布公告，宣布即日起“全面放宽优化过境免签政策”，将54国过境免签人员的停留时间由原72小时和144小时均延长为240小时（10天），同时新增21个过境免签入出境口岸。
+  这些享受被官方称为“优化”过境签证的国家中，当然不只有中国的老朋友俄国，更多是看上去对中国不太友好的日本、美国、德国、加拿大等西方国家。
+  更伤心的眼泪早已经流过了。在过去一年来，不仅过境免签，而且中国..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%2595%25BF%25E5%25B9%25B3%25E8%25A7%2582%25E5%25AF%259F%25EF%25BC%259A%25E2%2580%259C%25E5%2588%25B0%25E5%25BA%2595%25E8%25BF%2598%25E6%2581%25A8%25E4%25B8%258D%25E6%2581%25A8%25EF%25BC%259F%25E5%259C%25A8%25E7%25BA%25BF%25E7%25AD%2589%25EF%25BC%2581%25E2%2580%259D%2520%2Fa-71090358" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358&text=长平观察：“到底还恨不恨？在线等！” &hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358&title=长平观察：“到底还恨不恨？在线等！” " class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358&title=长平观察：“到底还恨不恨？在线等！” " class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=长平观察：“到底还恨不恨？在线等！” &body=
+长平观察：“到底还恨不恨？在线等！”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358&title=长平观察：“到底还恨不恨？在线等！” &caption=
+长平观察：“到底还恨不恨？在线等！”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=长平观察：“到底还恨不恨？在线等！” &url=https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>长平观察：“到底还恨不恨？在线等！” </h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%2595%25BF%25E5%25B9%25B3%25E8%25A7%2582%25E5%25AF%259F%25EF%25BC%259A%25E2%2580%259C%25E5%2588%25B0%25E5%25BA%2595%25E8%25BF%2598%25E6%2581%25A8%25E4%25B8%258D%25E6%2581%25A8%25EF%25BC%259F%25E5%259C%25A8%25E7%25BA%25BF%25E7%25AD%2589%25EF%25BC%2581%25E2%2580%259D%2520%2Fa-71090358&t=%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D+&d=2024-12-19&e=
+长平观察：“到底还恨不恨？在线等！”
+——
+
+
+  
+  长平2024-12-18T10:00:32.953Z
+  
+  
+对比今年1-10月累计数据，中国赴日游客增长率达到惊人的214%（资料图片）
+  
+  （德国之声中文网）到了2024年的年底，中国爱国网民有些彷徨。当局似乎正在张开双臂欢迎外国游客，这与他们高高竖起的旗帜——警惕境外势力与仇恨西方敌人——多少有些错位。
+  中国国家移民管理局12月17日发布公告，宣布即日起“全面放宽优化过境免签政策”，将54国过境免签人员的停留时间由原72小时和144小时均延长为240小时（10天），同时新增21个过境免签入出境口岸。
+  这些享受被官方称为“优化”过境签证的国家中，当然不只有中国的老朋友俄国，更多是看上去对中国不太友好的日本、美国、德国、加拿大等西方国家。
+  更伤心的眼泪早已经流过了。在过去一年来，不仅过境免签，而且中国..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E9%2595%25BF%25E5%25B9%25B3%25E8%25A7%2582%25E5%25AF%259F%25EF%25BC%259A%25E2%2580%259C%25E5%2588%25B0%25E5%25BA%2595%25E8%25BF%2598%25E6%2581%25A8%25E4%25B8%258D%25E6%2581%25A8%25EF%25BC%259F%25E5%259C%25A8%25E7%25BA%25BF%25E7%25AD%2589%25EF%25BC%2581%25E2%2580%259D%2520%2Fa-71090358" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734619625000-->
+<p><a href="https://www.dw.com/zh/%E9%95%BF%E5%B9%B3%E8%A7%82%E5%AF%9F%EF%BC%9A%E2%80%9C%E5%88%B0%E5%BA%95%E8%BF%98%E6%81%A8%E4%B8%8D%E6%81%A8%EF%BC%9F%E5%9C%A8%E7%BA%BF%E7%AD%89%EF%BC%81%E2%80%9D%20/a-71090358">长平观察：“到底还恨不恨？在线等！”</a>
+——</p>
+
+<div>
+  <div>
+<i>  长平<br />2024-12-18T10:00:32.953Z</i>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/69024110_303.jpg" width="100%" />  <div>
+<small style="color: #999;">对比今年1-10月累计数据，中国赴日游客增长率达到惊人的214%（资料图片）</small>
+  </div>
+  <p>（德国之声中文网）到了2024年的年底，中国爱国网民有些彷徨。当局似乎正在张开双臂欢迎外国游客，这与他们高高竖起的旗帜——警惕境外势力与仇恨西方敌人——多少有些错位。</p>
+  <p>中国国家移民管理局12月17日发布公告，宣布即日起“全面放宽优化<a href="https://api.dw.com/api/detail/article/71086224" rel="ArticleRef">过境免签政策</a>”，将54国过境免签人员的停留时间由原72小时和144小时均延长为240小时（10天），同时新增21个过境免签入出境口岸。</p>
+  <p>这些享受被官方称为“优化”过境签证的国家中，当然不只有中国的老朋友俄国，更多是看上去对中国不太友好的日本、美国、德国、加拿大等西方国家。</p>
+  <p>更伤心的眼泪早已经流过了。在过去一年来，不仅过境免签，而且中国已陆续对法国、德国、意大利、荷兰等国普通公民的访问实施了单方面免签政策。从11月30日开始，又新增9国试行免签。同时，将免签停留期限从15日延长至30日。到12月，享受中国单方面免签待遇的国家扩大到39个。</p>
+  <p>免签不仅是旅行事务，同时也是政治话语。爱国教育强调“国富民强”，难免给自己挖下了“社会达尔文主义”的坑。批评者总是“打脸”说，就普通公民（持普通护照）而言，西方发达国家没有一个对中国免签，和中国互相免签的20多个国家都在不发达之列。</p>
+  <p>因此，今年2月，当新加坡宣布和中国互相免签之后，中国官方媒体和自媒体奔走相告：“我们强大了！”随后，有人出来泼冷水说，“哎呦喂，新加坡向全球都免签啦，跟我们强不强大没关系”。又有人去查了，发现这是错误信息，新加坡也还有30多个国家没有免签。不过，爱国网民就这个发现也没有好意思大声嚷嚷，因为那些国家都位于他们“国家鄙视链”的末端。</p>
+  <p><strong>从“不能穿和服”到“偶发事件”</strong></p>
+  <p>这些闲气也只好受了。对于爱国网民说，尤为可恨的是，11月宣布的单方面免签国家中竟然<a href="https://api.dw.com/api/detail/article/70862611" rel="ArticleRef">包含了日本</a>。也就是说，在反福岛核废水排放一年之后，在南京大屠杀87周年纪念日之前，中国政府更加欢迎日本游客了。</p>
+  <p>有人讽刺说：“<a href="https://api.dw.com/api/detail/article/69256365" rel="ArticleRef">到底还恨不恨？</a>在线等！”</p>
+  <p>事实上，从2003年起，中国就对日本等国实行单方面免签，允许15天停留，直到2020年3月，因为新冠疫情暂停。这一次只是恢复疫情之前的政策。</p>
+  <p>但是，在这四年之间， 官民互动，反日情绪一再高涨。2022年8月，苏州一女子穿和服在街头拍照，被警察带走，理由是“你是中国人，不能穿和服”。2024年初，农夫山泉矿泉水的包装被指“精日”（“精神日本人”，意思是羡慕日本、向往成为日本人），引发大规模的举报与下架，最后被迫改为“国风”。</p>
+  <p>尤其令人痛心的是，继6月10日一名男子在吉林持刀<a href="https://api.dw.com/api/detail/article/69328083" rel="ArticleRef">袭击四名美籍游客</a>和一名试图阻止其行凶的中国人之后，6月24日，苏州发生了一起针对日本学童的袭击案，一对日本侨民母子遇刺受伤，在日本人学校校车上担任引导员的中国女性<a href="https://api.dw.com/api/detail/article/69504943" rel="ArticleRef">胡友平则被杀身亡</a>。</p>
+  <p>9月18日，“九一八事变”93周年纪念日，深圳日本人学校附近，一名10岁的<a href="https://api.dw.com/api/detail/article/70283624" rel="ArticleRef">日本籍儿童遇刺身亡</a>。</p>
+  <p>无差别砍杀外国人事件震惊国际社会。舆论普遍认为，行凶者与受害者没有个人利益冲突，其仇恨来自官方操纵的极端民族主义煽动。但是，中国官方一边大量删除信息，继续操纵言论，一边机械地宣称这只是“偶发事件”，“中国是世界上公认的<a href="https://api.dw.com/api/detail/article/70663126" rel="ArticleRef">最安全的国家之一</a>”。</p>
+  <h3 id="section">相关图集：日本东电福岛核电站核废水排海风波</h3>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66583186_303.jpg" width="100%" /><strong>日相岸田视察福岛核电站</strong>：8月20日，日本首相岸田文雄造访东京电力福岛第一核电站，视察了处理水排放相关设施，听取安全对策的介绍。岸田向媒体强调，为推进反应堆报废作业和福岛重建，处理水排放是绝不能拖延的课题。次日，日本政府宣布，已就最快24日启动东京电力福岛第一核电站处理水排海展开最终协调。最终时间表将在22日召开的内阁幕僚会议上决定。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66573980_303.jpg" width="100%" /><strong>戴维营标志着韩日关系里程碑</strong>：日本官方在做出福岛核灾废水8月24日开始排海作业的决定前，日本首相岸田文雄在美国戴维营参加了美日韩三国峰会。据美国之音报道，峰会之前，韩日两国政府进行了数月的外交，把历史难题和相互猜疑放置一边，应对更为紧迫的共同安全关切。尹锡悦和岸田文雄都竭力显示有意要改善双边关系，并处理敏感问题，包括为日本殖民统治期间强迫韩国人劳动提供赔偿的计划，以及韩国人对日本计划把福岛核电站经过处理的核废水排放入海洋的抗议。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66146761_303.jpg" width="100%" /><strong>IAEA报告：日本核电站处理水排海计划符合国际安全标准</strong>：不论是日本自己的核监管部门，还是国际原子能组织都批准了东电公司的核处理水排海方案。7月4日，国际原子能机构在其官网上发布消息，该机构认为日本核处理水排海计划符合国际安全标准，其对人与环境的不良影响"可忽略不计"。该组织还强调，数十年来，全球各国的核电站都经常向海洋排放放射性废水。图为国际原子能机构总干事格罗西7月初访问福岛，并且在一所实验室参观了核废水养鱼项目。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66109093_303.jpg" width="100%" /><strong>IAEA总干事：我们不选边站</strong>：IAEA的评估报告在7月初发布之后，中国外交部发言人连续数日就此事发表措辞严厉的抗议评论。IAEA总干事格罗西说，IAEA的评估报告并不等同于支持认可该计划，东京方面必须做出最终的决定。他还说：“我们既不赞同该计划，也不建议这样做。我们只是说这个计划符合标准。”他补充说：“我们不选边站。我不站在日本一边，也不站在中国一边，也不站在韩国一边。这些标准对所有国家都是一致的。”
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652340_303.jpg" width="100%" /><strong>福岛核电站核灾废水排海作业正式启动</strong>：8月24日，东京电力公司启动福岛第一核电站核废水排海作业。东京政府在2年多前就做出排海选项并认为这是反应堆报废和福岛重建不容拖延的课题。共同社报道称，东电将首批排放的约1吨处理水与海水混合，对氚的活度进行最终测定，在确认没有问题后启动水泵，开始排海。处理水通过海底隧道抵达约1公里外的海域。2023年度计划排放共计约3.12万吨。到福岛一核反应堆报废工作完成为止，排海计划持续约30年。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652252_303.jpg" width="100%" /><strong>多核素去除设备（ALPS）净化污染水</strong>：在排入大海前，核废水会经由ALPS系统过滤。东电公司称，该系统能够滤走62种放射性物质，只会残留氚。然后，过滤后的核废水还会进一步稀释，直至每立方米污水中的氚的发射性降低到1500贝克勒尔。这只相当于日本核安全标准上限的1/40。东电公司还称，如果处理后的核废水不达标，还会重新过滤。经过ALPS系统过滤处理过的水目前保存在核电站厂区内的储罐内。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652167_303.jpg" width="100%" /><strong>中国全面暂停进口日本水产品</strong>：中国海关总署8月24日宣布，即日起全面暂停进口日本水产品。海关总署进出口食品安全局表示，中国海关“高度关注日方此举对日本输华食品农产品带来的放射性污染风险。通过持续开展对日本食品放射性污染风险的评估，在严格确保安全的基础上，对从日本进口食品采取了强化监管措施。接下来，海关总署将持续关注日本核污染水排海情况，视情动态调整有关监管措施，防范核污染水排海对我国国民健康、食品安全带来的风险。”一个月前，中国方面刚刚暂停从日本10个县进口食品，现在则将禁令扩大到了日本全国的水产品。根据海关总署数据，2022年中国从日本进口了价值超过 5 亿美元的水产品。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66651938_303.jpg" width="100%" /><strong>香港和澳门向日本发出食品进口禁令</strong>：香港宣布8月24日凌晨起禁止日本10个都县的水产品进口至香港。香港特区政府表示，网上代购也属商业进口，受禁令规管，如果违反禁令，可被判处第6级罚款及监禁12个月。澳门从8月24日起禁止进口源自日本10个都县区的鲜活食品、动物源性食品、海盐及海藻，包括蔬菜、水果、奶及奶制品、水产及水产制品、肉类及其制品、禽蛋等。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66617920_303.jpg" width="100%" /><strong>韩国抗议者闯入日本大使馆</strong>：韩国国务总理韩德洙在24日发表谈话时称，“如果日本政府按照以前发布的措施排海，那么韩国没有理由太担心”，谋求国民理解。韩国在野党则指出这是“人类最恶劣的环境灾害”。日本驻首尔大使馆门前，多个市民团体发出反对呼声，部分年轻人一度闯入其建筑物。据报道，韩国反对排海的十几个年轻人闯入日本大使馆所在大楼，被警察拘留。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652053_303.jpg" width="100%" /><strong>韩国各地民团连日举行集会谴责日核水排海</strong>：日本福岛核电站启动排海作业后，韩国全国各地的环境团体、公民团体群起发声指出核污水排海的危害性，并谴责日本政府和韩国政府，敦促日方停止核污排海。韩国最大在野党共同民主党党首李在明甚至在参加集会时称日本“越过了不可逾越的界限”，“核污染水排海是向太平洋沿岸国家宣战”。他说：“日本应该向最邻近的国家、损失最大的韩国道歉。”
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66637458_303.jpg" width="100%" /><strong>排海引发抢盐风潮</strong>：中国多地出现食用盐抢购潮，各电商平台上，食盐产品也被抢购一空。对此，相关机构因此密集发声，呼吁市民不必哄抢食盐。在此之前，韩国也传来曾因预计日本将开始排放福岛核废水而导致民众囤盐的消息。据路透社报道，韩国盐价在今年4月至6月间飙涨近27%，不过，韩国官员称，天气欠佳、产量不足也是导致涨价的原因。此外香港澳门社交媒体上也有人陆续上传超市货架食盐售罄的照片。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652290_303.jpg" width="100%" /><strong>排海造成中国国内日式餐厅生意冷清</strong>：日本宣布排海作业后，中国国内一些日式餐厅生意大受影响，客流量大幅减少。有分析认为，特别是食材主打进口的中高端日料店会首当其冲。由于大量食客对日本食物失去信心，不少日式餐厅已经考虑转型经营其它菜品。图为上海南京路上一家日本火锅店在8月24日这一天门可罗雀。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66652129_303.jpg" width="100%" /><strong>日本呼吁中国保证在华日本公民安全</strong>：据日本NHK报道，8月24日，位于山东青岛的日本人学校在校园内发现了被投掷进来的石块。次日，位于江苏省苏州的日本人学校也发现有人将多颗鸡蛋投掷进校园。报道称，这些行为都没有对学生或建筑物等造成损害，但学校正在加强警备。日本驻北京大使馆和各地总领事馆也纷纷表示，由于频繁接到抗议和骚扰电话，日本大使馆增加警卫人员，应对不测情况发生。日本首相岸田文雄对媒体表示，“强烈敦促（中国驻日大使）吴江浩大使呼吁中国人民以冷静和负责任的方式行事”。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66646948_303.jpg" width="100%" /><strong>中方敦促日本切实保障在日中国公民安全</strong>：日本外务省事务次官冈野正敬28日召见中国驻日大使吴江浩，指出关于东京电力福岛第一核电站处理水排放入海，日本国内接到了很多从中国打来的骚扰电话，提出抗议称“极其遗憾”。中国驻日本大使馆官方网页28日在一份立场声明中表示，近日中国驻日使领馆接到大量来自日本国内的骚扰电话，对使领馆正常运转造成严重干扰。中方敦促日方依法处置，切实保障中国驻日使领馆、在日机构、企业、公民和来日中国游客人身安全。
+  </div>
+  <div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/66651899_303.jpg" width="100%" /><strong>中国游客赴日旅游意愿有所降低</strong>：8月10日，中国文化和旅游部公布恢复出境团队游第三批名单。日本就在名单上且成为中国各大旅游平台上国庆出游搜索热度第一的目的地。不过24日之后，中国游客赴日旅游的意愿大幅降低，甚至出现一些游客退团的情况。在北京经营一家旅行社的王先生向德国之声证实，福岛排海的确对中国游客赴日旅游的意愿造成“明显的影响”。日本官方29日也证实，福岛排海后，“已有部分中国游客取消了赴日旅游”。2019年，中国赴日游客人数为959万人次，占所有外国游客的30%。今年7月，赴日中国个人游客为31万3300人。
+  </div>
+  <p><strong>“回来了三番五次又想去，实在太麻烦了！”</strong></p>
+  <p>中国政府无法否认的是，在风起云涌的反福岛核废水排放浪潮中，官方一直挥舞着煽动民族情绪的指挥棒。福岛核废水的排放经过国际原子能机构（IAEA）的监测和认可，中国政府当然可以表达异议，但是它并没有像同样表达异议的韩国政府那样，参与监测、评估与对话，而是一味地“强烈谴责”，全面禁止进口原产地为日本的水产品，任由媒体<a href="https://api.dw.com/api/detail/article/66634174" rel="ArticleRef">散播恐慌消息</a>，放纵爱国网红号召抵制日货，收割流量。</p>
+  <p>在此期间的民间舆论中，去日本旅游不仅成为奔赴地狱的探访，而且也是<a href="https://api.dw.com/api/detail/article/67234372" rel="ArticleRef">对祖国的背信弃义</a>。网民警告说：“坚决不去给敌人送钱！”</p>
+  <p>仍然有一些爱国意志薄弱的网民去日本旅游，但是他们带着辐射检测器。沿途监测下来，辐射指数极低，“每到一个地方都测一次，大失所望”。这些数据带来了麻烦：原来中国核电厂排放的废水，其氚含量实际上比福岛要高得多。</p>
+  <p>中国官方理直气壮地回应说：核事故产生的核污染水与核电站正常运行产生的废水性质“不能相提并论”。但是网民想不明白：为什么呢？难道常规运行伤害健康可以，而偶发事件不伤害健康不行？</p>
+  <p>因此，网络上总是少不了对官方“坚决守护人民健康”宣传的讽刺。有网民说：“（中国富豪）马云刘强东王思聪各路明星都常去日本还有定居的，他们都很蠢”。还有人说：“千万别去，不然像我一样，回来了三番五次又想去，实在太麻烦了！”</p>
+  <p>据报道，韩国政府表示，一年以来，进行了近5万次相关辐射检测，结果均显示为安全范围。</p>
+  <p>截至2024年7月，核电站附近海水检出的氚含量，远低于日本安全排放标准及世界卫生组织的饮用水标准。然而，北京继续强硬措辞，中共最高级别的外交官王毅7月与日本外相林芳正会面时，仍然警告日本“不要一意孤行”。</p>
+  <p>到了9月，中国外交部发布声明称，中日双方就福岛第一核电站核污染水排海问题<a href="https://api.dw.com/api/detail/article/70281018" rel="ArticleRef">达成了共识</a>。在共识中，中国政府做了韩国政府一开始就在做的事情：参与监测、评估与对话。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/41123426_303.jpg" width="100%" />  <div>
+<small style="color: #999;">除了新加坡之外，和中国互相免签的20多个国家都在不发达之列。</small>
+  </div>
+  <p><strong>中国人赴日旅游的“成绩单”</strong></p>
+  <p>日本政府观光局（JNTO，又称日本国家旅游局）近日发布的月度资料引起了不少中国网民的关注。资料显示，2024年10月访日外国游客达到创纪录的331万人次，比疫情前的2019年同期（250万人次）增长33%。</p>
+  <p>今年1~10月，访日外国游客数超过3000万人次，打破其从1964年以来的最高记录。</p>
+  <p>在10月赴日的访客中，韩国以73万排在首位；中国大陆游客数以58万人次位于第二位，对比2023年增长127%。对比1-10月累计数据，中国赴日游客增长率达到惊人的214%。</p>
+  <p>有网民指出，值得注意的是，中国游客增长，是在大陆游客需要办理赴日签证的情况下发生的。而在赴日人数前5位的国家/地区中，只有中国大陆游客需要办理签证。</p>
+  <p>更值得注意的是，这个赴日旅游的“成绩”是在中国官方指挥的反福岛核废水浪潮中取得的。</p>
+  <p>“到底还恨不恨？在线等！”</p>
+  <p><strong>作者<span data-id="41577284" data-type="AUTO_TOPIC" title="Automatische Themenseite">长平</span>是中国资深媒体人、时事评论作家，六四记忆 · 人权博物馆总策展人，现居德国。</strong></p>
+  <p><em>德国之声致力于为您提供客观中立的新闻报导，以及展现多种角度的评论分析。文中评论及分析仅代表作者或专家个人立场。</em></p>
+  <p><em>© 2024年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E5%BE%B7%E5%9B%BD%E5%9C%A3%E8%AF%9E%E5%B8%82%E9%9B%86%E4%B8%8A-%E4%BA%BA%E4%BB%AC%E8%A7%89%E5%BE%97%E5%AE%89%E5%85%A8%E5%90%97">
+          德国圣诞市集上 人们觉得安全吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC%E4%BB%8A%E5%B9%B4%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%86%9B%E5%8A%9B%E6%8A%A5%E5%91%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9">
+          五角大楼今年的中国军力报告有哪些内容？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91">
+          法国大规模强奸案：51名被告均被判刑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E7%BE%8E%E5%9B%BDM1A2T%E5%9D%A6%E5%85%8B%E6%8A%B5%E5%8F%B0-%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8-%E5%8F%B0%E6%B9%BE-%E4%BB%A5%E6%AD%A6%E8%B0%8B%E7%8B%AC-%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%BE%97%E9%80%9E">
+          美国M1A2T坦克抵台 中国外交部：台湾“以武谋独”不可能得逞
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91">
+            前一篇：法国大规模强奸案：51名被告均被判刑
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-19/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E4%BA%BA%E5%A4%A7%E6%95%99%E6%8E%88-%E5%90%AC%E8%AF%B4%E4%BD%A0%E5%9B%BD%E5%A5%B3%E5%A4%A7%E7%94%9F%E6%AF%95%E4%B8%9A%E5%B0%B1%E8%80%81%E8%80%81%E5%AE%9E%E5%AE%9E%E6%9C%8D%E6%9C%8D%E5%B8%96%E5%B8%96%E5%9C%B0%E7%94%9F%E5%AD%A9%E5%AD%90">
+            后一篇：就叫熊太行也行｜人大教授：听说你国女大生毕业就老老实实服服帖帖地生孩子
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E4%BA%BA%E5%A4%A7%E6%95%99%E6%8E%88-%E5%90%AC%E8%AF%B4%E4%BD%A0%E5%9B%BD%E5%A5%B3%E5%A4%A7%E7%94%9F%E6%AF%95%E4%B8%9A%E5%B0%B1%E8%80%81%E8%80%81%E5%AE%9E%E5%AE%9E%E6%9C%8D%E6%9C%8D%E5%B8%96%E5%B8%96%E5%9C%B0%E7%94%9F%E5%AD%A9%E5%AD%90'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC%E4%BB%8A%E5%B9%B4%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%86%9B%E5%8A%9B%E6%8A%A5%E5%91%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-19/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E4%BA%BA%E5%A4%A7%E6%95%99%E6%8E%88-%E5%90%AC%E8%AF%B4%E4%BD%A0%E5%9B%BD%E5%A5%B3%E5%A4%A7%E7%94%9F%E6%AF%95%E4%B8%9A%E5%B0%B1%E8%80%81%E8%80%81%E5%AE%9E%E5%AE%9E%E6%9C%8D%E6%9C%8D%E5%B8%96%E5%B8%96%E5%9C%B0%E7%94%9F%E5%AD%A9%E5%AD%90">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-19/%E4%BA%94%E8%A7%92%E5%A4%A7%E6%A5%BC%E4%BB%8A%E5%B9%B4%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%86%9B%E5%8A%9B%E6%8A%A5%E5%91%8A%E6%9C%89%E5%93%AA%E4%BA%9B%E5%86%85%E5%AE%B9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%9B%BD%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%BC%BA%E5%A5%B8%E6%A1%88-51%E5%90%8D%E8%A2%AB%E5%91%8A%E5%9D%87%E8%A2%AB%E5%88%A4%E5%88%91">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

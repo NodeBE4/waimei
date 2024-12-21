@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+" />
+    <meta property="og:description" content="
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维" />
+    <meta property="twitter:title" content="“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5385)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cum-laude-dining-area-sparks-discussion-20241219%2F7907185.html&t=%E2%80%9C%E5%AD%A6%E9%9C%B8%E5%B0%B1%E9%A4%90%E5%8C%BA%E2%80%9D%E6%83%B9%E8%AE%AE+%E5%87%B8%E6%98%BE%E4%B8%AD%E5%9B%BD%E9%80%90%E5%88%A9%E6%95%99%E8%82%B2%E4%B8%8B%E7%9A%84%E2%80%9C%E5%94%AF%E5%88%86%E6%95%B0%E2%80%9D%E6%80%9D%E7%BB%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cum-laude-dining-area-sparks-discussion-20241219%2F7907185.html&t=%E2%80%9C%E5%AD%A6%E9%9C%B8%E5%B0%B1%E9%A4%90%E5%8C%BA%E2%80%9D%E6%83%B9%E8%AE%AE+%E5%87%B8%E6%98%BE%E4%B8%AD%E5%9B%BD%E9%80%90%E5%88%A9%E6%95%99%E8%82%B2%E4%B8%8B%E7%9A%84%E2%80%9C%E5%94%AF%E5%88%86%E6%95%B0%E2%80%9D%E6%80%9D%E7%BB%B4&d=2024-12-19&e=
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+
+
+  
+Thu, 19 Dec 2024 16:48:20 GMT
+  
+  
+社媒博主“李老师不是你老师”转发12月16日(发布) 网曝中国成都石室成飞中学的学生食堂设为普通就餐区和学霸就餐区。（网络照片）
+  
+台北 —   中国四川省成都市的一所中学设置“学霸就餐区”，引发无视学生平等权利的讨论。分析人士表示，“分层用餐”背离了传统孔夫子“有教无类”的思想，也背离了现代人讲求的“平权”观念。中国教育在逐利的思维下，一切“唯分数”是论，学生从小就被灌输阶级意识以及与同侪斗争，如此培养出的中国共产主义接班人已经不是精致利己的问题，而是会造成伤害他人的情况大量出现。四川成都石室成飞中学在12月16日被网友爆料设置“学霸就餐区”，引发热议，相关话题冲上热搜。网上图片显示，在食堂一部分的桌子上摆有“学霸就餐区”的标志，另一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cum-laude-dining-area-sparks-discussion-20241219%2F7907185.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html&text=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html&title=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html&title=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维&body=
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html&title=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维&caption=
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维&url=https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cum-laude-dining-area-sparks-discussion-20241219%2F7907185.html&t=%E2%80%9C%E5%AD%A6%E9%9C%B8%E5%B0%B1%E9%A4%90%E5%8C%BA%E2%80%9D%E6%83%B9%E8%AE%AE+%E5%87%B8%E6%98%BE%E4%B8%AD%E5%9B%BD%E9%80%90%E5%88%A9%E6%95%99%E8%82%B2%E4%B8%8B%E7%9A%84%E2%80%9C%E5%94%AF%E5%88%86%E6%95%B0%E2%80%9D%E6%80%9D%E7%BB%B4&d=2024-12-19&e=
+“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维
+——
+
+
+  
+Thu, 19 Dec 2024 16:48:20 GMT
+  
+  
+社媒博主“李老师不是你老师”转发12月16日(发布) 网曝中国成都石室成飞中学的学生食堂设为普通就餐区和学霸就餐区。（网络照片）
+  
+台北 —   中国四川省成都市的一所中学设置“学霸就餐区”，引发无视学生平等权利的讨论。分析人士表示，“分层用餐”背离了传统孔夫子“有教无类”的思想，也背离了现代人讲求的“平权”观念。中国教育在逐利的思维下，一切“唯分数”是论，学生从小就被灌输阶级意识以及与同侪斗争，如此培养出的中国共产主义接班人已经不是精致利己的问题，而是会造成伤害他人的情况大量出现。四川成都石室成飞中学在12月16日被网友爆料设置“学霸就餐区”，引发热议，相关话题冲上热搜。网上图片显示，在食堂一部分的桌子上摆有“学霸就餐区”的标志，另一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fthe-cum-laude-dining-area-sparks-discussion-20241219%2F7907185.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734627543000-->
+<p><a href="https://www.voachinese.com/a/the-cum-laude-dining-area-sparks-discussion-20241219/7907185.html">“学霸就餐区”惹议 凸显中国逐利教育下的“唯分数”思维</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 19 Dec 2024 16:48:20 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/4b08f05c-c5d3-4eef-b956-4128799b5a98_r1_s.png" width="100%" />  <div>
+<small style="color: #999;">社媒博主“李老师不是你老师”转发12月16日(发布) 网曝中国成都石室成飞中学的学生食堂设为普通就餐区和学霸就餐区。（网络照片）</small>
+  </div>
+台北 —   <p>中国四川省成都市的一所中学设置“学霸就餐区”，引发无视学生平等权利的讨论。分析人士表示，“分层用餐”背离了传统孔夫子“有教无类”的思想，也背离了现代人讲求的“平权”观念。中国教育在逐利的思维下，一切“唯分数”是论，学生从小就被灌输阶级意识以及与同侪斗争，如此培养出的中国共产主义接班人已经不是精致利己的问题，而是会造成伤害他人的情况大量出现。<br /><br />四川成都石室成飞中学在12月16日被网友爆料设置“学霸就餐区”，引发热议，相关话题冲上热搜。<br /><br />网上图片显示，在食堂一部分的桌子上摆有“学霸就餐区”的标志，另一图片显示“学霸就餐区”的餐食和餐盘也跟其他学生所用的餐食有区别。<br /><br />不少人质疑，学校此举是区别对待学生，让学生从小就被灌输阶级意识。有网友说：“学生考试成绩好差，并不能完全反映学生的真实能力。更何况即使学生中有成绩差异，也不能据此将学生分成三六九等。说白了，还是领导的‘政绩观’在作祟，卷起的是领导的政绩，糟蹋的是学生的自尊心，哪里还把学生权利的平等放在眼里？”<br /><br />也有人说：“一流的学校，没有一流的领导，没有正确引导孩子人生观，培养的虽是学霸，说不定除了学习就没有情商。当今社会要培养健全的人生观。”还有人反问：“校长去教育局开会，还分重点学校和普通学校坐吗？”<br /><br /><strong>校方致歉</strong><br /><br />随着网络讨论声浪愈来愈大，12月17日，石室成飞中学出面说明，表示对“学霸餐”造成的不良影响深感愧疚。<br /><br />校方坦言，为了激励12月考试表现优秀、进步明显的高中学生，因而在16日中午设立了“学霸就餐区”，给予一顿餐点奖励，但学生日常用餐并未分区。<br /><br />校方还说，此事反映出学校在落实素质教育工作中还有差距，对激励学生的方式思虑不周全，对由此带来的不良影响认识不足，目前已整改取消。<br /><br />旅美时评人鲁难在接受美国之音采访时表示，中国自改革开放后，拜金主义变得非常流行，教育、医疗也跟着产业化，变成是一种“逐利”的性质。由于“逐利”思维的教育前题已经错了，所以师生越是“努力争取”，越是跟真正教育育人的宗旨和目标偏离越远。<br /><br /><strong>背离传统与现代思维</strong><br /><br />他还表示，中国其实从至圣先师孔子开始的教育理念就是主张“有教无类”，希望所有的人都能享有平等接受教育的权利，并且在这种教育底下，受教育者的的心智人格和工作技能等各方面都能获得均衡、健全的发展。<br /><br />“那么显然成都的这所学校，他这种做法跟有教无类的这种教育思想、传统的教育思想，肯定是相违背的，那么连用餐都开始有类了，何况你的教育呢？何况你的教育目的呢？那所以他这种做法在社会上会引起很多的非议。”鲁难说。<br /><br />他表示，另外一方面，“学霸就餐区”也背离了现代人注重的“平权”观念，即使是在中华人民共和国的宪法里也明确写道，所有人都是平等的，都有平等接受教育的权利，受教育者要能够在德智体三方面得到全面的发展。所以不论从传统还是现代观点来看，都是相违背的。<br /><br /><strong>标签化与阶级化</strong><br /><br />台湾台北一所中学老师卢惠娟从第一线的教育工作现场对美国之音表示，设置“学霸就餐区”会造成学生阶级分化，“等于是把一个活生生的人，用分数来标签化”，也无疑是教导孩子学习目标单一，也就是“唯成绩”是论，学生只要成绩好就好，其他做人做事的道理和所谓的全人教育都不是重点。<br /><br />但实际上，“你面对现在的困难，面对未来的困难，你能够有解决这些困难的知识、能力、态度，这个很重要，我刚才提的这些都不是学霸用餐区跟分数能够学习到的。”卢惠娟说。<br /><br />她观察，阶级意识也容易让学霸生产生菁英的骄傲，不懂得谦卑，不懂得助人，也不懂可以从他人身上学习到什么。当他们在成长路上接触到更多来自四面八方不同的人，哪一天发现自己不再是菁英了，挫败感会更大，更钻牛角尖。而那些坐不进去学霸区的学生，也可能因为总不如人的心理而变得自暴自弃。<br /><br /><strong>唯分数是论</strong><br /><br />卢惠娟认为，会产生“学霸就餐区”想法的学校领导阶层，其实是受到中国科举制度延续下来“万般皆下品、惟有读书高”的影响所致。<br /><br />2020年10月，中共中央、中国国务院印发《深化新时代教育评价改革总体方案》，要求改变用分数给学生贴标签的做法。此前，在2018年召开的全国教育大会提出，要扭转不科学的教育评价导向，坚决克服唯分数、唯升学、唯文凭、唯论文、唯帽子的顽瘴痼疾，从根本上解决教育评价指挥棒问题。<br /><br />《新京报》12月17日发表社评指出，在破除“唯分数”评价成为全社会的共识时，还有学校反其道而行之，明目张胆地设立“学霸就餐区”，就是按考试成绩把学生分三六九等，进行区别对待，可见“唯分数”教育评价思维确实顽固。社评还说，这种做法不仅刺激学生的应试竞争，加重学生的学业负担，而且也不尊重成绩差的学生的人格，不利于激励每个学生成长成才。<br /><br />中国一名“双非”（指非一流大学）大学的李姓教师在接受美国之音采访时表示，学校之所以一切会向成绩看齐，是因为在中国想要突破社会阶层只有一条途径，就是上好的大学，才能扭转出身，有好前途，所以中国有一句话说“不能输在起跑点上”，以至于中国从幼儿园起就非常竞争，小孩子的读书压力非常大。<br /><br />但讽刺的是，这些孩子一路从幼儿园努力学英文、学数学，进到好的初中、高中，并很努力地考到大学之后，等到四年大学毕业，所有应该交的学费、补习费都交完了，所有付出的辛劳也都付完了之后，才发现毕业及失业，摆在眼前的是他们根本找不到工作。<br /><br />中国11月统计，16～24岁的青年失业率为16.1%，虽然连续三个月下降，不过跟全国5%的失业率相比，依然偏高。<br /><br /><strong>成绩好不代表情商高</strong><br /><br />李老师表示，除此之外，在“唯分数”是论的竞争环境下，很多人考上了大学，但在待人处事以及尊重包容等方面，一概不知，这其实是很危险的。就像有“现代方仲永”之称的“神童”魏永康，他在13岁就跳级上大学，17岁考入中科院高能物理研究所，绝对是一位“学霸”，但到进入中科院后才发现无法自理生活，最后被学校劝退。魏永康一直到高中时都还是妈妈喂饭吃。<br /><br />李老师强调，教育最不应该的就是给学生灌输等级观念，这样培养出来的学霸也必然是精致的利己主义者，不懂得对学校和老师感恩，只会认为这是他们应得的，因为学校也需要他们去换取荣誉和利益。<br /><br />不过，旅美时评人鲁难表示：“这个概念恐怕已经成了过去式，现在已经不仅仅是极端利己的问题，而是要怎么样伤害他人的现象大量出现。”<br /><br /><strong>伤害事件恐变多</strong><br /><br />他说，如果留心观察，可以看到一些中国校园霸凌的视频，不断在抖音和其他视频平台上出现，那些霸凌者已经不是像精致的利己者那般，只要管好自己就好、不去管他人的事，而是要去侵害别人，并且是用非常残酷、残暴的手段在对待自己的同学、同胞。那些霸凌者丝毫不懂得去尊重别人，在他们眼里，受欺凌的人根本就不是一个人，没有一个平等的人格。从这方面来讲，这些人的道德已经完全崩塌，所以中国教育已经不可能再培养出所谓的精致的利己主义者，而是到了不侵害到他人就不能满足自己虚荣心的地步。<br /><br />不过，网上也有一些赞同“学霸用餐区”的声音，包括：“既然是在学校，学生就是应该以成绩分高下”、“就像销售一样，销售冠军的奖励得就拿得多。”也有人说：“这些孩子能坐到学霸就餐区，靠的是自身的实力，为什么不可以呢？其他同学想坐自己也可以争取呀，这不是很公平的吗？”<br /><br />但这些说法也马上遭到另一派人质疑：“为什么都在叫好？学霸注定是少数，少数人特权你们觉得很正常吗？”或者：“可怕的不是学校这么做，而是评论区竟然有很多人支持学校这么做。显见很多人几乎都没有平等的教育理念，就认为学霸就该被照顾，学渣就该被歧视，就算不幸轮到自己，也认为是合理的。”<br /><br />《潇湘晨报》引用一名律师的分析说，尽管学霸就餐区或具有一定的激励作用，但奖励方式欠妥。学校作为一个教书育人的场所，应当在学校物质环境等方面平等待人，注重每个学生的全面发展。<br /><br />台北国中老师卢惠娟补充道，在给学生奖励时，她的做法是会在公开场合口头赞扬，给予精神嘉许取代物质奖励。如果有学生因为学业表现，或是其他做人做事、或者如何突破困境等方面有好的表现，她会请学生分享他们从失败到成功的经验，或是个人的学习策略；甚至有些学生实在太优秀了，她会请问学生能否将心得写下来，或者录成影片或制作简报，留给学弟学妹看，“让其他的人可以得到你的好”。</p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.site" style="color:orange" target="_blank">https://feedx.site</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%B3%95%E5%BE%8B%E9%A1%BE%E9%97%AE%E6%8A%AB%E9%9C%B2-%E5%B0%B9%E9%94%A1%E6%82%A6%E5%B0%86%E5%9C%A8%E5%AE%AA%E6%B3%95%E6%B3%95%E9%99%A2%E5%AE%A1%E7%90%86%E5%BC%B9%E5%8A%BE%E6%A1%88%E6%97%B6%E8%87%AA%E5%B7%B1%E4%B8%BA%E8%87%AA%E5%B7%B1%E8%BE%A9%E6%8A%A4">
+          法律顾问披露：尹锡悦将在宪法法院审理弹劾案时自己为自己辩护
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA">
+          中国再展“基建狂魔”力量 在渤海湾修建全球最大人工岛机场
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9">
+          欧洲海底电缆事件调查新进展：北欧四国代表获准登上中国涉嫌货船
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-19</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%99%AE%E4%BA%AC%E7%A7%B0%E4%BF%84%E6%95%A2%E4%B8%8E%E7%BE%8E%E5%9B%BD%E5%AF%BC%E5%BC%B9%E5%AF%B9%E5%86%B3-%E4%BF%84%E5%86%9B%E5%9C%A8%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E5%9C%BA%E5%BF%AB%E9%80%9F%E6%8E%A8%E8%BF%9B">
+          普京称俄敢与美国导弹对决，俄军在乌克兰战场快速推进
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9">
+            前一篇：欧洲海底电缆事件调查新进展：北欧四国代表获准登上中国涉嫌货船
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA">
+            后一篇：中国再展“基建狂魔”力量 在渤海湾修建全球最大人工岛机场
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-19/%E4%B8%AD%E5%9B%BD%E5%86%8D%E5%B1%95-%E5%9F%BA%E5%BB%BA%E7%8B%82%E9%AD%94-%E5%8A%9B%E9%87%8F-%E5%9C%A8%E6%B8%A4%E6%B5%B7%E6%B9%BE%E4%BF%AE%E5%BB%BA%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B%E6%9C%BA%E5%9C%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-19/%E6%AC%A7%E6%B4%B2%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E6%96%B0%E8%BF%9B%E5%B1%95-%E5%8C%97%E6%AC%A7%E5%9B%9B%E5%9B%BD%E4%BB%A3%E8%A1%A8%E8%8E%B7%E5%87%86%E7%99%BB%E4%B8%8A%E4%B8%AD%E5%9B%BD%E6%B6%89%E5%AB%8C%E8%B4%A7%E8%88%B9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

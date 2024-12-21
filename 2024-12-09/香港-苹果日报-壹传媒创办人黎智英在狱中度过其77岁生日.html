@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日       – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+" />
+    <meta property="og:description" content="
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      " />
+    <meta property="twitter:title" content="   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      " />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5385)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2F77.html&t=+++%E9%A6%99%E6%B8%AF%E3%80%8A%E8%8B%B9%E6%9E%9C%E6%97%A5%E6%8A%A5%E3%80%8B%E3%80%81%E5%A3%B9%E4%BC%A0%E5%AA%92%E5%88%9B%E5%8A%9E%E4%BA%BA%E9%BB%8E%E6%99%BA%E8%8B%B1%E5%9C%A8%E7%8B%B1%E4%B8%AD%E5%BA%A6%E8%BF%87%E5%85%B677%E5%B2%81%E7%94%9F%E6%97%A5++++++" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2F77.html&t=+++%E9%A6%99%E6%B8%AF%E3%80%8A%E8%8B%B9%E6%9E%9C%E6%97%A5%E6%8A%A5%E3%80%8B%E3%80%81%E5%A3%B9%E4%BC%A0%E5%AA%92%E5%88%9B%E5%8A%9E%E4%BA%BA%E9%BB%8E%E6%99%BA%E8%8B%B1%E5%9C%A8%E7%8B%B1%E4%B8%AD%E5%BA%A6%E8%BF%87%E5%85%B677%E5%B2%81%E7%94%9F%E6%97%A5++++++&d=2024-12-09&e=
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+
+
+  
+  （维权网信息中心报道）2024年12月9日，本网获悉: 12月8日是香港《苹果日报》、壹传媒创办人黎智英先生的生日，黎智英先生在狱中度过了其77岁生日。        
+
+  黎智英曾在2019年8.18维园“六四集会案”及8.31“港岛游行案”被判刑1年；2021年5月和12月，又被香港西九龙法院就其2019年“港岛游行案”和2020年“六四集会案”数次庭审宣判，刑期共计1年8个月；2022年12月10日，香港当局再次对支持民主人权的香港《苹果日报》、壹传媒创办人黎智英判刑5年9个月。最后所谓“勾结外国势力危害国家安全罪”正在审理。香港当局正在依照中共当局的意图欲置77岁的黎智英先生于死地。        
+
+  黎智英简介：1947年12月8日出生，英文名Jimmy Lai Chee-ying，生于..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2F77.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://wqw2010.blogspot.com/2024/12/77.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://wqw2010.blogspot.com/2024/12/77.html&text=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      &hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://wqw2010.blogspot.com/2024/12/77.html&title=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      " class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://wqw2010.blogspot.com/2024/12/77.html&title=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      " class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      &body=
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://wqw2010.blogspot.com/2024/12/77.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://wqw2010.blogspot.com/2024/12/77.html&title=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      &caption=
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      &url=https://wqw2010.blogspot.com/2024/12/77.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>   香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日      </h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#维权网 ">
+          维权网
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://wqw2010.blogspot.com/2024/12/77.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="维权网的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#维权网 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2F77.html&t=+++%E9%A6%99%E6%B8%AF%E3%80%8A%E8%8B%B9%E6%9E%9C%E6%97%A5%E6%8A%A5%E3%80%8B%E3%80%81%E5%A3%B9%E4%BC%A0%E5%AA%92%E5%88%9B%E5%8A%9E%E4%BA%BA%E9%BB%8E%E6%99%BA%E8%8B%B1%E5%9C%A8%E7%8B%B1%E4%B8%AD%E5%BA%A6%E8%BF%87%E5%85%B677%E5%B2%81%E7%94%9F%E6%97%A5++++++&d=2024-12-09&e=
+香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日
+——
+
+
+  
+  （维权网信息中心报道）2024年12月9日，本网获悉: 12月8日是香港《苹果日报》、壹传媒创办人黎智英先生的生日，黎智英先生在狱中度过了其77岁生日。        
+
+  黎智英曾在2019年8.18维园“六四集会案”及8.31“港岛游行案”被判刑1年；2021年5月和12月，又被香港西九龙法院就其2019年“港岛游行案”和2020年“六四集会案”数次庭审宣判，刑期共计1年8个月；2022年12月10日，香港当局再次对支持民主人权的香港《苹果日报》、壹传媒创办人黎智英判刑5年9个月。最后所谓“勾结外国势力危害国家安全罪”正在审理。香港当局正在依照中共当局的意图欲置77岁的黎智英先生于死地。        
+
+  黎智英简介：1947年12月8日出生，英文名Jimmy Lai Chee-ying，生于..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2024%2F12%2F77.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733725620004-->
+<p><a href="https://wqw2010.blogspot.com/2024/12/77.html">香港《苹果日报》、壹传媒创办人黎智英在狱中度过其77岁生日</a>
+——</p>
+
+<div>
+<span><a name="more"></a></span>  <p><br /></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">（维权网信息中心报道）<span lang="EN-US">2024</span>年<span lang="EN-US">12</span>月<span lang="EN-US">9</span>日，本网获悉<span lang="EN-US">:</span></span><span lang="EN-US"> </span><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">12</span><span style="font-family: 宋体; font-size: 12.0pt;">月<span lang="EN-US">8</span>日是香港《苹果日报》、壹传媒创办人黎智英先生的生日，黎智英先生在狱中度过了其<span lang="EN-US">77</span>岁生日。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">黎智英曾在<span lang="EN-US">2019</span>年<span lang="EN-US">8.18</span>维园“六四集会案”及<span lang="EN-US">8.31</span>“港岛游行案”被判刑<span lang="EN-US">1</span>年；<span lang="EN-US">2021</span>年<span lang="EN-US">5</span>月和<span lang="EN-US">12</span>月，又被香港西九龙法院就其<span lang="EN-US">2019</span>年“港岛游行案”和<span lang="EN-US">2020</span>年“六四集会案”数次庭审宣判，刑期共计<span lang="EN-US">1</span>年<span lang="EN-US">8</span>个月；<span lang="EN-US">2022</span>年<span lang="EN-US">12</span>月<span lang="EN-US">10</span>日，香港当局再次对支持民主人权的香港《苹果日报》、壹传媒创办人黎智英判刑<span lang="EN-US">5</span>年<span lang="EN-US">9</span>个月。最后所谓“勾结外国势力危害国家安全罪”正在审理。香港当局正在依照中共当局的意图欲置<span lang="EN-US">77</span>岁的黎智英先生于死地。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><strong><span style="font-family: 宋体; font-size: 12.0pt;">黎智英简介：</span></strong><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">1947</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">12</span>月<span lang="EN-US">8</span>日出生，英文名<span lang="EN-US">Jimmy Lai Chee-ying</span>，生于中国广州市，祖籍广东省顺德市，现为香港永久性居民，佐丹奴（<span lang="EN-US">Giordano</span>）集团公司老板，香港《苹果日报》、壹传媒及《壹周刊》创办人，香港知名商人，香港民主派政党及组织的重要资助者，中国在押政治犯。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">1960</span><span style="font-family: 宋体; font-size: 12.0pt;">年，曾因生活穷困而被迫随广东发生的大规模“逃港潮”，借道澳门逃亡香港谋生，后经努力拼搏，于<span lang="EN-US">1981</span>年创办了连锁服装品牌佐丹奴（<span lang="EN-US">Giordano</span>），并迅速使之成为当时风靡中港台的主要时装品牌之一；<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">1989</span><span style="font-family: 宋体; font-size: 12.0pt;">年，曾因同情天安门民主运动中的抗议学生，其旗下的佐丹奴印制了大量印有民运口号的<span lang="EN-US">T</span>恤供人们游行抗议时穿着，其本人也发表公开信敦促时任中国总理的李鹏下台谢罪，遂遭到六四镇压之后北京对香港商人的首批整肃，佐丹奴集团公司在中国大陆的全部业务被当局封杀，致其公司损失惨重，被迫低价出售股权；自此，其弃商从文，转而投身传媒事业，先后创办了壹传媒、《壹周刊》和《苹果日报》，但又因时常抨击中共时弊而被中国大陆禁止入境，其经手的报刊书籍亦被列入黑名单；长期以来，曾因其是香港民主运动（如香港雨伞运动、香港“反送中”抗议活动等）的重要支持者和资助商，故备受北京当局及香港建制派的批评、斥责，甚至指控其捐款为黑金；<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2019</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">7</span>月，曾因与美国副总统彭斯及美国国务卿蓬佩奥委会面，谈及香港现状及未来前途等事宜，而遭到中共当局的极度仇视和要打击的对象；<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2020</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">4</span>月<span lang="EN-US">18</span>日，被香港警方以涉嫌“非法集结罪”抓捕，后被释放；同年<span lang="EN-US">8</span>月<span lang="EN-US">10</span>日，又被以触犯香港《国安法》，涉嫌“勾结外国或者境外势力危害国家安全罪”及“串谋欺诈及煽动罪”拘捕，后暂获保释；<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt;">同年<span lang="EN-US">12</span>月<span lang="EN-US">3</span>日，又被指控“欺诈罪”而收监逮捕，<span lang="EN-US">7</span>天后，再被加控“勾结外国或者境外势力危害国家安全罪”被庭审；后其虽暂获保释，但<span lang="EN-US">2021</span>年<span lang="EN-US">4</span>月<span lang="EN-US">16</span>日再度被捕，关押于香港荔枝角收押所，后与同案民主派高层领袖李卓人被香港西九龙裁判法院就<span lang="EN-US">2019</span>年<span lang="EN-US">8.18</span>维园“六四集会案”及<span lang="EN-US">8.31</span>“港岛游行案”进行宣判，其二人同时被判刑期<span lang="EN-US">1</span>年；</span><span style="font-family: 宋体; font-size: 12pt;">之后很快其持有的壹传媒公司股份（市值超过</span><span lang="EN-US" style="font-family: 宋体; font-size: 12pt;">3</span><span style="font-family: 宋体; font-size: 12pt;">亿元港币）及对其他三家公司在香港银行账户内所拥有的财产均被香港国安局冻结；</span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2021</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">5</span>月和<span lang="EN-US">12</span>月，又被香港西九龙法院就其<span lang="EN-US">2019</span>年“港岛游行案”和<span lang="EN-US">2020</span>年“六四集会案”数次庭审宣判，刑期共计<span lang="EN-US">1</span>年<span lang="EN-US">8</span>个月；<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12.0pt;">2022</span><span style="font-family: 宋体; font-size: 12.0pt;">年<span lang="EN-US">12</span>月<span lang="EN-US">10</span>日，再被以其名下的力高公司涉嫌违反与特区政府香港科技园公司订立的地契为由，被特区高等法院以“欺诈罪”判处有期徒刑<span lang="EN-US">5</span>年<span lang="EN-US">9</span>个月，罚款<span lang="EN-US">200</span>万港元（<span lang="EN-US">25.69</span>万美元<span lang="EN-US">/179</span>万元人民币），取消担任公司董事资格<span lang="EN-US">8</span>年；另有“勾结外国势力危害国家安全罪”案仍在审理。目前在香港赤柱监狱服刑。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"></p>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKTAMxzw3VRNIkk9dPgVcPKGBgKl_kzFhtZ233ceP_WxpM_ZCg3flW7U_urknl9cjcNQYxTYCimvxBjjSNWRVPDBTd7Y1AWY9kBWSRou7gABrvkJBSBSFn4gvI_ODiVgXKK_E2v8BeO0LzzH4RGoKmIaqt3ZkpULqN8WeNP6jM5f71CZqqPkfDtW7PltYN/s640/_127899504_gettyimages-1220789205.jpg.webp" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="360" data-original-width="640" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKTAMxzw3VRNIkk9dPgVcPKGBgKl_kzFhtZ233ceP_WxpM_ZCg3flW7U_urknl9cjcNQYxTYCimvxBjjSNWRVPDBTd7Y1AWY9kBWSRou7gABrvkJBSBSFn4gvI_ODiVgXKK_E2v8BeO0LzzH4RGoKmIaqt3ZkpULqN8WeNP6jM5f71CZqqPkfDtW7PltYN/s320/_127899504_gettyimages-1220789205.jpg.webp" width="320" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVC9K3_y0va_JMsLs6Hdqx4QsWECkW-jrx9pHiOjFcvr3un3Gr4YgJ74s1u_m_eNxF0gT07GNLhzFEYXCi2tnomqTo6CVsP2vKIGttEyRw_lxdOqEKzxV5SZEBETk6yK8LhdtZMo_zj4DlBAozTdD5QXK5yHj57axyDI5fqRa-ft-iU6G-ebxmB9BbrG3F/s320/%E9%A6%99%E6%B8%AF%E5%89%8D%E5%A3%B9%E5%82%B3%E5%AA%92%E9%9B%86%E5%9C%98%E5%89%B5%E8%BE%A6%E4%BA%BA%E9%BB%8E%E6%99%BA%E8%8B%B12020%E5%B9%B412%E6%9C%88%E5%87%BA%E5%BA%AD.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="213" data-original-width="320" height="213" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVC9K3_y0va_JMsLs6Hdqx4QsWECkW-jrx9pHiOjFcvr3un3Gr4YgJ74s1u_m_eNxF0gT07GNLhzFEYXCi2tnomqTo6CVsP2vKIGttEyRw_lxdOqEKzxV5SZEBETk6yK8LhdtZMo_zj4DlBAozTdD5QXK5yHj57axyDI5fqRa-ft-iU6G-ebxmB9BbrG3F/s1600/%E9%A6%99%E6%B8%AF%E5%89%8D%E5%A3%B9%E5%82%B3%E5%AA%92%E9%9B%86%E5%9C%98%E5%89%B5%E8%BE%A6%E4%BA%BA%E9%BB%8E%E6%99%BA%E8%8B%B12020%E5%B9%B412%E6%9C%88%E5%87%BA%E5%BA%AD.jpg" width="320" /></a>
+  </div>
+  <p></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#维权网 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-09</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-09/%E6%88%90%E9%83%BD%E7%A7%8B%E9%9B%A8%E5%9C%A3%E7%BA%A6%E6%95%99%E4%BC%9A12-9%E6%95%99%E6%A1%88%E5%85%AD%E5%91%A8%E5%B9%B4-%E6%95%99%E4%BC%9A%E4%BB%8D%E6%8C%81%E7%BB%AD%E9%81%AD%E5%BD%93%E5%B1%80%E6%89%93%E5%8E%8B">
+             成都秋雨圣约教会12·9教案六周年，教会仍持续遭当局打压
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-09</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-09/%E8%8E%B7%E5%88%916%E5%B9%B49%E4%B8%AA%E6%9C%88%E7%9A%84-%E9%A6%99%E6%B8%AF47%E4%BA%BA%E6%A1%88-%E4%B9%8B%E6%9E%97%E5%8D%93%E5%BB%B7%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+             获刑6年9个月的“香港47人案”之林卓廷的案情及简历   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-08/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%915%E5%B9%B4%E7%9A%84%E8%B4%B5%E9%98%B3%E4%BB%81%E7%88%B1%E5%BD%92%E6%AD%A3%E6%95%99%E4%BC%9A%E5%BC%A0%E6%98%A5%E9%9B%B7%E9%95%BF%E8%80%81%E6%A1%88%E4%BA%8C%E5%AE%A1%E7%BB%B4%E6%8C%81%E5%8E%9F%E5%88%A4">
+             一审获刑5年的贵阳仁爱归正教会张春雷长老案二审维持原判      
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-08</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-08/%E8%8E%B7%E5%88%912%E5%B9%B46%E4%B8%AA%E6%9C%88%E7%9A%84%E8%BE%BD%E5%AE%81%E7%9C%81%E4%B8%B9%E4%B8%9C%E5%B8%82%E6%B3%95%E8%BD%AE%E5%8A%9F%E5%AD%A6%E5%91%98%E5%BC%A0%E6%B7%91%E6%9D%B0%E5%A5%B3%E5%A3%AB%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+             获刑2年6个月的辽宁省丹东市法轮功学员张淑杰女士的案情及简历   
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-09/%E6%AF%94%E7%89%B9%E5%B8%81%E7%9F%BF%E5%9C%BA%E8%B4%AD%E4%B9%B0%E5%BE%B7%E5%B7%9E%E9%A3%8E%E7%94%B5%E5%9C%BA%E7%84%B6%E5%90%8E%E9%80%80%E5%87%BA%E7%94%B5%E7%BD%91">
+            前一篇：比特币矿场购买德州风电场然后退出电网
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-09/%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%AD%E5%B0%8F%E5%AD%A6%E7%94%9F%E6%95%B0%E7%90%86%E5%AD%A6%E5%8A%9B%E5%9C%A8-TIMSS-%E4%B8%AD%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80">
+            后一篇：新加坡中小学生数理学力在 TIMSS 中排名第一
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-09/%E6%AF%94%E7%89%B9%E5%B8%81%E7%9F%BF%E5%9C%BA%E8%B4%AD%E4%B9%B0%E5%BE%B7%E5%B7%9E%E9%A3%8E%E7%94%B5%E5%9C%BA%E7%84%B6%E5%90%8E%E9%80%80%E5%87%BA%E7%94%B5%E7%BD%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-09/%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%AD%E5%B0%8F%E5%AD%A6%E7%94%9F%E6%95%B0%E7%90%86%E5%AD%A6%E5%8A%9B%E5%9C%A8-TIMSS-%E4%B8%AD%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-09/%E8%8E%B7%E5%88%916%E5%B9%B49%E4%B8%AA%E6%9C%88%E7%9A%84-%E9%A6%99%E6%B8%AF47%E4%BA%BA%E6%A1%88-%E4%B9%8B%E6%9E%97%E5%8D%93%E5%BB%B7%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-08/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%915%E5%B9%B4%E7%9A%84%E8%B4%B5%E9%98%B3%E4%BB%81%E7%88%B1%E5%BD%92%E6%AD%A3%E6%95%99%E4%BC%9A%E5%BC%A0%E6%98%A5%E9%9B%B7%E9%95%BF%E8%80%81%E6%A1%88%E4%BA%8C%E5%AE%A1%E7%BB%B4%E6%8C%81%E5%8E%9F%E5%88%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-09/%E6%AF%94%E7%89%B9%E5%B8%81%E7%9F%BF%E5%9C%BA%E8%B4%AD%E4%B9%B0%E5%BE%B7%E5%B7%9E%E9%A3%8E%E7%94%B5%E5%9C%BA%E7%84%B6%E5%90%8E%E9%80%80%E5%87%BA%E7%94%B5%E7%BD%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-09/%E6%96%B0%E5%8A%A0%E5%9D%A1%E4%B8%AD%E5%B0%8F%E5%AD%A6%E7%94%9F%E6%95%B0%E7%90%86%E5%AD%A6%E5%8A%9B%E5%9C%A8-TIMSS-%E4%B8%AD%E6%8E%92%E5%90%8D%E7%AC%AC%E4%B8%80">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<维权网>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-09/%E8%8E%B7%E5%88%916%E5%B9%B49%E4%B8%AA%E6%9C%88%E7%9A%84-%E9%A6%99%E6%B8%AF47%E4%BA%BA%E6%A1%88-%E4%B9%8B%E6%9E%97%E5%8D%93%E5%BB%B7%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<维权网>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-08/%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%915%E5%B9%B4%E7%9A%84%E8%B4%B5%E9%98%B3%E4%BB%81%E7%88%B1%E5%BD%92%E6%AD%A3%E6%95%99%E4%BC%9A%E5%BC%A0%E6%98%A5%E9%9B%B7%E9%95%BF%E8%80%81%E6%A1%88%E4%BA%8C%E5%AE%A1%E7%BB%B4%E6%8C%81%E5%8E%9F%E5%88%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
