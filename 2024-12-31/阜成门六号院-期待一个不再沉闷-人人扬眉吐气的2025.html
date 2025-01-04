@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+" />
+    <meta property="og:description" content="
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025" />
+    <meta property="twitter:title" content="阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714518.html&t=%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2%EF%BD%9C%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7%EF%BC%8C%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714518.html&t=%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2%EF%BD%9C%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7%EF%BC%8C%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025&d=2024-12-31&e=
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+
+
+  
+  
+    我们期待一个与过去的五年大不相同的2025，朝气复苏、人人心情舒畅，各方面都有实质好转的2025。
+  
+  最近有朋友问我，哪些年你过得最满意，哪些年不令人满意？我想了一下说，记忆中比较开心的有1993、1996、2001、2008、2018这几个年份，比较灰暗的有1998、1999、2022。
+  其实再进一步去看，我们可以发现，个体的感受与国家命运基本同步的，当经济繁荣、社会氛围宽松的时候，大家的日常生活就阳光多一些，当经济下行、社会沉闷的时候，大家的忧虑就多一些。
+  那么，大家对即将过去的2024年是什么感觉呢？如何以历史角度看2024年呢？笔者从自己的感受出发，认为2024在历史上将是一个比较普通的年份，它不好不坏、有喜有忧，是一个及格之年、中等稍偏上之年。
+  令人感到比较欣慰的是，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714518.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/714518.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/714518.html&text=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/714518.html&title=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/714518.html&title=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025&body=
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/714518.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/714518.html&title=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025&caption=
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025&url=https://chinadigitaltimes.net/chinese/714518.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-31
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/714518.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714518.html&t=%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2%EF%BD%9C%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7%EF%BC%8C%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025&d=2024-12-31&e=
+阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+——
+
+
+  
+  
+    我们期待一个与过去的五年大不相同的2025，朝气复苏、人人心情舒畅，各方面都有实质好转的2025。
+  
+  最近有朋友问我，哪些年你过得最满意，哪些年不令人满意？我想了一下说，记忆中比较开心的有1993、1996、2001、2008、2018这几个年份，比较灰暗的有1998、1999、2022。
+  其实再进一步去看，我们可以发现，个体的感受与国家命运基本同步的，当经济繁荣、社会氛围宽松的时候，大家的日常生活就阳光多一些，当经济下行、社会沉闷的时候，大家的忧虑就多一些。
+  那么，大家对即将过去的2024年是什么感觉呢？如何以历史角度看2024年呢？笔者从自己的感受出发，认为2024在历史上将是一个比较普通的年份，它不好不坏、有喜有忧，是一个及格之年、中等稍偏上之年。
+  令人感到比较欣慰的是，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714518.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1735642514000-->
+<p><a href="https://chinadigitaltimes.net/chinese/714518.html">阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/714518.html" title="阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025" rel="nofollow"><img width="564" height="266" src="https://chinadigitaltimes.net/chinese/files/2024/12/image-1735642167321-564x266.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/image-1735642167321.png" alt="file" /></p>
+  <blockquote>
+    <p>我们期待一个与过去的五年大不相同的2025，朝气复苏、人人心情舒畅，各方面都有实质好转的2025。</p>
+  </blockquote>
+  <p>最近有朋友问我，哪些年你过得最满意，哪些年不令人满意？我想了一下说，记忆中比较开心的有1993、1996、2001、2008、2018这几个年份，比较灰暗的有1998、1999、2022。</p>
+  <p>其实再进一步去看，我们可以发现，个体的感受与国家命运基本同步的，当经济繁荣、社会氛围宽松的时候，大家的日常生活就阳光多一些，当经济下行、社会沉闷的时候，大家的忧虑就多一些。</p>
+  <p>那么，大家对即将过去的2024年是什么感觉呢？如何以历史角度看2024年呢？笔者从自己的感受出发，认为2024在历史上将是一个比较普通的年份，它不好不坏、有喜有忧，是一个及格之年、中等稍偏上之年。</p>
+  <p>令人感到比较欣慰的是，这一年经济并没有之前大家想象的那么差，甚至好于预期，在全社会的共同努力之下，一些主要指标依旧在向上前进。</p>
+  <p>我们的制造业全球占比仍然保持上升态度，预计2024年将要超过30%，这比2018年至少提升了5个百分点。中国制造业的价值链位阶也在继续上升，以汽车为例，在2017年30万价位以上的高端车市场中，国产品牌销量不足1万辆，而今年有望突破150万辆，中国汽车也在逐步走向发达国家，目前十大进口国中已至少6个是高收入国家。</p>
+  <p>我们的贸易进出口总额继续保持强劲上升，全年有望突破6万亿美元；我们的贸易顺差有望突破1万亿美元，这是一个历史性的突破，人类历史第一次有国家达到这个规模；尤其是，我们的对美出口在前11个月依旧增长了5%以上。在最直观反映供应链地位的中间品出口规模方面，2024年我国的全球占比预计将超过四分之一，在全球858种最关键的中间品中，中国有超过700种出口规模位列全球前三。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>期待一个不再沉闷，人人扬眉吐气的2025<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/阜成门六号院" target="_blank">BJ王明远</a><br /><strong>发表日期：</strong>2024.12.31<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/xIFejh48qpbsTO7gAoHWaA" target="_blank">微信公众号“阜成门六号院”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中国经济" target="_blank">中国经济</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>由于单方面免签等措施的推动，2024年前11个月，入境外国人数量超过2900万，同比上升近一倍，预计今年总量超过疫情前的2019年。上海、杭州、深圳、成都等正在成为外国年轻人出境游的新宠。</p>
+  <p>我们的消费新势力在不断增长，从饮食、住宿到日用消费品的创意层出不穷，越来越多的新国货品牌涌现；我们的城市仍在以相当的速度，朝着更宜居、便利、美学层次提升的方向进行更新。</p>
+  <p>今年我走过全国20个省市，无论是作为老工业基地的吉林、辽宁，还是新兴制造中心安徽、江西、湖南，无论是西部较为落后的青海、甘肃、陕西，还是东南沿海的广东、福建、浙江，他们的社会都保持了向上的态势，新质生产力在加速取代落后的生产方式，现代化的生活方式在持续向落后地区、乡村下沉，人们的专业素质、能力在继续提升，个体的权利观念、意识在持续觉醒，我们的社会<strong>各个层面的现代化</strong>仍在进行中。</p>
+  <p>不过，2024年也有很多让人担忧的地方。我们的经济下行已经走入第五个年头，新中国历史上有过很多次经济的波谷，除了十年浩劫这个特殊周期外，一般都是维持三四年，但是这一次的长度，确实比之前长了很多，并且好似还没有看到明显好转的迹象。</p>
+  <p>我们的民营经济生存和发展的法治环境，依然让人担忧，除了既往的问题外，今年又出现了“以刑化债”、“远洋捕捞”等让民营企业家心惊胆战的新名词。一位律师朋友代理了广州一家企业遭遇远洋捕捞的案件，这家企业被中原某省1600多名警察跨越三千里查抄，账面上的7亿多资金被冻结。</p>
+  <p>我们的人工智能等诸多决定国家竞争力未来的关键领域，创新速度在放缓，我们与美国的差距在拉大，我们的独角兽数量增速在急剧收窄，我们的社会资源投放与创新的内在需求，越来越错位。</p>
+  <p>我们很多基层政府的财政越来越拮据，公务员发工资开始出现困难；我们的医保支出也在萎缩，现在越来越多的患者发现，医保报销目录中，优质药品在逐渐减少，取而代之的是廉价药，这可是涉及人民群众生命安危的事情。</p>
+  <p>整个国际局势也在趋向紧张化、内缩化，全球保守主义思潮越来越强大，不仅特朗普再次赢得美国选举，欧洲的右翼政客也人气史无前例地高涨，他们反对全球化，反对文化多元化，反对平权的言论从过街老鼠，到越来越取得政治合法性。</p>
+  <p>总之，在2024年，尽管对于多数人来说，能够维持下来不是问题，但是始终伴随的还有一种<strong>无力感</strong>，甚至是对未来的焦虑感。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/post-714518-6773cd92a85cc." alt="image" /></p>
+  <p>我们期待上面的所有沉闷，都以2025为起点，逐渐烟消云散。我们期待一个与过去的五年大不一样的2025，各方面都有实质好转的2025。</p>
+  <p><strong>我们期待民营经济的产权保护能有实质进展。</strong>有恒产则有恒心，健全的产权制度，是一个社会持久繁荣的基础。人民对美好生活和财富的向往，是社会持续发展的动力，如果过好日子是一种原罪的话，这个社会将没有任何前途。民营经济产权保护，不仅关乎民营企业主的信心，也关乎社会中流砥柱——约2亿中产阶级对未来的信心。</p>
+  <p><strong>我们期待社会的言论环境进一步风清气正</strong>，让有识之士可以有充分表达自己意见的机会。我们要容许善意的批评，以及理性地分析问题、提出建议，一个社会只有多元的意见才能保证可以随时纠正方向偏差，不至于犯致命的战略性失误。对于那些唱衰、诋毁中国的言论，我们可以通过有理有据的辩论来回击，我们有理由相信，社会大众在大是大非面前是不糊涂的，偏见、抹黑终究不会有市场。</p>
+  <p>最近笔者及几位好友去拜访一位经济改革的深度参与者，他总结道：“改革分为四个层面：第一是思想，第二是制度，第三是政策，第四才是技术”。所以，思想上的张弛，具有纲举目张、提纲挈领的根本性意义，一百个好政策，不如思想上的大解放。</p>
+  <p><strong>我们期待中国的国际处境有所改善。</strong>2024年中日关系出现了较大改善，中韩关系改善也未来可期，中国与欧盟的关系在逐步企稳，我们还期待中美关系能有所缓和。这是因为，美国对中国的态度，能够影响甚至决定所有西方国家及其依附者的对华态度；中美关系涉及到中国企业技术创新、贸易、融资能否正常进行，是影响产业界、知识界信心的关键因素之一。所以，我们对美国既要有原则，有斗争，也要寻求新的机会，开启新局面。</p>
+  <p><strong>我们期待青年人的就业机会和和工作环境能有看得见的改观。</strong>这些年来，青年人受到社会越来越不好的对待，他们求职难度远远大于十年前（北京大学岳昌君教授团队的调研表明，2023年没有考研深造的大学生，毕业离校时就业率仅有48%），他们上升的机会越来越狭窄，他们开始用躺平或戏谑的方式与世界消极对抗。我们的95后、00后是中国有史以来受教育程度最好的一代，他们具备宽广的视野和独立的思维，这部分人力资源财富不应该被埋没掉，如果他们没有出路，我们未来二十年的时代机遇也会丧失掉。</p>
+  <p><strong>我们期待民众，尤其是中低收入群体的保障福利能够有所增加</strong>。目前，1.72亿老龄农民和农民工享受的养老金支出，不到城镇职工的7%（4613亿V.S.63757亿），人均仅215元每月，不及体制内人员的三十分之一。他们不得不“老而不休”，现在还有数千万老龄农民在务农，城里还有8000万50岁以上的农民工。我们期待政府尽快提高他们的养老补助，哪怕翻一倍，也只不过是让全国财政支出增加1.8%，这并非是多么困难的事情，并且这些支出会最终会以消费创造的税收的形式，回馈给政府。</p>
+  <p><strong>我们期待居民的财产性收入能够触底反弹，有所增长</strong>。我国居民财产性收益率本来就大大低于世界平均水平（2021年仅为美国的六分之一），由于楼市、股市低迷，自从2021年底以来，居民的财产性收入更是处于萎缩状态。这期间全国房价平均下跌20%—30%左右，A股投资者平均账户损失超过9万。期待新的一年，楼市和股市都有所好转，居民的荷包鼓起来，如果居民财产性收入持续萎缩，不仅会将之前的努力化为乌有，还将根本恶化居民的消费能力，拖累经济复苏。</p>
+  <p>任何时来运转，上天不会无缘无故赏赐给我们，需要社会上下的齐心协力去争取。为了达成以上的期待，我们希望：</p>
+  <p><strong>每个人都应该坚守底线，我们不应该说谎话，不做违背基本常识和道德底线的事情</strong>。尤其是掌握权力的人，以及能够影响社会、起到示范作用的公众人物，应该恪守这个底线。我们如果任意践踏底线，尽管短期内可能会获利，但是自己或家人最终也难免不是受害者。</p>
+  <p><strong>我们应该对自己的同胞充满爱，不要用两极化、非黑即白的思想攻击与自己持有不同见解的人</strong>，甚至主张要永远消灭他们。我们的社会只有在沟通、包容中前进，撕裂、暴力只能毁掉社会的安定。</p>
+  <p><strong>我们应该有时不我待的紧迫感</strong>，世界和时代留给一个国家的发展窗口期往往是很短暂的，这个机会可能稍纵即逝。我们过去四十多年抓住了这个机遇，根本改变了社会发展程度，当下人工智能开启的新的产业革命已经开启，如果我们不牢牢抓住剩下不多的机遇，我们有可能像日本、俄罗斯那样被逐渐边缘化，我们的现代化事业将功亏一篑。</p>
+  <p><strong>我们应该保持对本国命运的信心</strong>。一个社会如果充满骄傲自大的情绪，定将迷失方向，如果充满悲观、自怨自艾、妄自菲薄，同样会迷失方向。机遇总是留给乐观的人的，你只有相信自己能行，才能为自己创造机遇。我们经历了近半个世纪的积累，我们有全球最强大的工业基础，有充满活力的研发体系，有最大的国内市场，有最强的外贸网络，我们有理由相信，只要我们保持冷静，保持斗志，我们可以不做历史的失败者，我们有机会延续奇迹。</p>
+  <p>新年即将到来，是为记。衷心期待大家有一个扬眉吐气、心情舒畅、重新燃起梦想的2025。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-31/%E8%80%81%E8%90%A7%E6%9D%82%E8%AF%B4-%E6%9C%AC%E5%8F%B7%E6%97%A0%E6%96%B0%E5%B9%B4%E7%8C%AE%E8%AF%8D">
+          老萧杂说｜本号无新年献词
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-31/%E9%9D%92%E5%B9%B4%E5%BF%97Youthology-2024%E6%80%A7%E5%88%AB%E8%A7%82%E5%AF%9F-%E5%A7%90%E5%A7%90%E4%BB%AC%E5%81%9A%E5%88%B0%E4%BA%86-%E6%88%91%E4%BB%AC%E4%B9%9F%E5%8F%AF%E4%BB%A5">
+          青年志Youthology｜2024性别观察：姐姐们做到了，我们也可以！
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-31/CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91-%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0-2024-%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86-%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80">
+          【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E6%B7%B1%E6%B6%B5%E8%AF%B4-%E9%82%AF%E9%83%B8%E7%BB%93%E5%B1%80-%E8%BF%9B%E4%B8%80%E5%AF%B8%E7%9A%84%E6%AC%A2%E5%96%9C%E4%B8%8E%E8%89%B0%E9%9A%BE">
+          深涵说｜邯郸结局：进一寸的欢喜与艰难
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-31/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6">
+            前一篇：马龙等中国访台成员与台大学生产生"认知摩擦"
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-31/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%98%8E%E5%B9%B4%E5%B0%86%E5%AE%9E%E6%96%BD-%E6%9B%B4%E7%A7%AF%E6%9E%81%E7%9A%84-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96">
+            后一篇：习近平称明年将实施“更积极的”宏观经济政策
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%98%8E%E5%B9%B4%E5%B0%86%E5%AE%9E%E6%96%BD-%E6%9B%B4%E7%A7%AF%E6%9E%81%E7%9A%84-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E9%9D%92%E5%B9%B4%E5%BF%97Youthology-2024%E6%80%A7%E5%88%AB%E8%A7%82%E5%AF%9F-%E5%A7%90%E5%A7%90%E4%BB%AC%E5%81%9A%E5%88%B0%E4%BA%86-%E6%88%91%E4%BB%AC%E4%B9%9F%E5%8F%AF%E4%BB%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91-%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0-2024-%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86-%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-31/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-31/%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%98%8E%E5%B9%B4%E5%B0%86%E5%AE%9E%E6%96%BD-%E6%9B%B4%E7%A7%AF%E6%9E%81%E7%9A%84-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-31/%E9%9D%92%E5%B9%B4%E5%BF%97Youthology-2024%E6%80%A7%E5%88%AB%E8%A7%82%E5%AF%9F-%E5%A7%90%E5%A7%90%E4%BB%AC%E5%81%9A%E5%88%B0%E4%BA%86-%E6%88%91%E4%BB%AC%E4%B9%9F%E5%8F%AF%E4%BB%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-31/CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91-%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0-2024-%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86-%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

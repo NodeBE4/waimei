@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>越洋电话年终特别报道：小罗快跑 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+越洋电话年终特别报道：小罗快跑
+——
+" />
+    <meta property="og:description" content="
+越洋电话年终特别报道：小罗快跑
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="越洋电话年终特别报道：小罗快跑" />
+    <meta property="twitter:title" content="越洋电话年终特别报道：小罗快跑" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7919005.html&t=%E8%B6%8A%E6%B4%8B%E7%94%B5%E8%AF%9D%E5%B9%B4%E7%BB%88%E7%89%B9%E5%88%AB%E6%8A%A5%E9%81%93%EF%BC%9A%E5%B0%8F%E7%BD%97%E5%BF%AB%E8%B7%91" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7919005.html&t=%E8%B6%8A%E6%B4%8B%E7%94%B5%E8%AF%9D%E5%B9%B4%E7%BB%88%E7%89%B9%E5%88%AB%E6%8A%A5%E9%81%93%EF%BC%9A%E5%B0%8F%E7%BD%97%E5%BF%AB%E8%B7%91&d=2024-12-30&e=
+越洋电话年终特别报道：小罗快跑
+——
+
+
+  
+Mon, 30 Dec 2024 20:44:28 GMT
+  
+  
+
+  
+  
+  
+
+  
+  这是一个关于“润”的故事。确切地说，这是一个关于逃离的故事，逃离家庭，逃离故土，逃离黑暗。 
+   
+  小罗全名罗仁春，一个来自中国贵州毕节市织金县最底层农村的前留守儿童；一个“润”在途中的基督徒；一个流浪在东南亚一年多，一心向往着去到美国的盲人。 
+   
+  2024年6月，我通过朋友的介绍，认识了小罗。几次沟通后的11月中旬，我动身前往印度尼西亚的雅加达，见到了他。此时的他，正在一所大陆华人开办的神学院上学。 
+   
+  一、莽
+   
+  2023年5月，怀揣着多年的“美国梦”，小罗手持在国内办好的泰国旅游签证，从昆明飞到曼谷，开始了他的东南亚流浪之旅。
+   
+  他做过一些初步的功课，比如之所以选择到泰国，就是因为这..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2F7919005.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/7919005.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/7919005.html&text=越洋电话年终特别报道：小罗快跑&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/7919005.html&title=越洋电话年终特别报道：小罗快跑" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/7919005.html&title=越洋电话年终特别报道：小罗快跑" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=越洋电话年终特别报道：小罗快跑&body=
+越洋电话年终特别报道：小罗快跑
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/7919005.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/7919005.html&title=越洋电话年终特别报道：小罗快跑&caption=
+越洋电话年终特别报道：小罗快跑
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=越洋电话年终特别报道：小罗快跑&url=https://www.voachinese.com/a/7919005.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>越洋电话年终特别报道：小罗快跑</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/7919005.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7919005.html&t=%E8%B6%8A%E6%B4%8B%E7%94%B5%E8%AF%9D%E5%B9%B4%E7%BB%88%E7%89%B9%E5%88%AB%E6%8A%A5%E9%81%93%EF%BC%9A%E5%B0%8F%E7%BD%97%E5%BF%AB%E8%B7%91&d=2024-12-30&e=
+越洋电话年终特别报道：小罗快跑
+——
+
+
+  
+Mon, 30 Dec 2024 20:44:28 GMT
+  
+  
+
+  
+  
+  
+
+  
+  这是一个关于“润”的故事。确切地说，这是一个关于逃离的故事，逃离家庭，逃离故土，逃离黑暗。 
+   
+  小罗全名罗仁春，一个来自中国贵州毕节市织金县最底层农村的前留守儿童；一个“润”在途中的基督徒；一个流浪在东南亚一年多，一心向往着去到美国的盲人。 
+   
+  2024年6月，我通过朋友的介绍，认识了小罗。几次沟通后的11月中旬，我动身前往印度尼西亚的雅加达，见到了他。此时的他，正在一所大陆华人开办的神学院上学。 
+   
+  一、莽
+   
+  2023年5月，怀揣着多年的“美国梦”，小罗手持在国内办好的泰国旅游签证，从昆明飞到曼谷，开始了他的东南亚流浪之旅。
+   
+  他做过一些初步的功课，比如之所以选择到泰国，就是因为这..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2F7919005.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1735592343000-->
+<p><a href="https://www.voachinese.com/a/7919005.html">越洋电话年终特别报道：小罗快跑</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 30 Dec 2024 20:44:28 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/380d20d9-76ea-44e1-824e-c241ec51d5ac_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <audio src="" controls=""></audio>
+  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>这是一个关于“润”的故事。确切地说，这是一个关于逃离的故事，逃离家庭，逃离故土，逃离黑暗。 </p>
+  <p> </p>
+  <p>小罗全名罗仁春，一个来自中国贵州毕节市织金县最底层农村的前留守儿童；一个“润”在途中的基督徒；一个流浪在东南亚一年多，一心向往着去到美国的盲人。 </p>
+  <p> </p>
+  <p>2024年6月，我通过朋友的介绍，认识了小罗。几次沟通后的11月中旬，我动身前往印度尼西亚的雅加达，见到了他。此时的他，正在一所大陆华人开办的神学院上学。 </p>
+  <p> </p>
+  <p>一、莽</p>
+  <p> </p>
+  <p>2023年5月，怀揣着多年的“美国梦”，小罗手持在国内办好的泰国旅游签证，从昆明飞到曼谷，开始了他的东南亚流浪之旅。</p>
+  <p> </p>
+  <p>他做过一些初步的功课，比如之所以选择到泰国，就是因为这里的物价相对便宜，而且签证申请相对容易。更重要的是，曼谷有联合国难民署的办公室。落地后没两天，他就去申请了政治避难，并在一个月后顺利拿到了泰国的难民卡。</p>
+  <p> </p>
+  <p>但接下来能做些什么呢？</p>
+  <p> </p>
+  <p>泰国有数千名拿着难民卡，等待着去往新世界的中国人，什么时候能轮到他小罗呢。还有更直接和紧迫的问题，经济上并不宽裕的他，该如何在这个陌生的国度，这个陌生的世界里生存下去。没有什么具体计划的小罗，像只无头苍蝇，开始穿梭在在东南亚各个国家的教会，学校，养老院，酒店，和赌场之间，开始了没有目的地的流浪。</p>
+  <p> </p>
+  <p>“我们从曼谷坐火车到泰柬边境，出海关的时候要办理柬埔寨的落地签。本来 只需要20美金的签证费，他们却收了我们的50美金。工作人员故意把我们带到一个特别服务的窗口。先是告知我们说把护照交过去，然后去交钱，20美金。等我们把钱交了后，再把我们带到另外一个窗口去拿护照和签证，拿的时候，说我们还得交30美金的服务费，就是这种套路”。</p>
+  <p> </p>
+  <p>同样的事情发生在了去老挝的路上。“23年12月22日，我们从金边坐大巴到柬埔寨靠近老挝的那个城市，然后在老挝海关办理落地签。其实中国人只要20美金，但他说这个签证费是40美金，还有服务费，再加上小费，一共60美金。 我朋友跟他争论也没有用”。</p>
+  <p> </p>
+  <p>除了这些冷漠和无奈的糟心事外，流浪中的小罗也遇到很多温暖和善意。因为他基督徒的身份，他得到了很多来自不同教会和教友们的无私帮助。其中一所马来西亚华人教会的牧师，还帮忙介绍了一份提供食宿的临时工作，这让他能在当地一家养老院里安身了几个月。不过，因为居留身份的问题，小罗无法获得工作许可，只能在东南亚各国间走走停停，过着饥一顿饱一顿的生活。</p>
+  <p> </p>
+  <p>2024年的4月底，因为多次出入境马来西亚，马来西亚的移民局向小罗发出了最后通牒，必须限期离开马来西亚。绝境之时，前文中提到的那所在印尼雅加达，由一群大陆华人创办的神学院为小罗伸出了援手。他们无偿地接收了小罗，还为他提供了急需的居留签证，免费的食宿和系统的基督神学教育。</p>
+  <p> </p>
+  <p>二、盲</p>
+  <p> </p>
+  <p>当然，这并不是小罗的第一次在陌生和黑暗中流浪。20多年前，年仅7岁的他就已开始离开村庄，在镇上和县城过起了这样充满了风险和不确定性的流浪。</p>
+  <p> </p>
+  <p>翻看他7岁之前的幼年命运，用凄惨来形容，是不为过的。</p>
+  <p> </p>
+  <p>出生在贵州省毕节市织金县牛场镇的一个村寨里的小罗，出生两个月后父母便离异，此后母亲就远走他乡。2岁时父亲再婚后，长期外出打工不归，3岁时继母刺伤了他了右眼，左眼也因被揉入煤渣后未能及时治疗，导致双眼失明。五岁时得了中耳炎的左耳，也因为未能及时治疗而失去了听觉。双眼全盲，左耳失聪，人四个最主要接受信息的器官，左眼和右眼，左耳，都无法工作，只给小罗剩下了右耳。</p>
+  <p> </p>
+  <p>生活的变故还在继续着。</p>
+  <p>5岁时，继母在生下三个女儿后也离家出走，6岁时照顾他的奶奶因病去世，爷爷无力继续照顾他，还有他那出生不久就瘫痪在床的大妹妹。7岁时的那个冬天，长期瘫痪在床的大妹妹冻死在了家中，这像是最后一根稻草，孤身一人的小罗，在黑暗里，开始了自己往外跑的人生。</p>
+  <p> </p>
+  <p>他跑去了牛场镇，跑去了其他镇，跑去了织金县城，跑去了学校，跑去了广场，跑去了百货大楼，一路乞讨，一路向他人讲着他凄惨的幼年遭遇。县城里有人可怜他，把他送到了民政局，但民政局也无意帮助，只是给他做了一个类似乞讨证一样的文书，证明他所讲述的遭遇是经过官方认证的。</p>
+  <p> </p>
+  <p>直到2007年，盲人流浪儿童小罗的命运，终于迎来了转机。</p>
+  <p> </p>
+  <p>在织金县南门的第五中学附近徘徊的小罗，被一个基督徒阿姨注意到了。她上前询问小罗在干什么，小罗习惯性地掏出了他那张民政局发的乞讨证，试图想证明他的流浪和乞讨是经过官方许可的。但好心的阿姨把他带回了家，并且还联系了一家叫做“深圳感恩工作室”的机构，让机构的负责人过来了解一下情况。</p>
+  <p> </p>
+  <p>好心的阿姨是深圳感恩工作室的义工，而深圳感恩工作室，实际上是一家来自美国加州的公益慈善机构----感恩工作室（Thanksgiving Studio）。</p>
+  <p> </p>
+  <p>Steven Su（苏大文）是感恩工作室的中国执行长，1980年代从台湾移民到美国加州的他，90年代创业成功。2000年后到深圳经商期间，苏大文发现了贵州毕节---深圳的对口扶贫对象，存在着大量的留守儿童和失学儿童，因而回到加州，和一群志同道合的华人基督徒朋友们，一起成立了感恩工作室。他们在加州华人社群里筹资，再通过资助学费、资助孤儿、免费义诊、举办英语夏令营等方式，帮助毕节织金县的弱势儿童和青少年群体。</p>
+  <p> </p>
+  <p>流浪数年的小罗，第一次有了一个可以容身的地方。并且很快，感恩工作室便决定资助小罗上学，他们在多方打听后把小罗送去了贵阳盲校，12岁的小罗终于得到了受教育的机会。</p>
+  <p> </p>
+  <p>小罗开始过上了规律的生活。虽然在校园里会受到欺负，但对于小罗这个曾经怀揣着官方乞讨证，四处流浪的小孩而言，这已造不成太多的影响。他不用晚上睡在土灶旁担惊受怕了，他有学上，有宿舍住，有饱饭吃，还有周末会有一群关心他的教会的爷爷奶奶叔叔阿姨们。</p>
+  <p> </p>
+  <p>14岁那年，此前一直心心念的生母，也开始出现在小罗的生活里。虽然她在一年多后才向小罗挑明了自己的身份，但此时的小罗已然学会了宽恕。</p>
+  <p> </p>
+  <p>“我是信了耶稣后，才知道如果好恨他们的话，这样持续下去会很不好的，只要我以后能够说好好做个人就行了。也许当时他们那个背景，文化上的欠缺，还有那种农村思想，我觉得都有很大的关系”。</p>
+  <p> </p>
+  <p>也是在14岁这一年，小罗接受了洗礼，成了一名基督徒。</p>
+  <p> </p>
+  <p>三、茫</p>
+  <p> </p>
+  <p>2012年，也就是小罗在贵阳盲校上五年级的时候，一直资助他上学的感恩工作室却收到了来自政府维稳办公室的通知，勒令他们离开贵州。感恩工作室不得不将工作的重心转到了四川的阆中。</p>
+  <p> </p>
+  <p>“你这种外来的，然后有宗教背景，尤其又是针对儿童和青少年，自然是违背国家政策，国家安全的“， 苏大文说道。</p>
+  <p> </p>
+  <p>2012年后，中国政府加强了对社会组织的管理，试图通过更严格的政策框架维持社会稳定。境外的NGO，被视为可能对社会稳定和国家安全构成潜在威胁的因素。所以，像感恩工作室这样的有美国和基督教背景的NGO，成为首当其冲的整治对象，也是不言而喻的了。</p>
+  <p> </p>
+  <p>随着中国大陆NGO政策的一路收紧，扎根贵州和四川十多年的感恩工作室，在2018年后进入了停摆状态。</p>
+  <p> </p>
+  <p>由感恩工作室资助的小罗，改由织金县残联资助上学，但四年后，县残联开始不愿承担之前承诺过的小罗继续深造所需的学费和生活费。无奈之下，小罗联系到了昆明市推拿职业学校，这里对盲人免学费，还提供每年2000元的生活补贴。</p>
+  <p> </p>
+  <p>职高毕业后，尝到接受教育甜头的小罗，还想继续深造。2017年，21岁的小罗考上了河南洛阳的河南推拿职业学院，一所公办专科层次的全日制普通高等职业院校，专业是针灸推拿。但学费和生活费无法解决的他，抱着试一试的心态，再次联系了已进入半停摆状态的感恩工作室，苏大文通过机构内部的董事会关门会议，决定再次资助他上学。</p>
+  <p> </p>
+  <p>在洛阳上大专期间，小罗继续努力地学习着英语，并成立了一个英语学习的校内社团。他梦想着通过留学的方式去美国。2018年，一位在网上结识的美国华人朋友说他可以试一试申请美国阿肯色州的奥沙克大学，这所大学有基督教的背景，而且接收像他这样的国际残障留学生。他给这所大学写了封邮件，并且收到了回复，要他提供成绩证明和推荐信，他跑去找校长，但校长却拒绝给他写推荐信，理由是：“你学的是推拿按摩，别想着去啥美国，在中国好好工作就行啦”。</p>
+  <p> </p>
+  <p>黑暗中，小罗触摸到了梦想与现实之间那一堵堵真实的墙壁。美国梦，似乎是另一个更复杂的梦想的载体。更好的人生是什么。小罗这个集各种边缘身份于一身的盲人，是否值得过一种他期望的更好的生活---更富足的，更独立的，更有尊严的，更有信仰的。</p>
+  <p> </p>
+  <p>怀着这些无法给出具体答案的疑问，小罗步入了社会。他触碰到了来自现实社会的回答。</p>
+  <p> </p>
+  <p>村里以他在外地上学为由，取消了他的低保。</p>
+  <p> </p>
+  <p>大专毕业后去上海的养老院的康复科实习，同事对他说，“你的眼睛看不见， 不适合在这儿干。你最好去那个街边的小推拿店干，挺好的。你在这儿干，那 我们这些眼睛好的咋弄啊”。</p>
+  <p> </p>
+  <p>在杭州下城区的一家按摩店工作时，喜欢翻墙看墙外世界的他，因为在推特上的吐槽，被所在地的警察发现，以查居住证为由找到了他，把他的手机一把抢去。</p>
+  <p> </p>
+  <p>新冠疫情上海封城期间，正好在上海工作的小罗，被封在了购物中心的按摩店里二十多天，无人理会，只能靠吃泡面度日。</p>
+  <p> </p>
+  <p>2023年，他决意离开，那个揣了十多年的美国梦，必须去实现。但如何实现，他自己也说不上来。就像他二十年前离家出走，独自流浪一样，反正，你先得出去才行。</p>
+  <p> </p>
+  <p>在东南亚一年的颠簸流离后，小罗终于跑到了一个可以称之为“落脚点”或是“定居点”的地方。在这所印尼雅加达的基督教神学院里，他有一日三餐，有一张床，有陪护和关照他的神学院的老师和同学们。他可以在youtube上发视频，可以在zoom上和他那些身居世界各地的网友们有一搭没一搭地聊天。神学院的老师还说过，他们会尽力帮他去美国，去美国治疗他的眼睛。</p>
+  <p> </p>
+  <p>是的，他还有一个更具象的美国梦。他十多岁的时候，感恩工作室组织的美国医疗团队到毕节织金县去做义诊活动，有位华人医生帮他看过眼睛。那位华人医生告诉他，他的左眼是有复明的可能性的，通过角膜移植的方式。</p>
+  <p> </p>
+  <p>他想到去到美国，那里，有他期望已久的光明和希望。</p>
+  <p> </p>
+  <p> </p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E5%B1%95%E6%9C%9B%E4%B8%AD%E5%9B%BD2025%E5%B9%B4%E7%9A%84%E4%B8%83%E5%A4%A7%E8%B6%8B%E5%8A%BF">
+          展望中国2025年的七大趋势
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+          中国推出新型攻击舰和未来战斗机
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD">
+          印度火箭启动太空对接使命
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%85%B1%E6%89%93%E9%80%A0%E7%BB%8F%E6%B5%8E%E5%85%89%E6%98%8E%E8%AE%BA%E7%BB%9F%E4%B8%80%E6%88%98%E7%BA%BF-%E8%89%AF%E5%BF%83%E5%AD%A6%E8%80%85%E6%81%90%E6%83%A7%E7%BC%84%E9%BB%98%E9%81%BF%E6%92%9E%E7%BA%A2%E7%BA%BF">
+          中共打造经济光明论统一战线 良心学者恐惧缄默避撞红线
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD">
+            前一篇：印度火箭启动太空对接使命
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+            后一篇：中国推出新型攻击舰和未来战斗机
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-30/%E5%8D%B0%E5%BA%A6%E7%81%AB%E7%AE%AD%E5%90%AF%E5%8A%A8%E5%A4%AA%E7%A9%BA%E5%AF%B9%E6%8E%A5%E4%BD%BF%E5%91%BD">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

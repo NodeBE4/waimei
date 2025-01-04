@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>展望中国2025年的七大趋势 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+展望中国2025年的七大趋势
+——
+" />
+    <meta property="og:description" content="
+展望中国2025年的七大趋势
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="展望中国2025年的七大趋势" />
+    <meta property="twitter:title" content="展望中国2025年的七大趋势" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-outlook-2025%2F7918856.html&t=%E5%B1%95%E6%9C%9B%E4%B8%AD%E5%9B%BD2025%E5%B9%B4%E7%9A%84%E4%B8%83%E5%A4%A7%E8%B6%8B%E5%8A%BF" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-outlook-2025%2F7918856.html&t=%E5%B1%95%E6%9C%9B%E4%B8%AD%E5%9B%BD2025%E5%B9%B4%E7%9A%84%E4%B8%83%E5%A4%A7%E8%B6%8B%E5%8A%BF&d=2024-12-30&e=
+展望中国2025年的七大趋势
+——
+
+
+  
+Mon, 30 Dec 2024 21:31:15 GMT
+  
+  
+资料照片：工人在上海某地整修一座高架人行天桥。(2024年10月9日)
+  
+台北 —   中国经历了“充满挑战”的2024年，经济复苏乏力等困局未解，岁末又接连发生几起“献忠式”致命袭击事件，使这一年的收官笼罩在民怨和社会动荡加剧的阴影中。在此背景下，中国将如何开启2025年？未来一年，能否如北京当局所规划的那样，在“稳中求进”的基调下推进各项政策？“十五五”开局后的经济航船是否能够顺利“破浪前行”？
+  国际地缘政治风云变幻，中国的政经局势更显复杂难测。美国之音采访了多位长期研究中国各领域的观察人士，共同展望2025年的中国。他们普遍认为，未来一年，中国的内外形势仍充满不确定性，且不利因素占据主导。以下是被认为最关键的七大趋势。
+  趋势一：习近平政权尚稳，但党..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-outlook-2025%2F7918856.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/china-outlook-2025/7918856.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/china-outlook-2025/7918856.html&text=展望中国2025年的七大趋势&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/china-outlook-2025/7918856.html&title=展望中国2025年的七大趋势" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/china-outlook-2025/7918856.html&title=展望中国2025年的七大趋势" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=展望中国2025年的七大趋势&body=
+展望中国2025年的七大趋势
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/china-outlook-2025/7918856.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/china-outlook-2025/7918856.html&title=展望中国2025年的七大趋势&caption=
+展望中国2025年的七大趋势
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=展望中国2025年的七大趋势&url=https://www.voachinese.com/a/china-outlook-2025/7918856.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>展望中国2025年的七大趋势</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/china-outlook-2025/7918856.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-outlook-2025%2F7918856.html&t=%E5%B1%95%E6%9C%9B%E4%B8%AD%E5%9B%BD2025%E5%B9%B4%E7%9A%84%E4%B8%83%E5%A4%A7%E8%B6%8B%E5%8A%BF&d=2024-12-30&e=
+展望中国2025年的七大趋势
+——
+
+
+  
+Mon, 30 Dec 2024 21:31:15 GMT
+  
+  
+资料照片：工人在上海某地整修一座高架人行天桥。(2024年10月9日)
+  
+台北 —   中国经历了“充满挑战”的2024年，经济复苏乏力等困局未解，岁末又接连发生几起“献忠式”致命袭击事件，使这一年的收官笼罩在民怨和社会动荡加剧的阴影中。在此背景下，中国将如何开启2025年？未来一年，能否如北京当局所规划的那样，在“稳中求进”的基调下推进各项政策？“十五五”开局后的经济航船是否能够顺利“破浪前行”？
+  国际地缘政治风云变幻，中国的政经局势更显复杂难测。美国之音采访了多位长期研究中国各领域的观察人士，共同展望2025年的中国。他们普遍认为，未来一年，中国的内外形势仍充满不确定性，且不利因素占据主导。以下是被认为最关键的七大趋势。
+  趋势一：习近平政权尚稳，但党..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-outlook-2025%2F7918856.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1735594742000-->
+<p><a href="https://www.voachinese.com/a/china-outlook-2025/7918856.html">展望中国2025年的七大趋势</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 30 Dec 2024 21:31:15 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/94633f18-f49b-4e65-908a-71d44ced5d4d_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照片：工人在上海某地整修一座高架人行天桥。(2024年10月9日)</small>
+  </div>
+台北 —   <p>中国经历了“充满挑战”的2024年，经济复苏乏力等困局未解，岁末又接连发生几起“献忠式”致命袭击事件，使这一年的收官笼罩在民怨和社会动荡加剧的阴影中。在此背景下，中国将如何开启2025年？未来一年，能否如北京当局所规划的那样，在“稳中求进”的基调下推进各项政策？“十五五”开局后的经济航船是否能够顺利“破浪前行”？</p>
+  <p>国际地缘政治风云变幻，中国的政经局势更显复杂难测。美国之音采访了多位长期研究中国各领域的观察人士，共同展望2025年的中国。他们普遍认为，未来一年，中国的内外形势仍充满不确定性，且不利因素占据主导。以下是被认为最关键的七大趋势。</p>
+  <p><strong>趋势一：</strong><strong>习近平政权尚稳，但党内权斗仍汹涌</strong></p>
+  <p>中国国家主席习近平自2023年3月开启第三个任期后，凭借其定于一尊的权力基础，分析人士普遍认为，他有望顺利完成这一任期并持续执政至2028年。</p>
+  <p>然而，美国巴克内尔大学(Bucknell University)国际关系与政治学教授朱志群指出，习近平未来是否会物色接班人值得观察。如果短期内未见明确接班人选，则他在2028年寻求第四任的可能性将显著增加。</p>
+  <p>继习近平12月16日在中共党刊《求是》发表文章，坦承党内存在矛盾并表达“刀刃向内”的决心后，美国学者朱志群分析认为，习近平可能会持续推进反腐运动，其中包括肃清政敌的行动。然而，未来这一反腐运动的深度、可能触及哪些既得利益者，以及是否会引发权力阶层的反扑甚至对其地位构成挑战，尚需进一步观察。</p>
+  <p>朱志群指出，中国政治生态长期以来不透明，这使得外界难以全面了解党内权力斗争的具体情况。尽管如此，习近平如何在反腐与稳固权力之间取得平衡，仍将是外界密切关注的焦点。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/71c6bafb-38f7-45e1-aa73-89c56f9190a3_w900.jpg" alt="资料照片：2024年12月20日中国国家主席习近平在澳门举行的庆祝澳门回归中国25周年的庆祝活动上讲话。" border="0" />    <div>
+<small style="color: #999;">资料照片：2024年12月20日中国国家主席习近平在澳门举行的庆祝澳门回归中国25周年的庆祝活动上讲话。</small>
+    </div>
+  </div>
+  <p>人在香港的美国智库詹姆斯敦基金会(Jamestown Foundation)高级研究员林和立表示，习近平已无任期限制，为第四任铺路是合理的预期。然而，他在政治、经济、金融和军队等领域的治理上长期面临挫折。此外，若美国新任总统特朗普（Donald Trump）上任后立即推出一系列针对中国的围堵政策，中国可能将疲于应对。</p>
+  <p>林和立指出，2025年后的中国总体发展趋势可能持续“走下坡”，内部与外部的多重压力都将对习近平的施政构成严峻挑战。</p>
+  <p>他说：“2025年以习近平为首的中共会面临前所未有的挑战，就跟毛泽东1966到1976年(间)、邓小平还没有提出改革开放前的困局，这个困局重新出现。”</p>
+  <p>他还表示，当年有邓小平提出受欢迎的改革开放政策，扭转后毛泽东时代中国的发展，但目前看不出有人可以为习近平推行扭转局势的新政，这是很大的危机。</p>
+  <p><strong>趋势二</strong><strong>：2025年是美中关系的危险年?</strong></p>
+  <p>特朗普2.0在即，美中新一波的大国角力从关税贸易战到科技芯片战，恐箭在弦上。不过，美国华裔学者朱志群持“谨慎乐观”的看法。他说，特朗普选后受访时，对华口气似乎略有放缓，还说愿意和中国“谈判”，且12月初他和习近平已直接交流过。这写迹象显示，美中关系“蜜月期”或仍可期，除非特朗普一上台就放任鹰派内阁成员对华祭出高关税等强硬措施。</p>
+  <p>朱志群说：“这要看双方领导(人)怎么样在这段时间交涉、磨合、谈判，我觉得，(美中两国)还是有可能避免一开始就打贸易战或者关税战。当然这后面，我估计可能还是会打，但是他(特朗普)上来第一天就打，我觉得还很难说。”</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/1e182fd4-c407-4a86-b216-5c239b6109c7_w900.jpg" alt="资料照：2019年6月29日，特朗普与中国领导人习近平在日本大阪出席G20国家领导人峰会期间举行双边会晤。" border="0" />    <div>
+<small style="color: #999;">资料照：2019年6月29日，特朗普与中国领导人习近平在日本大阪出席G20国家领导人峰会期间举行双边会晤。</small>
+    </div>
+  </div>
+  <p>不过，澳大利亚悉尼大学中国研究中心主任古德曼(David Goodman)说，特朗普的行事风格不可预测，尤其他“自负”又崇尚“交易式”的外交关系，再加上他任命的阁员，如国务卿提名人马可·鲁比奥(Marco Rubio)和驻华大使提名人戴维·珀杜(David Perdue)的对华立场互有矛盾，都对2025年美中关系的发展带来变数。古德曼坦言，“任何事都可能发生，(现在)也无人说得准。”</p>
+  <p><strong>趋势三：中国经济急寻</strong><strong>“破浪”新动力</strong></p>
+  <p>除了美中关系，澳大利亚学者古德曼认为，2025年中国最重大的看点是3月的人大如何规划第15个五年计划，亦即2026-2030年的“十五五”，其中“改革地方失败的财税制度”尤属关键，因为北京当局自9月以来推出的多项经济刺激措施，包括给地方政府的10万亿人民币化债计划都无助增加地方收入。</p>
+  <p>他说，若地方无足够财力支应社会福利的提供，中国百姓将因医疗、就学和养老等目的，继续存钱，而不敢多花钱，中国想大力提振内需恐无望。</p>
+  <p>古德曼说：“他们(北京当局)应上调所得税并调降(货物)增值税，如此一来，地方才能有更多财源(补足社会安全网漏洞)。”</p>
+<a href="/a/7912388.html"></a>  <p>不过，中国经济下行影响景气和人民收入，此时加税再增民怨，也恐不可行。</p>
+  <p>除了“十五五”，2025年的经济增长率也是3月人大的重头戏。</p>
+  <p>在台北的中华经济研究院第一研究所所长刘孟俊认为，中国经济2025年难保5%，因此，设定在4%-5%间或是较务实的選擇。</p>
+  <p>他说，北京当局拟扩大财政支出，提振内需，但已连续26个月负成长的生产者物价指数(PPI)，代表制造业出厂价格走跌，反映的是未来六个月的消费者物价指数(CPI)恐也无力回升。这将加剧中国通缩的危机，亦即消费者陷入预期价格走跌而缩减消费的恶性循环中，不利内需发展。</p>
+  <p>更糟的是，《<a href="https://www.wsj.com/world/china/china-xi-debt-economic-plan-13aaeec1" target="_blank">华尔街日报</a>》12月23日引述不具名的北京决策和顾问等人士披露，习近平除深信“东升西降”并坚持“自上而下”的经济治理外，对通缩可能造成的经济恶果竟一无所知，还反问道“通缩有何不好？大家不喜欢物价更便宜吗？”若此内幕说法属实，习近平的经济把舵能力，恐令人捏把冷汗。</p>
+  <p><strong>趋势四：</strong><strong>解放军派系内斗激烈</strong></p>
+  <p>中国上两任国防部长李尚福、魏凤和相继落马后，前中共军委苗华11月底也证实遭贪腐调查。紧接着，中共中央军委12月23日又任命陈辉为陆军政委，但除了遭解职的原陆军政委秦树桐除下落不明外，他和其他三名上将——陆军司令员李桥铭、海军政委袁华智和武警司令员王春宁还集体缺席了陈辉的上将晋衔仪式，引发外界对解放军内斗加剧的揣测。</p>
+  <p>分析人士说，这些发展除代表习近平地位不如之前稳固外，也显示他与政敌、中共中央军委副主席张又侠暗地里的角力不断。</p>
+  <p>在台北的国防安全研究院国防战略与资源研究所所长苏紫云分析，习近平近两年拉下张又侠派系的李尚福、魏凤和后，逼得张又侠趁势反击，近期并成功拉下隶属习家军的苗华，尤其是《解放军报》还数度发表社论，要求“党内民主和集体领导”，这代表两人的权斗已逼近临界点，可能会延续到2025年。</p>
+  <p> </p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/906d37f4-af8a-4353-a0ab-07737596f07a_w900.jpg" alt="中国领导人习近平在北京主持授予陈辉上将军衔的仪式。（2024年12月23日）" border="0" />    <div>
+<small style="color: #999;">中国领导人习近平在北京主持授予陈辉上将军衔的仪式。（2024年12月23日）</small>
+    </div>
+  </div>
+  <p>苏紫云说：“张又侠为主的、结合红二代、江派、胡派的系统，目前可能在对抗习近平，所以，枪杆子我觉得是最具指标性的，就是解放军跟战区都不约而同的说要落实集体领导、干部可上可下，这个剑指习近平就挺明显的。”</p>
+  <p>他说，习近平的枪杆子、刀把子、钱袋子跟笔杆子都出现松动，但12月16日党刊《求是》又发文力挺习核心，代表习近平还指挥得动笔杆子，但军中、公安系统和经济或已不在他的严密掌控中。</p>
+  <p>不过，也有分析人士认为，习近平的军权“稳得很”，包括旅美独立评论员蔡慎坤等人都曾发文或分析称，大清洗是习近平时代的主旋律，师承毛泽东，是专制政权基本特征，只允许他自己一个人有影响力，因此，是习近平自己出手整顿苗华在军中坐大的势力。而张又侠仍是为习近平保驾护航的一员猛将，并未企图从习近平手中夺取军权。</p>
+  <p><strong>趋势五</strong><strong>：北京恐加剧对台文攻武吓</strong></p>
+  <p>国际社会纷传，2025年恐是台海危机升级的一年。</p>
+  <p>2023年初，时任美国空军机动司令部(Air Mobility Command)司令的迈克·米尼汉(Mike Minihan)上将就曾示警，台湾总统选举恐成习近平侵台借口，他写道:“我希望我错了。我的直觉告诉我，我们将在2025年一战。”</p>
+<a href="/a/6937871.html"></a>  <p>台湾前国防部长邱国正早于2021年也说过，2025年中共将具备全面犯台能力。</p>
+  <p>但在台北的国防安全研究院国家安全研究所所长沈明室认为，在中国经济疲软、解放军高层频遭整肃和特朗普重返白宫等内外部因素的牵制下，解放军明年或将持续对台进行灰色袭扰和军演威胁，包括持续常态化的机舰扰台和海警越界袭扰，但仍不具备犯台的客观条件。</p>
+  <p>沈明室分析，特朗普上任后、将积极结束俄乌战争，以“清理战场”并重新聚焦中国；且相较现任美国总统拜登(Joe Biden)近乎“苦口婆心”警告中国勿对台动武，特朗普威胁式的警告或更有效，因中方忌惮特朗普的报复手段。</p>
+  <p>沈明室说：“这个(灰色地带)行动本来是持续的，如果它(中共)不做，反而示弱了，但是2025年它要对台湾采取军事进犯，我觉得，在特朗普政府任内，反而更不会(发生)，中国会顾忌特朗普的不可预测性。”</p>
+  <p>他说，2025年北京当局面临外忧内患，若贸然对外开战恐连内部也有争议，因此，未来除非台湾宣布独立等极端情境，中共对台动武的可能性不高。</p>
+  <p><strong>趋势六</strong><strong>：</strong><strong>中</strong><strong>共加大维稳，但</strong><strong>“献忠事件”恐再起</strong></p>
+  <p>位于台北的国际人权组织“自由之家”旗下的《异言网》计划经理史凯文(Kevin Slaten)以电邮告诉美国之音，《异言网》两年半来已记录中国到各地约8,000起的抗议事件，其中2024年的抗议件数增多，10月更创下有纪录以来抗议件数的最高月份，同比增加32%。</p>
+  <p>史凯文分析，多数抗议基于经济诉求，包括工人讨薪、烂尾楼和农村征地纠纷等，明显与中国经济疲软有关。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/9cbda472-ac88-4e76-8057-613c2c0bd4c5_w900.jpg" alt="中国广东珠海体育中心发生一名凶嫌驾车蓄意撞人重大恶性案件后市民悼念献花。（2024年11月11日）" border="0" />    <div>
+<small style="color: #999;">中国广东珠海体育中心发生一名凶嫌驾车蓄意撞人重大恶性案件后市民悼念献花。（2024年11月11日）</small>
+    </div>
+  </div>
+  <p>对于各地频传的“献忠式”无差别攻击案件，史凯文认为，主因是中国经济放缓冲击民生，导致越多人深陷经济困境；且中国缺乏制度性的解决途径，民众上访无门、更无法透过政治参与改变现况，最终在压力下失控，动用极端手段。</p>
+  <p>史凯文说：“除非2025年经济特别好转，可以预期经济抗议会一样频繁、甚至更频繁。同时，中国党国系统性地限制公民的言论自由与集会自由，面临抗议日益增长，不确定党国将如何反应。”</p>
+  <p><strong>趋势七</strong><strong>：2025年中国人权不容乐观</strong></p>
+  <p>位于台北的政治大学国家发展研究所所长黄兆年指出，近年来中国社会出现的公民抵抗行动，多源于青年失业、劳工欠薪等经济问题，这已在诸多研究中有所体现。</p>
+  <p>他表示，随着中国经济转型迟迟未见成效，若特朗普于2025年再次对中国加征关税，可能进一步冲击中国的出口与外资投资，加剧社会中的不稳定因素。鉴于经济问题可能威胁中共的统治正当性，当局一贯采取网络言论审查、操控舆论导向，甚至动用国家暴力来压制抗议声音。黄兆年预期，中国群众的言论自由在未来可能面临更严厉的限制。</p>
+  <p>“在这样的经济条件之下，可以预见(中国)公民社会表达不满的需求会持续存在，那中国官方打压、对于人权跟言论自由的限制，恐怕也会持续存在，所以，不容乐观。”黄兆年说。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E7%BE%8E%E8%B4%A2%E6%94%BF%E9%83%A8-%E4%B8%AD%E5%9B%BD%E8%B5%84%E5%8A%A9%E7%9A%84%E9%BB%91%E5%AE%A2%E4%BE%B5%E5%85%A5%E4%BA%86%E8%B4%A2%E6%94%BF%E9%83%A8%E5%B7%A5%E4%BD%9C%E7%AB%99">
+          美财政部：中国资助的黑客侵入了财政部工作站
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE">
+          疫情爆发五年后，世卫组织敦促中国分享COVID-19起源数据
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+          中国推出新型攻击舰和未来战斗机
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E8%B6%8A%E6%B4%8B%E7%94%B5%E8%AF%9D%E5%B9%B4%E7%BB%88%E7%89%B9%E5%88%AB%E6%8A%A5%E9%81%93-%E5%B0%8F%E7%BD%97%E5%BF%AB%E8%B7%91">
+          越洋电话年终特别报道：小罗快跑
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+            前一篇：中国推出新型攻击舰和未来战斗机
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE">
+            后一篇：疫情爆发五年后，世卫组织敦促中国分享COVID-19起源数据
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-30/%E7%96%AB%E6%83%85%E7%88%86%E5%8F%91%E4%BA%94%E5%B9%B4%E5%90%8E-%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E6%95%A6%E4%BF%83%E4%B8%AD%E5%9B%BD%E5%88%86%E4%BA%ABCOVID-19%E8%B5%B7%E6%BA%90%E6%95%B0%E6%8D%AE">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-30/%E4%B8%AD%E5%9B%BD%E6%8E%A8%E5%87%BA%E6%96%B0%E5%9E%8B%E6%94%BB%E5%87%BB%E8%88%B0%E5%92%8C%E6%9C%AA%E6%9D%A5%E6%88%98%E6%96%97%E6%9C%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

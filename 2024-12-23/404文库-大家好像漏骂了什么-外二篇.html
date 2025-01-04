@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】“大家好像漏骂了什么”（外二篇） – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+" />
+    <meta property="og:description" content="
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】“大家好像漏骂了什么”（外二篇）" />
+    <meta property="twitter:title" content="【404文库】“大家好像漏骂了什么”（外二篇）" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714244.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E5%A4%A7%E5%AE%B6%E5%A5%BD%E5%83%8F%E6%BC%8F%E9%AA%82%E4%BA%86%E4%BB%80%E4%B9%88%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714244.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E5%A4%A7%E5%AE%B6%E5%A5%BD%E5%83%8F%E6%BC%8F%E9%AA%82%E4%BA%86%E4%BB%80%E4%B9%88%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-12-23&e=
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+
+
+  
+  
+    
+    
+  
+      
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404文库】“大家好像漏骂了什么”（外二篇）来源：六神磊磊读金庸、基本常识、往事与随想        主题归类：妇女权益、拐卖妇女 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”进行收听，视频节目可在Youtube“中国数..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714244.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/714244.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/714244.html&text=【404文库】“大家好像漏骂了什么”（外二篇）&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/714244.html&title=【404文库】“大家好像漏骂了什么”（外二篇）" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/714244.html&title=【404文库】“大家好像漏骂了什么”（外二篇）" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】“大家好像漏骂了什么”（外二篇）&body=
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/714244.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/714244.html&title=【404文库】“大家好像漏骂了什么”（外二篇）&caption=
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】“大家好像漏骂了什么”（外二篇）&url=https://chinadigitaltimes.net/chinese/714244.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】“大家好像漏骂了什么”（外二篇）</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-23
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/714244.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714244.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E2%80%9C%E5%A4%A7%E5%AE%B6%E5%A5%BD%E5%83%8F%E6%BC%8F%E9%AA%82%E4%BA%86%E4%BB%80%E4%B9%88%E2%80%9D%EF%BC%88%E5%A4%96%E4%BA%8C%E7%AF%87%EF%BC%89&d=2024-12-23&e=
+【404文库】“大家好像漏骂了什么”（外二篇）
+——
+
+
+  
+  
+    
+    
+  
+      
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：【404文库】“大家好像漏骂了什么”（外二篇）来源：六神磊磊读金庸、基本常识、往事与随想        主题归类：妇女权益、拐卖妇女 CDS收藏：时间馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          《404档案馆》讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“404档案馆”进行收听，视频节目可在Youtube“中国数..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714244.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1734992226000-->
+<p><a href="https://chinadigitaltimes.net/chinese/714244.html">【404文库】“大家好像漏骂了什么”（外二篇）</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/714244.html" title="【404文库】“大家好像漏骂了什么”（外二篇）" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/12/6173-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" srcset="https://chinadigitaltimes.net/chinese/files/2024/12/6173-564x300.png 564w, https://chinadigitaltimes.net/chinese/files/2024/12/6173.png 1172w" sizes="(max-width: 564px) 100vw, 564px" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/6173.png" alt="" width="1024" height="545" class="size-large wp-image-672171" /></p>
+  <div style="text-align:center;margin-top:26px;margin-bottom:26px">
+    <!-- iframe plugin v.5.1 wordpress.org/plugins/iframe/ -->
+    <iframe loading="lazy" src="https://open.firstory.me/embed/story/cm51li0yr001h01x0bxwg5l06" height="180" width="700" scrolling="yes" class="iframe-class" frameborder="0"></iframe>
+  </div>
+  <p>    <iframe loading="lazy" title="【404文库】“大家好像漏骂了什么”（外二篇）" width="1080" height="608" src="https://www.youtube.com/embed/9oZKQzwgbBg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>【404文库】“大家好像漏骂了什么”（外二篇）<br /><strong>来源：</strong><a href="https://chinadigitaltimes.net/space/六神磊磊读金庸" target="_blank">六神磊磊读金庸</a>、<a href="https://chinadigitaltimes.net/space/基本常识" target="_blank">基本常识</a>、<a href="https://chinadigitaltimes.net/space/往事与随想" target="_blank">往事与随想</a>        <p><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/妇女权益" target="_blank">妇女权益</a>、<a href="https://chinadigitaltimes.net/space/拐卖妇女" target="_blank">拐卖妇女</a> <br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E6%97%B6%E9%97%B4%E9%A6%86" target="_blank" rel="noopener">时间馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;          <p><a href="https://chinadigitaltimes.net/chinese/404-archives">《404档案馆》</a>讲述中国审查与反审查的故事，同时以文字、音频和视频的形式发布。播客节目可在 Apple Podcasts, Google Podcasts, Spotify 或泛用型播客客户端搜索“<a href="https://open.firstory.me/user/cdt">404档案馆</a>”进行收听，视频节目可在Youtube“<a href="https://www.youtube.com/channel/UCwXewCWwaK1-yec8niJLrqg">中国数字时代· 404档案馆</a>”频道收看。</p>
+          <p>欢迎来到404档案馆，在这里，我们一起穿越<a href="https://chinadigitaltimes.net/space/%E5%9B%BD%E5%AE%B6%E9%98%B2%E7%81%AB%E5%A2%99">中国数字高墙</a>。</p>
+          <p>尽管中国的<a href="https://chinadigitaltimes.net/space/%E8%A8%80%E8%AE%BA%E5%AE%A1%E6%9F%A5">言论审查</a>和舆论管控日趋严峻，<a href="https://chinadigitaltimes.net/space/%E8%80%81%E5%A4%A7%E5%93%A5%E9%A6%86">国家对公民的监控</a>也无处不在，但我们依然可以看那些不服从的个体，顶着被删号、被约谈、甚至被监禁的风险，对不公义勇敢发出自己的声音。</p>
+          <p>中国数字时代在<a href="https://chinadigitaltimes.net/chinese/404-articles-archive">“404文库”</a>栏目中长期收录这些被当局审查机制删除的声音。如果您也不希望这些声音就这样消失，请随手将它们转发给您可以转发的任何人。</p>
+          <p>在本期的【404文库】栏目中，我们将选读过去一周中引起舆论关注的三篇404文章。</p>
+          <h2 id="section">一、<a href="https://chinadigitaltimes.net/chinese/714156.html">六神磊磊读金庸｜年轻人已经够老老实实服服帖帖了</a></h2>
+          <p>近期，中国人民大学的一位学者王宪举在公开场合询问哈萨克斯坦官员“如何让女大学生多生孩子”，此消息引发网民怒批。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/GfItVYoXYAAXHmz.jpeg" alt="img" /></p>
+          <p>对此，微信公众号“六神磊磊读金庸”发布文章对该学者进行嘲讽，并为中国年轻人发声</p>
+          <p>作者提到：</p>
+          <blockquote>
+            <p>一位专家问老外客人，怎么让年轻人老老实实服服帖帖生孩子，引发很多讨论。</p>
+            <p>专家原话的槽点特别多。就没忍住，简单聊几句吧。</p>
+            <p>这届年轻人其实已经够老老实实服服帖帖了。</p>
+            <p>他们有情绪、有压力，以自己化解为主，不怎么制造麻烦。换句话说，本届年轻人在自我开导方面特别会。</p>
+            <p>最近某宝上的二十大年度商品，知道都有些什么吗，水培香蕉，谐音梗“禁止蕉绿”，一个链接卖十万加。大家就这样自己宽慰自己，怎么不老实呢。</p>
+            <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/IMG_7762.jpg" alt="img" /></p>
+            <p>让玩，他们就玩一下，走到玉林路的尽头，走到小酒馆的门口；不让玩也不说什么。允许过的节日过一下，不提倡过，就收起道具，低头假装路过。多好的人儿。</p>
+            <p>他们爱网上骂骂老板，但好像也没真对老板做什么。你看那些报复社会的糟心事件，还是中老年干的多。年轻人干什么了。</p>
+            <p>他们看的诗歌、小说、摇滚、嘻哈，哪一样不老实的，我觉得我小时候看的东西都刺儿得多。连网络小说现在都是以“苟”为主，苟道流行。早几年的男频网络小说，主角都要“在生死之间磨砺”“越级挑战”，现在不磨砺了，都苟起来。</p>
+            <p>还要怎么老实服帖呢。</p>
+            <p>如果一代人很喜欢猫狗，却不想要孩子，说明不是因为缺爱的能力，而是因为后顾之忧。消除后顾之忧才是最有效的。总想靠做思想工作解决问题，不太好使。</p>
+            <p>教授还忽略了一件事，老老实实、服服帖帖，这八个字是个互相伤害的循环。</p>
+            <p>想着让人家老老实实，服服帖帖，回头又会有人让你老老实实服服帖帖。可千万不要有自居食物链上游的幻觉。</p>
+            <p>毕竟生孩子和炒股不一样。想让大家都去炒股，就会有人自告奋勇出来，扮演炒股，直播炒股，回头去邀功，显示引导得多么新鲜卖力。生孩子演不了啊，咋引导，你得真生。</p>
+          </blockquote>
+          <h2 id="section-1">二、<a href="https://chinadigitaltimes.net/chinese/713837.html">基本常识｜丰县铁链女之后没有全面清查，所以才有“收留”女硕士的荒唐</a></h2>
+          <p>12月初，一名失踪15年的女硕士在山西农村被寻回，并被官方称为是被“收留”的新闻在中文互联网上引起网民关注。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/GebaetVWEAAkpPa.jpeg" alt="img" /></p>
+          <p>微信公众号“基本常识”发布文章，提及同样是涉及拐卖妇女且被官方严厉审查的铁链女事件。该文很快便被删除。</p>
+          <p>文章写道：</p>
+          <blockquote>
+            <p>“收留”一个精神病女人做老婆生孩子，花钱买一个被拐妇女做老婆生孩子，稍有常识的中国人都知道，这种事在很多地方都曾经存在，到现在依然存在。</p>
+            <p>但是，被舆论公开的有几个，被法律制裁的又有几个？</p>
+            <p>我们都关注过江苏丰县铁链女的绝望人生，现在也知道了山西晋中一位女硕士的悲惨遭遇，那，还有其他在病痛和禁锢中挣扎的女性等着被解救吗？很显然，还有的，而且数量不会少。</p>
+            <p>              <iframe loading="lazy" title="【CDTV】中国女权活动者齐拉巨型海报：让铁链女发声！释放乌衣" width="1080" height="608" src="https://www.youtube.com/embed/Nw5u8XdtjQE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+            <p>然而，江苏丰县公安部门与山西和顺县公安部门一定会用坚定的口吻告诉大家：</p>
+            <p>本地没有发现其他受害女性。</p>
+            <p>丰县没有去全面清查，江苏没有去全面清查，远隔千里的山西，自然就更加没有动力去主动清查了。</p>
+            <p>也因此，在山西和顺县被“老实男人”强奸禁锢了十多年的女硕士卜某及其家人，很可能在2022年和我们一样看到过铁链女相关的新闻，很可能也在心潮澎湃期待着很快被公安解救。</p>
+            <p>然而两年多过去了，受害女硕士没有等来警察叔叔的解救，反而成了“被好心老实男人收留”的正能量新闻女主角。</p>
+            <p>荒谬是真的荒谬，但意外却是一点也不意外。</p>
+            <p>丰县铁链女事件被定性为偶发个案的那一刻，其他被拐卖、被拘禁的精神失常妇女的命运就已经被宣判了“维持现状”，不太可能再有什么曙光。</p>
+            <p>从“实用主义”的社会治理角度来考虑，假装不存在，假装看不见，绝对是最稳定、最经济、最省心的做法。</p>
+            <p>解救一位被拐卖强奸的精神失常妇女，后半辈子治病和养老的钱得地方政府来安排，收买并强奸拘禁妇女的男人得抓起来关几年，家里的孩子可能也得政府来收养。在解救被拐精神失常妇女的过程中，可能遭遇群众的不理解甚至暴力反抗影响社会稳定，还可能会被媒体曝光影响本地领导的仕途……</p>
+            <p>是的，如果考虑划算不划算，那公安部门主动去清查解救一名被拐卖强奸生了孩子的精神失常妇女，绝对是一件方方面面都严重不划算的事情。</p>
+            <p>只是他们可能忘了，在判断一件事情划算不划算的时候，还需要考虑人生而为人的尊严价值，在判断一件事情该不该做的时候，还需要考虑国家法律和社会正义。</p>
+            <p>他们可能忘了，被铁链锁住的八孩母亲小花梅是个人，被“收留”十三年生育多个孩子的女硕士卜某，也是个人。</p>
+          </blockquote>
+          <h2 id="section-2">三、<a href="https://chinadigitaltimes.net/chinese/714025.html">往事与随想｜你指望卜小花在低福利的石叠村能得到什么？</a></h2>
+          <p>微信公众号“往事与随想”同样针对此事进行评论，但文章也很快便被审查删除。</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/12/IMG_7765.jpg" alt="img" /></p>
+          <p>作者写道：</p>
+          <blockquote>
+            <p>我在想一个问题：如果不是网络曝光，什么事都不会有。村里人不会觉得有问题，当地警方和宣传系统不觉得有问题，外来的寻亲志愿者也不觉得有问题，甚至卜小花的家人也不觉得有问题。所以，一方面是网络舆论对现实的纠偏，但反过来看，则是网络与现实的断裂。</p>
+            <p>仅仅是因为他们不懂法，不懂尊重女性，价值观太low？并不是，也许更重要的一点是，他们知道现实是什么？</p>
+            <p>现实就是：这个政府指望不上。</p>
+            <p>假设回到2011年7、8月的和顺县青城镇石叠村，你指望卜小花在那里能得到什么？</p>
+            <p>很多人会说，他们应该去报警，然后警方会把卜小花送到救助站，寻找一段时间后，再把她送回亲人的身边。</p>
+            <p>而实际上，这里面每个链条都是断的。</p>
+            <p>你觉得石叠村的村民会有这个认知？谁会告诉他们应该这样做？现实是，在他们的人生经验中，这些都是没人管的，从小到大，他们看见的乞讨人员政府管吗？隔壁村那个精神病人政府管吗？顶多会有长辈做示范给他们打碗饭吃，这就是好人，若有人收留，这就是大善人。在农民眼里，政府从来是令人畏惧的存在，饿死你也没人管的好不好？所以，你准备批评他们认知有问题？</p>
+            <p>好，即便他们上报了，你觉得警方和救助站就会管？如果找不到家人，你觉得当地精神病院/福利院就会养她一辈子？你觉得当地财政有这笔预算，如果没有这笔预算，上级部门和中央就有这笔拨款？</p>
+            <p>这就是网络与现实的断裂。我不是说要把现实合理化，我最不满的是，大家好像漏骂了什么。</p>
+            <p>这一轮网络舆论，被骂得最惨的是那个所谓“丈夫”张瑞军，然后是认可张瑞军“收留”卜小花的当地警方，再有就是麻木不仁的当地村民，但是，最应该骂的，难道不是那个权力最大资源最多牛逼哄哄无所不能的汲取性政府吗？</p>
+            <p>我最不能忍受的是：这似乎只是一个单纯的刑事案件，只要把张瑞军给判了，把当地警方通报批评一下，这事情就完了。</p>
+            <p>我们经常听到说中国人口众多，中国是发展中国家，总之中国没钱，这不搞笑吗？中国人这么勤奋，怎么会没钱？</p>
+            <p>今日中国，所有人都应该认识的一个问题：我们最大的问题就是分配不公，而最大的不公不是资本家占有太多，而是政府占有太多，然后分给了自己。</p>
+          </blockquote>
+          <p>以上是本期选读的三篇404文章。文章全文见中国数字时代网站。这些作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。</p>
+          <p>中国数字时代 CDT 致力于记录和传播中文互联网上被审查的信息，以及人们与审查对抗的努力。欢迎大家通过<a href="https://t.me/cdtmedia_bot" title="电报(Telegram)平台">电报(Telegram)平台</a> 向我们投稿，为记录和对抗中国网络审查作出你的贡献！</p>
+          <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2022/05/404给CDT-QR-code-1.jpg" alt="cdtimg" /></p>
+          <p>了解更多投稿信息，请阅读<a href="https://chinadigitaltimes.net/chinese/telegrambot" title="中国数字时代征稿说明">中国数字时代征稿说明</a></p>
+          <p><strong>欢迎读者访问 <a href="https://open.firstory.me/user/cdt/platforms &quot;CDT播客&quot;">CDT播客</a> 和 <a href="https://www.youtube.com/@CDTChinese/videos" title="CDT视频">CDT视频</a> 收听/观看更多相关内容。</strong></p>
+ &lt;/div&gt;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-24/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E8%B7%9F%E7%9D%80%E8%8B%8F%E5%B7%9E%E5%AD%A6%E8%BE%9F%E8%B0%A3-%E5%A4%A7%E9%87%8F%E5%A4%96%E8%B5%84%E4%BC%81%E4%B8%9A%E6%AD%A3%E5%9C%A8%E6%92%A4%E7%A6%BB%E8%8B%8F%E5%B7%9E%E5%90%97">
+          基本常识｜跟着苏州学辟谣：大量外资企业正在撤离苏州吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-24</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-24/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E9%80%80%E5%BD%B9%E8%BF%90%E5%8A%A8%E5%91%98%E5%90%B4%E6%9F%B3%E8%8A%B3%E6%94%B6%E5%88%B0%E6%9F%90%E6%9F%90%E6%80%BB%E5%B1%80%E5%9C%A3%E8%AF%9E%E7%A4%BC%E7%89%A9-%E8%B5%B6%E5%B0%BD%E6%9D%80%E7%BB%9D">
+          建设性意见｜退役运动员吴柳芳收到某某总局圣诞礼物：赶尽杀绝
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-23</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2">
+          结绳志｜在创伤的心灵地景中，辨认萦绕于当下的历史
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-23</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-23/%E5%B9%B4%E7%BB%88%E4%B8%93%E9%A2%98-%E5%9C%A8%E8%BF%99%E4%B8%AA%E6%AF%94%E5%86%AC%E5%A4%A9%E6%9B%B4%E8%82%83%E6%9D%80%E7%9A%84%E6%9E%81%E7%AB%AF%E6%97%B6%E5%80%99-%E6%88%91%E7%9A%84%E9%98%B3%E5%85%89%E4%BE%9D%E7%84%B6%E8%A6%81%E6%8C%A3%E6%89%8E%E7%9D%80%E7%A9%BF%E8%BF%87%E9%AB%98%E5%A2%99%E7%85%A7%E4%BA%AE%E4%BD%A0%E6%98%8F%E6%9A%97%E7%9A%84%E7%89%A2%E6%88%BF-202">
+          【年终专题】“在这个比冬天更肃杀的极端时候，我的阳光依然要挣扎着穿过高墙照亮你昏暗的牢房”……2024年度CDT报告汇
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2">
+            前一篇：结绳志｜在创伤的心灵地景中，辨认萦绕于当下的历史
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-23/%E4%B8%93%E5%AE%B6%E6%95%A6%E4%BF%83%E7%BE%8E%E5%9B%BD%E5%88%A9%E7%94%A8%E4%B8%8E%E5%8F%B0%E6%B9%BE%E7%9A%84%E5%90%8E%E5%8B%A4%E5%8D%8F%E5%AE%9A%E6%9D%A5%E5%8F%8D%E5%88%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E4%BA%8B%E8%83%81%E8%BF%AB">
+            后一篇：专家敦促美国利用与台湾的后勤协定来反制中国军事胁迫
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-23/%E4%B8%93%E5%AE%B6%E6%95%A6%E4%BF%83%E7%BE%8E%E5%9B%BD%E5%88%A9%E7%94%A8%E4%B8%8E%E5%8F%B0%E6%B9%BE%E7%9A%84%E5%90%8E%E5%8B%A4%E5%8D%8F%E5%AE%9A%E6%9D%A5%E5%8F%8D%E5%88%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E4%BA%8B%E8%83%81%E8%BF%AB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-24/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E9%80%80%E5%BD%B9%E8%BF%90%E5%8A%A8%E5%91%98%E5%90%B4%E6%9F%B3%E8%8A%B3%E6%94%B6%E5%88%B0%E6%9F%90%E6%9F%90%E6%80%BB%E5%B1%80%E5%9C%A3%E8%AF%9E%E7%A4%BC%E7%89%A9-%E8%B5%B6%E5%B0%BD%E6%9D%80%E7%BB%9D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-23/%E4%B8%93%E5%AE%B6%E6%95%A6%E4%BF%83%E7%BE%8E%E5%9B%BD%E5%88%A9%E7%94%A8%E4%B8%8E%E5%8F%B0%E6%B9%BE%E7%9A%84%E5%90%8E%E5%8B%A4%E5%8D%8F%E5%AE%9A%E6%9D%A5%E5%8F%8D%E5%88%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E4%BA%8B%E8%83%81%E8%BF%AB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-24/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E9%80%80%E5%BD%B9%E8%BF%90%E5%8A%A8%E5%91%98%E5%90%B4%E6%9F%B3%E8%8A%B3%E6%94%B6%E5%88%B0%E6%9F%90%E6%9F%90%E6%80%BB%E5%B1%80%E5%9C%A3%E8%AF%9E%E7%A4%BC%E7%89%A9-%E8%B5%B6%E5%B0%BD%E6%9D%80%E7%BB%9D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-23/%E7%BB%93%E7%BB%B3%E5%BF%97-%E5%9C%A8%E5%88%9B%E4%BC%A4%E7%9A%84%E5%BF%83%E7%81%B5%E5%9C%B0%E6%99%AF%E4%B8%AD-%E8%BE%A8%E8%AE%A4%E8%90%A6%E7%BB%95%E4%BA%8E%E5%BD%93%E4%B8%8B%E7%9A%84%E5%8E%86%E5%8F%B2">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

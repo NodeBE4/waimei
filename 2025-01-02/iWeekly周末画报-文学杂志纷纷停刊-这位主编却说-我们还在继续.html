@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+" />
+    <meta property="og:description" content="
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”" />
+    <meta property="twitter:title" content="iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714612.html&t=iWeekly%E5%91%A8%E6%9C%AB%E7%94%BB%E6%8A%A5%EF%BD%9C%E6%96%87%E5%AD%A6%E6%9D%82%E5%BF%97%E7%BA%B7%E7%BA%B7%E5%81%9C%E5%88%8A%EF%BC%8C%E8%BF%99%E4%BD%8D%E4%B8%BB%E7%BC%96%E5%8D%B4%E8%AF%B4%E2%80%9C%E6%88%91%E4%BB%AC%E8%BF%98%E5%9C%A8%E7%BB%A7%E7%BB%AD%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714612.html&t=iWeekly%E5%91%A8%E6%9C%AB%E7%94%BB%E6%8A%A5%EF%BD%9C%E6%96%87%E5%AD%A6%E6%9D%82%E5%BF%97%E7%BA%B7%E7%BA%B7%E5%81%9C%E5%88%8A%EF%BC%8C%E8%BF%99%E4%BD%8D%E4%B8%BB%E7%BC%96%E5%8D%B4%E8%AF%B4%E2%80%9C%E6%88%91%E4%BB%AC%E8%BF%98%E5%9C%A8%E7%BB%A7%E7%BB%AD%E2%80%9D&d=2025-01-02&e=
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：文学杂志纷纷停刊，这位主编却说“我们还在继续”作者：Emin发表日期：2025.1.1来源：iWeekly周末画报主题归类：小鸟文学CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  在刚过去的2024年年底，文学界坏消息不断。文学出版物停刊的新闻、线上文学内容停止服务的消息接二连三，种种情况让我们不禁会怀疑：文学在当下是不是不行了？
+  纸媒衰弱、书店关店潮，其实文学的“式微”已是老生常谈，大家一边看着莫言、余华、苏童等大作家上综艺，讲过去自己写作、投稿、成名的故事，一边则唏嘘文学的黄金时代不再。
+  依赖情怀和愿景造势..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714612.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/714612.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/714612.html&text=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/714612.html&title=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/714612.html&title=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”&body=
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/714612.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/714612.html&title=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”&caption=
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”&url=https://chinadigitaltimes.net/chinese/714612.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-01-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/714612.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714612.html&t=iWeekly%E5%91%A8%E6%9C%AB%E7%94%BB%E6%8A%A5%EF%BD%9C%E6%96%87%E5%AD%A6%E6%9D%82%E5%BF%97%E7%BA%B7%E7%BA%B7%E5%81%9C%E5%88%8A%EF%BC%8C%E8%BF%99%E4%BD%8D%E4%B8%BB%E7%BC%96%E5%8D%B4%E8%AF%B4%E2%80%9C%E6%88%91%E4%BB%AC%E8%BF%98%E5%9C%A8%E7%BB%A7%E7%BB%AD%E2%80%9D&d=2025-01-02&e=
+iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：文学杂志纷纷停刊，这位主编却说“我们还在继续”作者：Emin发表日期：2025.1.1来源：iWeekly周末画报主题归类：小鸟文学CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  在刚过去的2024年年底，文学界坏消息不断。文学出版物停刊的新闻、线上文学内容停止服务的消息接二连三，种种情况让我们不禁会怀疑：文学在当下是不是不行了？
+  纸媒衰弱、书店关店潮，其实文学的“式微”已是老生常谈，大家一边看着莫言、余华、苏童等大作家上综艺，讲过去自己写作、投稿、成名的故事，一边则唏嘘文学的黄金时代不再。
+  依赖情怀和愿景造势..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714612.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1735874923000-->
+<p><a href="https://chinadigitaltimes.net/chinese/714612.html">iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/714612.html" title="iWeekly周末画报｜文学杂志纷纷停刊，这位主编却说“我们还在继续”" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/01/211-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>文学杂志纷纷停刊，这位主编却说“我们还在继续”<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/周末画报" target="_blank">Emin</a><br /><strong>发表日期：</strong>2025.1.1<br /><strong>来源：</strong><a href="https://archive.ph/pyzRp" target="_blank">iWeekly周末画报</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/小鸟文学" target="_blank">小鸟文学</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>在刚过去的2024年年底，文学界坏消息不断。文学出版物停刊的新闻、线上文学内容停止服务的消息接二连三，种种情况让我们不禁会怀疑：文学在当下是不是不行了？</p>
+  <p>纸媒衰弱、书店关店潮，其实文学的“式微”已是老生常谈，大家一边看着莫言、余华、苏童等大作家上综艺，讲过去自己写作、投稿、成名的故事，一边则唏嘘文学的黄金时代不再。</p>
+  <p>依赖情怀和愿景造势一时，但是现实是残酷的。为此我们找到“小鸟文学”的主编杨樱聊了聊，从她身上我们发现，我们对文学的爱，不过就是对生活以及所有可能性最真诚的爱。</p>
+  <h2 id="section"><strong>文学的黄昏？</strong></h2>
+  <p>前不久《书城》杂志发布休刊公告，宣布2025年1月1日起休刊。《书城》杂志创刊于1993年，曾经数度改版，经历多次停刊复刊。杂志海派风格鲜明，内容丰富，栏目众多，每一期内容都呈现出不同的阅读趣味，曾经一度被称为中国最像《纽约客》的杂志。无独有偶，在年底的时候，《文学报》也以交出“推进主流媒体系统性变革”的说法，宣布2025年暂停纸质版的独立邮发。</p>
+  <p>不只是传统出版物，线上文学内容似乎也光景不好。一年出12卷的线上付费订阅文学杂志《小鸟文学》也迎来2024年12月31日停止更新的日子，服务完最后一个订阅读者之后暂停服务。一度被视为国内文学播客先行者的“可以听的文学杂志”跳岛FM前不久官方宣布了现有团队解散的消息，并更新了最后一期《第218期：自由潜水特别版：上岛吃饭，虽然是散伙饭》。</p>
+  <p>以上种种情况会让很多人不禁会怀疑：文学的黄昏是不是就在眼前了？纸媒衰弱、书店关店潮，其实文学的“式微”已是老生常谈。但其实就算行业坏消息频发，依旧还是有不少文学品牌依旧在前行，不仅不断有新品牌冒出来，而且不少原来的品牌也根据自身情况调整后有了更好的发展。</p>
+  <p>在拥抱不确定的当下，或许有一点是确定的：文学的发展未来会如何，不仅需要时间来证明，同样也需要我们这一代人的努力。</p>
+  <h2 id="section-1"><strong>小鸟文学</strong></h2>
+  <p>2021年“小鸟文学Aves”App上线，作为一款付费线上文学杂志，它精准攒聚了一众年轻的文学爱好者，尤其是最初“小鸟文学Aves”开出的高于文学刊物的稿酬一时间令诸多文学爱好者精神为之一振，并引发众多文学创作者关注。它在2021年获得刀锋图书奖“年度阅读平台”。</p>
+  <p>“小鸟文学Aves”App上线的时候主编杨樱说：“小鸟代表自由，有时代表高度，我们叫小鸟，因为我们还向往一点天空上的事。”3年后，小鸟即将和我们告别，杨樱又说：</p>
+  <p>“文学本身不是为了某个目的而产生的，如果一定要说什么目的，它是为了成为经典和永恒。”</p>
+  <p>因为没有目的，也就无所谓成功与失败。对于小鸟的停止更新，杨樱不以为意：“App的内容停止更新不代表我们的工作停了，我们还会一直做，还会用不同的形式去呈现。”</p>
+  <p>在小鸟运营的3年多时间里出了不少杰出作品。2022年，伦敦政经学院的人类学博士生周雨霏的非虚构作品《驯服与被驯服的：在拉萨繁育藏獒》在小鸟首发，之后被大众知晓，拿了不少文学奖项。这篇关于藏獒和女性的故事既有社会研究者的学术严谨性，也不乏创作文学感，“我们找周雨霏约稿，结果都超出了我们的预期。”杨樱用周雨霏的例子向我们解释小鸟文学的独一无二性，“我们多少提供了一些市面上没有的、有创新型的内容，一般人可能不会写。”</p>
+  <p>比起专业作者，集聚素人写作者的“24 小时文学聚会”栏目更是小鸟独特的典型体现。“这是个素人投稿的栏目，很多作者非常年轻，90后95后甚至00后，他们的文字一看就是没什么规则，是没有被规范过的表达。可能看上去有点野，题材也非常野。一般常规的文学杂志是不会接这些题材这些文章的，但是小鸟就会发表。”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/post-714612-6777592d7662a." alt="image" /></p>
+  <h2 id="section-2"><strong>敬美好生活</strong></h2>
+  <p>即使“小鸟文学”停更，杨樱是不会停的。自始至终，文学只是杨樱创造美好生活途径的一个分身。至于何为美好生活，要追溯到10年前。</p>
+  <p>2014年社交媒体初起，杨樱和伊险峰带着团队打着“何为美好生活”的口号上线了《好奇心日报》。凭借着高质量的PGC（Professionally Generated Content）输出，《好奇心日报》讲述在消费主义下如何更好生活，其商业洞察、生活方式和年轻中产的内容核心精准打中20-40岁之间、关注商业、科技、互联网“高精尖”人群，一时间《好奇心日报》和杨樱名利双收。只是4年后的政治环境对内容的自由度产生极大限制，两人做出关停的决定。产品是关停了，但是做内容的心从来没有放弃。之后某一天，投资人找到他们，希望他们再试一试媒体平台。“我们第一反应当然是好，并且我们决定依然围绕‘何为美好生活’这件事。不过，新闻是不能做了，那我们不如就转向文学好了。于是小鸟就诞生了。某种程度上，‘小鸟’和‘好奇心’是一脉相承的，‘小鸟’是‘何为美好生活’文学向的衍生。”</p>
+  <p>说干就干，2021年“小鸟文学”上线，定位成一款专注于提供高质量文学内容的阅读平台，内容涵盖虚构文学和非虚构文学。“小鸟”提供付费阅读服务，由杨撄担任主编，编辑委员会由彭伦、李静睿、曾梦龙、伊险峰等人组成。“在世界变得模糊不定之时，让文学杂志的价值是在一个崩坏的语言环境里，让人保持对文字的敬意”——这是编辑们口中的小鸟文学，也是杨樱心里的“美好生活”。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/post-714612-6777592d7dea3." alt="image" /></p>
+  <p><strong>Q：作为一个线上的软件内容主编，和传统出版的主编有什么不同的地方吗？</strong></p>
+  <p><strong>杨樱：</strong>我觉得挑稿子严格是我们的一个特点。我们有一个三个人的文学小组来审稿，我们三个人对每一篇稿子投票，要得到三票的稿子才能上刊。</p>
+  <p>做小鸟我们还有一些比较犟的部分，我们希望用不同的形式去接触正在发生的话题。虽然文学不是新闻，但是我们想成为一个新闻的延长线。不能直接触碰，但是希望可以回应，哪怕是以从知识结构上作为回应都可以。这在我们的各个栏目中都能看到。我觉得这是我们和传统文学刊物最大的不同。也许可以说我们距离当下更近。</p>
+  <p>我觉得这种内容的“当代性”并不是线上和线下的区别，这是一种选择。你需要有一种对“当代性”探讨的欲望和动力，然后去落实。</p>
+  <p>传统的文学杂志，比如说最知名的《收获》《花城》《人民文学》等等，作品被刊载在这些杂志上已经是一种荣誉、一种社会认可，你被选中排上可能要等几个月甚至一两年，这种情况下它没有必要实现这种当代性。</p>
+  <p><strong>Q：在大众认知中，文学就是理想主义的代名词，你同意这个说法吗？</strong></p>
+  <p><strong>杨樱：</strong>我觉得文学是理想主义代名词之一吧，理想主义太多了，它不只有文学。</p>
+  <p>我大学的时候有过一个经历。我当时看一本叫《植物的欲望》书，那本书是讲的四种日常植物的故事，其中讲到苹果。书中提到“苹果是如何驯化人类”的这件事，大意是说苹果得到被大范围普及播种其实并不是我们人类的选择，而是它吸引人类让人类繁殖它。我看完大受震撼，非常有感触，于是我在一次计算机课上和我身边的同学分享了这件事。我到现在都记得他看我的眼神，可以说毕生难忘。那种眼神不是好奇也不是责备，而是一种质疑，他质疑你为什么要和我说这么奇怪的东西。在他的认知里，这件事是一件没有用、没有价值的事情。在那个时候我好像就感觉到，我似乎和他们不太一样。</p>
+  <p>其实文学应该就是类似这种东西，没有目的性，没有实际价值。文学本身不是为了某个目的而产生的，如果一定要说什么目的，我觉得它为了成为经典和永恒。文学是值得做的事情，我现在也还有能力去做。</p>
+  <p><strong>Q：你如何看待AI与创作的关系？</strong></p>
+  <p><strong>杨樱：</strong>我也刚开始玩这个东西，挺好玩，各种AI工具有各自擅长的，我会有时候用它写个诗、画个画，跟它玩一玩。很多初级工作AI可以完成的很好，比如说翻译，比如说写请假条、说明书。你如果说AI与创作的关系，我觉得它在努力模仿人类的思维模式，而且在学习速度上不可小觑。现在如果拿AI生成一段影像，可能真的还分不清到底是人工的还是AI的，从这个意义上来说AI是有创造力的。我觉得去评价AI的创造力其实要看操作AI的人。你如何训练它，它就会有何种的体现，你是什么水准，你就能把它用到什么水准。在这个意义上来说，AI是人类非常好的合作者。</p>
+  <p>本哈明·拉巴图特的《理性的疯狂梦》是一本讲述人工智能的长篇小说。它从冯诺依曼一直探讨到李世石，给我印象最深的地方就是它描写李世石败给了Alphago的部分。他有一个场景的描写，说李世石输掉比赛有一个很重要的原因是因为他的羞耻心，作为人类，他在做完一些行为之后他会有情感，这种情感可能是羞耻、懊悔也可能是感觉压力。Alphago与之相比最大的优势就是完全没有任何感情的干扰。比如在下了一步非常愚蠢的棋之后，Alphago毫无感觉，虽然操作它的科学家可能惭愧的无地自容；同样的事情发生在李世石身上他可能就会想死，也会影响他的下一步棋。</p>
+  <p>虽然我无法评价AI是不是一个很有创造力的作者，它的终极形态我也无法想象、更无法评判，但是我认为，AI是一定不会取代人类的。像书里写到的，无法产生感情可能是AI的优势，这也正是它无法取代人类的原因。只要你有足够的方法，AI是可以被预测的，它的路径和结果都是可以被推算出来的。但是人类因为有感情，所以不可预测。你不会知道突然之间去杀了个日本小孩的人在想什么，你也不会知道冲到广场上刺伤几十个人的人他在想什么，甚至连你身边亲近的朋友家人你都不理解他们在想什么。</p>
+  <p>我觉得人性的这种不可预测是创造力的来源。</p>
+  <p><strong>Q：你最近在读什么书可以和我们分享下吗？有哪些书对你产生过很大的影响？</strong></p>
+  <p><strong>杨樱：</strong>我大学里看过一本小说叫《手提箱》，篇幅很短大概就5万字，作者是谢尔盖·多甫拉托夫，是一个流亡的苏联作家。前两天我碰到了他的另一部小说，叫《我们一家人》，他真的就是写了十三位个性鲜明、血肉丰满的亲人，读起来轻松诙谐很有趣，背后其实是有深刻意义的。多甫拉托夫在被译成简体中文好像就这两本书，06、07年左右出过一版后就没有再版了，现在好像只能在图书馆找到了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/post-714612-6777592d86f31." alt="image" /></p>
+  <p>今年我非常集中的看了米兰·昆德拉的所有作品，除了话剧没有看其他应该都看过了。当然我以前就看过昆德拉，但是没什么印象，今年又重新再看觉得太喜欢了，把他列为我最喜欢的作者。我看到有八卦说为什么昆德拉没有得诺贝尔文学奖，是因为他太挑剔了。因为他这个的性格所以其他文学创作者和他的关系都不好，诺奖的评委也就自然不喜欢他。这个算是八卦野史，但我觉得挺有意思。</p>
+  <p>还有一个我很想向大家推荐的作家，齐格蒙特·鲍曼。他的书可以给你很多东西，所有东西都可以在他的书里找到答案，什么狗屁工作、什么工具人、什么女性主义，这些他都讲过，而且是20年前讲的。你很难想象一个人可以从集中营说到 TikTok，这个人太神奇了。</p>
+  <p><strong>Q：小鸟文学的未来会如何？</strong></p>
+  <p><strong>杨樱：</strong>目前的状况就是我们打算暂停了。我们会更新到今年12月31日，是因为我们最后的一个订阅者订阅期间是这个，就算只有一个订阅者，我也要为他更新完。不过我想强调下，暂停的是付费部分的电子杂志，但是内容形式是我们自己定的，我们还会继续做内容，但可能不是以一月一卷的形式。具体是什么形式我还没有计划。其他新媒体平台上的更新我们还会继续。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-01-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-02/%E4%B8%AD%E5%9B%BD%E6%96%B0%E9%97%BB%E5%91%A8%E5%88%8A-%E5%86%8D%E6%9B%9D%E9%9D%9E%E6%AD%A3%E5%B8%B8%E6%AD%BB%E4%BA%A1-%E6%8C%87%E5%B1%85-%E5%88%B6%E5%BA%A6%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E">
+          中国新闻周刊｜再曝非正常死亡，“指居”制度何去何从？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4">
+          作者不详｜纪念李医生被训诫5周年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90">
+          极昼工作室｜在极越最后的日子
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-02/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.1.2">
+          每日一语 2025.1.2
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90">
+            前一篇：极昼工作室｜在极越最后的日子
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4">
+            后一篇：作者不详｜纪念李医生被训诫5周年
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-01-02/%E4%BD%9C%E8%80%85%E4%B8%8D%E8%AF%A6-%E7%BA%AA%E5%BF%B5%E6%9D%8E%E5%8C%BB%E7%94%9F%E8%A2%AB%E8%AE%AD%E8%AF%AB5%E5%91%A8%E5%B9%B4">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-01-02/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%9C%A8%E6%9E%81%E8%B6%8A%E6%9C%80%E5%90%8E%E7%9A%84%E6%97%A5%E5%AD%90">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+" />
+    <meta property="og:description" content="
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" />
+    <meta property="twitter:title" content="【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5256)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714514.html&t=%E3%80%90CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91%E3%80%91%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0%EF%BC%882024%EF%BC%89%E2%80%94%E2%80%94%E2%80%9C%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86%EF%BC%8C%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714514.html&t=%E3%80%90CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91%E3%80%91%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0%EF%BC%882024%EF%BC%89%E2%80%94%E2%80%94%E2%80%9C%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86%EF%BC%8C%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80%E2%80%9D&d=2024-12-31&e=
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+
+
+  谨以此片向《四月之声》致敬。本项目将持续更新，直到《四月之声》及同类影片在中国解禁。
+      
+
+  2024年12月，中国数字时代搜集整理了过去一个月（2024.12.1—2024.12.29）期间反映国内热点事件的网络视频，以时间为序进行混剪制作了本月月度视频——《十二月之声（2024）》。
+  在内容上，该片揭示了当局的言论审查、权利打压，也记录了民间疾苦、民众呐喊与抗争；在形式上，该片模仿了2022年4月22日发布、随即风行全网并遭到审查的抗议上海封城的短片《四月之声》。
+  我们谨以此片向这部匿名作品致敬。本项目也将持续更新，直到《四月之声》及同类影片在中国解禁。
+  同时，在中国数字空间更新有该作品的彩色版本。相关链接：https://youtu.be/GqYJnCGy..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714514.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/714514.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/714514.html&text=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/714514.html&title=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/714514.html&title=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”&body=
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/714514.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/714514.html&title=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”&caption=
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”&url=https://chinadigitaltimes.net/chinese/714514.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-31
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/714514.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714514.html&t=%E3%80%90CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91%E3%80%91%E5%8D%81%E4%BA%8C%E6%9C%88%E4%B9%8B%E5%A3%B0%EF%BC%882024%EF%BC%89%E2%80%94%E2%80%94%E2%80%9C%E4%BD%A0%E4%BB%AC%E6%98%AF%E5%85%94%E5%AD%90%E5%B0%BE%E5%B7%B4%E9%95%BF%E4%B8%8D%E4%BA%86%E4%BA%86%EF%BC%8C%E8%83%BD%E6%8C%BA%E5%87%A0%E5%A4%A9%E5%91%80%E2%80%9D&d=2024-12-31&e=
+【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”
+——
+
+
+  谨以此片向《四月之声》致敬。本项目将持续更新，直到《四月之声》及同类影片在中国解禁。
+      
+
+  2024年12月，中国数字时代搜集整理了过去一个月（2024.12.1—2024.12.29）期间反映国内热点事件的网络视频，以时间为序进行混剪制作了本月月度视频——《十二月之声（2024）》。
+  在内容上，该片揭示了当局的言论审查、权利打压，也记录了民间疾苦、民众呐喊与抗争；在形式上，该片模仿了2022年4月22日发布、随即风行全网并遭到审查的抗议上海封城的短片《四月之声》。
+  我们谨以此片向这部匿名作品致敬。本项目也将持续更新，直到《四月之声》及同类影片在中国解禁。
+  同时，在中国数字空间更新有该作品的彩色版本。相关链接：https://youtu.be/GqYJnCGy..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F714514.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1735640978000-->
+<p><a href="https://chinadigitaltimes.net/chinese/714514.html">【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/714514.html" title="【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2024/12/2024.12-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>谨以此片向<a href="https://chinadigitaltimes.net/chinese/tag/%E5%9B%9B%E6%9C%88%E4%B9%8B%E5%A3%B0">《四月之声》</a>致敬。本项目将持续更新，直到《四月之声》及同类影片在中国解禁。</p>
+  <p>    <iframe title="【CDT月度视频】十二月之声（2024）——“你们是兔子尾巴长不了了，能挺几天呀”" width="1080" height="608" src="https://www.youtube.com/embed/FpPwE8BYiiU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</p>
+  <p>2024年12月，中国数字时代搜集整理了过去一个月（2024.12.1—2024.12.29）期间反映国内热点事件的网络视频，以时间为序进行混剪制作了本月月度视频——《十二月之声（2024）》。</p>
+  <p>在内容上，该片揭示了当局的言论审查、权利打压，也记录了民间疾苦、民众呐喊与抗争；在形式上，该片模仿了2022年4月22日发布、随即风行全网并遭到审查的抗议上海封城的短片《四月之声》。</p>
+  <p>我们谨以此片向这部匿名作品致敬。本项目也将持续更新，直到《四月之声》及同类影片在中国解禁。</p>
+  <p>同时，在<a href="https://chinadigitaltimes.net/space/CDT%E6%9C%88%E5%BA%A6%E8%A7%86%E9%A2%91">中国数字空间</a>更新有该作品的彩色版本。相关链接：<a href="https://youtu.be/GqYJnCGynPI">https://youtu.be/GqYJnCGynPI</a></p>
+  <p><strong>致谢：</strong>感谢 @李老师不是你老师 、@YesterdayBigcat 对中国相关事件素材的收集与分享。</p>
+  <hr />
+  <ul>
+    <li>2024.11.30 上海大学生与滴滴司机就社会问题激烈争论</li>
+    <li>2024.12.1 江西一所学校的公开课上，学生们回头鼓掌欢迎领导</li>
+    <li>2024.12.1 吴柳芳直播中坦言做网络主播是基于现实原因</li>
+    <li>2024.12.1 网友发现华为、OPPO手机无法消除中国国旗</li>
+    <li>2024.12.2 江苏老奶奶在路边翻垃圾桶，好心女子提供帮助</li>
+    <li>2024.12.3 大陆学生访团遭遇台大学生举牌抗议</li>
+    <li>2024.12.4 《00后被背刺的一天》</li>
+    <li>2024.12.4 陕西交警以北斗数据为处罚依据，无视具体情况</li>
+    <li>2024.12.4 沈阳市民在银行大额取款被拒绝，理由“涉国家机密”</li>
+    <li>2024.12.5 广西女孩被霸凌反被妈妈指责“为什么就你被人打”</li>
+    <li>2024.12.5 成都一家“俄罗斯国家馆”的产品大都是中国制造</li>
+    <li>2024.12.5 一位博主强烈建议不要在俄罗斯进行实业投资</li>
+    <li>2024.12.5 广东一企业家称外资接近“绝缘状态”、“好进不好出”</li>
+    <li>2024.12.5 河北廊坊一男子称找工作时因年龄太大屡被拒绝</li>
+    <li>2024.12.6 网友刚买一年的长城炮皮卡车尾气检测无法通过</li>
+    <li>2024.12.7 河南周口一男子大衣被偷，接警员得知大衣价格后挂电话</li>
+    <li>2024.12.7 安徽一拾荒老人在镜头前唱《映山红》</li>
+    <li>2024.12.8 小鹏汽车CEO称公司开启每周6天每天20小时的双班生产</li>
+    <li>2024.12.8 河南女子从小被送养，首次见到亲生父母时哭诉悲惨遭遇</li>
+    <li>2024.12.8 河南驻马店一男子没有衣服穿，用塑料袋裹满全身御寒（同期，央视节目关注中国多地出现的“毛衣缠树”现象）</li>
+    <li>2024.12.8 在阿萨德政权倒台的视频下方，上千网友集体许愿“接好运”</li>
+    <li>2024.12.9 吉林四平实验中学门口放置石墩，一男子发表评论</li>
+    <li>2024.12.9 广州市民难以忍受长时间安检排队而集体冲卡</li>
+    <li>2024.12.9 山西女硕士走失15年被寻回，警方通报“被收留”</li>
+    <li>2024.12.10 成都地铁三河场站一名女子被人持剪刀捅伤</li>
+    <li>2024.12.10 沈阳一手机商透露Mate 70系列销量惨淡遭华为报复</li>
+    <li>2024.12.10 河北女子揭露餐饮加盟骗局：品牌方制造火爆假象</li>
+    <li>2024.12.11 深圳南山区湾悦府发生煤气爆炸，一女子被困后坠楼</li>
+    <li>2024.12.11 山东临沂一老师问幼儿园孩子们“长大了想干什么？”</li>
+    <li>2024.12.12 广东南华寺3名尼姑不满被指假僧人怒骂中共</li>
+    <li>2024.12.13 网友发现珠海市许多地方安装了防撞石墩</li>
+    <li>2024.12.12 湖北省武汉黄冈交界处，工人正在拆除核酸采样点</li>
+    <li>2024.12.13 武汉一中年大叔欲跳桥自杀被市民和警察拦阻</li>
+    <li>2024.12.13 极越汽车突然宣布解散，多地员工发起维权行动</li>
+    <li>2024.12.13 抖音博主以“我养了一群猪”比喻中共控制百姓</li>
+    <li>2024.12.14 广东一便利店老板无奈感叹大环境很差挣不到钱</li>
+    <li>2024.12.14 河北新河县居民家中的柴火灶被燃气公司贴上封条</li>
+    <li>2024.12.14 广东数名交警执法时将一名外卖员强行按倒在地</li>
+    <li>2024.12.15 成都市温江区政府外，大批民众反对当地修建火葬场</li>
+    <li>2024.12.15 石家庄冀铁馨苑小区停水两天后，小区业主聚集维权</li>
+    <li>2024.12.15 上海唐宁书店创始人发视频称因外部压力被迫停业</li>
+    <li>2024.12.16 成都石室成飞中学学生食堂设“学霸就餐区”和“普通就餐区”</li>
+    <li>2024.12.16 深圳九围社区因道路建设给居民发放骑车出行的临时证件</li>
+    <li>2024.12.16 河南一女子用一条狗比喻中国人忙碌、贫穷的一生</li>
+    <li>2024.12.18 湖南麻阳县一辣椒种植户称当地的宣传报道夸大产量</li>
+    <li>2024.12.18 人大教授向哈萨克斯坦取经“如何让女大学生服服帖帖、老老实实生孩子？”</li>
+    <li>2024.12.19 成都一男子在微信群组织圣诞聚会被警察上门提醒“不许搞活动”</li>
+    <li>2024.12.19 黑龙江亚雪公路交警严查非法运营，一辆汽车顶着交警逃离</li>
+    <li>2024.12.19 湖北一外卖小哥把孩子放尾箱里去送餐，几位市民在旁守护</li>
+    <li>2024.12.19 武汉万隆广场倒闭，业主们敲碗敲锅喊口号维权</li>
+    <li>2024.12.20 成都一外卖小哥被交警绊倒电动车后，瞬间情绪崩溃</li>
+    <li>2024.12.20 上海一男子惊讶韩国同事周五不加班，“有点接受不了”</li>
+    <li>2024.12.21 “基本常识”作者项栋梁在广州地铁投放“常识广告”（后被撤下）</li>
+    <li>2024.12.22 许多打工人为省房租，选择在广州的桥洞下搭帐篷生活</li>
+    <li>2024.12.23 网友发现广东顺德某宣传栏“优生生育”下方是“计划生育”</li>
+    <li>2024.12.23 一视频博主建议对失业率数据进行“横向历史对比”</li>
+    <li>2024.12.24 河南封丘景杰小学教导学生“圣诞节这天给你平安的是志愿军”</li>
+    <li>2024.12.24 四川一男子身着军装腰系“手榴弹”，大喊 “平安夜是他们的”</li>
+    <li>2024.12.24 河南一家甜品店的店主称，门外精心搭建的圣诞树被要求拆除</li>
+    <li>2024.12.25 河南某地圣诞节期间，工人已将商场外的圣诞树拆除</li>
+    <li>2024.12.26 吉林一女子称社区工作人员多次打电话提醒别忘记缴纳医保</li>
+    <li>2024.12.26 湖南退伍老兵们穿军装在韶山毛泽东纪念馆拍照遭警方阻拦</li>
+    <li>2024.12.26 一网友夜间在公共场合围观警察执法，被要求不得拍照录像</li>
+    <li>2024.12.26 西安农民工们集体讨要工资，奉劝年轻保安“不要为了工资丧尽天良”</li>
+    <li>2024.12.26 上海海银财富暴雷后受害们聚集维权，有人被拖上大巴带走</li>
+    <li>2024.12.26 比亚迪巴西工厂的中国工人们按手印联署“比亚迪没有现代奴役”声明</li>
+    <li>2024.12.27 辽宁依兰县女子实名举报自己被强制住院、强行精神病诊断的经历</li>
+    <li>2024.12.28 B站UP主“星哥街头采访”翻拍热门段子“你是如何理解恐怖主义的？”</li>
+    <li>2024.12.28 江西南昌一男子挂着习近平画像在户外演讲为李宜雪发声</li>
+    <li>2024.12.29 成都一外卖员和保安因电动车停放问题发生争执</li>
+  </ul>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2024-12-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-31/%E9%9D%92%E5%B9%B4%E5%BF%97Youthology-2024%E6%80%A7%E5%88%AB%E8%A7%82%E5%AF%9F-%E5%A7%90%E5%A7%90%E4%BB%AC%E5%81%9A%E5%88%B0%E4%BA%86-%E6%88%91%E4%BB%AC%E4%B9%9F%E5%8F%AF%E4%BB%A5">
+          青年志Youthology｜2024性别观察：姐姐们做到了，我们也可以！
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-31</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-31/%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2-%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7-%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025">
+          阜成门六号院｜期待一个不再沉闷，人人扬眉吐气的2025
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E6%B7%B1%E6%B6%B5%E8%AF%B4-%E9%82%AF%E9%83%B8%E7%BB%93%E5%B1%80-%E8%BF%9B%E4%B8%80%E5%AF%B8%E7%9A%84%E6%AC%A2%E5%96%9C%E4%B8%8E%E8%89%B0%E9%9A%BE">
+          深涵说｜邯郸结局：进一寸的欢喜与艰难
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-30</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-30/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.12.30">
+          每日一语 2024.12.30
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-31/%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E8%82%96%E5%B0%94%E8%8C%A8-%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E8%AE%A92025%E5%B9%B4%E6%88%90%E4%B8%BA%E4%B8%B0%E6%94%B6%E5%B9%B4">
+            前一篇：德国总理肖尔茨：“我们可以让2025年成为丰收年”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-31/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B">
+            后一篇："小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E8%82%96%E5%B0%94%E8%8C%A8-%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E8%AE%A92025%E5%B9%B4%E6%88%90%E4%B8%BA%E4%B8%B0%E6%94%B6%E5%B9%B4'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-31/%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2-%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7-%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-30/%E6%B7%B1%E6%B6%B5%E8%AF%B4-%E9%82%AF%E9%83%B8%E7%BB%93%E5%B1%80-%E8%BF%9B%E4%B8%80%E5%AF%B8%E7%9A%84%E6%AC%A2%E5%96%9C%E4%B8%8E%E8%89%B0%E9%9A%BE'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-12-31/%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E8%82%96%E5%B0%94%E8%8C%A8-%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E8%AE%A92025%E5%B9%B4%E6%88%90%E4%B8%BA%E4%B8%B0%E6%94%B6%E5%B9%B4">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-31/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-31/%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2-%E6%9C%9F%E5%BE%85%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%86%8D%E6%B2%89%E9%97%B7-%E4%BA%BA%E4%BA%BA%E6%89%AC%E7%9C%89%E5%90%90%E6%B0%94%E7%9A%842025">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-30/%E6%B7%B1%E6%B6%B5%E8%AF%B4-%E9%82%AF%E9%83%B8%E7%BB%93%E5%B1%80-%E8%BF%9B%E4%B8%80%E5%AF%B8%E7%9A%84%E6%AC%A2%E5%96%9C%E4%B8%8E%E8%89%B0%E9%9A%BE">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
