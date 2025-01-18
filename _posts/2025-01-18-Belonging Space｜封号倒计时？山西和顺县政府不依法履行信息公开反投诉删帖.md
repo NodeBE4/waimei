@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Belonging Space｜封号倒计时？山西和顺县政府不依法履行信息公开反投诉删帖"
+date: 2025-01-18T17:30:12.000Z
+author: 不忘初心
+from: https://chinadigitaltimes.net/chinese/715186.html
+tags: [ 中国数字时代 ]
+comments: True
+categories: [ 中国数字时代 ]
+---
+<!--1737221412000-->
+[Belonging Space｜封号倒计时？山西和顺县政府不依法履行信息公开反投诉删帖](https://chinadigitaltimes.net/chinese/715186.html)
+------
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715186.html" title="Belonging Space｜封号倒计时？山西和顺县政府不依法履行信息公开反投诉删帖" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/01/Screenshot-2025-01-18-at-8.34.02 AM-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a><div style="width:42%;float:right;padding-left:20px"><div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no"><div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>CDT 档案卡</div><div class="su-spoiler-content su-u-clearfix su-u-trim"><strong>标题：</strong>封号倒计时？山西和顺县政府不依法履行信息公开反投诉删帖<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/BelongingSpace" target="_blank">Belonging Space</a><br><strong>发表日期：</strong>2025.1.17<br /><strong>来源：</strong><a href="https://web.archive.org/web/20250118163403/https://mp.weixin.qq.com/s/e3G8y6cPa1_QnVI8AYT_Pw" target="_blank">微信公众号“Belonging Space”</a><br><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/山西女硕士被“收留”事件" target="_blank">山西女硕士被“收留”事件</a><br><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。</div></div></div><p>1月14日，<a href="https://chinadigitaltimes.net/chinese/715192.html" title="Belonging Space转载了“吾我五木”的文章">Belonging Space转载了“吾我五木”的文章</a>，希望共同监督和顺县政府依法履行信息公开职责，公开其执行《中国反对拐卖人口行动计划》的实施细则、各年度实施方案、对相关部门/机构的考核结果等。</p><p>据了解，上文发布后，和顺县政府法务人员迅速联系到作者沟通，表示会尽快反馈结果，因此作者也答应暂时不会再提起行政复议或行政诉讼。原本这是件政府部门“积极回应公众关切”、创造“全民反拐”社会氛围的好事，然而事实证明，该工作人员的核心目标只是“删帖”。向作者塞钱被拒后，ta采取的方式是向微信平台投诉文章侵犯和顺县人民政府办公室的名誉/隐私/肖像权。</p><p>且不说政府办公室是否有名誉权一说，具体投诉理由更令人费解：什么时候政府打拐工作是国家秘密、法律法规禁止公开的内容了？那其他地市公开的贯彻落实实施方案岂不是泄露国家秘密？（例：<a href="https://www.changzhi.gov.cn/xxgkml/szfgzbm/srmzfbgt/zbwj/201401/t20140107_245996.shtml">https://www.changzhi.gov.cn/xxgkml/szfgzbm/srmzfbgt/zbwj/201401/t20140107_245996.shtml</a>） 难道不是不公开才危害社会稳定、公共安全和国家安全吗？还是说这是变相承认自身打拐工作（哪怕是在制定政策文件层面）做得不到位、不好看、羞于见人？</p><p>投诉后果可能是短期或永久封号，这是悬在本号头顶的达摩克利斯之剑。Belonging Space建立近4年，不过8000多读者，却也堪称“共同走过风雨”，从一个地下防空洞的社区空间，到一个被有组织网暴和解散的网络倡导小组，我们从不认为做过任何不合法不合理的行动。</p><p>但偏偏微信规则说，如果你自行承认侵权，处罚可以减轻或取消。不得不说，这让我有一丝动摇。百般困扰之下，只能把本号的命运交给各位读者投票决定（投票截止到北京时间1月20日9时）：</p><p>距离接到投诉已经过去3个工作日，也就是说最晚下周四，微信平台应该会做出侵权与否的判定。请大家拭目以待。欢迎扫码关注备用号“WeBelonging”，谨防失联。</p><p>P.S. 开个赞赏，以备未来行政诉讼之用，如果用不上，会全额捐赠给个人认为靠谱的精障女性服务机构。顺便在此公示一下，上一篇已被删除的公号文章的打赏使用情况：共收到531.66元，227.75用于微信群红包推广文章，304元捐赠给江西写作者“关爱农村精障姐妹”项目。</p><p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/640.png" alt="img" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/640-1.png" alt="img" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/640.jpeg" alt="img" /></p>
+</div>
