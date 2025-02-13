@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+" />
+    <meta property="og:description" content="
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了" />
+    <meta property="twitter:title" content="【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715467.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91+%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%BD%9C%E4%B8%BA%E5%86%9C%E6%B0%91%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E5%87%91%E2%80%9C%E7%88%B1%E5%9B%BD%E2%80%9D%E7%9A%84%E7%83%AD%E9%97%B9%E4%BA%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715467.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91+%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%BD%9C%E4%B8%BA%E5%86%9C%E6%B0%91%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E5%87%91%E2%80%9C%E7%88%B1%E5%9B%BD%E2%80%9D%E7%9A%84%E7%83%AD%E9%97%B9%E4%BA%86&d=2025-01-30&e=
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+
+
+  
+  我很少会为读者留言生气，作为上网20多年的老公知，不动气是基本素养。但前两天看到一条留言，还是动了感情。
+  这条留言是这样说的：
+  我家是农村的，我妈今年77岁了，她每个月领的钱确实只有一二百块钱，但还有土地的补贴一年一两千元，生病吃药办的慢性病，她有三高，每个月报销后吃药只需要几十元，家里有菜地，随便门口种一点，家里亲戚给一点不需要买蔬菜，鸡蛋也不需要买，腰椎骨折过，做了手术，报销后只花了两千多，有自家的房子，不需要交任何的税和管理费。每年有两次免费的简单的体检。进城坐公交车是免费的。我的家乡只是安徽一个贫困县的小乡村……
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：作为农民的孩子，就不要去凑“爱国”的热闹了作者：彭远文发表日期：2025.1.30来..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715467.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715467.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715467.html&text=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715467.html&title=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715467.html&title=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了&body=
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715467.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715467.html&title=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了&caption=
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了&url=https://chinadigitaltimes.net/chinese/715467.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-01-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715467.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715467.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91+%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%BD%9C%E4%B8%BA%E5%86%9C%E6%B0%91%E7%9A%84%E5%AD%A9%E5%AD%90%EF%BC%8C%E5%B0%B1%E4%B8%8D%E8%A6%81%E5%8E%BB%E5%87%91%E2%80%9C%E7%88%B1%E5%9B%BD%E2%80%9D%E7%9A%84%E7%83%AD%E9%97%B9%E4%BA%86&d=2025-01-30&e=
+【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了
+——
+
+
+  
+  我很少会为读者留言生气，作为上网20多年的老公知，不动气是基本素养。但前两天看到一条留言，还是动了感情。
+  这条留言是这样说的：
+  我家是农村的，我妈今年77岁了，她每个月领的钱确实只有一二百块钱，但还有土地的补贴一年一两千元，生病吃药办的慢性病，她有三高，每个月报销后吃药只需要几十元，家里有菜地，随便门口种一点，家里亲戚给一点不需要买蔬菜，鸡蛋也不需要买，腰椎骨折过，做了手术，报销后只花了两千多，有自家的房子，不需要交任何的税和管理费。每年有两次免费的简单的体检。进城坐公交车是免费的。我的家乡只是安徽一个贫困县的小乡村……
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：作为农民的孩子，就不要去凑“爱国”的热闹了作者：彭远文发表日期：2025.1.30来..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715467.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1738229771000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715467.html">【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715467.html" title="【404文库】 往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了" rel="nofollow"><img width="564" height="255" src="https://chinadigitaltimes.net/chinese/files/2025/01/image-1738229259879-564x255.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/01/image-1738229259879.png" alt="file" /></p>
+  <p>我很少会为读者留言生气，作为上网20多年的老公知，不动气是基本素养。但前两天看到一条留言，还是动了感情。</p>
+  <p>这条留言是这样说的：</p>
+  <p>我家是农村的，我妈今年77岁了，她每个月领的钱确实只有一二百块钱，但还有土地的补贴一年一两千元，生病吃药办的慢性病，她有三高，每个月报销后吃药只需要几十元，家里有菜地，随便门口种一点，家里亲戚给一点不需要买蔬菜，鸡蛋也不需要买，腰椎骨折过，做了手术，报销后只花了两千多，有自家的房子，不需要交任何的税和管理费。每年有两次免费的简单的体检。进城坐公交车是免费的。我的家乡只是安徽一个贫困县的小乡村……</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>作为农民的孩子，就不要去凑“爱国”的热闹了<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/往事与随想" target="_blank">彭远文</a><br /><strong>发表日期：</strong>2025.1.30<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/dHyQfi03shrjDPyEd0O3ig" target="_blank">微信公众号“往事与随想”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中共版爱国主义" target="_blank">中共版爱国主义</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>她想借此说明中国很好，但透过这段话，我看到的是：</p>
+  <p>一个77岁的农村老人，有三高，腰椎骨折过，一个月加上土地补贴收入三百元左右，除掉药费还剩两百多，一次手术可能就要花掉她一整年的收入，这个年纪了，还要下地劳作……</p>
+  <p>我忍不住说了一句：“我能看出你‘爱国’，没有看出你爱妈妈，哪怕一点点设身处地的体谅。”这是温和的批评，其实我内心想说的是：你妈妈一辈子活得如此艰难，还被你拿来为国唱赞歌，你良心何在？！</p>
+  <p>那种说我“汉奸”“走狗”“殖人”的，我基本上孰若无睹，波澜不惊。但上面这么一段平平无奇的话，却让我心情激荡。</p>
+  <p>作为一个农民的孩子，去凑什么“爱国”的热闹呢？那些在网上迎合你的人，说不定人家的父母是体制内的，拿着几千上万的退休金，天天去跳广场舞，衣食无忧，悠哉悠哉。我不是说农民的孩子就没有资格“爱国”，如果像一些人所定义的“爱国”就只能说政府国家的好话，农民的孩子就不要去了，非要去“讲好中国故事”，你也讲不好，你觉得好的，讲出来，反而“抹黑“了国家。</p>
+  <p>上面是愤激的话，稍微冷静一下，我就知道火发错了方向。上面那段话太常见了，尤其是在农村。原因很简单，农民从来没有被善待过，所以稍微有点改善，就感恩涕零。你可以哀其不幸怒其不争，但这种姿态未免太高了，农民不仅在物质被剥削，精神上也被剥削，物质精神双重贫困。他们是受害者，不应该是被责怪的对象（因为写了这篇文章，上面那条留言我会删掉，这样的话是谁说的不重要）。</p>
+  <p>我一直反对“中国人配得上他们的苦难”这种说法，就在于这里面暗含的居高临下和与我无关，用最愤激的语气说着最犬儒的话。</p>
+  <p>王怡有句话，当时不喜欢，这些年越来越觉得说得好：“知而不言是一种罪。”</p>
+  <p>因为有人有意让他们不知道。</p>
+  <p>他们不知道，<a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484337&amp;idx=1&amp;sn=406854e845498e34d39577ebccef1fd5&amp;scene=21#wechat_redirect">农民是最早为全社会缴纳社保的</a>，如果中国哪个群体最应该领取最高的养老金，那就是七八十岁那一代的农村老人。</p>
+  <p>他们不知道，自己现在缴纳的养老保险，在现收现付的养老体制之下，自己是在帮城里人养他们的父母，而自己父母却没人管。</p>
+  <p>他们不知道，中国财政支出之中，养老金收入最高的群体财政补贴最多，养老金收入最低的群体财政补贴最少。</p>
+  <p>他们不知道，当小红书上那些人向外国人显摆蔬菜水果多么便宜，电商多么方便的时候，其实是自己在负重前行让<a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484032&amp;idx=1&amp;sn=d46eefcbe00314fbbd45d7dc1446766b&amp;scene=21#wechat_redirect">别人占了便宜</a>。</p>
+  <p>他们不知道，<a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484334&amp;idx=1&amp;sn=856754beb687ad65ef6d14bcdf71ffac&amp;scene=21#wechat_redirect">中国有的是钱，只不过分给自己的太少</a>。</p>
+  <p>他们不知道，<a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484344&amp;idx=1&amp;sn=9dbe41fd5047e9ba18ff74e34dadd934&amp;scene=21#wechat_redirect">是自己养活了政府，而不是政府养活了自己</a>。<br />……</p>
+  <p>有人也许会说，你说了又有什么用？这年头还想当公知未免不合时宜。我知道，有些人是不可说服的，因为他们占了便宜，屁股决定脑袋；还有一些人太年轻，生活会教育他们；还有一些人太老了，老到难以接受新的观念了……而剩下的绝大多数人，只要知道，就会明白。</p>
+  <p>我对人性有信心。就好像这次小红书中美交流一样，你会发现，原来普遍的仇恨教育之下，许多人仍然拥有友善和热情。以及，在我那篇《<a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484337&amp;idx=1&amp;sn=406854e845498e34d39577ebccef1fd5&amp;scene=21#wechat_redirect">提高农民基础养老金到800元的8个理由</a>》的文末投票中，赞成票548票，反对票只有8票。</p>
+  <p>而大多数明白人中，总会有人敢于问出“凭什么”？</p>
+  <p>凭什么就不能减少机关事业单位的退休金来提高农民的基础养老金？</p>
+  <p><a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484216&amp;idx=1&amp;sn=34e0b22c53b286215f9ee76d82ddb715&amp;scene=21#wechat_redirect">凭什么电动车就不能拥有小汽车一样的路权</a>？</p>
+  <p><a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484020&amp;idx=1&amp;sn=32de29b7db7b38223431a33a35107abc&amp;scene=21#wechat_redirect">凭什么技校生不能得到大学生一样的教育资源投入？</a></p>
+  <p>……</p>
+  <p>我知道，还会有人说你这是书生之见，不切实际，幼稚天真……也许，在社会在渐进改良的时候，更多考虑现实操作性是对的，但当倒车开得轰隆响的时候，还在拿不切实际说事到底是谁不切实际啊？</p>
+  <p>作为农民的孩子，不要去凑“爱国”的热闹，如果你看清一些事实，明白了一些道理，一定要说出来了，说给更多的农民的孩子听。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-01-30</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-30/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.1.29">
+          每日一语 2024.1.29
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-30</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-30/%E9%BB%91%E5%99%AA%E9%9F%B3-DeepSeek%E5%BC%95%E5%8F%91%E7%BE%8E%E8%82%A1%E6%9A%B4%E8%B7%8C-%E5%AE%83%E7%9C%9F%E8%83%BD%E6%94%B9%E5%8F%98%E5%9B%BD%E8%BF%90">
+          黑噪音｜DeepSeek引发美股暴跌，它真能改变国运？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-29</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-29/%E5%A4%8F%E6%A2%A6%E6%94%BE%E6%98%A0%E5%8E%85-B%E7%AB%99%E6%98%A5%E6%99%9A%E9%A2%84%E5%88%B6%E5%BC%B9%E5%B9%95-%E9%A6%96%E6%89%B9%E4%BA%B2%E5%8E%86%E8%80%85%E7%9C%9F%E5%AE%9E%E6%84%9F%E5%8F%97%E6%98%AF%E4%BB%80%E4%B9%88">
+          夏梦放映厅｜B站春晚预制弹幕：首批亲历者真实感受是什么？
+        </a>
+      </li>
+    
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-30/%E9%80%BE70%E5%90%8D%E7%BD%97%E5%85%B4%E4%BA%9A%E9%9A%BE%E6%B0%91%E5%9C%A8%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E4%BA%9A%E9%BD%90%E7%99%BB%E9%99%86">
+            前一篇：逾70名罗兴亚难民在印度尼西亚亚齐登陆
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-30/%E8%89%BE%E5%93%88%E8%BF%88%E5%BE%B7-%E6%B2%99%E6%8B%89%E4%BB%BB%E5%8F%99%E5%88%A9%E4%BA%9A%E8%BF%87%E6%B8%A1%E6%97%B6%E6%9C%9F%E6%80%BB%E7%BB%9F-%E5%8D%A1%E5%A1%94%E5%B0%94%E5%9F%83%E7%B1%B3%E5%B0%94%E5%B0%86%E8%AE%BF%E5%A4%A7%E9%A9%AC%E5%A3%AB%E9%9D%A9">
+            后一篇：艾哈迈德·沙拉任叙利亚过渡时期总统 卡塔尔埃米尔将访大马士革
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E9%80%BE70%E5%90%8D%E7%BD%97%E5%85%B4%E4%BA%9A%E9%9A%BE%E6%B0%91%E5%9C%A8%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E4%BA%9A%E9%BD%90%E7%99%BB%E9%99%86'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E8%89%BE%E5%93%88%E8%BF%88%E5%BE%B7-%E6%B2%99%E6%8B%89%E4%BB%BB%E5%8F%99%E5%88%A9%E4%BA%9A%E8%BF%87%E6%B8%A1%E6%97%B6%E6%9C%9F%E6%80%BB%E7%BB%9F-%E5%8D%A1%E5%A1%94%E5%B0%94%E5%9F%83%E7%B1%B3%E5%B0%94%E5%B0%86%E8%AE%BF%E5%A4%A7%E9%A9%AC%E5%A3%AB%E9%9D%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E9%BB%91%E5%99%AA%E9%9F%B3-DeepSeek%E5%BC%95%E5%8F%91%E7%BE%8E%E8%82%A1%E6%9A%B4%E8%B7%8C-%E5%AE%83%E7%9C%9F%E8%83%BD%E6%94%B9%E5%8F%98%E5%9B%BD%E8%BF%90'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-01-29/%E5%A4%8F%E6%A2%A6%E6%94%BE%E6%98%A0%E5%8E%85-B%E7%AB%99%E6%98%A5%E6%99%9A%E9%A2%84%E5%88%B6%E5%BC%B9%E5%B9%95-%E9%A6%96%E6%89%B9%E4%BA%B2%E5%8E%86%E8%80%85%E7%9C%9F%E5%AE%9E%E6%84%9F%E5%8F%97%E6%98%AF%E4%BB%80%E4%B9%88'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-01-30/%E9%80%BE70%E5%90%8D%E7%BD%97%E5%85%B4%E4%BA%9A%E9%9A%BE%E6%B0%91%E5%9C%A8%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E4%BA%9A%E9%BD%90%E7%99%BB%E9%99%86">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-01-30/%E8%89%BE%E5%93%88%E8%BF%88%E5%BE%B7-%E6%B2%99%E6%8B%89%E4%BB%BB%E5%8F%99%E5%88%A9%E4%BA%9A%E8%BF%87%E6%B8%A1%E6%97%B6%E6%9C%9F%E6%80%BB%E7%BB%9F-%E5%8D%A1%E5%A1%94%E5%B0%94%E5%9F%83%E7%B1%B3%E5%B0%94%E5%B0%86%E8%AE%BF%E5%A4%A7%E9%A9%AC%E5%A3%AB%E9%9D%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-01-30/%E9%BB%91%E5%99%AA%E9%9F%B3-DeepSeek%E5%BC%95%E5%8F%91%E7%BE%8E%E8%82%A1%E6%9A%B4%E8%B7%8C-%E5%AE%83%E7%9C%9F%E8%83%BD%E6%94%B9%E5%8F%98%E5%9B%BD%E8%BF%90">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-01-29/%E5%A4%8F%E6%A2%A6%E6%94%BE%E6%98%A0%E5%8E%85-B%E7%AB%99%E6%98%A5%E6%99%9A%E9%A2%84%E5%88%B6%E5%BC%B9%E5%B9%95-%E9%A6%96%E6%89%B9%E4%BA%B2%E5%8E%86%E8%80%85%E7%9C%9F%E5%AE%9E%E6%84%9F%E5%8F%97%E6%98%AF%E4%BB%80%E4%B9%88">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>往事与随想｜一起来说交公粮的往事 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+往事与随想｜一起来说交公粮的往事
+——
+" />
+    <meta property="og:description" content="
+往事与随想｜一起来说交公粮的往事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="往事与随想｜一起来说交公粮的往事" />
+    <meta property="twitter:title" content="往事与随想｜一起来说交公粮的往事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715531.html&t=%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715531.html&t=%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B&d=2025-02-02&e=
+往事与随想｜一起来说交公粮的往事
+——
+
+
+  
+  上一篇有很多人留言，讲到当初交公粮的事情，我觉得很好，所以摘录整理单发一篇。也希望以此为由头，大家一起来讲讲。
+  年轻的时候，很瞧不起我父亲，觉得他太过谨慎小心。现在很佩服，我父亲人称“彭三百斤”，可以把三百斤的担子挑上十几步的台阶；村里人一起去邻村给人插秧，被当地人为难（有意插得飞快，让我们村的人跟不上出丑），我父亲出马，追得邻村的人踉踉跄跄，过了好多年还有人传颂。我父亲是木匠，经常出去给人修房子，母亲扛下家里的重体力劳动，人家浇红薯才浇一遍，我们家已经浇完第二遍了。我也跟着一起干，对母亲也有些抱怨，我十岁左右就有了自己的小粪桶，挑得肩膀上长了一个鼓包。年纪渐长，对父母的佩服越来越多，一是有了自己孩子，知道养家糊口的不易，二是对父母当初身处的环境总算有了些理解。
+  作为农民的孩子，我们会说话，就要多说一些。有些事情，不说出..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715531.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715531.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715531.html&text=往事与随想｜一起来说交公粮的往事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715531.html&title=往事与随想｜一起来说交公粮的往事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715531.html&title=往事与随想｜一起来说交公粮的往事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=往事与随想｜一起来说交公粮的往事&body=
+往事与随想｜一起来说交公粮的往事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715531.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715531.html&title=往事与随想｜一起来说交公粮的往事&caption=
+往事与随想｜一起来说交公粮的往事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=往事与随想｜一起来说交公粮的往事&url=https://chinadigitaltimes.net/chinese/715531.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>往事与随想｜一起来说交公粮的往事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715531.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715531.html&t=%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3%EF%BD%9C%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B&d=2025-02-02&e=
+往事与随想｜一起来说交公粮的往事
+——
+
+
+  
+  上一篇有很多人留言，讲到当初交公粮的事情，我觉得很好，所以摘录整理单发一篇。也希望以此为由头，大家一起来讲讲。
+  年轻的时候，很瞧不起我父亲，觉得他太过谨慎小心。现在很佩服，我父亲人称“彭三百斤”，可以把三百斤的担子挑上十几步的台阶；村里人一起去邻村给人插秧，被当地人为难（有意插得飞快，让我们村的人跟不上出丑），我父亲出马，追得邻村的人踉踉跄跄，过了好多年还有人传颂。我父亲是木匠，经常出去给人修房子，母亲扛下家里的重体力劳动，人家浇红薯才浇一遍，我们家已经浇完第二遍了。我也跟着一起干，对母亲也有些抱怨，我十岁左右就有了自己的小粪桶，挑得肩膀上长了一个鼓包。年纪渐长，对父母的佩服越来越多，一是有了自己孩子，知道养家糊口的不易，二是对父母当初身处的环境总算有了些理解。
+  作为农民的孩子，我们会说话，就要多说一些。有些事情，不说出..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715531.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1738482978000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715531.html">往事与随想｜一起来说交公粮的往事</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715531.html" title="往事与随想｜一起来说交公粮的往事" rel="nofollow"><img width="564" height="281" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1738482865184-564x281.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1738482865184.png" alt="file" /></p>
+  <p><a href="https://mp.weixin.qq.com/s?__biz=MzI1NzEwOTI3OQ==&amp;mid=2648484472&amp;idx=1&amp;sn=d315080aa611e1ba10cc220966ff8ed0&amp;scene=21#wechat_redirect">上一篇</a>有很多人留言，讲到当初交公粮的事情，我觉得很好，所以摘录整理单发一篇。也希望以此为由头，大家一起来讲讲。</p>
+  <p>年轻的时候，很瞧不起我父亲，觉得他太过谨慎小心。现在很佩服，我父亲人称“彭三百斤”，可以把三百斤的担子挑上十几步的台阶；村里人一起去邻村给人插秧，被当地人为难（有意插得飞快，让我们村的人跟不上出丑），我父亲出马，追得邻村的人踉踉跄跄，过了好多年还有人传颂。我父亲是木匠，经常出去给人修房子，母亲扛下家里的重体力劳动，人家浇红薯才浇一遍，我们家已经浇完第二遍了。我也跟着一起干，对母亲也有些抱怨，我十岁左右就有了自己的小粪桶，挑得肩膀上长了一个鼓包。年纪渐长，对父母的佩服越来越多，一是有了自己孩子，知道养家糊口的不易，二是对父母当初身处的环境总算有了些理解。</p>
+  <p>作为农民的孩子，我们会说话，就要多说一些。有些事情，不说出来，就会湮灭，而只要说出来，说出事实，自然就会使人明白。下面是我整理的读者留言（小字体都是读者留言，不是我说的话，上一篇有读者误解，特此说明）：</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>一起来说交公粮的往事<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/往事与随想" target="_blank">彭远文</a><br /><strong>发表日期：</strong>2025.2.2<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/ki7z7tFFCK836k-ce75i-A" target="_blank">微信公众号“往事与随想”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/城乡差距" target="_blank">城乡差距</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>——————————————————</p>
+  <p>1994年我到石家庄一个粮食主产区当乡镇当副书记。当时粮食订购和“三提五统”是农民的主要负担。粮食订购（交公粮）是这样的，小麦在家门口卖给商贩是0.8元一斤，拉到粮站是0.4元一斤，国家磨成面粉供应“吃商品粮”的是0.18一斤小麦面粉。一亩地要交180斤小麦，还有少量的玉米、小杂粮、棉花。总共折合200斤小麦没问题，也就是上世纪九十年代老百姓一亩地要为国家贡献80多块钱！相当于我当时的月工资！三提五统是维持村活动的经费，没听说过城市老百姓还要交钱维护国家管理经费！这就是老农民对国家的贡献。给交过公粮的农民发保险，天经地义！（老康）</p>
+  <p>那个交公粮视频的博主说的实实在在，我年年就怕交粮这个活，不仅要精挑细选好粮食，还要肩挑车拉走十几里地到粮站，这不是最难的，难的的是你好不容易排到队了，说你粮食不够干，还要晒，就在那个附近找场子晒，谁也不会再拖回去，因为不仅已经精疲力尽，并且你拖回去明天再来还得在经过今天这个程序。找场子很难，因为大家都要晒，都要抢地方。他说的那个递烟给负责人的场景太历历在目了。也奇怪，我和博主相隔千万里，为什么这个递烟以及站长口袋里储藏很多散烟的情景这么一样啊。（刘辰诞）</p>
+  <p>记得10来岁那年随父母去粮站交公粮，整整排队折腾了7天（都知道堵车的滋味吧？这里排队是要把装着稻谷的口袋卸下来放地上，前面一家过称了后面的就往前挪一点，那可是二三十袋80多斤一袋的重量啊！），那7天真的太漫长了。那是我们家最好的稻谷啊！父亲晒了又晒，扬了又扬，可到了那边质检还是没能过关，说是含水量不达标、有杂质。于是在粮站提供的空地上又晒，晒过了再上风车，再上振筛，这里每个流程都是要排队的，交公粮的实在是太多了，粮站的工作人员又是到点上下班，老百姓真的是太难了。（富康园艺）</p>
+  <p>我小时候跟我父亲拉着架子车去十五外的乡里交公粮，挑最好的，晒的干干的，汗流浃背的拉到地方，那里的工作人员，还凶巴巴的对我们说话，父亲只是给他们低三下四的讲好话，好可怜呐。（万有真原）</p>
+  <p>交公粮的时候，粮站的人超级恶心，我们家算村干部稍微好点，对其他人都是各种喝骂找碴，在粮袋里戳洞取粮，不是太潮就是空壳太多，压秤，每年都要打架。（皮皮昕）</p>
+  <p>我今年六十一岁，当年交公粮的时候我们家五口人，交小麦是十二袋，每袋一百一十斤左右，可到了粮站，它们压级压价压称，一袋麦子的重量不到一百斤，你还不能找它们论理，找它们论理就有人修理你，给你小鞋穿。（家和万事兴）</p>
+  <p>记忆清晰，交粮的地方工作人员很凶，这不好那不行，凶的很，满推车送去，空车回来，路上家人满脸的痛惜。（唯一）</p>
+  <p>我86年的，和父亲一起到乡里交过，验不合格还要自己在大广场上晾晒，从我家到乡里有10几公里山路，需要走4-5小时，印象老深刻了。（自正员）</p>
+  <p>家里人口多的，没有粮食交公粮的，或者粮食质量差验不上公粮的，还得必须交差价。啥意思？你家需要交500斤公粮，市场价8毛，公粮价5毛，不交公粮可以，但是得补齐3毛的差价，150元。小时候太幸福了。（Jason Zhao）</p>
+  <p>我小时候也跟随我父亲爷爷交过公粮，收粮的还刁难农民，粮食要干要好，有一点稗子都不行，所以能交了公粮，农民都很高兴，交不了还有麻烦。（枫林）</p>
+  <p>作为种粮大省，家里7亩地，最高时一年要上交1500斤小麦作为公粮！（花树生涯）</p>
+  <p>我70年代出生的，我记得我十六岁就帮我父亲挑稻谷还公粮了，应该要还200多斤，我父亲一个人担不了那么多，实际上我家那时五口人，有水田山田共不足20担《每人3.8担，一亩=6担》，一年种两季，总共也就能收5000来斤稻谷，还公粮大约去了20分之一，当然现在都是种一季了那时还要交特产税，农业税，村提留，乡统筹等等一百多块钱，这一百多块钱都是靠卖米的钱来还，那时米就几毛钱斤，一直到96，97年米才卖1块左右。（遇见）</p>
+  <p>我小时候亲身经历过，家里收的粮食，如果丰收了，将近一半交公粮，欠收时，几近三分之二上交。我父母现在每月领一百二十元养老金。（真水无香）</p>
+  <p>记得小时候交公粮，100斤稻谷过了机器剩下80斤达标，不达标的被机器筛出来拿回家自己吃。（Summer瑞）</p>
+  <p>农民不但要交工粮还要交生猪，交了生猪才有肉票，记得90年代之前农村还有交过养老互助金。（陈蓉）</p>
+  <p>除了公粮，还有购粮任务，价格远低于市场价，而且任务重，完不成要每百斤补差价6元，还有每户一年一头生猪，完不成每头补差价45元。（耕读传家）</p>
+  <p>记得小时候家里要拉一拖拉机粮食去交公粮，差的不要。我们小学生也要交一定的黄豆小麦到学校。其实农民很知足的，爸妈时常很满足地说现在每个月给一百多呢。（青）</p>
+  <p>我79的交农业税，还交过麦子，还交过苹果。小时候上小学给老师交过学费，交过校舍维修费，交过桌椅使用费，交过迟到费，还交过暑假老师旅游费。老师吃饭是在学生家吃的，学生家长轮流做饭。（常Z茹）</p>
+  <p>小时候我印象很深刻，我们家一年收的稻谷卖掉的钱交了农业税，还有其他的一些税之后，在除去了农药化肥钱之外，几无剩余啊！（大兵）</p>
+  <p>我记得很清楚的几年，由于水灾几乎颗粒无收，然后家人借钱交公粮。（李峰辉）</p>
+  <p>小时候交过公粮的路过，种出来稻谷，交一半去粮站，自家留一半的样子，基本一年下来也就是勉强够一家人吃饭。（零用钱）</p>
+  <p>那时候没有化肥，谁知道一亩地才收多少斤小麦，交完公粮所剩无几，想吃一顿白面条都是奢侈，想想那时候的生活悲哀呀……（家在心中）</p>
+  <p>确实记忆犹新，全村人在打场里晒稻谷，晒玉米，把最好的筛出来去交公余粮，剩下的才是家里吃的，一年里总有几个月是不够吃拿着小口袋去借粮下锅。（何凤萍）</p>
+  <p>80年代我们那有一年因为干旱大家都收成不好，交完公梁，到处借都借不到了，我们那有户人家吃老鼠药自杀了，我们家是天天喝粥，基本算米汤这样活下来的。（bobby波）</p>
+  <p>还记得小时候和爸妈去交公粮的场景，每家收完粮食第一时间排队去交公粮，剩下的再去给孩子们交学费，一年到头，都不一定能吃上一顿肉。（新心所向）</p>
+  <p>我的母亲来自农村，她说有一年，一整年都没吃过肉。（SKY）</p>
+  <p>红薯出来吃红薯，胡豆出来吃胡豆。～～我九十多岁的奶奶现在吃小米都是混在甘薯糊里，生怕小米掉了浪费。（hej-99006）</p>
+  <p>有人知道农民把自己种的小麦交公粮换回来玉米吃吗？（春天）</p>
+  <p>这在我们老家当年是很常见的事，坐标福建，拿米换番薯米。我庆幸的是爹妈太溺爱我，我家属于换米的，换回来给我吃。（丁三）</p>
+  <p>——————————————————</p>
+  <p>上一篇我说“根据历史学家高王凌的测算，地主占有的农业剩余大概在10%-12%之间”，有人不明白，可以去找<a href="https://mp.weixin.qq.com/s?__biz=MzI4Mzc0ODc5Mw==&amp;mid=2247484899&amp;idx=2&amp;sn=32349f6f5a582566277d9dbd05b289dd&amp;scene=21#wechat_redirect">高王凌先生关于租佃关系的著作</a>来看看，简单的说就是“地主占有土地不足总耕地面积的40%，地租实收率如上所述，约为30%左右，则这一数值当为12%，或更低一些”。而皇权不下县，所以很容易得出“要说从农民身上汲取剩余的能力，没有任何一个朝代能和这几十年相比”的结论。</p>
+  <p>上一篇我还看到很多留言，说“农民分到了土地”，这句话几乎成了集体无意识，但这并非事实，与其说是“农民分到了土地”，不如说是“农民被捆到了土地上面”。回顾历史，确实有那么几年，农民分到土地，但还没捂热就被收走了（用暴力替代买卖得来的东西，别人要收回去也很容易）。所谓土地国有也好，集体所有也好，究其实质，是所有农民成为佃农给一个地主干活。而既然开始失去，就一定会失去更多，随着进一步“改造”，农民很快失去了自由迁徙和自由交易的权利，交公粮，统购统销便在这样的背景下展开。</p>
+  <p>我们今天争取提高农民基础养老金，本质而言，是争取平等的国民待遇，是要从摔进去的历史深坑里爬起来。我们这些农民的孩子，也许已经走出农村很远，走到了城市，甚至成为体制一员，但有时候回望一下来路，也许会明白：我们的父母辈和同学，并非不勤奋不聪明，而是运气不好罢了，他们的生活，原本不应该是这样的，而能够走出农村的，不仅仅是因为自己的努力，也是运气使然。昨天有位读者留言说：“我虽体制内，与君鼓与呼。”</p>
+  <p>给我妈买了个小物件，一个老牛拉犁，一个寿星伴🦌。我妈马上懂了，跟我侄子说牛拉犁辛苦，农村牛老了是不杀的，它辛苦了一辈子。又跟我侄子说，奶奶以前过得还不如老黄牛。侄子追问，我妈说老牛晚上还有休息，我们那时白天在地里挣工分，晚上还要给大的喂饭，小的喂奶，安顿好睡了，坐起来搓麻绳纳鞋底做鞋子。我妈说时，我一改插话习惯，静静听我妈说。（王慧景）</p>
+  <p>我们都该有静静听父母讲往事的时刻，正好是春节，如果还没有踏上返程，可以问问父母当年交公粮的往事，然后在下面留言，谢谢。总说“历史是人民写就的”，但如果我们不写，历史就是另外一种写法。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-02/%E6%98%9F%E7%90%83%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA-%E4%BA%BA%E6%B0%91%E7%9A%84%E5%8A%AA%E5%8A%9B%E5%BA%94%E8%AF%A5%E8%A2%AB%E4%BA%BA%E6%B0%91%E5%B8%81%E7%9C%8B%E5%88%B0">
+          星球商业评论｜人民的努力应该被人民币看到
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-02/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E5%9B%BD%E8%BF%90%E7%BA%A7%E7%9A%84%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88">
+          旧闻评论｜国运级的科技成果到底是什么？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B">
+          【404文库】往事与随想｜一起来说交公粮的往事
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-01/Hayami-%E5%A4%B1%E5%8E%BB-%E7%A6%BB%E6%95%A3-%E6%9F%8F%E6%9E%97%E9%85%B7%E5%84%BF%E8%A1%8C%E8%B5%B0%E8%B7%AF%E7%BA%BF">
+          Hayami｜失去、离散、柏林酷儿行走路线
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B">
+            前一篇：【404文库】往事与随想｜一起来说交公粮的往事
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-02/ARD%E5%BE%B7%E5%9B%BD%E8%B6%8B%E5%8A%BF%E8%B0%83%E6%9F%A5-%E5%BE%B7%E5%9B%BD%E4%BA%BA%E5%B8%8C%E6%9C%9B%E5%87%8F%E5%B0%91%E6%8E%A5%E6%94%B6%E9%9A%BE%E6%B0%91">
+            后一篇：ARD德国趋势调查：德国人希望减少接收难民
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-02/ARD%E5%BE%B7%E5%9B%BD%E8%B6%8B%E5%8A%BF%E8%B0%83%E6%9F%A5-%E5%BE%B7%E5%9B%BD%E4%BA%BA%E5%B8%8C%E6%9C%9B%E5%87%8F%E5%B0%91%E6%8E%A5%E6%94%B6%E9%9A%BE%E6%B0%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-02/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E5%9B%BD%E8%BF%90%E7%BA%A7%E7%9A%84%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-02/ARD%E5%BE%B7%E5%9B%BD%E8%B6%8B%E5%8A%BF%E8%B0%83%E6%9F%A5-%E5%BE%B7%E5%9B%BD%E4%BA%BA%E5%B8%8C%E6%9C%9B%E5%87%8F%E5%B0%91%E6%8E%A5%E6%94%B6%E9%9A%BE%E6%B0%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-02/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E5%9B%BD%E8%BF%90%E7%BA%A7%E7%9A%84%E7%A7%91%E6%8A%80%E6%88%90%E6%9E%9C%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-02/404%E6%96%87%E5%BA%93-%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%80%E8%B5%B7%E6%9D%A5%E8%AF%B4%E4%BA%A4%E5%85%AC%E7%B2%AE%E7%9A%84%E5%BE%80%E4%BA%8B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

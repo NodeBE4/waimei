@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>"小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+" />
+    <meta property="og:description" content="
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content=""小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望" />
+    <meta property="twitter:title" content=""小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Fal-hongkongers-rally-in-britain-harassed-12022024140117.html&t=%22%E5%B0%8F%E7%B2%89%E7%BA%A2%22%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5+%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Fal-hongkongers-rally-in-britain-harassed-12022024140117.html&t=%22%E5%B0%8F%E7%B2%89%E7%BA%A2%22%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5+%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B&d=2025-01-30&e=
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+
+
+ 英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。   
+   列斯手足连线提供
+  
+  
+  刚刚过去的周末，英国多地都有港人举行集会，抗议香港"四十七人案"判刑。其中周六（11月30日）在列斯举行的默站抗议期间，一名说普通话的华裔男子向集会港人投掷饮料，并以粗言秽言辱骂港人及展示不文明手势。他被港人追截时，疑似致电中国使馆求助被拒，通话间质疑中国使馆有何作用。当地警方向本台确认，他们接报后一度以涉嫌袭击拘捕一名22岁男子，后因搜证工作有困难而放人。
+  
+    中共渗透延伸英国　半数在英港人对游行集会却步
+    在英港人游行集会"悼七一"　中国粉红滋扰生事惹众怒
+    在英港人集会后疑被中国学生殴打　警方已介入调查
+  
+  “那中国使馆它可以起到什么样..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Fal-hongkongers-rally-in-britain-harassed-12022024140117.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html&text="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html&title="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html&title="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望&body=
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html&title="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望&caption=
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text="小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望&url=https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>"小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-01-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Fal-hongkongers-rally-in-britain-harassed-12022024140117.html&t=%22%E5%B0%8F%E7%B2%89%E7%BA%A2%22%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5+%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B&d=2025-01-30&e=
+“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+——
+
+
+ 英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。   
+   列斯手足连线提供
+  
+  
+  刚刚过去的周末，英国多地都有港人举行集会，抗议香港"四十七人案"判刑。其中周六（11月30日）在列斯举行的默站抗议期间，一名说普通话的华裔男子向集会港人投掷饮料，并以粗言秽言辱骂港人及展示不文明手势。他被港人追截时，疑似致电中国使馆求助被拒，通话间质疑中国使馆有何作用。当地警方向本台确认，他们接报后一度以涉嫌袭击拘捕一名22岁男子，后因搜证工作有困难而放人。
+  
+    中共渗透延伸英国　半数在英港人对游行集会却步
+    在英港人游行集会"悼七一"　中国粉红滋扰生事惹众怒
+    在英港人集会后疑被中国学生殴打　警方已介入调查
+  
+  “那中国使馆它可以起到什么样..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fgangtai%2Fal-hongkongers-rally-in-britain-harassed-12022024140117.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--NaN-->
+<p><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html">“小粉红”扰乱英国港人集会被围堵 求助中国使馆不果倍感失望</a>
+——</p>
+
+<div>
+<img src="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html/@@images/56b9178b-31cc-4626-b07e-8907fbebe1ee.jpeg" alt="&quot;小粉红&quot;扰乱英国港人集会被围堵   求助中国使馆不果倍感失望" title="&quot;小粉红&quot;扰乱英国港人集会被围堵   求助中国使馆不果倍感失望" height="465" width="620" referrerpolicy="no-referrer" /> <span class="lead_image_caption">英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。</span>   <div id="zoomattribute">
+<a id="single_image" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html/@@images/image/social_media" data-fancybox="" data-caption="英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。" title="英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。"> <img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /> </a> <span class="copyright">列斯手足连线提供</span>
+  </div>
+  <!-- zoomattribute -->
+  <p>刚刚过去的周末，英国多地都有港人举行集会，抗议香港"四十七人案"判刑。其中周六（11月30日）在列斯举行的默站抗议期间，一名说普通话的华裔男子向集会港人投掷饮料，并以粗言秽言辱骂港人及展示不文明手势。<span style="font-weight: 400;">他被港人追截时，疑似致电中国使馆求助被拒，通话间质疑中国使馆有何作用。当地警方向本台确认，他们接报后一度以涉嫌袭击拘捕一名</span><span style="font-weight: 400;">22</span><span style="font-weight: 400;">岁男子，后因搜证工作有困难而放人。</span></p>
+  <ul>
+    <li><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-08182023125130.html"><strong>中共渗透延伸英国　半数在英港人对游行集会却步</strong></a></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al1-07032023115747.html">在英港人游行集会"悼七一"　中国粉红滋扰生事惹众怒</a></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al2-06122023114121.html">在英港人集会后疑被中国学生殴打　警方已介入调查</a></strong></li>
+  </ul>
+  <p><span style="font-weight: 400;">“那中国使馆它可以起到什么样的作用？请告诉我。”中国电影《战狼</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;">》有一句对白“无论你在海外遇到了怎样的危险，请你记住，你的背后有一个强大的祖国。”不过现实却未必如此。</span></p>
+  <p><span style="font-weight: 400;">在刚过去的周六，港人组织“列斯手足连线”在当地市中心举办默站抗议，反对“四十七</span><span style="font-weight: 400;">人案”裁决。港人义工向途人讲解香港情况时，突然有一杯饮品在他们面前爆开，飞溅到义工身上，并溅湿示威标语。两名组织成员随即追截向他们投掷饮品的蓝衣华裔男子，并同时报警。该男子及两名华裔友人尝试逃离现场，但被成员紧追不舍。</span></p>
+  <p><strong>被港人以英文质问</strong>   "<strong>小粉红"普通话还击：你是不是中国人啊？</strong></p>
+  <p><span style="font-weight: 400;">现场影片所见，两名成员以英文质问该男子为何向他们掷奶昔，他却报以不文手势，并和友人轮流用普通话辱骂港人。</span></p>
+  <p><span style="font-weight: 400;">“你是不是中国人啊？”</span></p>
+  <p><span style="font-weight: 400;">“港独就去死啊！滚啊！”</span></p>
+  <p><span style="font-weight: 400;">“知不知道坚持一个中国原则？”</span></p>
+  <p><span style="font-weight: 400;">“解放军踏到你们香港地方的时候，你们就知道什么叫中国了！”</span></p>
+  <p><span style="font-weight: 400;"></span></p>
+  <figure class="image-richtext image-inline captioned" style="width:648px;">
+<img alt="英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。（列斯手足连线提供）" height="487" src="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html/469114452_18016476785636144_9070111771859210743_n.jpg/@@images/aa506763-6a09-478b-aa1f-8e32324e79f1.jpeg" title="469114452_18016476785636144_9070111771859210743_n.jpg" width="648" referrerpolicy="no-referrer" />    <figcaption class="image-caption">
+英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。（列斯手足连线提供）
+    </figcaption>
+<small></small>    <div id="zoomattribute">
+<a data-caption="英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。（列斯手足连线提供）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/gangtai/al-hongkongers-rally-in-britain-harassed-12022024140117.html/469114452_18016476785636144_9070111771859210743_n.jpg" id="single_image" title="英国港人举行集会，抗议香港“四十七人案”判刑，图为其中周六（11月30日）在列斯举行的默站抗议。（列斯手足连线提供）"><img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /></a>
+    </div>
+  </figure>
+  <p></p>
+  <p><strong>"小粉红"被同伴抛弃后致使中使馆：我需要领事馆的帮助</strong></p>
+  <p><span style="font-weight: 400;">该男子其后和同伴走散，落单的他疑似致电中国使馆求救：“我现在被港独份子威胁，港独份子贴着我的脸录像，我需要领事馆的帮助。”通话中，他亲口承认曾向港人投掷饮品，又声称自己可能会遇到危险，提出可否到最近的大使馆（领事馆）寻求协助。</span></p>
+  <p><span style="font-weight: 400;">不过他的要求显然得不到中国使馆正面回应，他拿着电话无奈地自问自答：“那中国使馆它可以起到什么样的作用？请告诉我。就是没啥作用了呗。”</span></p>
+  <p><span style="font-weight: 400;">西约克郡警方（</span><span style="font-weight: 400;">West Yorkshire Police</span><span style="font-weight: 400;">）周一（</span><span style="font-weight: 400;">12</span><span style="font-weight: 400;">月</span><span style="font-weight: 400;">2</span><span style="font-weight: 400;">日）回覆本台查询，确认警员当日接报后到场，并以涉嫌袭击拘捕一名二十二</span><span style="font-weight: 400;">岁男子，但后来因搜证工作有困难（</span><span style="font-weight: 400;">evidential difficulties</span><span style="font-weight: 400;">），把他无罪释放。</span></p>
+  <p><span style="font-weight: 400;">当日追截该男子的“列斯手足连线”创办人张晞晴和成员</span><span style="font-weight: 400;">Vic</span><span style="font-weight: 400;">向本台表示，他们当日已和警方录取口供，并提供所有影片等证据，但警方指该名男子声称自己只是“不小心把饮品掉在他们面前”。不过张晞晴表示，当时该男子距离他们有三</span><span style="font-weight: 400;">至五</span><span style="font-weight: 400;">米距离，不能接受其说法，并对警方的处理感到失望。</span></p>
+  <p><strong>港人组织：跨境镇压最佳例证</strong></p>
+  <p><span style="font-weight: 400;">张晞晴表示，事发前列斯国会议员索贝尔（</span><span style="font-weight: 400;">Alex Sobel</span><span style="font-weight: 400;">）曾到现场支持他们，并询问他们有关中国跨境镇压的情况，而随后的“小粉红”事件正是一个最佳例证。</span></p>
+  <p><span style="font-weight: 400;">张晞晴说：“这个男子有打电话给中国大使馆这个动作，我们的感觉就是，他觉得中国在英国的领土可以做一些行动去保护他，可能他不是很清楚他现在是在英国的领土上。当天也真的有很多中国学生不停在拍照，不论他们是受中国指派又好，他们是出于一颗爱国的心也好，其实在英国这个土地上，他们做这些行动，是非常影响我们来到英国的香港人。”</span></p>
+  <p><span style="font-weight: 400;">Vic</span><span style="font-weight: 400;">表示，他们目前难以追究涉事男子的法律责任，但他们会继续循不同途径追责，包括向国会议员申诉。</span></p>
+  <p><span style="font-weight: 400;">Vic </span><span style="font-weight: 400;">说：“我们是在英国这个有言论自由、集会自由的地方。我们做的事只是表达自己的意见，他可以不同意我们的意见，但他不能阻止我们发表我们的意见。所以我们绝对不会容许这件事不了了之，发生完就算。因为他们绝对不承认普世价值，也不拥抱言论自由和集会自由。我不认为英国应让他这样逍遥法外，而我们却默不作声。”</span></p>
+  <p><span style="font-weight: 400;">而过去两天，英国伦敦、雷丁等地都有不同集会游行，抗议“</span><span style="font-weight: 400;">47</span><span style="font-weight: 400;">人案”判刑，继续实践港人在英国的集会及言论自由。</span></p>
+  <p><span style="font-weight: 400;">责编：嘉远    网编：洪伟</span></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2025-01-30</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%A4%9A%E5%9C%B0%E9%93%B6%E8%A1%8C%E5%8F%96%E6%AC%BE%E9%9C%80%E8%AF%81%E6%98%8E%E8%B5%84%E9%87%91%E6%9D%A5%E6%BA%90-%E5%BC%95%E5%8F%91%E8%B4%A8%E7%96%91">
+          中国多地银行取款需证明资金来源 引发质疑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-01-30</time>
+        <a href="https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+          中国公安部部长王小洪访问古巴 与古巴领导人讨论网络安全等问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)">
+          专栏｜五更播客：李老师不是你老师 - 国内的监狱肯定有我一个床位｜白纸两年(2)
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-12-01</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-01/%E4%B8%93%E6%A0%8F-%E5%A4%9C%E8%AF%9D%E4%B8%AD%E5%8D%97%E6%B5%B7-%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%B8%BB%E5%85%9A%E6%B4%BE%E4%B8%AD%E7%9A%84-%E4%BA%A4%E5%8F%89%E5%85%9A%E5%91%98-%E7%9F%A5%E5%A4%9A%E5%B0%91">
+          专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-30/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E4%B8%8E%E4%BF%84%E7%BD%97%E6%96%AF%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%A0%E6%A0%B8%E5%8C%96%E8%B0%88%E5%88%A4%E4%B8%BA%E5%8F%AF%E8%83%BD%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE%E5%B8%A6%E6%9D%A5%E5%B8%8C%E6%9C%9B">
+            前一篇：特朗普支持与俄罗斯和中国的无核化谈判为可能达成协议带来希望
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+            后一篇：中国公安部部长王小洪访问古巴 与古巴领导人讨论网络安全等问题
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E4%B8%8E%E4%BF%84%E7%BD%97%E6%96%AF%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%A0%E6%A0%B8%E5%8C%96%E8%B0%88%E5%88%A4%E4%B8%BA%E5%8F%AF%E8%83%BD%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE%E5%B8%A6%E6%9D%A5%E5%B8%8C%E6%9C%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-01-30/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%AF%E6%8C%81%E4%B8%8E%E4%BF%84%E7%BD%97%E6%96%AF%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%A0%E6%A0%B8%E5%8C%96%E8%B0%88%E5%88%A4%E4%B8%BA%E5%8F%AF%E8%83%BD%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE%E5%B8%A6%E6%9D%A5%E5%B8%8C%E6%9C%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-01-30/%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%AE%89%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%B0%8F%E6%B4%AA%E8%AE%BF%E9%97%AE%E5%8F%A4%E5%B7%B4-%E4%B8%8E%E5%8F%A4%E5%B7%B4%E9%A2%86%E5%AF%BC%E4%BA%BA%E8%AE%A8%E8%AE%BA%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E7%AD%89%E9%97%AE%E9%A2%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

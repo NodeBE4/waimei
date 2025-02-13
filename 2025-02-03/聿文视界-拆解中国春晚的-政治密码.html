@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>聿文视界：拆解中国春晚的“政治密码” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+聿文视界：拆解中国春晚的“政治密码”
+——
+" />
+    <meta property="og:description" content="
+聿文视界：拆解中国春晚的“政治密码”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="聿文视界：拆解中国春晚的“政治密码”" />
+    <meta property="twitter:title" content="聿文视界：拆解中国春晚的“政治密码”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdecode-the-political-code-of-china-s-spring-festival-gala-20250203%2F7960744.html&t=%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C%EF%BC%9A%E6%8B%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%98%A5%E6%99%9A%E7%9A%84%E2%80%9C%E6%94%BF%E6%B2%BB%E5%AF%86%E7%A0%81%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdecode-the-political-code-of-china-s-spring-festival-gala-20250203%2F7960744.html&t=%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C%EF%BC%9A%E6%8B%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%98%A5%E6%99%9A%E7%9A%84%E2%80%9C%E6%94%BF%E6%B2%BB%E5%AF%86%E7%A0%81%E2%80%9D&d=2025-02-03&e=
+聿文视界：拆解中国春晚的“政治密码”
+——
+
+
+  
+Mon, 03 Feb 2025 11:23:07 GMT
+  
+  
+2025年中国央视春节文艺晚会上出演的机器人舞者。（照片来自视频截图）
+  
+  编者按：这是邓聿文为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。“春晚”是春节文艺晚会的简称，具体地说，是央视春节文艺晚会的简称，虽然现在每个地方的卫视都会搞自己的春晚，但提起春晚，人们一般想到的是央视春节文艺晚会。蛇年春晚是中国春节成为世界非遗之后的首个春晚。从1983年央视首次面向全民举办春节文艺晚会以来，它已经走过了42个年头，成为所谓的“新民俗”。除夕看春晚，成了许多中国人的“年夜饭”。 
+  
+    
+资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）
+    
+  
+  春晚是国家打造的..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdecode-the-political-code-of-china-s-spring-festival-gala-20250203%2F7960744.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html&text=聿文视界：拆解中国春晚的“政治密码”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html&title=聿文视界：拆解中国春晚的“政治密码”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html&title=聿文视界：拆解中国春晚的“政治密码”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=聿文视界：拆解中国春晚的“政治密码”&body=
+聿文视界：拆解中国春晚的“政治密码”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html&title=聿文视界：拆解中国春晚的“政治密码”&caption=
+聿文视界：拆解中国春晚的“政治密码”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=聿文视界：拆解中国春晚的“政治密码”&url=https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>聿文视界：拆解中国春晚的“政治密码”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-03
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdecode-the-political-code-of-china-s-spring-festival-gala-20250203%2F7960744.html&t=%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C%EF%BC%9A%E6%8B%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E6%98%A5%E6%99%9A%E7%9A%84%E2%80%9C%E6%94%BF%E6%B2%BB%E5%AF%86%E7%A0%81%E2%80%9D&d=2025-02-03&e=
+聿文视界：拆解中国春晚的“政治密码”
+——
+
+
+  
+Mon, 03 Feb 2025 11:23:07 GMT
+  
+  
+2025年中国央视春节文艺晚会上出演的机器人舞者。（照片来自视频截图）
+  
+  编者按：这是邓聿文为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。“春晚”是春节文艺晚会的简称，具体地说，是央视春节文艺晚会的简称，虽然现在每个地方的卫视都会搞自己的春晚，但提起春晚，人们一般想到的是央视春节文艺晚会。蛇年春晚是中国春节成为世界非遗之后的首个春晚。从1983年央视首次面向全民举办春节文艺晚会以来，它已经走过了42个年头，成为所谓的“新民俗”。除夕看春晚，成了许多中国人的“年夜饭”。 
+  
+    
+资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）
+    
+  
+  春晚是国家打造的..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdecode-the-political-code-of-china-s-spring-festival-gala-20250203%2F7960744.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1738582742000-->
+<p><a href="https://www.voachinese.com/a/decode-the-political-code-of-china-s-spring-festival-gala-20250203/7960744.html">聿文视界：拆解中国春晚的“政治密码”</a>
+——</p>
+
+<div>
+  <div>
+<em>Mon, 03 Feb 2025 11:23:07 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/ccf02789-c5fc-4c4d-84b8-25d97a91ca9b_r1_s.png" width="100%" />  <div>
+<small style="color: #999;">2025年中国央视春节文艺晚会上出演的机器人舞者。（照片来自视频截图）</small>
+  </div>
+  <p><strong>编者按：这是邓聿文为美国之音撰写的评论文章。这篇特约评论不代表美国之音的观点。转载者请注明来自美国之音或者VOA。</strong><br /><br />“春晚”是春节文艺晚会的简称，具体地说，是央视春节文艺晚会的简称，虽然现在每个地方的卫视都会搞自己的春晚，但提起春晚，人们一般想到的是央视春节文艺晚会。<br /><br />蛇年春晚是中国春节成为世界非遗之后的首个春晚。从1983年央视首次面向全民举办春节文艺晚会以来，它已经走过了42个年头，成为所谓的“新民俗”。除夕看春晚，成了许多中国人的“年夜饭”。<br /> </p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/262e0eab-cb36-4e2d-996e-dd33ff806951_w900.jpg" alt="资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）" border="0" />    <div>
+<small style="color: #999;">资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）</small>
+    </div>
+  </div>
+  <p><strong>春晚是国家打造的一场仪式</strong><br /><br />多数人或许只是把春晚看作大众传播时代央视提供给全民的消遣娱乐节目，表面看是这样，遥控器掌握在每个人的手上，看与不看，爱看与否，由每个人来决定，然而，它实际是由国家直接操控的政治演出，是国家为实现某种特定政治目的而打造的一场仪式，背后体现的是国家意志，央视只是一个平台，通过央视来实现而已。这个特定政治目的，就是要借用春晚这场仪式，向全球华人首先是中国人，构建、传播和增强认同民族历史文化、家国一体的政治观念。虽然随着技术的迭代发展，今天的春晚在具体表现形式和技术手段上，同开办初期有很大不同，但基本结构、其仪式感，以及所要体现出的国家意志从来就没有变过，而且越来越加强。<br /><br />1983年，当央视决定将此前在内部排演的属于联欢性质的晚会，改为面向全民时，春晚所承载的政治功能尚不明显，或者有些模糊。那时的中国，刚从文革走出后不久，人们的精神生活还相当贫乏，娱乐活动也少，过年城市和农村，延续的是古代村社的娱乐活动，央视利用电视这种在当时最先进的传播媒介，为全民举办一场别开生面的迎春文艺晚会，也许初衷是活跃民众过年时的娱乐生活，让民众过过快乐之年。然而，在官方发现这种形式的娱乐活动被民众认可和接受后，它开始有意识地强化春晚的政治功能，将之作为政治观念的一种输出工具，向大众输出国家观念。尤其是在前10年左右，官方对春晚的政治宣教意图可谓完全不加掩饰。<br /><br />春晚的政治性首先出在春晚这种演出形式本身，即它是国家打造的一场文化和政治仪式。央视春晚早已不是央视的节目，而是由中宣部主抓的一项文化工程，央视只是承办者而已。既然是当局最高宣传主管部门主抓的项目，自然就要灌输官方的意图和价值观念。这本身就让春晚带有强烈的政治性。但和官方举办的其他文化活动与项目不同，官方通过春晚要传达的不是某种具体的政治目的，而是相对集中且抽象的政治观念，即团结、乐观、积极、向上、爱国、奉献等官方倡导的主流价值。春晚几乎所有节目，哪怕是讽刺小品，都要向观众传达这种价值观。<br /><br />春晚仪式的“国家”性质可从两个方面表现出来，一是春晚已经形成了一套固定的程式和内容，其所要表达的主题是人民联欢，家国一体；二是春晚的时间段，从除夕晚上8点到午夜12点，正是中国人在一年的辞旧迎新中最看重的时间段，因而也是文化意义上最神圣的时间段。尽管如今人们的娱乐活动选择多样化，可以上网，可以玩牌打麻将、可以上影院观影等，但在家看电视依然是多数人的钟爱，而此时的电视频道，基本上转播央视春晚，人们对频道的选择空间其实有限。特别在互联网未发展起来前，这种情况更严重，那时在家看电视几乎是每个人的必选娱乐项目。想象一下，除夕夜，家家户户坐在电视机前，观看春晚被官方严格筛查的节目，对大多数人而言，是不是不经意间就进入了春晚所设定的程式、场景和刻意要传达的家国叙事结构，让国家塑造的主流话语和意识形态占据人们的头脑？</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/22872270-d77e-4a89-9c09-39f783dffb79_w900.jpg" alt="资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）" border="0" />    <div>
+<small style="color: #999;">资料照：人们在北京火车站等车期间观看大屏幕播放的春晚。（2018年1月15日）</small>
+    </div>
+  </div>
+  <p><strong>春晚节目内容的鲜明政治宣教色彩</strong><br /><br />上面说的是春晚作为由国家打造的一场文化政治仪式本身具有的政治功能。再从具体的节目内容看，每届春晚都会反映当年重大的国家事件，包括庙堂之上的政治事件和社会热点问题、热点事件等，它们既通过歌曲、舞蹈、相声、小品等艺术形式表现出来，更通过主持人的解说词表达出来，还通过邀请的嘉宾或者演员透示出来。如果说春晚仪式本身呈现的国家性质尚有些隐晦和抽象，那么，节目内容和解说词中的国家事件和社会热点问题，就把春晚的政治性完完全全展示出来了，因为这些国家事件或社会热点问题，无非呈现的是某个重大政治事件，或中国经济发展成就，又或中国政府的治理成效和安定团结的社会环境等，它们都具有鲜明的政治宣教色彩，即便是对当下某类丑陋社会现象用一种艺术的形式来讽刺和鞭挞，也是寓有浓重的教化意义。这还不讲某些节目或解说词直接用政治性语言对当局歌功颂德。<br /><br />中国春节是按照十二生肖来排序的。十二生肖在传统文化里具有独特的象征意味，形成了中国的属相文化，是中国古代文明的重要精神符号，不仅影响着人们的日常生活，也传递着价值观念，属于当局说的中国优秀传统文化。春晚自然要挖掘和传递十二生肖的当下意义。今年是蛇年，蛇这种动物相信大多数人对它没有好感，但在十二生肖文化里，蛇的灵动和灵敏性，象征神秘灵性、隐蔽变化与强大生命力，因而也被看作长寿、生殖和财富的符号。春晚要把蛇的这层象征意义表现出来，此所谓优秀文化的当代继承和创新。而当局倡导传统文化的现代价值，不仅仅着眼于传统文化不能丢，要发扬光大，也是服务于现实的需要，即用传统文化的现代转换，有利当局对社会的管治，维护政权的稳固。春晚对以十二生肖为代表的中国传统文化的颂扬，无疑要达此目的。<br /><br />此外，近几年的春晚，不再只是在央视的演播大厅同步播出，除了央视主会场，也在一些地方设了分会场。这算是一种形式的创新。但分会场的选择，有严格的政治方面的讲究，比如，今年的几个分会场，选在拉萨、重庆、无锡、武汉。拉萨的政治含义就不用讲了，代表民族团结，重庆和武汉是所谓新质生产力的代表，无锡是江南文化的代表。这从一个侧面，也说明春晚首要考量的是它的政治性。<br /><br />总之，中国的春晚，其政治功能在多个环节都体现出来了，它要向14亿中国人，乃至全球华人，通过一种所谓的艺术表现形式和大联欢方式，来表达当下中国的“盛世昌明”和家国情怀。<br /><br />尽管官方想在春晚上努力营造这种效果，然而，从收视率来看，民众显然是不买账的。多年春晚的收视率，平均在30%左右，最高的是2004年，达到41.6%，最低的2022年，只有21.93%。今年春晚的收视率，央视公布的数据是33.64%，看起来比过去几年回升，但也是回到以前的正常水平。春晚收视率总的趋势还是下跌。固然这是由于社交媒体的崛起，看电视的人越来越少，然而，春晚节目本身的寡味，其政治说教意味太重，无法吸引和留住观众，尤其年轻观众，或许是更重要的原因。虽然央视也想用灯光音响效果，用技术手段进行某种形式创新，邀请知名艺人参与，来弥补这点，但是，只要官方把春晚作为一种体现国家意志的仪式的定位不变，春晚就必然会充斥陈旧的政治教化，从而让更多的人远离它，成为新时代的“古董”。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-03/%E7%89%B9%E6%9C%97%E6%99%AE%E5%85%B3%E7%A8%8E%E6%88%98%E5%BC%80%E6%89%93-%E5%8F%B0%E6%B9%BE%E5%87%BA%E5%8F%B0%E5%A4%9A%E9%A1%B9%E5%9B%A0%E5%BA%94%E6%8E%AA%E6%96%BD-%E5%8C%85%E6%8B%AC%E5%8D%8F%E5%8A%A9%E5%8F%B0%E5%95%86%E8%BD%AC%E8%87%B3%E7%BE%8E%E5%9B%BD%E8%AE%BE%E5%8E%82">
+          特朗普关税战开打，台湾出台多项因应措施 包括协助台商转至美国设厂
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-03/%E5%B7%B4%E6%8B%BF%E9%A9%AC%E9%80%80%E5%87%BA-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%88%86%E6%9E%90-%E4%B8%AD%E5%9B%BD%E5%B0%86%E6%94%B9%E7%94%B1%E5%A4%96%E4%BA%A4-%E4%BC%81%E4%B8%9A%E5%B1%82%E9%9D%A2%E5%8F%91%E6%8C%A5%E5%BD%B1%E5%93%8D%E5%8A%9B">
+          巴拿马退出“一带一路” 分析:中国将改由外交、企业层面发挥影响力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81">
+          台湾知名艺人“大S”徐熙媛因流感于日本猝逝 享年48岁
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-03/%E6%AC%A7%E7%9B%9F-%E8%8B%B1%E5%9B%BD-%E5%8C%97%E7%BA%A6%E9%A2%86%E5%AF%BC%E4%BA%BA%E9%BD%90%E8%81%9A-%E8%AE%A8%E8%AE%BA%E5%8A%A0%E5%BC%BA%E9%98%B2%E5%BE%A1%E4%BF%84%E7%BD%97%E6%96%AF">
+          欧盟、英国、北约领导人齐聚 讨论加强防御俄罗斯
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81">
+            前一篇：台湾知名艺人“大S”徐熙媛因流感于日本猝逝 享年48岁
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-03/%E4%B8%AD%E7%BE%8E%E5%85%B3%E7%A8%8E%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E6%96%B9%E6%88%96%E9%87%8D%E6%8F%90%E6%97%A7%E5%8D%8F%E8%AE%AE%E5%AF%BB%E6%B1%82%E7%BC%93%E5%92%8C">
+            后一篇：中美关税风波： 中方或重提旧协议寻求缓和
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-03/%E4%B8%AD%E7%BE%8E%E5%85%B3%E7%A8%8E%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E6%96%B9%E6%88%96%E9%87%8D%E6%8F%90%E6%97%A7%E5%8D%8F%E8%AE%AE%E5%AF%BB%E6%B1%82%E7%BC%93%E5%92%8C'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-03/%E5%B7%B4%E6%8B%BF%E9%A9%AC%E9%80%80%E5%87%BA-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%88%86%E6%9E%90-%E4%B8%AD%E5%9B%BD%E5%B0%86%E6%94%B9%E7%94%B1%E5%A4%96%E4%BA%A4-%E4%BC%81%E4%B8%9A%E5%B1%82%E9%9D%A2%E5%8F%91%E6%8C%A5%E5%BD%B1%E5%93%8D%E5%8A%9B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-03/%E4%B8%AD%E7%BE%8E%E5%85%B3%E7%A8%8E%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E6%96%B9%E6%88%96%E9%87%8D%E6%8F%90%E6%97%A7%E5%8D%8F%E8%AE%AE%E5%AF%BB%E6%B1%82%E7%BC%93%E5%92%8C">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-03/%E5%B7%B4%E6%8B%BF%E9%A9%AC%E9%80%80%E5%87%BA-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%88%86%E6%9E%90-%E4%B8%AD%E5%9B%BD%E5%B0%86%E6%94%B9%E7%94%B1%E5%A4%96%E4%BA%A4-%E4%BC%81%E4%B8%9A%E5%B1%82%E9%9D%A2%E5%8F%91%E6%8C%A5%E5%BD%B1%E5%93%8D%E5%8A%9B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-03/%E5%8F%B0%E6%B9%BE%E7%9F%A5%E5%90%8D%E8%89%BA%E4%BA%BA-%E5%A4%A7S-%E5%BE%90%E7%86%99%E5%AA%9B%E5%9B%A0%E6%B5%81%E6%84%9F%E4%BA%8E%E6%97%A5%E6%9C%AC%E7%8C%9D%E9%80%9D-%E4%BA%AB%E5%B9%B448%E5%B2%81">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>大疆无人机关闭地理围栏系统的背后 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+大疆无人机关闭地理围栏系统的背后
+——
+" />
+    <meta property="og:description" content="
+大疆无人机关闭地理围栏系统的背后
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="大疆无人机关闭地理围栏系统的背后" />
+    <meta property="twitter:title" content="大疆无人机关闭地理围栏系统的背后" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdji-cancel-no-fly-zones%2F7972749.html&t=%E5%A4%A7%E7%96%86%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%85%B3%E9%97%AD%E5%9C%B0%E7%90%86%E5%9B%B4%E6%A0%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%83%8C%E5%90%8E" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdji-cancel-no-fly-zones%2F7972749.html&t=%E5%A4%A7%E7%96%86%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%85%B3%E9%97%AD%E5%9C%B0%E7%90%86%E5%9B%B4%E6%A0%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%83%8C%E5%90%8E&d=2025-02-12&e=
+大疆无人机关闭地理围栏系统的背后
+——
+
+
+  
+Wed, 12 Feb 2025 21:55:30 GMT
+  
+  
+纽约大疆无人机专卖店。（2024年3月22日）
+  
+华盛顿 —   总部位于中国深圳的无人机制造商大疆创新(DJI)在它的一架无人机与一架参与洛杉矶消防救援的消防飞机相撞后决定关闭全球范围内旨在防止无人机飞越机场、军事基地以及其他限制区域的地理围栏系统。该公司表示，这个变化把“控制权重新交还给无人机操作者”，符合有关的监管原则。但专家担心，大疆的这个改变可能给中国可乘之机，给美国的安全带来隐患。
+  根据大疆创新1月13日发布的公告，这些变化会将美国的禁飞区转变为“加强警告区，与美国联邦航空管理局(FAA)的指定区域保持一致”。该公司称，这些变化与去年在欧洲实施的类似变化一致，并将“控制权重新交还给无人机操作者，符合承担最终责任的操作者的监管原则”。
+  什么..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdji-cancel-no-fly-zones%2F7972749.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html&text=大疆无人机关闭地理围栏系统的背后&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html&title=大疆无人机关闭地理围栏系统的背后" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html&title=大疆无人机关闭地理围栏系统的背后" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=大疆无人机关闭地理围栏系统的背后&body=
+大疆无人机关闭地理围栏系统的背后
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html&title=大疆无人机关闭地理围栏系统的背后&caption=
+大疆无人机关闭地理围栏系统的背后
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=大疆无人机关闭地理围栏系统的背后&url=https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>大疆无人机关闭地理围栏系统的背后</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdji-cancel-no-fly-zones%2F7972749.html&t=%E5%A4%A7%E7%96%86%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%85%B3%E9%97%AD%E5%9C%B0%E7%90%86%E5%9B%B4%E6%A0%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%83%8C%E5%90%8E&d=2025-02-12&e=
+大疆无人机关闭地理围栏系统的背后
+——
+
+
+  
+Wed, 12 Feb 2025 21:55:30 GMT
+  
+  
+纽约大疆无人机专卖店。（2024年3月22日）
+  
+华盛顿 —   总部位于中国深圳的无人机制造商大疆创新(DJI)在它的一架无人机与一架参与洛杉矶消防救援的消防飞机相撞后决定关闭全球范围内旨在防止无人机飞越机场、军事基地以及其他限制区域的地理围栏系统。该公司表示，这个变化把“控制权重新交还给无人机操作者”，符合有关的监管原则。但专家担心，大疆的这个改变可能给中国可乘之机，给美国的安全带来隐患。
+  根据大疆创新1月13日发布的公告，这些变化会将美国的禁飞区转变为“加强警告区，与美国联邦航空管理局(FAA)的指定区域保持一致”。该公司称，这些变化与去年在欧洲实施的类似变化一致，并将“控制权重新交还给无人机操作者，符合承担最终责任的操作者的监管原则”。
+  什么..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdji-cancel-no-fly-zones%2F7972749.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739397542000-->
+<p><a href="https://www.voachinese.com/a/dji-cancel-no-fly-zones/7972749.html">大疆无人机关闭地理围栏系统的背后</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 12 Feb 2025 21:55:30 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0a00-0242-6b99-08dc9270a4a8_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">纽约大疆无人机专卖店。（2024年3月22日）</small>
+  </div>
+华盛顿 —   <p>总部位于中国深圳的无人机制造商大疆创新(DJI)在它的一架无人机与一架参与洛杉矶消防救援的消防飞机相撞后决定关闭全球范围内旨在防止无人机飞越机场、军事基地以及其他限制区域的地理围栏系统。该公司表示，这个变化把“控制权重新交还给无人机操作者”，符合有关的监管原则。但专家担心，大疆的这个改变可能给中国可乘之机，给美国的安全带来隐患。</p>
+  <p>根据大疆创新1月13日发布的公告，这些变化会将美国的禁飞区转变为“加强警告区，与美国联邦航空管理局(FAA)的指定区域保持一致”。该公司称，这些变化与去年在欧洲实施的类似变化一致，并将“控制权重新交还给无人机操作者，符合承担最终责任的操作者的监管原则”。</p>
+  <p><strong>什么是地理围栏系统？</strong></p>
+  <p>大疆创新的地理围栏系统是一种安全功能，旨在防止无人机进入禁飞区或限制区域。该系统源于2013年发布的大疆飞控概念，原理是无人机不断接收来自类似机场飞控中心的数据以避免误入类似森林火场的区域。该系统通过全球定位系统(GPS)和航区数据，实时监控无人机的位置，并根据预设的飞行区域限制飞行。地理围栏会限制无人机进入某些区域，如机场、军事基地、政府机构等敏感地点，从而提高飞行安全，避免干扰航空交通或进入不允许飞行的区域。如用户需要在限飞区内执行飞行任务，地理围栏系统也可实现限飞区解禁功能。用户可根据飞行区域的限制程度，采取相应的方式完成解禁申请。</p>
+  <p>2015年，在一名大疆无人机操作者意外将无人机撞到白宫草坪的事件之后，大疆创新的无人机出厂时就预装了软件，阻止它们在某些不断更新的限制区域起飞或飞入。</p>
+  <p>根据DJI无人机<a href="https://dl.djicdn.com/downloads/matrice-30-series/20220426/Matrice30_Series_User_Manual_V1.0_CHS_1.pdf">用户手册</a>，限飞区是指地理围栏系统动态设定的各类飞行功能受到限制的区域，划分为禁飞区、授权区、警示区、加强警示区、限高区等，包含但不限于机场、大型活动现场、突发事件(如森林火灾等)、核电站、监狱、政府大楼及军事设施等。系统默认开启飞行限制功能，并在可能引起安全问题的区域内限制无人机起飞或飞行。</p>
+  <p>禁飞区/授权区的缓冲区：为了避免飞行器误入禁飞区和授权区(未解禁时)，地理围栏系统在禁飞区、授权区外设置了约 20米宽的缓冲区。当飞行器位于缓冲区内部时，飞行器只能原地起降或向外飞出，无法在未解禁的情况下向禁飞区/授权区方向飞行。飞出缓冲区后将无法再次进入缓冲区。</p>
+  <p>加强警示区是飞行器在此区域飞行时，会收到警告提醒，用户需完成飞行行为确认。用户完成飞行行为提示确认后，飞行器可正常飞行。</p>
+  <p>大疆创新地理围栏系统的最新固件更新将禁飞区重新归类为加强警示区。这一变化意味着无人机操作者而不是全球定位系统(GPS)自动衍生的地理围栏负责监控无人机，以确保它们不会侵入美国联邦航空管理局指定的飞行限制区域。</p>
+  <p><strong>为什么要取消禁飞区？</strong></p>
+  <p>虽然在大多数地方放飞无人机通常是合法的，但美国联邦航空管理局表示，休闲飞行者不能进入机场、指定的国家安全敏感设施、某些军事基地、基础设施和国家地标以及临时飞行限制涵盖的地方周围的空域。在DJI的<a href="https://viewpoints.dji.com/blog/geo-system-update">博客</a>上，该公司表示，当其地理围栏系统于2013年推出时，消费级无人机仍然是一项新技术，没有太多的飞行规则和规定。虽然地理围栏系统最初是作为自愿的内置功能创建的，以帮助“促进负责任的飞行实践”，但DJI表示，“全球法规和用户意识已经发生了重大变化”。</p>
+  <p>DJI全球政策负责人亚当·威尔士(Adam Welsh)在最近与科技新闻网站Verge的一次<a href="https://www.theverge.com/drone/606008/dji-interview-us-ban-no-more-no-fly-zone-geofencing">采访</a>中说，监管机构没有强制要求使用地理围栏。</p>
+  <p>他说：“他们要求消费者进行基于社区的组织安全培训。他们已强制使用LAANC访问机场周围受控空域的权限，并且已强制使用远程ID。他们坚持的基本原则，即操作者应始终控制无人机、飞机或任何其他类型的航空物体。我们所做的是切换到一个系统使操作者拥有更准确的信息，同时也始终保持对无人机的控制。”</p>
+  <p>LAANC(Low-Altitude Authorization and Notification Capability)是低空授权和通知功能的英文缩写。它是美国联邦航空管理局和业界之间的合作，旨在促进双方之间共享空域数据。</p>
+  <p>但威尔士不认为这是因为监管机构觉得，既然最大的制造商已经采取行动，他们就没必要进行监管。</p>
+  <p>他在采访中说：“我猜想，当监管机构审视这个问题时，他们已经意识到它有多么复杂。举个例子，我们已经尽一切努力让 [操作者请求进入禁飞区] 的过程顺利进行，但它仍然需要人工查看每一个申请。你可以想象我们每周和每年都会处理大量绝对合法的解锁应用程序。任何监管机构要经历这个过程，都会有巨大的负担。”</p>
+  <p><strong>大疆无人机面临美国的禁令 大疆：改变并非出于政治动机</strong></p>
+  <p>这次的固件更新是在一架DJI无人机与一架参与洛杉矶消防救援的消防飞机“超级舀水机(Super Scooper)相撞几天后进行的。对这次撞击事件的调查正在进行中。无人机的操作者面临被起诉的风险，可能导致巨额罚款、监禁或两者兼而有之。</p>
+  <p><a href="https://dronexl.co/2025/01/12/super-scooper-airplane-dji-mini-drone-collision-palisades-fire/">Dronexl</a>网站在谈到洛杉矶撞机事件时写道：“该事件凸显了当前无人机监管框架的一个关键弱点——在紧急行动期间强制遵守飞行限制的挑战。虽然像DJI这样的制造商实施了地理围栏等技术解决方案，但这些措施的有效性最终取决于运营商的合规性。无人机行业必须继续创新，开发万无一失的安全系统，同时监管机构努力提高执法能力和对违规行为的处罚。”</p>
+  <p>美国国防部2022将DJI添加到其被认定为在美国运营的中国军事公司的实体名单中。美国众议院去年通过了两党合作的《打击中共无人机法案》，将把DJI列入联邦通信委员会的黑名单，这将有效地禁止在美国销售任何新的DJI无人机。该法案尚未签署正式成为法律。数据显示，DJI目前控制着美国约90%的无人机市场。</p>
+  <p>美国商务部正在考虑制定限制或禁止包括DJI在内的中国无人机进入美国的新规则，并在3月4日之前对可能实行的规则征求公众意见。该规则旨在确保无人驾驶飞机系统或无人机的信息和通信技术与服务供应链的安全和保障。商务部工业与安全局(BIS)1月2日的声明说，来自中国和俄罗斯的威胁“可能使我们的对手能够远程访问和操纵这些设备，从而暴露敏感的美国数据”。</p>
+  <p>不仅如此，如果DJI无法说服“适当的国家安全机构”公开宣布其产品不会“对美国国家安全构成不可接受的风险”，美国联邦通信委员会(FCC)会根据《安全和可信通信网络法案》将DJI的设备添加到其“涵盖清单”中。该列表不仅会阻止DJI的设备在美国网络上运行，还会阻止联邦通信委员会授权DJI内部无线电在美国使用，从而有效地阻止所有DJI产品的进口。</p>
+  <p>然而，在一篇<a href="https://viewpoints.dji.com/blog/djis-geo-system-is-an-education-not-enforcement-tool">博文</a>中，DJI表示移除禁飞区的做法并非出于政治动机。</p>
+  <p>该公司说：“认为此更新与美国当前的政治环境有关不仅是错误的，而且是危险的。将安全政治化对任何人都没有好处。我们鼓励讨论和评论继续关注技术事实和证据。”</p>
+  <p>但是战略与国际研究中心航空航天安全项目副主任兼国防和安全部高级研究员克莱顿·斯沃普(Clayton Swope)认为，取消地理围栏禁飞区必须在更广泛的美中关系背景下看待。</p>
+  <p>他告诉美国之音：“这是北京可以用来给我们带来麻烦的杠杆。”</p>
+  <p>他说，虽然地理围栏从来都不是法律要求的功能，但它是一种人造的安全保障，掩盖了广泛使用的小型无人机带来的公共安全问题。</p>
+  <p>根据中国《情报法》的规定，中国政府会强制海外企业将境外数据交给中国政府。</p>
+  <p><strong>中国有能力远程控制其无人机？</strong></p>
+  <p>斯沃普认为，中国有可能有能力远程控制DJI的无人机。</p>
+  <p>“任何人都不应该对北京单方面控制将休闲无人机阻挡在机场等禁飞区之外的安全功能的开关感到舒服，”他说。</p>
+  <p>他认为，最好的解决方案是激励美国无人机买家寻找非中国制造的选择。</p>
+  <p>这位专家表示：“还需要一个协调一致的联邦、州、地方治理框架，为州和地方官员提供对抗无人机的权力。他们应当在无人机被用于不应该出现的地方(如机场)时，以及可能在发电厂、监狱、水处理设施等基础设施以及某些大型集会(如大型音乐会或体育赛事)上使用时，能够应对公共安全威胁。现在，州和地方没有这些权力。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E4%B8%AD%E5%9B%BD-%E8%B6%85%E7%BA%A7%E5%A4%A7%E4%BD%BF%E9%A6%86-%E9%80%89%E5%9D%80%E4%BA%89%E8%AE%AE%E5%8D%87%E7%BA%A7-%E8%8B%B1%E5%9B%BD%E5%85%AC%E5%90%AC%E4%BC%9A%E9%81%AD%E6%94%BF%E6%B2%BB%E5%8E%8B%E5%8A%9B">
+          中国“超级大使馆”选址争议升级 英国公听会遭政治压力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA">
+          美国盟友在慕尼黑安全会议上寻求有关支持乌克兰的明确立场
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89">
+          特朗普誓言要“立即”谈判，以结束乌克兰战争
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E5%B7%B4%E6%8B%BF%E9%A9%AC%E9%81%87%E6%8C%AB-%E5%8C%97%E4%BA%AC%E5%8A%A0%E9%80%9F%E5%B8%83%E5%B1%80%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A">
+          巴拿马遇挫 北京加速布局哥伦比亚？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89">
+            前一篇：特朗普誓言要“立即”谈判，以结束乌克兰战争
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA">
+            后一篇：美国盟友在慕尼黑安全会议上寻求有关支持乌克兰的明确立场
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-12/%E7%BE%8E%E5%9B%BD%E7%9B%9F%E5%8F%8B%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AF%BB%E6%B1%82%E6%9C%89%E5%85%B3%E6%94%AF%E6%8C%81%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E6%98%8E%E7%A1%AE%E7%AB%8B%E5%9C%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-12/%E7%89%B9%E6%9C%97%E6%99%AE%E8%AA%93%E8%A8%80%E8%A6%81-%E7%AB%8B%E5%8D%B3-%E8%B0%88%E5%88%A4-%E4%BB%A5%E7%BB%93%E6%9D%9F%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%98%E4%BA%89">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

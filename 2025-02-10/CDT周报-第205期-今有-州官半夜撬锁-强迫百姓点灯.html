@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+" />
+    <meta property="og:description" content="
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”" />
+    <meta property="twitter:title" content="【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5369)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715683.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC205%E6%9C%9F%EF%BC%9A%E4%BB%8A%E6%9C%89%E2%80%9C%E5%B7%9E%E5%AE%98%E5%8D%8A%E5%A4%9C%E6%92%AC%E9%94%81%EF%BC%8C%E5%BC%BA%E8%BF%AB%E7%99%BE%E5%A7%93%E7%82%B9%E7%81%AF%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715683.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC205%E6%9C%9F%EF%BC%9A%E4%BB%8A%E6%9C%89%E2%80%9C%E5%B7%9E%E5%AE%98%E5%8D%8A%E5%A4%9C%E6%92%AC%E9%94%81%EF%BC%8C%E5%BC%BA%E8%BF%AB%E7%99%BE%E5%A7%93%E7%82%B9%E7%81%AF%E2%80%9D&d=2025-02-10&e=
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+
+
+  上期周报：【CDT周报】第204期：麻药不睡、血压不降、泻药不泻
+  过去两周中国数字时代【404文库】新增文章8篇，【每日一语】新增网语5条，【大事记】收录热点事件3件，刊登读者投稿3篇，投稿请点此。
+  编者的话：
+  
+    1月25日—2月8日 这两周。
+    春节期间，一家来自杭州的人工智能公司——DeepSeek（深度求索）备受全球瞩目，该公司最新发布的开源模型DeepSeek-R1，在多项数学和推理基准测试中表现出色，被独立测评机构列为仅次于OpenAI的o1模型，甚至超越了包括Google、Anthropic和Meta的同类闭源产品。据悉，DeepSeek的大模型训练成本还不到600万美元，大概只是OpenAI的三十分之一，这种降本增效大大挑战了传统AI研发模式，毕竟美国各家公司已花费了..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715683.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715683.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715683.html&text=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715683.html&title=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715683.html&title=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”&body=
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715683.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715683.html&title=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”&caption=
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”&url=https://chinadigitaltimes.net/chinese/715683.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715683.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715683.html&t=%E3%80%90CDT%E5%91%A8%E6%8A%A5%E3%80%91%E7%AC%AC205%E6%9C%9F%EF%BC%9A%E4%BB%8A%E6%9C%89%E2%80%9C%E5%B7%9E%E5%AE%98%E5%8D%8A%E5%A4%9C%E6%92%AC%E9%94%81%EF%BC%8C%E5%BC%BA%E8%BF%AB%E7%99%BE%E5%A7%93%E7%82%B9%E7%81%AF%E2%80%9D&d=2025-02-10&e=
+【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”
+——
+
+
+  上期周报：【CDT周报】第204期：麻药不睡、血压不降、泻药不泻
+  过去两周中国数字时代【404文库】新增文章8篇，【每日一语】新增网语5条，【大事记】收录热点事件3件，刊登读者投稿3篇，投稿请点此。
+  编者的话：
+  
+    1月25日—2月8日 这两周。
+    春节期间，一家来自杭州的人工智能公司——DeepSeek（深度求索）备受全球瞩目，该公司最新发布的开源模型DeepSeek-R1，在多项数学和推理基准测试中表现出色，被独立测评机构列为仅次于OpenAI的o1模型，甚至超越了包括Google、Anthropic和Meta的同类闭源产品。据悉，DeepSeek的大模型训练成本还不到600万美元，大概只是OpenAI的三十分之一，这种降本增效大大挑战了传统AI研发模式，毕竟美国各家公司已花费了..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715683.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739168275000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715683.html">【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715683.html" title="【CDT周报】第205期：今有“州官半夜撬锁，强迫百姓点灯”" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739166983628-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>上期周报：<a href="https://chinadigitaltimes.net/chinese/715361.html" title="【CDT周报】第204期：麻药不睡、血压不降、泻药不泻">【CDT周报】第204期：麻药不睡、血压不降、泻药不泻</a></p>
+  <p>过去两周中国数字时代<a href="https://chinadigitaltimes.net/chinese/404-articles-archive">【404文库】</a>新增文章8篇，<a href="https://chinadigitaltimes.net/chinese/quote-of-the-day">【每日一语】</a>新增网语5条，<a href="https://chinadigitaltimes.net/chinese/chronicle-of-major-events">【大事记】</a>收录热点事件3件，刊登读者投稿3篇，投稿请<a href="https://t.me/cdtmedia_bot">点此</a>。</p>
+  <h3 id="section">编者的话：</h3>
+  <blockquote>
+    <p>1月25日—2月8日 这两周。</p>
+    <p>春节期间，一家来自杭州的人工智能公司——DeepSeek（深度求索）备受全球瞩目，该公司最新发布的开源模型DeepSeek-R1，在多项数学和推理基准测试中表现出色，被独立测评机构列为仅次于OpenAI的o1模型，甚至超越了包括Google、Anthropic和Meta的同类闭源产品。据悉，DeepSeek的大模型训练成本还不到600万美元，大概只是OpenAI的三十分之一，这种降本增效大大挑战了传统AI研发模式，毕竟美国各家公司已花费了超过10亿美元来训练新一代的模型。在DeepSeek震撼整个市场后，它给美国科技股带来了巨大冲击，导致美国人工智能巨头英伟达在27日的股价暴跌17%。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/chinas-deekseek-aims-to-rival-openais-reasoning-model-showcase_image-6-a-26883.jpg" alt="img" /><br /><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739164919425.png" alt="file" /></p>
+    <p>在上线手机app端后，DeepSeek在26日以超百万的下载量首次反超ChatGPT，其服务器更是多次被“挤”到宕机，“在没有任何广告投放情况下实现了7天1亿用户的增长”。目前，DeepSeek在用户访问量、留存量、活跃度等方面仍与ChatGPT存在差距，但两者的数据差异已经变得较小，有业内人士认为“DeepSeek的挑战重塑了全球AI应用市场的格局”。在中文舆论场普遍期待着“弯道超车”、“中国震撼”的背景下，游戏《黑神话·悟空》的制作人冯骥在微博上将DeepSeek称之为“国运级别的研究成果”，俨然已超越了那个“遥遥领先”的口号。DeepSeek的创始人梁文锋更是受到了“民族英雄”般的推崇，在他春节回乡期间，老家湛江的街头还打出了“热烈欢迎文锋荣归故里，家乡因你而骄傲”等横幅。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739164818944.png" alt="file" /></p>
+    <p>当然，DeepSeek爆火的同时，各方的质疑声也随之而来。先是有AI从业人员认为，DeepSeek可能使用了上万块英伟达的H100芯片，但碍于美国的出口管制政策，它们并不能公布这部分的训练成本。而OpenAI则发声明称，有证据显示DeepSeek使用了OpenAI的专有模型来训练自己的模型，这种“蒸馏技术”实际上违反了OpenAI的服务条款，属于一种违规复制。而根据一些网友的测试，DeepSeek的确会在一些情景下，老实交代自己是用了OpenAI的哪些工具。此外，DeepSeek也依旧面临与Tiktok相似的资料安全风险，其英文版的隐私政策条文声明“DeepSeek会将收集的资讯储存在位于中国的安全伺服器中”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739168330667.png" alt="filev" /></p>
+    <p>作为一款中国人开发的AI，DeepSeek的答问能力可谓相当符合“中国宝宝体质”。由于DeepSeek广泛收录了贴吧、论坛、微博的语料，这导致DeepSeek相当懂得中式表达，这种语言优势暂且是墙外OpenAI所不具备的。有网友让DeepSeek模拟贴吧老哥的风格骂人，它cos起污言秽语网民显然是青出于蓝。当然这种“懂中国”自然也伴随着另一种“懂中国”。在被问及敏感问题时，DeepSeek的表现甚至比以往的中国AI更加“优异”。例如，当对话中出现“六四”、“四通桥”、“习近平”等敏感词时，DeepSeek会立即中断对话，并明确告知用户无法回答此问题。而在涉及内政、外交、法制、领导人等问题，DeepSeek通常会与中国官方立场保持一致，俨然是数字版的中国外交部发言人。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739166794381.png" alt="file" /></p>
+    <p>对于DeepSeek的言论审查表现，一些网友表示“它可能很优秀，但绝不可能是最好，因为审查的存在必然导致大量有价值资讯的丢失，也会使它在很多社科问题上失去价值中立立场”，而另一些网友则认为“它本身就是在经过意识形态审查后才上线，不应过度关注其‘答政治’的表现，还是应该更多关注它的技术亮点，如推理能力、处理效率、多模态学习等”。鉴于DeepSeek R1可以进行本地部署，一些用户设法绕过了“内容限制与思想钢印”，去除了DeepSeek中的ChatXJP元素，从而显著提升了它的使用体验。而这也无疑向世人说明了，即便中国拥有不逊色于国际一流水准的科研人员，然而真正限制其发展的关键因素还是在于党管AI，在于所谓的“人工智能生成的内容应当体现社会主义核心价值观”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739166953254.png" alt="file" /></p>
+    <p>上个月27日，山西大同古城为了提升春节期间游客的旅游体验，公开发布了一份《古城亮化倡议书》，要求从农历腊月二十八到正月十五（共19天），古城内所有商户无论是否营业，不管店里有没有人，都必须要把店铺里的灯彻夜点亮。2月3日晚11时许，在古城鼓楼东街经营一家商铺的岳先生闭店回家后，突然接到官方电话要求立马返店开灯。岳先生以照看孩子为由拒绝后，从监控中发现店铺门锁被执法人员撬开，店内所有的灯也被强行打开，门锁还被更换，导致自己在次日无法正常营业，被迫成了当地最积极响应政府倡议的商户——白天也开着全部的灯。“只许州官放火，不许百姓点灯”的历史典故广为人知，如今山西大同又将之发展、改写成为了“州官半夜撬锁，强迫百姓点灯”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739166983628.png" alt="file" /></p>
+    <p>后据一些媒体采访，山西大同平城区有工作人员表示“彻夜亮灯是市里的统一规定”、“当地商家配合度达到97%”。有网友反问道“不配合的3%就活该被撬门吗？”、“倡议为何变为强制，执法者缘何变成违法者？”在“撬门开灯”引发汹涌舆论后，山西大同市平城区古城街道在7日凌晨1点做出公开道歉，道歉内容与其说是反思自省，不如说是对舆论的敷衍应付。道歉中对于执法人员的违法行为避而不谈，也没有明确在造成经济损失后所需承担的责任，让一切又变成了——“问题无人负责，只是好心办了坏事”的尴尬局面。有网友评论道“为什么会有这种荒谬的事情发生呢？因为在他们看来虚假的繁荣也是繁荣，他们更在乎繁荣，而不在乎虚假。”</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/2025.2.5.png" alt="img" /></p>
+    <p>的确，“撬门开灯”本质上仍然是官老爷拍拍屁股做的决定，整个决策过程中毫无经济理性和法制观念可言，灯火辉煌带来的额外电费成本应该由谁买单？权力之手随意伸向百姓的门锁又会有何后果？最终决策目的与结果往往背道而驰，也丝毫不让人意外了。这不禁让人联想起当年的大同市长耿彦波发起的古城大拆大建运动，导致人口约300万的城市，就有50万人需要被搬迁。那么当年背负巨额债务进行的古城改造效果如何呢？如今，这座古城已经沦落到需逼迫百姓过年开灯亮化，才能营造繁盛勃兴幻象。恰如网友的总结“十多年前的拆真建假，十多年后的撬门开灯，简直如出一辙。他们最擅长的，就是以道德意图伦理，压倒责任伦理。”然而，大同的主政者们似乎并未意识到，他们的存在以及这种做法本身就是问题所在。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739167616394.png" alt="file" /></p>
+    <p>2月7日，是中国官方记录中，李文亮医生的五周年忌日。博主 @周叔走农村 在春节期间赴辽宁省探望了李文亮的父母，并在自己的频道上发布了三段视频（后续很快遭到删除），令许多网友首次见到了两位老人的形象。视频显示在李文亮去世五年后，他的父母仍无法摆脱丧子之痛。李文亮的父亲提到，当年两人被接到武汉后，并没有亲眼见到儿子李文亮，无论是在抢救室还是殡仪馆。李文亮母亲更是控诉“自始至终连看都不让我们看一眼，这也太没有人性了”。而这段经历成为了两位老人心中最大的遗憾。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739167738856.png" alt="file" /></p>
+    <p>法学家张千帆倡议，将2月6日设为中国言论自由日，他说：“此次灾难向我们每个人揭示，压制言论就是国家犯罪——这一点应该成为每个合格公民都明白的宪法常识”。在7日凌晨的【中国哭墙】上，仍有大量中国网民在此留下对李文亮的怀念，其中一位网友如此写道：</p>
+    <blockquote>
+      <p>MyPreciousburden：还记得五年前的凌晨，我焦急地在微博刷着您的消息。转眼间过了这么久，世界依然令人失望。但您这样的人是迷雾中的光亮，那句“健康的社会不应该只有一种声音”至今还回响在我心里。李医生，祝好！不明白，不忘记。</p>
+    </blockquote>
+  </blockquote>
+  <h3 id="section-1">一周荐读：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715501.html">【CDT月度视频】一月之声（2025）——“今年会不会比明年好？”</a></li>
+  </ul>
+  <p>2025年1月，中国数字时代搜集整理了过去一个月（2025.1.1—2025.1.29）期间反映国内热点事件的网络视频，以时间为序进行混剪制作了本月月度视频——《一月之声（2025）》。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715362.html">【CDT报告汇】保护记者委员会：中国2024年继续成为世界上最大的记者监狱（外二篇）</a></li>
+  </ul>
+  <p>2024年全球至少有361名记者因新闻报道遭到监禁，其中中国继续位列榜首，至少有50名记者被关押，占总人数的14%。报告列举了一些被捕的中国新闻工作者案例。例如，《光明日报》记者董玉玉以间谍罪被判刑7年，公民记者黄雪琴因“煽动颠覆国家政权罪”被判刑5年。此外，2024年10月被捕的独立记者李伟忠也因相同罪名被关押。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715534.html">【CDT报告汇】网安公司Wiz调查发现DeepSeek数据库泄漏用户敏感信息（外二篇）</a></li>
+  </ul>
+  <p>1月29日，知名网络安全公司Wiz发布报告，指出中国人工智能（AI）初创公司DeepSeek存在严重的数据库安全漏洞。DeepSeek的一个可公开访问的ClickHouse数据库并未设置身份验证，任何人都可以对数据库进行操作并访问DeepSeek的内部数据。这些数据库暴露了超过百万条日志记录，包括聊天记录、API密钥、后端操作数据及其他高度敏感信息，甚至存在完全控制数据库的风险。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715520.html">【CDT关注】柴静回应“薄瓜瓜”：薄熙来在打黑中应该负什么责任？我亲历的重庆打黑</a></li>
+  </ul>
+  <p>柴静：“王立军只是一个公安局长，中国刑法规定了公检法相互制衡的体制和辩护人制度就是为了防止警权的滥用。薄熙来作为一个市委书记，不需要做什么，他只需要不做什么。”</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715590.html">【CDT关注】德国之声：人权律师周世锋起诉腾讯公司“封号”侵权</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715610.html">哔束｜《我的收藏夹》不是荒草丛生，就是一片坟场</a></li>
+  </ul>
+  <p>2月4日，德国之声中文网发布文章《人权律师周世锋起诉腾讯公司“封号”侵权》。该文提到“709”人权律师周世锋在出狱后仍持续揭露“傅政华、孙力军政治团伙把持公检法系统”。正因此，周世锋律师的微信账号被腾讯公司封禁。25年2月初，周世锋律师向北京互联网法院提起诉讼。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715623.html">【CDT关注】歪脑｜“中国传媒计划” 执行主任班志远：在中国可以怎么样做记者</a></li>
+  </ul>
+  <p>美国学者班志远（David Bandurski）在与“歪脑”的采访中回顾了他20多年来对中国大陆媒体生态的研究。从2000年初以南方系为代表的商业媒体的发展，到习近平上台后大陆媒体进入“通稿”时代，班志远说，中国整体的信息生态“中毒了”。他在采访中谈到中国官媒也曾起到过监督政府的作用……</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715552.html">【404视频】【CDTV】李文亮母亲：儿子去世后连看都不让我们看一眼，太没有人性了</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/640969.html">【重温】财新网｜新冠肺炎“吹哨人”李文亮：真相最重要</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715654.html">【重温】人物｜普通人李文亮</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/662397.html">【重温】资浅记者｜纪念李文亮医生去世一周年</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715649.html">【中国哭墙】2月6日深夜、7日凌晨，五年了（2月1日-2月7日，2025年）</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715653.html">玖奌杂货铺｜五年了</a></li>
+  </ul>
+  <p>近日，网传有视频博主前往辽宁省探望了新冠疫情吹哨人李文亮的父母。这段简短的拜访视频揭露，在李文亮去世近五年（2025年2月7日为李文亮逝世五周年纪念日）后，他的父母仍无法走出悲伤。李文亮父亲李叔叔在谈话中透露，当年两人被接到武汉后，并没有亲眼看到儿子李文亮，无论是在抢救室还是殡仪馆。而李文亮的母亲吕阿姨则愤怒控诉“连看都不让我们看一眼，这也太没有人性了”。</p>
+  <h3 id="section-2">一周关注：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715628.html">【网络民议】湖南永州一级致癌物苯泄漏，新闻热度几乎没有</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715630.html">【404文库】挪威TALK｜湖南永州粗苯泄漏的通报信息太少了</a></li>
+  </ul>
+  <p>1月31日，一辆载有危险化学物质的罐车在湖南永州零陵区发生翻车事故，导致粗苯泄漏。政府2日通报称，当地“自来水水质安全可控，城区供水正常”。事发地附近居民接受《南方都市报》记者采访称，侧翻事故发生后曾看到涉事车辆附近出现黑色浓烟，“不少居民都自行囤积了矿泉水备用”。《第一财经》报道称，事故车辆上共装载粗苯33.5吨；粗苯是一种苯系化合物，常温下为淡黄色透明液体，比水轻，不溶于水，直接接触对人体有害。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715600.html">个人记忆库｜不按计划发财，不按规定点灯，不按级别落泪， 州官破门纠正！一切操之于官</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715598.html">建设性意见｜州官半夜撬锁，强迫百姓点灯</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715603.html">木白文笔平平｜山西大同的这件事，本质是为了爷的喜好狠狠折腾普通人</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715607.html">常识和洞见｜大同古城撬锁进店强制开灯，元规则坏了，就会这样</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715625.html">阅后即瞎｜山西的“撬门开灯”，究竟照亮了谁的面子？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715655.html">星球商业评论｜州官不单帮你开灯还帮你换锁</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715658.html">基本常识｜大同撬锁点灯的违法行为，光道歉是远远不够的</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715661.html">风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715665.html">就叫熊太行也行｜大同的破门亮灯，真的是因为工作太热情了吗</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715674.html">老萧杂说｜撬门开灯事件处置，透着一股熟悉的诈伪之气</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715676.html">读宋史的赵大胖｜你笑他不会道歉，他笑你不懂倡导</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715681.html">建设性意见｜大同撬锁点灯，应该抓人而不是道歉</a></li>
+  </ul>
+  <p>2025年春节期间，大同古城商户被有关部门要求 24 小时亮灯，以营造节日氛围。但当部分商户因成本或经营需求拒绝后，执法人员深夜撬门入内，强行开灯，并更换门锁，确保春节期间“亮灯率”达标。此举引发了公众愤怒，被认为是地方政府在经济下行压力下，通过粗暴行政手段强制执行“形象工程” 的又一典型案例。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715445.html">【404文库】蜀都大道｜除夕，Deepseek给我说了三次“对不起”</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715510.html">【404文库】黑噪音｜如何看待意大利监管机构封禁DeepSeek？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715438.html">古老板的老巢｜过年了，把国家放下吧！</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715449.html">我就是郁风｜Deepseek写了篇嘲讽胡锡进的文章，令人叫绝</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715466.html">黑噪音｜DeepSeek引发美股暴跌，它真能改变国运？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715473.html">三言Pro｜DeepSeek创始人梁文锋回老家过年：家乡拉横幅、立拱门欢迎</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715522.html">见识｜DeepSeek怎么答中成药集采</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715537.html">旧闻评论｜国运级的科技成果到底是什么？</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715636.html">尼德罗｜杭州网约车司机：deepseek和我没一毛钱关系</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715637.html">鱼眼观察｜DeepSeek启示录：创新都是自己产生的，不是刻意安排的</a></li>
+  </ul>
+  <p>深度求索，DeepSeek，全称为杭州深度求索人工智能基础技术研究有限公司，是中国一家人工智能与大型语言模型公司。该公司的总部位于中国大陆浙江省杭州市，由中资对冲基金幻方量化创立，创始人和首席执行官为梁文锋。2025年1月10日，DeepSeek为iOS和安卓系统发布其首款免费的基于DeepSeek-R1模型聊天机器人程序。截止到1月27日，DeepSeek-R1超过ChatGPT成为美区iOS应用商店免费应用程序榜首，并导致英伟达股股价大跌18%。</p>
+  <h3 id="section-3">一周惊奇：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715596.html">院线电影资料库｜2024内地院线进口片删减情况小结</a></li>
+  </ul>
+  <p>本文对于2020年内地院线进口片的删减情况进行总结，多数涉及血腥，同性恋等内容；《美国内战》公映版存在模糊台词，将“总统在第三任期内”译为“总统在任期内”。由于中国仍没有有分级制度，无法对未来有什么期待。由于情况复杂，本篇内容无法涵盖所有删减电影，仅汇总已知信息，多数信息来自网络。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715593.html">羽化门｜农业大比武：搞残经济的体面招式</a></li>
+  </ul>
+  <p>一些地方为了推动农业经济发展，以镇乡或县域为单位，开展农业经济大比武。实际的比赛呢，只是各参赛单位拿出有代表性的种植地块来比，具体打分呢，也没有使用什么仪器设备，或者更专业的方法来实测和预估产量水平。只是目测，就主打一个感觉，可能觉得作物充满了生命力，那就是好。至于背后的投入，一概视而不见。</p>
+  <h3 id="section-4">一周讽刺：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715476.html">【404文库】木蹊说｜“预制”春晚弹幕，是不自信的表现</a></li>
+  </ul>
+  <p>前几年，春晚取消了豆瓣评分，不让人打分了。现在，B站更进了一步，连“不宽容”的机会都不给你。更让人难受的是，你想把弹幕关了都不行，必须得看“预制弹幕”……我衷心希望，在“弹幕自信”之外，我们应该多想点别的方式去体现自信、弘扬自信。就像张维为老师说的：“都可以谈，有什么不能谈的呢？”这才是真正的自信。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715557.html">历史押韵｜绷不住了，俄罗斯商品馆被铲除后，又看到朝鲜商品馆</a></li>
+  </ul>
+  <p>看到这里不禁要问，这些朝鲜商品馆的套路会不会又和俄罗斯商品馆的套路一样呢？现在没有大面积铺开，应该打法有些不同。我看还是有很多人去买将军的恩情茶，好像卖得还挺贵。不过都已经销售一空了。毕竟我们这里还有很多将军的粉丝。不是先有镰刀后有韭菜，而是有什么样的韭菜，就会有什么样的镰刀。如果再发散一下，以后会不会还有伊朗商品馆、哈马斯商品馆、塔利班商品馆呢？</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715526.html">你的大海｜新版初中英语教材也讲中国味，连主角名字都谐音腾飞复兴</a></li>
+  </ul>
+  <p>一个时代的文化产品自然会反映那个时代的风貌，英语教材也不能例外。无论是1990年代使用的中英合编、主打中外文化交融的教材「李雷和韩梅梅」，2000和2010年代使用的中美合编、美国风味明显的《Go For It》，还是2020年代中国自编、着重讲述中国故事的「复兴和腾飞」，都深刻反映了对应时代的政治政策导向和社会思潮。</p>
+  <h3 id="section-5">一周声音：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715467.html">【404文库】往事与随想｜作为农民的孩子，就不要去凑“爱国”的热闹了</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715531.html">【404文库】往事与随想｜一起来说交公粮的往事</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715508.html">往事与随想｜再有人拿“农民没交社保”说事，请把这篇呼他脸上去</a></li>
+  </ul>
+  <p>作为一个农民的孩子，去凑什么“爱国”的热闹呢？那些在网上迎合你的人，说不定人家的父母是体制内的，拿着几千上万的退休金，天天去跳广场舞，衣食无忧，悠哉悠哉。我不是说农民的孩子就没有资格“爱国”，如果像一些人所定义的“爱国”就只能说政府国家的好话，农民的孩子就不要去了，非要去“讲好中国故事”，你也讲不好，你觉得好的，讲出来，反而“抹黑“了国家。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715447.html">衣者褚｜故乡的年味越来越淡了</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715559.html">建设性意见｜除了回家团聚，中国根本就没有全国统一的年俗</a></li>
+  </ul>
+  <p>2009年夏天，出差路过老家。采访很忙，还是赶回去看了母亲一眼。天气很热，她切了一块西瓜给我，坐在堂屋里闲聊了半个小时即匆匆离去。走时，她送到村后，依依不舍。回去时她的惊喜与我说马上要走时她的失望，十多年过去了我还记得清清楚楚。父母不在了，兄嫂们都还在，多与他们聚聚成为中年之后回乡过年的重要动因。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715462.html">【404维修站】Hayami｜欧洲是我的心灵故乡（重发版）</a></li>
+    <li><a href="https://chinadigitaltimes.net/chinese/715528.html">Hayami｜失去、离散、柏林酷儿行走路线</a></li>
+  </ul>
+  <p>微信公众号Hayami于2024年12月28日发布文章《欧洲是我的心灵故乡》，讲述作者疫情后从上海到柏林生活的心路历程。文章发布两天后被404。1月3日，Hayami 重发文章，将文中敏感词替换，并用红色标记出来。CDT将作者替换的部分补全如下，并将12月的原文附在本文之后。</p>
+  <h3 id="section-6">一周故事：</h3>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715518.html">【404文库】水瓶纪元｜拼图无锡职校凶犯：学生工，多头借贷者，”宅左”与“浪人”</a></li>
+  </ul>
+  <p>徐加金的行凶动机成为我们无从知晓的黑箱，只留下一篇存于手机备忘录里的“自白书“在互联网上流传。除了徐在只言片语中提到的自身处境，他的网络行踪散落在坊间真假难辨的留言里：一位身负网贷的苏北农村青年，热爱二次元动漫，也关注B站“左翼”UP主，同时也是telegram群组深度冲浪的“浪友”…..我们收集了关于无锡职校凶案事件的记忆与讨论残片，尝试勾绘徐加金，以及与他处境相仿的，这一世代失落青年的模样，并留下了这一篇记录。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715433.html">兔子兔子画漫画｜想起那些在牢中过年的小镇做题家</a></li>
+  </ul>
+  <p>这坛巨大而深不可测的酱缸，埋葬了多少姚刚这样才华横溢的小镇做题家，埋葬了多少清寒子弟再也无法翻盘的人生…他们用短暂的二三十年间编就的政商关系网，远远不足以庇护自己。新年之际，我为牢中的小镇做题家们哀悼，更向酱缸文化致哀——它存在一日，就是小镇做题家们迟早要撞上的人生噩梦。</p>
+  <ul>
+    <li><a href="https://chinadigitaltimes.net/chinese/715640.html">镜相工作室｜回家过年，我听到无数个县城房地产的失败故事</a></li>
+  </ul>
+  <p>过年回老家，我第一次向我妈提出邀请，想和她聊一聊县城房地产，没成想，坐在旁边的外婆更先开口：“那房价都跌成什么样了，现在还要在县城买房，以后都脱不了手！”外婆的语气让我觉得又好笑，又惊讶：这位七十多岁的农村女性，和田地打了一辈子交道，常年一个人生活在村里，怎么知道房价的情况？答案也不意外，短视频。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-10</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-10/%E5%80%AA%E5%88%83-%E4%B8%8D%E6%8A%98%E8%85%BE%E8%80%81%E7%99%BE%E5%A7%93-%E5%B0%B1%E6%98%AF%E5%A5%BD%E6%97%B6%E4%BB%A3">
+          倪刃｜不折腾老百姓，就是好时代
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-10</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-10/%E5%90%AC%E6%99%96%E9%81%93%E6%9D%A5-%E7%9F%AD%E7%9F%AD11%E5%B9%B4-%E5%85%A8%E5%9B%BD%E7%BB%93%E5%A9%9A%E4%BA%BA%E6%95%B0%E7%9B%B4%E6%8E%A5%E8%85%B0%E6%96%A9">
+          听晖道来｜短短11年，全国结婚人数直接腰斩
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-09</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-09/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E6%B0%B8%E7%A6%81%E5%BC%A0%E6%B0%8F%E6%AF%8D%E5%AD%90-%E6%8A%96%E9%9F%B3%E5%80%BC%E5%BE%97%E4%B8%80%E9%9D%A2%E9%94%A6%E6%97%97">
+          旧闻评论｜永禁张氏母子，抖音值得一面锦旗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-09</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-09/%E9%98%9C%E6%88%90%E9%97%A8%E5%85%AD%E5%8F%B7%E9%99%A2-Deepseek%E5%AF%B9%E4%B8%AD%E5%9B%BD%E5%88%9B%E6%96%B0%E4%BD%93%E5%88%B6%E5%92%8C%E5%88%9B%E6%96%B0%E8%B7%AF%E5%BE%84%E7%9A%84%E5%90%AF%E5%8F%91">
+          阜成门六号院｜Deepseek对中国创新体制和创新路径的启发
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-09/%E5%A6%82%E4%BD%95%E8%AE%A9-AMD-Zen-CPU-%E6%80%BB%E6%98%AF%E7%94%9F%E6%88%90-4-%E4%BD%9C%E4%B8%BA%E9%9A%8F%E6%9C%BA%E6%95%B0">
+            前一篇：如何让 AMD Zen CPU 总是生成 4 作为随机数
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-10/%E5%A4%A7%E8%84%91%E5%BE%AE%E5%A1%91%E6%96%99%E6%B5%93%E5%BA%A6%E9%AB%98%E4%BA%8E%E5%85%B6%E4%BB%96%E5%99%A8%E5%AE%98">
+            后一篇：大脑微塑料浓度高于其他器官
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-09/%E5%A6%82%E4%BD%95%E8%AE%A9-AMD-Zen-CPU-%E6%80%BB%E6%98%AF%E7%94%9F%E6%88%90-4-%E4%BD%9C%E4%B8%BA%E9%9A%8F%E6%9C%BA%E6%95%B0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-10/%E5%A4%A7%E8%84%91%E5%BE%AE%E5%A1%91%E6%96%99%E6%B5%93%E5%BA%A6%E9%AB%98%E4%BA%8E%E5%85%B6%E4%BB%96%E5%99%A8%E5%AE%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-10/%E5%90%AC%E6%99%96%E9%81%93%E6%9D%A5-%E7%9F%AD%E7%9F%AD11%E5%B9%B4-%E5%85%A8%E5%9B%BD%E7%BB%93%E5%A9%9A%E4%BA%BA%E6%95%B0%E7%9B%B4%E6%8E%A5%E8%85%B0%E6%96%A9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-09/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E6%B0%B8%E7%A6%81%E5%BC%A0%E6%B0%8F%E6%AF%8D%E5%AD%90-%E6%8A%96%E9%9F%B3%E5%80%BC%E5%BE%97%E4%B8%80%E9%9D%A2%E9%94%A6%E6%97%97'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-09/%E5%A6%82%E4%BD%95%E8%AE%A9-AMD-Zen-CPU-%E6%80%BB%E6%98%AF%E7%94%9F%E6%88%90-4-%E4%BD%9C%E4%B8%BA%E9%9A%8F%E6%9C%BA%E6%95%B0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-10/%E5%A4%A7%E8%84%91%E5%BE%AE%E5%A1%91%E6%96%99%E6%B5%93%E5%BA%A6%E9%AB%98%E4%BA%8E%E5%85%B6%E4%BB%96%E5%99%A8%E5%AE%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-10/%E5%90%AC%E6%99%96%E9%81%93%E6%9D%A5-%E7%9F%AD%E7%9F%AD11%E5%B9%B4-%E5%85%A8%E5%9B%BD%E7%BB%93%E5%A9%9A%E4%BA%BA%E6%95%B0%E7%9B%B4%E6%8E%A5%E8%85%B0%E6%96%A9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-09/%E6%97%A7%E9%97%BB%E8%AF%84%E8%AE%BA-%E6%B0%B8%E7%A6%81%E5%BC%A0%E6%B0%8F%E6%AF%8D%E5%AD%90-%E6%8A%96%E9%9F%B3%E5%80%BC%E5%BE%97%E4%B8%80%E9%9D%A2%E9%94%A6%E6%97%97">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
