@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>   谭翼翔：我在泰国监狱的紧急呼救！    – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+" />
+    <meta property="og:description" content="
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="   谭翼翔：我在泰国监狱的紧急呼救！   " />
+    <meta property="twitter:title" content="   谭翼翔：我在泰国监狱的紧急呼救！   " />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5391)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2025%2F02%2Fblog-post_10.html&t=+++%E8%B0%AD%E7%BF%BC%E7%BF%94%EF%BC%9A%E6%88%91%E5%9C%A8%E6%B3%B0%E5%9B%BD%E7%9B%91%E7%8B%B1%E7%9A%84%E7%B4%A7%E6%80%A5%E5%91%BC%E6%95%91%EF%BC%81+++" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2025%2F02%2Fblog-post_10.html&t=+++%E8%B0%AD%E7%BF%BC%E7%BF%94%EF%BC%9A%E6%88%91%E5%9C%A8%E6%B3%B0%E5%9B%BD%E7%9B%91%E7%8B%B1%E7%9A%84%E7%B4%A7%E6%80%A5%E5%91%BC%E6%95%91%EF%BC%81+++&d=2025-02-09&e=
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+
+
+  
+  我是人权捍卫者谭翼翔。        
+
+  我因为推特报道泰国移民局IDC里的人权恶劣状况，遭到泰国移民局迫害，非法被取消保释保释金5万泰铢也不知去向，现在已经在泰国移民局关押一年了，里面环境非常恶劣，很多中国人长期关押在这里，最少2年，最长21年，常年在里面吃饭营养不良，好几个中国人被活活饿死，2024年12月，在泰国移民局IDCroom7，50岁的湖北人黄师师严重营养不良，生命危急送泰国医院🏥的时候身体才30多公斤，请浏览自由谭翼翔的X账户@room7free，由于泰国IDC内43个维吾尔人要送回中国的原因，我这个联合国难民也被泰国移民局IDC调到IDC2关押中心，现在跟100多缅甸罗兴亚人一起，由于水和食物🍲限量供应，我身体倍感痛苦。        
+
+  我谭翼翔户口被死亡注销了，中国大使馆还是给我办好了回国证明文件，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2025%2F02%2Fblog-post_10.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://wqw2010.blogspot.com/2025/02/blog-post_10.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://wqw2010.blogspot.com/2025/02/blog-post_10.html&text=   谭翼翔：我在泰国监狱的紧急呼救！   &hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://wqw2010.blogspot.com/2025/02/blog-post_10.html&title=   谭翼翔：我在泰国监狱的紧急呼救！   " class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://wqw2010.blogspot.com/2025/02/blog-post_10.html&title=   谭翼翔：我在泰国监狱的紧急呼救！   " class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=   谭翼翔：我在泰国监狱的紧急呼救！   &body=
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://wqw2010.blogspot.com/2025/02/blog-post_10.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://wqw2010.blogspot.com/2025/02/blog-post_10.html&title=   谭翼翔：我在泰国监狱的紧急呼救！   &caption=
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=   谭翼翔：我在泰国监狱的紧急呼救！   &url=https://wqw2010.blogspot.com/2025/02/blog-post_10.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>   谭翼翔：我在泰国监狱的紧急呼救！   </h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#维权网 ">
+          维权网
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://wqw2010.blogspot.com/2025/02/blog-post_10.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="维权网的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#维权网 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwqw2010.blogspot.com%2F2025%2F02%2Fblog-post_10.html&t=+++%E8%B0%AD%E7%BF%BC%E7%BF%94%EF%BC%9A%E6%88%91%E5%9C%A8%E6%B3%B0%E5%9B%BD%E7%9B%91%E7%8B%B1%E7%9A%84%E7%B4%A7%E6%80%A5%E5%91%BC%E6%95%91%EF%BC%81+++&d=2025-02-09&e=
+谭翼翔：我在泰国监狱的紧急呼救！
+——
+
+
+  
+  我是人权捍卫者谭翼翔。        
+
+  我因为推特报道泰国移民局IDC里的人权恶劣状况，遭到泰国移民局迫害，非法被取消保释保释金5万泰铢也不知去向，现在已经在泰国移民局关押一年了，里面环境非常恶劣，很多中国人长期关押在这里，最少2年，最长21年，常年在里面吃饭营养不良，好几个中国人被活活饿死，2024年12月，在泰国移民局IDCroom7，50岁的湖北人黄师师严重营养不良，生命危急送泰国医院🏥的时候身体才30多公斤，请浏览自由谭翼翔的X账户@room7free，由于泰国IDC内43个维吾尔人要送回中国的原因，我这个联合国难民也被泰国移民局IDC调到IDC2关押中心，现在跟100多缅甸罗兴亚人一起，由于水和食物🍲限量供应，我身体倍感痛苦。        
+
+  我谭翼翔户口被死亡注销了，中国大使馆还是给我办好了回国证明文件，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwqw2010.blogspot.com%2F2025%2F02%2Fblog-post_10.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739124840007-->
+<p><a href="https://wqw2010.blogspot.com/2025/02/blog-post_10.html">谭翼翔：我在泰国监狱的紧急呼救！</a>
+——</p>
+
+<div>
+<span><a name="more"></a></span>  <p><br /></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;;">我是人权捍卫者谭翼翔。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;;">我因为推特报道泰国移民局<span lang="EN-US">IDC</span>里的人权恶劣状况，遭到泰国移民局迫害，非法被取消保释保释金<span lang="EN-US">5</span>万泰铢也不知去向，现在已经在泰国移民局关押一年了，里面环境非常恶劣，很多中国人长期关押在这里，最少<span lang="EN-US">2</span>年，最长<span lang="EN-US">21</span>年，常年在里面吃饭营养不良，好几个中国人被活活饿死，<span lang="EN-US">2024</span>年<span lang="EN-US">12</span>月，在泰国移民局<span lang="EN-US">IDCroom7</span>，<span lang="EN-US">50</span>岁的湖北人黄师师严重营养不良，生命危急送泰国医院</span><span lang="EN-US" style="font-family: &quot;Segoe UI Emoji&quot;,sans-serif; font-size: 12.0pt; mso-bidi-font-family: &quot;Segoe UI Emoji&quot;; mso-fareast-font-family: 宋体;">🏥</span><span style="font-family: 宋体; font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;;">的时候身体才<span lang="EN-US">30</span>多公斤，请浏览自由谭翼翔的<span lang="EN-US">X</span>账户<span lang="EN-US">@room7free</span>，由于泰国<span lang="EN-US">IDC</span>内<span lang="EN-US">43</span>个维吾尔人要送回中国的原因，我这个联合国难民也被泰国移民局<span lang="EN-US">IDC</span>调到<span lang="EN-US">IDC2</span>关押中心，现在跟<span lang="EN-US">100</span>多缅甸罗兴亚人一起，由于水和食物</span><span lang="EN-US" style="font-family: &quot;Segoe UI Emoji&quot;,sans-serif; font-size: 12.0pt; mso-bidi-font-family: &quot;Segoe UI Emoji&quot;; mso-fareast-font-family: 宋体;">🍲</span><span style="font-family: 宋体; font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;;">限量供应，我身体倍感痛苦。<span lang="EN-US">        <o:p></o:p>
+</span></span></p>
+  <p class="MsoNormal"><span style="font-family: 宋体; font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;;">我谭翼翔户口被死亡注销了，中国大使馆还是给我办好了回国证明文件，已经在<span lang="EN-US">2024</span>年<span lang="EN-US">12</span>月<span lang="EN-US">23</span>日送到了泰国移民局<span lang="EN-US">IDC</span>，并告知我我家属已经帮我买好了回国机票，我现在随时面临遣返回国。<span lang="EN-US">        <o:p></o:p>
+</span></span><span style="font-family: 宋体; font-size: 12pt;"> </span></p>
+  <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; font-size: 12pt;">2025</span><span style="font-family: 宋体; font-size: 12pt;">年<span lang="EN-US">2</span>月<span lang="EN-US">10</span>日。</span></p>
+  <p class="MsoNormal"></p>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3-ZdeLxt3f8uHYOIcr3BIJqz2DrAH2Lp6Si8LXtTOlZrdD9mB9Tx8Wu-E3HT-X5M_Msk8cQZnDd66VI4w_WmzfQ8AWp_96TrBr-iddNOjOmfJ1ha99QkUyGdO6w1O7Dd-r-exU5wUaiArm6ua7MN34sWcrQ3mEtArOOvvDrooJvwB-s75ui2oGB8aZBOA/s1753/mmexport1738733182212.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1753" data-original-width="1240" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3-ZdeLxt3f8uHYOIcr3BIJqz2DrAH2Lp6Si8LXtTOlZrdD9mB9Tx8Wu-E3HT-X5M_Msk8cQZnDd66VI4w_WmzfQ8AWp_96TrBr-iddNOjOmfJ1ha99QkUyGdO6w1O7Dd-r-exU5wUaiArm6ua7MN34sWcrQ3mEtArOOvvDrooJvwB-s75ui2oGB8aZBOA/w452-h640/mmexport1738733182212.jpg" width="452" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm6JTRGin88HrowEPWkTHbRZJQz88swIZHKP3lwhKkSWIkopRVyR_kcGYfBywolESbb0kDWRylvX9ULRroZ7RihB20SUdIO8q80lazFN0jLq-FFOWM6IK5b08OeU3eztP58pEGNCISFLOequ4iqlTwXtbe7BwD4S9g_yejOh0zqT_bkYQAmNjLLXg4tCf_/s768/20250205_132758.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="149" data-original-width="768" height="124" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm6JTRGin88HrowEPWkTHbRZJQz88swIZHKP3lwhKkSWIkopRVyR_kcGYfBywolESbb0kDWRylvX9ULRroZ7RihB20SUdIO8q80lazFN0jLq-FFOWM6IK5b08OeU3eztP58pEGNCISFLOequ4iqlTwXtbe7BwD4S9g_yejOh0zqT_bkYQAmNjLLXg4tCf_/w640-h124/20250205_132758.jpg" width="640" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWKZXfRpoCaNrjrO9ar4wp_cp-wEzFE2lh-vKeCTVAAnhnRfKJRmcIIXrPBYRsYhdH8MS1F7EvritJWqNP42F_qdz57bSf6fbLuvrqhieYi6hLdwZVshLKSMuslDl409LNcx4NKI_0Qe9F5xRx0unTP-G1xyPk8p4eVpmce4B2e-wgtAVYXnQuhzFbYXn8/s1440/mmexport1605414349196.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1080" data-original-width="1440" height="300" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWKZXfRpoCaNrjrO9ar4wp_cp-wEzFE2lh-vKeCTVAAnhnRfKJRmcIIXrPBYRsYhdH8MS1F7EvritJWqNP42F_qdz57bSf6fbLuvrqhieYi6hLdwZVshLKSMuslDl409LNcx4NKI_0Qe9F5xRx0unTP-G1xyPk8p4eVpmce4B2e-wgtAVYXnQuhzFbYXn8/w400-h300/mmexport1605414349196.jpg" width="400" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje1WvCDJddkyQNHun8aeT49vUMJ5UJU3nvQn-fS2b6VY8lUk9Nc-mU0U_1G4EvAlMWL2ICQ3y4XmV_55Vf-eXxGvsaer84WwAL4PkGZSVuMeTAspAxz3YJ4iW7QkzWcJaNwDUZFQlure_1w6w_xjCvG1x1lBglU8IIYrcoAtlXLH5EKEW_Rux1G1gWIVGg/s1024/hy9dv2.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="700" data-original-width="1024" height="274" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje1WvCDJddkyQNHun8aeT49vUMJ5UJU3nvQn-fS2b6VY8lUk9Nc-mU0U_1G4EvAlMWL2ICQ3y4XmV_55Vf-eXxGvsaer84WwAL4PkGZSVuMeTAspAxz3YJ4iW7QkzWcJaNwDUZFQlure_1w6w_xjCvG1x1lBglU8IIYrcoAtlXLH5EKEW_Rux1G1gWIVGg/w400-h274/hy9dv2.jpg" width="400" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4ftnn_7GdSWCIh276knEbOPQuHhwNe0uows2wqtm_wlbpSHsfpJv58T8tSvlqu5YdICNrkhOHl6dmfcFm3JPgf6O-J5_bbGKDYrwT1H8pbynOT7AX4sX_I9PnV7T-dcl6FXEwGS7mnQKXIXxm07TO1Y0cE08tJwt1Y8GjjWXWivU0GboPN3G7SeiRa5ep/s1024/-70630i.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1024" data-original-width="782" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4ftnn_7GdSWCIh276knEbOPQuHhwNe0uows2wqtm_wlbpSHsfpJv58T8tSvlqu5YdICNrkhOHl6dmfcFm3JPgf6O-J5_bbGKDYrwT1H8pbynOT7AX4sX_I9PnV7T-dcl6FXEwGS7mnQKXIXxm07TO1Y0cE08tJwt1Y8GjjWXWivU0GboPN3G7SeiRa5ep/w488-h640/-70630i.jpg" width="488" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFAHLq8ENctA1kyAatSFivKKSbnyHk7yhL1lN2zt7IvgrZA16wNFJ2mpMPU5AqeDcpHSVoYii6hf8klqSpMvMYV55vFmXMRzceVuWVgVIyDZMikhdIGwrDcdcWwqoOKUk0Njy1AcKKu9o47QK6O120kWIIh5z5U9-dJAJoaWJQkIjEqfWkFEdo71XENbq7/s1080/20250206_153257.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1080" data-original-width="810" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFAHLq8ENctA1kyAatSFivKKSbnyHk7yhL1lN2zt7IvgrZA16wNFJ2mpMPU5AqeDcpHSVoYii6hf8klqSpMvMYV55vFmXMRzceVuWVgVIyDZMikhdIGwrDcdcWwqoOKUk0Njy1AcKKu9o47QK6O120kWIIh5z5U9-dJAJoaWJQkIjEqfWkFEdo71XENbq7/w480-h640/20250206_153257.jpg" width="480" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKNi-dQYo_8QSlE-jBCII5Bgn0dhGY-Km-5RdpjXyHF8c54E5yLbeX02pTmXezXsfIOPAV6BNUiLycNnB6I6UxIH9lyJO8xX0mp2xzy-i9hwzWrVYHqWPZIZndANbNSCdg4pDmSwVJN2UqU0z7Br-p5p5jhrTMbqszaLXm8iM7Tatz2-X7Zl0nF9QM408c/s1432/-71fwt3.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1390" data-original-width="1432" height="389" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKNi-dQYo_8QSlE-jBCII5Bgn0dhGY-Km-5RdpjXyHF8c54E5yLbeX02pTmXezXsfIOPAV6BNUiLycNnB6I6UxIH9lyJO8xX0mp2xzy-i9hwzWrVYHqWPZIZndANbNSCdg4pDmSwVJN2UqU0z7Br-p5p5jhrTMbqszaLXm8iM7Tatz2-X7Zl0nF9QM408c/w400-h389/-71fwt3.jpg" width="400" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYdUp8GUWl06GwU2RBLUKgo_A6DHErXHw31aIyDF6k80LbGUluSgm3imC_QKezpyoqwO_aTJJw81__pYDBxliI7RtaJ03pDXA9t7aYSJsQmsGDQ3XGZ2Ut4cjfpyssR5VR8NUxYhoPYnzWsvBXMoiCZxGlGHB5OgD-8FVm4sxSJrCipeuKgaH7qoYyLvss/s1723/-vnj8qq.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1723" data-original-width="1378" height="400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYdUp8GUWl06GwU2RBLUKgo_A6DHErXHw31aIyDF6k80LbGUluSgm3imC_QKezpyoqwO_aTJJw81__pYDBxliI7RtaJ03pDXA9t7aYSJsQmsGDQ3XGZ2Ut4cjfpyssR5VR8NUxYhoPYnzWsvBXMoiCZxGlGHB5OgD-8FVm4sxSJrCipeuKgaH7qoYyLvss/w320-h400/-vnj8qq.jpg" width="320" /></a>
+  </div>
+<br />  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGpEW9N2dTNLFvfm2a220ctU4oh4mUYKjewSQC_4L41nZFEkx-iiuMpyZ98xI4mJQ7cWa2fUI4AR0vNCxETMQjfNS-gBI3Guv561sIlA0vWQAhQJLq5ay1UhiyusIrhwTqK9w9cYy2eD6dK5CR7DIDao6WcX809PtAJb9BapKnZjJPtJtKrrb78aHeotXi/s2048/20250207_124521.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1152" data-original-width="2048" height="225" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGpEW9N2dTNLFvfm2a220ctU4oh4mUYKjewSQC_4L41nZFEkx-iiuMpyZ98xI4mJQ7cWa2fUI4AR0vNCxETMQjfNS-gBI3Guv561sIlA0vWQAhQJLq5ay1UhiyusIrhwTqK9w9cYy2eD6dK5CR7DIDao6WcX809PtAJb9BapKnZjJPtJtKrrb78aHeotXi/w400-h225/20250207_124521.jpg" width="400" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGb1xdmhxYCe_L_L_gQ5FLbybnGLQbH3vZPfDfPBeq2fRnxmpKRQ9bZT6JQJ__PZv4BtuI5UUkmjnMh3ndBh94VhJhrFdF0R3gJtLsRxcO9R4HxcAcpB_CpZING6GAx68kfB9DVCEWvvaIkKAVQriQEL2v0oUcxcfTmlSJWXh88Mpqy6dQdNeQQXyiSZoy/s3120/Screenshot_20250207-201508.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="3120" data-original-width="1440" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGb1xdmhxYCe_L_L_gQ5FLbybnGLQbH3vZPfDfPBeq2fRnxmpKRQ9bZT6JQJ__PZv4BtuI5UUkmjnMh3ndBh94VhJhrFdF0R3gJtLsRxcO9R4HxcAcpB_CpZING6GAx68kfB9DVCEWvvaIkKAVQriQEL2v0oUcxcfTmlSJWXh88Mpqy6dQdNeQQXyiSZoy/w296-h640/Screenshot_20250207-201508.png" width="296" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha7LW48_8Nrn31nJdtuSR01SzQakgCno2AckHREwC1rjTnnrJKQjmMEi22nMXrBzaR9_JJOg0X4tIXMcM7-D6S1Q5I9q0uDrMvaBfIQLi1UNIi_fjqsApx-KZzLrJogoBzvpSOQjyCUa8ZAoGu0fRvsKtNA7TDQNJ_QHCFnSZaZjADTWXBUZL136WgQygL/s878/fukrfy.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="871" data-original-width="878" height="396" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha7LW48_8Nrn31nJdtuSR01SzQakgCno2AckHREwC1rjTnnrJKQjmMEi22nMXrBzaR9_JJOg0X4tIXMcM7-D6S1Q5I9q0uDrMvaBfIQLi1UNIi_fjqsApx-KZzLrJogoBzvpSOQjyCUa8ZAoGu0fRvsKtNA7TDQNJ_QHCFnSZaZjADTWXBUZL136WgQygL/w400-h396/fukrfy.jpg" width="400" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi33zIXJR9l2eheqHyXH3PCNro8mjswIHxyaJYlPjRcXQvv7bdcipW1fk6LajADY7wyrczaiiNdIDvpfN5Aa2xtVuALzULE-c_qHZ39u4BhCKS3jr6NY4X7Z5pI1STRHydR2nfn8vziTCNEhDtCgAK1cDQot2lKtpsXnOx1_iU7VTGsC3byzBucj8d29FzM/s1161/6i8gmk.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1161" data-original-width="953" height="400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi33zIXJR9l2eheqHyXH3PCNro8mjswIHxyaJYlPjRcXQvv7bdcipW1fk6LajADY7wyrczaiiNdIDvpfN5Aa2xtVuALzULE-c_qHZ39u4BhCKS3jr6NY4X7Z5pI1STRHydR2nfn8vziTCNEhDtCgAK1cDQot2lKtpsXnOx1_iU7VTGsC3byzBucj8d29FzM/w329-h400/6i8gmk.jpg" width="329" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj56hqsMeCVfaez9XR-m03s3dt-nTWWgwXYnpwH0A0CAgaUlXGyYuWlKoTUNt7U2oBdX_lVO-FETjymoaVyzDqMOxDKdHRObZPpnz4PohyphenhyphenSEfgsRKywXq6yD71V-26YX5JrIbcUt28N5CEnTnzNftjvHCwQqsZmYoN4quoTaNS-HEs-NYDjXE_QIybpJHfN/s1182/20250207_192612.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1182" data-original-width="665" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj56hqsMeCVfaez9XR-m03s3dt-nTWWgwXYnpwH0A0CAgaUlXGyYuWlKoTUNt7U2oBdX_lVO-FETjymoaVyzDqMOxDKdHRObZPpnz4PohyphenhyphenSEfgsRKywXq6yD71V-26YX5JrIbcUt28N5CEnTnzNftjvHCwQqsZmYoN4quoTaNS-HEs-NYDjXE_QIybpJHfN/w360-h640/20250207_192612.jpg" width="360" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwF8q97uy01VS-ILB9VvJSloR9Q8qSg2caVGeLcKLKmeDVXsGGlqOBgzkx3xtN3VmvjlvP9a1sEw_ZEMyQilK9nqTpea4x9kOmcLBmWn7Tas_dZsYCakO2-GsdpZBK9QFTrxG-FBPiSUDqUco0-fwN07iSZbUsdWglnWF2GiZDHfm2AQTwZZkaJZhb7qMv/s1182/20250207_192618.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1182" data-original-width="665" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwF8q97uy01VS-ILB9VvJSloR9Q8qSg2caVGeLcKLKmeDVXsGGlqOBgzkx3xtN3VmvjlvP9a1sEw_ZEMyQilK9nqTpea4x9kOmcLBmWn7Tas_dZsYCakO2-GsdpZBK9QFTrxG-FBPiSUDqUco0-fwN07iSZbUsdWglnWF2GiZDHfm2AQTwZZkaJZhb7qMv/w360-h640/20250207_192618.jpg" width="360" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEaozXrz9ov3EtlMy7tbkTU-pEaHmtMwZVKw9fKlv9PODKZATSOSoAoc6Igfrftp407UjhxOkoZ4Luo2jxu-o4DEFLse96OA9xn0LtBZtydmnsudkdi4LxKBIPsoAkP639n7qZ6RtWKzSYAqD136vhjdSUw9Km8yBCukSWhpECZCZUfGot4aRc609PAPzW/s1920/20250207_193457.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1920" data-original-width="972" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEaozXrz9ov3EtlMy7tbkTU-pEaHmtMwZVKw9fKlv9PODKZATSOSoAoc6Igfrftp407UjhxOkoZ4Luo2jxu-o4DEFLse96OA9xn0LtBZtydmnsudkdi4LxKBIPsoAkP639n7qZ6RtWKzSYAqD136vhjdSUw9Km8yBCukSWhpECZCZUfGot4aRc609PAPzW/w324-h640/20250207_193457.jpg" width="324" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp5M8t8o0tK5Ko_NLW6Onc4fnbRvkvxTYzC8yGXpQmQJK2p0tQmmMqZVrLvaKlNc-S8NYHB_dIthAAQUHemS2l2Z3EAuGz6X_zogjrL3aBmJ1ReNUOmM89Be0tPpmnnBMwLMhzWdXk2fIZCtBden9ZT_LFGGwVU6ZPCITBH5CxCA-IoJK-FPX2VHYUdA1X/s1200/20250207_192634.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1200" data-original-width="675" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp5M8t8o0tK5Ko_NLW6Onc4fnbRvkvxTYzC8yGXpQmQJK2p0tQmmMqZVrLvaKlNc-S8NYHB_dIthAAQUHemS2l2Z3EAuGz6X_zogjrL3aBmJ1ReNUOmM89Be0tPpmnnBMwLMhzWdXk2fIZCtBden9ZT_LFGGwVU6ZPCITBH5CxCA-IoJK-FPX2VHYUdA1X/w360-h640/20250207_192634.jpg" width="360" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEjqFpu4H0f-0326dW4AwZLCtcTVvASx1jJZh2lUEJkW0oWAMyDhe8lGi_ej-SQFKOuFwlzRhs80HwE2pScvlBWD36NcNjdMzXJX0ScVkzEFcPAwHaqIS9yBM2rlF6YxVN-oplCxa3bt8LpHZpXzGpPIF0HrkDULaS0TEJQfHF5XLn7wBp-DNGFTAaZB6U/s1182/20250207_192625.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1182" data-original-width="665" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEjqFpu4H0f-0326dW4AwZLCtcTVvASx1jJZh2lUEJkW0oWAMyDhe8lGi_ej-SQFKOuFwlzRhs80HwE2pScvlBWD36NcNjdMzXJX0ScVkzEFcPAwHaqIS9yBM2rlF6YxVN-oplCxa3bt8LpHZpXzGpPIF0HrkDULaS0TEJQfHF5XLn7wBp-DNGFTAaZB6U/w360-h640/20250207_192625.jpg" width="360" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP4f50PavEFuEEe3VdlwS0EEXxBhHq5LUaC_1QW-Usrd12Qr2O8RBE56fakSD7KIGwS-VRIlP5PVMbfr0ATSvUz-g2o1fe3zn8ePz1zFnJ5yIKDhaOAeh2rxeArLA9_DANVcI9rm6jugngjaWKabEFkQOP8h77pgonTyPmgJaBzq59XQFoSnnHoGbocHma/s2340/Screenshot_20201113-204823_Photos.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="2340" data-original-width="1080" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP4f50PavEFuEEe3VdlwS0EEXxBhHq5LUaC_1QW-Usrd12Qr2O8RBE56fakSD7KIGwS-VRIlP5PVMbfr0ATSvUz-g2o1fe3zn8ePz1zFnJ5yIKDhaOAeh2rxeArLA9_DANVcI9rm6jugngjaWKabEFkQOP8h77pgonTyPmgJaBzq59XQFoSnnHoGbocHma/w296-h640/Screenshot_20201113-204823_Photos.jpg" width="296" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMUmgYap9O5BUDKx4Qbl0kmAPBY3i0BzcnJI7ZISBYINM-D-bYkADq6XjCzUTaUAYrjA8P6Ryc1_-r0xxd-PVSy5ot4dd7PFBUNUip4o6cuULheAVEBBT1lttCaJcQe6bfm49UpmYjXsK-aiE13Sfkhtr6ZMKgQGpBuRZxNRBWhl_eZE9UAXS1vxKI5QN1/s531/vhdluu.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="531" data-original-width="474" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMUmgYap9O5BUDKx4Qbl0kmAPBY3i0BzcnJI7ZISBYINM-D-bYkADq6XjCzUTaUAYrjA8P6Ryc1_-r0xxd-PVSy5ot4dd7PFBUNUip4o6cuULheAVEBBT1lttCaJcQe6bfm49UpmYjXsK-aiE13Sfkhtr6ZMKgQGpBuRZxNRBWhl_eZE9UAXS1vxKI5QN1/s320/vhdluu.jpg" width="286" /></a>
+  </div>
+<br />  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTgo29PWwHDwcj2SNBcS8HewW1rPAbIEO6GCU_UPnuNmwTkP1ht3zYSeejV6CD32_2NB6RIQcCHeX1LxHOX8DGwnlNIxPrY9xirE9xb8ntQrfUbhn65rEhwmx4VjkJAC4ioMTeInC8RUZGmJazKBk9UkedTTA3Qf1HvuU7R3n9oUf6E55s0W6IHX7GCwka/s680/images.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="680" data-original-width="451" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTgo29PWwHDwcj2SNBcS8HewW1rPAbIEO6GCU_UPnuNmwTkP1ht3zYSeejV6CD32_2NB6RIQcCHeX1LxHOX8DGwnlNIxPrY9xirE9xb8ntQrfUbhn65rEhwmx4VjkJAC4ioMTeInC8RUZGmJazKBk9UkedTTA3Qf1HvuU7R3n9oUf6E55s0W6IHX7GCwka/w424-h640/images.jpeg" width="424" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPLRIKnkuP-sxW3wRgQpbupIrkKJ8ryOKt5rRIITYQXv0LJFjRVyHQ2PnGS4TpM5TfdIRkupIzchWBrnb3BGW_KnBAYMf4MwnOYeAYF_gCvoIWv0Tdf8ADuR0g2xI1sDwgPRvPM_jRfIaPi6LPe_bSdDmJedQkryRPrKV4CnGQkR0MroUy60xXAGP2Scf-/s1600/20250208_205710.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="720" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPLRIKnkuP-sxW3wRgQpbupIrkKJ8ryOKt5rRIITYQXv0LJFjRVyHQ2PnGS4TpM5TfdIRkupIzchWBrnb3BGW_KnBAYMf4MwnOYeAYF_gCvoIWv0Tdf8ADuR0g2xI1sDwgPRvPM_jRfIaPi6LPe_bSdDmJedQkryRPrKV4CnGQkR0MroUy60xXAGP2Scf-/w288-h640/20250208_205710.jpg" width="288" /></a>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOWzyIC-F8_Hgtev4yguyfnJjvIn-U5ZYJ1D0kIckGQ31jjjjKFSpP7t6whdT4yB5jOzHac9iHbN-hu15ywDqB7UmEhFcRTFGz35uGSxJO-03Ihv2oabFMAXIL1b8pQ9W3KSAIY19X86mxFr4XCLJxohgJvPhd4m-PCLtWhnhpMQOUXqEulHXK5npMeLX/s4080/IMG_20231201_084653.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="4080" data-original-width="3072" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmOWzyIC-F8_Hgtev4yguyfnJjvIn-U5ZYJ1D0kIckGQ31jjjjKFSpP7t6whdT4yB5jOzHac9iHbN-hu15ywDqB7UmEhFcRTFGz35uGSxJO-03Ihv2oabFMAXIL1b8pQ9W3KSAIY19X86mxFr4XCLJxohgJvPhd4m-PCLtWhnhpMQOUXqEulHXK5npMeLX/w482-h640/IMG_20231201_084653.jpg" width="482" /></a>
+  </div>
+  <p></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#维权网 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-10</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-10/%E6%96%B0%E5%8D%8E%E7%A4%BE%E8%80%81%E8%AE%B0%E8%80%85%E9%A1%BE%E4%B8%87%E6%98%8E%E5%9B%A0%E5%90%91%E5%85%9A%E4%B8%AD%E5%A4%AE-%E5%9B%BD%E5%8A%A1%E9%99%A2%E5%8F%91%E5%87%BA%E5%85%AC%E5%BC%80%E4%BF%A1%E8%B4%A8%E7%96%91%E6%9D%8E%E5%85%8B%E5%BC%BA%E6%AD%BB%E5%9B%A0-%E8%A6%81%E6%B1%82%E5%BD%BB%E6%9F%A5-%E8%A2%AB%E5%88%A4%E5%88%91%E4%B8%80%E5%B9%B4-%E5%B9%B6%E9%81%AD%E5%89%A5%E5%A4%BA">
+             新华社老记者顾万明因向党中央、国务院发出公开信质疑李克强死因，要求彻查  被判刑一年，并遭剥夺退休待遇   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-09</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-09/%E9%81%AD%E6%8A%93%E6%8D%95%E7%9A%84%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E7%94%98%E6%B3%89%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E5%88%9B%E5%8A%9E%E4%BA%BA%E5%91%A8%E6%9D%BE%E6%9E%97%E7%89%A7%E5%B8%88%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+             遭抓捕的安徽省合肥市甘泉家庭教会创办人周松林牧师的案情及简历   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-08</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-08/%E8%91%97%E5%90%8D%E5%8F%8D%E8%85%90%E6%89%AB%E9%BB%91%E9%99%A4%E6%81%B6%E4%B8%BE%E6%8A%A5%E4%BA%BA%E7%8E%8B%E5%9F%B9%E8%8D%A3%E5%91%8A%E5%85%A8%E5%85%9A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%B9%A6-%E6%B8%85%E9%99%A4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%A7%94%E5%8E%9F%E5%B8%B8%E5%A7%94%E5%BE%90%E9%B8%A3%E4%B8%BA%E5%B8%AE%E4%B8%BB%E7%A5%B8%E5%9B%BD%E6%AE%83%E6%B0%91%E6%B1%9F%E8%8B%8F%E5%AE%98%E5%9C%BA%E8%B6%85%E7%BA%A7">
+             著名反腐扫黑除恶举报人王培荣告全党全国人民书：清除江苏省委原常委徐鸣为帮主祸国殃民江苏官场超级黑社会迫在眉睫——徐州市委真巡视假巡视一目了然（续）   
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-08</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-08/%E8%A5%BF%E5%AE%89%E4%B8%B0%E7%9B%9B%E6%95%99%E4%BC%9A%E6%95%99%E6%A1%882025%E5%B9%B42%E6%9C%887%E6%97%A5%E5%BA%AD%E5%89%8D%E4%BC%9A%E8%AE%AE%E6%83%85%E5%86%B5%E9%80%9A%E6%8A%A5">
+             西安丰盛教会教案2025年2月7日庭前会议情况通报   
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-09/404%E6%96%87%E5%BA%93-%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%9B%9E%E5%BA%94%E9%9B%86%E9%87%87%E8%8D%AF%E8%B4%A8%E7%96%91-%E5%9B%BD%E5%AE%B6%E5%8C%BB%E4%BF%9D%E5%B1%80-%E8%8E%AB%E9%A1%BB%E6%9C%89-%E9%A2%86%E5%AF%BC%E6%8E%A5%E5%8F%97-%E4%B8%8D%E5%AD%98%E5%9C%A8-%E8%AE%B0%E8%80%85%E4%B8%93%E8%AE%BF">
+            前一篇：【404文库】基本常识｜回应集采药质疑！国家医保局“莫须有”领导接受“不存在”记者专访
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-09/%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7-%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E5%81%A5%E5%BA%B7%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%A1%80%E5%8E%8B%E4%B8%8D%E9%99%8D-%E9%BA%BB%E8%8D%AF%E4%B8%8D%E7%9D%A1-%E8%8D%AF%E7%9B%91%E9%83%A8%E9%97%A8%E5%B0%B1%E9%9B%86%E9%87%87%E8%8D%AF%E5%93%81%E9%97%AE%E9%A2%98%E7%AD%94%E9%97%AE">
+            后一篇：【立此存照】人民日报健康客户端｜血压不降、麻药不睡？药监部门就集采药品问题答问
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-09/404%E6%96%87%E5%BA%93-%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%9B%9E%E5%BA%94%E9%9B%86%E9%87%87%E8%8D%AF%E8%B4%A8%E7%96%91-%E5%9B%BD%E5%AE%B6%E5%8C%BB%E4%BF%9D%E5%B1%80-%E8%8E%AB%E9%A1%BB%E6%9C%89-%E9%A2%86%E5%AF%BC%E6%8E%A5%E5%8F%97-%E4%B8%8D%E5%AD%98%E5%9C%A8-%E8%AE%B0%E8%80%85%E4%B8%93%E8%AE%BF'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-09/%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7-%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E5%81%A5%E5%BA%B7%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%A1%80%E5%8E%8B%E4%B8%8D%E9%99%8D-%E9%BA%BB%E8%8D%AF%E4%B8%8D%E7%9D%A1-%E8%8D%AF%E7%9B%91%E9%83%A8%E9%97%A8%E5%B0%B1%E9%9B%86%E9%87%87%E8%8D%AF%E5%93%81%E9%97%AE%E9%A2%98%E7%AD%94%E9%97%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-09/%E9%81%AD%E6%8A%93%E6%8D%95%E7%9A%84%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E7%94%98%E6%B3%89%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E5%88%9B%E5%8A%9E%E4%BA%BA%E5%91%A8%E6%9D%BE%E6%9E%97%E7%89%A7%E5%B8%88%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-08/%E8%91%97%E5%90%8D%E5%8F%8D%E8%85%90%E6%89%AB%E9%BB%91%E9%99%A4%E6%81%B6%E4%B8%BE%E6%8A%A5%E4%BA%BA%E7%8E%8B%E5%9F%B9%E8%8D%A3%E5%91%8A%E5%85%A8%E5%85%9A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%B9%A6-%E6%B8%85%E9%99%A4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%A7%94%E5%8E%9F%E5%B8%B8%E5%A7%94%E5%BE%90%E9%B8%A3%E4%B8%BA%E5%B8%AE%E4%B8%BB%E7%A5%B8%E5%9B%BD%E6%AE%83%E6%B0%91%E6%B1%9F%E8%8B%8F%E5%AE%98%E5%9C%BA%E8%B6%85%E7%BA%A7'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-09/404%E6%96%87%E5%BA%93-%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%9B%9E%E5%BA%94%E9%9B%86%E9%87%87%E8%8D%AF%E8%B4%A8%E7%96%91-%E5%9B%BD%E5%AE%B6%E5%8C%BB%E4%BF%9D%E5%B1%80-%E8%8E%AB%E9%A1%BB%E6%9C%89-%E9%A2%86%E5%AF%BC%E6%8E%A5%E5%8F%97-%E4%B8%8D%E5%AD%98%E5%9C%A8-%E8%AE%B0%E8%80%85%E4%B8%93%E8%AE%BF">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-09/%E7%AB%8B%E6%AD%A4%E5%AD%98%E7%85%A7-%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%E5%81%A5%E5%BA%B7%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%A1%80%E5%8E%8B%E4%B8%8D%E9%99%8D-%E9%BA%BB%E8%8D%AF%E4%B8%8D%E7%9D%A1-%E8%8D%AF%E7%9B%91%E9%83%A8%E9%97%A8%E5%B0%B1%E9%9B%86%E9%87%87%E8%8D%AF%E5%93%81%E9%97%AE%E9%A2%98%E7%AD%94%E9%97%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<维权网>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-09/%E9%81%AD%E6%8A%93%E6%8D%95%E7%9A%84%E5%AE%89%E5%BE%BD%E7%9C%81%E5%90%88%E8%82%A5%E5%B8%82%E7%94%98%E6%B3%89%E5%AE%B6%E5%BA%AD%E6%95%99%E4%BC%9A%E5%88%9B%E5%8A%9E%E4%BA%BA%E5%91%A8%E6%9D%BE%E6%9E%97%E7%89%A7%E5%B8%88%E7%9A%84%E6%A1%88%E6%83%85%E5%8F%8A%E7%AE%80%E5%8E%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<维权网>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-08/%E8%91%97%E5%90%8D%E5%8F%8D%E8%85%90%E6%89%AB%E9%BB%91%E9%99%A4%E6%81%B6%E4%B8%BE%E6%8A%A5%E4%BA%BA%E7%8E%8B%E5%9F%B9%E8%8D%A3%E5%91%8A%E5%85%A8%E5%85%9A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%B9%A6-%E6%B8%85%E9%99%A4%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%A7%94%E5%8E%9F%E5%B8%B8%E5%A7%94%E5%BE%90%E9%B8%A3%E4%B8%BA%E5%B8%AE%E4%B8%BB%E7%A5%B8%E5%9B%BD%E6%AE%83%E6%B0%91%E6%B1%9F%E8%8B%8F%E5%AE%98%E5%9C%BA%E8%B6%85%E7%BA%A7">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+" />
+    <meta property="og:description" content="
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒" />
+    <meta property="twitter:title" content="【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5391)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715850.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%AC%AC%E4%BA%94%E4%BA%8C%E5%85%AD%E5%8C%BA%EF%BD%9C%E6%8D%A2%E4%B8%AA%E8%A7%92%E5%BA%A6%E8%81%8A%E8%81%8A%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%9F%E6%8B%A8%E9%BC%A0%E6%80%BB%E4%BB%A5%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E5%93%AA%E5%90%92" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715850.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%AC%AC%E4%BA%94%E4%BA%8C%E5%85%AD%E5%8C%BA%EF%BD%9C%E6%8D%A2%E4%B8%AA%E8%A7%92%E5%BA%A6%E8%81%8A%E8%81%8A%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%9F%E6%8B%A8%E9%BC%A0%E6%80%BB%E4%BB%A5%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E5%93%AA%E5%90%92&d=2025-02-14&e=
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：换个角度聊聊，为什么土拨鼠总以为自己是哪吒作者：如是大牛哥发表日期：2025.2.14来源：微信公众号“第五二六区”主题归类：哪吒2CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这世上最讽刺的莫过于，明明自己身为冻死骨，却总是操着朱门酒肉的心。
+  最近关于《哪吒2》的话题一直挺火的。相应的，关于这部影片的评论也成为仅次于电影本身的看点。我其实并不想点评这部电影，就像我从来没有喜欢过哪吒这个人物形象。想说的话，在上一部《哪吒》上映后写的文章“超跑少年爱国记”中已经表达的很清楚了。原文早已经随着以前的公众号一起被“炼丹”..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715850.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715850.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715850.html&text=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715850.html&title=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715850.html&title=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒&body=
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715850.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715850.html&title=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒&caption=
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒&url=https://chinadigitaltimes.net/chinese/715850.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715850.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715850.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E7%AC%AC%E4%BA%94%E4%BA%8C%E5%85%AD%E5%8C%BA%EF%BD%9C%E6%8D%A2%E4%B8%AA%E8%A7%92%E5%BA%A6%E8%81%8A%E8%81%8A%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%9F%E6%8B%A8%E9%BC%A0%E6%80%BB%E4%BB%A5%E4%B8%BA%E8%87%AA%E5%B7%B1%E6%98%AF%E5%93%AA%E5%90%92&d=2025-02-14&e=
+【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：换个角度聊聊，为什么土拨鼠总以为自己是哪吒作者：如是大牛哥发表日期：2025.2.14来源：微信公众号“第五二六区”主题归类：哪吒2CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  这世上最讽刺的莫过于，明明自己身为冻死骨，却总是操着朱门酒肉的心。
+  最近关于《哪吒2》的话题一直挺火的。相应的，关于这部影片的评论也成为仅次于电影本身的看点。我其实并不想点评这部电影，就像我从来没有喜欢过哪吒这个人物形象。想说的话，在上一部《哪吒》上映后写的文章“超跑少年爱国记”中已经表达的很清楚了。原文早已经随着以前的公众号一起被“炼丹”..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715850.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739573000000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715850.html">【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715850.html" title="【404文库】第五二六区｜换个角度聊聊，为什么土拨鼠总以为自己是哪吒" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/tuposhu-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>换个角度聊聊，为什么土拨鼠总以为自己是哪吒<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/第五二六区" target="_blank">如是大牛哥</a><br /><strong>发表日期：</strong>2025.2.14<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/NSPYO3ELls9CrnJg_Lf5sA" target="_blank">微信公众号“第五二六区”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/哪吒2" target="_blank">哪吒2</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>这世上最讽刺的莫过于，明明自己身为冻死骨，却总是操着朱门酒肉的心。</strong></p>
+  <p>最近关于《哪吒2》的话题一直挺火的。相应的，关于这部影片的评论也成为仅次于电影本身的看点。我其实并不想点评这部电影，就像我从来没有喜欢过哪吒这个人物形象。想说的话，在上一部《哪吒》上映后写的文章“超跑少年爱国记”中已经表达的很清楚了。原文早已经随着以前的公众号一起被“炼丹”了。感兴趣的朋友可以私信找我索要。毫无疑问，在对《哪吒2》赞誉如潮的当下，认真的去分析电影里有哪些编剧上的漏洞，无异于是拿自己当靶子。从商业片的角度来说，电影《哪吒2》已经取得了巨大的成功。说它是中国电影的新一座里程碑也不算为过。当然，<strong>如果你只希望看一部爽片，那就没必要太纠结于细节和深度。如今这个时代没法认真，很多事乐呵乐呵得了。</strong></p>
+  <p>在《哪吒2》的影评中，我能记住的留言之一是“开局我以为自己是哪吒，结果我是土拨鼠”。请恕我直言，很多发出这样感慨的朋友，<strong>请不要以为自己是土拨鼠。很可能，你们，包括我，连土拨鼠都不如。</strong></p>
+  <p>在《哪吒》以及一系列修仙类故事中都有一个共同的设定：妖是由动物修行而成的。修为有成的标志是能获得直立行走的能力、说话的能力，甚至是施法术的本领。作为要素，不可或缺的是天赋和机缘。所谓修行，其实是一个不断吸收能量和不断压缩能量的过程。孙悟空真正的修为大成就是在太上老君的炼丹炉里实现的。就像其他财富一样，<strong>天地之间的“能量”资源是有限的。分配也是极不平均。只有进入修炼“序列”的，才有资格“享利”这些资源。把社会划分为能修炼和不能修炼，其实是把社会阶层简单化。好处是便于管理，害处是让底层绝了进阶的希望！</strong></p>
+  <p>在这样的世界里要想提升境界，朴素的做法当然是自己努力修炼精进。这时候就看出来出身门第的好处。有头有脸的门阀世家可以挑选天地真气最浓郁的洞天福地。如果还嫌门下弟子进阶缓慢，可以用斩妖除魔的名义把别人辛辛苦苦完成的能量积累炼做丹药服用。至于说土拨鼠这样的，只能被排挤到鸟不拉屎的沙漠里喝汤。但即便如此，一部分特别优秀的土拨鼠还是成了妖。<strong>既然是妖，就意味着也是“序列”中的一员。</strong>可以修炼，也可以有抢夺天地能量的机会。尽管电影中并没有提到。但逻辑上讲，<strong>土拨鼠们虽然没有什么向上跨越阶层的可能性，甚至只能成为炼丹的材料，但向下同样可以压迫凡人为他们效命。所以说，土拨鼠是“享利”阶层的最垫底层级。土拨鼠之下皆牛马！</strong></p>
+  <p>那么，为什么土拨鼠总以为自己是哪吒。甚至连土拨鼠以下都自以为“我命由我不由天”。这就要说到前两天和朋友的聊天。话题开始于美国社会的消费。我给他讲，在黑暗腐朽的美国，Costco里不仅商品丰富，而且有非常人性化的退货政策。不仅是尺码错的可以退，就连穿过的内裤，看过的电视，睡过一年的床垫，用剩下的半瓶洗发水，吃剩下的半个西瓜这些统统都能全额退款。这让他感觉非常不可理解。其实不仅是Costco。在美国和加拿大，退货都是一件稀松平常的事情。并且这些商品一旦被拆开包装就不会再回到货架上，而是会被低价处理掉。尽管有一些嘿哥们儿，印度哥们儿专门钻退货的空子。但商业连锁机构依然坚持采用这种宽松的退货政策。我和一位美国商管公司的高层聊过此事。他的回复是这样的：商家和顾客之间应该建立起互相信任的关系。他们愿意相信客户的退货行为是善意的。不能因为个别人的恶意行为就打破这种信任关系。而当一个社会能够构建起这样一种信任关系的时候，就是社会成本最低的时候。所以，即便是有人反复钻空子占便宜，他们也不过是取消其会员资格罢了。</p>
+  <p>想想看，在听到这个例子的时候有多少人的第一反应会是“这要不好好薅一把资本主义羊毛，他们就不知道花儿为什么这样红！”<strong>之所以别人眼里再正常不过的事情，会让地球另外一端的人感到不可思议，最主要的原因是我们根本不知道这个世界上还有“另外一套逻辑”！</strong>其他类似的例子我也曾在文章里举过。例如在国内的旅游景点买东西都特别贵，而且各种假货泛滥。但是在很多欧洲国家正好反过来。越是久负盛名的旅游目的地，越是讲究货真价实（除了那些吉普赛游商和旅游团定点商店）。我在德国的时候问过当地人原因。得到的回答是，很多游客可能一辈子就来这么一回，所以尽量不要让人家感觉失望。</p>
+  <p>如果我们对于世界的了解仅仅是来自于书本、新闻或某些自媒体，最多不过是跟着旅行团去过几个国家拍照，而从不去主动获取信息，也不想了解别人的规则。<strong>那么终究是无法认识到真实的世界。身为土拨鼠，却把自己看作是随时等待接班的哪吒，还有什么值得奇怪的呢？</strong></p>
+  <p>或许有人会说，你说的这些都属于国情不同。<strong>即便是存在“另外一套逻辑”，对我们的生活也不会有什么影响。我们不是一样有妖妖领先吗？我们的AI不是一样让美国人惊掉下巴吗？</strong>但现实是，（此处删去初稿的507字）<strong>比信息茧房更可怕的是认知框架被篡改。</strong>美国社会学家欧文·戈夫曼（Erving Goffman）提出的框架理论的核心观点是，人们对信息的理解并非基于信息本身，而是受到他们所持有的认知框架的影响。这就导致我们解读诠释信息的时候，通常会遵循某种思维定势。即、<strong>认知**</strong>框架**。同样的信息经过不同框架下的解析过程，则会产生不同的意义，不同的理解和不同的行动。</p>
+  <p>人最初的认知框架是在常识的基础上建立起来的。例如知道雪是白的煤球是黑的，饭能吃屎不能吃。生活中接触到的信息会对框架形成影响，并且巩固或者改变框架。这个过程被称为加框架（framing）。在自媒体已经高度渗透我们的生活的时代，又迎来了AI的快速崛起。很多人已经开始习惯于依赖自媒体和AI为我们解读诠释信息。这个时候，<strong>如果得到的答案经常是违背常识甚至没有道德的，必然会造成框架被篡改。</strong>（此处删去210字）<strong>一旦人的认知框架被篡改、被置换成为某种标准答案，就很难再纠正回来。这时候别说告诉他是哪吒，就算说他是玉皇大帝也会信。</strong></p>
+  <p>前面讲过，站着喝汤的土拨鼠也勉强算是“享利阶层”的一员。在哪吒的世界里，<strong>神仙与凡人之间是生殖隔离的。但凡有某个人敢于突破这个界限，就会被视作是对整个“享利阶层”的挑战，必然引来“天庭震怒”。</strong>所以在《哪吒2》电影里，土拨鼠面对哪吒丝毫没有大祸临头的觉悟。大家只关心自己手上的那一碗汤。哪怕那汤在哪吒的眼里是如此令人做呕，连泔水都不如。但对于土拨鼠来说，这汤就代表了它们作为“序列”成员的身份。谁打破了汤碗，他们才会“啊！”的大叫起来。一众土拨鼠们想的从来都不是要挑战天庭之上的存在，而是如何成为群体里最强壮的那只，从此突破“两勺”的限制，有喝不完的汤。是否成为上仙的丹药反而是不重要的。其实哪吒也是太年轻，殊不知有句话叫<strong>“尊重他人命运，放弃渡人情怀”。在每一只土拨鼠身上，都刻着两个大字“麻木”！</strong></p>
+  <p>今天的文章不能算是影评，更像是影评的影评。在所有影评中，最可笑的是解读出什么“五角大楼”“绿卡”“美钞”，然后偷笑老外们“连骂他们都看不懂”。<strong>当一个人总是习惯于隐喻，用一种“我看懂了但是你不懂，所以我比你牛X”的“特色心态”看待别人，其实是继承自阿Q的精神胜利法。</strong>这让我想起当年清政府在战败后与列强见面时，经常会使用一些只有自己人看得懂的“仪式胜利“。例如，让外邦使节从规格更低的门进入紫禁城。然后嘲笑洋人连被羞辱了都不知道，哪里比得上“天朝体面”。殊不知，<strong>两个世界的基本逻辑是不相通的。你要的是面子和心理上的胜利，而别人只在乎实实在在的利益。这世上最讽刺的莫过于，明明自己身为冻死骨，却总是操着朱门酒肉的心。</strong></p>
+  <p>就写到这里吧。原文写了4000余字。结果无法发出。忍痛删减了近千字，更是直接砍掉了507+210字的整段内容。相关内容在整理后仅供感兴趣的朋友私阅（条件不变，关注本号一年以上或给予过本号赞赏）。<strong>已经添加过好友的请勿重复添加。</strong></p>
+  <p>总结一下。这个世界上不一定会有站着喝汤的土拨鼠，但一定会有“黑（目艮）圈女工”！下次再听见别人喊“我命由我不由天”的时候，<strong>别光顾着热血沸腾。先想想那个“我”，包不包括自己！再过几年回头看《哪吒2》，希望在过滤掉那些炫目的特效动作以后，这部电影还能让你爽！</strong></p>
+  <p><strong>伙伴们既然都看到这里了，不妨再占用1分钟时间了解一下我的个人广告。</strong>到目前为止我已经停掉了所有的商务广告。而我唯一认真推荐给伙伴们的就只有加拿大的保健品。因为我相信在当前的情况下，可以实实在在的帮到每一个人。事实上，很多加拿大的保健品放在中国都<strong>是药用级别的，而且必须清楚标明疗效，懂的都懂！</strong>加拿大执行的NPN认证，是比美国FDA更严苛的标准。</p>
+  <p>所以在今天文章的末尾，推荐伙伴们了解一下<strong>堪称心脏保护神，可以有效调节血压、提供神经保护，降低他汀类药物副作用的韦伯泛醇辅酶Q10。</strong></p>
+  <p><strong>还有另外一款不容错过的是，在“科技与狠活”的时代，可以保护肝脏、解毒排毒，缓解脂肪肝、酒精肝的护肝片。</strong></p>
+  <p>今天推荐的这两款保健品都是由我在加拿大的合作伙伴真实代购。<strong>一货一寄，直邮到您手上，没有中间环节。</strong>所有保健品在寄出前均经添加防伪并拍照存档。力求确保不在运输途中出现问题。<strong>大牛哥本人信誉担保，伙伴们可以放心购买。还有很多其它的宝藏级健康产品，也可以加好友咨询一下。您不问，怎么能知道有没有自己需要的呢？</strong>今天扫描下方<strong>专属二维码</strong>加好友订购，均可享受大牛哥读者专享优惠。注意，此二维码仅为加拿大保健品代购专用，不提供文章索取。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/奶粉代购.webp" alt="img" /></p>
+  <p>本文关联阅读：<strong><a href="https://mp.weixin.qq.com/s?__biz=MzU5MjUxMzc5Nw==&amp;mid=2247511893&amp;idx=1&amp;sn=c3d4fcc8bda70052bff7952af82cfc9e&amp;chksm=fe1c713fc96bf8296344814f598ec3bf6ea944e578c9c6467a08553d270114cd6aeb51b5030c&amp;token=1993696385%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">为什么你喝不到真正牛奶味？真相可能超乎你的想象</a></strong></p>
+  <p><strong>最近三篇原创文章：</strong></p>
+  <p><strong>* <a href="https://mp.weixin.qq.com/s?__biz=MzU5OTE1NzE5OQ==&amp;mid=2247493226&amp;idx=1&amp;sn=cd76fe13187bad5f5d1b7a46a1044d53&amp;token=68596863%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">都散了吧，“血压不降、麻药不麻”出调查结果了</a></strong></p>
+  <p><strong>* <a href="https://mp.weixin.qq.com/s?__biz=MzU5MjUxMzc5Nw==&amp;mid=2247512753&amp;idx=1&amp;sn=3307005766e6f04c5fb6dbf5213df0f4&amp;token=1058323562%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">川普要解散教育部，难道仅仅是一个“预算问题”？</a></strong></p>
+  <p><strong>* <a href="https://mp.weixin.qq.com/s?__biz=MzU5OTE1NzE5OQ==&amp;mid=2247493208&amp;idx=1&amp;sn=e096d5aa1dd6dc09451120621f21e108&amp;token=508447330%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">既然高喊“墨西哥万岁”，为什么不愿回去“伟大的祖国”？</a></strong></p>
+  <p><strong>\~END\~</strong></p>
+  <p><strong>如果您喜欢我的文章</strong></p>
+  <p><strong>欢迎点赞、在看和转发</strong></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/%E5%85%AD%E7%A5%9E%E7%A3%8A%E7%A3%8A%E8%AF%BB%E9%87%91%E5%BA%B8-%E9%87%91%E5%BA%B8%E8%AF%B4%E7%9A%84-%E5%87%A0%E5%8D%81%E5%B9%B4%E5%A5%BD%E6%97%A5%E5%AD%90%E6%98%AF%E6%8D%A1%E7%9A%84-%E5%A4%9A%E4%BA%86%E4%BA%BA%E7%B1%BB%E4%B8%8D%E9%85%8D">
+          六神磊磊读金庸｜金庸说的：几十年好日子是捡的，多了人类不配
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9">
+          【404文库】凤凰网｜足协主席引用《哪吒2》金句鼓励球员：我命由我不由天
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-13</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13">
+          每日一语 2024.2.13
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-13</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-13/%E7%8E%8B%E4%BA%94%E5%9B%9B-%E5%93%AA%E5%90%92%E5%88%AB%E9%97%B9">
+          王五四｜哪吒别闹
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-14/%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E6%96%B0%E6%94%BB%E5%8A%BF-%E5%88%A9%E7%94%A8%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%AF%B9%E5%8F%B0%E7%BB%9F%E6%88%98-%E5%88%B6%E9%80%A0%E6%AD%A6%E7%BB%9F%E5%90%88%E6%B3%95%E6%80%A7">
+            前一篇：中国外交新攻势：利用全球南方对台统战，制造武统合法性
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9">
+            后一篇：【404文库】凤凰网｜足协主席引用《哪吒2》金句鼓励球员：我命由我不由天
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E6%96%B0%E6%94%BB%E5%8A%BF-%E5%88%A9%E7%94%A8%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%AF%B9%E5%8F%B0%E7%BB%9F%E6%88%98-%E5%88%B6%E9%80%A0%E6%AD%A6%E7%BB%9F%E5%90%88%E6%B3%95%E6%80%A7'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-14/%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E6%96%B0%E6%94%BB%E5%8A%BF-%E5%88%A9%E7%94%A8%E5%85%A8%E7%90%83%E5%8D%97%E6%96%B9%E5%AF%B9%E5%8F%B0%E7%BB%9F%E6%88%98-%E5%88%B6%E9%80%A0%E6%AD%A6%E7%BB%9F%E5%90%88%E6%B3%95%E6%80%A7">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-14/404%E6%96%87%E5%BA%93-%E5%87%A4%E5%87%B0%E7%BD%91-%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%95%E7%94%A8-%E5%93%AA%E5%90%922-%E9%87%91%E5%8F%A5%E9%BC%93%E5%8A%B1%E7%90%83%E5%91%98-%E6%88%91%E5%91%BD%E7%94%B1%E6%88%91%E4%B8%8D%E7%94%B1%E5%A4%A9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
