@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>尽管备受安全审视，美国用户仍在使用中国应用程序 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+" />
+    <meta property="og:description" content="
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="尽管备受安全审视，美国用户仍在使用中国应用程序" />
+    <meta property="twitter:title" content="尽管备受安全审视，美国用户仍在使用中国应用程序" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5405)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213%2F7974641.html&t=%E5%B0%BD%E7%AE%A1%E5%A4%87%E5%8F%97%E5%AE%89%E5%85%A8%E5%AE%A1%E8%A7%86%EF%BC%8C%E7%BE%8E%E5%9B%BD%E7%94%A8%E6%88%B7%E4%BB%8D%E5%9C%A8%E4%BD%BF%E7%94%A8%E4%B8%AD%E5%9B%BD%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213%2F7974641.html&t=%E5%B0%BD%E7%AE%A1%E5%A4%87%E5%8F%97%E5%AE%89%E5%85%A8%E5%AE%A1%E8%A7%86%EF%BC%8C%E7%BE%8E%E5%9B%BD%E7%94%A8%E6%88%B7%E4%BB%8D%E5%9C%A8%E4%BD%BF%E7%94%A8%E4%B8%AD%E5%9B%BD%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F&d=2025-02-13&e=
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+
+
+  
+Fri, 14 Feb 2025 02:42:23 GMT
+  
+  
+资料照片：手机上的小红书和TikTok应用。
+  
+首尔 —   作为美国首都华盛顿附近马里兰州近郊的一名高中三年级学生，丹尼尔·库岑科(Daneel Kutsenko)过去从未对中国有太多关注。然而，上个月，在美国政府准备以国家安全为原因而禁止TikTok之际，库岑科下载了小红书(RedNote)--另一款中国的视频分享应用。他认为，这款应用软件让他对中国有了新的视角。“这些人看起来就是在享受生活，玩得很开心，”库岑科在接受美国之音(VOA)采访时这样形容小红书。据报道，在TikTok禁令被暂缓执行之前，小红书已吸引了数十万美国用户。库岑科的做法反映了一个大趋势。虽然美国政策制定者对中国应用的警告声越来越大，但是这些应用已经成为美国人日常生活的重..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213%2F7974641.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html&text=尽管备受安全审视，美国用户仍在使用中国应用程序&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html&title=尽管备受安全审视，美国用户仍在使用中国应用程序" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html&title=尽管备受安全审视，美国用户仍在使用中国应用程序" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=尽管备受安全审视，美国用户仍在使用中国应用程序&body=
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html&title=尽管备受安全审视，美国用户仍在使用中国应用程序&caption=
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=尽管备受安全审视，美国用户仍在使用中国应用程序&url=https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>尽管备受安全审视，美国用户仍在使用中国应用程序</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213%2F7974641.html&t=%E5%B0%BD%E7%AE%A1%E5%A4%87%E5%8F%97%E5%AE%89%E5%85%A8%E5%AE%A1%E8%A7%86%EF%BC%8C%E7%BE%8E%E5%9B%BD%E7%94%A8%E6%88%B7%E4%BB%8D%E5%9C%A8%E4%BD%BF%E7%94%A8%E4%B8%AD%E5%9B%BD%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F&d=2025-02-13&e=
+尽管备受安全审视，美国用户仍在使用中国应用程序
+——
+
+
+  
+Fri, 14 Feb 2025 02:42:23 GMT
+  
+  
+资料照片：手机上的小红书和TikTok应用。
+  
+首尔 —   作为美国首都华盛顿附近马里兰州近郊的一名高中三年级学生，丹尼尔·库岑科(Daneel Kutsenko)过去从未对中国有太多关注。然而，上个月，在美国政府准备以国家安全为原因而禁止TikTok之际，库岑科下载了小红书(RedNote)--另一款中国的视频分享应用。他认为，这款应用软件让他对中国有了新的视角。“这些人看起来就是在享受生活，玩得很开心，”库岑科在接受美国之音(VOA)采访时这样形容小红书。据报道，在TikTok禁令被暂缓执行之前，小红书已吸引了数十万美国用户。库岑科的做法反映了一个大趋势。虽然美国政策制定者对中国应用的警告声越来越大，但是这些应用已经成为美国人日常生活的重..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213%2F7974641.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739501943000-->
+<p><a href="https://www.voachinese.com/a/chinese-apps-face-scrutiny-in-us-but-users-keep-scrolling-20250213/7974641.html">尽管备受安全审视，美国用户仍在使用中国应用程序</a>
+——</p>
+
+<div>
+  <div>
+<em>Fri, 14 Feb 2025 02:42:23 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/52b8107b-d657-4c78-ba94-3ee77951ad58_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照片：手机上的小红书和TikTok应用。</small>
+  </div>
+首尔 —   <p>作为美国首都华盛顿附近马里兰州近郊的一名高中三年级学生，丹尼尔·库岑科(Daneel Kutsenko)过去从未对中国有太多关注。<br /><br />然而，上个月，在美国政府准备以国家安全为原因而禁止TikTok之际，库岑科下载了小红书(RedNote)--另一款中国的视频分享应用。他认为，这款应用软件让他对中国有了新的视角。<br /><br />“这些人看起来就是在享受生活，玩得很开心，”库岑科在接受美国之音(VOA)采访时这样形容小红书。据报道，在TikTok禁令被暂缓执行之前，小红书已吸引了数十万美国用户。<br /><br />库岑科的做法反映了一个大趋势。虽然美国政策制定者对中国应用的警告声越来越大，但是这些应用已经成为美国人日常生活的重要组成部分。</p>
+  <p>星期四(2月13日)，TikTok重返苹果(Apple)和谷歌(Google)的美国应用商店。<br /><br />TikTok是中国视频分享应有抖音的海外版，由中国公司字节跳动(ByteDance)拥有，在美国拥有1.7亿用户。</p>
+  <p>中国人工智能(AI)聊天机器人深度求索(DeepSeek)上个月发布后，迅速在包括美国在内的多个国家登上苹果应用商店排名榜首。</p>
+  <p>另一个重大变化发生在在线购物领域，美国消费者纷纷涌向中国的数字化市场，例如拼多多海外版Temu和希音(Shein)，以寻求超低价的服装、家居用品及其他商品。<br /><br />根据电子商务营销公司Omnisend于2024年进行的一项调查，70%的美国人在过去一年内在中国的平台上购物，其中20%的人至少每周一次。<br /><br /><strong>多方面威胁</strong><br /><br />美国官员警告称，中国应用程序可能带来广泛的威胁--无论是对国家安全、隐私、人权，还是对经济的影响。<br /><br />TikTok一直是主要的关注对象。试图禁止该应用程序的国会议员指出，中国政府可能利用TikTok进行情报收集，或操控其算法，以推动对北京有利的叙事。<br /><br />与此同时，中国的电商应用程序因其超低价格而受到审视。英国皇家联合军种研究所(Royal United Services Institute)驻伦敦的研究员萨里·阿尔霍·哈夫伦(Sari Arho Havrén)在与美国之音(VOA)的电子邮件交流中表示，这些价格引发了关于供应链伦理以及可能涉及强迫劳动的担忧。<br /><br />“这引发了关于这些产品是否可持续生产的问题，”哈夫伦表示，他的研究领域包括中国外交政策与大国竞争。此外，他补充道：“这种定价直接扼杀了本地制造商和企业。”<br /><br />许多美国政策制定者还警告说，中国的应用程序可能带来更大的隐私风险，因为中国法律规定企业在政府提出要求时必须分享数据。<br /><br /><strong>“好奇心与反叛心理”</strong><br /><br />尽管如此，越来越多的美国人似乎对此毫不在意。尤其是年轻人，他们往往对隐私问题不以为然，认为自己的个人数据早已广泛暴露。<br /><br />“他们要获取数据的话，随便拿吧。再说，我才16岁--他们能发现什么？我的天哪，他是学生？也没什么大不了的嘛。”库岑科说道。<br /><br />研究美中数字互动的专家艾杨方曦(Ivy Yang)告诉美国之音，许多年轻美国人认为自己不太可能卷入中国的国家安全调查。<br /><br />“他们追求的是多巴胺峰值。他们不会去想自己在小红书上刷的舞蹈视频或‘猫咪税’(cat tax)图片是否会成为国家安全威胁。”杨方曦说道。她是总部位于纽约的咨询公司Wavelet Strategy的创始人。<br /><br />杨方曦指出，TikTok禁令引发的反弹以及小红书下载量的激增，可能反映出美国年轻人对中国的看法正在发生变化--他们不再仅仅将中国视为地缘政治对手，而是视其为日常生活中应用程序的提供者。<br /><br />她还将这种怀疑态度归因于一种更广泛的文化心理--这种心理源于好奇心、叛逆心理以及对传统机构(包括主流媒体)日益加深的不信任。<br /><br />长期研究美中数字趋势的分析师、《中国档案》(ChinaFile)在线杂志的研究员金玉米(Jeremy Goldkorn)表示，对美国政治动荡和经济不确定性的日益失望加剧了这些转变。<br /><br />“当人们--尤其是年轻人--对自己的国家感到愤怒和失望时，他们就很难对中国的所作所为产生强烈反应。”金玉米在最近一期的《中国通》(Sinica)播客节目中这样说道。该播客关注中国时事。<br /><br />民调也反映了这一分歧。2024年皮尤研究中心(Pew Research Center)的一项调查发现，81%的美国人对中国持负面看法，但年轻人对此的态度较温和--在30岁以下人群中，只有27%对中国持强烈负面看法，而65岁及以上人群的这一比例为61%。<br /><br /><strong>数字壁垒</strong><br /><br />尽管中国的应用程序正在美国扩张，但在许多方面，数字鸿沟仍然像以往一样难以逾越。<br /><br />中国几乎屏蔽了所有主要的西方平台，并对本国的应用程序实施严格管控，而美国则在考虑对中国科技采取新的限制措施。<br /><br />尽管美国总统唐纳德·特朗普(Donald Trump)暂停了TikTok禁令，但他的政府已表示有更广泛的计划来遏制中国的科技影响力。<br /><br />特朗普政府官员暗示，他们可能会采取措施来监管中国的数字聊天机器人DeepSeek。<br /><br />此外，特朗普政府最近表示计划关闭一个贸易漏洞，也就是“小额豁免”--该漏洞使中国零售商能够绕过进口关税和海关检查。<br /><br /><strong>更广泛的挑战</strong><br /><br />在华盛顿辩论如何应对中国应用程序的崛起之际，一些分析人士认为，这场讨论可能掩盖了社交媒体本身所带来的更深层次问题。<br /><br />莱顿大学(Leiden University)数字治理专家罗吉尔·克里默斯(Rogier Creemers)告诉美国之音，尽管中国应用程序可能确实引发西方国家的合理关切，但它们只是一个更大、尚未解决的问题的一部分。<br /><br />“从这些社交媒体平台中衍生出的各种社会弊病，我认为远比中国共产党可能做的事情更重要。”克里默斯表示。他提到，例如数字成瘾、注意力衰退，以及社交媒体如何助长虚假信息和轻率的政治。<br /><br />“我认为，无论这些应用程序是中国拥有的或美国拥有的，还是塔吉克斯坦拥有的，这些问题都会存在。”他补充道。<br /><br />克里默斯表示，美国在监管在线平台方面采取了更宽松的政策，部分原因是强烈的言论自由保护，以及科技行业对监管的强烈反对。<br /><br /><strong>应用程序还是影响力？</strong><br /><br />对于数百万美国人来说，在打开TikTok时，他们不会想到有关中国及其数字影响力的巨大争议。<br /><br />库岑科表示，他和朋友们对美中紧张关系并没有强烈看法。他们只是在寻找一个TikTok的替代品--一个让人感觉有趣、熟悉、易于使用的应用程序。<br /><br />这表明，尽管政策制定者将中国应用程序视为日益激烈的科技竞争的一部分，但对于许多美国人来说，它们只是另一种用来刷手机、购物和娱乐的方式，不管它们来自哪里。<br /></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/%E7%BE%8E%E5%9B%BD%E8%BF%98%E6%98%AF%E4%B8%AD%E5%9B%BD-%E6%8B%89%E4%B8%81%E7%BE%8E%E6%B4%B2%E9%9D%A2%E4%B8%B4%E9%80%89%E8%BE%B9%E7%AB%99%E7%9A%84%E5%8E%8B%E5%8A%9B">
+          美国还是中国？拉丁美洲面临选边站的压力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-13</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-13/%E4%B8%87%E6%96%AF-%E4%BF%84%E7%BD%97%E6%96%AF%E8%8B%A5%E6%8B%92%E7%BB%9D%E4%BF%9D%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E9%95%BF%E4%B9%85%E7%8B%AC%E7%AB%8B-%E7%BE%8E%E5%9B%BD%E5%8F%AF%E8%83%BD%E5%8A%A8%E7%94%A8%E5%86%9B%E4%BA%8B%E6%89%8B%E6%AE%B5">
+          万斯：俄罗斯若拒绝保证乌克兰长久独立 美国可能动用军事手段
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-13</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-13/%E5%85%AC%E5%B9%B3%E5%92%8C%E5%AF%B9%E7%AD%89-%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E7%AD%BE%E7%BD%B2%E5%91%BD%E4%BB%A4-%E5%88%B6%E5%AE%9A%E5%AF%B9%E7%AD%89%E5%85%B3%E7%A8%8E%E8%AE%A1%E5%88%92">
+          “公平和对等”：特朗普总统签署命令，制定对等关税计划
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-13</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-13/%E7%89%B9%E6%9C%97%E6%99%AE%E6%84%BF%E4%B8%8E%E4%BF%84%E4%B8%AD%E5%B1%95%E5%BC%80%E6%A0%B8%E5%86%9B%E6%8E%A7%E4%BC%9A%E8%B0%88%E5%B9%B6%E5%B8%8C%E6%9C%9B%E6%8A%8A%E5%90%84%E5%9B%BD%E5%86%9B%E8%B4%B9%E5%87%8F%E5%8D%8A">
+          特朗普愿与俄中展开核军控会谈并希望把各国军费减半
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13">
+            前一篇：每日一语 2024.2.13
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-13/%E9%BB%9E%E7%87%83%E5%85%A8%E7%90%83%E8%B2%BF%E6%98%93%E6%88%B0-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E8%A8%88%E7%95%AB">
+            后一篇：點燃全球貿易戰？川普宣布對等關稅計畫
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-13/%E9%BB%9E%E7%87%83%E5%85%A8%E7%90%83%E8%B2%BF%E6%98%93%E6%88%B0-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E8%A8%88%E7%95%AB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-13/%E4%B8%87%E6%96%AF-%E4%BF%84%E7%BD%97%E6%96%AF%E8%8B%A5%E6%8B%92%E7%BB%9D%E4%BF%9D%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E9%95%BF%E4%B9%85%E7%8B%AC%E7%AB%8B-%E7%BE%8E%E5%9B%BD%E5%8F%AF%E8%83%BD%E5%8A%A8%E7%94%A8%E5%86%9B%E4%BA%8B%E6%89%8B%E6%AE%B5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-13/%E5%85%AC%E5%B9%B3%E5%92%8C%E5%AF%B9%E7%AD%89-%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E7%AD%BE%E7%BD%B2%E5%91%BD%E4%BB%A4-%E5%88%B6%E5%AE%9A%E5%AF%B9%E7%AD%89%E5%85%B3%E7%A8%8E%E8%AE%A1%E5%88%92'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-13/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2024.2.13">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-13/%E9%BB%9E%E7%87%83%E5%85%A8%E7%90%83%E8%B2%BF%E6%98%93%E6%88%B0-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%E5%B0%8D%E7%AD%89%E9%97%9C%E7%A8%85%E8%A8%88%E7%95%AB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-13/%E4%B8%87%E6%96%AF-%E4%BF%84%E7%BD%97%E6%96%AF%E8%8B%A5%E6%8B%92%E7%BB%9D%E4%BF%9D%E8%AF%81%E4%B9%8C%E5%85%8B%E5%85%B0%E9%95%BF%E4%B9%85%E7%8B%AC%E7%AB%8B-%E7%BE%8E%E5%9B%BD%E5%8F%AF%E8%83%BD%E5%8A%A8%E7%94%A8%E5%86%9B%E4%BA%8B%E6%89%8B%E6%AE%B5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-13/%E5%85%AC%E5%B9%B3%E5%92%8C%E5%AF%B9%E7%AD%89-%E7%89%B9%E6%9C%97%E6%99%AE%E6%80%BB%E7%BB%9F%E7%AD%BE%E7%BD%B2%E5%91%BD%E4%BB%A4-%E5%88%B6%E5%AE%9A%E5%AF%B9%E7%AD%89%E5%85%B3%E7%A8%8E%E8%AE%A1%E5%88%92">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

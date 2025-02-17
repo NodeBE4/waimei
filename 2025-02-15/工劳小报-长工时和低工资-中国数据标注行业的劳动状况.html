@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>工劳小报｜长工时和低工资：中国数据标注行业的劳动状况 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+" />
+    <meta property="og:description" content="
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="工劳小报｜长工时和低工资：中国数据标注行业的劳动状况" />
+    <meta property="twitter:title" content="工劳小报｜长工时和低工资：中国数据标注行业的劳动状况" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5405)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715869.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E9%95%BF%E5%B7%A5%E6%97%B6%E5%92%8C%E4%BD%8E%E5%B7%A5%E8%B5%84%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8A%B3%E5%8A%A8%E7%8A%B6%E5%86%B5" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715869.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E9%95%BF%E5%B7%A5%E6%97%B6%E5%92%8C%E4%BD%8E%E5%B7%A5%E8%B5%84%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8A%B3%E5%8A%A8%E7%8A%B6%E5%86%B5&d=2025-02-15&e=
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：长工时和低工资：中国数据标注行业的劳动状况作者：Bea Lind发表日期：2024.10.14来源：工劳小报主题归类：劳工权益CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  CDT编辑注：本文2024年10月14日发表于关注中国基层劳动者的媒体平台“工劳小报”。点击这里阅读CDT收录的工劳小报文章。
+  
+    工劳小报编者前言：这是一位来自英国的研究者Bea Lind的投稿，Ta在今年初曾实地在中国多个地方的职业学校、数据标注公司进行田野调查，了解中国AI行业背后的劳动状况。Ta与小报分享了自己的研究初步发现，并计划再次前往中国进行..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715869.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715869.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715869.html&text=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715869.html&title=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715869.html&title=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况&body=
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715869.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715869.html&title=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况&caption=
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=工劳小报｜长工时和低工资：中国数据标注行业的劳动状况&url=https://chinadigitaltimes.net/chinese/715869.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>工劳小报｜长工时和低工资：中国数据标注行业的劳动状况</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-15
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715869.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715869.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E9%95%BF%E5%B7%A5%E6%97%B6%E5%92%8C%E4%BD%8E%E5%B7%A5%E8%B5%84%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8A%B3%E5%8A%A8%E7%8A%B6%E5%86%B5&d=2025-02-15&e=
+工劳小报｜长工时和低工资：中国数据标注行业的劳动状况
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：长工时和低工资：中国数据标注行业的劳动状况作者：Bea Lind发表日期：2024.10.14来源：工劳小报主题归类：劳工权益CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  CDT编辑注：本文2024年10月14日发表于关注中国基层劳动者的媒体平台“工劳小报”。点击这里阅读CDT收录的工劳小报文章。
+  
+    工劳小报编者前言：这是一位来自英国的研究者Bea Lind的投稿，Ta在今年初曾实地在中国多个地方的职业学校、数据标注公司进行田野调查，了解中国AI行业背后的劳动状况。Ta与小报分享了自己的研究初步发现，并计划再次前往中国进行..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715869.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739658032000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715869.html">工劳小报｜长工时和低工资：中国数据标注行业的劳动状况</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715869.html" title="工劳小报｜长工时和低工资：中国数据标注行业的劳动状况" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-34-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>长工时和低工资：中国数据标注行业的劳动状况<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/工劳小报" target="_blank">Bea Lind</a><br /><strong>发表日期：</strong>2024.10.14<br /><strong>来源：</strong><a href="https://news.laborinfocn2.com/datalabel-workers/" target="_blank">工劳小报</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/劳工权益" target="_blank">劳工权益</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>CDT编辑注：</strong>本文2024年10月14日发表于关注中国基层劳动者的媒体平台<a href="https://feed.laborinfocn7.com/about/" title="“工劳小报”">“工劳小报”</a>。点击这里阅读CDT收录的<a href="https://chinadigitaltimes.net/chinese/tag/%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5" title="工劳小报文章">工劳小报文章</a>。</p>
+  <blockquote>
+    <p>工劳小报编者前言：这是一位来自英国的研究者Bea Lind的投稿，Ta在今年初曾实地在中国多个地方的职业学校、数据标注公司进行田野调查，了解中国AI行业背后的劳动状况。Ta与小报分享了自己的研究初步发现，并计划再次前往中国进行更深入的研究。工劳小报很感谢Ta的分享，并且，如果作为读者的你曾在数据标注行业打过工或了解该行业，我们也想邀请你填写文末的问卷，或者与Bea Lind直接联系，成为受访者。AI行业背后基层打工者的声音需要被听到！</p>
+  </blockquote>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715869-67b11226cdc38.png" alt="img" /></p>
+  <p>基于我的博士研究，以下文章描述了人工智能供应链中最劳动密集的部分——数据标注行业的劳动条件。今年早些时候，我从英国前往中国，研究了中国数据标注行业的发展及其工人的经历。世界各地的数据标注员的声音大多未被听见，他们的劳动条件也基本未被公开审查。一些学者，如玛丽·格雷（Mary Gray）和锡达特·苏里（Siddharth Suri）在2019年称这些工人为“幽灵工人”。我希望我的研究能揭示导致这一行业劳动条件恶化的驱动因素，并展现劳动抗争的广阔可能性。只要这种抗争得到释放，便能加强工人团结，迫使资方改善条件，最终让“幽灵工人”这个学术表达不再有任何意义。</p>
+  <h2 id="ai">AI背后的数据标注员是谁？</h2>
+  <p>数据标注员整天坐在电脑前，在像澳鹏(Aopeng)和数据堂(Datatang)这样的平台上标记大量数据。这些任务可以是简单的，比如识别图片中的人物或车辆；也可以是复杂的，比如标注医疗扫描中的疾病。这些标注为AI应用的开发奠定了基础，如聊天机器人、自动驾驶汽车、智能安防系统和医疗诊断工具等。</p>
+  <p>数据标注行业的外包市场始于2011年，并在2015年开始迅速增长。大约在这一时期，互联网公司开始与内陆省份的地方政府合作，如山西、河南、四川和贵州，建立数据标注基地。如今，这些省份拥有最多的数据标注公司，从小型工坊（员工少于20人）到拥有数千名员工的大型企业不等。</p>
+  <p>Viola Zhou和Caiwei Chen在2023年的研究中发现，学生占据了数据标注行业20%至30%的劳动力。然而，在我访问的公司中，这一比例高达90%。对于这些学生来说，在数据标注公司实习是毕业的必要条件。百度等公司利用实习生作为廉价劳动力来源。比如，2022年，百度与甘肃酒泉的一所职业学校合作，建立了一个数据标注中心，迫使160多名学生参加数据标注实习（Zhou &amp; Chen，2023）。</p>
+  <p>严峻的就业市场和创纪录的青年失业率导致许多学生在学期期间自愿从事数据标注工作，以丰富简历和赚取额外收入。我在田野调查中遇到的许多学生选择这个行业是因为它的灵活性（兼职学生工通常可以选择自己的工作时间）。一位曾经从事建筑行业的工人解释道，虽然工资低，但这份工作没有那么费体力，工人们也可以更频繁地休息。</p>
+  <p>然而，兼职数据标注工作的灵活性付出了沉重的代价。由于公司不需要为兼职工人提供稳定的标注任务，他们可以在需要时招募这些工人，并在不需要时将他们抛弃。由于这种工作不稳定性，学生们常常感到有压力，在工作旺季时不得不加班加点。一些公司经理告诉我，兼职数据标注员通常在家工作，他们可以连续工作，甚至包括夜班。换句话说，灵活的劳动制度使公司能够增加劳动强度，并延长工作时间。</p>
+  <p>虽然全职工人（大多是应届毕业生）通常能获得稳定的工作任务，但他们也受到更严格的纪律约束。通常要求每天至少工作8-10小时，每周工作6天，并且工作速度由数据标注公司决定。如果他们未能达到标准，就会被要求加班，但没有加班费。加班的情况经常发生，因为工人被要求完成额外的无偿任务。例如，如果客户认为他们的工作质量不佳，工人必须重新标注数据，但不会因此获得额外报酬。此外，在公司接受一个项目之前进行的试用通常也是无偿的，意味着工人必须无偿工作。此外，工人还被要求进行新的任务培训，这些培训也是无偿的。由于大多数项目都相对较短（平均1-2个月），工人们通常每月都要接受培训。我采访的一位正式工人解释说，她有时为一个仅持续一个月的项目进行了30小时的无偿培训。她估算自己每周的工作时间（包括有偿和无偿的任务）约为72小时。</p>
+  <p>无论是学生工人还是全职工人，通常都没有受到《劳动合同法》的保护。因此，他们无法享受社会保障、加班工资或公平工资的权利——工人们的工资经常低于最低工资标准。</p>
+  <h2 id="section">恶性循环的工资下降</h2>
+  <p>大多数数据标注员按件计酬，即他们的月薪取决于完成的标注任务数量，学生的单件任务工资通常比正式工人低。我采访的经理和工人估算，行业中全职工人的平均月工资在2000到2600元之间。然而，如Zhou &amp; Chen（2023）和Xu Shuang（2024）所示，许多工人的工资甚至低于这一平均水平，即使他们全职工作。</p>
+  <p>正式工人的工资曾经高得多——Xiaojun Feng（2020）估算，2018年时，行业的平均月薪在4000至5000元之间。随着更多学生和应届毕业生涌入行业，数据标注员之间的竞争加剧，使公司得以压低所有工人的工资。我采访的一位全职工人解释说，尽管他的工作时间保持不变，但他的月薪从2021年的5000元降到了今天的3500元。</p>
+  <p>随着工资的下降，工作速度却在加快，在某些情况下几乎令人难以承受。通过平台追踪工人的动作并不断提高工作要求，公司推动工人增加每日完成的标注数量。在某些情况下，平台甚至会将效率较低的工人踢出，从而加剧了工人之间的竞争，进一步加剧了失业的恐惧。</p>
+  <p>在短时间内完成任务的压力增加了工人的压力。一位工人告诉我，“压力很大，我总是觉得自己没有时间”。一位数据标注公司的经理也证实了这一情况，解释道，“工作量非常非常大。工作非常不健康……这工作越来越难了！但工资却一直在下降！”</p>
+  <h2 id="section-1">危机中的抗争新机遇</h2>
+  <p>人工智能行业的投资最近有所下降，这反过来推动了AI公司延迟支付数据标注供应商的款项；许多项目已经完成了一年，仍未结算。这导致了数据标注行业的危机，企业破产和工资拖欠达到顶峰。我采访的一位公司老板估计，今年有成千上万的数据标注员未能按时（或根本没有）收到工资。</p>
+  <p>此外，企业难以留住技术工人，这进一步加剧了危机。工人不愿忍受低薪和恶劣的工作条件，导致了高流动率。事实上，工人们通常在行业中工作3-6个月后便离开。这影响了公司的利润，因为招聘和培训成本增加了，新员工的工作效率较低，进一步降低了许多公司的整体效率。根据我与一些业内人士的交谈，劳动力不足，特别是能够使用高级技术工具高效完成复杂任务的工人短缺，导致行业停滞不前。</p>
+  <p>这展示了工人的结构性力量，他们拒绝忍受恶劣工作条件对行业产生了不利影响。如果工人们能够利用这种力量向资方施压，集体行动或许能够迫使AI公司改善工资和工作条件。</p>
+  <h2 id="section-2">肯尼亚的数据标注员说“不”！</h2>
+  <p>由数据标注员Richard Mathenge（2024）共同制作的一部近期纪录片表明，在非洲的数据标注员中，一场激励人心的运动正在兴起，推动科技巨头改善工作条件并保护工人权利。2023年初，美国外包公司Sama的肯尼亚内罗毕分公司工人开始抗议，要求提高工资和减少工作时间。抗议者还与肯尼亚其他公司的数据标注员交流，并成立了一个WhatsApp小组，讨论他们恶劣的工作条件以及如何应对。2023年年中，小组成员在内罗毕见面，决定成立工会以争取他们的诉求。该组织迅速扩展到肯尼亚以外的地区，吸引了约500名非洲各地的成员。随着工人组织力量的增强，公司老板和肯尼亚政府的反应也愈发强硬：Sama解雇了抗议工人，而肯尼亚政府则拒绝法律承认该工会。然而，这并未阻止数据标注员继续组织，争取改善工作条件。这场斗争仍在进行，尽管科技巨头努力压制，但该行业的第一个工会正在不断壮大。</p>
+  <p>在争取改善工作条件的斗争中，不同国家的数据标注员面临独特的挑战。比如，中国的数据标注员必须找到方法克服全职工人与兼职学生工人之间的分化。在我的田野调查中，我发现学生工人往往与正式工人分开工作，要么在家，要么在不同的办公空间，而且分配的任务也不同。换句话说，公司将劳动力分散开来，消除了工人之间建立联系的需求（除了小工作组内的沟通）。在这种情况下，组织工人的任务困难重重，但并非不可能。中国特有的另一个挑战是高度发达的外包系统，它通过多层中介公司隐藏了上游企业（如百度和比亚迪）。往往，数据标注公司的直接负责人将工资拖欠和工作条件恶化归咎于上游雇主。由于上游公司被隐藏，工人们经常不知道向哪里提出投诉，就像我采访的一位试图向劳动局投诉的工人一样。</p>
+  <p>通过我的研究，我希望进一步揭示数据标注行业的结构和工作条件，以及潜在的抗争力量。如果您是或曾经是数据标注员，并希望为深化我们对这一行业的理解做出贡献，请考虑填写以下匿名调查。如果您愿意提供更深入的见解并与我分享您的经历，欢迎通过 <a href="mailto:dataworkers5@gmail.com">dataworkers5@gmail.com</a> 与我联系，我们可以在线上或线下进行访谈。所有数据都会完全匿名处理，您将不会在我未来的写作中被识别。</p>
+  <p>填写问卷：<a href="https://forms.office.com/r/936ALTKPpL">https://forms.office.com/r/936ALTKPpL</a></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-15</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-15/%E5%BF%B5%E4%B8%AA%E5%92%92%E8%AF%AD%E4%BC%9A%E4%B8%8B%E9%9B%A8-%E9%81%AD%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E%E7%9A%84%E6%B5%B7%E6%A3%A0%E4%BD%9C%E8%80%85-%E5%83%8F%E6%9E%81%E4%BA%86%E5%93%AA%E5%90%922%E9%87%8C%E8%A2%AB%E7%82%BC%E4%B8%B9%E7%9A%84%E5%A6%96%E6%80%AA">
+          念个咒语会下雨｜遭远洋捕捞的海棠作者，像极了哪吒2里被炼丹的妖怪
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-15</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-15/%E9%87%8D%E6%B8%A9-404%E6%96%87%E5%BA%93-%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%B0%8F%E8%AF%B4-%E6%B6%89%E9%BB%84-%E8%A2%AB%E8%B7%A8%E7%9C%81%E6%8A%93%E6%8D%95%E5%90%8E-%E4%B8%80%E4%B8%AA%E6%B5%B7%E6%A3%A0%E4%BD%9C%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD">
+          【重温】【404文库】极昼工作室｜小说「涉黄」被跨省抓捕后，一个海棠作者的自白
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-15</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-15/%E7%8C%9B%E7%8A%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8A%E6%AD%A6%E6%A0%A1-%E4%B8%8D%E6%98%AF-%E5%A5%BD%E5%AD%A6%E7%94%9F-%E4%B9%9F%E4%B8%8D%E6%98%AF-%E5%9D%8F%E5%AD%A9%E5%AD%90">
+          猛犸工作室｜我为什么上武校：不是“好学生”，也不是“坏孩子”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-15</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-15/%E4%BA%BA%E7%94%9F%E4%B8%8D%E9%B1%BC%E6%9C%9F-%E4%B8%8D%E5%A9%9A%E5%B0%B1%E5%BC%80%E9%99%A4-%E8%BF%99%E5%AE%B6%E4%BC%81%E4%B8%9A%E5%87%AD%E5%95%A5%E8%BF%99%E4%B9%88%E7%A1%AC%E6%B0%94">
+          人生不鱼期｜不婚就开除？这家企业凭啥这么硬气
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-15/%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BDAI%E6%B1%9F%E6%B9%96%E7%9A%84%E6%A0%B8%E5%BF%83%E7%8E%A9%E5%AE%B6%E5%8F%8A%E7%BE%8E%E4%B8%ADAI%E7%AB%9E%E9%80%90%E6%A0%BC%E5%B1%80">
+            前一篇：一文了解中国AI江湖的核心玩家及美中AI竞逐格局
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-15/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E6%8B%98%E7%95%99%E6%B6%89%E5%AB%8C%E8%B5%B0%E7%A7%81%E6%AF%92%E5%93%81%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91">
+            后一篇：俄罗斯法院下令拘留涉嫌走私毒品的美国公民
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-15/%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BDAI%E6%B1%9F%E6%B9%96%E7%9A%84%E6%A0%B8%E5%BF%83%E7%8E%A9%E5%AE%B6%E5%8F%8A%E7%BE%8E%E4%B8%ADAI%E7%AB%9E%E9%80%90%E6%A0%BC%E5%B1%80'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-15/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E6%8B%98%E7%95%99%E6%B6%89%E5%AB%8C%E8%B5%B0%E7%A7%81%E6%AF%92%E5%93%81%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-15/%E9%87%8D%E6%B8%A9-404%E6%96%87%E5%BA%93-%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%B0%8F%E8%AF%B4-%E6%B6%89%E9%BB%84-%E8%A2%AB%E8%B7%A8%E7%9C%81%E6%8A%93%E6%8D%95%E5%90%8E-%E4%B8%80%E4%B8%AA%E6%B5%B7%E6%A3%A0%E4%BD%9C%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-15/%E7%8C%9B%E7%8A%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8A%E6%AD%A6%E6%A0%A1-%E4%B8%8D%E6%98%AF-%E5%A5%BD%E5%AD%A6%E7%94%9F-%E4%B9%9F%E4%B8%8D%E6%98%AF-%E5%9D%8F%E5%AD%A9%E5%AD%90'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-15/%E4%B8%80%E6%96%87%E4%BA%86%E8%A7%A3%E4%B8%AD%E5%9B%BDAI%E6%B1%9F%E6%B9%96%E7%9A%84%E6%A0%B8%E5%BF%83%E7%8E%A9%E5%AE%B6%E5%8F%8A%E7%BE%8E%E4%B8%ADAI%E7%AB%9E%E9%80%90%E6%A0%BC%E5%B1%80">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-15/%E4%BF%84%E7%BD%97%E6%96%AF%E6%B3%95%E9%99%A2%E4%B8%8B%E4%BB%A4%E6%8B%98%E7%95%99%E6%B6%89%E5%AB%8C%E8%B5%B0%E7%A7%81%E6%AF%92%E5%93%81%E7%9A%84%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-15/%E9%87%8D%E6%B8%A9-404%E6%96%87%E5%BA%93-%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%B0%8F%E8%AF%B4-%E6%B6%89%E9%BB%84-%E8%A2%AB%E8%B7%A8%E7%9C%81%E6%8A%93%E6%8D%95%E5%90%8E-%E4%B8%80%E4%B8%AA%E6%B5%B7%E6%A3%A0%E4%BD%9C%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-15/%E7%8C%9B%E7%8A%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8A%E6%AD%A6%E6%A0%A1-%E4%B8%8D%E6%98%AF-%E5%A5%BD%E5%AD%A6%E7%94%9F-%E4%B9%9F%E4%B8%8D%E6%98%AF-%E5%9D%8F%E5%AD%A9%E5%AD%90">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

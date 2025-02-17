@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>关胖本胖｜DeepSeek和国运有啥关系？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+" />
+    <meta property="og:description" content="
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="关胖本胖｜DeepSeek和国运有啥关系？" />
+    <meta property="twitter:title" content="关胖本胖｜DeepSeek和国运有啥关系？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5405)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715803.html&t=%E5%85%B3%E8%83%96%E6%9C%AC%E8%83%96%EF%BD%9CDeepSeek%E5%92%8C%E5%9B%BD%E8%BF%90%E6%9C%89%E5%95%A5%E5%85%B3%E7%B3%BB%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715803.html&t=%E5%85%B3%E8%83%96%E6%9C%AC%E8%83%96%EF%BD%9CDeepSeek%E5%92%8C%E5%9B%BD%E8%BF%90%E6%9C%89%E5%95%A5%E5%85%B3%E7%B3%BB%EF%BC%9F&d=2025-02-12&e=
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+
+
+  
+  DeepSeek横空出世，成功破圈。破圈之后，照例就是各自发挥的“六经注我”。其中最值得警惕的，中美双方都出现了借题发挥的“技术孤立主义”。美方的“脱钩论”者把DeepSeek视为技术威胁，剽窃、盗用的指责满天飞；这边的“国运赌徒”则是把DeepSeek渲染为“中美争霸”的一击制胜的，自我感觉良好。
+  好端端的科技成果，却成了地缘政治的符号。妖魔化和神化看似针尖对麦芒，其实都是对科技进步事业的亵渎，是阻挠人类科技进步事业的合谋。
+  唯有屏蔽杂音，才能直面真相：DeepSeek到底是什么？将会造成怎样的影响？
+  01
+  DeepSeek师承chatgpt
+  1月27日，DeepSeek应用登顶苹果美国地区应用商店免费APP下载排行榜，在美区下载榜上超越了ChatGPT。随即引发了资本市场的震荡，DeepSeek..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715803.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715803.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715803.html&text=关胖本胖｜DeepSeek和国运有啥关系？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715803.html&title=关胖本胖｜DeepSeek和国运有啥关系？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715803.html&title=关胖本胖｜DeepSeek和国运有啥关系？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=关胖本胖｜DeepSeek和国运有啥关系？&body=
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715803.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715803.html&title=关胖本胖｜DeepSeek和国运有啥关系？&caption=
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=关胖本胖｜DeepSeek和国运有啥关系？&url=https://chinadigitaltimes.net/chinese/715803.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>关胖本胖｜DeepSeek和国运有啥关系？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715803.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715803.html&t=%E5%85%B3%E8%83%96%E6%9C%AC%E8%83%96%EF%BD%9CDeepSeek%E5%92%8C%E5%9B%BD%E8%BF%90%E6%9C%89%E5%95%A5%E5%85%B3%E7%B3%BB%EF%BC%9F&d=2025-02-12&e=
+关胖本胖｜DeepSeek和国运有啥关系？
+——
+
+
+  
+  DeepSeek横空出世，成功破圈。破圈之后，照例就是各自发挥的“六经注我”。其中最值得警惕的，中美双方都出现了借题发挥的“技术孤立主义”。美方的“脱钩论”者把DeepSeek视为技术威胁，剽窃、盗用的指责满天飞；这边的“国运赌徒”则是把DeepSeek渲染为“中美争霸”的一击制胜的，自我感觉良好。
+  好端端的科技成果，却成了地缘政治的符号。妖魔化和神化看似针尖对麦芒，其实都是对科技进步事业的亵渎，是阻挠人类科技进步事业的合谋。
+  唯有屏蔽杂音，才能直面真相：DeepSeek到底是什么？将会造成怎样的影响？
+  01
+  DeepSeek师承chatgpt
+  1月27日，DeepSeek应用登顶苹果美国地区应用商店免费APP下载排行榜，在美区下载榜上超越了ChatGPT。随即引发了资本市场的震荡，DeepSeek..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715803.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739362271000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715803.html">关胖本胖｜DeepSeek和国运有啥关系？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715803.html" title="关胖本胖｜DeepSeek和国运有啥关系？" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739362055717-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739362055717.png" alt="file" /></p>
+  <p>DeepSeek横空出世，成功破圈。破圈之后，照例就是各自发挥的“六经注我”。其中最值得警惕的，中美双方都出现了借题发挥的“技术孤立主义”。美方的“脱钩论”者把DeepSeek视为技术威胁，剽窃、盗用的指责满天飞；这边的“国运赌徒”则是把DeepSeek渲染为“中美争霸”的一击制胜的，自我感觉良好。</p>
+  <p><strong>好端端的科技成果，却成了地缘政治的符号。</strong>妖魔化和神化看似针尖对麦芒，其实都是对科技进步事业的亵渎，是阻挠人类科技进步事业的合谋。</p>
+  <p>唯有屏蔽杂音，才能直面真相：DeepSeek到底是什么？将会造成怎样的影响？</p>
+  <p><strong>01</strong></p>
+  <p><strong>DeepSeek师承chatgpt</strong></p>
+  <p>1月27日，DeepSeek应用登顶苹果美国地区应用商店免费APP下载排行榜，在美区下载榜上超越了ChatGPT。随即引发了资本市场的震荡，DeepSeek被形容为“英伟达的最大空头”，英伟达的股价大幅下跌。“DeepSeek碾压ChatGPT，吊打英伟达”的神话就此诞生。</p>
+  <p>先说Deepseek和ChatGPT之间的关系。<strong>DeepSeek和ChatGPT之间的竞争，是“师徒之战”。</strong>两者的师承关系源于“蒸馏技术”，这是Deepseek快速崛起的技术路径。</p>
+  <p>通俗的说，“蒸馏技术”就是用一个较为成熟的“教师模型”训练“学生模型”，这一过程类似低度酒蒸馏加工为高度酒。具体操作方式是，“学生模型”每分钟上百万次高频提问，从“教师模型”中汲取数据、学习逻辑。然后在人工干预下优化算法，最终形成独特的个性。ChatGPT就是Deepseek的“教师模型”，或许不是唯一的，肯定是主要的。因此，说ChatGPT是Deepseek的老师，不过分吧？</p>
+  <p>“蒸馏技术”不是近年来的新发明，发明者既不是中国人，也不是美国人，而是英国佬杰弗里.辛顿在2015年提出的，比阿尔法狗一战成名还早一年。所以，当时“蒸馏技术”只是纯理论的屠龙技——压根就没有成熟的“教师模型”，没法蒸馏。直到ChatGPT等成熟大模型相继投入实际应用，“蒸馏技术”才有了实际应用的空间。因此，“先有ChatGPT，后有Deepseek”也是无法否认的事实。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>DeepSeek和国运有啥关系？<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/关胖本胖" target="_blank">关不羽</a><br /><strong>发表日期：</strong>2025.2.12<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/cZRiI5V85tkCuUQ8ytWC-Q" target="_blank">微信公众号“关胖本胖”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/DeepSeek" target="_blank">DeepSeek</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>显然，Deepseek不是“天上掉下个林妹妹”，<strong>而是站在巨人肩膀上的衍生产品。</strong>咋咋呼呼的“国运赌徒”竭力否认、淡化Deepseek的师承ChatGPT，强拗“独立原创”的造型，是可笑又可怜的掩耳盗铃。</p>
+  <p>当然，也不能因为Deepseek是蒸馏技术的产物，就否认其原创性。<strong>蒸馏不等于盗窃、抄袭。</strong>要是能一抄了之，哪里轮得到Deeseek？在蒸馏技术的赛道上，有名有姓的玩家少说也有上百家。Deepseek能出圈，是有几把刷子的。“蒸馏”大同小异，人工干预的算法优化各显神通。简洁高效的算法是Deepseek的成功关键，颇有中国特色。</p>
+  <p>人工智能三大要素——算法、算力、数据，中国长于算法，美国重视算力。这种“偏科”倾向在赛道开启初期就已经显现了。昔日商汤为代表的视觉系AI“中国四小龙”，就是以算法著称。ChatGPT崛起，“算力为王”的大力出奇迹成为主流。风水轮流转，Deeepseek的勃兴，在一定程度上是“算法复兴”。这种技术风格的转换，在人类的科技进步史上反复发生，是一种常态。</p>
+  <p><strong>Deepseek最大的优势是性价比，算法赋能大幅降低了算力成本。</strong>省钱永远是商业竞争的王道，绝大部分个人用户都没有很高的专业需求，免费、开源的Deepseek更有吸引力，这是人工智能商业化应用的成功。</p>
+  <p>但是，这并不意味着因Deepseek已经青出于蓝胜于蓝，更谈不上“碾压ChatGPT”。“蒸馏技术”和算法优化是做减法，以简化的方式提高效率。所以，Deepseek更垂直、更聚焦专业领域，这也意味着牺牲了一部分通用性。比如说，文生图等视觉系技术就不是Deepseek的强项，和文心一言比都有差距，遑论ChatGPT。而且，蒸馏技术的技术“天花板”到底有多高，现在也很难判断。未来能否实现性能全面超越，并没有清晰的预期。</p>
+  <p>这从资本市场的表现也可以看出端倪，Deepseek上架后，微软的股价仅仅下跌了2%。表明了市场投资者还处于观望态度，资本市场用真金白银的站队表态，不是各路“嘴强王者”的唾沫星子可比的。</p>
+  <p>反而是英伟达的股价“大跌”17%，Deepseek真是“英伟达终结者”吗？</p>
+  <p><strong>02</strong></p>
+  <p><strong>Deepseek不是“英伟达终结者”</strong></p>
+  <p>Deepseek到底使用了多少英伟达芯片，目前有三个版本分别是五万、一万和两千多，越传越少。其中“只有了两千多”的版本最假，Deepseek创始人梁文峰本人在采访中就说过，早在公司成立前额2021年就囤了一万块GPU。无论是一万还是五万，比起动辄几十万芯片的大厂产品，都是数量级的降低。大可不必在传播过程中人为夸大Deepseek的“省芯”。</p>
+  <p><strong>必须指出的是，Deepseek的算法优化“省芯”，并不会降低人工智能领域的算力需求降低。</strong>算法优化和算力需求的关系，有点类似燃油发动机技术节油和燃油消费需求。燃油发动机开发省油技术，并没有降低汽油消费的总量。因为汽车的燃油成本越低，促进了汽车的普及度，燃油消费的总量不降反增。Deepseek省芯降低了人工智能研发应用的资金门槛，会吸引更多的投资者进场。</p>
+  <p>人工智能的研发端将会进一步走向“群狼搏虎”的遍地开花。在应用端，Deepseek成功实现免费开源模式，大幅推进了人工智能的普及应用，也会产生巨大的算力需求增长。别小看中小企业、个人用户本地部署的仨瓜俩枣，聚沙成塔是巨大的潜在需求增长。<strong>Deepseek不是“英伟达终结者”，而是英伟达的财神爷。</strong></p>
+  <p>所以，英伟达对Deepseek的态度非常积极，不仅第一时间登陆NVIDIANIM，还给了权威背书——“DeepSeek-R1是最先进的大语言模型”。</p>
+  <p>至于所谓“股价大跌”，英伟达经历了市值十年增长222倍的超高增长，区区17%的跌幅不痛不痒。这轮回调，不是Deepseek对英伟达产生了实质性威胁，而是市场投资者借Deepseek释放一波回调势能。</p>
+  <p>当然，算力需求增长，未必是英伟达笑到最后。给英伟达造成竞争压力的不是Deepseek，而是其他大厂的算力芯片。英伟达的大客户谷歌、亚马逊、微软竞相推出自家算力芯片，算力大战已经开打。这场“神仙打架”对人工智能技术的研发、应用无疑是好消息。</p>
+  <p>因此，<strong>“国运赌徒”强行把Deepseek树立为英伟达的对手，是莫名其妙的“关公战秦琼”。</strong>这种强行对立，不是拔高，而是矮化——低估了Deepseek对整个人工智能领域的结构性冲击。</p>
+  <p><strong>03</strong> </p>
+  <p><strong>Deepseek是计划外的中美科技合作产物</strong></p>
+  <p>我们应该怎样评价Deepseek呢？DeepSeek创始人梁文峰给出了标准答案，“我们不是有意成为一条鲶鱼，只是不小心成了一条鲶鱼”。</p>
+  <p><strong>Deepseek的成功完全是计划外的市场产物。</strong>一家注册资金1000万的小公司，而不是“国运赌徒”心心念念的“国家队”。起点不高，也没有“星辰大海”的宏大目标——DeepSeek的初始目标是专攻金融交易，就是“国运赌徒”们最反感的“资本工具”。这样一家“起于草莽”的小民企，打造了一款成功的人工智能产品。不经意间改变了整个产业。这才是科技产业发展的正常模式。各种奇思妙想在开放的市场中竞争、试错，实现从量变到质变的升华。</p>
+  <p><strong>Deepseek的成功，没有“赌国运”、中美争霸的宏大叙事，只有朴实的市场逻辑和水到渠成的科技路径。</strong>市场需要性价比高的人工智能技术，企业研发满足了市场需求。蒸馏技术从纯理论的纸上谈兵，到成熟大模型开道后真正落地。自然而然，不需要拔苗助长。</p>
+  <p>Deepseek不是闭门造车的产物，而是中美科技合作的成果。美国大厂的“教师模型”和算力技术，中国科技企业的研发力量，缺一不可。市场机制的无形之手，总是撮合出“佳偶天成”。那些彩旗飘飘、仪式感十足的“合作签约仪式”十之八九只是“仪式”而已。只有市场机制下的合作才保真。</p>
+  <p>因此，大可不必刻意强调Deepseek的原创性、创新性。师承chatgpt的蒸馏技术、使用英伟达GPU都是无法否认的事实，又何必遮遮掩掩？<strong>“微创新”的一小步，也可以是人类科技事业的一大步。</strong>瓦特并没有发明蒸汽机，而是改良了前辈的创作。这并不妨碍瓦特蒸汽机叩开了工业化的大门。</p>
+  <p>一款好产品本身，足以说明一切。Deepseek无疑是一款好产品，至于是否具备“划时代”的意义，无需“口头加冕”，时间会说明一切。就算没有又何妨？只要有良好的市场合作机制，而不是以邻为壑的自我封闭，划时代的好产品一定不会缺席。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%96%9D%E4%BA%86%E5%B0%8F%E5%84%BF%E6%99%BA%E5%8A%9B%E7%B3%96%E6%B5%86-%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E7%9A%84%E5%AD%A6%E4%B9%A0">
+          基本常识｜喝了小儿智力糖浆，妈妈再也不用担心我的学习
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E5%A4%8F%E5%BF%97%E6%95%8F%E5%8C%BB%E7%94%9F-%E4%BB%BF%E5%88%B6%E8%8D%AF%E4%B8%80%E8%87%B4%E6%80%A7%E8%AF%84%E4%BB%B7%E6%95%B0%E6%8D%AE%E4%BB%8D%E6%9C%89%E4%B8%8D%E5%B0%91%E9%94%99%E8%AF%AF">
+          夏志敏医生｜仿制药一致性评价数据仍有不少错误
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E9%BB%91%E5%99%AA%E9%9F%B3-%E5%8C%96%E5%80%BA%E7%9A%84%E5%B0%BD%E5%A4%B4-%E6%98%AF%E8%B0%81%E7%9A%84%E9%92%B1%E5%8C%85">
+          黑噪音｜化债的尽头，是谁的钱包？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-12</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-12/%E5%9C%A8%E4%B9%9D%E6%A5%BC%E4%B8%8A-%E5%BD%93%E5%89%AF%E5%A4%84%E7%BA%A7%E9%A2%86%E5%AF%BC%E9%80%80%E4%BC%91%E6%9C%88%E9%A2%861.1%E4%B8%87-%E8%80%8C%E6%88%91%E7%9A%84%E5%86%9C%E6%B0%91%E7%88%B6%E6%AF%8D%E4%BB%85%E6%9C%89192%E5%85%83">
+          在九楼上｜当副处级领导退休月领1.1万，而我的农民父母仅有192元
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-12/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E5%9B%BD8%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%A7%84%E6%A8%A1%E7%9A%84%E5%B0%8F%E5%9E%8B%E9%93%B6%E8%A1%8C%E5%90%88%E5%B9%B6%E6%BD%AE-%E6%81%90%E5%A2%9E%E6%9C%AA%E6%9D%A5%E9%A3%8E%E9%99%A9">
+            前一篇：路透：中国8万亿美元规模的小型银行合并潮 恐增未来风险
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-12/%E6%B3%A2%E7%BD%97%E7%9A%84%E6%B5%B7%E7%94%B5%E7%BC%86%E7%A0%B4%E5%9D%8F%E4%BA%8B%E4%BB%B6%E9%A2%91%E5%8F%91-%E5%BE%B7%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%8F%82%E4%B8%8E%E5%8C%97%E7%BA%A6%E5%B7%A1%E9%80%BB%E4%BD%BF%E5%91%BD">
+            后一篇：波罗的海电缆破坏事件频发 德国海军参与北约巡逻使命
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E5%9B%BD8%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%A7%84%E6%A8%A1%E7%9A%84%E5%B0%8F%E5%9E%8B%E9%93%B6%E8%A1%8C%E5%90%88%E5%B9%B6%E6%BD%AE-%E6%81%90%E5%A2%9E%E6%9C%AA%E6%9D%A5%E9%A3%8E%E9%99%A9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E6%B3%A2%E7%BD%97%E7%9A%84%E6%B5%B7%E7%94%B5%E7%BC%86%E7%A0%B4%E5%9D%8F%E4%BA%8B%E4%BB%B6%E9%A2%91%E5%8F%91-%E5%BE%B7%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%8F%82%E4%B8%8E%E5%8C%97%E7%BA%A6%E5%B7%A1%E9%80%BB%E4%BD%BF%E5%91%BD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E5%A4%8F%E5%BF%97%E6%95%8F%E5%8C%BB%E7%94%9F-%E4%BB%BF%E5%88%B6%E8%8D%AF%E4%B8%80%E8%87%B4%E6%80%A7%E8%AF%84%E4%BB%B7%E6%95%B0%E6%8D%AE%E4%BB%8D%E6%9C%89%E4%B8%8D%E5%B0%91%E9%94%99%E8%AF%AF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-12/%E9%BB%91%E5%99%AA%E9%9F%B3-%E5%8C%96%E5%80%BA%E7%9A%84%E5%B0%BD%E5%A4%B4-%E6%98%AF%E8%B0%81%E7%9A%84%E9%92%B1%E5%8C%85'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-12/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E5%9B%BD8%E4%B8%87%E4%BA%BF%E7%BE%8E%E5%85%83%E8%A7%84%E6%A8%A1%E7%9A%84%E5%B0%8F%E5%9E%8B%E9%93%B6%E8%A1%8C%E5%90%88%E5%B9%B6%E6%BD%AE-%E6%81%90%E5%A2%9E%E6%9C%AA%E6%9D%A5%E9%A3%8E%E9%99%A9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-12/%E6%B3%A2%E7%BD%97%E7%9A%84%E6%B5%B7%E7%94%B5%E7%BC%86%E7%A0%B4%E5%9D%8F%E4%BA%8B%E4%BB%B6%E9%A2%91%E5%8F%91-%E5%BE%B7%E5%9B%BD%E6%B5%B7%E5%86%9B%E5%8F%82%E4%B8%8E%E5%8C%97%E7%BA%A6%E5%B7%A1%E9%80%BB%E4%BD%BF%E5%91%BD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-12/%E5%A4%8F%E5%BF%97%E6%95%8F%E5%8C%BB%E7%94%9F-%E4%BB%BF%E5%88%B6%E8%8D%AF%E4%B8%80%E8%87%B4%E6%80%A7%E8%AF%84%E4%BB%B7%E6%95%B0%E6%8D%AE%E4%BB%8D%E6%9C%89%E4%B8%8D%E5%B0%91%E9%94%99%E8%AF%AF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-12/%E9%BB%91%E5%99%AA%E9%9F%B3-%E5%8C%96%E5%80%BA%E7%9A%84%E5%B0%BD%E5%A4%B4-%E6%98%AF%E8%B0%81%E7%9A%84%E9%92%B1%E5%8C%85">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
