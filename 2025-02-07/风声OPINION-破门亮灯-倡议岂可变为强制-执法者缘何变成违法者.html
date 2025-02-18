@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者? – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+" />
+    <meta property="og:description" content="
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?" />
+    <meta property="twitter:title" content="风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5398)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715661.html&t=%E9%A3%8E%E5%A3%B0OPINION%EF%BD%9C%E2%80%9C%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF%E2%80%9D%EF%BC%9A%E5%80%A1%E8%AE%AE%E5%B2%82%E5%8F%AF%E5%8F%98%E4%B8%BA%E5%BC%BA%E5%88%B6%EF%BC%8C%E6%89%A7%E6%B3%95%E8%80%85%E7%BC%98%E4%BD%95%E5%8F%98%E6%88%90%E8%BF%9D%E6%B3%95%E8%80%85%3F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715661.html&t=%E9%A3%8E%E5%A3%B0OPINION%EF%BD%9C%E2%80%9C%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF%E2%80%9D%EF%BC%9A%E5%80%A1%E8%AE%AE%E5%B2%82%E5%8F%AF%E5%8F%98%E4%B8%BA%E5%BC%BA%E5%88%B6%EF%BC%8C%E6%89%A7%E6%B3%95%E8%80%85%E7%BC%98%E4%BD%95%E5%8F%98%E6%88%90%E8%BF%9D%E6%B3%95%E8%80%85%3F&d=2025-02-07&e=
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?作者：赵宏发表日期：2025.2.6来源：风声OPINION主题归类：撬门开灯CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  过年期间，发生于山西大同执法人员破门进入商铺的新闻刷爆全网。案件的起因，是大同市平城区古城街道办事处鼓楼社区居委会，在年前下发《古城亮化倡议书》：倡议商铺为营造欢乐、祥和和喜庆的节日气氛，从腊月二十八至正月十五期间，每晚18点至次日凌晨为亮灯时间段；古城内的商业门店应确保室内灯光充足，而门头牌匾、广告牌、LED电子屏及灯笼等也应全部点亮，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715661.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715661.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715661.html&text=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715661.html&title=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715661.html&title=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?&body=
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715661.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715661.html&title=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?&caption=
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?&url=https://chinadigitaltimes.net/chinese/715661.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-07
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715661.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715661.html&t=%E9%A3%8E%E5%A3%B0OPINION%EF%BD%9C%E2%80%9C%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF%E2%80%9D%EF%BC%9A%E5%80%A1%E8%AE%AE%E5%B2%82%E5%8F%AF%E5%8F%98%E4%B8%BA%E5%BC%BA%E5%88%B6%EF%BC%8C%E6%89%A7%E6%B3%95%E8%80%85%E7%BC%98%E4%BD%95%E5%8F%98%E6%88%90%E8%BF%9D%E6%B3%95%E8%80%85%3F&d=2025-02-07&e=
+风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?作者：赵宏发表日期：2025.2.6来源：风声OPINION主题归类：撬门开灯CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  过年期间，发生于山西大同执法人员破门进入商铺的新闻刷爆全网。案件的起因，是大同市平城区古城街道办事处鼓楼社区居委会，在年前下发《古城亮化倡议书》：倡议商铺为营造欢乐、祥和和喜庆的节日气氛，从腊月二十八至正月十五期间，每晚18点至次日凌晨为亮灯时间段；古城内的商业门店应确保室内灯光充足，而门头牌匾、广告牌、LED电子屏及灯笼等也应全部点亮，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715661.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1738913788000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715661.html">风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715661.html" title="风声OPINION｜“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/6403-564x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>“破门亮灯”：倡议岂可变为强制，执法者缘何变成违法者?<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/赵宏" target="_blank">赵宏</a><br /><strong>发表日期：</strong>2025.2.6<br /><strong>来源：</strong><a href="https://archive.ph/E9NKO" target="_blank">风声OPINION</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/撬门开灯" target="_blank">撬门开灯</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>过年期间，发生于山西大同执法人员破门进入商铺的新闻刷爆全网。案件的起因，是大同市平城区古城街道办事处鼓楼社区居委会，在年前下发《古城亮化倡议书》：倡议商铺为营造欢乐、祥和和喜庆的节日气氛，从腊月二十八至正月十五期间，每晚18点至次日凌晨为亮灯时间段；古城内的商业门店应确保室内灯光充足，而门头牌匾、广告牌、LED电子屏及灯笼等也应全部点亮，直至次日天明。</p>
+  <p>案件当事人岳先生为该街道的商户，其在2月3日晚接到当地物业电话，要求到店内开灯，否则就会找相关部门将店门撬开。在岳先生因店内无人、时间太晚而拒绝赴店开灯后，其店内的监控在10分钟后显示，几名身着印有“平城综合执法”反光制服的工作人员将岳先生店铺的店门撬开，进入店内后将店铺所有的灯光打开。岳先生事后回到现场也发现，店铺的门锁都已被严重损害，甚至连门板都被撬到变形。</p>
+  <h2 id="section">被暴露在白炽灯下的暴力违法</h2>
+  <p>在岳先生展示的视频监控被广泛传播后，网友评价执法人员破门开灯的一幕，是将“荒诞的暴力执法彻底暴露在白炽灯下”。本案涉及的违法问题，不言而喻。</p>
+  <p>首先，《治安管理处罚法》第87条规定，“公安机关对与违反治安管理行为有关的场所、物品、人身可以进行检查。检查时，人民警察不得少于二人，并应当出示工作证件和县级以上人民政府公安机关出具的检查证明文件。对确有必要立即进行检查的，人民警察出示工作证件，可以当场检查。”《人民警察法》第7条同样规定，“公安机关的人民警察对违反治安管理或者其他公安机关行政管理法律、法规的个人或者组织，依法可以实施行政强制措施、行政处罚”。</p>
+  <p>岳先生展示的视频显示，破门进入店铺的就有当地民警。当时电话要求岳先生回店内开灯的物业人员同样提及，若不配合就会“找公安把门撬开”。但是，执法人员进入场所或住宅进行检查，甚至实施“强行开灯”措施的前提有二：其一，涉案当事人必须涉嫌违反《治安管理处罚法》或其他公安行政管理的法律、法规；其二，必须履行出示证件和提供由县级以上人民政府出具的检查证明文件的程序性义务。因为，强行进入某类场所，已属于对当事人权利影响较重的执法手段。</p>
+  <p>本案中，岳先生仅是未按照当地居委会的倡议书在春节夜间开灯，其行为根本与违反治安管理的行为无涉，也根本不存在未履行法律、法规定的行政义务，而必须由公安机关予以强制执行的情形，<strong>执法人员破门而入，也就根本于法无据。</strong></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715661-67a5b7b59915e." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">现场视频截图</span>  <p>其次，店铺乃商户重要的财产权益。《宪法》第13条明确规定，“公民的合法的私有财产不受侵犯。国家依照法律规定保护公民的私有财产权和继承权”；《民法典》第240条同样强调，“所有权人对自己的不动产或者动产，依法享有占有、使用、收益和处分的权利”。</p>
+  <p><strong>该街道的物业和当地执法部门未经店铺所有人同意，就通过撬门砸锁的方式强行进入店铺内开灯，已经属于严重侵犯店铺所有者财产权利的行为。这种暴力执法，不仅不尊重《宪法》《民法典》特别保护的私人财产权，也不尊重私人对其商铺的经营自主权利，甚至已经涉嫌违反《刑法》第245条所规定的“非法侵入住宅罪”。</strong>根据第245条第2款的规定，若是“司法工作人员滥用职权，犯前款罪的，从重处罚”。</p>
+  <p>其实，上述内容即使没有专门修习过法律，也属于普通大众都会了解的基本常识。但荒诞的是，本案中的执法者似乎将自己从这些法律的基本诫命中彻底豁免了出来，法律在此仅仅成为用于约束私人、震慑私人的手段，而与公权力机关再无关涉。</p>
+  <p>从岳先生曝光的音频中，也能再度让人感受有权者的倨傲，“你不开，一会儿公安就过来直接给你切开，我们就给你开了，你不信你就试试”；“人可以走，灯得留”。</p>
+  <p><strong>公权力机关对私人权利的无视甚至让人一度怀疑，此类案件依旧能在2025年新春就上演，这究竟属于执法人员法治意识的淡漠，还是有权者认为权力可以凌驾于法治之上？只要有权力的庇护，就可以摆脱所有的法治约束？</strong></p>
+  <h2 id="section-1">倡议岂能变成强制？</h2>
+  <p>本案中，执法人员之所以能够有恃无恐地破门而入，就在于平城区古城街道办事处鼓楼社区居委会在年前下发过《古城亮化倡议书》。倡议商铺为营造欢乐、祥和和喜庆的节日气氛，在整个春节期间都能在夜间持续亮灯。然而，<strong>既然名为《倡议书》，那就意味着仅仅属于行政机关的倡导、指示和鼓励，本身毫无法律上的强制力可言，也绝对不能成为行政机关强制执行的依据。</strong></p>
+  <p>但从基层执法的实践来看，那些所谓的“倡议”常常最终都被执法者当成了命令。相应的，不遵守“倡议”就会被认为不服从“命令”，由此也会引发行政机关的强制执行；情况严重的，甚至可以由公安机关介入，认为当事人未履行人民政府发布的决定命令而构成妨害公务的应罚行为。</p>
+  <p>这套执法逻辑也不禁让人反思：为何“倡议”会被扭曲为“强制”？这究竟是基层执法人员层层加码导致的执法越界，还是倡议制定者和执行者的惯性合谋？那些根本没有任何法律依据的行政指令，是否只是为了豁免合法性检视而被包装在“倡议”之下，最终却总能在基层执法人员的强制之下，能在“违反就涉嫌违法，就会被追究法律责任”的威慑中获得实现？此类“倡议”被扭曲为“强制”的案件一再发生，执法部门是否要好好反思这背后的政策制定和政策执行的奇异逻辑？</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715661-67a5b7b7881e8." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">商铺被剪断的地锁（图源：大风新闻）</span>  <p>岳先生提供给记者的信息是，当地宣传部门告知其该城区内有近97%的商铺积极配合了倡议，在整个春节期间都在夜间通宵达旦地开着店铺的灯光，只有3%的商铺未予配合。岳先生质疑“不配合的3%就活该被撬门吗？”</p>
+  <p>但是，此处让人质疑的还有，那些配合开灯的97%的商铺，究竟是心甘情愿地积极参与“欢乐、祥和和喜庆的节日气氛”的营造，还是同样因为忌惮频繁的行政检查和可能的行政强制不得已而为之？</p>
+  <p>又，根据岳先生的爆料，该片街区的商铺都是仿古建筑，因连接的电线都是明线，所以仅其店铺一个月的电费就高达3000元左右。由此，其实很难想象，那些97%的商铺仅为了配合营造祥和的过年气氛，自身就会不顾不菲开销将店铺灯光彻底常明。<strong>这不仅不符合商业逻辑，也再次暴露出权力膨胀和滥用，对于普通人权利的威慑和倾轧。</strong></p>
+  <h2 id="section-2">形式主义治理下的城市灯光秀</h2>
+  <p>本案更荒诞之处还在于，执法人员无视明确的法律禁令，深夜撬门闯入店铺的原因，竟然是让所有商铺的灯都彻底长明，由此通过所谓的“古城亮化”行动来“营造欢乐、祥和和喜庆的节日气氛”。</p>
+  <p>这种要求所有灯具彻夜长明来营造地方经济“灯火辉煌”的做法，与此前很多地方政府要求商铺统一门头招牌简直如出一辙，<strong>这不仅反映出地方治理的极端形式主义，本质上更是将本应受到法律保护的商铺，仅仅视为凸显自身政绩的工具。而且，这仅为了营造气氛就要求店铺彻夜亮灯，不仅不符合环保节能的目标，这种治理逻辑本身也极为荒谬。</strong></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715661-67a5b7b99fa0c." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">监控截图（图源：大风新闻）</span>  <p>又据岳先生反映，该地方政府如此折腾已经不是首次。在不久之前，该街道的执法人员为达到整齐划一的“美学效果”，就已经在年前把所有街道的广告牌子，“不管你花了多少钱，也没人通知，直接驾着吊车，连夜都拆除了”。岳先生去问时，执法人员的回复是“统一都砸烂了”。权力者的恣意任性，在此显露无疑。</p>
+  <p>个人的经营权要让位于行政机关的强制安排，个人的财产权也要服务于城市“灯火辉煌”的目标实现。<strong>这场形式主义的灯光秀，最终并未营造出“欢乐、祥和和喜庆的节日气氛”，反而再次暴露出一些地方基层漠视私权、无视法治的顽疾。</strong></p>
+  <p>在店铺被执法人员强行撬开并闯入后，岳先生曾电话12345反映，也曾咨询大同市平城区政府和该区的城市管理局，但均未获得任何回复。<strong>当个人权利受到他人侵犯时，我们可以选择寻求公权力机关已获得救济，但当破坏权利者就是执法人员自己时，如何问责和救济就成了考验法治的试金石。</strong></p>
+  <p>面对喧嚣舆论，平城区古城街道于2月7日凌晨发布致歉信。但令人遗憾的是，这封致歉信丝毫未涉及执法人员破门亮灯的法律责任，更未反思要求商铺春节彻底亮灯的治理问题，仅是轻描淡写的将问题归咎为“工作方式失当”，所谓“思想上急于求成、方法上简单粗暴、服务意识单薄”。<strong>这样的致歉，无论对于权利遭遇侵害的岳先生，还是关注此事的网友，无疑都是令人失望的。</strong></p>
+  <p>今天还只是初十，传统春节尚未过完，但发生于山西大同的这次事件却再次提示：<strong>能够营造祥和气氛的，只能是法治的明灯；欢乐美好的城市缔造，最终依赖的也只能是每个身处其中的个人都受到尊重。</strong></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-07</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-07/%E8%B4%A7%E6%AE%96%E6%96%B0%E4%BC%A0-%E6%9C%80%E7%88%B1%E7%9A%84%E5%8F%8B%E9%82%A6%E4%BF%84%E6%9C%9D%E8%81%94%E6%89%8B-%E5%BD%BB%E5%BA%95%E5%B0%81%E6%AD%BB%E6%88%91%E5%9B%BD%E4%B8%9C%E5%8C%97%E5%87%BA%E6%B5%B7%E5%8F%A3">
+          货殖新传｜最爱的友邦俄朝联手，彻底封死我国东北出海口！
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-07</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-07/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E5%A4%A7%E5%90%8C%E7%9A%84%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF-%E7%9C%9F%E7%9A%84%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%B7%A5%E4%BD%9C%E5%A4%AA%E7%83%AD%E6%83%85%E4%BA%86%E5%90%97">
+          就叫熊太行也行｜大同的破门亮灯，真的是因为工作太热情了吗
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-07</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84">
+          基本常识｜大同撬锁点灯的违法行为，光道歉是远远不够的
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-07</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-07/%E6%98%9F%E7%90%83%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA-%E5%B7%9E%E5%AE%98%E4%B8%8D%E5%8D%95%E5%B8%AE%E4%BD%A0%E5%BC%80%E7%81%AF%E8%BF%98%E5%B8%AE%E4%BD%A0%E6%8D%A2%E9%94%81">
+          星球商业评论｜州官不单帮你开灯还帮你换锁
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84">
+            前一篇：基本常识｜大同撬锁点灯的违法行为，光道歉是远远不够的
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-07/%E7%BE%8E%E5%9B%BD%E5%88%86%E6%9E%90%E5%B8%88%E8%AE%A4%E4%B8%BA-DeepSeek-%E7%9A%84-AI-App-%E6%9C%89%E5%BE%88%E9%AB%98%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%E8%A2%AB%E7%A6%81">
+            后一篇：美国分析师认为 DeepSeek 的 AI App 有很高的可能性被禁
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-07/%E7%BE%8E%E5%9B%BD%E5%88%86%E6%9E%90%E5%B8%88%E8%AE%A4%E4%B8%BA-DeepSeek-%E7%9A%84-AI-App-%E6%9C%89%E5%BE%88%E9%AB%98%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%E8%A2%AB%E7%A6%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-07/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E5%A4%A7%E5%90%8C%E7%9A%84%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF-%E7%9C%9F%E7%9A%84%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%B7%A5%E4%BD%9C%E5%A4%AA%E7%83%AD%E6%83%85%E4%BA%86%E5%90%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-07/%E7%BE%8E%E5%9B%BD%E5%88%86%E6%9E%90%E5%B8%88%E8%AE%A4%E4%B8%BA-DeepSeek-%E7%9A%84-AI-App-%E6%9C%89%E5%BE%88%E9%AB%98%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%E8%A2%AB%E7%A6%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-07/%E5%B0%B1%E5%8F%AB%E7%86%8A%E5%A4%AA%E8%A1%8C%E4%B9%9F%E8%A1%8C-%E5%A4%A7%E5%90%8C%E7%9A%84%E7%A0%B4%E9%97%A8%E4%BA%AE%E7%81%AF-%E7%9C%9F%E7%9A%84%E6%98%AF%E5%9B%A0%E4%B8%BA%E5%B7%A5%E4%BD%9C%E5%A4%AA%E7%83%AD%E6%83%85%E4%BA%86%E5%90%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-07/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E5%A4%A7%E5%90%8C%E6%92%AC%E9%94%81%E7%82%B9%E7%81%AF%E7%9A%84%E8%BF%9D%E6%B3%95%E8%A1%8C%E4%B8%BA-%E5%85%89%E9%81%93%E6%AD%89%E6%98%AF%E8%BF%9C%E8%BF%9C%E4%B8%8D%E5%A4%9F%E7%9A%84">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

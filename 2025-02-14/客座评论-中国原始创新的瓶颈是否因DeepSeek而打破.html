@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>客座评论：中国原始创新的瓶颈是否因DeepSeek而打破 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+" />
+    <meta property="og:description" content="
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="客座评论：中国原始创新的瓶颈是否因DeepSeek而打破" />
+    <meta property="twitter:title" content="客座评论：中国原始创新的瓶颈是否因DeepSeek而打破" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5398)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E5%258E%259F%25E5%25A7%258B%25E5%2588%259B%25E6%2596%25B0%25E7%259A%2584%25E7%2593%25B6%25E9%25A2%2588%25E6%2598%25AF%25E5%2590%25A6%25E5%259B%25A0DeepSeek%25E8%2580%258C%25E6%2589%2593%25E7%25A0%25B4%2Fa-71610577&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E5%258E%259F%25E5%25A7%258B%25E5%2588%259B%25E6%2596%25B0%25E7%259A%2584%25E7%2593%25B6%25E9%25A2%2588%25E6%2598%25AF%25E5%2590%25A6%25E5%259B%25A0DeepSeek%25E8%2580%258C%25E6%2589%2593%25E7%25A0%25B4%2Fa-71610577&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4&d=2025-02-14&e=
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+
+
+  
+  邓聿文2025-02-14T13:31:37.014Z
+  
+  
+Deepseek横空出世大大增强了中国人自主创新的信心
+  
+  （德国之声中文网）16世纪前，中国在科学和技术方面的发达程度远超同期欧洲，同時在社會制度上，中国的政教分离、文官选拔、私塾教育等也比欧洲更接近现代社会，然而，科学和工业革命并没有在近代中国发生，这便是科技和思想史上著名的“李约瑟之问”。
+  “李约瑟之问”背后揭示的现象，即中国原始创新的匮乏其实一直持续到现在，这让中国人很困惑，也有些自卑。但DeepSeek的出现增强了中国人在自主创新上的信心。虽然DeepSeek的算法创新严格来说，尚不属于0-1的技术进步，然而，这款AI大模型确实也让许多人认为，中国距离原始创新的突破又接近了一步。
+  中国人和中国政府对科技的痴迷是不亚..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E5%258E%259F%25E5%25A7%258B%25E5%2588%259B%25E6%2596%25B0%25E7%259A%2584%25E7%2593%25B6%25E9%25A2%2588%25E6%2598%25AF%25E5%2590%25A6%25E5%259B%25A0DeepSeek%25E8%2580%258C%25E6%2589%2593%25E7%25A0%25B4%2Fa-71610577" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577&text=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577&title=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577&title=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破&body=
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577&title=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破&caption=
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=客座评论：中国原始创新的瓶颈是否因DeepSeek而打破&url=https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>客座评论：中国原始创新的瓶颈是否因DeepSeek而打破</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E5%258E%259F%25E5%25A7%258B%25E5%2588%259B%25E6%2596%25B0%25E7%259A%2584%25E7%2593%25B6%25E9%25A2%2588%25E6%2598%25AF%25E5%2590%25A6%25E5%259B%25A0DeepSeek%25E8%2580%258C%25E6%2589%2593%25E7%25A0%25B4%2Fa-71610577&t=%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4&d=2025-02-14&e=
+客座评论：中国原始创新的瓶颈是否因DeepSeek而打破
+——
+
+
+  
+  邓聿文2025-02-14T13:31:37.014Z
+  
+  
+Deepseek横空出世大大增强了中国人自主创新的信心
+  
+  （德国之声中文网）16世纪前，中国在科学和技术方面的发达程度远超同期欧洲，同時在社會制度上，中国的政教分离、文官选拔、私塾教育等也比欧洲更接近现代社会，然而，科学和工业革命并没有在近代中国发生，这便是科技和思想史上著名的“李约瑟之问”。
+  “李约瑟之问”背后揭示的现象，即中国原始创新的匮乏其实一直持续到现在，这让中国人很困惑，也有些自卑。但DeepSeek的出现增强了中国人在自主创新上的信心。虽然DeepSeek的算法创新严格来说，尚不属于0-1的技术进步，然而，这款AI大模型确实也让许多人认为，中国距离原始创新的突破又接近了一步。
+  中国人和中国政府对科技的痴迷是不亚..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%25AE%25A2%25E5%25BA%25A7%25E8%25AF%2584%25E8%25AE%25BA%25EF%25BC%259A%25E4%25B8%25AD%25E5%259B%25BD%25E5%258E%259F%25E5%25A7%258B%25E5%2588%259B%25E6%2596%25B0%25E7%259A%2584%25E7%2593%25B6%25E9%25A2%2588%25E6%2598%25AF%25E5%2590%25A6%25E5%259B%25A0DeepSeek%25E8%2580%258C%25E6%2589%2593%25E7%25A0%25B4%2Fa-71610577" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739540823000-->
+<p><a href="https://www.dw.com/zh/%E5%AE%A2%E5%BA%A7%E8%AF%84%E8%AE%BA%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%A7%8B%E5%88%9B%E6%96%B0%E7%9A%84%E7%93%B6%E9%A2%88%E6%98%AF%E5%90%A6%E5%9B%A0DeepSeek%E8%80%8C%E6%89%93%E7%A0%B4/a-71610577">客座评论：中国原始创新的瓶颈是否因DeepSeek而打破</a>
+——</p>
+
+<div>
+  <div>
+<i>  邓聿文<br />2025-02-14T13:31:37.014Z</i>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/71471347_303.jpg" width="100%" />  <div>
+<small style="color: #999;">Deepseek横空出世大大增强了中国人自主创新的信心</small>
+  </div>
+  <p>（德国之声中文网）16世纪前，中国在科学和技术方面的发达程度远超同期欧洲，同時在社會制度上，中国的政教分离、文官选拔、私塾教育等也比欧洲更接近现代社会，然而，科学和工业革命并没有在近代中国发生，这便是科技和思想史上著名的“李约瑟之问”。</p>
+  <p>“李约瑟之问”背后揭示的现象，即中国原始创新的匮乏其实一直持续到现在，这让中国人很困惑，也有些自卑。但<a href="https://api.dw.com/api/detail/article/71424461" rel="ArticleRef">DeepSeek的出现</a>增强了中国人在<a href="https://api.dw.com/api/detail/article/71430832" rel="ArticleRef">自主创新上的信心</a>。虽然DeepSeek的算法创新严格来说，尚不属于0-1的技术进步，然而，这款AI大模型确实也让许多人认为，中国距离原始创新的突破又接近了一步。</p>
+  <p>中国人和中国政府对科技的痴迷是不亚于西方的，这是接受了近代科技落后的教训的缘故。在最近官方的几个“五年计划”中，都有关于争取科技原始创新突破的内容。虽然中国在科技的发展上确实进展迅速，取得了多个重大工程技术的突破，例如，中国能让探月机器准确落入月球背面，但是，在基础理论等原始创新上，鲜有中国本土科学家的贡献，除了发明青蒿素的屠呦呦获得过诺贝尔科学奖外，中国自己培养的科技人才至今还没有第二个得过诺贝尔奖。</p>
+  <p><strong>中国人有能力进行科技的原始创新？</strong></p>
+  <p>因此，这也就带来了一个问题，中国人是否有能力进行科技的原始创新？如果中国不能破除原始创新的瓶颈，最多只能做一个科技大国，而成不了科技强国；如果不能成为科技强国，在中美的科技竞争中，中国就永远无法摆脱被美国在关键科技“的宿命。这是中国人和中国政府对原始创新的理解。</p>
+  <p>这个问题颇具争议性。很多中国人自然不服，因为如果承认中国人没有能力进行原始创新，就意味着中国人在人种上比西方人笨，这样将会打击中国人的自信心。但也有很多人虽然嘴上不说，可心理承认中国在原始创新上不如西方，这在科技界尤其明显。DeepSeek创始人梁文峰在名声大振后接受采访时表示，中国在前沿研究上信心不足，从投资人到大公司，很多人认为差距太大，转而专注于应用，但创新需要信心，而年轻人往往更具信心。</p>
+  <p><strong>专制不利于科技创新</strong></p>
+  <p>不管如何看待前述问题，面对中国原始创新的乏善可陈，首先要追问这是由何种原因造成的。可以归纳为体制、文化、利益结构三方面因素。相对来说，中国人反思最多的还是<a href="https://api.dw.com/api/detail/article/71448186" rel="CommentRef">体制问题</a>。体制在此不仅是指科研的管理体制，更多是指科技创新所涉及的体制因素。其中，人们的习惯看法是，专制体制不利于科技创新，特别是原始创新。因为原始创新需要思想的自由，观念的大胆和开放，需要一个自由讨论的空间，而专制体制不允许思想的无拘无束，它需要的是整齐划一，有一个统一的答案，从而形成对思想自由的钳制。专制体制不但害怕思想自由，也害怕科技创新成果会触动统治者利益。从中国16世纪以来的专制历史来看，这种解释是说得通的。</p>
+  <p>但也有人提出了质疑。质疑的理由之一是，中国的专制制度不是无缘无故掉下来的，16世纪前的大部分时间，中国也处于帝王的专制统治下，为什么那时科技水平比西方要高？理由之二是，习近平上台以来的10多年，论政权的专制程度，比邓、江、胡时期要严重得多，但恰恰是这10多年，中国的科研能力和科技水平有一个大爆发。最新发布的《自然指数》显示，在2023年11月开始的12个月内，物理学研究成果中，中国科学院、中国科技大学和清华大学这三家顶尖科研机构，位列全球前三，而美国排名最高的机构位列第13位。在全球专利申请数量上，中国也已占据全球专利份额的半数以上。此外，中国在国际顶级期刊发表的高被引论文数也位居世界前列。虽然这些数据并非必然说明中国的科研力量就超过了美国，但也说明，中国在科研领域不再是过去的那个跟随者，而已处于全球第一方阵。</p>
+  <p><strong>中国是制造业的领先创新者</strong></p>
+  <p>中国还正在快速成为各种先进制造业的领先创新者，最有名的就是“中国制造2025”，多个机构评估，中国基本实现了该规划的目标任务。</p>
+  <p>我们如何来解释上面所说的这些情况？也许我们不得不承认，虽然如今的中国政权比一般专制政权的专政能力更强，然而，中国官方对科技人才、科研活动和科技创新，可能不像外界认为的那样施以过多的意识形态限制。毕竟，自然科学的属性与社会科学不同，自然科学，即科学和技术本身没有意识形态之分，这就使得科技创新过程受到官方意识形态的干扰要少很多。虽然对自然科学的研究和探索，在指导思想和方法论也受官方意识形态的影响，但官方基本不会对科研活动进行直接的意识形态管制。习近平在2020年的一次科学家座谈会上甚至强调：“科技创新特别是原始创新要有创造性思辨的能力、严格求证的方法，不迷信学术权威，不盲从既有学说，敢于大胆质疑，认真实证，不断试验”。这话从他的嘴里说出来，让人有点匪夷所思，可也奇妙地统一在他身上。</p>
+  <p>另一个或许更重要的原因，是中国工业能力的强大，建成了世界上门类最齐全的工业体系。而这一点人们谈得很少。科技理论和技术上的重大突破，多是产业和技术进步的结果。一个国家产业没有发展起来，工业能力不强，政府和企业是不会有更多的资本和资源投入研发的，从而也就不可能有技术进步。西方的工业发展史证实了这个规律。中国的产业和技术曾长期落后，一直到改革的初中期，都没有太大改变，工业基础薄弱，技术水平低下，政府和企业的研发投入少得可怜，以致中国采取“市场换技术”的方式，从西方吸收引进技术，发展自己的产业，提高工业技术能力。</p>
+  <p>经过20多年的发展，中国成为一个制造业大国，占到全球的20%多。科技的创新从来是在技术进步中，为因应工业发展，解决产业遇到的瓶颈而出现的。全产业链的优势和强大的工业能力为社会源源不断的科技创新提供了需求来源和应用场景，也为快速实现各种科技创新提供了从设计、打样、开模、试制到大规模生产、不断迭代的强大支撑，故在这个背景下，DeepSeek的崛起，一点都不奇怪。</p>
+  <p>尽管如此，DeepSeek这次<a href="https://api.dw.com/api/detail/article/71481505" rel="CommentRef">代表中国科技前沿领域的创新</a>，仍然属于重大工程技术上的创新，而非在0-1的原始创新上有重大突破，但或许也说明，中国确有能力进行原始创新，只差“临门一脚”。看来，有必要纠正习以为常的中国人不能进行原始创新的认知。不过，要突破“临门一脚”的限制，也不是那么容易的。现在的问题是，政权对创新需求的自由空间多少有所压制，以及创新需要深厚的技术积累这两者之间，哪个在具体的创新中影响因子多大。有一点可以肯定，中国要打破原始创新的瓶颈，<a href="https://api.dw.com/api/detail/article/71505338" rel="CommentRef">恐怕还要等待一段时间</a>，需要更多的技术积累和更自由的探索氛围。至于DeepSeek的鲶鱼效应是否会加速这个突破过程，就看中国政府能否因势利导了。</p>
+  <p><span>DW中文有<a href="https://www.instagram.com/dw.chinese/" rel="ExternalRef">Instagram</a>！</span>欢迎搜寻dw.chinese，看更多深入浅出的图文与影音报导。</p>
+  <p><em>邓聿文为政治评论员，独立学者，中国战略分析智库研究员兼中国战略分析杂志共同主编。</em></p>
+  <p><em>德国之声致力于为您提供客观中立的新闻报导，以及展现多种角度的评论分析。文中评论及分析仅代表作者或专家个人立场。</em></p>
+  <p><em>© 2025</em><em>年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%BB%9F%E4%B8%A5%E6%89%B9%E7%89%B9%E6%9C%97%E6%99%AE-%E6%97%A0%E8%A7%86%E6%97%A2%E5%AE%9A%E8%A7%84%E5%88%99">
+          德国总统严批特朗普：无视既定规则
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/%E6%85%95%E5%B0%BC%E9%BB%91%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E4%BA%8B%E4%BB%B6-24%E5%B2%81%E9%98%BF%E5%AF%8C%E6%B1%97%E7%94%B7%E5%AD%90%E6%9C%89%E5%90%88%E6%B3%95%E5%B1%85%E7%95%99">
+          慕尼黑开车撞人事件 24岁阿富汗男子有合法居留
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA">
+          哪咤2冲入全球票房前30 一些中国观众表示自豪
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-14</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-14/TikTok%E9%87%8D%E8%BF%94%E8%8B%B9%E6%9E%9C%E5%92%8C%E8%B0%B7%E6%AD%8C%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97">
+          TikTok重返苹果和谷歌应用商店
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA">
+            前一篇：哪咤2冲入全球票房前30 一些中国观众表示自豪
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-14/%E7%89%B9%E6%9C%97%E6%99%AE-TikTok-%E4%B8%8D%E5%94%AE%E5%B0%B1%E7%A6%81-%E7%9A%84%E5%AE%BD%E9%99%90%E6%9C%9F%E5%8F%AF%E4%BB%A5%E5%BB%B6%E9%95%BF-%E4%BD%86%E5%8F%AF%E8%83%BD%E6%B2%A1%E8%BF%99%E4%B8%AA%E5%BF%85%E8%A6%81">
+            后一篇：特朗普：TikTok“不售就禁”的宽限期可以延长，但可能没这个必要
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/%E7%89%B9%E6%9C%97%E6%99%AE-TikTok-%E4%B8%8D%E5%94%AE%E5%B0%B1%E7%A6%81-%E7%9A%84%E5%AE%BD%E9%99%90%E6%9C%9F%E5%8F%AF%E4%BB%A5%E5%BB%B6%E9%95%BF-%E4%BD%86%E5%8F%AF%E8%83%BD%E6%B2%A1%E8%BF%99%E4%B8%AA%E5%BF%85%E8%A6%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/%E6%85%95%E5%B0%BC%E9%BB%91%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E4%BA%8B%E4%BB%B6-24%E5%B2%81%E9%98%BF%E5%AF%8C%E6%B1%97%E7%94%B7%E5%AD%90%E6%9C%89%E5%90%88%E6%B3%95%E5%B1%85%E7%95%99'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-14/%E7%89%B9%E6%9C%97%E6%99%AE-TikTok-%E4%B8%8D%E5%94%AE%E5%B0%B1%E7%A6%81-%E7%9A%84%E5%AE%BD%E9%99%90%E6%9C%9F%E5%8F%AF%E4%BB%A5%E5%BB%B6%E9%95%BF-%E4%BD%86%E5%8F%AF%E8%83%BD%E6%B2%A1%E8%BF%99%E4%B8%AA%E5%BF%85%E8%A6%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-14/%E6%85%95%E5%B0%BC%E9%BB%91%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E4%BA%8B%E4%BB%B6-24%E5%B2%81%E9%98%BF%E5%AF%8C%E6%B1%97%E7%94%B7%E5%AD%90%E6%9C%89%E5%90%88%E6%B3%95%E5%B1%85%E7%95%99">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-14/%E5%93%AA%E5%92%A42%E5%86%B2%E5%85%A5%E5%85%A8%E7%90%83%E7%A5%A8%E6%88%BF%E5%89%8D30-%E4%B8%80%E4%BA%9B%E4%B8%AD%E5%9B%BD%E8%A7%82%E4%BC%97%E8%A1%A8%E7%A4%BA%E8%87%AA%E8%B1%AA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

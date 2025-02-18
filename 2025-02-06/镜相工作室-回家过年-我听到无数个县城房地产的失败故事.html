@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>镜相工作室｜回家过年，我听到无数个县城房地产的失败故事 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+" />
+    <meta property="og:description" content="
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="镜相工作室｜回家过年，我听到无数个县城房地产的失败故事" />
+    <meta property="twitter:title" content="镜相工作室｜回家过年，我听到无数个县城房地产的失败故事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5398)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715640.html&t=%E9%95%9C%E7%9B%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%9B%9E%E5%AE%B6%E8%BF%87%E5%B9%B4%EF%BC%8C%E6%88%91%E5%90%AC%E5%88%B0%E6%97%A0%E6%95%B0%E4%B8%AA%E5%8E%BF%E5%9F%8E%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%9A%84%E5%A4%B1%E8%B4%A5%E6%95%85%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715640.html&t=%E9%95%9C%E7%9B%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%9B%9E%E5%AE%B6%E8%BF%87%E5%B9%B4%EF%BC%8C%E6%88%91%E5%90%AC%E5%88%B0%E6%97%A0%E6%95%B0%E4%B8%AA%E5%8E%BF%E5%9F%8E%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%9A%84%E5%A4%B1%E8%B4%A5%E6%95%85%E4%BA%8B&d=2025-02-06&e=
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+
+
+  
+  过年回老家，我第一次向我妈提出邀请，想和她聊一聊县城房地产，没成想，坐在旁边的外婆更先开口：“那房价都跌成什么样了，现在还要在县城买房，以后都脱不了手！”
+  外婆的语气让我觉得又好笑，又惊讶：这位七十多岁的农村女性，和田地打了一辈子交道，常年一个人生活在村里，怎么知道房价的情况？答案也不意外，短视频。不识字的外婆不会用智能手机，但学会了刷短视频，常常能刷到只需要一二十万就能在县城买到一套好房的消息。
+  外婆的反应大概是县城房地产现状最好的说明。在经历十余年的野蛮生长后，县城房地产不再有以前的生机，已经是个人尽皆知的事实，而我老家——位于湖南西部的县城也不例外。
+  老家并没有支柱产业，房地产曾是人们能够接触到的、最为直接的投资方式。而相比城市，县城房产又多了一些特别——人情社会，与房地产有关的消息通常是..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715640.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715640.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715640.html&text=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715640.html&title=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715640.html&title=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事&body=
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715640.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715640.html&title=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事&caption=
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=镜相工作室｜回家过年，我听到无数个县城房地产的失败故事&url=https://chinadigitaltimes.net/chinese/715640.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>镜相工作室｜回家过年，我听到无数个县城房地产的失败故事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715640.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715640.html&t=%E9%95%9C%E7%9B%B8%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%9B%9E%E5%AE%B6%E8%BF%87%E5%B9%B4%EF%BC%8C%E6%88%91%E5%90%AC%E5%88%B0%E6%97%A0%E6%95%B0%E4%B8%AA%E5%8E%BF%E5%9F%8E%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%9A%84%E5%A4%B1%E8%B4%A5%E6%95%85%E4%BA%8B&d=2025-02-06&e=
+镜相工作室｜回家过年，我听到无数个县城房地产的失败故事
+——
+
+
+  
+  过年回老家，我第一次向我妈提出邀请，想和她聊一聊县城房地产，没成想，坐在旁边的外婆更先开口：“那房价都跌成什么样了，现在还要在县城买房，以后都脱不了手！”
+  外婆的语气让我觉得又好笑，又惊讶：这位七十多岁的农村女性，和田地打了一辈子交道，常年一个人生活在村里，怎么知道房价的情况？答案也不意外，短视频。不识字的外婆不会用智能手机，但学会了刷短视频，常常能刷到只需要一二十万就能在县城买到一套好房的消息。
+  外婆的反应大概是县城房地产现状最好的说明。在经历十余年的野蛮生长后，县城房地产不再有以前的生机，已经是个人尽皆知的事实，而我老家——位于湖南西部的县城也不例外。
+  老家并没有支柱产业，房地产曾是人们能够接触到的、最为直接的投资方式。而相比城市，县城房产又多了一些特别——人情社会，与房地产有关的消息通常是..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715640.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1738842550000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715640.html">镜相工作室｜回家过年，我听到无数个县城房地产的失败故事</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715640.html" title="镜相工作室｜回家过年，我听到无数个县城房地产的失败故事" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1738842424933-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1738842281290.png" alt="file" /></p>
+  <p>过年回老家，我第一次向我妈提出邀请，想和她聊一聊县城房地产，没成想，坐在旁边的外婆更先开口：“那房价都跌成什么样了，现在还要在县城买房，以后都脱不了手！”</p>
+  <p>外婆的语气让我觉得又好笑，又惊讶：这位七十多岁的农村女性，和田地打了一辈子交道，常年一个人生活在村里，怎么知道房价的情况？答案也不意外，短视频。不识字的外婆不会用智能手机，但学会了刷短视频，常常能刷到只需要一二十万就能在县城买到一套好房的消息。</p>
+  <p>外婆的反应大概是县城房地产现状最好的说明。在经历十余年的野蛮生长后，县城房地产不再有以前的生机，已经是个人尽皆知的事实，而我老家——位于湖南西部的县城也不例外。</p>
+  <p>老家并没有支柱产业，房地产曾是人们能够接触到的、最为直接的投资方式。而相比城市，县城房产又多了一些特别——人情社会，与房地产有关的消息通常是口口相传，你总能在一个房地产项目上碰到不少熟人，而包工头或是开发商一定是家族里最风光的存在。到了现在，大家则会发现，不少亲戚朋友栽在同一个失败项目上，卖房广告成了朋友圈最常被转发的消息。</p>
+  <p>去年，社交媒体曾有过一阵“县城热”，与县城有关的风格摄影、影视作品、歌曲寄托了许多人对县城的想象，也有一些年轻人返回县城。但县城房地产，依旧是一潭死水。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>回家过年，我听到无数个县城房地产的失败故事<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/镜相工作室" target="_blank">镜相作者</a><br /><strong>发表日期：</strong>2025.2.6<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/GdlsMq2Jdz6zZNXOnr8Egg" target="_blank">微信公众号“镜相工作室”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中国房地产" target="_blank">中国房地产</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>只有学区房在苦苦支撑</strong></p>
+  <p>对于好朋友小舒来说，2024年最大的好消息，就是把县城的房子卖了出去。</p>
+  <p>卖房的过程远比她想得要久。2023年年初，小舒就和我说决定卖房。房子是她妈1998年买的，在县城人民大会堂旁，位置核心，还是学区房。更早几年，有人曾出价38万买房，被小舒拒绝。她说当时不急着用钱，并且房价还在上涨，她想再等等。</p>
+  <p>到了2023年，全国房价都在下跌，小舒也想尽快把房卖了。她对售出价有自己的预期，至少30万——虽然房价已经下跌，但她觉得这个价格才符合房子的真实价值。</p>
+  <p>她找了中介，也拜托了身边熟悉的长辈们帮忙转发——在县城，熟人是最好的宣传。一开始，来看房的电话打个不停，但最高也只能出到27万左右，小舒斩钉截铁地说不卖，她不愿降价。</p>
+  <p>渐渐地，看房的人出价越来越低，到2023年下半年，买家们只能出到23万。那位开价23万的买家很诚心，愿意承担中间所有的手续费，小舒决定咬牙卖了——她不敢再等下去。但这次轮到小舒的爸爸舍不得，他先是要求交一万定金，后来又把定金提高到三万，最后交易被拖得不了了之。</p>
+  <p>这笔最接近成功的交易失败后，卖房便更加困难。好几个月，小舒甚至都没收到一通电话，心理阈值也一降再降。直到去年夏天，她给我发来消息，说房子终于以21万的价格卖了出去，我们的第一反应都不是可惜，而是庆幸，终于脱手了，这一次连不动产登记中心的评估价格也只有20万。</p>
+  <p>小舒嘱咐我的第二个事，就是千万别和任何人说，并且在微信对话里把售出价给撤回了。她担心亲戚知道她卖了房，就会找她来借钱。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1738842424933.png" alt="file" /><br /><span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">日落时分的县城。摄影：叶梅</span>    <p>不只是二手房，新房房价也在下跌。整个2024年，县城都没开一个新盘。</p>
+    <p>我妈是买在最高点的冤大头之一。2021年，她被朋友怂恿着买了家里的第二套房，位置在县城唯一的公园旁，风景好，带电梯。朋友是为了给孩子买婚房，我妈则想着能和朋友们住得更近，以后老了相互照顾。更重要的是，她也不知道把闲钱放在哪里更好，觉得投资住房大概不会出错。当时她也有咨询过我的意见，而我对楼市一窍不通，只说全听她的。</p>
+    <p>故事的结局可想而知。才刚交房两年，业主群里就常常有人要卖房子。我妈说，他们肯定很难卖出去，因为她发现对方总是过一个月，又重发了一次出售消息，她估计至少得降价10万，才能把原价80多万的房子给出掉。由于打算自住，我妈现在也不觉得后悔，只有我为这套还没开始装修的房子感到可惜。</p>
+    <p>至于县城里的商铺，现在更是“猪都不会想投资”的项目了。</p>
+    <p>一位阿姨在十多年前砸了60多万买的酒店房间和商铺，现在连本金都还没收完。我妈在15年前买的一处集体出租商铺，早些年每个月能收到一千多的租金，到了今年，银行卡的流水每月只有218块。另一位姨妈则想把自己在步行街的店面给卖掉，却怎么也找不到买家。</p>
+    <p>这一惨淡的情况和我过年期间见到的景象不太一样——商场、步行街的每个店面都挤满了人，各类茶饮、餐饮店也十分火爆。“只是过年会这样罢了。”长辈们说，平日里商铺的生意都很冷清，前年新开的万达广场几乎没什么人，店铺换了不知道多少轮，卖衣服的都把折扣降到了二折，春节期间的火热不过是昙花一现。</p>
+    <p>唯一还需要抢的，只剩下县一中旁的租房——这是老家最好的学校，衡水式教育，去年还有学生考上了清北，是所有留在县城高考的学生和家长们的理想学校。</p>
+    <p>一中在县城的最东边，为了让孩子能晚点起床，下午放学能吃上热乎的晚饭，晚自习结束后早点到家，家长们都愿意在学校旁租房。其他地方的房子年租金是一万多，中学旁的房子租金能到2万，如果想抢到学校大门里面的老房子（学生在中午午休可以回家休息），更考验关系。租房前，家长们还会到处打听上一任租户的情况，到底是上了985还是211，希望能给孩子讨个好彩头。</p>
+    <p>“以前县城房地产是什么样的呢？”</p>
+    <p>“当时我买商铺，可是在售房处通宵了整整一晚上才抢到的。”阿姨说。</p>
+    <p><strong>野蛮、大胆的过去</strong></p>
+    <p>阿姨嘴里的野蛮生长期已是十多年前。</p>
+    <p>那会，县城不断开发新楼盘，来满足人们的购房需求，县城也第一次出现商场以及更为现代化的酒店。人人都在抢铺面，楼市黄牛成了一种新职业，定金转手能赚10万块。大家最关心的就是如何能通过投资房地产来获取收益，每天都在交换这些信息。</p>
+    <p>我妈从朋友手里转接了一个10万元的小铺面。朋友一口气抢了6个，给自己留了一处人流量最大、租金最贵的铺面，其他的都转给了熟人。</p>
+    <p>阿姨则花了60多万，抢到一处商业体的2楼商铺以及11楼的酒店房间，总面积超过60平米——当时流行分割“产权+返租”的模式，开发商会把酒店房间或商场铺面分割出售给个人投资者，再集体经营，给个人投资者返租、分红。</p>
+    <p>阿姨说，开发商当场就返了10万元，并承诺之后返租的年化收益率会达到9.6%，换句话说，每年能收入接近6万元。我妈的一位同事也借了20万给开发商，对方甚至保证利率能达到36%——这绝对是县城里难以拒绝的投资，没人会思考是否能真的还上利息。于是，一传十，十传百，认识的不少朋友都参与到了项目里。</p>
+    <p>高昂的回报，还催生了新的中间商。有人向自己的亲朋好友借钱投资到酒店里，拿出一半利息返还，相当于“空手套白狼”。</p>
+    <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715640-67a4a1b6a46a4." alt="image" /><br /><span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">妈妈买下的商铺在最高的那栋商业体里，5楼及以下是商铺，往上是公寓。摄影：叶梅</span>      <p>但只过了一年多，阿姨投资的那处商业体的开发商就还不上承诺的利息。在中国裁判文书网的判决书里，开发商曾某和妻子“以项目资金短缺为由，以高额利益为诱，通过本人、亲友、公司员工以及集资参与人以‘口口相传’的方式传播吸收资金信息”，通过多个房地产项目，一共向355人集资，累计吸收资金超过3亿元，里面不少是他们的亲戚朋友，判决时仅偿还本金3100万元。</p>
+      <p>对于阿姨来说，这笔至今还没回本的投资彻底打消了她投资房地产的热情。商业体的管理者已经换了两波，里面的商铺不知道换了几回，中间很长一段时间，她甚至收不到租金。她和其他“投资人”讨论过，项目失败的原因会不会和酒店名字有关——酒店名叫“华天”，太大了，一个县城小老板怎么能压得住。</p>
+      <p>如果要计算资产，要不要把这处房产算进去呢？阿姨很纠结，毕竟什么时候能回本，她完全没有底。我妈安慰她好歹还有个地，她的几位同事投资了县城火车站的地下商铺，后来商铺连影都没有。</p>
+      <p>按照判决书的记录，两年前，开发商已经刑满释放，没人知道他现在在做什么。</p>
+      <p>至于那位借钱投资的“中间商”，在项目失败后，也彻底还不上亲友的钱，“早就跑了”，没人知道他去了哪。</p>
+      <p><strong>保守者与冒险家</strong></p>
+      <p>现在，我已经很难在过年饭桌上听长辈们主动聊起县城的房地产，大家都在寻找别的投资方式。但房地产的滑落，某种程度上也改变了一些人。</p>
+      <p>借给开发商20万的那位妈妈的同事，最后本金都没拿回来，如今在借钱和投资项目时也变得更加谨慎，总是追问项目的情况。不过，她最关心的也早就不是投资，而是女儿的婚事，她经常给我妈打来电话，焦虑女儿怎么还没找对象，如果有男孩看中自家孩子，她可以出全款买房——房子已经不再是追求回报的投资项目，而是女儿婚恋的筹码。</p>
+      <p>想要把步行街商铺尽快出手的姨妈，开始减少给服装店进新货，清仓处理。经过她的店面，我找到了去年就穿在表妹身上的羽绒服。</p>
+      <p>也有人还想做个冒险家，比如小舒的舅舅老舒。</p>
+      <p>老舒是个开发商。12年前房地产热的时候，完全没有经验的老舒凭着开发水电站赚来的几百万，以及通过承诺年利率2.4%、从亲朋好友那借来的几百万，投身于房地产开发中，小舒一家人就是出借人之一。</p>
+      <p>但没人想到，这个项目会成为一场长达十年的家庭债务纠纷。由于老舒缺乏开发经验，拿到的地涉及拆迁、房产证明办理等一系列问题（没人能说清具体是什么问题），直到现在也没有开发成功，欠亲友们的钱拖了一年又一年。因为欠钱不还，小舒和舅舅闹过不少矛盾，也是家族里唯一一个公开和对方撕破脸皮的人，逢年过节在家碰到，两人只会点头打招呼，不多说一句话。更让小舒受不了的是，家族里其他亲戚都还称老舒是“富豪”。</p>
+      <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715640-67a4a1b6ad5c4." alt="image" /><br /><span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">夏季，河堤旁有一块巨大的草坪，是县城居民最爱去散步的场所。摄影：叶梅</span>        <p>老舒跟亲戚们承诺，今年把自己开发的一处县城新楼盘卖好，等资金周转回来，一定还上亲友的钱——楼盘位于县城一所私立小学旁，许多不满足公立小学入学条件的家长会把孩子送到这里，学区房是为数不多还能卖掉的房子。老舒期待能借新楼盘翻身，小舒也希望舅舅能顺利卖完房，把自己的钱给还上。</p>
+        <p>艰难卖掉的老房子、追不回的借款，小舒一家的生活都被县城房地产深深影响了。</p>
+        <p>我问小舒后不后悔卖晚了，毕竟最后售出价只有最高峰的一半。小舒说不后悔，没人能预料房价之后会怎样，至少现在她已经成功把房子换成了流动资金。</p>
+        <p>我们都没提到老房子内发生的故事。那是小舒的成长记录，也承载了我们的友谊——注册第一个QQ账号，就是在小舒家；小时候家里停电，我会跑去她家蹭空调；五年前，我们一起在老房子里备考研究生，又一次一起度过了夏天、秋天和冬天，那是我们长大后相处最久的时间。</p>
+        <p>作者丨叶梅，编辑丨卢枕</p>
+ &lt;/div&gt;</p>
+</p>
+</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-06/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.6">
+          每日一语 2025.2.6
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-06/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.5">
+          每日一语 2025.2.5
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-06/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-DeepSeek%E5%90%AF%E7%A4%BA%E5%BD%95-%E5%88%9B%E6%96%B0%E9%83%BD%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%A7%E7%94%9F%E7%9A%84-%E4%B8%8D%E6%98%AF%E5%88%BB%E6%84%8F%E5%AE%89%E6%8E%92%E7%9A%84">
+          鱼眼观察｜DeepSeek启示录：创新都是自己产生的，不是刻意安排的
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-06/%E5%B0%BC%E5%BE%B7%E7%BD%97-%E6%9D%AD%E5%B7%9E%E7%BD%91%E7%BA%A6%E8%BD%A6%E5%8F%B8%E6%9C%BA-deepseek%E5%92%8C%E6%88%91%E6%B2%A1%E4%B8%80%E6%AF%9B%E9%92%B1%E5%85%B3%E7%B3%BB">
+          尼德罗｜杭州网约车司机：deepseek和我没一毛钱关系
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-06/%E7%BE%8E%E5%9B%BD%E6%88%96%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AE%A3%E5%B8%83%E4%BF%84%E4%B9%8C%E5%92%8C%E5%B9%B3%E6%96%B9%E6%A1%88">
+            前一篇：美国或在慕尼黑安全会议上宣布俄乌和平方案
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-06/%E7%89%B9%E6%96%AF%E6%8B%89%E4%B8%8A%E6%B5%B7%E5%82%A8%E8%83%BD%E5%B7%A5%E5%8E%82%E5%8D%B3%E5%B0%86%E6%8A%95%E4%BA%A7">
+            后一篇：特斯拉上海储能工厂即将投产
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-06/%E7%BE%8E%E5%9B%BD%E6%88%96%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AE%A3%E5%B8%83%E4%BF%84%E4%B9%8C%E5%92%8C%E5%B9%B3%E6%96%B9%E6%A1%88'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-06/%E7%89%B9%E6%96%AF%E6%8B%89%E4%B8%8A%E6%B5%B7%E5%82%A8%E8%83%BD%E5%B7%A5%E5%8E%82%E5%8D%B3%E5%B0%86%E6%8A%95%E4%BA%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-06/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-06/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-DeepSeek%E5%90%AF%E7%A4%BA%E5%BD%95-%E5%88%9B%E6%96%B0%E9%83%BD%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%A7%E7%94%9F%E7%9A%84-%E4%B8%8D%E6%98%AF%E5%88%BB%E6%84%8F%E5%AE%89%E6%8E%92%E7%9A%84'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-06/%E7%BE%8E%E5%9B%BD%E6%88%96%E5%9C%A8%E6%85%95%E5%B0%BC%E9%BB%91%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AE%AE%E4%B8%8A%E5%AE%A3%E5%B8%83%E4%BF%84%E4%B9%8C%E5%92%8C%E5%B9%B3%E6%96%B9%E6%A1%88">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-06/%E7%89%B9%E6%96%AF%E6%8B%89%E4%B8%8A%E6%B5%B7%E5%82%A8%E8%83%BD%E5%B7%A5%E5%8E%82%E5%8D%B3%E5%B0%86%E6%8A%95%E4%BA%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-06/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-06/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-DeepSeek%E5%90%AF%E7%A4%BA%E5%BD%95-%E5%88%9B%E6%96%B0%E9%83%BD%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%A7%E7%94%9F%E7%9A%84-%E4%B8%8D%E6%98%AF%E5%88%BB%E6%84%8F%E5%AE%89%E6%8E%92%E7%9A%84">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
