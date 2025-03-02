@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+" />
+    <meta property="og:description" content="
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕" />
+    <meta property="twitter:title" content="再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715921.html&t=%E5%86%8D%E6%98%A7%E6%8B%BE%E9%87%91%EF%BD%9C%E9%98%BF%E5%88%97%E5%85%8B%E8%B0%A2%C2%B7%E7%BA%B3%E7%93%A6%E5%88%A9%E5%86%85%EF%BC%9A%E6%88%91%E5%86%B3%E5%AE%9A%E4%B8%8D%E5%86%8D%E5%AE%B3%E6%80%95" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715921.html&t=%E5%86%8D%E6%98%A7%E6%8B%BE%E9%87%91%EF%BD%9C%E9%98%BF%E5%88%97%E5%85%8B%E8%B0%A2%C2%B7%E7%BA%B3%E7%93%A6%E5%88%A9%E5%86%85%EF%BC%9A%E6%88%91%E5%86%B3%E5%AE%9A%E4%B8%8D%E5%86%8D%E5%AE%B3%E6%80%95&d=2025-02-17&e=
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+
+
+  CDT编者按：2025年2月16日系俄罗斯反对派领袖阿列克谢·阿纳托利耶维奇·纳瓦利内逝世一周年。
+  
+  本文系纳瓦利内自传《爱国者》第十六章
+  
+  “俄罗斯的权力更替不会通过选举实现。”这句话我早在2011年的一次采访中就说过。然而，不能否认的是，首先，在选举前夕，全社会的目光都会聚焦于政治，需要利用这一点；其次，当局在这一时刻总是非常脆弱。就在2011年，我们已见证了这一切——统俄党通过舞弊赢得选举，但这立即引发了大规模抗议。
+  2011年时，我号召大家投票给统俄党以外的任何政党。2018年，当我被禁止参选总统，我号召抵制选举。很多人因此批评我，认为我的立场前后矛盾，但实际上，它完全合乎逻辑：选举应该被用来对克里姆林宫造成最大打击。
+  2018年底，我们想出了一个新策略——“智慧投票”。通过这个策略，我们计..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715921.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715921.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715921.html&text=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715921.html&title=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715921.html&title=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕&body=
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715921.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715921.html&title=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕&caption=
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕&url=https://chinadigitaltimes.net/chinese/715921.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715921.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715921.html&t=%E5%86%8D%E6%98%A7%E6%8B%BE%E9%87%91%EF%BD%9C%E9%98%BF%E5%88%97%E5%85%8B%E8%B0%A2%C2%B7%E7%BA%B3%E7%93%A6%E5%88%A9%E5%86%85%EF%BC%9A%E6%88%91%E5%86%B3%E5%AE%9A%E4%B8%8D%E5%86%8D%E5%AE%B3%E6%80%95&d=2025-02-17&e=
+再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕
+——
+
+
+  CDT编者按：2025年2月16日系俄罗斯反对派领袖阿列克谢·阿纳托利耶维奇·纳瓦利内逝世一周年。
+  
+  本文系纳瓦利内自传《爱国者》第十六章
+  
+  “俄罗斯的权力更替不会通过选举实现。”这句话我早在2011年的一次采访中就说过。然而，不能否认的是，首先，在选举前夕，全社会的目光都会聚焦于政治，需要利用这一点；其次，当局在这一时刻总是非常脆弱。就在2011年，我们已见证了这一切——统俄党通过舞弊赢得选举，但这立即引发了大规模抗议。
+  2011年时，我号召大家投票给统俄党以外的任何政党。2018年，当我被禁止参选总统，我号召抵制选举。很多人因此批评我，认为我的立场前后矛盾，但实际上，它完全合乎逻辑：选举应该被用来对克里姆林宫造成最大打击。
+  2018年底，我们想出了一个新策略——“智慧投票”。通过这个策略，我们计..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715921.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739793198000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715921.html">再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715921.html" title="再昧拾金｜阿列克谢·纳瓦利内：我决定不再害怕" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739792686489-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>CDT编者按：2025年2月16日系俄罗斯反对派领袖阿列克谢·阿纳托利耶维奇·纳瓦利内逝世一周年。</p>
+  <hr />
+  <p>本文系纳瓦利内自传《爱国者》第十六章</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715921-67b3232e6f7b7.png" alt="image" /></p>
+  <p>“俄罗斯的权力更替不会通过选举实现。”这句话我早在2011年的一次采访中就说过。然而，不能否认的是，首先，在选举前夕，全社会的目光都会聚焦于政治，需要利用这一点；其次，当局在这一时刻总是非常脆弱。就在2011年，我们已见证了这一切——统俄党通过舞弊赢得选举，但这立即引发了大规模抗议。</p>
+  <p>2011年时，我号召大家投票给统俄党以外的任何政党。2018年，当我被禁止参选总统，我号召抵制选举。很多人因此批评我，认为我的立场前后矛盾，但实际上，它完全合乎逻辑：选举应该被用来对克里姆林宫造成最大打击。</p>
+  <p>2018年底，我们想出了一个新策略——“智慧投票”。通过这个策略，我们计划打破统俄党的垄断。这在过去从未成功过：那个人的党的候选人在选举中至少能获得25%到30%的选票，而剩下的选票则分散到体制内反对派的不同候选人身上。克里姆林宫严密监控这些“体制内”反对派，确保他们彼此不能达成协议——每次选举前都会上演争吵、选区分配的纠纷，所有人都想在“好”选区参选，结果导致多个反对派候选人在一些核心选区相互竞争，分散了选民支持，反而帮助了统俄党的候选人当选。既然政治家们无法达成协议，那就让选民来决定。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>阿列克谢·纳瓦利内：我决定不再害怕<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/再昧拾金" target="_blank">昧拾金</a><br /><strong>发表日期：</strong>2025.2.17<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/o14h1hb1St-Ivn1SgrQCjQ" target="_blank">微信公众号“再昧拾金”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/纳瓦尔尼" target="_blank">纳瓦尔尼</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>这个想法的要点是，由我们总部挑选出“第二强”候选人，并号召所有选民投票给他，不计较意识形态上的分歧。我们在分析中参考了过去选举的结果，同时咨询了熟悉地方政治的专家。“第二强”候选人几乎都是康米党。在这本书里，我花了不少篇幅表达自己对康米党的厌恶，但这次情况不同：我并不希望康米胜选，我希望统俄党败选。</p>
+  <p>2019年夏天，我们在莫斯科市杜马选举中测试了“智慧投票”策略。我无法参选，但我的许多同侪和支持者都可以。我们提前几个月公布了这项计划，并得到了广泛支持。当然，还是会有人不满：“我已经给‘苹果党’投了二十年票，无论如何都会继续投他们！”；“康米？这些食人生番？！绝不可能。”我耐心解释说，在我们的处境下，就算投票给一张板凳也比投给统俄党好。我的另一个论点是，杜马中的非统俄党人越多，他们就会越大胆。当他们是少数，他们不敢挑战统俄党，但如果他们意识到自己强大，一切就可能改变。</p>
+  <p>克里姆林宫很快意识到，我们的策略正在获得人气，秋天等待他们的会是惨败。因此，他们采用了已久经考验的方法：直接DQ所有最受欢迎候选人，而且不仅仅是取消资格，还逮捕了其中多数人，有些人被关押了一个月（有些人甚至更久）。</p>
+  <p>独立候选人战斗到了最后一刻。柳博芙·索博利是其中之一。当选举官员拒绝登记她参选，她宣布绝食抗议，并拒绝离开选举委员会的办公室。记录她被连同沙发一起抬出大楼的视频成了那次选战的象征。</p>
+  <p>两个月前还只会让所有人犯困的莫斯科市杜马选举，突然吸引了全国的关注。大规模拒绝独立候选人参选引发了莫斯科的大规模街头抗议。多名示威者被控刑事罪，通常是“对执法人员使用暴力罪”。所谓的“暴力”有时只是扔向防暴警的一只空纸杯。这场抗议运动成为俄罗斯抗议史上的一个重要转折点——不仅因为它吸引了全新的参与者，还因为镇压手段更加严厉。2017年，参加集会可能会被关押15天；2018年，已经上升到30天。从2019年开始，你可能会因此坐牢几年。</p>
+  <p>选举于9月举行。尽管真正的候选人被取消资格，“智慧投票”还是奏效了。那个人的党的议员席位减少了——从40个减至25个。我们甚至成功让统俄党在莫斯科的党魁丢掉了席位。几位真正的反对派议员成功当选，他们在市议会的讲坛上公开批评莫斯科市长和总统。和他们一起被选上的（“智慧投票”实在太有效了），还有一些原本被安插作搅局者的候选人，这些人甚至比我们更震惊于自己的胜选。无论如何，如我所希望的那样，莫斯科市杜马的组成发生了根本变化——统俄党的垄断被彻底打破，体制内反对派的声音变得远为响亮。</p>
+  <p>这一切我都是通过广播得知的——监狱里的广播。我又在坐牢，如今每次抗议后，他们都会把我送进来。但我感到振奋：既然“智慧投票”在莫斯科奏效了，我们就可以在俄罗斯全国复制这一策略。尤其明年夏天西伯利亚地区议会选举将举行，而再过一年，就是国家杜马选举了。</p>
+  <p>我们花了近一年时间准备西伯利亚的选战。夏天我飞去那里，准备完成最后一击——在新西伯利亚和托木斯克拍摄调查视频。一切进展顺利，视频也拍完了。8月19日晚，我走进了我们团队下榻酒店的餐厅。餐厅打烊得很早，我的同事们已经吃完晚饭，但他们说服厨房再稍等一下，让我点单。我说：“要不还是不吃了，明天一大早的航班。就陪你们稍微喝一点，聊几句，然后很快就走。”吧台后站着一个新来的酒保，他看着我，目光异常专注。昨天在这里工作的明明还是另一个人。可能是换班了吧。我向服务员点了一杯“尼格罗尼”，然后就没再多想那个奇怪的调酒师。酒端上来后，那味道糟糕得令人作呕。我只喝了一口，就再也喝不下去了。脑海里又闪过那个古怪调酒师的身影，他看起来都不像个调酒师。我没有喝完这杯，便与大家道别，回到房间。</p>
+  <p>2020年8月20日。闹钟在5:30准时响起。我毫不费力地醒来，走进浴室。洗了个澡，刷了牙。滚珠除臭剂刚好用完，我用光塑料球在腋下蹭了蹭，随后将它扔进垃圾桶。后来，当同事们来检查我的房间时，他们会在垃圾桶里发现这个空瓶子。</p>
+  <p>我怕误机。</p>
+  <p>如果我试图回忆那个让我意识到自己生命从此处在危险中的瞬间——我做不到。因为从来没有过那么一个瞬间。相反，在被投毒前，我一直坚信自己每年都越来越安全。我越出名，他们杀我的难度就越大——我是这么以为的。</p>
+  <p>即便现在，我依然认为，我的工作最危险的时候是2004年，那时我还在“苹果党”。当时我组织了“莫斯科市民保护委员会”，专门对抗城里的违法建筑。当地居民对这些违法建筑非常不满，而我作为律师，试图帮助他们。</p>
+  <p>在俄罗斯，开发商是那种毫不犹豫就能雇人拿棒球棍在你家门口把你打个半死的角色。对他们来说，这是一种传统的解决方式——“订购”你。因此，我一直认为，跟地方腐败作斗争才是最危险的工作。我由衷敬佩那些在地方，尤其是在高加索从事这项工作的行动主义者。</p>
+  <p>而我如今是公众人物。公众得让他们不敢冒险杀我。</p>
+  <p>我显然错了。</p>
+  <p>我和鲍里斯·涅姆佐夫有过一次谈话，那次对话我永远不会忘记。就在他遇害十天前，我们三个人——我、涅姆佐夫，还有他的一位同事——坐在一起，涅姆佐夫对我说，我很危险，克里姆林宫大可以杀我，因为我在体制外。而他涅姆佐夫则正好相反，他很安全，因为他来自体制。他曾是副总理，和那个人私下认识，和他共事过。三天后，我被捕。再过一周，涅姆佐夫在距离克里姆林宫仅两百米的地方被射杀。于是我明白，讨论谁安全、谁危险完全没有意义。我们根本不知道接下来会发生什么——世上有一个叫那个人的疯子，有时候他只不过是脑子里某根筋搭错了，就会在纸上写下一个名字，然后说：“把他做了。”</p>
+  <p>涅姆佐夫遇害，对所有人来说都是一次巨大的冲击，很多人都被吓坏了。就连我的妻子尤利娅——一个无比勇敢的人——后来都对我说，那天晚上她独自和孩子待在家里时，感到非常不安，心里想着：“开始了？他们现在开始杀反对派了？这就拿着冲锋枪冲进来？”作为一个认识鲍里斯的人，我当然也很震惊。然而，即便在那时，我仍未觉得自己生命所受的威胁有所增加。</p>
+  <p>我一直尽量忽视一个事实：我可能会遇袭，可能会被捕，甚至可能被杀。反正我无法控制这一点。一直去想反而是种自毁。我今天早上活下来的概率有多大？六成？八成？也许是百分之百？问题不在于我刻意不去想，闭上眼睛假装危险不存在，我只是决定不再害怕。我全都衡量了，想通了，然后放下了。我从事反对派政治，深知自己的敌人是什么人，也知道他们能做到什么。但如果我一直担心自己会不会被杀，那我就不该在俄罗斯生活。不如直接移民。或者干脆换一份工作。但我爱自己的工作，而且认为自己有责任继续做下去。我不是疯子，不是不负责任，也不是无所畏惧。这根本不关乎是否畏惧——无非我内心深处清楚地知道，我应该做这件事，因为这就是我的人生选择。因为有人信赖我。因为我的组织“反腐基金会”。因为我的国家，而我渴望它自由。这些潜在的威胁是我工作的一部分，但我接受这份工作的全部。</p>
+  <p>我非常担心孩子和妻子。他们可能会为了毒我，把“诺维乔克”抹在门把手上，然后扎哈尔或达莎也摸到把手，一想到这我就毛骨悚然。在我被投毒前几个月，在加里宁格勒发生了一件恐怖的事。我和尤利娅坐在一家咖啡馆，她突然感到不适——她真的差点就死在我对面，而我没有察觉，还无忧无虑地安慰道：“那就回房间休息一会儿呗。”现在我们才明白，她当时最有可能也被下了“诺维乔克”。她描述的症状和我在飞机上的感觉一模一样，只是没那么严重。后来，我们发现，那些在托木斯克给我投毒的FSB的人在这次加里宁格勒之行期间也在跟踪我。一想到如果尤利娅当时真的走了，两分钟后她可能会被发现死在公园的长椅上，我就觉得后怕。这种认识让人无法承受，但这也不是勇敢与否的问题。</p>
+  <p>我做了自己的选择。当然，我尽可能地保护我的家人远离这一选择的后果，最小化后果的风险。但有些事不受我控制。我的孩子知道，我可能会被关进监狱；我的妻子知道这一点，我们已经无数次讨论过。至于我可能被杀，这的确出乎意料，但它并不会改变任何事。</p>
+  <p>我是俄罗斯公民，我在自己的国家拥有权利，我不打算活在恐惧之中。如果我必须战斗，我就会战斗。因为我知道我是对的，而他们是错的。因为在这场较量中，我站在善的一方，而他们站在恶的一方。因为许多人支持我。也许这听起来像是些大道理，甚至有点民粹主义。但我相信这一点，所以我不害怕——因为我知道我是对的。</p>
+  <p>我不喜欢坐牢。我一点都不会因此感到愉快。这很难受，这是无谓地浪费时间。但既然现实如此，我准备好承受。我明白游戏规则。我发声说，等我掌权，我会要求审判克里姆林宫的这些人，因为他们在掠夺俄罗斯人民。他们当然不会喜欢这样的前景，所以他们会想尽一切办法阻止我。</p>
+  <p>我不知道自己的未来会如何，谈论未来也是纯粹的揣测。存在两种截然对立的观点。一半人觉得，既然他们已经试图杀我一次，那就一定会把这件事做完：那个人既然亲自下过指示，目标至今没有完成，这让他抓狂。另一部分人——包括我自己——则认为，在毒杀失败，又被我们调查出来后，他们会更愿意远离这整件事。他们一直否认有人曾毒杀我！如果我再一次中毒，并且死于“诺维乔克”，或者“心脏病突发”，他们要怎么解释？也许，这只是我在安慰自己，但无论如何，没有人知道未来，而预测未来毫无意义。</p>
+  <p>然而，我确信的是，我是我们星球上那百分之一热爱自己工作的幸运儿中的一员。我享受它的每一秒。我拥有民众的巨大支持。我遇上了一个和我不仅彼此相爱，而且有着共同信念的妻子。她和我一样不满俄罗斯正在发生的事情。我们的国家配得上更好的现状。俄罗斯人可以过上比现在富裕二十倍的生活。无论对我，还是对尤利娅来说，这都不只是空谈：这是我们应该去做到，或至少试图去做到的事，因为显然这是值得的。也许我们不会成功，也许一切要等我们生后才改变，但我们有义务去试一试。我想让我们的孩子和后代知道，他们的父母是好人，将自己的一生投入了某件值得去做的事情。</p>
+  <p>当我的儿子扎哈尔还在小学时，老师让大家讲讲自己父母是做什么的。孩子们的回答大多是：“我爸爸是医生”、“我妈妈是老师”。而扎哈尔说：“我爸爸在为我们国家的未来与坏人斗争。”听到这件事是我人生中最美好的时刻——仿佛有人在我胸前挂上了一枚勋章。</p>
+  <p>我从未去特别思考对祖国的爱。我只是单纯地爱它。对我来说，俄罗斯是构成阿列克谢·纳瓦利内的一部分，就像我的右手或左腿，你很难具体描述自己有多喜欢它们。俄罗斯对我也是如此。</p>
+  <p>每次从国外归来，还没走出飞机，我就已经有一种非理性的感觉——我回家了。有些国家的菜更好吃，有秩序，建筑很漂亮。我爱旅行，但我更爱回俄罗斯。因为当我走在街上，我能感觉到，这里有我最亲近的人。几乎就像是家人。</p>
+  <p>俄罗斯人很可爱。初遇时他们不太友好，但我应当承认，我甚至喜欢这一点。他们深沉复杂，喜欢陷入哲学思考。我也喜欢。任何微不足道的小事，他们都能转化成一个存在主义问题，然后开始讨论国家的未来。而我也会这么做。我曾用“形而上的加拿大”来描绘“未来的美好俄罗斯”——一个富饶的北国，人口密度低，人们都过得挺好，并且热衷于哲学思考。</p>
+  <p>我爱俄罗斯语言。我爱忧郁的俄罗斯风景——当你透过窗户望出去就莫名想哭，这种感觉实在很棒。我在这里觉得很好，因为这一切都让我感到亲近。我爱我们忧伤的歌。我爱俄罗斯文学和电影。它们永远是在诉说紧张、思索、苦难、愁绪与自省。看了我对俄罗斯的描述，你可能会想象这是个可悲的地方，但其实我们很欢快。我喜欢俄式黑色幽默。人们喜欢开政治不正确的玩笑，我们的笑话常在底线的边缘试探，但正因如此，我觉得当代俄罗斯互联网比西方的有趣得多。</p>
+  <p>西方正在犯的一个最大错误，就是在俄罗斯国家与俄罗斯人之间划等号。但其实这二者毫无共同之处，而这正是我国最大的悲剧——在千百万俄罗斯人中，权力一次又一次落入最冷血、最谎话连篇的那群人手中。有句老话说：每个民族都有它配得上的政府，许多人认为，俄罗斯也是如此，否则俄罗斯人民早就该揭竿而起，[…]。但我不信这句话：我有大量同胞并不认同现状，这不是他们选出来的。但如果假设我们终究要承担个人责任，那我也有责任。这意味着，我必须更坚决地去斗争，去改变这一切。</p>
+  <p>如果有人问我，是否憎恨那个人，我会说：是的，我恨他，但不是因为他曾试图杀我，或是让我的弟弟坐牢。我恨那个人，是因为他偷走了俄罗斯过去的二十年。这本可以是俄罗斯历史上空前的奇迹二十年：我们没有任何敌人，边境四处和平，石油、天然气和其他自然资源的价格升上了天，我们靠出口赚了很多钱。那个人本可以利用这二十年，把俄罗斯变成一个繁荣的国家。我们本来都可以生活得更好。</p>
+  <p>结果呢，我们有两千万人生活在贫困线以下。一部分钱被那个人和他的狐朋狗友们径直偷走了，另一部分则因愚蠢的政策被挥霍殆尽。他们没有对我国做过任何好事，这就是他们最主要的罪行——对我们的孩子、对未来的犯罪。我很怕我们再也不会有这样一个温饱、和平、幸福的年代，因而不能不感到遗憾，并对那些让我们无法享受这二十年的人感到憎恨。</p>
+  <p>我的信念的象征，就是前面提到的“未来的美好俄罗斯”。我相信，俄罗斯完全可以成为一个正常的国家、富裕的国家、法律至上的国家。但最重要的是，“未来的美好俄罗斯”是“正常的俄罗斯”。</p>
+  <p>首先让我们不要再杀人。让我们来反腐：美国、欧洲也有腐败，但如果我们哪怕能减少如今国内猖獗的腐败，我们会惊讶地发现，我们完全有钱去改善教育和医疗。我们会明白，我们可以有独立的法庭和诚实的选举。回顾俄罗斯历史，我们先是有沙皇，然后是皇帝、[…]，然后是总统，但他们全都是威权统治者。不能再这么下去了。</p>
+  <p>而我们的任务，就是打破这个无休止的恶性循环——无论谁掌权，威权都会一次又一次地死灰复燃。我们必须削减总统的权力，现在他的权力太大。权力应该分散到议会、州长、市长，而不是掌握在一个人手中。在地方上征收的税款应该留在当地，而不是上交莫斯科。可是我们的一切都围绕着莫斯科运转：克里姆林宫和那个总统所坐的办公室是唯一的权力来源。一个如俄罗斯这般幅员辽阔的国家是不能以这种方式治理的。</p>
+  <p>总之，就让我们终于能变成“正常人”——这将是何等美好！</p>
+  <p>这并非什么遥不可及的梦想。我在描绘“未来的美好俄罗斯”时，我希望你们明白：这个国家是完全可以实现的，必须此时此刻就开始为之而奋斗。</p>
+  <p>故事还在继续。但无论我、我的朋友和反对派的盟友会遭遇什么，俄罗斯依然大有机会成为一个繁荣、民主的国家。建立在谎言和腐败上的黑暗政权，终究逃不过失败的命运。梦想可以成真。</p>
+  <p>未来属于我们。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/%E5%9B%9B%E7%8E%AF%E9%9D%92%E5%B9%B4-%E5%9F%8E%E7%AE%A1%E5%87%8C%E6%99%A8%E6%92%AC%E9%97%A8%E8%BF%90%E8%B5%B0%E6%90%85%E6%8B%8C%E6%9C%BA-%E6%89%A7%E6%B3%95%E4%B8%8D%E8%83%BD%E5%9B%BE%E7%9C%81%E4%BA%8B">
+          四环青年｜城管凌晨撬门运走搅拌机？执法不能图省事
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/Z%E4%B8%96%E4%BB%A3%E5%AE%9E%E9%AA%8C%E5%AE%A4-%E4%B8%AD%E5%AD%A6%E7%94%9F%E6%80%A7%E4%BE%B5%E5%AE%B3-%E6%B5%B7%E9%9D%A2%E4%B9%8B%E4%B8%8B%E6%98%AF%E5%BA%9E%E5%A4%A7%E7%9A%84%E5%86%B0%E5%B1%B1">
+          Z世代实验室｜中学生性侵害：海面之下是庞大的冰山
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/%E9%BB%91%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E6%89%80-%E7%94%B3%E5%85%AC%E8%B1%B9-%E5%B0%B1%E6%98%AF%E9%82%A3%E4%B8%AA%E4%BB%8E%E5%86%9C%E6%9D%91%E8%B5%B0%E5%87%BA%E6%9D%A5%E7%9A%84%E5%8D%9A%E5%A3%AB">
+          黑科技研究所｜申公豹，就是那个从农村走出来的博士
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/%E5%85%94%E5%AD%90%E5%85%94%E5%AD%90%E7%94%BB%E6%BC%AB%E7%94%BB-%E5%BF%83%E7%96%BC%E9%B9%85%E7%B2%89%E4%B8%80%E7%A7%92">
+          兔子兔子画漫画｜心疼鹅粉一秒
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-17/%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8E%E6%99%AE%E4%BA%AC%E9%80%9A%E8%AF%9D-%E5%AE%9E%E4%B8%BA%E5%B8%83%E5%B1%80%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD">
+            前一篇：聿文视界：特朗普与普京通话，实为布局对抗中国
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-17/%E4%BA%BA%E7%B1%BB%E7%9A%84%E6%80%9D%E7%BB%B4%E5%9C%A8%E8%A1%B0%E9%80%80">
+            后一篇：人类的思维在衰退
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-17/%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8E%E6%99%AE%E4%BA%AC%E9%80%9A%E8%AF%9D-%E5%AE%9E%E4%B8%BA%E5%B8%83%E5%B1%80%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-17/%E4%BA%BA%E7%B1%BB%E7%9A%84%E6%80%9D%E7%BB%B4%E5%9C%A8%E8%A1%B0%E9%80%80'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-17/Z%E4%B8%96%E4%BB%A3%E5%AE%9E%E9%AA%8C%E5%AE%A4-%E4%B8%AD%E5%AD%A6%E7%94%9F%E6%80%A7%E4%BE%B5%E5%AE%B3-%E6%B5%B7%E9%9D%A2%E4%B9%8B%E4%B8%8B%E6%98%AF%E5%BA%9E%E5%A4%A7%E7%9A%84%E5%86%B0%E5%B1%B1'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-17/%E9%BB%91%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E6%89%80-%E7%94%B3%E5%85%AC%E8%B1%B9-%E5%B0%B1%E6%98%AF%E9%82%A3%E4%B8%AA%E4%BB%8E%E5%86%9C%E6%9D%91%E8%B5%B0%E5%87%BA%E6%9D%A5%E7%9A%84%E5%8D%9A%E5%A3%AB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-17/%E8%81%BF%E6%96%87%E8%A7%86%E7%95%8C-%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8E%E6%99%AE%E4%BA%AC%E9%80%9A%E8%AF%9D-%E5%AE%9E%E4%B8%BA%E5%B8%83%E5%B1%80%E5%AF%B9%E6%8A%97%E4%B8%AD%E5%9B%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-17/%E4%BA%BA%E7%B1%BB%E7%9A%84%E6%80%9D%E7%BB%B4%E5%9C%A8%E8%A1%B0%E9%80%80">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-17/Z%E4%B8%96%E4%BB%A3%E5%AE%9E%E9%AA%8C%E5%AE%A4-%E4%B8%AD%E5%AD%A6%E7%94%9F%E6%80%A7%E4%BE%B5%E5%AE%B3-%E6%B5%B7%E9%9D%A2%E4%B9%8B%E4%B8%8B%E6%98%AF%E5%BA%9E%E5%A4%A7%E7%9A%84%E5%86%B0%E5%B1%B1">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-17/%E9%BB%91%E7%A7%91%E6%8A%80%E7%A0%94%E7%A9%B6%E6%89%80-%E7%94%B3%E5%85%AC%E8%B1%B9-%E5%B0%B1%E6%98%AF%E9%82%A3%E4%B8%AA%E4%BB%8E%E5%86%9C%E6%9D%91%E8%B5%B0%E5%87%BA%E6%9D%A5%E7%9A%84%E5%8D%9A%E5%A3%AB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

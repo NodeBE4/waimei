@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>无声无光｜“偷国” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+无声无光｜“偷国”
+——
+" />
+    <meta property="og:description" content="
+无声无光｜“偷国”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="无声无光｜“偷国”" />
+    <meta property="twitter:title" content="无声无光｜“偷国”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715946.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E2%80%9C%E5%81%B7%E5%9B%BD%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715946.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E2%80%9C%E5%81%B7%E5%9B%BD%E2%80%9D&d=2025-02-18&e=
+无声无光｜“偷国”
+——
+
+
+  
+《哪吒2》剧照  随着《哪吒2》的热映，哪吒这一形象已经成了民族主义的新象征。谈到这一点时，有朋友忽然问：“印度的战狼会不会因此骂中国是‘偷国’？”
+  还真是。虽然我没看到是不是有印度人这么骂，但可想而知，如果一个源出中国的神灵、人物，被韩国、日本塑造成他们自己的文化英雄，那大概率逃不过我们这边的骂声。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：无声无光｜“偷国”作者：无声无光发表日期：2025.2.18来源：微信公众号“无声无光”主题归类：哪吒2CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  反过来，哪吒这个从印度输入的神灵，现在却明白无误被看作是“我们”的，甚至连他的异域出身都不能提。我因为提了一嘴..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715946.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715946.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715946.html&text=无声无光｜“偷国”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715946.html&title=无声无光｜“偷国”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715946.html&title=无声无光｜“偷国”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=无声无光｜“偷国”&body=
+无声无光｜“偷国”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715946.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715946.html&title=无声无光｜“偷国”&caption=
+无声无光｜“偷国”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=无声无光｜“偷国”&url=https://chinadigitaltimes.net/chinese/715946.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>无声无光｜“偷国”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715946.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715946.html&t=%E6%97%A0%E5%A3%B0%E6%97%A0%E5%85%89%EF%BD%9C%E2%80%9C%E5%81%B7%E5%9B%BD%E2%80%9D&d=2025-02-18&e=
+无声无光｜“偷国”
+——
+
+
+  
+《哪吒2》剧照  随着《哪吒2》的热映，哪吒这一形象已经成了民族主义的新象征。谈到这一点时，有朋友忽然问：“印度的战狼会不会因此骂中国是‘偷国’？”
+  还真是。虽然我没看到是不是有印度人这么骂，但可想而知，如果一个源出中国的神灵、人物，被韩国、日本塑造成他们自己的文化英雄，那大概率逃不过我们这边的骂声。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：无声无光｜“偷国”作者：无声无光发表日期：2025.2.18来源：微信公众号“无声无光”主题归类：哪吒2CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  反过来，哪吒这个从印度输入的神灵，现在却明白无误被看作是“我们”的，甚至连他的异域出身都不能提。我因为提了一嘴..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715946.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739911192000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715946.html">无声无光｜“偷国”</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715946.html" title="无声无光｜“偷国”" rel="nofollow"><img width="480" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/hqdefault-480x300.jpg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715946-67b4ea8e824b4.png" alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">《哪吒2》剧照</span>  <p>随着《哪吒2》的热映，哪吒这一形象已经成了民族主义的新象征。谈到这一点时，有朋友忽然问：“印度的战狼会不会因此骂中国是‘偷国’？”</p>
+  <p>还真是。虽然我没看到是不是有印度人这么骂，但可想而知，如果一个源出中国的神灵、人物，被韩国、日本塑造成他们自己的文化英雄，那大概率逃不过我们这边的骂声。</p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>无声无光｜“偷国”<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/无声无光" target="_blank">无声无光</a><br /><strong>发表日期：</strong>2025.2.18<br /><strong>来源：</strong><a href="https://web.archive.org/web/20250218201419/https://mp.weixin.qq.com/s/_PXnlXTW_VH1mjm4apDoCA" target="_blank">微信公众号“无声无光”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/哪吒2" target="_blank">哪吒2</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>反过来，哪吒这个从印度输入的神灵，现在却明白无误被看作是“我们”的，甚至连他的异域出身都不能提。我因为提了一嘴其形象的起源，就有人追着来骂——他倒也不是不知道，但他厉声质问：“你这时候提哪吒源于印度，是什么意思？居心何在？”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715946-67b4ea9090eb3." alt="img" /></p>
+  <p>这种心态当然也可以理解：当一件事物已经被视为“中国”的一部分时，那就应该彻底属于中国，提及它的异域起源，哪怕你自认只是陈述一个事实，但对有些人来说，就是质疑民族文化象征，民族自尊心难免被刺痛。</p>
+  <p>当然，要是较真说，那这部已成为“文化自信”标志的电影，也大量借鉴了欧美日的动画拍摄手法（这一点导演饺子毫不掩饰），其制作水平也极大地得益于国内动画公司承接海外外包业务的长期积累。更不必说，电影这种艺术形式本身就源于西方。</p>
+  <p>也就是说，不仅哪吒这一神灵形象本身，连背后的艺术创作和表现形式，都意味着“舶来品”已变为“我们”的了。</p>
+  <p>这样的景象，当然也不是历史上第一次出现。鲁迅说过，中国有必要以开放的态度采取“拿来主义”，积极吸收外来文化。历史学家罗志田有一个耐人寻味的发现——19世纪的“西潮”到了20世纪就被当作“我们自己的传统”了：</p>
+  <blockquote>
+    <p>新文化运动时西向知识分子攻击传统时常常提到的鸦片和人力车便是西人带来的，舶来品竟然成了中国传统的负面象征，便最能体现西潮已成“中国”之一部。……西向知识分子把舶来品当作自己的传统来批判，其实也是受西人的影响。</p>
+  </blockquote>
+  <p>虽然中国民间近年来讽刺韩国是“偷国”，将“我们”的文化传统据为己有，但像这样的“文化调适”（culture appropriation，有时也译作“文化盗用”）实际上是文化交流的过程中极为普遍的情形。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715946-67b4ea9252595." alt="img" /></p>
+  <p>有些外来事物，因为引入太久或完全融入了本国文化传统，人们已经忘记了它的异域出身——哪吒无疑就是这样。当然，别提还有无数与佛教相关的形象、概念、词汇，那都已经与中国文化血肉不可分离了。</p>
+  <p>有时，事物本身虽然是外来的，但衍生出来的文化却完全是本土的，例如茉莉花原产印度，极有可能是唐宋时期的阿拉伯商人传入的，连其名字“茉莉”都是音译的外来词，但河北民歌《茉莉花》经常作为中国民族音乐代表传唱，这一歌曲本身确实是本土文化创造无疑。</p>
+  <p>在西南山地民族中，人们经常忘记玉米是明末之后才从美洲传入的植物，而把它说成是当地自古以来就有的东西，有时竟然出现在创世神话当中，一些鄂西人相信玉米是祖祖辈辈都吃的粮食，甚至将之用作山地人与平原人区分的象征符号。</p>
+  <p>一百年多年前，俄国学者史禄国（S.M. Shirokogoroff）发现，在清亡之后，东北的一些满族人实际上已被汉化，但又宣泄着民族主义情绪，其结果：</p>
+  <blockquote>
+    <p>他们从这一情绪化的立场考虑一切事实，他们的所有观点都涂上了这种恼怒的自恋色彩。而现在，他们的观念出现了一种奇怪的混乱和替换。一些纯粹是汉族式的制度，他们现在认为是他们本民族的，而一些满族的制度和风俗，他们却归于汉族。例如，辛亥革命一爆发，爱辉地区的满族人就立即剪掉了他们的长辫子。他们义正词严地说，这是“汉人的习惯”。但是，与此同时，他们确信儒家思想这类中国精神纯粹是满族先民的思想。</p>
+  </blockquote>
+  <p>这种“文化盗用”在意的不是去考证、计较文化元素的真实起源，而是选取一部分文化材料，用以表征自己当下的身份认同。纳西族的“洞经古乐”原本其实是道教音乐，但如今在外界看来已成为纳西族的文化象征，一如人类学者海力波所言，“纳西族精英对本民族文化传统的改造和重新解释虽然是在官方话语的引导下进行的，但改造成果却被用来对纳西族‘族性’加以本土表述。”</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715946-67b4ea95d9ba2.png" alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">丽江 纳西族 洞经古乐</span>  <p>在民族国家出现之前，文化的跨边界流动是常态，因为文化传播没有理由遵从政治边界的限制。西敏司（Sidney Mintz）简明了阐明了这一原则：</p>
+  <blockquote>
+    <p>在任何一种文化中，这些吸纳的过程同时也是“据为己有”的过程——按照一个文化自身的方式，把对这个文化而言新奇和不寻常的事物变成它内在的一部分。</p>
+  </blockquote>
+  <p>哪怕明知是源于异文化的事物，也不妨碍人们这么认为。《伏尔泰的椰子：欧洲的英国文化热》一书就揶揄，德国人将施莱格尔译莎士比亚著作视为一种创作和新的思想深度，“对有些德国人来说，他们认为这表明了德语的优越性。他们声称莎士比亚的天才在德国被重新发现，他本应该是德国人，其实他就是德国人。”</p>
+  <p>同样地，马来人、西班牙人、美国人留下的遗产，对菲律宾人来说，就是他们独特文化认同的组成部分。实际上，随着现代化的传播，原本曾完全是欧洲的事物早已不再仅仅属于西方，“越来越多的例子证明，非欧美地区比北美和欧洲的生活的某些方面更加‘西方’。”（《印迹1：西方的幽灵与翻译的政治》）</p>
+  <p>这种普世性，当然会被看作是一种文化霸权的体现，然而最为奇怪的是，当中国文化被其他国家吸收时，很多国人又并不为之欣喜，而是觉得“我们的东西被偷走了”。</p>
+  <p>那种对“偷国”的谴责，表面上看，是对“他们将我们文化传统据为己有”的反应，但更深一层来看，是因为近代以来中国人从“天下观”退缩为“国家观”。“天下观”意味着，中国文化本身是普世性的，所以日韩越用汉字、学习中华礼仪，那时的中国人并不觉得它们偷，相反，那正证明王道无远弗届，“远悦近来”，那当然是好事。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715946-67b4ea99a1418.png" alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">希腊的一些文化遗产早已被视为人类共有</span>  <p>吊诡的是，这种捍卫文化遗产的冲动，本身却也是源于西方的政治观念，因为那是现代民族国家确定无疑的产物。</p>
+  <p>如果按“偷国”的逻辑，那么对希腊人来说，几乎所有欧洲国家都是“偷国”，因为他们都不同程度借用了古希腊的文化遗产，现代希腊国家试图独占这一文化遗产，反而激起了争议：</p>
+  <blockquote>
+    <p>文化遗产是向所有人群开放的宝库，而不是一个独占物，不能否认任何人接触它们的权利。凭借作为创造这些文化先辈的后裔身份，要求独占这一文化遗产，与历史文化成就属于全人类的基本原则相矛盾。即使把它提升到正统以及安全的原则，也难以接受这种独占要求。这样的宣言即使得到有效的、连续的保护，也只能最后导致民族文化和身份更加糟糕，并迫使国家一直在文化事务上采取敌意姿态。（《希腊的现代进程——1821年至今》</p>
+  </blockquote>
+  <p>之所以有必要强调这一点，还因为一个原因：如果文化遗产是某一国家或群体独有的，那它是否有权将之毁坏？塔利班炸毁巴米扬引发激烈争议，但它作为统治者也在宣示所有权——所有权的意思就是可以随心所欲地处置自己所拥有的财产。</p>
+  <p>我能理解一些国人捍卫文化传统的热情（有时想想，这总比以前毫不珍惜好），当然，如果能以开放的态度来对待跨文化交流就更好了，但问题是，现实中人们未必保持逻辑一致，倒是会出现一种缝合怪：“我的是我的，你的还是我的。并且我都是对的。”</p>
+  <p>这，我就不知道该说什么好了。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E5%BE%80%E4%BA%8B%E4%B8%8E%E9%9A%8F%E6%83%B3-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E8%AF%B4%E4%BB%87%E6%97%A5%E7%A6%BB%E6%88%91%E4%BB%AC%E5%A4%AA%E8%BF%9C%E4%BA%86">
+          往事与随想｜为什么我说仇日离我们太远了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.18">
+          每日一语 2025.2.18
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E5%90%B4%E9%9E%91%E9%9D%BC-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%8D%96%E5%8D%B5%E7%9A%84%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%B3%E5%AD%A9">
+          吴鞑靼｜在中国卖卵的俄罗斯女孩
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%8D%E5%AD%98%E5%9C%A8%E9%9B%91%E8%AA%8C-%E6%BD%98%E5%AE%8F%E6%98%AF%E6%80%8E%E4%B9%88%E8%B5%B0%E5%88%B0%E4%BA%86%E4%BB%8A%E5%A4%A9%E8%BF%99%E6%AD%A5">
+          不存在雑誌｜潘宏是怎么走到了今天这步
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%AD%E5%9B%BDAI%E5%B4%9B%E8%B5%B7-DeepSeek%E5%BC%95%E7%88%86%E5%85%A8%E6%B0%91AI%E6%BD%AE-%E5%A4%B1%E4%B8%9A%E5%8D%B1%E6%9C%BA%E5%8A%A0%E5%89%A7">
+            前一篇：中国AI崛起：DeepSeek引爆全民AI潮，失业危机加剧？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%BA%BA%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E7%BE%8E%E5%8A%A0%E5%85%B3%E7%A8%8E%E6%88%98-%E4%B8%AD%E5%9B%BD%E4%BC%9A%E5%90%A6%E5%9D%90%E6%94%B6%E6%B8%94%E7%BF%81%E4%B9%8B%E5%88%A9">
+            后一篇：加拿大人如何看待美加关税战 中国会否坐收渔翁之利
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%AD%E5%9B%BDAI%E5%B4%9B%E8%B5%B7-DeepSeek%E5%BC%95%E7%88%86%E5%85%A8%E6%B0%91AI%E6%BD%AE-%E5%A4%B1%E4%B8%9A%E5%8D%B1%E6%9C%BA%E5%8A%A0%E5%89%A7'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%BA%BA%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E7%BE%8E%E5%8A%A0%E5%85%B3%E7%A8%8E%E6%88%98-%E4%B8%AD%E5%9B%BD%E4%BC%9A%E5%90%A6%E5%9D%90%E6%94%B6%E6%B8%94%E7%BF%81%E4%B9%8B%E5%88%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.18'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E5%90%B4%E9%9E%91%E9%9D%BC-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%8D%96%E5%8D%B5%E7%9A%84%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%B3%E5%AD%A9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%AD%E5%9B%BDAI%E5%B4%9B%E8%B5%B7-DeepSeek%E5%BC%95%E7%88%86%E5%85%A8%E6%B0%91AI%E6%BD%AE-%E5%A4%B1%E4%B8%9A%E5%8D%B1%E6%9C%BA%E5%8A%A0%E5%89%A7">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%BA%BA%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E7%BE%8E%E5%8A%A0%E5%85%B3%E7%A8%8E%E6%88%98-%E4%B8%AD%E5%9B%BD%E4%BC%9A%E5%90%A6%E5%9D%90%E6%94%B6%E6%B8%94%E7%BF%81%E4%B9%8B%E5%88%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-18/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.18">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-18/%E5%90%B4%E9%9E%91%E9%9D%BC-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%8D%96%E5%8D%B5%E7%9A%84%E4%BF%84%E7%BD%97%E6%96%AF%E5%A5%B3%E5%AD%A9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

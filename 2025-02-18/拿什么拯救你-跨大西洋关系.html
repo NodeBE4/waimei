@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>拿什么拯救你 跨大西洋关系？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+拿什么拯救你 跨大西洋关系？
+——
+" />
+    <meta property="og:description" content="
+拿什么拯救你 跨大西洋关系？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="拿什么拯救你 跨大西洋关系？" />
+    <meta property="twitter:title" content="拿什么拯救你 跨大西洋关系？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%258B%25BF%25E4%25BB%2580%25E4%25B9%2588%25E6%258B%25AF%25E6%2595%2591%25E4%25BD%25A0%2520%25E8%25B7%25A8%25E5%25A4%25A7%25E8%25A5%25BF%25E6%25B4%258B%25E5%2585%25B3%25E7%25B3%25BB%25EF%25BC%259F%2Fa-71648839&t=%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0+%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%258B%25BF%25E4%25BB%2580%25E4%25B9%2588%25E6%258B%25AF%25E6%2595%2591%25E4%25BD%25A0%2520%25E8%25B7%25A8%25E5%25A4%25A7%25E8%25A5%25BF%25E6%25B4%258B%25E5%2585%25B3%25E7%25B3%25BB%25EF%25BC%259F%2Fa-71648839&t=%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0+%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F&d=2025-02-18&e=
+拿什么拯救你 跨大西洋关系？
+——
+
+
+  
+Christoph Hasselbach2025-02-18T11:25:11.308Z
+  
+  
+德国总统施泰因迈尔会晤参加慕安会的美国副总统万斯
+  
+  （德国之声中文网）最晚自上周以来，跨大西洋关系已被撕开一道深深的裂痕。慕尼黑安全会议主席霍伊斯根（ Christoph Heusgen）在美国副总统万斯演讲后不得不表示，必须担心“我们共同的价值观基础不再是共同的”。他说，此次会议是一场“欧洲噩梦”。
+  然而，令德国政界深感不安的不仅仅是万斯的演讲。万斯指责欧洲缺乏民主，间接呼吁德国各党派与部分极右翼的德国选择党AfD进行合作。他传达的信息是，只有在欧洲人与华盛顿新政府保持相同政治路线的情况下，美国才会提供军事保护。
+  万斯会见AfD党魁魏德尔 避开肖尔茨
+  “这不合规矩，尤其是在朋友和盟友之间，我们坚决拒绝这种行为，”德..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%258B%25BF%25E4%25BB%2580%25E4%25B9%2588%25E6%258B%25AF%25E6%2595%2591%25E4%25BD%25A0%2520%25E8%25B7%25A8%25E5%25A4%25A7%25E8%25A5%25BF%25E6%25B4%258B%25E5%2585%25B3%25E7%25B3%25BB%25EF%25BC%259F%2Fa-71648839" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839&text=拿什么拯救你 跨大西洋关系？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839&title=拿什么拯救你 跨大西洋关系？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839&title=拿什么拯救你 跨大西洋关系？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=拿什么拯救你 跨大西洋关系？&body=
+拿什么拯救你 跨大西洋关系？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839&title=拿什么拯救你 跨大西洋关系？&caption=
+拿什么拯救你 跨大西洋关系？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=拿什么拯救你 跨大西洋关系？&url=https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>拿什么拯救你 跨大西洋关系？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%258B%25BF%25E4%25BB%2580%25E4%25B9%2588%25E6%258B%25AF%25E6%2595%2591%25E4%25BD%25A0%2520%25E8%25B7%25A8%25E5%25A4%25A7%25E8%25A5%25BF%25E6%25B4%258B%25E5%2585%25B3%25E7%25B3%25BB%25EF%25BC%259F%2Fa-71648839&t=%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0+%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F&d=2025-02-18&e=
+拿什么拯救你 跨大西洋关系？
+——
+
+
+  
+Christoph Hasselbach2025-02-18T11:25:11.308Z
+  
+  
+德国总统施泰因迈尔会晤参加慕安会的美国副总统万斯
+  
+  （德国之声中文网）最晚自上周以来，跨大西洋关系已被撕开一道深深的裂痕。慕尼黑安全会议主席霍伊斯根（ Christoph Heusgen）在美国副总统万斯演讲后不得不表示，必须担心“我们共同的价值观基础不再是共同的”。他说，此次会议是一场“欧洲噩梦”。
+  然而，令德国政界深感不安的不仅仅是万斯的演讲。万斯指责欧洲缺乏民主，间接呼吁德国各党派与部分极右翼的德国选择党AfD进行合作。他传达的信息是，只有在欧洲人与华盛顿新政府保持相同政治路线的情况下，美国才会提供军事保护。
+  万斯会见AfD党魁魏德尔 避开肖尔茨
+  “这不合规矩，尤其是在朋友和盟友之间，我们坚决拒绝这种行为，”德..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%258B%25BF%25E4%25BB%2580%25E4%25B9%2588%25E6%258B%25AF%25E6%2595%2591%25E4%25BD%25A0%2520%25E8%25B7%25A8%25E5%25A4%25A7%25E8%25A5%25BF%25E6%25B4%258B%25E5%2585%25B3%25E7%25B3%25BB%25EF%25BC%259F%2Fa-71648839" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739879225000-->
+<p><a href="https://www.dw.com/zh/%E6%8B%BF%E4%BB%80%E4%B9%88%E6%8B%AF%E6%95%91%E4%BD%A0%20%E8%B7%A8%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%85%B3%E7%B3%BB%EF%BC%9F/a-71648839">拿什么拯救你 跨大西洋关系？</a>
+——</p>
+
+<div>
+  <div>
+<em>Christoph Hasselbach<br />2025-02-18T11:25:11.308Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/71610058_303.jpg" width="100%" />  <div>
+<small style="color: #999;">德国总统施泰因迈尔会晤参加慕安会的美国副总统万斯</small>
+  </div>
+  <p>（德国之声中文网）最晚自上周以来，跨大西洋关系已被撕开一道深深的裂痕。<a href="https://api.dw.com/api/detail/article/71597454" rel="ArticleRef">慕尼黑安全会议</a>主席霍伊斯根（ Christoph Heusgen）在美国副总统万斯演讲后不得不表示，必须担心“我们共同的价值观基础不再是共同的”。他说，此次会议是一场“<a href="https://api.dw.com/api/detail/article/71614510" rel="ArticleRef">欧洲噩梦</a>”。</p>
+  <p>然而，令德国政界深感不安的不<a href="https://api.dw.com/api/detail/article/71631241" rel="ArticleRef">仅仅是万斯的演讲</a>。万斯指责欧洲缺乏民主，间接呼吁德国各党派与部分极右翼的德国选择党AfD进行合作。他传达的信息是，只有在欧洲人与华盛顿新政府保持相同政治路线的情况下，美国才会提供军事保护。</p>
+  <p><strong>万斯会见AfD党魁魏德尔 避开肖尔茨</strong></p>
+  <p>“这不合规矩，尤其是在朋友和盟友之间，我们坚决拒绝这种行为，”德国总理肖尔茨在演讲中这样说，当时万斯已离开慕尼黑。</p>
+  <p>德国政界其他高层人士对万斯的做法也表示不解。“几年后，我们仍会感受到这次安全会议的深刻影响，”基民盟/基社盟的总理候选人梅尔茨（Friedrich Merz）对德国之声表示。根据所有民调，梅尔茨在2月23日的联邦议院选举后最有可能成为下一任总理。他说，“美国质疑安全保障，质疑民主制度”。梅尔茨坚称反对美国对德国选举进行干涉。</p>
+  <p>就礼节规范而言，美国副总统在慕尼黑的行为足以构成某种挑衅：万斯与反对党领袖梅尔茨进行了私下会谈，但不见总理肖尔茨。特别令肖尔茨和梅尔茨感到冒犯的是，万斯在其酒店会见了AfD联合主席魏德尔(Alice Weidel)。出于政治原因，德国选择党未被邀请参加慕安会，而肖尔茨和梅尔茨都坚决排除与选择党进行组阁的可能性。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/71637758_303.jpg" width="100%" />  <div>
+<small style="color: #999;">德国总理肖尔茨会晤参加慕安会的乌克兰总统泽连斯基</small>
+  </div>
+  <p><strong>有关乌克兰的谈判却排除乌克兰参与？</strong></p>
+  <p>美国政府处理<span data-id="60868685" data-type="AUTO_TOPIC" title="Automatische Themenseite">俄乌战争</span>问题的方式也是一种类似的挑衅。特朗普希望单独与俄罗斯总统普京达成乌克兰<a href="https://api.dw.com/api/detail/article/71613509" rel="ArticleRef">和平协议</a>。本周在利雅得举行的美俄谈判将欧洲排除在外。“我们有话语权，没有我们根本不行，”肖尔茨在一次选举节目中说。</p>
+  <p>美国人似乎持不同看法。特朗普任命的俄乌特使凯洛格将军（Keith Kellogg）在德国之声的《冲突地带》节目中明确表示，欧洲人不会参与谈判，但可以做出贡献。至于是<a href="https://api.dw.com/api/detail/article/71571767" rel="ArticleRef">何种“贡献”</a>，凯洛格并未直接表达，也许美方在策划部署地面部队以确保未来的和平，但明确排除派遣美国士兵的可能。</p>
+  <p>乌克兰似乎也被排除在外。不仅如此，乌克兰总统泽连斯基三年来为赢得战争付出的<a href="https://api.dw.com/api/detail/article/71621249" rel="ArticleRef">所有努力</a>，以及乌克兰军队为之奋斗的目标，似乎均被特朗普政府<a href="https://api.dw.com/api/detail/article/71628531" rel="ArticleRef">一笔勾销</a>。美国国防部长赫格塞斯（Pete Hegseth）暗示，乌克兰既不会收回失去的领土，也不会加入北约。</p>
+  <p>众所周知，恢复领土完整和未来加入北约一直是德国支持乌克兰的基本原则。</p>
+  <p>此外，特朗普甚至对北约盟友发出帝国主义威胁：他希望将加拿大变成美国的一个新州，并购买属于丹麦的格陵兰岛，甚至可能通过军事或经济压力强行夺取。肖尔茨总理对此进行了严厉批评。</p>
+  <p>最后，特朗普威胁对欧洲商品征收进口关税，这将严重打击以出口为导向的德国经济。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/71644720_303.jpg" width="100%" />  <div>
+<small style="color: #999;">梅尔茨：德国应同法国、波兰一道承担起欧洲大国的责任</small>
+  </div>
+  <p><strong>梅尔茨：欧洲必须觉醒</strong></p>
+  <p>这意味着，在短短几周内，特朗普及其团队对欧洲人进行了一连串打击。尤其是在柏林，这些打击甚至超越了最坏的预期。</p>
+  <p>这对跨大西洋关系意味着什么？特朗普的俄乌特使凯洛格在德国之声的《冲突地带》节目中试图淡化美国的立场，“我们说‘美国优先’，但我们从未说过‘美国孤立’。我们从未表示要实行孤立主义政策。”他说，特朗普明确表示：“如果一个国家为维护主权而战，我们将支持你们。”</p>
+  <p>然而，在柏林和其他欧洲首都，人们逐渐意识到，欧洲人在今后将很大程度上必须依靠自己。肖尔茨总理本周一（2月17日）启程前往巴黎前表示，“我们必须确保欧洲强大、独立，挺直腰杆应对未来的挑战。”这算是对慕尼黑教训的某种回应。</p>
+  <p>然而，肖尔茨被视为随时下台的总理。他的潜在继任者梅尔茨此前曾说过，如果他成为总理，他希望将德国从“沉睡的中等强国”转变为“领导型中等强国”。现在他觉得自己的观点得到了证实，在一次德国之声的访谈中表示，“我们必须与法国、波兰等国共同承担这一角色。欧洲期待德国发挥领导作用，尤其是在美国逐步、甚至完全撤出的情况下——现在这一时刻已经到来。欧洲必须觉醒，必须承担起自身安全的责任。”</p>
+  <p><em><span>DW中文有<a href="https://www.instagram.com/dw.chinese/">Instagram</a>！</span>欢迎搜寻dw.chinese，看更多深入浅出的图文与影音报导。</em></p>
+  <p>© 2025年德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E4%B8%8D%E8%83%BD%E8%AE%A9%E4%B9%8C%E5%85%8B%E5%85%B0%E6%88%90%E4%B8%BA%E9%98%BF%E5%AF%8C%E6%B1%972.0">
+          泽连斯基：不能让乌克兰成为阿富汗2.0
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8">
+          路透社：消息人士称台湾考虑从美国购买数十亿美元武器
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E4%BF%84%E5%88%A9%E9%9B%85%E5%BE%97%E5%BC%80%E8%B0%88-%E8%8E%AB%E6%96%AF%E7%A7%91-%E6%99%AE%E4%BA%AC%E6%84%BF%E4%B8%8E%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E8%B0%88%E5%88%A4">
+          美俄利雅得开谈 莫斯科：普京愿与泽连斯基谈判
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E8%82%96%E5%B0%94%E8%8C%A8-%E5%B0%9A%E6%9C%AA%E6%94%BE%E5%BC%83%E8%BF%9E%E4%BB%BB%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E7%9A%84%E5%B8%8C%E6%9C%9B">
+          肖尔茨：尚未放弃连任德国总理的希望
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%89%8D%E6%80%BB%E7%BB%9F%E6%9D%9C%E7%89%B9%E5%B0%94%E7%89%B9%E5%9B%A0-%E6%9D%80%E6%AD%BB%E5%8F%82%E8%AE%AE%E5%91%98-%E8%A8%80%E8%AE%BA%E8%80%8C%E9%9D%A2%E4%B8%B4%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7">
+            前一篇：菲律宾前总统杜特尔特因“杀死参议员”言论而面临刑事指控
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8">
+            后一篇：路透社：消息人士称台湾考虑从美国购买数十亿美元武器
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%89%8D%E6%80%BB%E7%BB%9F%E6%9D%9C%E7%89%B9%E5%B0%94%E7%89%B9%E5%9B%A0-%E6%9D%80%E6%AD%BB%E5%8F%82%E8%AE%AE%E5%91%98-%E8%A8%80%E8%AE%BA%E8%80%8C%E9%9D%A2%E4%B8%B4%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E4%BF%84%E5%88%A9%E9%9B%85%E5%BE%97%E5%BC%80%E8%B0%88-%E8%8E%AB%E6%96%AF%E7%A7%91-%E6%99%AE%E4%BA%AC%E6%84%BF%E4%B8%8E%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E8%B0%88%E5%88%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%89%8D%E6%80%BB%E7%BB%9F%E6%9D%9C%E7%89%B9%E5%B0%94%E7%89%B9%E5%9B%A0-%E6%9D%80%E6%AD%BB%E5%8F%82%E8%AE%AE%E5%91%98-%E8%A8%80%E8%AE%BA%E8%80%8C%E9%9D%A2%E4%B8%B4%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-18/%E8%B7%AF%E9%80%8F%E7%A4%BE-%E6%B6%88%E6%81%AF%E4%BA%BA%E5%A3%AB%E7%A7%B0%E5%8F%B0%E6%B9%BE%E8%80%83%E8%99%91%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%B4%AD%E4%B9%B0%E6%95%B0%E5%8D%81%E4%BA%BF%E7%BE%8E%E5%85%83%E6%AD%A6%E5%99%A8">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E4%BF%84%E5%88%A9%E9%9B%85%E5%BE%97%E5%BC%80%E8%B0%88-%E8%8E%AB%E6%96%AF%E7%A7%91-%E6%99%AE%E4%BA%AC%E6%84%BF%E4%B8%8E%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA%E8%B0%88%E5%88%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

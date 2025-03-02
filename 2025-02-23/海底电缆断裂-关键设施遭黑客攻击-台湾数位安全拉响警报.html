@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+" />
+    <meta property="og:description" content="
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报" />
+    <meta property="twitter:title" content="海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221%2F7983604.html&t=%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E6%96%AD%E8%A3%82%E3%80%81%E5%85%B3%E9%94%AE%E8%AE%BE%E6%96%BD%E9%81%AD%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB%EF%BC%8C%E5%8F%B0%E6%B9%BE%E6%95%B0%E4%BD%8D%E5%AE%89%E5%85%A8%E6%8B%89%E5%93%8D%E8%AD%A6%E6%8A%A5" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221%2F7983604.html&t=%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E6%96%AD%E8%A3%82%E3%80%81%E5%85%B3%E9%94%AE%E8%AE%BE%E6%96%BD%E9%81%AD%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB%EF%BC%8C%E5%8F%B0%E6%B9%BE%E6%95%B0%E4%BD%8D%E5%AE%89%E5%85%A8%E6%8B%89%E5%93%8D%E8%AD%A6%E6%8A%A5&d=2025-02-23&e=
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+
+
+  
+Sun, 23 Feb 2025 15:30:11 GMT
+  
+  
+一名化名为王子的中国黑客、“红色黑客联盟”成员在广东东莞的办公室里监察全球网络攻击。（2020年8月4日）
+  
+台北 —   近日台湾海底电缆接连出现断裂，重型电机公司和大型医学中心也遇黑客攻击，引发外界对台湾数位安全与关键基础设施防护的关注。有关专家分析，这几起黑客攻击事件很大程度与来自中国的犯罪者有关。他们认为，不管是北京当局意图对台湾进行灰色地带的侵扰，还是犯罪分子进行商业勒索，台湾都需要重新检视其资讯安全策略并加以强化。
+  台湾海底电缆疑再成中国灰色战目标
+  据台湾媒体中央社报道，台湾总统兼任民进党党主席赖清德于2月19日在民进党中常会上表示，海底电缆是各国关键基础设施，同时也是各国通讯最重要的命脉，但却十分脆弱，世界各国已经..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221%2F7983604.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html&text=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html&title=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html&title=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报&body=
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html&title=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报&caption=
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报&url=https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-23
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221%2F7983604.html&t=%E6%B5%B7%E5%BA%95%E7%94%B5%E7%BC%86%E6%96%AD%E8%A3%82%E3%80%81%E5%85%B3%E9%94%AE%E8%AE%BE%E6%96%BD%E9%81%AD%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB%EF%BC%8C%E5%8F%B0%E6%B9%BE%E6%95%B0%E4%BD%8D%E5%AE%89%E5%85%A8%E6%8B%89%E5%93%8D%E8%AD%A6%E6%8A%A5&d=2025-02-23&e=
+海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报
+——
+
+
+  
+Sun, 23 Feb 2025 15:30:11 GMT
+  
+  
+一名化名为王子的中国黑客、“红色黑客联盟”成员在广东东莞的办公室里监察全球网络攻击。（2020年8月4日）
+  
+台北 —   近日台湾海底电缆接连出现断裂，重型电机公司和大型医学中心也遇黑客攻击，引发外界对台湾数位安全与关键基础设施防护的关注。有关专家分析，这几起黑客攻击事件很大程度与来自中国的犯罪者有关。他们认为，不管是北京当局意图对台湾进行灰色地带的侵扰，还是犯罪分子进行商业勒索，台湾都需要重新检视其资讯安全策略并加以强化。
+  台湾海底电缆疑再成中国灰色战目标
+  据台湾媒体中央社报道，台湾总统兼任民进党党主席赖清德于2月19日在民进党中常会上表示，海底电缆是各国关键基础设施，同时也是各国通讯最重要的命脉，但却十分脆弱，世界各国已经..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Ftaipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221%2F7983604.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740325143000-->
+<p><a href="https://www.voachinese.com/a/taipeis-mackay-memorial-hospital-faces-ransomware-attack-20250221/7983604.html">海底电缆断裂、关键设施遭黑客攻击，台湾数位安全拉响警报</a>
+——</p>
+
+<div>
+  <div>
+<em>Sun, 23 Feb 2025 15:30:11 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/d65afe92-ae63-42d5-8b12-993e1f249514_cx0_cy6_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">一名化名为王子的中国黑客、“红色黑客联盟”成员在广东东莞的办公室里监察全球网络攻击。（2020年8月4日）</small>
+  </div>
+台北 —   <p>近日台湾海底电缆接连出现断裂，重型电机公司和大型医学中心也遇黑客攻击，引发外界对台湾数位安全与关键基础设施防护的关注。有关专家分析，这几起黑客攻击事件很大程度与来自中国的犯罪者有关。他们认为，不管是北京当局意图对台湾进行灰色地带的侵扰，还是犯罪分子进行商业勒索，台湾都需要重新检视其资讯安全策略并加以强化。</p>
+  <p><strong>台湾海底电缆疑再成中国灰色战目标</strong></p>
+  <p>据台湾媒体中央社报道，台湾总统兼任民进党党主席赖清德于2月19日在民进党中常会上表示，海底电缆是各国关键基础设施，同时也是各国通讯最重要的命脉，但却十分脆弱，世界各国已经将海底电缆遭破坏视为典型的灰色地带侵扰手段，政府会积极行动，守护台湾数位生命线。</p>
+  <p>赖清德的这番讲话针对的是台马二号、三号等连接台湾与离岛马祖的海底电缆日前因线材老化或疑似遭到中国船只破坏等因素断裂的事情。</p>
+  <p>台湾数位发展部（数发部）2月16日发布新闻稿说，台马二号海缆因芯线断裂障碍，进一步发展成全断状态的事件。数发部指出，最快要等到约2月底甚至是3月底才能完成台马二号海缆的修复。</p>
+  <p>尽管台湾负责海岸巡防的海巡署仍在调查这起事故的详细原因，但台湾国立高雄大学科技法律研究所教授、专精数位法制研究的罗承宗推测，整起事件很可能与过往海底电缆受损案件如出一辙，疑似由与中国有关的船只破坏所致。</p>
+  <p>罗承宗告诉美国之音：“这个行为可不可能是有其他的外国的敌对势力介入，来去做这样的一个灰色作战的话，我认为很有可能，原因就在于说这样的行为表面上看不出任何的经济利益，可是这一些以民用船机当作一个伪装的商船，又想去做这个事情的话，表示它背后一定有动机。假设它是在同一个时间把所有的电缆都弄断的话，那其实（对）台湾会造成恐慌。”</p>
+  <p>专精网路威胁研究的杜浦数位安全（TeamT5）技术长李庭阁也对美国之音说，根据内部团队研究，中国疑似从去年11月起开始，就针对台湾网路通讯业者进行大规模的攻击行动，因此这次海底电缆遭到破坏，很有可能也为中共一连串对台协同作战的一部分。</p>
+  <p>他说：“这一切可能都是中国在为未来的两岸情势紧张，做一些准备的动作。”</p>
+  <p><strong>台医院首遭大规模黑客攻击 可能与中国有关？</strong></p>
+  <p>除了海底电缆断裂，近期台湾的资讯安全领域也面临多重严峻挑战。据媒体报道，台湾的马偕医院于2月9日至2月11日遭勒索软体“CrazyHunter”攻击，一度造成门诊及急诊超过500台电脑当机、挂号系统停摆的事件。</p>
+  <p>马偕医院稍早表示，2月9日发现系统异常后，立即启动资安紧急应变作业流程。台湾的卫生福利部（卫福部）及数发部资通安全署（资安署）也已介入协助，不过恐吓信内容因案件侦查中，不便公开。</p>
+  <p>马偕在声明稿中说，媒体报导指黑客声称窃取患者个人资料并威胁公开，但专家比对后发现，这些资料格式与马偕医院并不符，系统内也未发现任何个人资料外泄情况。</p>
+  <p>由于马偕医院是台湾北部重要的医学中心，遭黑客攻击引起各界关注。台湾卫福部资讯处长李建璋稍早表示，这是台湾医院“第一次遭到如此大规模，且直接扬言要进行二度、三度攻击的案件。”</p>
+  <p>他说，初步研判，黑客可能来自前俄罗斯的一些共和国。</p>
+  <p>针对这一事件，台湾数发部资安署署长蔡福隆2月19日做出最新回应，表示将规划推动关键基础设施资安的深度检查，以强化防护能量。</p>
+  <p>然而，谈到此次事件黑客的攻击来源，杜浦数位安全技术长李庭阁与李建璋的看法稍有不同。</p>
+  <p>他说：“马偕医院我们也有收集到一些相关的攻击的恶意程式样本，我们自己的关联分析结果显示，我们有高度的信心（黑客攻击）是来自中国。原因是我们透过一些关联分析，有找到一些攻击者在之前的进行攻击样本的测试，还有包括针对一些公司单位的攻击行动，所以我们相信这个攻击是来自中国。”</p>
+  <p>对于台湾观察人士怀疑台湾海底电缆断裂及马偕医院资安事件可能与来自中国的犯罪者有关，美国之音尝试通过电话及以电子邮件向中国国务院台湾事务办公室（国台办）、负责通信网络安全与信息安全管理的中国工业和信息化部（工信部），以及中国外交部提出置评请求，但至截稿前未获回应。</p>
+  <p><strong>网军从政治操作转向只求赚外快</strong></p>
+  <p>杜浦数位安全技术长李庭阁分析说，马偕医院遭黑客袭击的事件中，可能来自中国的犯罪者并不具有政治目的，也许只是单纯希望拿到勒索赎金。</p>
+  <p>他说：“我们公司从事所谓的中国网军的研究已经很长一段时间。我们观察到近期两三年有一个趋势，就是这些所谓的中国网军，他们开始进行以金钱为目的的网路犯罪行动，这可能包含了勒索软体攻击，或者是比特币的窃取。”</p>
+  <p>这位网络安全问题专家说，这些纯粹以取得金钱为主的攻击行动，与以往通指受到特定政府机构支持而所进行一些情报窃取的网军行径不太一样。</p>
+  <p>至于为何现在以谋取经济利益为主的中国网路黑客日益增加，李庭阁认为，这可能与中国近年的经济萧条有关。</p>
+  <p>李庭阁说：“为什么会出现这样子的现象？我们目前初步的推论，有可能是中国那边的经济状况，导致这一些所谓的网军，他们过去倚赖政府的（赚钱）模式，可能遭遇到了一些困难，所以他们必须找寻其他的管道，来帮他们赚取额外的金钱。”</p>
+  <p><strong>犯罪者若与政客串通 消费行为可能被操控</strong></p>
+  <p>一名因议题敏感而不愿透露任职企业名称的科技公司副总监李重志也认同李庭阁的看法。他说，这次马偕医院遭黑客入侵的手法，并非过往常见的中国黑客为求达政治目的的手段，而是典型的勒索，“求取最有效、CP值要高（的方式），就是好勒索、好攻击，他们也愿意会缴钱的这些公司企业”。</p>
+  <p>李重志认为，若此次犯下马偕网攻的不法分子确实来自中国，医院又有资料遭黑客窃取，虽然这些黑客可能跟中国政府未有直接关系，但后果将不堪设想。</p>
+  <p>李重志告诉美国之音，“（如果）马偕医院资料(被）勒索勒索完了，被政治团体、或者是这个敌国他们拿去了，那问题就来了。举个例子，前一阵子（台湾）高铁会员的资料，被（黑客）用暴力破解闯入，这个当然是蛮低阶黑客求取利益的做法，但是他们如果把这些高铁会员的消费纪录拿上去卖，或者直接转手给中国，可以误导有些会员集中买哪一些路段的车子，必要时，在车子哪个行经的路段造成事故。”</p>
+  <p>台湾高速铁路股份有限公司在去年8、9间，陆续遭到黑客利用“撞库攻击”（Credential Stuffing），也就是收集大量网路上已泄露的用户名和密码，不断试图登入网站的方式，成功诈取会员点数。</p>
+  <p><strong>台重电资安若遭中国窃取 电力、轨道业者恐也遭殃</strong></p>
+  <p>除了马偕医院以外，台湾重电大厂华城电机股份有限公司也于2月9日在官网发布讯息表示，该公司2月8日发生网路资安事件。</p>
+  <p>华城表示，该公司资安部门查知遭受加密攻击时，就已启动相关防御机制与复原作业，因此并未有公司资通系统或官方网站遭攻击致无法营运或正常提供服务，也尚未发现有个资或文件资料外泄之情事，因此没有造成公司重大损害，后续将持续提升网路与资讯基础架构之安全管控。</p>
+  <p>不过，华城仅提供了此次事件的部分细节，且未透露加密攻击的来源。</p>
+  <p>美国之音试图联系华城以了解更多情况，包括对黑客组织的初步判断，但截稿前仍未获回应。</p>
+  <p>一家科技公司的副总监李重志认为，由华城透露的有限资讯来看，很难判断攻击来源究竟是否来自中国黑客。不过即便不是中国黑客所为，也可将窃取来的原始码或相关资料在暗网上卖钱，这就很有可能被与中共当局相关的有心人士窃取，进而引发更严重的资安风险。</p>
+  <p>李重志告诉美国之音 ：“因为现在的很多重电设备，它其实是可以有远端遥控，它必须要上网取得token（凭证），或者是一个license（授权），那譬如说艾司摩尔(ASML，即荷兰半导体设备大厂阿斯麦)，它就可以远端把台积电的机子关掉，连网也可以透过更新版本的过程之中，对你的机器设备产生一定的控制，所以联网的加密安全是非常重要的。今天华城电机（被黑客）取得的资料，如果里面有他们电机设备里面的BIOS原始码(指系统最底层的韧体程式），对于华城的所有客户都是一个潜在的威胁。”</p>
+  <p>李重志还说，若华城电机的网路资安事件背后主嫌为中国黑客，而且其设备有采用OTA（Over-the-Air，远端更新技术）的产品，客户很可能落入“不可控的风险处境”，而由于台湾像是台湾电力公司及轨道运输业者经常使用类似的设备，等同这些机构也将造受巨大的资安威胁。</p>
+  <p><strong>分析：台湾应检视其资讯安全策略</strong></p>
+  <p>台湾国立高雄大学科技法律研究所教授罗承宗提醒，近期台湾数起包含重电及医疗机构的网攻事件，可能暴露出民间企业资安意识的不足。他认为，最近发生的电缆断裂以及医院和电力公司等遭黑客袭击的事件凸显出台湾在面对新型数位威胁时，防护措施明显不够完善，因此台湾政府应重新检视其资讯安全策略并加以强化。</p>
+  <p>罗承宗说：“中国是有很强的网军，就真的是军队，那针对所谓训练军队级的黑客，来去进行你国家攻击的时候，相较之下，我们到目前为止，对于这种资讯防御的概念是很弱的，我们目前因为组织太僵化了，导致说这一块其实是一个很大的一个漏洞。人家是军规的黑客，那我们拿什么跟人家对抗？我觉得这个东西可能是台湾政府要比较严肃思考的问题。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-23</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-23/%E9%A6%99%E6%B8%AF%E4%BC%A0%E5%AA%92%E5%A4%A7%E4%BA%A8%E9%BB%8E%E6%99%BA%E8%8B%B1%E7%8B%B1%E4%B8%AD%E7%97%85%E9%87%8D-%E6%B0%91%E4%B8%BB%E4%BA%BA%E5%A3%AB%E5%8F%91%E8%B5%B7-%E5%A3%B0%E6%8F%B4%E9%BB%8E%E6%99%BA%E8%8B%B1-%E5%85%A8%E7%90%83%E6%B4%BB%E5%8A%A8">
+          香港传媒大亨黎智英狱中病重，民主人士发起“声援黎智英”全球活动
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-23</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-23/%E5%9F%BA%E8%BE%85-%E4%BF%84%E7%BD%97%E6%96%AF%E5%AF%B9%E4%B9%8C%E5%8F%91%E5%8A%A8%E5%BC%80%E6%88%98%E4%BB%A5%E6%9D%A5%E6%9C%80%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%A2%AD%E5%87%BB">
+          基辅：俄罗斯对乌发动开战以来最大规模无人机袭击
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-23</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-23/%E6%B3%95%E5%9B%BD%E8%88%AA%E6%AF%8D%E6%89%93%E5%87%BB%E7%BE%A4%E4%B8%8E%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%9C%A8%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7%E4%B8%BE%E8%A1%8C%E8%81%94%E5%90%88%E4%BD%9C%E6%88%98%E6%BC%94%E4%B9%A0">
+          法国航母打击群与菲律宾在南中国海举行联合作战演习
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-23</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-23/%E9%A6%99%E6%B8%AF%E9%9D%A2%E4%B8%B4%E5%88%9B%E7%BA%AA%E5%BD%95%E8%B4%A2%E6%94%BF%E8%B5%A4%E5%AD%97%E7%9A%84%E6%8C%91%E6%88%98">
+          香港面临创纪录财政赤字的挑战
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-23/%E7%91%9E%E5%A3%AB%E6%8A%97%E8%AE%AE%E5%BE%B7%E5%9B%BD%E9%80%89%E9%A1%B9%E5%85%9A%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA-%E4%BD%8F%E6%89%80%E5%89%8D%E7%A4%BA%E5%A8%81-%E5%8F%91%E5%B8%83-%E9%A9%B1%E9%80%90%E6%9C%BA%E7%A5%A8">
+            前一篇：瑞士抗议德国选项党总理候选人：住所前示威 发布“驱逐机票”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-23/%E9%80%89%E6%88%98%E5%B0%BE%E5%A3%B0-%E7%BB%BF%E8%89%B2-%E5%B7%A6%E7%BF%BC%E7%96%AF%E5%AD%90-vs.-%E8%BF%B7%E4%BD%A0%E7%89%B9%E6%9C%97%E6%99%AE">
+            后一篇：选战尾声：“绿色、左翼疯子” vs. “迷你特朗普”
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-23/%E7%91%9E%E5%A3%AB%E6%8A%97%E8%AE%AE%E5%BE%B7%E5%9B%BD%E9%80%89%E9%A1%B9%E5%85%9A%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA-%E4%BD%8F%E6%89%80%E5%89%8D%E7%A4%BA%E5%A8%81-%E5%8F%91%E5%B8%83-%E9%A9%B1%E9%80%90%E6%9C%BA%E7%A5%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-23/%E9%80%89%E6%88%98%E5%B0%BE%E5%A3%B0-%E7%BB%BF%E8%89%B2-%E5%B7%A6%E7%BF%BC%E7%96%AF%E5%AD%90-vs.-%E8%BF%B7%E4%BD%A0%E7%89%B9%E6%9C%97%E6%99%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-23/%E5%9F%BA%E8%BE%85-%E4%BF%84%E7%BD%97%E6%96%AF%E5%AF%B9%E4%B9%8C%E5%8F%91%E5%8A%A8%E5%BC%80%E6%88%98%E4%BB%A5%E6%9D%A5%E6%9C%80%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%A2%AD%E5%87%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-23/%E6%B3%95%E5%9B%BD%E8%88%AA%E6%AF%8D%E6%89%93%E5%87%BB%E7%BE%A4%E4%B8%8E%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%9C%A8%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7%E4%B8%BE%E8%A1%8C%E8%81%94%E5%90%88%E4%BD%9C%E6%88%98%E6%BC%94%E4%B9%A0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-23/%E7%91%9E%E5%A3%AB%E6%8A%97%E8%AE%AE%E5%BE%B7%E5%9B%BD%E9%80%89%E9%A1%B9%E5%85%9A%E6%80%BB%E7%90%86%E5%80%99%E9%80%89%E4%BA%BA-%E4%BD%8F%E6%89%80%E5%89%8D%E7%A4%BA%E5%A8%81-%E5%8F%91%E5%B8%83-%E9%A9%B1%E9%80%90%E6%9C%BA%E7%A5%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-23/%E9%80%89%E6%88%98%E5%B0%BE%E5%A3%B0-%E7%BB%BF%E8%89%B2-%E5%B7%A6%E7%BF%BC%E7%96%AF%E5%AD%90-vs.-%E8%BF%B7%E4%BD%A0%E7%89%B9%E6%9C%97%E6%99%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-23/%E5%9F%BA%E8%BE%85-%E4%BF%84%E7%BD%97%E6%96%AF%E5%AF%B9%E4%B9%8C%E5%8F%91%E5%8A%A8%E5%BC%80%E6%88%98%E4%BB%A5%E6%9D%A5%E6%9C%80%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%A2%AD%E5%87%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-23/%E6%B3%95%E5%9B%BD%E8%88%AA%E6%AF%8D%E6%89%93%E5%87%BB%E7%BE%A4%E4%B8%8E%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%9C%A8%E5%8D%97%E4%B8%AD%E5%9B%BD%E6%B5%B7%E4%B8%BE%E8%A1%8C%E8%81%94%E5%90%88%E4%BD%9C%E6%88%98%E6%BC%94%E4%B9%A0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

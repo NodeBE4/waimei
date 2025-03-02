@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+" />
+    <meta property="og:description" content="
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了" />
+    <meta property="twitter:title" content="知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716019.html&t=%E7%9F%A5%E8%AF%86%E5%88%86%E5%AD%90%EF%BD%9C7%E5%AE%B6%E4%B8%AD%E5%9B%BD%E5%8C%BB%E9%99%A2%E2%80%9C%E8%B7%BB%E8%BA%AB%E2%80%9D%E5%85%A8%E7%90%83%E5%89%8D%E5%8D%81%EF%BC%8C%E6%92%A4%E7%A8%BF%E7%8E%87%E6%A6%9C%E5%8D%95%E6%9D%A5%E4%BA%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716019.html&t=%E7%9F%A5%E8%AF%86%E5%88%86%E5%AD%90%EF%BD%9C7%E5%AE%B6%E4%B8%AD%E5%9B%BD%E5%8C%BB%E9%99%A2%E2%80%9C%E8%B7%BB%E8%BA%AB%E2%80%9D%E5%85%A8%E7%90%83%E5%89%8D%E5%8D%81%EF%BC%8C%E6%92%A4%E7%A8%BF%E7%8E%87%E6%A6%9C%E5%8D%95%E6%9D%A5%E4%BA%86&d=2025-02-22&e=
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+
+
+  中国医院占据前三名
+  近日，《自然》杂志发布了一份研究报告，首次从机构层面对全球论文撤稿现象进行系统性分析。
+  在《自然》统计的“撤稿率最高机构”中，中国山东济宁市第一人民医院以超过5%的撤稿率（2014-2024年）成为世界上撤稿率最高的科研机构。该院平均每发表20篇论文，就有1篇被撤回，撤稿率超过全球平均水平50倍以上[1]。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：7家中国医院“跻身”全球前十，撤稿率榜单来了作者：知识分子发表日期：2025.2.22来源：微信公众号“知识分子”主题归类：学术造假CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  济宁市第一人民医院..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716019.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/716019.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/716019.html&text=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/716019.html&title=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/716019.html&title=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了&body=
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/716019.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/716019.html&title=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了&caption=
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了&url=https://chinadigitaltimes.net/chinese/716019.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-22
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/716019.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716019.html&t=%E7%9F%A5%E8%AF%86%E5%88%86%E5%AD%90%EF%BD%9C7%E5%AE%B6%E4%B8%AD%E5%9B%BD%E5%8C%BB%E9%99%A2%E2%80%9C%E8%B7%BB%E8%BA%AB%E2%80%9D%E5%85%A8%E7%90%83%E5%89%8D%E5%8D%81%EF%BC%8C%E6%92%A4%E7%A8%BF%E7%8E%87%E6%A6%9C%E5%8D%95%E6%9D%A5%E4%BA%86&d=2025-02-22&e=
+知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+——
+
+
+  中国医院占据前三名
+  近日，《自然》杂志发布了一份研究报告，首次从机构层面对全球论文撤稿现象进行系统性分析。
+  在《自然》统计的“撤稿率最高机构”中，中国山东济宁市第一人民医院以超过5%的撤稿率（2014-2024年）成为世界上撤稿率最高的科研机构。该院平均每发表20篇论文，就有1篇被撤回，撤稿率超过全球平均水平50倍以上[1]。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：7家中国医院“跻身”全球前十，撤稿率榜单来了作者：知识分子发表日期：2025.2.22来源：微信公众号“知识分子”主题归类：学术造假CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  济宁市第一人民医院..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716019.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740211816000-->
+<p><a href="https://chinadigitaltimes.net/chinese/716019.html">知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/716019.html" title="知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/截屏2025-02-22-09.06.33-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <h2 id="section">中国医院占据前三名</h2>
+  <p>近日，《自然》杂志发布了一份研究报告，首次从机构层面对全球论文撤稿现象进行系统性分析。</p>
+  <p>在《自然》统计的“撤稿率最高机构”中，中国山东济宁市第一人民医院以超过5%的撤稿率（2014-2024年）成为世界上撤稿率最高的科研机构。该院平均每发表20篇论文，就有1篇被撤回，撤稿率超过全球平均水平50倍以上[1]。</p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>7家中国医院“跻身”全球前十，撤稿率榜单来了<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/知识分子" target="_blank">知识分子</a><br /><strong>发表日期：</strong>2025.2.22<br /><strong>来源：</strong><a href="https://web.archive.org/web/20250222080756/https://mp.weixin.qq.com/s/8H7wSe0dBlC-UG-hesFTjw" target="_blank">微信公众号“知识分子”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/学术造假" target="_blank">学术造假</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>济宁市第一人民医院早在数年前就出现大规模的学术不端事件 。2020年，加州学术诚信调查员伊丽莎白·比克（Elisabeth Bik）发现了400 多篇内容高度雷同，疑似来自统一论文工厂的论文，这些论文几乎全部来自中国的几十家医院，其中济宁市第一人民医院的论文最多，超过100篇[2]。</p>
+  <p>在事件曝光后，据《澎湃新闻》报道，济宁市第一人民医院从2021年9月7日到2022年1月21日陆续发布10份通报，涉及107篇论文和107起学术不端事件，对相关责任人分别给予院内通报批评、科研诚信诫勉谈话、党内警告、行政警告、免职等处理措施[3]。</p>
+  <p>在自然的新研究中，分列撤稿率榜单二三名的是河北沧州市中心医院、河南大学淮河医院，撤稿率约为3.5%左右。在撤稿率前十的机构中，中国机构占据七席，均是医院以及医学院。除上述三家医院，潍坊市人民医院、临沂市人民医院、新乡医学院第一附属医院、齐齐哈尔医学院也进入了前十。其他三席由巴基斯坦的加齐大学、埃塞俄比亚“亚的斯亚贝巴”(Addis Ababa)理工大学、印度KPR工程技术学院占据。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-716019-67b985de8d1c8.png" alt="img" /></p>
+  <p>《自然》的撤稿分析基于三家研究诚信公司提供的数据：Scitility的Argos、Research Signals的Signals，以及Digital Science的Dimensions Author Check。这些公司通过整合Retraction Watch（撤稿观察）的数据库、Crossref的出版数据、PubMed的索引以及期刊网站信息，构建了全球撤稿数据集。</p>
+  <p>虽然不同数据来源得出的结果有差异，但机构撤稿仍有一些共性规律，中国小型医院和医学院始终占据着主导地位。</p>
+  <p>根据Dimensions的数据，在撤稿率超过1%的136家机构中，大约70%为中国机构，其中接近60%为医院或医科大学。Argos数据库统计的186家撤稿率1%以上的机构，也呈现出相同的规律。对不同类型机构的分析还显示，中国医院的撤稿率普遍高于高校，属于撤稿率最高的一类机构。</p>
+  <p>医院是学术不端的重灾区。2023年国家自然科学基金委第一批不端行为案件处理结果通报中，8起案例有7起当事人都是来自各医院、医学院、医科大学。2023年第二批通报中，也有三分之一案例和医院、医学院相关。基于2015年至2020年国家自然科学基金委员会通报数据的一项研究也显示，被处理的人员中专业为生物医药类的占比约75.9%[4]。</p>
+  <p>一项通过人工智能算法识别论文工厂论文的研究显示。论文工厂最初产量只有每年几篇，至2014年已达每年上百篇，而自2018年起更是跃升至每年上千篇。在SCI收录的论文中，医院是论文工厂产出论文的主要来源，占比高达67.5%。进一步分析全球医院发表的SCI论文发现，几乎所有的论文工厂论文均出自中国的医院[5]。</p>
+  <p>这些医院暴露的问题高度相似，年轻医生为满足职业晋升的论文要求，不得已从“论文工厂”购买伪造数据或直接发表伪造的论文。伊丽莎白·比克指出，这些医生承受着巨大的压力，因为他们必须发表论文才能获得工作或晋升。</p>
+  <p>在《知识分子》过去关于撤稿问题的文章中，一位青年研究人员曾经介绍，很多省份的卫健委都规定评职称需要论文，而且有很严格的计分的方式，不只是篇数的问题，还要考核影响因子。近年来只有广东等少数地区不再把论文作为评职称的必要条件。</p>
+  <p>“很多人斥责掠夺性期刊，但很多医生没有办法，必须要发论文才能评职称，所以甘心被掠夺。根本性的原因可能还是逼良为娼的制度。”这位学者说[6]。</p>
+  <h2 id="section-1">谁是撤稿大国</h2>
+  <p>统计过去10年的撤稿数量，排名前列的不少中国机构。但值得注意的是，只统计过去5年（2020—2024）撤稿数量，印度和沙特阿拉伯的几家科研机构主导了榜单，这是因为它们在2023年Hindawi的撤稿潮中受到了更大的影响。</p>
+  <p>2023年，Hindawi发布了超过9,600篇撤稿声明，撤稿数量史无前例。本次《自然》研究报告也显示，Hindawi是撤稿的重灾区，旗下4种期刊自2014年以来的撤稿率超过20%，另有4种超过10%，占据了期刊撤稿排行榜的最前列。</p>
+  <p>这些撤稿论文也有部分中国科研人员参与。受到此次撤稿事件影响，2024年初，教育部科学技术与信息化司发布通知，要求各高校开展撤稿论文自查工作。全面检索中英文科技文献数据库，对过去3年来本单位、本人署名（第一作者、通讯作者）的科研论文被撤稿情况进行全面梳理，核实论文撤稿的原因，并严惩学术不端行为。</p>
+  <p>教育部的撤稿自查通知指出，这些撤稿行为以及其他出版商的撤稿行为“已对我国的学术声誉和学术环境产生了不利影响”。</p>
+  <p>不过撤稿数量很大程度上和机构和国家的体量有关，排在前列的撤稿概率未必突出。从撤稿率看，2014至2024年间，在全球范围内过去十年中发表的 5000 万或更多篇文章中，有大约 4 万篇（不到 0.1%）被撤稿。中国学者参与的撤稿论文占比近60%（逾2万篇）。目前中国整体撤稿率约为0.3%，三倍于全球平均水平。</p>
+  <p>埃塞俄比亚与沙特阿拉伯的撤稿率甚至比中国要更高，根据不同的数据源，伊拉克与巴基斯坦以及俄罗斯撤稿率也与中国的水平相当。相比之下，美国、英国等国的撤稿率约为0.04%，远低于全球0.1%的平均水平，许多国家甚至更低。总体来看，中国的撤稿率大致排名在第3到第5之间。</p>
+  <p>撤稿的原因，也有可能是无心之失或者编辑上的错误，但证据表明，大多数案例与学术不端行为相关。《自然·人类行为》今年年初的一篇评论文章调查显示，20.5%的中国撤稿论文和论文工厂有关[7]。</p>
+  <h2 id="section-2">仍在增长的撤稿</h2>
+  <p>尽管撤稿并不是一个大概率的事件，但在2014到2024年间，撤稿声明（期刊宣布论文撤回的公告）的增长正在加速，公告数量从2014年不到2,000，增长到2023年超过12,000。这一方面是由于论文工厂的兴起，另一方面是学术侦探发现了更多的问题。</p>
+  <p>从2014年到2022年，论文撤稿率呈现出显著上升的趋势，2022年发表论文的撤稿率已达约0.2%。2023年和2024年的撤稿数据看起来比较低，但可能是因为这两年发表的论文还没有经过足够的时间来暴露问题。通常情况下，论文的撤回需要一段时间，比如几年后才会被发现和撤回。</p>
+  <p>尽管全球撤稿率持续上升，但已曝光的问题可能仅是冰山一角。法国图卢兹大学计算机科学家纪尧姆·卡巴纳克（Guillaume Cabanac）认为，一些领域或机构之所以拥有较低的撤稿率，可能仅仅是因为它们避免对存在的问题进行调查。</p>
+  <p>在去年发表在《自然》上的评论文章中，纪尧姆介绍了自己开发的用来检测学术论文中“扭曲短语”（Tortured phrases）的工具。人工智能生成或者多次翻译以逃避抄袭检测的论文中，可能会有一些无法理解的短语出现。</p>
+  <p>比如人工智能（Artificial intelligence）被翻译成伪造意识（Counterfeit consciousness）或者人造脑力（Man-made brainpower）。前段时间，中国一篇把摘要（Abstract）翻译成抽象（Pumping elephant）的撤稿论文也犯了这类错误。因为Abstract在一些翻译软件上会被译成“抽象”，抽象两个字拆开来翻译到英文就出现了Pumping elephant这种看不懂的词。</p>
+  <p>如果一篇文章出现多个这类错误，那造假的可能性可想而知相当高。截至 2023 年 8 月 20 日，纪尧姆开发的工具已经发现16,000 篇引用了 5 个或更多此类扭曲短语的论文，但被撤稿的只有18%[8]。</p>
+  <p>催生畸高撤稿数量和比例的，可能是鼓励发表的短视政策。</p>
+  <p>印度的自由数据科学家、印度研究观察组织（IRW）创始人阿查尔·阿加瓦尔（Achal Agrawal）发现，印度高撤稿率机构几乎全部集中在教育重镇泰米尔纳德邦的私立院校，这符合他的分析。在他看来，印度公立大学和政府机构的研究人员面临的发表压力小于私立机构，私立机构不仅鼓励学生和教师多发论文，某些情况下还为发表论文提供奖金。</p>
+  <p>在2024年1月发布的预印本论文中，阿加瓦尔曾对撤稿观察数据库中25个国家的撤稿数据进行简单的研究，发现过去五年论文出版数量和撤稿声明率有着高度正相关，发文数量大量增长的国家往往撤稿率也迅速提升。虽然相关不代表因果，但不健康的激励制度很可能是高撤稿率的元凶。</p>
+  <p>“这让人对目前重数量轻质量的激励制度提出质疑，”阿加瓦尔写道[9]。</p>
+  <h3 id="section-3">参考文献：</h3>
+[1]Richard Van Noorden. (2025). Exclusive: These universities have the most retracted scientific articles. Nature.<br />[2]麻省理工科技评论.(2020).惊天学术造假！400余篇论文或来自同一“论文工厂”，涉及数十家中国医院.<br />[3]贾利略.(2022).济宁市第一人民医院10月被撤6篇论文:编造研究过程、代写代投.《澎湃新闻》<br />[4]陈宾宾 &amp; 薛建龙.(2022).高校科研诚信总体情况实证分析及治理建议——基于国家自然科学基金委员会2015—2020年通报案例.今日科技(09),66-68.<br />[5]邸利会.(2022). 中国医疗界为何治不了自己论文造假这个 “病”？.《知识分子》<br />[6]张天祁.(2024). 中国掀起撤稿自查风暴的背后.《知识分子》<br />[7]Xu, S. B., &amp; Hu, G. (2025). Combating China’s retraction crisis. Nature Human Behaviour.<br />[8]Cabanac, G. (2024). Chain retraction: how to stop bad science propagating through the literature. Nature, 632(8027), 977–979.<br />[9]Agrawal, A. (2025). Country-wise Retraction Analysis from 2022-2024. Increased Publishing Leading to Higher Retraction Rates.&lt;/p&gt;
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-22</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-22/%E5%BF%B5%E5%85%B9%E9%9B%86-%E6%AF%8F%E5%A4%A9%E8%8A%B140%E4%B8%87%E8%AF%B7%E4%BA%BA%E7%9C%8B-%E5%93%AA%E5%90%922">
+          念兹集｜每天花40万请人看《哪吒2》
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-22</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99">
+          无马社｜造谣“秦始皇复活”，是否就要被拘留?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-21</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87">
+          【404文库】“土拨鼠之下皆牛马”（外二篇）
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-21</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E9%9A%BE%E5%BE%97%E5%90%9B-%E5%A5%BD%E4%B8%80%E4%B8%AA-%E7%81%8C%E9%9D%A2%E6%B1%A4%E8%87%B4%E6%AD%BB-%E4%BD%A0%E4%BB%AC%E8%BF%98%E8%83%BD%E6%9B%B4%E6%97%A0%E8%80%BB%E5%90%97">
+          【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-22/%E5%BE%B7%E5%9B%BD%E5%A4%96%E4%BA%A4%E5%AE%89%E5%85%A8%E6%94%BF%E7%AD%96-%E4%B8%80%E5%88%87%E9%83%BD%E5%B0%86%E4%B8%8E%E4%BB%8E%E5%89%8D%E4%B8%8D%E5%90%8C">
+            前一篇：德国外交安全政策：一切都将与从前不同
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99">
+            后一篇：无马社｜造谣“秦始皇复活”，是否就要被拘留?
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-22/%E5%BE%B7%E5%9B%BD%E5%A4%96%E4%BA%A4%E5%AE%89%E5%85%A8%E6%94%BF%E7%AD%96-%E4%B8%80%E5%88%87%E9%83%BD%E5%B0%86%E4%B8%8E%E4%BB%8E%E5%89%8D%E4%B8%8D%E5%90%8C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-22/%E5%BE%B7%E5%9B%BD%E5%A4%96%E4%BA%A4%E5%AE%89%E5%85%A8%E6%94%BF%E7%AD%96-%E4%B8%80%E5%88%87%E9%83%BD%E5%B0%86%E4%B8%8E%E4%BB%8E%E5%89%8D%E4%B8%8D%E5%90%8C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-22/%E6%97%A0%E9%A9%AC%E7%A4%BE-%E9%80%A0%E8%B0%A3-%E7%A7%A6%E5%A7%8B%E7%9A%87%E5%A4%8D%E6%B4%BB-%E6%98%AF%E5%90%A6%E5%B0%B1%E8%A6%81%E8%A2%AB%E6%8B%98%E7%95%99">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

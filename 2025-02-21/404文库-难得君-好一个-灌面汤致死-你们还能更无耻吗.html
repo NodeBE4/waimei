@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+" />
+    <meta property="og:description" content="
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？" />
+    <meta property="twitter:title" content="【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5426)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715999.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E9%9A%BE%E5%BE%97%E5%90%9B%EF%BD%9C%E5%A5%BD%E4%B8%80%E4%B8%AA%E2%80%9C%E7%81%8C%E9%9D%A2%E6%B1%A4%E8%87%B4%E6%AD%BB%E2%80%9D%EF%BC%8C%E4%BD%A0%E4%BB%AC%E8%BF%98%E8%83%BD%E6%9B%B4%E6%97%A0%E8%80%BB%E5%90%97%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715999.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E9%9A%BE%E5%BE%97%E5%90%9B%EF%BD%9C%E5%A5%BD%E4%B8%80%E4%B8%AA%E2%80%9C%E7%81%8C%E9%9D%A2%E6%B1%A4%E8%87%B4%E6%AD%BB%E2%80%9D%EF%BC%8C%E4%BD%A0%E4%BB%AC%E8%BF%98%E8%83%BD%E6%9B%B4%E6%97%A0%E8%80%BB%E5%90%97%EF%BC%9F&d=2025-02-21&e=
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：好一个“灌面汤致死”，你们还能更无耻吗？作者：难得君发表日期：2025.2.21来源：微信公众号“难得君”主题归类：灌面汤致死CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  ◆◇◆文 | 难得君
+  今天看到一条新闻，事情发生在去年的9月4日凌晨，丈夫喝醉酒以后回家将妻子虐待致死，但现在才报道出来。
+  39岁的阿丽（化名）在自家面馆被害，嫌疑人是其丈夫李某，案发后被抓。2月18日，记者从阿丽家人处获悉，该案于2月19日在陕西渭南白水县人民法院开庭审理。
+  “文以载道”，这是中国古代文人所尊崇的治文宗旨。其中这个“道”蕴含着..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715999.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715999.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715999.html&text=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715999.html&title=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715999.html&title=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？&body=
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715999.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715999.html&title=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？&caption=
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？&url=https://chinadigitaltimes.net/chinese/715999.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715999.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715999.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E9%9A%BE%E5%BE%97%E5%90%9B%EF%BD%9C%E5%A5%BD%E4%B8%80%E4%B8%AA%E2%80%9C%E7%81%8C%E9%9D%A2%E6%B1%A4%E8%87%B4%E6%AD%BB%E2%80%9D%EF%BC%8C%E4%BD%A0%E4%BB%AC%E8%BF%98%E8%83%BD%E6%9B%B4%E6%97%A0%E8%80%BB%E5%90%97%EF%BC%9F&d=2025-02-21&e=
+【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：好一个“灌面汤致死”，你们还能更无耻吗？作者：难得君发表日期：2025.2.21来源：微信公众号“难得君”主题归类：灌面汤致死CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  ◆◇◆文 | 难得君
+  今天看到一条新闻，事情发生在去年的9月4日凌晨，丈夫喝醉酒以后回家将妻子虐待致死，但现在才报道出来。
+  39岁的阿丽（化名）在自家面馆被害，嫌疑人是其丈夫李某，案发后被抓。2月18日，记者从阿丽家人处获悉，该案于2月19日在陕西渭南白水县人民法院开庭审理。
+  “文以载道”，这是中国古代文人所尊崇的治文宗旨。其中这个“道”蕴含着..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715999.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740144603000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715999.html">【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715999.html" title="【404文库】难得君｜好一个“灌面汤致死”，你们还能更无耻吗？" rel="nofollow"><img width="564" height="277" src="https://chinadigitaltimes.net/chinese/files/2025/02/好一个灌面汤致死，你们还能更无耻吗？-564x277.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>好一个“灌面汤致死”，你们还能更无耻吗？<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/chinese/tag/难得君" target="_blank">难得君</a><br /><strong>发表日期：</strong>2025.2.21<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/AjKPKM2b8nCE8wyIDlzuzA" target="_blank">微信公众号“难得君”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/灌面汤致死" target="_blank">灌面汤致死</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>◆◇◆<br /><strong>文 | 难得君</strong></p>
+  <p>今天看到一条新闻，事情发生在去年的9月4日凌晨，丈夫喝醉酒以后回家将妻子虐待致死，但现在才报道出来。</p>
+  <p>39岁的阿丽（化名）在自家面馆被害，嫌疑人是其丈夫李某，案发后被抓。2月18日，记者从阿丽家人处获悉，该案于2月19日在陕西渭南白水县人民法院开庭审理。</p>
+  <p>“文以载道”，这是中国古代文人所尊崇的治文宗旨。其中这个“道”蕴含着真理、正义以及社会公序良俗。</p>
+  <p>也就是说，好的文章、新闻应当能够传达正确的价值观、揭露事实真相。然而，在当下的媒体江湖里，部分媒体却将其扭曲，背离了应有的担当与使命。</p>
+  <p>就像这桩触目惊心的故意杀人案，被轻描淡写地冠以<strong>《女子遭丈夫灌面汤致死案》</strong>的标题，如此新闻操作，实乃媒体之耻，社会之痛。</p>
+  <hr />
+  <p><strong>别跟我扯什么"客观中立"！</strong></p>
+  <p>用"灌面汤呛死"五个字概括70度高温面汤浇身、钢尺皮带菜刀轮番施暴、活人拖入滚烫面锅的虐杀过程，就像用"<strong>皮肤擦伤</strong>"形容奥斯维辛集中营。</p>
+  <p>某些媒体人用键盘敲下这个标题时，指尖沾染的分明是二次杀戮的血浆。</p>
+  <p>他们比谁都清楚：钢尺抽裂皮肤的声音、皮带撕开血肉的焦糊味、菜刀斩断尊严的寒光，在"呛死"这个轻飘飘的动词里，全都成了可以消音的默片。</p>
+  <p>司马迁写《史记》时"不虚美，不隐恶"，今天的某些媒体却在"如实报道"的遮羞布下，把凶手的菜刀磨成汤勺，将滚烫的面汤稀释成温水，让惨烈的家暴命案降格为夫妻拌嘴引发的意外。</p>
+  <p>当《起诉书》里"拖入锅中"的动词变成"灌面汤"的温柔表述，这些秃鹫般的写手，正蹲在受害者的尸体旁啄食流量腐肉。</p>
+  <p>某些从业者早把《中国新闻工作者职业道德准则》嚼碎咽进了下水道。</p>
+  <p>他们深谙"七分事实三分引导"的魔鬼算法：用"疑"字埋下反转伏笔，拿"呛死"制造猎奇悬念，借"感情纠纷"转移暴力本质。</p>
+  <p>就像把南京大屠杀写成"<strong>日军疑似与市民发生摩擦</strong>"，这种文字魔术比凶手的菜刀更阴毒——它让全社会对暴行的感知变得麻木，让施暴者获得道德模糊的喘息空间。</p>
+  <p>更荒诞的是，当受害者的弟弟声嘶力竭强调"面汤温度70度"时，当法医报告写明"全身23处机械性损伤"时，这些媒体精英却集体患上了选择性失明。</p>
+  <p>他们像蹩脚的小说家，硬要把但丁《神曲》的地狱篇，改写成一碗打翻的阳春面事故。这不是业务能力问题，<strong>是新闻良知的全面坏死。</strong></p>
+  <p>别再装什么无辜！当某门户网站小编把"拖入面锅"优化成"灌面汤"，当某报责任编辑将"持续性家暴"压缩成"感情纠纷"，整个行业都在见证"文人风骨"变成可售卖的流量商品。</p>
+  <p>这些标题党们早已参透"平庸之恶"的真谛：不需要直接作恶，只需悄悄抽掉"故意杀人"中的"故意"，稀释"家庭暴力"里的"暴力"，就能让屠夫的尖刀变成孩童的玩具水枪。</p>
+  <p>鲁迅说"墨写的谎说，决掩不住血写的事实"，但今天的某些媒体，正试图用油墨把鲜血调成桃红色。</p>
+  <p>当新闻课堂还在讲授"五W要素"时，现实已上演着"五W变异"：Who（凶手）被模糊成丈夫，What（谋杀）被弱化为意外，When（凌晨虐杀）被美化成情感冲动，Where（面馆地狱）被包装成家庭空间，Why（男权暴力）被曲解为情绪失控。<strong>这不是新闻写作，是暴力共谋。</strong></p>
+  <p><strong>某些新闻记者们，你们还能更无耻吗？</strong></p>
+  <p>推荐阅读：<a href="https://mp.weixin.qq.com/s/STQjc138Rx1hSrAsIgxU7g">川普“出卖”乌克兰，有没有这种可能性？</a></p>
+  <p><strong>作者带货，新百伦男女同款休闲运动鞋，99元1双▼</strong></p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/好一个灌面汤致死，你们还能更无耻吗？.jpeg" alt="img" /></p>
+  <p>购物的读者请通过“群团团接龙pro”小程序查看订单和物流信息，也可通过服务号联系客服，还是我本人。</p>
+  <p>用我们的爱温暖彼此，请赠我玫瑰手留余香，谢谢！推荐我10多年来一直喝的白酒，纯粮酿造不上头，老窖窖藏，浓香型52°，大师调制，产地泸州。此酒适合自饮或三五朋友小聚，市面上没有销售，但质量不比千元价位白酒差，不失面子又实惠。现读者特价每瓶只需150元，买二送一，很多买过的朋友都复购了，要的速度微信我。点击 <strong><a href="https://mp.weixin.qq.com/s?__biz=Mzg2MTI1OTY0OQ==&amp;mid=2247502283&amp;idx=2&amp;sn=6d2e83e7275418703757dbd20ec8b573&amp;chksm=ce1b5b25f96cd233dc22889cc995f467dc4cf34d9616243a872e4f7a81013e51d85d41819cf2&amp;token=221475649%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">阅读</a></strong>原文 了解详情。</p>
+  <h1 id="section">为防失联，速度加我</h1>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2024/10/post-712122-67092b5a8cee1." alt="img" /></p>
+  <h1 id="section-1">难得君原创文章：</h1>
+  <p><a href="https://mp.weixin.qq.com/s?__biz=Mzg5Mjg2MTgzOQ==&amp;mid=2247485369&amp;idx=1&amp;sn=f0bdb428590eecf995aee12aff641ebc&amp;chksm=c036eb59f741624fe25b9c9a406f5e1d5c6f79a61993f943987ec5adafdd587bc372c64aadcb&amp;payreadticket=HK622nK9PsHD1s28DyjS3G4fNG9Kr8RMUmC5U4ukN6YmY7AK4kwyaAhFWmgeDpljXYEu-zc&amp;scene=21#wechat_redirect">不一样的必读书推荐</a></p>
+  <h1 id="section-2"><strong><a href="https://mp.weixin.qq.com/s?__biz=Mzg2MTI1OTY0OQ==&amp;mid=2247510064&amp;idx=1&amp;sn=28b5c3764b66d913d389cdd4af28459f&amp;chksm=ce1b3adef96cb3c85ae359aa9c392e291ec2adfc7ec0aa98b629a919b1c2c0bab7ed91601321&amp;token=555515068%E2%8C%A9=zh_CN&amp;scene=21#wechat_redirect">乌克兰胜利了，我有什么好处？</a></strong></h1>
+  <h1 id="section-3"><a href="https://mp.weixin.qq.com/s?__biz=Mzg5Mjg2MTgzOQ==&amp;mid=2247486130&amp;idx=1&amp;sn=30376da428d7c857169d16a2d7415d28&amp;chksm=c036e652f7416f4423a4582ea3b74b0e063814b7fdd00e9a14e8434973768a1548605d879f90&amp;payreadticket=HCqXBrcer1nGfP4OZWVkFvz98Feazr6Pj3_iEVp-5FFfvnqGPSUBeDONwZQpMuDbq-d9Xl8&amp;scene=21#wechat_redirect">特殊日子聊几句私房话，老铁请进</a></h1>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-22</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-22/%E7%9F%A5%E8%AF%86%E5%88%86%E5%AD%90-7%E5%AE%B6%E4%B8%AD%E5%9B%BD%E5%8C%BB%E9%99%A2-%E8%B7%BB%E8%BA%AB-%E5%85%A8%E7%90%83%E5%89%8D%E5%8D%81-%E6%92%A4%E7%A8%BF%E7%8E%87%E6%A6%9C%E5%8D%95%E6%9D%A5%E4%BA%86">
+          知识分子｜7家中国医院“跻身”全球前十，撤稿率榜单来了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-21</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87">
+          【404文库】“土拨鼠之下皆牛马”（外二篇）
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-21</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E6%96%B0%E6%96%B0%E9%BB%98%E5%AD%98-%E7%8E%8B%E4%BA%94%E5%9B%9B-%E4%B8%8D%E8%A6%81%E8%AE%A9%E5%85%B0%E5%B7%9E%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%80%83%E7%A6%BB%E7%9A%84%E5%9C%B0%E6%96%B9">
+          【404文库】新新默存｜王五四：不要让兰州成为一个令人逃离的地方
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-21</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-21/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.21">
+          每日一语 2025.2.21
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-21/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%B0%83%E6%95%B4%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8E%AA%E8%BE%9E%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F">
+            前一篇：特朗普政府调整对中国措辞有何深意？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-21/%E4%B8%AD%E5%9B%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B8%8C%E6%9C%9B%E6%AC%A7%E6%B4%B2%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E5%92%8C%E8%B0%88">
+            后一篇：中国为什么希望欧洲参与乌克兰和谈
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-21/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%B0%83%E6%95%B4%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8E%AA%E8%BE%9E%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-21/%E4%B8%AD%E5%9B%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B8%8C%E6%9C%9B%E6%AC%A7%E6%B4%B2%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E5%92%8C%E8%B0%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E6%96%B0%E6%96%B0%E9%BB%98%E5%AD%98-%E7%8E%8B%E4%BA%94%E5%9B%9B-%E4%B8%8D%E8%A6%81%E8%AE%A9%E5%85%B0%E5%B7%9E%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%80%83%E7%A6%BB%E7%9A%84%E5%9C%B0%E6%96%B9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-21/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%B0%83%E6%95%B4%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%8E%AA%E8%BE%9E%E6%9C%89%E4%BD%95%E6%B7%B1%E6%84%8F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-21/%E4%B8%AD%E5%9B%BD%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B8%8C%E6%9C%9B%E6%AC%A7%E6%B4%B2%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E5%92%8C%E8%B0%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E5%9C%9F%E6%8B%A8%E9%BC%A0%E4%B9%8B%E4%B8%8B%E7%9A%86%E7%89%9B%E9%A9%AC-%E5%A4%96%E4%BA%8C%E7%AF%87">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-21/404%E6%96%87%E5%BA%93-%E6%96%B0%E6%96%B0%E9%BB%98%E5%AD%98-%E7%8E%8B%E4%BA%94%E5%9B%9B-%E4%B8%8D%E8%A6%81%E8%AE%A9%E5%85%B0%E5%B7%9E%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%80%83%E7%A6%BB%E7%9A%84%E5%9C%B0%E6%96%B9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
