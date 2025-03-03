@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【CDT关注】歪脑×低音｜政治抑郁者的自白 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+" />
+    <meta property="og:description" content="
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【CDT关注】歪脑×低音｜政治抑郁者的自白" />
+    <meta property="twitter:title" content="【CDT关注】歪脑×低音｜政治抑郁者的自白" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715958.html&t=%E3%80%90CDT%E5%85%B3%E6%B3%A8%E3%80%91%E6%AD%AA%E8%84%91%C3%97%E4%BD%8E%E9%9F%B3%EF%BD%9C%E6%94%BF%E6%B2%BB%E6%8A%91%E9%83%81%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715958.html&t=%E3%80%90CDT%E5%85%B3%E6%B3%A8%E3%80%91%E6%AD%AA%E8%84%91%C3%97%E4%BD%8E%E9%9F%B3%EF%BD%9C%E6%94%BF%E6%B2%BB%E6%8A%91%E9%83%81%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD&d=2025-02-19&e=
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：政治抑郁者的自白作者：姬苏燕发表日期：2025.2.17来源：歪脑×低音主题归类：政治抑郁CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  2月17日，自由亚洲旗下的中文新闻杂志“歪脑”和独立媒体“低音”联合发布了《政治抑郁者的自白》，作者姬苏燕记录了四位中国大陆年轻人的政治参与和表达。她们是公益人、学生、记者，在工作和生活带来的政治压力下，她们“用自己的方式挣扎、抵抗、前行”。
+  以下为CDT节选。访问歪脑和低音阅读原文。
+  80后公益行业人士郑冰冰：从香港反送中到新冠疫情，“润”出去仍然没有摆脱政治抑郁
+  
+    “你知道自己没亏心，可..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715958.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715958.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715958.html&text=【CDT关注】歪脑×低音｜政治抑郁者的自白&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715958.html&title=【CDT关注】歪脑×低音｜政治抑郁者的自白" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715958.html&title=【CDT关注】歪脑×低音｜政治抑郁者的自白" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【CDT关注】歪脑×低音｜政治抑郁者的自白&body=
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715958.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715958.html&title=【CDT关注】歪脑×低音｜政治抑郁者的自白&caption=
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【CDT关注】歪脑×低音｜政治抑郁者的自白&url=https://chinadigitaltimes.net/chinese/715958.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【CDT关注】歪脑×低音｜政治抑郁者的自白</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715958.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715958.html&t=%E3%80%90CDT%E5%85%B3%E6%B3%A8%E3%80%91%E6%AD%AA%E8%84%91%C3%97%E4%BD%8E%E9%9F%B3%EF%BD%9C%E6%94%BF%E6%B2%BB%E6%8A%91%E9%83%81%E8%80%85%E7%9A%84%E8%87%AA%E7%99%BD&d=2025-02-19&e=
+【CDT关注】歪脑×低音｜政治抑郁者的自白
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：政治抑郁者的自白作者：姬苏燕发表日期：2025.2.17来源：歪脑×低音主题归类：政治抑郁CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  2月17日，自由亚洲旗下的中文新闻杂志“歪脑”和独立媒体“低音”联合发布了《政治抑郁者的自白》，作者姬苏燕记录了四位中国大陆年轻人的政治参与和表达。她们是公益人、学生、记者，在工作和生活带来的政治压力下，她们“用自己的方式挣扎、抵抗、前行”。
+  以下为CDT节选。访问歪脑和低音阅读原文。
+  80后公益行业人士郑冰冰：从香港反送中到新冠疫情，“润”出去仍然没有摆脱政治抑郁
+  
+    “你知道自己没亏心，可..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715958.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739991600000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715958.html">【CDT关注】歪脑×低音｜政治抑郁者的自白</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715958.html" title="【CDT关注】歪脑×低音｜政治抑郁者的自白" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715958-67b6292c2440a-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>政治抑郁者的自白<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/姬苏燕" target="_blank">姬苏燕</a><br /><strong>发表日期：</strong>2025.2.17<br /><strong>来源：</strong><a href="https://www.wainao.me/wainao-reads/political-depressive-anxiety-anger-02172025/" target="_blank">歪脑×低音</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/政治抑郁" target="_blank">政治抑郁</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>2月17日，自由亚洲旗下的中文新闻杂志“歪脑”和独立媒体“低音”联合发布了《政治抑郁者的自白》，作者姬苏燕记录了四位中国大陆年轻人的政治参与和表达。她们是公益人、学生、记者，在工作和生活带来的政治压力下，她们“用自己的方式挣扎、抵抗、前行”。</p>
+  <p>以下为CDT节选。访问<a href="https://www.wainao.me/wainao-reads/political-depressive-anxiety-anger-02172025/" title="歪脑">歪脑</a>和<a href="https://diyin.org/article/2025/02/politics-chinese-youth-emotions-emptiness-helplessness/" title="低音">低音</a>阅读原文。</p>
+  <p><strong>80后公益行业人士郑冰冰：从香港反送中到新冠疫情，“润”出去仍然没有摆脱政治抑郁</strong></p>
+  <blockquote>
+    <p>“你知道自己没亏心，可是这个国家告诉你亏心了”</p>
+[…]“我去过香港，身边也有朋友在香港读过书，我对它的专业主义、社会运行的秩序有很深刻的体会，并从中受益。而且香港对我的冲击并不不仅仅是因为这个事情本身，而是我有一种带入感，一种兔死狐悲、唇亡齿寒的感觉。我当时做公益已经好多年了，还是处在一个什么都没有的状态。香港反送中那个时候，恰恰是我前两年被别人剥削，被骗，处在一个一无所有的境地，经济和社会的支持都非常少，所以更加会在那个时期质疑公平正义的意义何在。其实你看一些调查研究啊，很多人的抑郁不仅仅是单一的政治事件导致的，也跟他当时自身的处境有关。你什么时候对政治会那么敏感，什么时候政治的东西会波动到你，同样是铁链女的事情，为什么你看了新闻会特别崩溃，有的人看了可能还好？我觉得跟当下个人的处境有很大关系。”&lt;/p&gt;[…]“其实有和政治抑郁类似的一些概念也有人讨论，比如文化创伤这种概念，它强调一种集体回忆，比如南京大屠杀带来创伤，文化大革命带来的创伤。我们国家以前也有很多伤痕文学。可是这个词并没有成为集体的词。政治抑郁能够流行也许和抑郁症大规模的流行和被接受也有关系。如果中国的政治不改变，我们可能一直会政治抑郁下去。”&lt;/p&gt;[…]“我昨天晚上还在哭呢，我受到很大的影响。自从我被国安找过，就开始有强烈的不安全感。我养宠物，如果我跟我的宠物在一起，天气很好的时候，可以喝一杯茶，吃个蛋糕，本来是很快乐很幸福的时刻，但我始终觉得不能沉浸其中，越是幸福就越觉得这些东西可能随时被夺走。而且我并不相信这种幸福，这种幸福是放弃了说话的权利得来的。”&lt;/p&gt;  </blockquote>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715958-67b6292bbfad1.png" alt="img" /></p>
+  <p><strong>白纸运动后被带进派出所的95后Yurii：“那一刻不是勇气的问题，而是一个不想选和更不想选的选择”</strong></p>
+  <blockquote>
+    <p>“后来我们想逛公园，结果公园也要看场所码，又逛到步行街那边，我这才看到那里有一个人站着。他举着一张纸，正面写的是，‘你知道我在说什么’，背面是，‘我们可以做更多’，他绑着自己的眼睛。我看到他就想，我需要在那儿看着他，因为他只有一个人，我害怕出什么意外。”</p>
+    <p>“过了一段时间，有保安想驱赶他，因为他站在商场前，商场的员工把警察给叫来了。当时我在网上才看过一个视频，一个重庆的哥们对着警察说，‘为什么世界各地都解封了，我们还要这样？’当时也有警察想把他抓走，在场所有的重庆人都把他给抱住了，警察就没得逞。我想，我也要抱住他，然后我就抱住了他。”</p>
+    <p>“但是只有我一个人抱。”</p>
+    <p>“后来警察告诉我，监控中一共有五六十个人在那儿，‘为什么只有你抱？’他们问我。他们还说，‘你是他女朋友吗？你抱你男朋友也抱这么紧吗？’”</p>
+[…]“警察要带走那个男生，我根本抱不住一个人又抓不动，是他让我放开的。他说‘没事我没事，你放吧你放吧’，然后我就放了。我当时在想，我要跟上吗？围观群众里有个大妈跟我说，你跟上去他才安全。其实我觉得他安不安全和我跟不跟上去没关系，但如果我不跟的话，我肯定会为这个事情自责一辈子。”&lt;/p&gt;    <p>“现在不是很多人爱讲勇气什么的吗，对我来说，那一刻不是勇气的问题，而是一个不想选和更不想选的选择。如果我真的是一个有勇气的人，根本就不会犹豫那么一刻，直接就去了。我其实是害怕的，但我更不想让自己一辈子自责。”</p>
+  </blockquote>
+  <p><strong>95后记者西柚：负面信息并不是我抑郁的来源，对负面信息的束手无策才是这种抑郁的来源</strong></p>
+  <blockquote>
+    <p>“我做过和酷刑相关的报导，每次在看我写的报道人物的自述时，都会觉得很创伤。我没有见过就是一个人被几天几夜不让睡觉，不让喝水也不让吃饭，在零下的晚上直接睡在水泥地上。那个报道人物是一位女性，她直接被搞到上厕所也上不出来，月经也停掉了，这简直是一种非人的遭遇。”</p>
+[…]“偶尔能够得到写作当中提到的那些人物的消息，结果发现ta们写完之后状况也还是那样。有的人现在还在监狱里面，我写完稿子之后，ta们的刑期也没有减少啊。有的人我写作的时候ta的一审刚刚结束，后面得到消息二审没有开庭，就被维持了原判，甚至来不及做出一些更深的报道，这个事情好像就已经铁板钉钉地维持原状了。一审开庭还可以写庭上到底发生了什么，家属这些年怎么过的，家属看到当事人是什么怎么样的，二审都不开庭，我也不知道这样一个信息传递出去有什么用，更不知道要怎么把这样一个非常短小的信息变成一个更容易理解的故事。我感受到一种愤怒，他们不允许故事发生。”&lt;/p&gt;[…]“我发现我其实没办法要求自己今天一定要看一些积极向上的新闻， 因为我的职业要求我每天都要关注那些负面的东西。我觉得负面信息并不是我抑郁的来源，对负面信息的束手无策才是这种抑郁的来源。作为记者，我明明应该在社会问题的解决中有一些位置，但我被政治取消了行使工作的权利，这也是对我们能力的与价值的否定。我时常陷入到存在的焦虑之中，不知道作为记者这个社会里面到底要干什么，这个社会真的还需要我们吗？每天看到的负面消息跟我的关系是什么，我只是一个生产者吗，如果我是生产者的话，我要不要为此负责呢？心理上大概是觉得不用负责的，但我们明明可以做得更好啊。”&lt;/p&gt;[…]“我没有怎么特别去回溯过为什么想要去做一个政治的人，为什么想要通过做新闻这件事来行使我做政治的人的权利，但我隐隐约约觉得这样做是对的。我原来的信念是挺强的，做记者简直是世界上最好的事情，你怎么能够去找到一份工作又能让你去了解社会、世界是什么样子的，又能满足你的好奇心，还付钱给你。但是现在我真是有点莫名其妙的，我不想推翻自己，不想成为过去的那个我的敌人，因为以前那么想也没有错，只是我现在开始觉得做对的事情所伴随的痛苦我可能承受不了，或者说那个痛苦本来就不该由我们来承受，它是一个不公义的痛苦。”&lt;/p&gt;  </blockquote>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715958-67b6292c2440a." alt="img" /></p>
+  <p><strong>90后余虹：润出去落地生根</strong></p>
+  <blockquote>
+    <p>“我身边几乎所有22年从上海润出去的人，都被关了两个月。当时我还在跟前任谈恋爱，在封城之前，那是我们感情最好的时候。你想啊，又是春天，天气又特别好，你跟喜欢的人出去约会，好开心啊。现在回头看，我好像刚刚经历了人生中最快乐的时刻，就立刻被扔进最绝望的瞬间。从那个时候开始我的记忆力就变得很差，记不起来任何东西了。太痛苦了，经常突然开始哭，这样的状况可能持续了一两年，到今年才好一点。我现在不管怎么描述那段时间都非常苍白，因为我的记忆已经把那段时间给抹平了。我当时的对象不希望我整天愁眉苦脸，但我每天看那么多新闻，那个时候好像还有铁链女的事件，快乐好像是一件很有负罪感的事情。”</p>
+    <p>“那时我变得很恨所有人，对我当时的伴侣也不太尊重。我不知道哪来的火或者是哪来的不耐烦，谈恋爱真是一个好奢侈的东西，我根本就没有心思谈恋爱了。我们的生活方式就像两个室友彼此照顾，恋爱需要的情绪价值根本没有办法提供，我每天自己都要碎了。我要开始想以后的出路，还要上班，情绪根本兼顾不过来，我平等地恨每一个人。以前我不开心了会开玩笑说‘恨你们所有人’，但从那个时期开始,我恨的对象已经有具体的人，他就是我周围的邻居、朋友、同事。比如说我的同事，他们觉得封城很好，宅在家里多爽，他还想再继续封下去。我开始恨这样的人。我也恨那些怅鬼，那些和体制一起作恶的人。”</p>
+[…]“那时我下定决心要润了，为什么一定要走呢？因为当时发生两件事情，一个是一只柯基因为防疫被活活打死，还有一个HR，他那天去看病，走了好多公里的路回家，好不容易快到家了，结果就死在路上了，他是猝死的。那个新闻一直记在我脑子里，因为他就是一个普通的，跟我一样在上班的人，我也可能是那个人。”&lt;/p&gt;[…]“我看到一些比我年长的姐妹，在世界各地落地生根，一开始是nobody，后来自己攒了些钱有了一些权利，她可以为后来的女生铺路，我喜欢这样的故事，我也希望自己能做出这样的影响。跟前任在一起的时候，我觉得我没有办法带给她快乐了，我那时候已经不是完整的我了。现在我想，如果有人因为我和她单独相处而感到开心，我觉得我活着也很有意义。做一个独行侠这么久以来，我第一次觉得人和人之间的关系这么的有意义。”&lt;/p&gt;[…]“在上海的时候，我认识一个俄罗斯人，他邀请我去他家参观，他家里装饰得很漂亮。我当时想，他为什么要来中国，是不是因为俄乌战争回不去了？可他还是把家里装饰得那么好看，一个出租屋而已。我想到另外一些俄罗斯士兵，他们可以一下子就摧毁一栋楼，因为他们没有经历过具体的生活。买一个碗要精挑细选，买一个小小家具要考虑下放在哪里，如果你把这些东西都考虑过，你就不会想要摧毁别人的家。这又是一个父权制的问题，我觉得那些士兵可能从来没有做过饭，从来没有考虑过家里的窗帘是什么样的，所以当他把炮弹射向别人家里的时候完全不会痛心。我以前太长时间沉浸在自己的思考里，自己塑造假想敌，现在接触这么多人之后，我觉得她们不会想那么多，她们的价值观跟我没有那么不一样，只要跟善良的人在一起，不管i人e人都会获得快乐。这个世界的问题其实都来自于大家不爱自己身边的人，如果我去爱自己身边的人，我觉得那就是解决问题的方法之一。”&lt;/p&gt;  </blockquote>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E9%87%8D%E5%9B%9E%E6%9C%88%E8%96%AA3000%E7%9A%84%E9%9D%92%E5%B9%B4%E4%BA%BA">
+          真实故事计划｜重回月薪3000的青年人
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B-%E5%A9%9A%E5%A7%BB%E4%B8%89%E9%A2%98-%E5%A9%9A%E5%A7%BB-%E5%AE%B6%E6%9A%B4-%E7%A6%BB%E5%A9%9A%E5%86%B7%E9%9D%99%E6%9C%9F">
+          唐师三百手｜婚姻三题：婚姻、家暴、离婚冷静期
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%91%E5%99%AA%E9%9F%B3-%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%9B%BD%E8%BF%90%E4%B8%8D%E6%98%AF%E4%B8%80%E9%83%A8%E7%94%B5%E5%BD%B1-%E8%80%8C%E6%98%AF%E8%80%81%E7%99%BE%E5%A7%93%E7%9A%84%E9%92%B1%E5%8C%85">
+          黑噪音｜真正的国运不是一部电影，而是老百姓的钱包
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E5%85%94%E5%AD%90%E5%85%94%E5%AD%90%E7%94%BB%E6%BC%AB%E7%94%BB-%E5%88%AB%E6%8A%8A%E7%9C%8B%E7%94%B5%E5%BD%B1%E5%BC%84%E6%88%90%E7%88%B1%E5%9B%BD%E8%A1%A8%E6%80%81">
+          兔子兔子画漫画｜别把看电影弄成爱国表态
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-19/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84-%E5%A4%96%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%9C%A8%E8%AF%95%E5%9B%BE%E7%AA%83%E5%8F%96%E5%A5%A5%E5%BA%93%E6%96%AF%E7%9A%84%E6%9C%BA%E5%AF%86">
+            前一篇：澳大利亚情报机构：外国间谍在试图窃取奥库斯的机密
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-2-17-%E4%BC%9A%E8%AE%AE%E4%B8%8A%E6%97%A0%E6%B3%95%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6">
+            后一篇：黄浦江封: “2·17”会议上无法被忽视的中国民营企业家
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84-%E5%A4%96%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%9C%A8%E8%AF%95%E5%9B%BE%E7%AA%83%E5%8F%96%E5%A5%A5%E5%BA%93%E6%96%AF%E7%9A%84%E6%9C%BA%E5%AF%86'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-2-17-%E4%BC%9A%E8%AE%AE%E4%B8%8A%E6%97%A0%E6%B3%95%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B-%E5%A9%9A%E5%A7%BB%E4%B8%89%E9%A2%98-%E5%A9%9A%E5%A7%BB-%E5%AE%B6%E6%9A%B4-%E7%A6%BB%E5%A9%9A%E5%86%B7%E9%9D%99%E6%9C%9F'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%91%E5%99%AA%E9%9F%B3-%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%9B%BD%E8%BF%90%E4%B8%8D%E6%98%AF%E4%B8%80%E9%83%A8%E7%94%B5%E5%BD%B1-%E8%80%8C%E6%98%AF%E8%80%81%E7%99%BE%E5%A7%93%E7%9A%84%E9%92%B1%E5%8C%85'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-19/%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84-%E5%A4%96%E5%9B%BD%E9%97%B4%E8%B0%8D%E5%9C%A8%E8%AF%95%E5%9B%BE%E7%AA%83%E5%8F%96%E5%A5%A5%E5%BA%93%E6%96%AF%E7%9A%84%E6%9C%BA%E5%AF%86">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-2-17-%E4%BC%9A%E8%AE%AE%E4%B8%8A%E6%97%A0%E6%B3%95%E8%A2%AB%E5%BF%BD%E8%A7%86%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%B0%91%E8%90%A5%E4%BC%81%E4%B8%9A%E5%AE%B6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-19/%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B-%E5%A9%9A%E5%A7%BB%E4%B8%89%E9%A2%98-%E5%A9%9A%E5%A7%BB-%E5%AE%B6%E6%9A%B4-%E7%A6%BB%E5%A9%9A%E5%86%B7%E9%9D%99%E6%9C%9F">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-19/%E9%BB%91%E5%99%AA%E9%9F%B3-%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%9B%BD%E8%BF%90%E4%B8%8D%E6%98%AF%E4%B8%80%E9%83%A8%E7%94%B5%E5%BD%B1-%E8%80%8C%E6%98%AF%E8%80%81%E7%99%BE%E5%A7%93%E7%9A%84%E9%92%B1%E5%8C%85">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>网易数读｜中国最卑微的职业，被智障AI挤下岗 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+" />
+    <meta property="og:description" content="
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="网易数读｜中国最卑微的职业，被智障AI挤下岗" />
+    <meta property="twitter:title" content="网易数读｜中国最卑微的职业，被智障AI挤下岗" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715935.html&t=%E7%BD%91%E6%98%93%E6%95%B0%E8%AF%BB%EF%BD%9C%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%8D%91%E5%BE%AE%E7%9A%84%E8%81%8C%E4%B8%9A%EF%BC%8C%E8%A2%AB%E6%99%BA%E9%9A%9CAI%E6%8C%A4%E4%B8%8B%E5%B2%97" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715935.html&t=%E7%BD%91%E6%98%93%E6%95%B0%E8%AF%BB%EF%BD%9C%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%8D%91%E5%BE%AE%E7%9A%84%E8%81%8C%E4%B8%9A%EF%BC%8C%E8%A2%AB%E6%99%BA%E9%9A%9CAI%E6%8C%A4%E4%B8%8B%E5%B2%97&d=2025-02-18&e=
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+
+
+  
+  当代人，总免不了同客服打交道。
+  无论是今天中午的外卖，配送晚了半个钟头还撒得一塌糊涂，想找平台评理；还是接到信用卡客服来电，被告知有一笔大额资金可供使用，即便再三推阻，对方仍不依不饶介绍利率有多优惠，不挂电话不死心。
+  让人生气的远不止这些。如今大多平台的在线客服都是 AI 坐镇，张口就是“亲，遇到了什么问题呢”，可一旦真让它解决问题，就变成莫得感情的复读机，一通已读乱回，让人直呼厌蠢症犯了。
+  想转人工客服更不容易，要跟着 AI 指令绕来绕去，按键按到手发软，排队排到头涨疼，才能等来真人降临。客服客服，什么时候开始变成了让人自己克服困难？
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：中国最卑微的职业，被智障AI挤下岗作者：火焰雨发表日期：2025.2.18来源：微信公众号..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715935.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715935.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715935.html&text=网易数读｜中国最卑微的职业，被智障AI挤下岗&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715935.html&title=网易数读｜中国最卑微的职业，被智障AI挤下岗" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715935.html&title=网易数读｜中国最卑微的职业，被智障AI挤下岗" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=网易数读｜中国最卑微的职业，被智障AI挤下岗&body=
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715935.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715935.html&title=网易数读｜中国最卑微的职业，被智障AI挤下岗&caption=
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=网易数读｜中国最卑微的职业，被智障AI挤下岗&url=https://chinadigitaltimes.net/chinese/715935.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>网易数读｜中国最卑微的职业，被智障AI挤下岗</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-18
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715935.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715935.html&t=%E7%BD%91%E6%98%93%E6%95%B0%E8%AF%BB%EF%BD%9C%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%8D%91%E5%BE%AE%E7%9A%84%E8%81%8C%E4%B8%9A%EF%BC%8C%E8%A2%AB%E6%99%BA%E9%9A%9CAI%E6%8C%A4%E4%B8%8B%E5%B2%97&d=2025-02-18&e=
+网易数读｜中国最卑微的职业，被智障AI挤下岗
+——
+
+
+  
+  当代人，总免不了同客服打交道。
+  无论是今天中午的外卖，配送晚了半个钟头还撒得一塌糊涂，想找平台评理；还是接到信用卡客服来电，被告知有一笔大额资金可供使用，即便再三推阻，对方仍不依不饶介绍利率有多优惠，不挂电话不死心。
+  让人生气的远不止这些。如今大多平台的在线客服都是 AI 坐镇，张口就是“亲，遇到了什么问题呢”，可一旦真让它解决问题，就变成莫得感情的复读机，一通已读乱回，让人直呼厌蠢症犯了。
+  想转人工客服更不容易，要跟着 AI 指令绕来绕去，按键按到手发软，排队排到头涨疼，才能等来真人降临。客服客服，什么时候开始变成了让人自己克服困难？
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：中国最卑微的职业，被智障AI挤下岗作者：火焰雨发表日期：2025.2.18来源：微信公众号..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715935.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1739873607000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715935.html">网易数读｜中国最卑微的职业，被智障AI挤下岗</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715935.html" title="网易数读｜中国最卑微的职业，被智障AI挤下岗" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739872916237-564x300.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1739872916237.png" alt="file" /></p>
+  <p>当代人，总免不了同客服打交道。</p>
+  <p>无论是今天中午的外卖，配送晚了半个钟头还撒得一塌糊涂，想找平台评理；还是接到信用卡客服来电，被告知有一笔大额资金可供使用，即便再三推阻，对方仍不依不饶介绍利率有多优惠，不挂电话不死心。</p>
+  <p>让人生气的远不止这些。如今大多平台的在线客服都是 AI 坐镇，张口就是“亲，遇到了什么问题呢”，可一旦真让它解决问题，就变成莫得感情的复读机，一通已读乱回，让人直呼厌蠢症犯了。</p>
+  <p>想转人工客服更不容易，要跟着 AI 指令绕来绕去，按键按到手发软，排队排到头涨疼，才能等来真人降临。客服客服，什么时候开始变成了让人自己克服困难？</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>中国最卑微的职业，被智障AI挤下岗<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/网易数读" target="_blank">火焰雨</a><br /><strong>发表日期：</strong>2025.2.18<br /><strong>来源：</strong><a href="https://mp.weixin.qq.com/s/6ixfc5_CfUveLYcIexYFhg" target="_blank">微信公众号“网易数读”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/人工智能" target="_blank">人工智能</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p><strong>AI 客服，不给转人工</strong></p>
+  <p>刚过去的这个春节，人工智能们一刻都不得闲——有的忙着被网友邀请一句话辣评直至服务器崩溃，有的忙着上春晚上转手绢扭秧歌，还有的忙着在线上加班做客服。</p>
+  <p>近些年，AI 竞相“应聘上岗”干起了客服，它们高效迅速，快递、金融、电商领域通通都能干，还能超长待机，把“996”升级成了“007”，堪称“六边形战士”。</p>
+  <p>智能客服市场也一路走高，规模从 2016 年的 4.9 亿元一路飙升到 2023 年的 86.9 亿元，七年间翻了近 17 倍 [1]。</p>
+  <p>然而，AI 客服数量与日俱增，大家的使用体验却越来越差。2021 年，江苏省消保委针对 48 款 App 客服的问卷调查显示，有 52.9% 的消费者都曾遭遇过客服问题 [2]。</p>
+  <p>被全网膜拜的 DeepSeek 固然强大，但绝大多数 AI 客服更像是“人工智障”，把“请稍等”“对不起”挂在嘴边，根本不理解用户在说啥，跟它们对话就好似一拳砸在棉花上，有气没处出。</p>
+  <p>根据艾媒咨询的调研，用户吐槽智能客服最多的情况就是不能解决个性化问题、回答生硬、听不懂话。总结来说就是：智能客服一点也不智能，太笨了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d481214c.png" alt="image" /></p>
+  <p>与其浪费时间和“人工智障”不停吵嘴，许多人选择直接转人工客服，可是这条路远比想象中难走。因为在这个过程中，排队是常态，不排队才是例外。</p>
+  <p>有些平台还会拿 AI 跟用户打太极，故意拖延时间。更有甚者，用户千辛万苦排到的人工客服还是 AI 扮演的，被一句“宫廷玉液酒”戳穿真面目，毕竟多数人会秒答“一百八一杯”，而应激的演员们只会“对不起，你在说什么”。</p>
+  <p>难怪有人说客服中心变成了“专治客户不服”中心，逼得大家投诉、找人评理。像在黑猫投诉平台上，关于“转人工客服”的投诉就有近三万条，一股怨气直冲脑门 [3]。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d481ece5.png" alt="image" /></p>
+  <p>能和人工客服说上话的平台，还算保有最后一丝良心；至于那些心眼子厚得跟堵墙的平台，则是把人工客服入口埋得比马里亚纳海沟还深，即便费尽千辛万苦接上线，还有可能惨遭拉黑处理。</p>
+  <p>面对转人工的千层套路，这届年轻人也不是吃素的，掀起人机大战的他们甚至将“转人工”发展成了一门学问，总结出新的野路子：</p>
+  <p>终于知道人工客服怎么叫出来了，在回复“人工客服”后接一句“12345”，人工客服就会召唤成功。</p>
+  <p><strong>人工客服行业，还在走下坡路</strong></p>
+  <p>转人工之所以越来越难，其实是人工客服行业正面临走下坡路的窘境。大家有所不知，越来越紧俏的人工客服，已经与保洁、保安、焊工等一同被贴上了紧缺技能人才的标签 [4]。</p>
+  <p>造成这样的处境，客服用工企业们难辞其咎，它们把各种克扣成本的小算盘打得震天响，隔着屏幕都听得清清楚楚。</p>
+  <p>其中比较有代表性的是银行业。据中国银行业协会报告，银行业客服中心智能服务占比在 2019 年仅为 33.38%，到 2022 年就迅速提升到 50.13% [5][6]。</p>
+  <p>事实证明，智能客服的大力推行在降本方面效果拔群。早在 2019 年就加快布局“AI+ 客服”的某商业银行，当年信用卡客服和借记卡客服费用分别节省了 30% 和 50% [7]。</p>
+  <p>降本光是推行智能服务还远不够，银行们还在对人工客服们下手。</p>
+  <p>我们统计了 2013-2023 年间银行业客服中心从业人数，发现客服人数在 2020 年达到峰值后便开始下跌，2022 年减员最严重，由 5.02 万人跌到 4.38 万人，相当于直接倒退回了十多年前的水平 [6][8]。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d482c1c4.png" alt="image" /></p>
+  <p>更地狱的是，人工客服少了，要忙的事情却一点没少。</p>
+  <p>2023 年，银行业客服中心人工处理来电 7.23 亿人次，较上年提高 4.6% [9]。一天恨不得长出八只手接电话的银行人工客服们满脑子疑惑，“不是 AI 在工作吗，怎么我的事情还是一大堆？”</p>
+  <p>除了被企业优化掉，很多人工客服没等企业节流的大刀落下，就已经崩溃跑路。对于这件事，电商客服最有话语权。</p>
+  <p>网经社发布的《2023 年度中国电子商务人才状况调查报告》显示，客服岗位在电商企业中位居离职率榜首，达到了 30% [10]。</p>
+  <p>不过，报告里的离职率更像是离职客服占企业所有离职岗位的比值，而非传统意义的离职率。但不论是哪种计算方法，都能看出客服岗位难干且离职率高 。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d48391e2.png" alt="image" /></p>
+  <p>其实也不难理解个中缘由，天天要与人类物种多样性斗争的电商客服们，早就想选择撂挑子了。</p>
+  <p>很多电商客服迫于业绩压力，不得不把买家当祖宗供着，天天装孙子求爷爷告奶奶，低声下气求了八百遍，各种周到服务讨好。</p>
+  <p>结果明明说好的好评，反手变差评，一问竟然是“不小心手滑了”，更有甚者直接被买家“零帧起手”脏话骂到痛哭：</p>
+  <p>遇到好几个客户，要不是规则不允许，我就要讲脏话了，我们组有个女孩子还被客户骂哭了，能干几天是几天吧。</p>
+  <p><strong>人工客服，真的没人愿意干</strong></p>
+  <p>企业和打工人，一个使劲降本增效，另一个拼命逃出生天，一来一去，把人工客服行业推向了下坡路。</p>
+  <p>但其实远不只电商客服心里苦，各行业的人工客服几乎都是苦命人，谁也没比谁强多少。我们整理了社交媒体上来自他们的吐槽，发现许多客服表面在工位安稳当牛马，内心则不断在辞职和留下之间激烈斗争。</p>
+  <p>究其原因，极端的工作环境要背锅。年轻的客服，刚入岗就要面临各种学习培训，把厚厚的客服工作手册背完后还得通过严苛的考试，许多人刚一入行就被整得精神崩溃。</p>
+  <p>上岗以后，不仅全年无休加班是常态，而且还要面临各种投诉，一个不留神就被扣了业绩，分分钟让人破防，每次下班都要长呼一口气，庆幸自己又活过一天。难怪有人直言自己变成了软柿子：</p>
+  <p>做客服两年，感觉自己就是个罪人，天天对不起对不起，已经被磨练得不敢发脾气，有事直接发疯。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d484c1ea.png" alt="image" /></p>
+  <p>像这样每天对精神产生百分百摧残暴击的工作，拿到手的薪水也并不乐观，甚至称之为“窝囊费”更为贴切。</p>
+  <p>我们统计了 BOSS 直聘平台上，一线和部分新一线城市客服专员不同工作年限下的薪资中位数，发现客服新人工资整体都不高，除了北上深超过 5000 元，其余城市均在三四千元左右，被调侃为遍地客服的成都甚至只有 2600 元。</p>
+  <p>即便是有一定从业经验的客服熟手，靠熬工作年限照样拿不到高薪。在成都、武汉和天津，工作时间 3-5 年、5-10 年以及 10 年以上的客服，工资几乎没有分别。</p>
+  <p>更要命的是，即便在客服岗位上忍受十年，很多人的收入也几乎翻不了番。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d485f27f.png" alt="image" /></p>
+  <p>苦行僧一般的工作和微薄的薪水，导致无论是从业者还是应届生，都不打算在客服行业长待，只是把它当作“过渡劳动”，年轻人入职即转行成了基本操作。</p>
+  <p>根据客服知道研究院在 2018 年对 1.2 万多位客服的问卷调研发现，那些参加工作时长在三年以下的客服，在一家公司工作不到一年就跳槽的人，占到了 46.19% [11]。</p>
+  <p>正是因为人工客服从业者难做，才一步步造成了今天大家转人工愈来愈难，挡在两者之间的智能客服，其实只是行业的遮羞布而已。</p>
+  <p>所以，当你下次再因智能客服崩溃，不断要求转人工时，或许你对面的人工客服已经先你一步，提桶跑路了。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715935-67b45d48653f4.png" alt="image" /></p>
+  <hr />
+[1] 智研产业研究院. (2024). 2024-2030年中国智能客服行业市场深度评估及市场发展策略报告.&lt;/p&gt;[2] 江苏省消保委. (2021). 客服“躲猫猫”，考验耐心，丢了诚心！如此客服，难以信服！. Retrieved 12 February 2025 from <a href="https://mp.weixin.qq.com/s/bUEeMaLVk60GptCfQ5OCbw">https://mp.weixin.qq.com/s/bUEeMaLVk60GptCfQ5OCbw</a>.&lt;/p&gt;[3] 黑猫投诉平台. (2025). 转人工客服. Retrieved 12 February2025 from <a href="https://tousu.sina.com.cn/index/search/?keywords=%E8%BD%AC%E4%BA%BA%E5%B7%A5%E5%AE%A2%E6%9C%8D&amp;t=1">https://tousu.sina.com.cn/index/search/?keywords=%E8%BD%AC%E4%BA%BA%E5%B7%A5%E5%AE%A2%E6%9C%8D&#038;t=1</a>.&lt;/p&gt;[4] 辽宁省人力资源和社会保障厅. (2024). 辽宁省2024第三季度急需紧缺技能人才职业（工种）参考目录.&lt;/p&gt;[5] 中国银行业协会. (2020) . 中国银行业客服中心与远程银行发展报告（2019）.&lt;/p&gt;[6] 中国银行业协会. (2023). 中国银行业客服中心与远程银行发展报告（2022）.&lt;/p&gt;[7] 平安银行. (2020). 平安银行股份有限公司2019年年度报告.&lt;/p&gt;[8] 中国银行业协会. (2022). 中国银行业客服中心与远程银行发展报告（2021）.&lt;/p&gt;[9] 中国银行业协会. (2024). 中国银行业客服中心与远程银行发展报告（2023）.&lt;/p&gt;[10] 网经社, &amp; 赢动教育. (2024). 2023年度中国电子商务人才状况调查报告.&lt;/p&gt;[11] 客服知道研究院. (2018). 2018年《客服行业跳槽报告》. Retrieved 12 February2025 from <a href="https://mp.weixin.qq.com/s/9tWJcelq6R-WhrY\_Kd47pw">https://mp.weixin.qq.com/s/9tWJcelq6R-WhrY\_Kd47pw</a>.&lt;/p&gt;
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E5%9F%BA%E6%9C%AC%E5%B8%B8%E8%AF%86-%E4%BA%B2%E4%BF%84%E5%9B%BD%E8%BF%98%E6%98%AF%E7%88%B1%E4%B8%AD%E5%9B%BD-%E7%8E%B0%E5%9C%A8%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%87%BA%E8%83%A1%E9%94%A1%E8%BF%9B%E7%9A%84%E7%9C%9F%E5%BF%83%E4%BA%86">
+          基本常识｜亲俄国还是爱中国？现在可以看出胡锡进的真心了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-18</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%80%E5%B0%8F%E6%97%B6%E7%88%B8%E7%88%B8-%E8%99%BD%E7%84%B6%E5%AF%B9%E5%88%A0%E6%96%87%E6%97%A0%E6%84%9F%E4%BA%86-%E4%BD%86%E8%BF%98%E6%98%AF%E6%9C%89%E4%BA%9B%E5%88%AB%E7%9A%84%E6%8B%85%E5%BF%A7">
+          一小时爸爸｜虽然对删文无感了，但还是有些别的担忧
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.17">
+          每日一语 2025.2.17
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-17</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-17/%E6%AF%8F%E6%97%A5%E4%B9%90%E8%AF%84-%E6%95%99%E8%82%B2%E8%85%90%E8%B4%A5%E4%B9%B1%E8%B1%A1%E4%B8%9B%E7%94%9F-%E6%8D%9E%E9%92%B1%E6%89%8B%E6%AE%B5%E6%83%8A%E4%BA%BA-%E6%9D%83%E5%8A%9B%E5%8F%98%E7%8E%B0%E5%8A%A0%E5%89%A7%E6%B0%91%E7%94%9F%E9%9A%BE%E9%A2%98">
+          每日乐评｜教育腐败乱象丛生：捞钱手段惊人，权力变现加剧民生难题
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E8%82%96%E5%B0%94%E8%8C%A8-%E5%B0%9A%E6%9C%AA%E6%94%BE%E5%BC%83%E8%BF%9E%E4%BB%BB%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E7%9A%84%E5%B8%8C%E6%9C%9B">
+            前一篇：肖尔茨：尚未放弃连任德国总理的希望
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E5%9B%BD%E7%99%BD%E9%A2%86%E5%B7%A5%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E9%9D%A2%E4%B8%B4%E9%A3%8E%E9%99%A9">
+            后一篇：美国白领工人的工作面临风险
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E8%82%96%E5%B0%94%E8%8C%A8-%E5%B0%9A%E6%9C%AA%E6%94%BE%E5%BC%83%E8%BF%9E%E4%BB%BB%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E7%9A%84%E5%B8%8C%E6%9C%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E5%9B%BD%E7%99%BD%E9%A2%86%E5%B7%A5%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E9%9D%A2%E4%B8%B4%E9%A3%8E%E9%99%A9'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%80%E5%B0%8F%E6%97%B6%E7%88%B8%E7%88%B8-%E8%99%BD%E7%84%B6%E5%AF%B9%E5%88%A0%E6%96%87%E6%97%A0%E6%84%9F%E4%BA%86-%E4%BD%86%E8%BF%98%E6%98%AF%E6%9C%89%E4%BA%9B%E5%88%AB%E7%9A%84%E6%8B%85%E5%BF%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.17'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E8%82%96%E5%B0%94%E8%8C%A8-%E5%B0%9A%E6%9C%AA%E6%94%BE%E5%BC%83%E8%BF%9E%E4%BB%BB%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%90%86%E7%9A%84%E5%B8%8C%E6%9C%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-18/%E7%BE%8E%E5%9B%BD%E7%99%BD%E9%A2%86%E5%B7%A5%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BD%9C%E9%9D%A2%E4%B8%B4%E9%A3%8E%E9%99%A9">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-18/%E4%B8%80%E5%B0%8F%E6%97%B6%E7%88%B8%E7%88%B8-%E8%99%BD%E7%84%B6%E5%AF%B9%E5%88%A0%E6%96%87%E6%97%A0%E6%84%9F%E4%BA%86-%E4%BD%86%E8%BF%98%E6%98%AF%E6%9C%89%E4%BA%9B%E5%88%AB%E7%9A%84%E6%8B%85%E5%BF%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-17/%E6%AF%8F%E6%97%A5%E4%B8%80%E8%AF%AD-2025.2.17">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

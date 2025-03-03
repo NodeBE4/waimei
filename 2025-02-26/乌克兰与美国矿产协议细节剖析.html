@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>乌克兰与美国矿产协议细节剖析 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+乌克兰与美国矿产协议细节剖析
+——
+" />
+    <meta property="og:description" content="
+乌克兰与美国矿产协议细节剖析
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="乌克兰与美国矿产协议细节剖析" />
+    <meta property="twitter:title" content="乌克兰与美国矿产协议细节剖析" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5415)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdetails-about-ukraine-us-minerals-deal-20250226%2F7989424.html&t=%E4%B9%8C%E5%85%8B%E5%85%B0%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9F%BF%E4%BA%A7%E5%8D%8F%E8%AE%AE%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdetails-about-ukraine-us-minerals-deal-20250226%2F7989424.html&t=%E4%B9%8C%E5%85%8B%E5%85%B0%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9F%BF%E4%BA%A7%E5%8D%8F%E8%AE%AE%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90&d=2025-02-26&e=
+乌克兰与美国矿产协议细节剖析
+——
+
+
+  
+Thu, 27 Feb 2025 00:54:04 GMT
+  
+  
+美国总统特朗普于2024年9月27日在纽约特朗普大厦与乌克兰总统弗拉基米尔·泽连斯基会面。
+  
+  乌克兰和美国即将签署一项具有里程碑意义的矿产协议，这标志着两国在加强经济联系方面迈出了重要一步。然而，安全专家对美国之音(VOA)说，人们对这项协议更广泛影响的担忧挥之不去。乌克兰部长内阁于星期三(2月26日)批准了该协议，美国总统唐纳德·特朗普(Donald Trump)证实，乌克兰领导人弗拉基米尔·泽连斯基(Volodymyr Zelenskyy)将于星期五前往白宫来签署协议。该协议包括联合拥有和管理乌克兰战后重建基金的条款，乌克兰将从其自然资源的未来收入中拨出50%投入该基金。协议规定，美国将对乌克兰的稳定和经济繁荣发展做出“长期财务承诺”。然而，该协议未直接..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdetails-about-ukraine-us-minerals-deal-20250226%2F7989424.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html&text=乌克兰与美国矿产协议细节剖析&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html&title=乌克兰与美国矿产协议细节剖析" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html&title=乌克兰与美国矿产协议细节剖析" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=乌克兰与美国矿产协议细节剖析&body=
+乌克兰与美国矿产协议细节剖析
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html&title=乌克兰与美国矿产协议细节剖析&caption=
+乌克兰与美国矿产协议细节剖析
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=乌克兰与美国矿产协议细节剖析&url=https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>乌克兰与美国矿产协议细节剖析</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdetails-about-ukraine-us-minerals-deal-20250226%2F7989424.html&t=%E4%B9%8C%E5%85%8B%E5%85%B0%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9F%BF%E4%BA%A7%E5%8D%8F%E8%AE%AE%E7%BB%86%E8%8A%82%E5%89%96%E6%9E%90&d=2025-02-26&e=
+乌克兰与美国矿产协议细节剖析
+——
+
+
+  
+Thu, 27 Feb 2025 00:54:04 GMT
+  
+  
+美国总统特朗普于2024年9月27日在纽约特朗普大厦与乌克兰总统弗拉基米尔·泽连斯基会面。
+  
+  乌克兰和美国即将签署一项具有里程碑意义的矿产协议，这标志着两国在加强经济联系方面迈出了重要一步。然而，安全专家对美国之音(VOA)说，人们对这项协议更广泛影响的担忧挥之不去。乌克兰部长内阁于星期三(2月26日)批准了该协议，美国总统唐纳德·特朗普(Donald Trump)证实，乌克兰领导人弗拉基米尔·泽连斯基(Volodymyr Zelenskyy)将于星期五前往白宫来签署协议。该协议包括联合拥有和管理乌克兰战后重建基金的条款，乌克兰将从其自然资源的未来收入中拨出50%投入该基金。协议规定，美国将对乌克兰的稳定和经济繁荣发展做出“长期财务承诺”。然而，该协议未直接..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fdetails-about-ukraine-us-minerals-deal-20250226%2F7989424.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740617942000-->
+<p><a href="https://www.voachinese.com/a/details-about-ukraine-us-minerals-deal-20250226/7989424.html">乌克兰与美国矿产协议细节剖析</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 27 Feb 2025 00:54:04 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/84e953ca-a5a4-423b-ae61-51b47498c23a_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">美国总统特朗普于2024年9月27日在纽约特朗普大厦与乌克兰总统弗拉基米尔·泽连斯基会面。</small>
+  </div>
+  <p>乌克兰和美国即将签署一项具有里程碑意义的矿产协议，这标志着两国在加强经济联系方面迈出了重要一步。然而，安全专家对美国之音(VOA)说，人们对这项协议更广泛影响的担忧挥之不去。<br /><br />乌克兰部长内阁于星期三(2月26日)批准了该协议，美国总统唐纳德·特朗普(Donald Trump)证实，乌克兰领导人弗拉基米尔·泽连斯基(Volodymyr Zelenskyy)将于星期五前往白宫来签署协议。<br /><br />该协议包括联合拥有和管理乌克兰战后重建基金的条款，乌克兰将从其自然资源的未来收入中拨出50%投入该基金。<br /><br />协议规定，美国将对乌克兰的稳定和经济繁荣发展做出“长期财务承诺”。<br /><br />然而，该协议未直接提及结束俄罗斯对乌克兰侵略的努力，也未明确这个东欧国家未来的安全安排，仅有一句表述: “美利坚合众国政府支持乌克兰争取获得建立持久和平所需的安全保障的努力。”<br /><br />尽管该协议旨在释放乌克兰的矿产资源潜力并促进其经济复苏，但安全专家警告称，该协议可能无法充分应对乌克兰在面对俄罗斯继续侵略时的持续安全挑战。<br /><br /><strong>美国商界态度</strong><br /><br />美国商会乌克兰分会(American Chamber of Commerce in Ukraine)会长安迪·亨德(Andy Hunder)在接受美国之音电话采访时表示，该协议旨在建立一个新的美乌基金，重点关注国有企业及乌克兰丰富的地下资源，包括天然气、石油和重要的矿产。<br /><br />作为美国在乌克兰的商界代表，亨德对该协议的潜在影响表示乐观: “我们很兴奋。专业的基金管理人可以迅速使这些企业盈利。这对乌克兰和美国纳税人来说是双赢。”他星期三对美国之音说道。<br /><br />亨德表示，该基金可以通过向乌克兰国有企业引入专业管理迅速盈利，而这些企业目前正面临管理不善的问题。<br /><br />“乌克兰拥有全球第二多的国有企业，其中许多由乌克兰政府管理，有些甚至管理不善。因此，我认为如果我们让新的专业基金管理人接管这些企业，它们将很快、很快实现盈利并扭亏为盈。”<br /><br />亨德透露，关于乌克兰经济潜力的讨论在2024年就已成为美乌议程的重点--“从2024年3月和5月参议员林赛·格雷厄姆(Lindsey Graham)访乌开始，我们就关注这个问题，并看到了机会。”<br /><br />“要想利用这一机遇，战争必须结束。在他看来，该协议是通往和平解决方案的一步。我认为，这就是特朗普总统领导下的新政府所关注的，找到阻止俄罗斯杀害乌克兰人的方法。我们预计2025年会实现停火，而现在正是乌克兰迎来二战以来一个欧洲国家最大机遇、最大规模复苏和重建的时刻，”他对美国之音说。<br /><br />前乌克兰地质调查局局长罗曼·奥皮马克(Roman Opimakh)也认为该协议对两国都有利。<br /><br />他说，该协议将帮助美国多元化其稀有金属供应，并“减少对中国的依赖”。对于乌克兰而言，他表示，该协议可能推动战后再工业化和经济增长。“我们可以恢复国家的工业潜力，并实质性提升乌克兰在全球的地位，”奥皮马克通过电话对美国之音表示。<br /><br />尽管该协议显示了美国对乌克兰经济前景的强烈兴趣，但安全专家警告称，该协议并不能全面解决乌克兰的安全挑战。<br /><br />乌克兰国防战略中心主席、前国防部长安德里·扎戈罗德纽克(Andriy Zagorodnyuk)在接受美国之音电话采访时表示，该协议具有更广泛的影响：“美国将这一协议框定为对乌克兰既得利益的体现，表明对乌克兰稳定的支持。这种规模的投资将成为锚定投资，可能会吸引更多资源进入乌克兰经济。”<br /><br />但扎戈罗德纽克警告说，面对俄罗斯的侵略，要确保乌克兰的主权，经济联系还“远远不够”。他对美国之音表示，要遏制未来的攻击，乌克兰需要军事力量--无论是依靠自身，还是与北约和欧洲盟友合作。<br /><br />“我们认识到，俄罗斯可能会试图操纵局势，向特朗普政府传达这样一种信息--即便他们出于任何原因继续侵略，他们仍会尊重美国利益或类似的东西，”他说。<br /><br />当被美国之音问及乌克兰需要美国提供什么以实现长期安全时，扎戈罗德纽克表示，理想情况下，乌克兰将拥有入北约。然而， “如果北约不是一个选项，就必须有一个方案，使乌克兰能够抵御侵略。这个方案必须足够强大，让普京清楚地看到这一点。”<br /><br /><strong>协议细节</strong><br /><br />据美国之音的消息来源透露，有关协议细节的谈判一直持续到基辅时间星期三下午乌克兰部长内阁会议召开前不久。因无授权公开谈论此事，消息来源要求匿名。<br /><br />据新闻报道，乌克兰在谈判中获得了比美国原来的提议更有利的条件，削减了美国最初对其自然资源索取5000亿美元的要求。<br /><br />该协议未包含乌克兰原本寻求的美国安全保障。根据协议，美国将依照美国法律框架保留基金决策权，具体所有权条款将在后续协议中确定。<br /><br /><strong>地缘政治影响</strong><br /><br />尽管特朗普总统将该协议称为加强乌克兰经济的一步，他近日却因称泽连斯基为“未经选举的独裁者”并施压其迅速签署协议而引发争议。美国政府将该协议描述为让美国收回对乌克兰提供的数百亿计美元军事援助的一种方式。</p>
+  <p>但问题仍然是，这种经济伙伴关系是否也能促进乌克兰的持久和平与稳定。</p>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.site" style="color:orange" target="_blank">https://feedx.site</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E7%BE%8E%E8%AE%AE%E5%91%98%E5%B0%B1%E6%94%BF%E5%BA%9C%E6%94%AF%E5%87%BA%E6%A1%88%E5%AF%BB%E6%B1%82%E6%8A%98%E4%B8%AD">
+          美议员就政府支出案寻求折中
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E8%AF%84%E8%AE%BA%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E5%9C%A8%E5%85%B6%E4%BB%BB%E5%86%85-%E7%BB%9D%E4%B8%8D-%E6%94%BB%E5%8F%B0-%E6%9C%AA%E6%9D%A5%E5%9B%9B%E5%B9%B4%E5%8F%B0%E6%B5%B7%E4%B8%8D%E5%B9%B3%E9%9D%99">
+          特朗普不评论中国是否在其任内“绝不”攻台 未来四年台海不平静？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E6%96%B0%E8%A5%BF%E5%85%B0-%E4%B8%AD%E5%9B%BD%E5%90%8C%E6%84%8F%E8%80%83%E8%99%91%E5%A4%96%E7%95%8C%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%9C%80%E8%BF%91%E5%86%9B%E6%BC%94%E6%9C%AA%E7%BB%99%E4%BA%88%E5%85%85%E5%88%86%E9%80%9A%E7%9F%A5%E7%9A%84%E5%85%B3%E5%88%87">
+          新西兰：中国同意考虑外界对中国最近军演未给予充分通知的关切
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E7%BE%8E%E5%9B%BD%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E5%B0%86%E7%AD%BE%E7%BD%B2%E7%9F%BF%E4%BA%A7%E5%8D%8F%E8%AE%AE-%E4%BD%86%E5%B0%9A%E6%9C%AA%E5%9C%A8%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98%E4%B8%8A%E8%BE%BE%E6%88%90%E5%85%B1%E8%AF%86">
+          美国与乌克兰将签署矿产协议，但尚未在安全问题上达成共识
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E5%BC%BA%E5%8A%BF%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%98%BE%E7%8E%B0%E9%98%B4%E5%BD%B1,%E6%97%A5%E5%85%83%E9%9D%A2%E4%B8%B4%E5%8D%87%E5%80%BC%E5%8E%8B%E5%8A%9B">
+            前一篇：强势美国经济显现阴影,日元面临升值压力
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E7%BA%A620%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%9C%A8%E7%BC%85%E7%94%B8%E4%B8%8B%E8%90%BD%E4%B8%8D%E6%98%8E-%E6%88%96%E6%9B%BE%E6%BB%9E%E7%95%99%E7%94%B5%E8%AF%88%E5%9F%BA%E5%9C%B0">
+            后一篇：约20日本人在缅甸下落不明，或曾滞留电诈基地
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E5%BC%BA%E5%8A%BF%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%98%BE%E7%8E%B0%E9%98%B4%E5%BD%B1,%E6%97%A5%E5%85%83%E9%9D%A2%E4%B8%B4%E5%8D%87%E5%80%BC%E5%8E%8B%E5%8A%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E7%BA%A620%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%9C%A8%E7%BC%85%E7%94%B8%E4%B8%8B%E8%90%BD%E4%B8%8D%E6%98%8E-%E6%88%96%E6%9B%BE%E6%BB%9E%E7%95%99%E7%94%B5%E8%AF%88%E5%9F%BA%E5%9C%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E8%AF%84%E8%AE%BA%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E5%9C%A8%E5%85%B6%E4%BB%BB%E5%86%85-%E7%BB%9D%E4%B8%8D-%E6%94%BB%E5%8F%B0-%E6%9C%AA%E6%9D%A5%E5%9B%9B%E5%B9%B4%E5%8F%B0%E6%B5%B7%E4%B8%8D%E5%B9%B3%E9%9D%99'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E6%96%B0%E8%A5%BF%E5%85%B0-%E4%B8%AD%E5%9B%BD%E5%90%8C%E6%84%8F%E8%80%83%E8%99%91%E5%A4%96%E7%95%8C%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%9C%80%E8%BF%91%E5%86%9B%E6%BC%94%E6%9C%AA%E7%BB%99%E4%BA%88%E5%85%85%E5%88%86%E9%80%9A%E7%9F%A5%E7%9A%84%E5%85%B3%E5%88%87'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E5%BC%BA%E5%8A%BF%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%98%BE%E7%8E%B0%E9%98%B4%E5%BD%B1,%E6%97%A5%E5%85%83%E9%9D%A2%E4%B8%B4%E5%8D%87%E5%80%BC%E5%8E%8B%E5%8A%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E7%BA%A620%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%9C%A8%E7%BC%85%E7%94%B8%E4%B8%8B%E8%90%BD%E4%B8%8D%E6%98%8E-%E6%88%96%E6%9B%BE%E6%BB%9E%E7%95%99%E7%94%B5%E8%AF%88%E5%9F%BA%E5%9C%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-26/%E7%89%B9%E6%9C%97%E6%99%AE%E4%B8%8D%E8%AF%84%E8%AE%BA%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E5%9C%A8%E5%85%B6%E4%BB%BB%E5%86%85-%E7%BB%9D%E4%B8%8D-%E6%94%BB%E5%8F%B0-%E6%9C%AA%E6%9D%A5%E5%9B%9B%E5%B9%B4%E5%8F%B0%E6%B5%B7%E4%B8%8D%E5%B9%B3%E9%9D%99">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-26/%E6%96%B0%E8%A5%BF%E5%85%B0-%E4%B8%AD%E5%9B%BD%E5%90%8C%E6%84%8F%E8%80%83%E8%99%91%E5%A4%96%E7%95%8C%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%9C%80%E8%BF%91%E5%86%9B%E6%BC%94%E6%9C%AA%E7%BB%99%E4%BA%88%E5%85%85%E5%88%86%E9%80%9A%E7%9F%A5%E7%9A%84%E5%85%B3%E5%88%87">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
