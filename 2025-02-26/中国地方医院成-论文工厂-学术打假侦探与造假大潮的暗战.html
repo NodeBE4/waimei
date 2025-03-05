@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+" />
+    <meta property="og:description" content="
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战" />
+    <meta property="twitter:title" content="中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5275)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fwhy-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct%2F7989759.html&t=%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9%E5%8C%BB%E9%99%A2%E6%88%90%E2%80%9C%E8%AE%BA%E6%96%87%E5%B7%A5%E5%8E%82%E2%80%9D%EF%BC%9F%E5%AD%A6%E6%9C%AF%E6%89%93%E5%81%87%E4%BE%A6%E6%8E%A2%E4%B8%8E%E9%80%A0%E5%81%87%E5%A4%A7%E6%BD%AE%E7%9A%84%E6%9A%97%E6%88%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fwhy-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct%2F7989759.html&t=%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9%E5%8C%BB%E9%99%A2%E6%88%90%E2%80%9C%E8%AE%BA%E6%96%87%E5%B7%A5%E5%8E%82%E2%80%9D%EF%BC%9F%E5%AD%A6%E6%9C%AF%E6%89%93%E5%81%87%E4%BE%A6%E6%8E%A2%E4%B8%8E%E9%80%A0%E5%81%87%E5%A4%A7%E6%BD%AE%E7%9A%84%E6%9A%97%E6%88%98&d=2025-02-26&e=
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+
+
+  
+Thu, 27 Feb 2025 05:18:27 GMT
+  
+  
+资料照片：一名研究人员在位于中国深圳的北京基因组研究所“DNA实验室”将样本放入容器中。(2010年3月3日)
+  
+华盛顿 —   《自然》杂志最近的一份分析显示，从2014年至2024年，全球近60%撤稿的学术文章作者来自中国，中国地方医院尤其成为“学术不端”的重灾区。中国有超过20000篇科研文章遭到撤稿，撤稿率约为0.3%，是全球平均水平的三倍。全球打假的“科学侦探”们组成的团队尽管火眼金睛，但被发现的造假行为仍然只是冰山一角。
+  在业界享有盛名的科学杂志《自然》近日发表一篇分析文章称，在过去十年里，全球近60%撤稿的学术文章作者来自中国，撤稿率为世界平均水平三倍，而中国地方医院此现象尤为突出。《自然》团队使用了三家来自英国和美..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fwhy-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct%2F7989759.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html&text=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html&title=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html&title=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战&body=
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html&title=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战&caption=
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战&url=https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fwhy-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct%2F7989759.html&t=%E4%B8%AD%E5%9B%BD%E5%9C%B0%E6%96%B9%E5%8C%BB%E9%99%A2%E6%88%90%E2%80%9C%E8%AE%BA%E6%96%87%E5%B7%A5%E5%8E%82%E2%80%9D%EF%BC%9F%E5%AD%A6%E6%9C%AF%E6%89%93%E5%81%87%E4%BE%A6%E6%8E%A2%E4%B8%8E%E9%80%A0%E5%81%87%E5%A4%A7%E6%BD%AE%E7%9A%84%E6%9A%97%E6%88%98&d=2025-02-26&e=
+中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战
+——
+
+
+  
+Thu, 27 Feb 2025 05:18:27 GMT
+  
+  
+资料照片：一名研究人员在位于中国深圳的北京基因组研究所“DNA实验室”将样本放入容器中。(2010年3月3日)
+  
+华盛顿 —   《自然》杂志最近的一份分析显示，从2014年至2024年，全球近60%撤稿的学术文章作者来自中国，中国地方医院尤其成为“学术不端”的重灾区。中国有超过20000篇科研文章遭到撤稿，撤稿率约为0.3%，是全球平均水平的三倍。全球打假的“科学侦探”们组成的团队尽管火眼金睛，但被发现的造假行为仍然只是冰山一角。
+  在业界享有盛名的科学杂志《自然》近日发表一篇分析文章称，在过去十年里，全球近60%撤稿的学术文章作者来自中国，撤稿率为世界平均水平三倍，而中国地方医院此现象尤为突出。《自然》团队使用了三家来自英国和美..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fwhy-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct%2F7989759.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740634742000-->
+<p><a href="https://www.voachinese.com/a/why-have-chinese-local-hospitals-become-the-hardest-hit-areas-for-academic-misconduct/7989759.html">中国地方医院成“论文工厂”？学术打假侦探与造假大潮的暗战</a>
+——</p>
+
+<div>
+  <div>
+<em>Thu, 27 Feb 2025 05:18:27 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/addf8ba6-c333-486a-02fe-08dd4a817621_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照片：一名研究人员在位于中国深圳的北京基因组研究所“DNA实验室”将样本放入容器中。(2010年3月3日)</small>
+  </div>
+华盛顿 —   <p>《自然》杂志最近的一份分析显示，从2014年至2024年，全球近60%撤稿的学术文章作者来自中国，中国地方医院尤其成为“学术不端”的重灾区。中国有超过20000篇科研文章遭到撤稿，撤稿率约为0.3%，是全球平均水平的三倍。全球打假的“科学侦探”们组成的团队尽管火眼金睛，但被发现的造假行为仍然只是冰山一角。</p>
+  <p>在业界享有盛名的科学杂志《<a href="https://www.nature.com/articles/d41586-025-00455-y" target="_blank">自然</a>》近日发表一篇分析文章称，在过去十年里，全球近60%撤稿的学术文章作者来自中国，撤稿率为世界平均水平三倍，而中国地方医院此现象尤为突出。《自然》团队使用了三家来自英国和美国的诚信研究和分析公司提供的数据发现，中国山东济宁市第一人民医院位居榜。2014年至2024年，其发表论文总数的5%以上(超过100篇)被撤稿。这一比例比中国的撤稿率高出一个数量级，是全球平均水平的50倍。</p>
+  <p>排名前十的机构中，除了济宁市第一人民医院，另有六家也来自中国，分别是：沧州市中心医院、河南大学淮河医院、潍坊市人民医院、临沂市人民医院、新乡医学院第一附属医院、齐齐哈尔医学院。其他三家机构分别是来自印度、巴基斯坦和埃塞俄比亚的高校。</p>
+  <p>《自然》的这篇分析报告开篇提到，济宁市第一人民医院曾于2021年至2022年陆续发布十份通报，涉及107篇论文和学术不端事件。</p>
+  <p><strong>论文造假猖獗：是“被发现”变多，还是问题本就严重？</strong></p>
+  <p>曾在微博上活跃多年，现在转战社交媒体X和“蓝天”(Bluesky)的学术打假专家Tiger(应本人要求只使用其网名)表示，造假现象看起来越来越猖獗，一个原因是像他一样的学术打假者越来越多，所以有更多的造假被发现。</p>
+  <p>Tiger向美国之音解释说，撤稿并不都意味着学术不端：“科学研究是有阶段的。每个阶段发现新东西的时候，可能会纠正以前错误的发现。有的人会把以前的错误留在那儿，不更正。他可以说，我们现在的数据不支持以前的，那个不正确。有的人很认真，说‘我们当时的想法是错误的’，他们会撤稿。所以撤稿不等于造假。”</p>
+  <p>“还有一个可能性，就是有些人是被卷入的。一篇撤稿的文章，假如有十个作者，不是说每个作者都是造假的那个。科学研究都是团队研究，你如果原来有10个作者，他可能分属于3个不同的团队，或者5个不同的任务。所以造假的很可能只是其中的一个。”</p>
+  <p>不过，Tiger也强调，“但是现在绝大部分都是发现有问题的，要么造假，要么是买的论文”。</p>
+  <p><strong>中国地方医院为何成为造假“重灾区”？</strong></p>
+  <p>熟知中国地区医院情况的Tiger告诉美国之音，他所观察到的中国造假重灾区，从地域上看起来像是以济宁为中心向四周发散。“这个我也不知道为什么，但是我可以说，山东绝对是个造假大省。”</p>
+  <p>他解释道：“中国什么样的医院论文基本上都是假的呢？地区级的。比如这次抓住的潍坊，临沂，沧州，这些地方医院的医生哪有时间写论文啊，还发英文的，不可能的。不少医院都没有科研设施，还发细胞学论文，根本不可能发生的事情，一看就是假的。”</p>
+  <p><strong>“科学侦探”如何揭露学术造假？</strong></p>
+  <p>Tiger告诉美国之音，“学术打假侦探”起初都是独自行动，后来慢慢通过交流，已经形成了自己的小圈子。他说：“我们这些‘科学侦探’，一开始是各自为战，或者互相通通气，但是后来成了团队。也不是很严谨的团队，没有领导和秘书，也没钱。我们很松散，每天在一个固定的地方互相交流信息。大量的造假论文是由我们这帮人发现的。现在世界上撤稿至少百分之六七十和我们这几个人有关系。”</p>
+  <p>位于美国洛杉矶的荷兰微生物学家伊丽莎白·比克(Elisebath Bik)介绍自己时使用的头衔是“科学诚信顾问”，她从事科学打假工作已经12年。“如果把各种各样的、各领域的期刊都算进去，至少也有几万份吧。我自己给至少546份期刊写过信反映造假问题，”比克在接受美国之音采访时调出自己的统计数据时说。“我已经非常落后了。我目前发现至少有9000篇论文是有问题的，但是我毕竟时间有限，来不及向所有期刊及时反映。”</p>
+  <p>Tiger这样解释撤稿的过程：“我们发现造假后，会向期刊反映，也同时公布于众。最多的时候我们一天能公布几十篇。理想的情况是，期刊收到反映后，投入调查。如果发现有问题，会找作者解释。作者如果拿不出比较过硬的证据，期刊就会撤稿。但我们的经验是，反映给期刊后，大部分没有被撤。被撤稿的仍然是少部分：快的几个月，慢的十年都没有撤。”</p>
+  <p>虽然《自然》所揭露的造假问题大都存在于生物医学领域，Tiger表示，这可能只是因为医学领域使用图片较多因而更容易发现，以及“统计上的幸存者偏差”。他告诉美国之音，材料学也是个重灾区。“材料学造假现在是相当的严重，尤其是先进材料，比如说纳米材料。如果把纳米和医学结合一下，差不多一半都是假的。不是没真的，但是整个领域的声誉非常差。”</p>
+  <p>他补充说：“还有一个是数学。一开始大家都觉得，不太可能吧？但是其实数学的造假非常严重。因为数学非常的专，所以去打数学造假的人非常少。”</p>
+  <p>Tiger说，数学方面的假论文和论文工厂主要集中在伊朗和伊拉克。“他们晋升也跟我们一样需要看论文，但是他们造假的规模已经不能用晋升来解释了。他们就是真的卖论文，做成一门生意。伊朗、伊拉克、巴基斯坦、埃及、俄罗斯、波兰，这些国家造假是扎堆的。数学造假，生物医学也有，还有草药研究的造假。”</p>
+  <p><strong>二流期刊疏于审核助长造假之风</strong></p>
+  <p>比克把学术期刊比作“卖车的经销商”。她说：“我花钱买车，那我期待厂商和经销商对车的质量有把控。这车不能轮子掉了，安全气囊自己炸了，对吧。学术期刊也是，我向他们反映问题，他们应该解决。但是现在期刊并没有该有的质量把控，也不提供任何‘售后服务’。我们反映问题后，他们仍然无动于衷。虽然现在有些期刊进步了，至少我写信过去他们可能出于礼貌会说‘收到了’，这还是比以前完全不搭理要强。”</p>
+  <p>比克认为，期刊的经营模式也无形中助长了造假业的繁荣。“期刊以前可能普遍是对读者收费的，但是现在有不少期刊采用了对论文作者收费、对读者免费的模式。论文作者造假为自己牟利，期刊靠这个挣钱。读者呢，虽然他们现在可以免费看论文，可是他们看到的都是垃圾。”</p>
+  <p>“这有点像毒品买卖，一个愿打一个愿挨。只不过，不像贩毒，现在发表造假论文并不违法，”比克苦笑着说。她告诉美国之音：“没人会因为某个期刊登出一篇造假论文去告他们，这个过程并没有明确的犯法行为。”</p>
+  <p>Tiger也认同比克的说法。他说：“假论文最泛滥的主要就是那些影响力二流的期刊。这种杂志首先质量就没那么高，再有就是最近这些年金钱当道。发论文主要不是追求科学事实和突破。他的商业模式就是赚钱，所以审查机制就不高，甚至有些论文审都没有审，他们根本就不在乎名声。”</p>
+  <p>有时候，被不停曝光丑闻的期刊也会纠正，甚至矫枉过正。Tiger说：“有时候被揭发得多了，把他们打疼了，他们也会去坐下来做点事情。好家伙，一撤就撤五百篇。有一次一下子撤了两千多。那个时候他们真的是，萝卜快了不洗泥。有的期刊后来干脆就是，中国医院的投稿一律不接受。”</p>
+  <p><strong>论文造假并非“人畜无害”</strong></p>
+  <p>比克和Tiger不约而同向美国之音提到了2024年闹得沸沸扬扬的阿尔茨海默症药物开发造假事件。</p>
+  <p>2021年7月，位于美国得克萨斯州奥斯汀的仅有25名员工的生物技术公司木薯生物科学(Cassava Biosciences)，凭借阿尔茨海默症药物“simufilam”的优秀二期临床数据，股价从6.84美元涨到最高时的146.16美元，市值达50亿美元，仅半年时间暴涨20倍。然而，2021年8月，有律师代表其客户向美国食品药品监督管理局(FDA)提交请愿书，质疑simufilam研究数据有假，发表在科学期刊上的文章图片经过人为编辑，并呼吁暂停该药三期临床试验。</p>
+  <p>2023年，simufilamd的共同开发者、纽约城市大学医学院副教授兼木薯科学顾问王厚炎(Hoau-Yan Wang)经调查被发现有学术“严重不当行为”。王厚炎在2024年被美国证券交易委员会(SEC)正式指控操纵数据，“以制造出该药物在阿尔茨海默病相关生物标志物方面产生显著改善的假象”。</p>
+  <p>2024年9月，木薯科学宣布与SEC就“过失披露指控”达成和解，同意支付4000万美元的罚款。SEC还宣布，木薯的两位前高管在误导投资者方面扮演了关键角色，二人分别支付了17.5万美元和8.5万美元罚款；王厚炎被罚款5万美元。</p>
+  <p>Tiger在提到木薯科学丑闻的时候说：“这个案例最后到了什么变态的程度呢，我们揭发他，病人在推特骂我们。因为这个公司是个小公司，不是大公司。病人说，你们接受了大公司的钱来压制这个研究。你能怪他们吗？科学界的人自己造假，我们也觉得很难过。可是让病人用了假药不是更不好吗？”</p>
+  <p>比克告诉美国之音，《自然》杂志提到的三家学术诚信研究分析公司，都在研发自己的反造假软件，以帮助期刊更方便的审查论文。“期刊早就该审查了，现在这么做，有点太晚，有点太慢。不过，至少他们还是开始查了，总比不做强，”她说。</p>
+  <p>比克和Tiger一致认为，学术造假可能短时间看不到太多的直接受害者，但是长远来说后患无穷，尤其是隐形的祸害。Tiger说：“对我们科学侦探团体来说，我们对科学界的造假是非常悲观的，可以这么说：太多了！”</p>
+  <p>他分析道：“不光是假的问题，还有假的影响。生物医学论文，生物制药，有多少都依赖于最基础的研究，从细胞到动物，从小动物到大动物，然后再到人。如果你这方面造假，会浪费多少的钱财、多少人的希望、多少科研工作者的精力。”</p>
+  <p>他以一个想读博士的年轻学生开始找选题为例。“他会大量的阅读文献。如果这些造假的文献被他看中了，那他会觉得很有兴趣去投入。一个博士生在美国投入的时间至少是四五年，但他可能整个学术生涯的开始要被浪费掉，因为他做不下去，很可能就放弃了做科研。”</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-27</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-27/%E4%B8%93%E5%AE%B6-%E4%B8%BA%E9%87%8D%E6%8C%AF%E7%BB%8F%E6%B5%8E-%E6%9C%9D%E9%B2%9C%E8%AE%A1%E5%88%92%E9%87%8D%E6%96%B0%E5%BC%80%E6%94%BE%E5%9B%BD%E9%99%85%E6%B8%B8%E5%AE%A2%E5%85%A5%E5%A2%83">
+          专家：为重振经济 朝鲜计划重新开放国际游客入境
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-27</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-27/%E5%8F%B0%E6%B9%BE%E5%8D%95%E6%97%A5%E4%BE%A6%E8%8E%B745%E6%9E%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%9C%BA%E5%88%9B%E4%BB%8A%E5%B9%B4%E7%BA%AA%E5%BD%95-%E6%9C%AA%E4%BE%A6%E5%BE%97%E4%B8%AD%E6%96%B9%E5%A3%B0%E7%A7%B0%E7%9A%84%E5%AE%9E%E5%BC%B9%E6%BC%94%E7%BB%83">
+          台湾单日侦获45架中国军机创今年纪录 未侦得中方声称的实弹演练
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E5%9C%A8%E6%9C%80%E6%96%B0%E4%B8%80%E8%BD%AE%E7%99%BB%E6%9C%88%E5%B0%9D%E8%AF%95%E4%B8%AD-%E4%B8%80%E5%AE%B6%E7%A7%81%E8%90%A5%E5%85%AC%E5%8F%B8%E5%90%91%E6%9C%88%E7%90%83%E5%8F%91%E5%B0%84%E7%9D%80%E9%99%86%E5%99%A8">
+          在最新一轮登月尝试中，一家私营公司向月球发射着陆器
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E7%BE%8E%E5%8F%82%E9%99%A2%E5%A4%96%E5%A7%94%E4%BC%9A%E4%B8%A4%E5%85%9A%E9%A2%86%E8%A2%96%E6%8E%A8%E5%87%BA%E5%86%B3%E8%AE%AE-%E8%B0%B4%E8%B4%A3%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E4%BE%B5%E7%8A%AF%E4%BA%BA%E6%9D%83">
+          美参院外委会两党领袖推出决议，谴责香港政府侵犯人权
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6">
+            前一篇：马龙等中国访台成员与台大学生产生"认知摩擦"
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E6%97%A5%E6%9C%AC2024%E5%B9%B4%E5%87%BA%E7%94%9F%E4%BA%BA%E6%95%B0%E9%99%8D%E8%87%B372%E4%B8%87-10%E5%B9%B4%E5%87%8F%E5%B0%913%E6%88%90">
+            后一篇：日本2024年出生人数降至72万，10年减少3成
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E6%97%A5%E6%9C%AC2024%E5%B9%B4%E5%87%BA%E7%94%9F%E4%BA%BA%E6%95%B0%E9%99%8D%E8%87%B372%E4%B8%87-10%E5%B9%B4%E5%87%8F%E5%B0%913%E6%88%90'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-27/%E5%8F%B0%E6%B9%BE%E5%8D%95%E6%97%A5%E4%BE%A6%E8%8E%B745%E6%9E%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%9C%BA%E5%88%9B%E4%BB%8A%E5%B9%B4%E7%BA%AA%E5%BD%95-%E6%9C%AA%E4%BE%A6%E5%BE%97%E4%B8%AD%E6%96%B9%E5%A3%B0%E7%A7%B0%E7%9A%84%E5%AE%9E%E5%BC%B9%E6%BC%94%E7%BB%83'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E5%9C%A8%E6%9C%80%E6%96%B0%E4%B8%80%E8%BD%AE%E7%99%BB%E6%9C%88%E5%B0%9D%E8%AF%95%E4%B8%AD-%E4%B8%80%E5%AE%B6%E7%A7%81%E8%90%A5%E5%85%AC%E5%8F%B8%E5%90%91%E6%9C%88%E7%90%83%E5%8F%91%E5%B0%84%E7%9D%80%E9%99%86%E5%99%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E9%A9%AC%E9%BE%99%E7%AD%89%E4%B8%AD%E5%9B%BD%E8%AE%BF%E5%8F%B0%E6%88%90%E5%91%98%E4%B8%8E%E5%8F%B0%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BA%A7%E7%94%9F-%E8%AE%A4%E7%9F%A5%E6%91%A9%E6%93%A6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E6%97%A5%E6%9C%AC2024%E5%B9%B4%E5%87%BA%E7%94%9F%E4%BA%BA%E6%95%B0%E9%99%8D%E8%87%B372%E4%B8%87-10%E5%B9%B4%E5%87%8F%E5%B0%913%E6%88%90">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-27/%E5%8F%B0%E6%B9%BE%E5%8D%95%E6%97%A5%E4%BE%A6%E8%8E%B745%E6%9E%B6%E4%B8%AD%E5%9B%BD%E5%86%9B%E6%9C%BA%E5%88%9B%E4%BB%8A%E5%B9%B4%E7%BA%AA%E5%BD%95-%E6%9C%AA%E4%BE%A6%E5%BE%97%E4%B8%AD%E6%96%B9%E5%A3%B0%E7%A7%B0%E7%9A%84%E5%AE%9E%E5%BC%B9%E6%BC%94%E7%BB%83">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-26/%E5%9C%A8%E6%9C%80%E6%96%B0%E4%B8%80%E8%BD%AE%E7%99%BB%E6%9C%88%E5%B0%9D%E8%AF%95%E4%B8%AD-%E4%B8%80%E5%AE%B6%E7%A7%81%E8%90%A5%E5%85%AC%E5%8F%B8%E5%90%91%E6%9C%88%E7%90%83%E5%8F%91%E5%B0%84%E7%9D%80%E9%99%86%E5%99%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

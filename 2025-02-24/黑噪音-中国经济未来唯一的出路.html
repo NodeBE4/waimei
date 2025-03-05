@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>黑噪音｜中国经济未来唯一的出路 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+黑噪音｜中国经济未来唯一的出路
+——
+" />
+    <meta property="og:description" content="
+黑噪音｜中国经济未来唯一的出路
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="黑噪音｜中国经济未来唯一的出路" />
+    <meta property="twitter:title" content="黑噪音｜中国经济未来唯一的出路" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5275)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716054.html&t=%E9%BB%91%E5%99%AA%E9%9F%B3%EF%BD%9C%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%9C%AA%E6%9D%A5%E5%94%AF%E4%B8%80%E7%9A%84%E5%87%BA%E8%B7%AF" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716054.html&t=%E9%BB%91%E5%99%AA%E9%9F%B3%EF%BD%9C%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%9C%AA%E6%9D%A5%E5%94%AF%E4%B8%80%E7%9A%84%E5%87%BA%E8%B7%AF&d=2025-02-24&e=
+黑噪音｜中国经济未来唯一的出路
+——
+
+
+  
+  我们无法预言历史，就是因为历史永远有偶然。而且，这种偶然往往会改变世界。
+  砸了几万亿、倾尽资源想要扭转“卡脖子”的情况，但几年以来，国企没有搞出DeepSeek这样的怪兽，反而是一个“玩票”的名不见经传的小公司弄出来了。
+  讲了一万遍的道理，就是没有人听：科技创新的活力在于不要总是监管，而是保证市场经济的自由，让企业们去“瞎捣鼓”。
+  但总是在迷信“指挥棒”，迷信“集中力量办大事”。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：中国经济未来唯一的出路作者：倪刃发表日期：2025.2.24来源：微信公众号“黑噪音”主题归类：中国经济CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  集中力..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716054.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/716054.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/716054.html&text=黑噪音｜中国经济未来唯一的出路&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/716054.html&title=黑噪音｜中国经济未来唯一的出路" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/716054.html&title=黑噪音｜中国经济未来唯一的出路" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=黑噪音｜中国经济未来唯一的出路&body=
+黑噪音｜中国经济未来唯一的出路
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/716054.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/716054.html&title=黑噪音｜中国经济未来唯一的出路&caption=
+黑噪音｜中国经济未来唯一的出路
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=黑噪音｜中国经济未来唯一的出路&url=https://chinadigitaltimes.net/chinese/716054.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>黑噪音｜中国经济未来唯一的出路</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-24
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/716054.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716054.html&t=%E9%BB%91%E5%99%AA%E9%9F%B3%EF%BD%9C%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%9C%AA%E6%9D%A5%E5%94%AF%E4%B8%80%E7%9A%84%E5%87%BA%E8%B7%AF&d=2025-02-24&e=
+黑噪音｜中国经济未来唯一的出路
+——
+
+
+  
+  我们无法预言历史，就是因为历史永远有偶然。而且，这种偶然往往会改变世界。
+  砸了几万亿、倾尽资源想要扭转“卡脖子”的情况，但几年以来，国企没有搞出DeepSeek这样的怪兽，反而是一个“玩票”的名不见经传的小公司弄出来了。
+  讲了一万遍的道理，就是没有人听：科技创新的活力在于不要总是监管，而是保证市场经济的自由，让企业们去“瞎捣鼓”。
+  但总是在迷信“指挥棒”，迷信“集中力量办大事”。
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：中国经济未来唯一的出路作者：倪刃发表日期：2025.2.24来源：微信公众号“黑噪音”主题归类：中国经济CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  集中力..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716054.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740396514000-->
+<p><a href="https://chinadigitaltimes.net/chinese/716054.html">黑噪音｜中国经济未来唯一的出路</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/716054.html" title="黑噪音｜中国经济未来唯一的出路" rel="nofollow"><img width="564" height="255" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1740396214949-564x255.png" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/image-1740396214949.png" alt="file" /></p>
+  <p>我们无法预言历史，就是因为历史永远有偶然。而且，这种偶然往往会改变世界。</p>
+  <p>砸了几万亿、倾尽资源想要扭转“卡脖子”的情况，但几年以来，国企没有搞出DeepSeek这样的怪兽，反而是一个“玩票”的名不见经传的小公司弄出来了。</p>
+  <p>讲了一万遍的道理，就是没有人听：科技创新的活力在于不要总是监管，而是保证市场经济的自由，让企业们去“瞎捣鼓”。</p>
+  <p>但总是在迷信“指挥棒”，迷信“集中力量办大事”。</p>
+  <div style="width:42%;float:right;padding-left:20px;">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>中国经济未来唯一的出路<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/黑噪音" target="_blank">倪刃</a><br /><strong>发表日期：</strong>2025.2.24<br /><strong>来源：</strong><a href="https://web.archive.org/web/*/https://mp.weixin.qq.com/s/Epvt6dte1vPP7y8Nd7oBmA" target="_blank">微信公众号“黑噪音”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/中国经济" target="_blank">中国经济</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>集中力量当然也有作用，但仅限于发展初期摆脱贫困、追赶别国的科技这类事情。想要真正搞出点“硬货”，就必须得放手让私营企业去搞。</p>
+  <p>关于中国经济的故事本来是悲观的：进入2025年，当央行和财政部的大放水边际效应递减，当各项经济数据继续冰冷，我们以为，经济还是会继续趴在那儿。</p>
+  <p>没有人知道解方在哪里。世上再伟大的算命先生，恐怕也算不出，是一个小公司弄出来的算法，直接扭转了全世界对中国经济的看法，尤其是对科技产业的评估。</p>
+  <p>尽管我并不觉得DeepSeek能改变所谓国运，之前也在文章中解释过为什么。但是，我们仍然不能低估DeepSeek所带来的剧烈“鲇鱼效应”。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-716054-67bc57e30397a." alt="img" /></p>
+  <p>事实上，最近一个月股市的强劲反弹并非炒作DeepSeek这个单一产品，而是全球投资者对中国未来的产业发展路径进行了彻底重估。</p>
+  <p>DeepSeek作为单一的大语言模型，并不能直接产生经济效益，充其量只是一个便宜低配版的ChatGpt。但全球投行们所看到的改变，并不是它自身，而是它在中国制造业这个“水池”中游动起来的样子。</p>
+  <p>中国制造业的确是有优势的，这个优势就在于齐全的产业链、庞大的集群效应。但在DeepSeek之前，它们都只是“一汪死水”，因为它们无法导向未来——万物互联、云计算、人工智能所连接的那个高端制造业未来。</p>
+  <p>如果没有足够强大的软件和算法去连接制造业产品，中国就依然只是“世界工厂”；但有了DeepSeek，“世界工厂”才有了自己变成“万物互联中心”的可能性。</p>
+  <p>DeepSeek，起到了化腐朽为神奇的作用。</p>
+  <p>DeepSeek存在的意义，也戳破了之前国产大语言模型的谎言——根本没有一个真正能用的。</p>
+  <p>与此同时，阿里巴巴也传来好消息，但不是马云的现身，而是阿里巴巴的财报。在财报当中，投资者们注重的并非它的传统业务利润，而是云计算业务，在未来的想象力。</p>
+  <p>这个云计算业务有了DeepSeek的加持，本来三倍利润空间可能会变成三十倍。</p>
+  <p>这也是为什么无论在中概股还是港股，阿里巴巴都毫不回头地暴涨。</p>
+  <p>从未来三年之后回望现在，阿里巴巴当下的股价可能就是当年英伟达起飞之前的那个黄金坑。</p>
+  <p>以上所有，就是最近中国科技股、港股科技股大涨的内在逻辑。</p>
+  <p>但问题也潜藏在其中。因为，这仅仅是科技股的大涨，而不是整个股市的大涨，更不是经济基本面的彻底好转。</p>
+  <p>现在距离真正的经济复苏，还差得太远。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-716054-67bc57e30ce02." alt="img" /></p>
+  <p>所以全球投资者看好的并非中国经济的基本面，仅仅只是中国科技产业的未来。那么，中国科技产业能代表中国经济的未来吗？</p>
+  <p>答案是：很难。因为必须要匹配对应的“软实力”。</p>
+  <p>历史上被科技革命推动发展的国家很多，但人们往往忽视了一点：没有相应的“软实力”，科技革命也没用。</p>
+  <p>这一点可以从西班牙的经济史作为一个例证。西班牙一直都是英国工业革命的受益者，尤其是在哈布斯堡王朝时期，加泰罗尼亚地区完整地跟上了工业革命的步伐，导致加泰罗尼亚至今依然是西班牙最富有的地区。</p>
+  <p>然并卵，西班牙在1950年代之前两三百年，一直都是欧洲最穷的国家之一。因为在这漫长的时间里，西班牙统治者们只干一件事：他们一边中饱私囊，一边放任政府官员腐朽堕落，这导致西班牙的经济落后状态一直持续到了20世纪50年代。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-716054-67bc57e318c25.png" alt="image" /></p>
+  <p>西班牙原本不必这么辛苦，然而从哥伦布时代起，西班牙就开始浪费作为初代全球霸主的国运——因为统治阶层的腐朽和僵化，始终未能在思想意识上引领全世界。</p>
+  <p>英国为何能成为日不落帝国？工业革命只是器物，关键还是在于英国人的逻辑、理性、法治、权力监督。</p>
+  <p>在亚当斯密说出“人生而自由”的时候，英国已经领先西班牙了。</p>
+  <p>在英国走向科学与理性精神的时候，西班牙还沉浸在传统天主教、民族主义、专制主义包裹下的愚昧之中；在英国实现宪政和权力监督已经两百多年的时候，西班牙到了1970年代才摆脱弗朗哥独裁。</p>
+  <p>于是，高下立判。</p>
+  <p>要说发展条件，西班牙哪样比英国弱了？地理大发现是西班牙率先受益的，全球殖民帝国是西班牙先建立的——至今美国的大量领土都是原来西班牙的领地。</p>
+  <p>但西班牙受制于落后的文化观念和僵化的政治制度，在不断拥有着硬件上优越条件的同时，却在“软件”上持续发展滞后，不仅失去了初代全球霸主的地位，而且成了欧洲落后的国家。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-716054-67bc57e3221c0." alt="img" /></p>
+  <p>所幸从1980年代以后，西班牙整个国家又开始充满活力，经历了一波二十多年的经济发展奇迹，到了2000年代终于成为欧洲中流的国家。这个阶段的发展，正是自由的社会观念和健康的政治结构，所带来的红利。</p>
+  <p>每年，西班牙国王都会在新年讲话中这么说：西班牙人需要珍惜得来不易的民主、法治、自由与社会共识，正是这些，促成了国家的繁荣与持久发展。</p>
+  <p>关于中国经济的未来，为什么要讲这么多关于西班牙的事情？</p>
+  <p>因为放在宏观上、更长的时间尺度上来看，我们会发现，必须要给予社会以自由的活力，才能让产业革命的影响真正发挥出促进经济和社会全面发展的作用。</p>
+  <p>那种“一边管得很严很死、一边还能把经济搞得很好”的想法，在本质上是自相矛盾的。在这种条件下，即便是当年占尽天时地利的西班牙，都逐步失去了所拥有的一切繁华。</p>
+  <p>美国的成功，不在于它拥有一个ChatGPT，而是因为它拥有一片高度自由的土壤，这片土壤能够源源不断地滋生出福特、IBM、苹果、OpenAI……</p>
+  <p>相反，苏联虽然凭借“集中力量办大事”和美国较劲了二十年，甚至还在发射卫星方面赢了美国，但僵化的经济体制很快就让它败下阵来。</p>
+  <p>DeepSeek是一个契机，更是一个启示，那就是，创新必然来源于自由的市场环境，而非统一的指挥；要想让创新持久地发挥出推动经济的作用，就更需要整个社会结构的健康化，不断地深化改革。</p>
+  <p>也就是说，产业革命的“经济基础”必须和“上层建筑”产生共振，才是持久的发展之道。</p>
+  <ul>
+    <li>END –</li>
+  </ul>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-24</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-24/%E4%B9%A6%E5%86%99%E8%80%85-%E7%94%9F%E6%81%AF%E4%B9%8B%E5%9C%B0-%E8%8E%B7%E6%9F%8F%E6%9E%97%E7%94%B5%E5%BD%B1%E8%8A%82%E9%93%B6%E7%86%8A%E5%A5%96-%E5%9B%BD%E5%86%85%E8%BF%98%E6%B2%A1%E4%B8%8A%E6%98%A0%E6%9C%89%E4%BA%BA%E5%B0%B1%E5%BC%80%E9%AA%82%E4%BA%86">
+          书写者｜《生息之地》获柏林电影节银熊奖，国内还没上映有人就开骂了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-24</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-24/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%89%E5%91%A8%E5%B9%B4-%E4%B8%80%E4%B8%AA%E4%B9%8C%E5%85%8B%E5%85%B0%E7%88%B6%E4%BA%B2%E7%9A%84%E8%A7%86%E8%A7%92">
+          张3丰的世界｜三周年：一个乌克兰父亲的视角
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-24</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-24/%E4%BA%AE%E8%A7%81-%E8%91%A3%E6%98%8E%E7%8F%A0%E8%BF%99%E6%A0%B7%E7%9A%84%E8%80%81%E6%9D%BF%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86">
+          亮见｜董明珠这样的老板太可怕了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-24</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-24/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC207%E6%9C%9F-%E5%93%AA%E5%90%922%E6%AD%A3%E5%8F%98%E5%BE%97%E4%B8%8D%E5%AE%B9%E6%89%B9%E8%AF%84-%E8%BF%99%E4%B8%8D%E6%98%AF%E4%B8%80%E9%83%A8%E5%8A%A8%E7%94%BB%E7%89%87%E6%89%80%E8%83%BD%E6%89%BF%E5%8F%97%E4%B9%8B%E9%87%8D">
+          【CDT周报】第207期：哪吒2正变得不容批评，这不是一部动画片所能承受之重
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-24/%E6%96%B0%E8%A5%BF%E5%85%B0%E5%A4%96%E9%95%BF%E5%B0%86%E8%AE%BF%E5%8C%97%E4%BA%AC-%E9%A2%84%E8%AE%A1%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E6%B4%BB%E5%8A%A8%E6%8F%90%E5%87%BA%E8%B4%A8%E7%96%91">
+            前一篇：新西兰外长将访北京 预计对中国海军活动提出质疑
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-24/%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E5%90%AF%E5%8A%A8%E6%96%B0%E4%B8%BB%E6%9D%83%E8%B4%A2%E5%AF%8C%E5%9F%BA%E9%87%91-%E5%B0%86%E5%90%91%E5%A4%9A%E9%A2%86%E5%9F%9F%E6%8A%95%E8%B5%84200%E4%BA%BF%E7%BE%8E%E5%85%83">
+            后一篇：印度尼西亚启动新主权财富基金 将向多领域投资200亿美元
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-24/%E6%96%B0%E8%A5%BF%E5%85%B0%E5%A4%96%E9%95%BF%E5%B0%86%E8%AE%BF%E5%8C%97%E4%BA%AC-%E9%A2%84%E8%AE%A1%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E6%B4%BB%E5%8A%A8%E6%8F%90%E5%87%BA%E8%B4%A8%E7%96%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-24/%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E5%90%AF%E5%8A%A8%E6%96%B0%E4%B8%BB%E6%9D%83%E8%B4%A2%E5%AF%8C%E5%9F%BA%E9%87%91-%E5%B0%86%E5%90%91%E5%A4%9A%E9%A2%86%E5%9F%9F%E6%8A%95%E8%B5%84200%E4%BA%BF%E7%BE%8E%E5%85%83'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-24/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%89%E5%91%A8%E5%B9%B4-%E4%B8%80%E4%B8%AA%E4%B9%8C%E5%85%8B%E5%85%B0%E7%88%B6%E4%BA%B2%E7%9A%84%E8%A7%86%E8%A7%92'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-24/%E4%BA%AE%E8%A7%81-%E8%91%A3%E6%98%8E%E7%8F%A0%E8%BF%99%E6%A0%B7%E7%9A%84%E8%80%81%E6%9D%BF%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-24/%E6%96%B0%E8%A5%BF%E5%85%B0%E5%A4%96%E9%95%BF%E5%B0%86%E8%AE%BF%E5%8C%97%E4%BA%AC-%E9%A2%84%E8%AE%A1%E5%AF%B9%E4%B8%AD%E5%9B%BD%E6%B5%B7%E5%86%9B%E6%B4%BB%E5%8A%A8%E6%8F%90%E5%87%BA%E8%B4%A8%E7%96%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-24/%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%E5%90%AF%E5%8A%A8%E6%96%B0%E4%B8%BB%E6%9D%83%E8%B4%A2%E5%AF%8C%E5%9F%BA%E9%87%91-%E5%B0%86%E5%90%91%E5%A4%9A%E9%A2%86%E5%9F%9F%E6%8A%95%E8%B5%84200%E4%BA%BF%E7%BE%8E%E5%85%83">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-24/%E5%BC%A03%E4%B8%B0%E7%9A%84%E4%B8%96%E7%95%8C-%E4%B8%89%E5%91%A8%E5%B9%B4-%E4%B8%80%E4%B8%AA%E4%B9%8C%E5%85%8B%E5%85%B0%E7%88%B6%E4%BA%B2%E7%9A%84%E8%A7%86%E8%A7%92">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-24/%E4%BA%AE%E8%A7%81-%E8%91%A3%E6%98%8E%E7%8F%A0%E8%BF%99%E6%A0%B7%E7%9A%84%E8%80%81%E6%9D%BF%E5%A4%AA%E5%8F%AF%E6%80%95%E4%BA%86">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

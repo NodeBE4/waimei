@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>见识｜困在教育分流里的普通家庭 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+见识｜困在教育分流里的普通家庭
+——
+" />
+    <meta property="og:description" content="
+见识｜困在教育分流里的普通家庭
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="见识｜困在教育分流里的普通家庭" />
+    <meta property="twitter:title" content="见识｜困在教育分流里的普通家庭" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5275)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715965.html&t=%E8%A7%81%E8%AF%86%EF%BD%9C%E5%9B%B0%E5%9C%A8%E6%95%99%E8%82%B2%E5%88%86%E6%B5%81%E9%87%8C%E7%9A%84%E6%99%AE%E9%80%9A%E5%AE%B6%E5%BA%AD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715965.html&t=%E8%A7%81%E8%AF%86%EF%BD%9C%E5%9B%B0%E5%9C%A8%E6%95%99%E8%82%B2%E5%88%86%E6%B5%81%E9%87%8C%E7%9A%84%E6%99%AE%E9%80%9A%E5%AE%B6%E5%BA%AD&d=2025-02-19&e=
+见识｜困在教育分流里的普通家庭
+——
+
+
+  近日听说，苏州中学公布录用的13位老师中，6名清华、4名北大，博士8人、硕士5人。
+  我常去家附近一个职业高中散步，宿舍外墙的马赛克发霉剥落，破破烂烂的图书馆里很少学生，名为“纺织实验室”的教室里只有几台旧缝纫机，唯一的篮球场上还经常停了车，最显眼的倒是饭堂侧面墙上的募兵宣传。
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：困在教育分流里的普通家庭作者：急雪回风发表日期：2025.2.18来源：微信公众号“见识”主题归类：教育歧视CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  同样一个孩子，在窗明几净的校园里被名校毕业的老师教授三年，和在这残破发霉的职校里虚掷三年光阴，应该会差异很大吧？
+ ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715965.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/715965.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/715965.html&text=见识｜困在教育分流里的普通家庭&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/715965.html&title=见识｜困在教育分流里的普通家庭" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/715965.html&title=见识｜困在教育分流里的普通家庭" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=见识｜困在教育分流里的普通家庭&body=
+见识｜困在教育分流里的普通家庭
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/715965.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/715965.html&title=见识｜困在教育分流里的普通家庭&caption=
+见识｜困在教育分流里的普通家庭
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=见识｜困在教育分流里的普通家庭&url=https://chinadigitaltimes.net/chinese/715965.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>见识｜困在教育分流里的普通家庭</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/715965.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715965.html&t=%E8%A7%81%E8%AF%86%EF%BD%9C%E5%9B%B0%E5%9C%A8%E6%95%99%E8%82%B2%E5%88%86%E6%B5%81%E9%87%8C%E7%9A%84%E6%99%AE%E9%80%9A%E5%AE%B6%E5%BA%AD&d=2025-02-19&e=
+见识｜困在教育分流里的普通家庭
+——
+
+
+  近日听说，苏州中学公布录用的13位老师中，6名清华、4名北大，博士8人、硕士5人。
+  我常去家附近一个职业高中散步，宿舍外墙的马赛克发霉剥落，破破烂烂的图书馆里很少学生，名为“纺织实验室”的教室里只有几台旧缝纫机，唯一的篮球场上还经常停了车，最显眼的倒是饭堂侧面墙上的募兵宣传。
+  
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：困在教育分流里的普通家庭作者：急雪回风发表日期：2025.2.18来源：微信公众号“见识”主题归类：教育歧视CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  同样一个孩子，在窗明几净的校园里被名校毕业的老师教授三年，和在这残破发霉的职校里虚掷三年光阴，应该会差异很大吧？
+ ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F715965.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740024024000-->
+<p><a href="https://chinadigitaltimes.net/chinese/715965.html">见识｜困在教育分流里的普通家庭</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/715965.html" title="见识｜困在教育分流里的普通家庭" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715965-67b660e3df5f4-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <p>近日听说，苏州中学公布录用的13位老师中，6名清华、4名北大，博士8人、硕士5人。</p>
+  <p>我常去家附近一个职业高中散步，宿舍外墙的马赛克发霉剥落，破破烂烂的图书馆里很少学生，名为“纺织实验室”的教室里只有几台旧缝纫机，唯一的篮球场上还经常停了车，最显眼的倒是饭堂侧面墙上的募兵宣传。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/02/post-715965-67b660e3df5f4." alt="img" /></p>
+  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>困在教育分流里的普通家庭<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/急雪回风" target="_blank">急雪回风</a><br /><strong>发表日期：</strong>2025.2.18<br /><strong>来源：</strong><a href="https://web.archive.org/web/20250219225146/https://mp.weixin.qq.com/s/nDi4pebPr8XOppswXFbqHQ" target="_blank">微信公众号“见识”</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/教育歧视" target="_blank">教育歧视</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <p>同样一个孩子，在窗明几净的校园里被名校毕业的老师教授三年，和在这残破发霉的职校里虚掷三年光阴，应该会差异很大吧？</p>
+  <p>但怎么会是同样的孩子呢？在中考分流的巨大齿轮下，每年有约40%的初中毕业生被划入职业教育轨道，他们中的绝大多数来自农村和城市底层家庭。</p>
+  <p>2011年《中国教育学刊》上一文指出，“初中后的首次分流过程表面上依据学业成绩，实际上与按照阶层水平完成的筛选并无二致”。¹</p>
+  <p>2021年《北京大学教育评论》上的一文指出，“中上及中产阶层的子女初中毕业后多进入高中，尤其是优质高中；普通阶层的学生多流入相对较差的职校”。²</p>
+  <p>2022年教育部发布的《中国职业教育发展白皮书》显示，职业学校70%以上的学生来自农村，农村孩子已成为职业高中的主要生源。</p>
+  <p>学者们的研究论文表明：中考教育分流，表面上是筛选孩子，实际上是筛选孩子的家庭；表面上是筛选天赋与智商，实际上是筛选教育投入的资源。</p>
+  <p>一个天真无知的孩子，经过九年质量完全不同的基础教育之后，在他叛逆的青春期，迎来了中考分流。</p>
+  <p>而且，低质量的职业教育，没有提高学生的就业能力，把底层的孩子永远固化在底层。</p>
+  <p>有一次去理发，洗头发的小工告诉我他只有17岁。在广州这样的大城市，未满18岁就出来工作，我觉得有点不可思议，于是问他：“怎么没有上学呢？”</p>
+  <p>小工说：“上了一年职高，我不想上了，就退学了。”</p>
+  <p>我又问：“爸妈同意你退学？”</p>
+  <p>小工说：“刚开始不同意，我就把学校的视频发给他们，都在睡觉谈恋爱打游戏，我妈就同意了。我不想浪费家里的钱，还不如早点出来打工。”</p>
+  <p>虽然世界上大部分国家都在实行学术教育和职业教育分流，然而我们的职校并不像德国、瑞士、荷兰等欧洲国家一样，能够提供高质量的职业技术培训。</p>
+  <p>在教育投入上，职业教育经费投入和增速均远远落后于普通高中。</p>
+  <p>一方面是清北毕业生进重点高中已经不稀奇了，榆林神木市实验中学、绍兴嵊州中学、马寅初中学等不少学校的招聘公示名单中都出现了名校硕博士生，这其中隐含招聘名校毕业生的巨额安家费和高薪。</p>
+  <p>另一方面，教育部督导报告显示，中西部地区43%的职业学校实训设备停留在上世纪水平。即使在沿海相对发达的地区，有汽修专业学生未接触过新能源车，有纺织专业学生未接触过数码剪裁印染设备，授课内容与产业需求严重脱节。</p>
+  <p>不少职校的孩子，住进还不如初中的校舍，吃着难以下咽的“鼠头鸭脖”，听着脱离现实的陈旧教案，心灰意冷、自暴自弃。</p>
+  <p>湖南某职高心理普查发现，68%的职高学生存在“失败者”认知，“读职高就是混日子”，这种心理创伤在打工子弟中尤为严重。</p>
+  <p>虽然职业高中学生理论上可通过“职教高考”升学，但现实极为残酷，根据2023年的统计数据，职教高考本科录取率不到10%，且多为质量较差的本科。</p>
+  <p>14-15周岁的孩子，尚处于懵懂之中，他无法理解，在他上学后的第九个夏天迎来的这场分流，大概率决定了他一生的职业和阶层。</p>
+  <p>三年后，当城市的孩子在准备高考、雅思、托福时，出身农村或城市底层家庭的同龄人将在工地上、流水线上、理发店里、外卖路上重复着父辈的命运。</p>
+  <p>参考文献</p>
+  <p>1. 蔡辰梅，刘刚. 论教育放弃与教育公平——教育公平问题的微观研究. 中国教育学刊，2011（03）</p>
+  <p>2.曹妍，唐珊珊. 普职分流与阶层间的高等教育入学机会公平. 北京大学教育评论，2021（10）</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-20</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-20/%E8%80%81%E6%96%AF%E5%9F%BA%E8%B4%A2%E7%BB%8F-%E5%B0%B1%E6%80%95%E5%B9%B4%E8%BD%BB%E4%BA%BA%E6%8A%A2%E7%9D%80%E6%89%AB%E5%A4%A7%E8%A1%97">
+          老斯基财经｜就怕年轻人抢着扫大街
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-20</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-20/404%E6%96%87%E5%BA%93-%E5%86%B0%E5%B7%9D%E6%80%9D%E6%83%B3%E5%BA%93-%E5%93%AA%E5%90%922-%E6%AD%A3%E5%8F%98%E5%BE%97%E4%B8%8D%E5%AE%B9%E6%89%B9%E8%AF%84">
+          【404文库】冰川思想库｜《哪吒2》，正变得不容批评
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E9%87%8D%E5%9B%9E%E6%9C%88%E8%96%AA3000%E7%9A%84%E9%9D%92%E5%B9%B4%E4%BA%BA">
+          真实故事计划｜重回月薪3000的青年人
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-19</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-19/%E5%94%90%E5%B8%88%E4%B8%89%E7%99%BE%E6%89%8B-%E5%A9%9A%E5%A7%BB%E4%B8%89%E9%A2%98-%E5%A9%9A%E5%A7%BB-%E5%AE%B6%E6%9A%B4-%E7%A6%BB%E5%A9%9A%E5%86%B7%E9%9D%99%E6%9C%9F">
+          唐师三百手｜婚姻三题：婚姻、家暴、离婚冷静期
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-19/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9A%84%E5%90%88%E4%BD%9C%E5%BF%85%E9%A1%BB%E6%98%AF-%E5%BB%BA%E8%AE%BE%E6%80%A7%E7%9A%84">
+            前一篇：泽连斯基：与美国的合作必须是“建设性的”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-19/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B">
+            后一篇："小粉红"扰乱英国港人集会被围堵 求助中国使馆不果倍感失望
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9A%84%E5%90%88%E4%BD%9C%E5%BF%85%E9%A1%BB%E6%98%AF-%E5%BB%BA%E8%AE%BE%E6%80%A7%E7%9A%84'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-20/404%E6%96%87%E5%BA%93-%E5%86%B0%E5%B7%9D%E6%80%9D%E6%83%B3%E5%BA%93-%E5%93%AA%E5%90%922-%E6%AD%A3%E5%8F%98%E5%BE%97%E4%B8%8D%E5%AE%B9%E6%89%B9%E8%AF%84'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-19/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E9%87%8D%E5%9B%9E%E6%9C%88%E8%96%AA3000%E7%9A%84%E9%9D%92%E5%B9%B4%E4%BA%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-19/%E6%B3%BD%E8%BF%9E%E6%96%AF%E5%9F%BA-%E4%B8%8E%E7%BE%8E%E5%9B%BD%E7%9A%84%E5%90%88%E4%BD%9C%E5%BF%85%E9%A1%BB%E6%98%AF-%E5%BB%BA%E8%AE%BE%E6%80%A7%E7%9A%84">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-19/%E5%B0%8F%E7%B2%89%E7%BA%A2-%E6%89%B0%E4%B9%B1%E8%8B%B1%E5%9B%BD%E6%B8%AF%E4%BA%BA%E9%9B%86%E4%BC%9A%E8%A2%AB%E5%9B%B4%E5%A0%B5-%E6%B1%82%E5%8A%A9%E4%B8%AD%E5%9B%BD%E4%BD%BF%E9%A6%86%E4%B8%8D%E6%9E%9C%E5%80%8D%E6%84%9F%E5%A4%B1%E6%9C%9B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-20/404%E6%96%87%E5%BA%93-%E5%86%B0%E5%B7%9D%E6%80%9D%E6%83%B3%E5%BA%93-%E5%93%AA%E5%90%922-%E6%AD%A3%E5%8F%98%E5%BE%97%E4%B8%8D%E5%AE%B9%E6%89%B9%E8%AF%84">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-19/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E9%87%8D%E5%9B%9E%E6%9C%88%E8%96%AA3000%E7%9A%84%E9%9D%92%E5%B9%B4%E4%BA%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
