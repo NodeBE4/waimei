@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>在中国，外籍人士遭任意拘留风险正在上升 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+在中国，外籍人士遭任意拘留风险正在上升
+——
+" />
+    <meta property="og:description" content="
+在中国，外籍人士遭任意拘留风险正在上升
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="在中国，外籍人士遭任意拘留风险正在上升" />
+    <meta property="twitter:title" content="在中国，外籍人士遭任意拘留风险正在上升" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4943)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-human-rights-legal-system-safeguard-defenders-20250301%2F7993695.html&t=%E5%9C%A8%E4%B8%AD%E5%9B%BD%EF%BC%8C%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E9%81%AD%E4%BB%BB%E6%84%8F%E6%8B%98%E7%95%99%E9%A3%8E%E9%99%A9%E6%AD%A3%E5%9C%A8%E4%B8%8A%E5%8D%87" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-human-rights-legal-system-safeguard-defenders-20250301%2F7993695.html&t=%E5%9C%A8%E4%B8%AD%E5%9B%BD%EF%BC%8C%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E9%81%AD%E4%BB%BB%E6%84%8F%E6%8B%98%E7%95%99%E9%A3%8E%E9%99%A9%E6%AD%A3%E5%9C%A8%E4%B8%8A%E5%8D%87&d=2025-03-01&e=
+在中国，外籍人士遭任意拘留风险正在上升
+——
+
+
+  
+Sat, 01 Mar 2025 22:00:51 GMT
+  
+  
+资料照：2020年澳大利亚籍华裔主持人成蕾在北京CCTV大楼前。
+  
+  
+  
+
+  
+伦敦 —   “(在中国)你可能仅仅因为和某人聊天、复制一张地图，或者无意间拍了一张敏感地点的照片，就被逮捕。”人权组织“保护卫士”(Safeguard Defender)研究主任黛娜·加德纳(Dinah Gardner)告诉美国之音。
+  2月25日，保护卫士发布报告——《在中国失踪》(Missing in China)，揭示了中国政府如何利用“指定居所监视居住”，在不透明的法律体系下秘密拘押外籍人士，剥夺他们的基本权利，并作为政治工具进行“人质外交”，报告为外国公民及其家属提供指导，帮助他们应对在中国遭遇任意拘留的情况。
+  
+    
+国际人权组织“保护卫士”..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-human-rights-legal-system-safeguard-defenders-20250301%2F7993695.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html&text=在中国，外籍人士遭任意拘留风险正在上升&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html&title=在中国，外籍人士遭任意拘留风险正在上升" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html&title=在中国，外籍人士遭任意拘留风险正在上升" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=在中国，外籍人士遭任意拘留风险正在上升&body=
+在中国，外籍人士遭任意拘留风险正在上升
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html&title=在中国，外籍人士遭任意拘留风险正在上升&caption=
+在中国，外籍人士遭任意拘留风险正在上升
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=在中国，外籍人士遭任意拘留风险正在上升&url=https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>在中国，外籍人士遭任意拘留风险正在上升</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-03-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-human-rights-legal-system-safeguard-defenders-20250301%2F7993695.html&t=%E5%9C%A8%E4%B8%AD%E5%9B%BD%EF%BC%8C%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E9%81%AD%E4%BB%BB%E6%84%8F%E6%8B%98%E7%95%99%E9%A3%8E%E9%99%A9%E6%AD%A3%E5%9C%A8%E4%B8%8A%E5%8D%87&d=2025-03-01&e=
+在中国，外籍人士遭任意拘留风险正在上升
+——
+
+
+  
+Sat, 01 Mar 2025 22:00:51 GMT
+  
+  
+资料照：2020年澳大利亚籍华裔主持人成蕾在北京CCTV大楼前。
+  
+  
+  
+
+  
+伦敦 —   “(在中国)你可能仅仅因为和某人聊天、复制一张地图，或者无意间拍了一张敏感地点的照片，就被逮捕。”人权组织“保护卫士”(Safeguard Defender)研究主任黛娜·加德纳(Dinah Gardner)告诉美国之音。
+  2月25日，保护卫士发布报告——《在中国失踪》(Missing in China)，揭示了中国政府如何利用“指定居所监视居住”，在不透明的法律体系下秘密拘押外籍人士，剥夺他们的基本权利，并作为政治工具进行“人质外交”，报告为外国公民及其家属提供指导，帮助他们应对在中国遭遇任意拘留的情况。
+  
+    
+国际人权组织“保护卫士”..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fchina-human-rights-legal-system-safeguard-defenders-20250301%2F7993695.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740868743000-->
+<p><a href="https://www.voachinese.com/a/china-human-rights-legal-system-safeguard-defenders-20250301/7993695.html">在中国，外籍人士遭任意拘留风险正在上升</a>
+——</p>
+
+<div>
+  <div>
+<em>Sat, 01 Mar 2025 22:00:51 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/F6CF18AA-7279-4AC7-888F-BCB890A381BD_cx9_cy6_cw88_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照：2020年澳大利亚籍华裔主持人成蕾在北京CCTV大楼前。</small>
+  </div>
+  <audio src="" controls=""></audio>
+  <div>
+<small style="color: #999;"></small>
+  </div>
+伦敦 —   <p>“(在中国)你可能仅仅因为和某人聊天、复制一张地图，或者无意间拍了一张敏感地点的照片，就被逮捕。”人权组织“保护卫士”(Safeguard Defender)研究主任黛娜·加德纳(Dinah Gardner)告诉美国之音。</p>
+  <p>2月25日，保护卫士发布报告——《在中国失踪》(Missing in China)，揭示了中国政府如何利用“指定居所监视居住”，在不透明的法律体系下秘密拘押外籍人士，剥夺他们的基本权利，并作为政治工具进行“人质外交”，报告为外国公民及其家属提供指导，帮助他们应对在中国遭遇任意拘留的情况。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/164da311-2873-4717-8db5-08dd4a843460_w268_h151.png" alt="国际人权组织“保护卫士”(Safeguard Defenders)2025年2月25日发布中、英、日三语种的指南，为受害者家属提供在中国失踪的应对策略。" border="0" />    <div>
+<small style="color: #999;">国际人权组织“保护卫士”(Safeguard Defenders)2025年2月25日发布中、英、日三语种的指南，为受害者家属提供在中国失踪的应对策略。</small>
+    </div>
+  </div>
+  <p>在众多案例中，澳大利亚籍华裔记者成蕾(Cheng Lei)的案件尤为典型。她于2020年被中国政府以“泄露国家机密”为由拘捕，直至2023年才被释放。她的伴侣、澳大利亚中国商会(AustCham China)前首席执行官尼克·科伊尔(Nick Coyle)在接受美国之音采访时，讲述了他对中国司法体系的看法以及外交交涉的艰难。</p>
+  <p><strong>看不见的牢笼</strong></p>
+  <p>科伊尔告诉美国之音：“她的前六个月是在指定居所监视居住度过的，这相当可怕，你应该知道。”</p>
+  <p>“指定居所监视居住”(简称“指居”)是一种特殊拘押制度，允许中国当局在不通知家属、不提供律师会见的情况下，将嫌疑人关押在特定地点长达六个月。在此期间，受害者被单独监禁、剥夺睡眠、长时间讯问，甚至遭受身体和心理折磨。</p>
+  <p>“保护卫士”的报告指出，在中国被拘留的女性往往比男性面临更多困难。她们可能遭遇女性健康问题，难以获得卫生用品和药物，面临性骚扰的风险，以及数月甚至数年无法见到孩子的精神折磨。</p>
+  <p>曾遭中国政府拘留的前英国记者兼私家侦探韩飞龙(Peter Humphrey)也经历过指居。他告诉美国之音：“中国的司法和监狱体系完全不透明，毫无公平可言。因此，在中国谈‘司法正义’是毫无意义的。”</p>
+  <p><strong>任意拘留成政治工具</strong></p>
+  <p>报告还指出，中国政府日益将“任意拘留”作为一种外交筹码，尤其针对西方国家的公民。近年来，类似的案件层出不穷，包括加拿大的“两个迈克尔”案(Michael Kovrig和 Michael Spavor)、英国人韩飞龙案，以及澳大利亚籍作家杨恒均(Yang Hengjun)案。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/0f590000-0aff-0242-1b70-08da49b6d314_w900.jpg" alt="澳大利亚中国商会前首席执行官尼克·科伊尔(Nick Coyle) (照片由本人提供)" border="0" />    <div>
+<small style="color: #999;">澳大利亚中国商会前首席执行官尼克·科伊尔(Nick Coyle) (照片由本人提供)</small>
+    </div>
+  </div>
+  <p>成蕾的伴侣科伊尔是在2020年8月的一天，发现成蕾突然失联，手机无法接通，社交媒体账号也没有任何更新。</p>
+  <p>“老实说，我一开始并不确定。我是第一个发现她失踪的人，我去找了大使馆的联系人告诉他们她失踪了。我很快意识到，她被拘留了，因为她的电脑不见了，还有其他迹象。”科伊尔对美国之音说。</p>
+  <p>在意识到成蕾可能被拘留后，科伊尔的第一反应是确认拘留她的机构。他表示，如果是中国公安机关(PSB)，可能还有一些官方途径可以采取行动，但当他发现是中国国家安全部(MSS)时，他知道事情更加复杂。</p>
+  <p>他告诉美国之音：“当我得知是(中国)国家安全部时，情况就完全不同了。从那一刻起，基本上没有人可以做什么。”</p>
+  <p>科伊尔认为，成蕾被拘留的根本原因并非法律问题，而是中澳关系紧张。“如果你看看其他类似的任意拘留案件，你会发现情况是类似的。当中国政府意识到，这件事给他们带来的麻烦已经超过了他们从中获得的任何好处时，他们就会解决这个问题。加拿大的‘两位迈克尔’就是典型的例子。”科伊尔说。</p>
+  <p>“保护卫士”研究主任加德纳也表示，中国政府的“人质外交”策略已经被多次验证。“一个很明显的例子就是华为案件——孟晚舟获释仅仅几个小时后，加拿大的‘两位迈克尔’就被释放了。”</p>
+  <p><strong>拖延审判</strong></p>
+  <p>报告还指出，在许多案例中，中国政府利用法律程序不断拖延审判，避免正式定罪，而是不断延长拘押时间，直到外交条件成熟，再“有条件”释放被拘押者。例如，成蕾案的审判被推迟了三年，最后以“已服刑”的方式释放她。</p>
+  <p>科伊尔回忆说，在成蕾被拘留的头几个月，他不断思考最有效的应对策略，希望找到一个能够促成她获释的方法。他很快意识到，这并不是一个可以通过法律手段解决的问题，而是一个纯粹的政治问题。</p>
+  <p>他告诉美国之音：“在成蕾被拘留后，我曾经对身边的朋友说，情况有两种可能：一种是她很快就会被释放，因为中国政府想要得到某些东西，而她只是暂时的筹码；另一种则是，我们可能要做好长期抗争的准备，这将是以年为单位的等待，而不是几个月。”</p>
+  <p>科伊尔认识到，唯一可能促成成蕾获释的方法，就是让澳大利亚政府将她的案件列为外交优先事项，并对中国政府施加足够的政治压力。</p>
+  <p>他说：“如果她真的做了什么错事，中国政府早就对她进行审判并宣判了。事实上，他们只是一次又一次地推迟审判，并在最后的判决中用‘已服刑’的方式释放她。这种模式与许多类似案件一致——越是拖延，就越显示出这完全是一个政治问题，而不是法律问题。”</p>
+  <p><strong>善用媒体报道，推动家人获释</strong></p>
+  <p>“保护卫士”报告中建议家属可以利用有关案件的报道，向本国政府施加公众压力，促使其更加积极地为家人发声和倡议。</p>
+  <p>科伊尔对此表示同意，他认为，当中国政府意识到继续扣押某名外国公民的代价大于收益时，他们就会想办法“找个台阶下”。</p>
+  <div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/01000000-0aff-0242-8fd7-08dc5a236779_w900.jpg" alt="资料照：中国总理李强与澳大利亚总理阿尔巴尼斯在上海举办的第六届中国国际进口博览会开幕式上握手。（2023年11月5日）" border="0" />    <div>
+<small style="color: #999;">资料照：中国总理李强与澳大利亚总理阿尔巴尼斯在上海举办的第六届中国国际进口博览会开幕式上握手。（2023年11月5日）</small>
+    </div>
+  </div>
+  <p>科伊尔透露，在成蕾被拘留期间，他曾多次向澳大利亚政府官员，包括当时的外交部长及其团队，强调如果成蕾在澳大利亚总理访华前仍未获释，那么这一问题将主导整个访问行程，并成为国际媒体关注的焦点。</p>
+  <p>科伊尔表示，澳大利亚政府并不希望总理访华时，每天都被媒体问及成蕾的案件。与此同时，澳大利亚公众普遍认为中方对成蕾的指控站不住脚，公众舆论已认定此案“完全不可接受”。</p>
+  <p>“当阿尔巴尼斯政府上台后，中澳关系开始解冻，中国政府也想改善与澳大利亚的关系。成蕾的案件成为一个可以用来改善外交关系的棋子。因此，在澳大利亚总理计划访华前不久，中国政府最终选择释放了她。”科伊尔告诉美国之音。</p>
+  <p><strong>任意拘留风险正在上升</strong></p>
+  <p>报告警告称，近年来，外国公民在中国被任意拘留的风险正在加剧。</p>
+  <p>报告指出，中国国家主席习近平自2012年掌权以来，中国不仅渐对外国人关上大门，还越发“明目张胆地以政治动机拘留外国人”，“向外国政府施压或进行惩罚”。这类抓捕被纳入中国日益强调的国家安全框架下，尤其2014年出台的《反间谍法》经2023年7月修订后，再加上2024年5月修订的《保守国家秘密法》，中国以间谍罪名拘留的外国人人数节节走升。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA-%E7%BE%8E%E4%B8%AD%E8%B0%81%E6%9B%B4%E5%BC%BA-%E5%A4%A7%E8%84%91-%E7%BE%8E%E5%9B%BD%E5%BC%BA-%E8%BA%AB%E4%BD%93-%E4%B8%AD%E5%9B%BD%E5%85%88">
+          人形机器人 美中谁更强？--“大脑”美国强，“身体”中国先
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%E5%AD%A6%E7%94%9F%E5%9C%A8%E5%8F%8D%E8%85%90%E9%9B%86%E4%BC%9A%E4%B8%8A%E5%90%91%E6%80%BB%E7%BB%9F%E6%AD%A6%E5%A5%91%E5%A5%87%E6%96%BD%E5%8E%8B-%E8%A6%81%E6%B1%82-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%9C%AA%E6%9D%A5">
+          塞尔维亚学生在反腐集会上向总统武契奇施压，要求“更好的未来”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95">
+          哈马斯:与以色列的第二阶段停火谈判没有取得进展
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/%E7%BE%8E%E4%B9%8C%E9%A6%96%E8%84%91%E4%BA%89%E5%90%B5%E5%8A%A0%E5%89%A7%E5%85%B1%E5%92%8C%E5%85%9A%E5%86%85%E9%83%A8%E5%88%86%E8%A3%82-%E6%8F%B4%E4%B9%8C%E8%AE%A1%E5%88%92%E8%83%BD%E5%90%A6%E7%BB%A7%E7%BB%AD%E4%BB%A4%E4%BA%BA%E6%80%80%E7%96%91">
+          美乌首脑争吵加剧共和党内部分裂，援乌计划能否继续令人怀疑
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95">
+            前一篇：哈马斯:与以色列的第二阶段停火谈判没有取得进展
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B">
+            后一篇：Kongfu Girls｜《娜拉在中国》：娜拉背后的性别政治权力
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%E5%AD%A6%E7%94%9F%E5%9C%A8%E5%8F%8D%E8%85%90%E9%9B%86%E4%BC%9A%E4%B8%8A%E5%90%91%E6%80%BB%E7%BB%9F%E6%AD%A6%E5%A5%91%E5%A5%87%E6%96%BD%E5%8E%8B-%E8%A6%81%E6%B1%82-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%9C%AA%E6%9D%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-03-01/%E5%A1%9E%E5%B0%94%E7%BB%B4%E4%BA%9A%E5%AD%A6%E7%94%9F%E5%9C%A8%E5%8F%8D%E8%85%90%E9%9B%86%E4%BC%9A%E4%B8%8A%E5%90%91%E6%80%BB%E7%BB%9F%E6%AD%A6%E5%A5%91%E5%A5%87%E6%96%BD%E5%8E%8B-%E8%A6%81%E6%B1%82-%E6%9B%B4%E5%A5%BD%E7%9A%84%E6%9C%AA%E6%9D%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-03-01/%E5%93%88%E9%A9%AC%E6%96%AF-%E4%B8%8E%E4%BB%A5%E8%89%B2%E5%88%97%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E5%81%9C%E7%81%AB%E8%B0%88%E5%88%A4%E6%B2%A1%E6%9C%89%E5%8F%96%E5%BE%97%E8%BF%9B%E5%B1%95">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
