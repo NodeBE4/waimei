@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+" />
+    <meta property="og:description" content="
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查" />
+    <meta property="twitter:title" content="比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4943)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbelgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226%2F7988596.html&t=%E6%AF%94%E5%88%A9%E6%97%B6%E6%9C%80%E9%AB%98%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84%E4%BC%A0%E9%81%AD%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E4%BE%B5%E5%85%A5%EF%BC%8C%E8%81%94%E9%82%A6%E6%A3%80%E5%AF%9F%E5%AE%98%E5%B1%95%E5%BC%80%E8%B0%83%E6%9F%A5" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbelgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226%2F7988596.html&t=%E6%AF%94%E5%88%A9%E6%97%B6%E6%9C%80%E9%AB%98%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84%E4%BC%A0%E9%81%AD%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E4%BE%B5%E5%85%A5%EF%BC%8C%E8%81%94%E9%82%A6%E6%A3%80%E5%AF%9F%E5%AE%98%E5%B1%95%E5%BC%80%E8%B0%83%E6%9F%A5&d=2025-02-26&e=
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+
+
+  
+Wed, 26 Feb 2025 14:44:30 GMT
+  
+  
+资料照：比利时警察在布鲁塞尔大广场执勤。
+  
+  比利时联邦检察官周三(2月26日)表示，已开始调查有关中国黑客2023年11月侵入比利时最高情报机构国家安全局（VSSE）的指控。此举证实了比利时晚报（Le Soir）稍早的一篇报道。路透社报道说，比利时联邦检察官补充说，已收到国家安全局就此案提出的指控。中国驻比利时大使馆没有立即回应置评请求。比利时晚报的报道称，两年来，据称与中国间谍机构有关的黑客利用了一家美国网络公司软件的一个漏洞，获得了该比利时情报机构10%的电子邮件。该报表示，虽然机密数据仍然安全，但比利时国家安全局近一半成员的个人信息可能已经泄露。联邦检察官没有立即确认调查的细节，并补充说，由于调查仍在进行中，现在分享结果还为时..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbelgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226%2F7988596.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html&text=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html&title=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html&title=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查&body=
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html&title=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查&caption=
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查&url=https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbelgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226%2F7988596.html&t=%E6%AF%94%E5%88%A9%E6%97%B6%E6%9C%80%E9%AB%98%E6%83%85%E6%8A%A5%E6%9C%BA%E6%9E%84%E4%BC%A0%E9%81%AD%E4%B8%AD%E5%9B%BD%E9%BB%91%E5%AE%A2%E4%BE%B5%E5%85%A5%EF%BC%8C%E8%81%94%E9%82%A6%E6%A3%80%E5%AF%9F%E5%AE%98%E5%B1%95%E5%BC%80%E8%B0%83%E6%9F%A5&d=2025-02-26&e=
+比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查
+——
+
+
+  
+Wed, 26 Feb 2025 14:44:30 GMT
+  
+  
+资料照：比利时警察在布鲁塞尔大广场执勤。
+  
+  比利时联邦检察官周三(2月26日)表示，已开始调查有关中国黑客2023年11月侵入比利时最高情报机构国家安全局（VSSE）的指控。此举证实了比利时晚报（Le Soir）稍早的一篇报道。路透社报道说，比利时联邦检察官补充说，已收到国家安全局就此案提出的指控。中国驻比利时大使馆没有立即回应置评请求。比利时晚报的报道称，两年来，据称与中国间谍机构有关的黑客利用了一家美国网络公司软件的一个漏洞，获得了该比利时情报机构10%的电子邮件。该报表示，虽然机密数据仍然安全，但比利时国家安全局近一半成员的个人信息可能已经泄露。联邦检察官没有立即确认调查的细节，并补充说，由于调查仍在进行中，现在分享结果还为时..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fbelgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226%2F7988596.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740581942000-->
+<p><a href="https://www.voachinese.com/a/belgian-prosecutor-probes-alleged-chinese-hacking-of-intelligence-service-20250226/7988596.html">比利时最高情报机构传遭中国黑客侵入，联邦检察官展开调查</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 26 Feb 2025 14:44:30 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/FAADB14E-2F43-421C-8817-39B6CC6DB421_cx0_cy5_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">资料照：比利时警察在布鲁塞尔大广场执勤。</small>
+  </div>
+  <p>比利时联邦检察官周三(2月26日)表示，已开始调查有关中国黑客2023年11月侵入比利时最高情报机构国家安全局（VSSE）的指控。此举证实了比利时晚报（Le Soir）稍早的一篇报道。<br /><br />路透社报道说，比利时联邦检察官补充说，已收到国家安全局就此案提出的指控。<br /><br />中国驻比利时大使馆没有立即回应置评请求。<br /><br />比利时晚报的报道称，两年来，据称与中国间谍机构有关的黑客利用了一家美国网络公司软件的一个漏洞，获得了该比利时情报机构10%的电子邮件。该报表示，虽然机密数据仍然安全，但比利时国家安全局近一半成员的个人信息可能已经泄露。<br /><br />联邦检察官没有立即确认调查的细节，并补充说，由于调查仍在进行中，现在分享结果还为时过早。<br /><br />比利时国家安全局谢绝发表评论，并提到联邦检察官的声明。<br /><br />另据MSN网报道，比利时晚报星期三透露，2023年6月，为中国服务的黑客通过外部电子邮件防火墙中的漏洞，获得了比利时国家安全局10%的电子邮件。这个电子邮件防火墙软件在名为Barracuda的美国软件上运行。该软件防止该情报机构的成员传达机密信息。因此，该情报机构的内部机密通信服务器未受此次黑客攻击的影响。尽管如此，黑客还是能够获得了大量敏感信息。<br /><br />报道说，事实上，许多被截获的电子邮件都与涉及人力资源的通信有关。因此，特工人员、员工，甚至在一次招聘活动中的候选人都在此期间向他们的人事管理档案传输过私人信息。这正是令人担忧的地方。在黑客攻击期间发送驾照和身份证数据的国家安全局成员被要求更换他们的证件。从那以后，国家安全局已经采取了措施，包括试图追踪暗网上的被盗数据。</p>
+<a href="/a/6666984.html"></a>  <p>报道表示，自2023年11月以来，比利时一直在进行司法调查。这些黑客是众所周知被称为中国团伙“UNC4841”。自2021年以来，他们已在包括美国在内的80多个国家利用Barracuda软件的漏洞。这些“非常确定”地为北京间谍机构工作的黑客，主要以政府机构为目标。这些攻击似乎是中国监侦、控制和干预战略的一部分，尤其是在欧洲。<br /><br />近年来，比利时遭受了几起与中国有关联的黑客攻击。<br /><br />比利时联邦议会外交事务委员会主席埃尔斯·范霍夫去年4月对公共广播公司VRT表示，中国间谍早在2021年就入侵了她的笔记本电脑。路透社说，此案是涉及中国在欧洲从事间谍活动的又一起事件。<br /><br />范霍夫表示，是在上个月通过联邦情报机构的报告发现这起网络攻击的，也就是事件发生三年后。她说，英国议会间联盟（IPAC）的400名成员成为网络攻击的目标。IPAC是一个英国组织，与批评中国的国际政客网络有联系，她也是该网络的成员。<br /><br />另外，2021年12月，对比利时国防部的一次网络攻击将其与网络连接的信息科技系统瘫痪了几天，尽管比利时安全部门坚持说敏感数据没有被盗取。<br /><br />比利时当局不清楚是谁策划了这次攻击，攻击凸显以Java为基础的Apache Log4j日志记录工具的一个安全漏洞，一个据称受到中国国家支持的骇客组织能够遥控引入间谍软件。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E4%B8%AD%E5%9B%BD%E6%88%BF%E7%A7%9F%E4%B8%8E%E6%88%BF%E4%BB%B7-%E5%8F%8C%E8%B7%8C-%E9%9C%80%E6%B1%82%E7%96%B2%E8%BD%AF-%E9%A2%84%E6%9C%9F%E6%82%B2%E8%A7%82-%E7%9F%AD%E6%9C%9F%E5%86%85%E9%9A%BE%E4%BB%A5%E6%89%AD%E8%BD%AC">
+          中国房租与房价“双跌” 需求疲软、预期悲观，短期内难以扭转
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D">
+          黄浦江封：谁是自己人？中国企业家的政治迷思
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5">
+          北京抨击台湾对美“予取予求”，要将台积电变成“美积电”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E4%B8%BA%E5%BA%94%E5%AF%B9%E5%8F%AF%E8%83%BD%E7%9A%84%E5%8F%B0%E6%B5%B7%E5%8D%B1%E6%9C%BA-%E6%97%A5%E6%9C%AC%E8%A5%BF%E5%8D%97%E8%BE%B9%E5%A2%83%E7%9A%84%E4%B8%8E%E9%82%A3%E5%9B%BD%E5%B2%9B%E6%AD%A3%E8%BF%85%E9%80%9F%E5%86%9B%E4%BA%8B%E5%8C%96">
+          为应对可能的台海危机 日本西南边境的与那国岛正迅速军事化
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5">
+            前一篇：北京抨击台湾对美“予取予求”，要将台积电变成“美积电”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D">
+            后一篇：黄浦江封：谁是自己人？中国企业家的政治迷思
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-26/%E9%BB%84%E6%B5%A6%E6%B1%9F%E5%B0%81-%E8%B0%81%E6%98%AF%E8%87%AA%E5%B7%B1%E4%BA%BA-%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E5%AE%B6%E7%9A%84%E6%94%BF%E6%B2%BB%E8%BF%B7%E6%80%9D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-26/%E5%8C%97%E4%BA%AC%E6%8A%A8%E5%87%BB%E5%8F%B0%E6%B9%BE%E5%AF%B9%E7%BE%8E-%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82-%E8%A6%81%E5%B0%86%E5%8F%B0%E7%A7%AF%E7%94%B5%E5%8F%98%E6%88%90-%E7%BE%8E%E7%A7%AF%E7%94%B5">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

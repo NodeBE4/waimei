@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>工劳小报｜百亿票房背后的超负荷劳动 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+工劳小报｜百亿票房背后的超负荷劳动
+——
+" />
+    <meta property="og:description" content="
+工劳小报｜百亿票房背后的超负荷劳动
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="工劳小报｜百亿票房背后的超负荷劳动" />
+    <meta property="twitter:title" content="工劳小报｜百亿票房背后的超负荷劳动" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4943)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716217.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E7%99%BE%E4%BA%BF%E7%A5%A8%E6%88%BF%E8%83%8C%E5%90%8E%E7%9A%84%E8%B6%85%E8%B4%9F%E8%8D%B7%E5%8A%B3%E5%8A%A8" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716217.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E7%99%BE%E4%BA%BF%E7%A5%A8%E6%88%BF%E8%83%8C%E5%90%8E%E7%9A%84%E8%B6%85%E8%B4%9F%E8%8D%B7%E5%8A%B3%E5%8A%A8&d=2025-03-01&e=
+工劳小报｜百亿票房背后的超负荷劳动
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：百亿票房背后的超负荷劳动作者：可丽饼、鸡腿堡、汤圆、西兰花发表日期：2025.2.21来源：工劳小报主题归类：劳工权益CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  01 本期重点 百亿票房背后的超负荷劳动
+  春节档动画电影《哪吒之魔童闹海》（下称《哪吒》）百亿票房的成功，再次证明动画已成为一种具有巨大经济效益的文化产品。然而，与一般工业产品不同，生产这类产品的劳动者的处境更鲜为人知。
+  动画是如何被制造的？ 以《哪吒》为例，全片有2400多个镜头，其中特效镜头超过1900个，动画师用“磨人”来形容动画的制作过程，“一个镜头开始做半个月甚至一个月都很..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716217.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/716217.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/716217.html&text=工劳小报｜百亿票房背后的超负荷劳动&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/716217.html&title=工劳小报｜百亿票房背后的超负荷劳动" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/716217.html&title=工劳小报｜百亿票房背后的超负荷劳动" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=工劳小报｜百亿票房背后的超负荷劳动&body=
+工劳小报｜百亿票房背后的超负荷劳动
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/716217.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/716217.html&title=工劳小报｜百亿票房背后的超负荷劳动&caption=
+工劳小报｜百亿票房背后的超负荷劳动
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=工劳小报｜百亿票房背后的超负荷劳动&url=https://chinadigitaltimes.net/chinese/716217.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>工劳小报｜百亿票房背后的超负荷劳动</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-03-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/716217.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716217.html&t=%E5%B7%A5%E5%8A%B3%E5%B0%8F%E6%8A%A5%EF%BD%9C%E7%99%BE%E4%BA%BF%E7%A5%A8%E6%88%BF%E8%83%8C%E5%90%8E%E7%9A%84%E8%B6%85%E8%B4%9F%E8%8D%B7%E5%8A%B3%E5%8A%A8&d=2025-03-01&e=
+工劳小报｜百亿票房背后的超负荷劳动
+——
+
+
+  
+    
+      
+CDT 档案卡
+      
+      
+标题：百亿票房背后的超负荷劳动作者：可丽饼、鸡腿堡、汤圆、西兰花发表日期：2025.2.21来源：工劳小报主题归类：劳工权益CDS收藏：公民馆版权说明：该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。详细版权说明。
+      
+    
+  
+  01 本期重点 百亿票房背后的超负荷劳动
+  春节档动画电影《哪吒之魔童闹海》（下称《哪吒》）百亿票房的成功，再次证明动画已成为一种具有巨大经济效益的文化产品。然而，与一般工业产品不同，生产这类产品的劳动者的处境更鲜为人知。
+  动画是如何被制造的？ 以《哪吒》为例，全片有2400多个镜头，其中特效镜头超过1900个，动画师用“磨人”来形容动画的制作过程，“一个镜头开始做半个月甚至一个月都很..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F716217.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740877216000-->
+<p><a href="https://chinadigitaltimes.net/chinese/716217.html">工劳小报｜百亿票房背后的超负荷劳动</a>
+——</p>
+
+<div>
+<a href="https://chinadigitaltimes.net/chinese/716217.html" title="工劳小报｜百亿票房背后的超负荷劳动" rel="nofollow"><img width="564" height="300" src="https://chinadigitaltimes.net/chinese/files/2025/02/哪吒2-564x300.jpeg" class="webfeedsFeaturedVisual wp-post-image" alt="" style="display: block; margin: auto; margin-bottom: 32px;max-width: 100%;" link_thumbnail="1" decoding="async" /></a>  <div style="width:42%;float:right;padding-left:20px">
+    <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron-circle" data-scroll-offset="0" data-anchor-in-url="no">
+      <div class="su-spoiler-title" tabindex="0" role="button">
+<span class="su-spoiler-icon"></span>CDT 档案卡
+      </div>
+      <div class="su-spoiler-content su-u-clearfix su-u-trim">
+<strong>标题：</strong>百亿票房背后的超负荷劳动<br /><strong>作者：</strong><a href="https://chinadigitaltimes.net/space/工劳小报" target="_blank">可丽饼、鸡腿堡、汤圆、西兰花</a><br /><strong>发表日期：</strong>2025.2.21<br /><strong>来源：</strong><a href="https://news.laborinfocn2.com/issue56-news/" target="_blank">工劳小报</a><br /><strong>主题归类：</strong><a href="https://chinadigitaltimes.net/space/劳工权益" target="_blank">劳工权益</a><br /><strong>CDS收藏：</strong><a href="https://chinadigitaltimes.net/space/%E5%85%AC%E6%B0%91%E9%A6%86" target="_blank" rel="noopener">公民馆</a><br /><strong>版权说明：</strong>该作品版权归原作者所有。中国数字时代仅对原作进行存档，以对抗中国的网络审查。<a href="https://chinadigitaltimes.net/chinese/copyright">详细版权说明</a>。
+      </div>
+    </div>
+  </div>
+  <h2 id="section">01 本期重点 百亿票房背后的超负荷劳动</h2>
+  <p>春节档动画电影《哪吒之魔童闹海》（下称《哪吒》）百亿票房的成功，再次证明动画已成为一种具有巨大经济效益的文化产品。然而，与一般工业产品不同，生产这类产品的劳动者的处境更鲜为人知。</p>
+  <p>动画是如何被制造的？ 以《哪吒》为例，全片有2400多个镜头，其中特效镜头超过1900个，动画师用“<a href="https://news.qq.com/rain/a/20250207A0435S00?media_id=\&amp;suid=">磨人</a>”来形容动画的制作过程，“一个镜头开始做半个月甚至一个月都很正常。很多东西做出来才发现不一定好，需要继续改。”《哪吒》导演本人<a href="https://c.m.163.com/news/a/JNSEN3M50519B623.html?from=wap_redirect\&amp;spss=adap_pc\&amp;referFrom=">直言</a>，制作过程中“加班到四五点钟”是常态，笑称“不至于连续通宵”。《哪吒》参与制作公司也<a href="https://news.qq.com/rain/a/20250212A04FBW00">透露</a>，“大年三十都在加班”。轻松又略带自豪的玩笑话背后，是无限压缩工期、高强度工作、常态化加班的行业现实。长期高强度工作使动画人普遍面临着颈椎病、腰肌劳损、腱鞘炎、干眼症等职业损害和<a href="https://www.jiemian.com/article/9076565.html">工伤</a>的困扰，但不相匹配的是低廉的薪酬，有从业者在网上晒出<a href="https://m.huxiu.com/article/3491716.html">工资</a>，月入两千块并非罕见。百亿票房的分红、影片成功的光环更是与ta们毫无关系。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c3930f0bdf6." alt="img" /></p>
+<span style="font-size: 0.8em;color: #666;display: block;text-align: center;margin-bottom:32px; margin-top: -20px;line-height:22px;">《哪吒》分镜镜头，“一个分镜至少要改7遍，改10多遍都正常”</span>  <p>相比同样零工化的平台服务业劳动者，如骑手、网约车司机，在国内很少听闻有文化产业的劳动者爆发群体抗议。这与其用工关系的高度分散有关，动画公司普遍采取多级外包模式，个体动画师以“自由接单”或“工作室”等形式存在。因而，动画师不仅被分散在不同制作环节，且多以短期项目的形式与上游公司“合作”。从大洋彼岸的<a href="https://hypebeast.cn/2023/6/over-100-artists-quit-spider-man-across-the-spider-verse-working-conditions-info">迪士尼</a>，到一衣带水的日本诸多知名动画公司，如<a href="https://www.4gamers.com.tw/news/detail/48866/mappa-replies-animators-paid-controversy">MAPPA</a>，无不推行着相似的外包模式。</p>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c3930f254cc.png" alt="img" /></p>
+  <p>此外，文化产业的“热爱”叙事也同样发挥着不可忽视的作用。动画制作被浪漫化为“艺术创作”，很多从业者怀抱理想，尽管薪资微薄、健康受损。“热爱”的情感成为资方合理化日常剥削的手段。在一些网络采访中，常能见到类似的<a href="https://clb.org.hk/zh-hans/content/%E6%B8%B8%E6%88%8F%E3%80%81%E5%8A%A8%E7%94%BB%E4%B8%9A%E5%B7%A5%E4%BA%BA%EF%BC%9A%E5%81%9A%E4%BA%86%E5%A5%BD%E4%BD%9C%E5%93%81%EF%BC%8C%E4%BD%86%E8%BA%AB%E4%BD%93%E5%92%8C%E7%94%9F%E6%B4%BB%E4%B8%8D%E5%86%8D%E5%90%83%E5%BE%97%E6%B6%88">说辞</a>：“大部分人还是抱着单纯的热爱，即便工资不是很高，加班吃了很多苦，作品上映时还是会与有荣焉的”。在“艺术创作”的包装下， 片尾字幕中一闪而过的劳动者们被默认“同意”了这种剥削。</p>
+  <p>在天才论仍盛行的今天，鲜花和掌声总是献给导演、编剧、制作人等少数人，而真正支撑起文化工业的无数动画人，却只在片尾字幕中短暂地、象征性被看见。片尾字幕滚动的速度，仿佛诉说着资本是如何加速将劳动者的付出从公众视野中抹去。当文化产业以牺牲劳动者为代价创造商业奇迹，我们需要追问，是谁正在为票房奇迹买单？ 多重外包下被浪漫化的“热爱”，不过是掩盖行业剥削、否定劳动价值的温情面纱。</p>
+  <h2 id="section-1">02 工人动态</h2>
+  <h3 id="section-2">—— 工厂工地——</h3>
+  <h3 id="section-3">埃及“一带一路”中资项目欠薪，工人罢工封锁工地大门</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c3930feab13.png" alt="img" /></p>
+  <p>1月25日，因埃及新首都中央商务区（CBD）项目长期欠薪，数十名工人集体罢工并封锁了工厂大门。该项目由中国建筑集团与埃及住房部于2016年签署，是中资企业在埃及承接的最大工程。然而，早在2024年8月，已有多名工人发帖称该项目临近尾声，但工人工资却迟迟未能到位。今年2月7日，有工人因讨薪遭保安殴打。该项目工人漫长且艰难的维权，是中资“一带一路“项目中工人权益受侵害的缩影。<a href="https://x.com/YesterdayBigcat/status/1883336822971089247">来源1</a>，<a href="https://x.com/whyyoutouzhele/status/1755575251566514317/photo/3">来源2</a></p>
+  <h3 id="section-4">河南三门峡9名墙绘师遭景区欠薪，投诉后反被威胁“撤诉否则重罚”</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c393100fa7b." alt="img" /></p>
+  <p>1月末，河南三门峡市大禹公园景区被曝拖欠9名墙绘师共计8万元工资，自2024年4月完工至今未付。墙绘师郭先生表示，经包工头介绍，他和8名工友为该景区大熊猫苑项目绘制墙绘，工期近一个月。工程结束后，工钱却迟迟未能结清。为讨薪，他们于11月向劳动监察部门投诉。景区项目负责人竟要求撤诉，否则“一条投诉件扣除 10万”。 被迫撤诉后，郭先生收到一份盖有国有企业三门峡润塬实业有限公司公章的《付款承诺书》，《承诺书》显示该项目有220万元工资仍未支付，称将于2024年12底前拨付200万元工程款到农民工专用账户。然而，承诺再次落空。 新年伊始，工人们的血汗钱仍无着落。<a href="https://www.sohu.com/a/853120418_120388781">来源</a></p>
+  <h3 id="section-5">广西柳州融创江南林语建筑工人被要求“依法讨薪”</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39310d51ac.png" alt="img" /></p>
+  <p>1月底，广西柳州融创江南林语的建筑工人聚集讨薪，工人急于拿到工资回家过年，但劳动保障监察队工作人员却要求他们“依法讨薪”，建议工人到劳动保障监察中队投诉处理。工人们深知投诉程序繁琐、效率低下，且很可能最终还是拿不到工资，因此决定采取自己的方式讨薪。尽管他们也知道这一方式可能面临牢狱之灾，但在他们看来，这是最有效的讨薪方法。<a href="https://x.com/YesterdayBigcat/status/1882667434907439263">来源</a></p>
+  <h3 id="section-6">东洋轮胎江苏工厂数百工人集体罢工，抗议公司规避赔偿</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39311a4118.png" alt="img" /></p>
+  <p>2月17日，日本东洋轮胎江苏张家港工厂数百名工人罢工，抗议公司通过股权转让规避赔偿责任。2月14日，东洋轮胎宣布将张家港分公司86%股权出售给辽宁恒达盛投资有限公司，但未提出任何员工赔偿方案。工人们担忧，新控股方可能在未来劳资纠纷或工厂关闭时推卸经济责任，影响自身权益，要求东洋轮胎在交易完成前提供合理赔偿方案。<a href="https://x.com/YesterdayBigcat/status/1891326241200091271">来源</a></p>
+  <h3 id="section-7">—— 服务业 ——</h3>
+  <h3 id="manner">MANNER咖啡师集体讨薪，质疑公司随意克扣年终奖</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39311c1b4d.png" alt="img" /></p>
+  <p>2月中，连锁咖啡品牌MANNER咖啡克扣员工年终奖，引发上海、南京等地咖啡师在社交媒体集体“讨薪”。多名咖啡师表示，公司招聘时写明13薪年终奖，实际发放却设置重重障碍。有员工质疑，公司频繁通过监控抓员工违规，警告单数量成为克扣年终奖的手段，但评判标准极不透明， “大区经理也无法给出合理理由”。此前，MANNER咖啡已多次因员工情绪失控与顾客产生冲突等事件引发争议，员工普遍认为，薪资与日益增加的工作量和管理压力不匹配。<a href="https://m.guancha.cn/economy/2025_02_12_764879.shtml">来源</a></p>
+  <h3 id="section-8">网约车司机因车厢异味被长期封禁，“以罚代管”仍未消</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39311db67b." alt="img" /></p>
+  <p>2月初，多名网约车驾驶员在网络平台发帖称，因乘客投诉“车厢异味”或“服务态度差”遭遇平台严厉的账号封禁，部分封禁期限竟长达75年。在网约车市场趋于饱和、驾驶员数量充裕的背景下，平台片面追求乘客满意度，“以罚代管”，肆意损害驾驶员权益。部分驾驶员表示平台仅惩处驾驶员，却无意稳定运营价格，完全无视驾驶员生计。这种过于严苛且缺乏合理性的惩罚机制，引发了驾驶员群体的普遍不满，平台与驾驶员的矛盾或将进一步加剧。<a href="https://mp.weixin.qq.com/s/U_2CyOdgnJPV9cHrvA2Kuw">来源</a></p>
+  <h3 id="section-9">武汉百佳医院拖欠数百名员工工资数千万元，引员工抗议</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c393129053b.png" alt="img" /></p>
+  <p>1月16日，武汉百佳妇产医院突然宣布倒闭，引发了持续多日的讨薪行动。该医院拖欠了医护人员、月嫂、保洁等数百名员工工资，总额高达数千万元。1月20日，部分员工登上天台抗议，持续至深夜。一名月嫂因情绪激动而昏倒在天台。为讨薪，超声科员工暂时“保管”医院的部分设备，待工资结清后归还。一些员工认为，医院倒闭与老板转移资产、资金链断裂有关。受欠薪影响，部分员工陷入了严重的经济困境，尤其是月嫂和保洁人员。<a href="https://x.com/YesterdayBigcat/status/1881583227158295024">来源</a></p>
+  <h3 id="section-10">—— 白领——</h3>
+  <h3 id="section-11">武汉一企业要求员工提交心得体会，字数不符最高罚款6990元</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39312a86d6.png" alt="img" /></p>
+  <p>2月11日，有网友发文称武汉天源集团的员工因心得体会字数不符，被公司通报罚款。据公司文件，员工需围绕董事长的年终讲话撰写心得体会，字数800-1000，需感悟通透、文字精炼。心得超出或不足字数者均按5元/字的标准处罚。通报显示，共有381名员工需缴纳罚款，罚款最高者需缴纳6990元。然而，用人单位并不具备罚款权。如此荒谬的企业管理措施显然是对员工权益及相关法律法规的漠视和践踏。<a href="https://www.sohu.com/a/859105873_257321">来源</a></p>
+  <h2 id="section-12">03 深度与评论</h2>
+  <h3 id="i-">I. 工事有料｜在闪崩之后：极越维权经验的总结</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39312c0aa1." alt="img" /></p>
+  <p>作为经济危机下少数异军突起的行业，新能源汽车产业近两年却频现企业倒闭、暴雷、集体维权等事件，引发人们对行业繁荣背后投融资结构、供应链及劳动者权益的讨论和担忧。极越的突然关闭，是这一行业多事之秋的最新发展。除行业背景，极越员工在维权行动中展现的<strong>勇气、策略与可能性</strong>也值得关注。文章指出，极越员工维权的正当性源于公司管理层对经营决策的隐瞒、产业发展弊病与高管阴谋，劳动者成为无序竞争的牺牲品，维权成为必然选择。文章亦梳理了员工在谈判的不同阶段与资方和政府斡旋，运用社交媒体、关系网络和专业知识，以法律和舆情为阵地凝聚团结的策略。文章最后反思了本次维权中的经济主义等问题，指出不断积累抗争经验、提高组织化程度的必要性。<a href="https://www.laborfact.com/jiyue-action/">阅读原文</a></p>
+  <h3 id="ii-deeplab">II. 刻度DeepLab｜车企暴雷后，被遗忘的供应商</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39312da09c." alt="img" /></p>
+  <p>以极越为代表的新能源汽车企业的暴雷和破产，影响的不仅仅是公司本身的员工，整个汽车供应链上的供应商、供应商的员工们也承受着巨大的风险。如果大的供应商还具备一些坏账的承受能力，对小供应商来说，这往往是致命的。然而，更大的风险承担者往往是员工，一些供应商公司采取压员工2个月工资的方式转移资金压力，另一些公司则让销售业务员背锅，一旦出问题把责任全部推到业务员身上。<a href="https://mp.weixin.qq.com/s/YbZbMdro8fDQ6xE-yiEDFw">阅读原文</a></p>
+  <h3 id="iii-">III. 水瓶纪元｜拼图无锡职校凶犯：学生工，多头借贷者，“宅左”与“浪人”</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39312f2f5d." alt="img" /></p>
+  <p>职校生徐加金行刺案揭示了“小镇做题家”之外，另一类小镇青年的困境。与仍有机会通过努力和运气实现阶层跃升的“做题家”不同，徐加金们出身工人阶级家庭，成长过程中经历了教育、医疗、住房私有化的加剧，被甩出阶层流动的通道，职业学校成为他们的归宿。然而，不断膨胀的职业教育系统却成了困住他们的牢笼。相比法律判决中或媒体报道中的单一、妖魔化、加罪化的论述，这篇文章触及徐加金的工作学习生活的不同方面，为我们塑造了当代小镇青年的另一个群像。<a href="https://substack.com/inbox/post/156227732?r=37qvpn\&amp;triedRedirect=true">阅读原文</a></p>
+  <h3 id="iv-">IV. 工事有料｜钢铁业的寒冬：日照钢铁的慢性裁员</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39313174dd." alt="img" /></p>
+  <p>本文详细梳理了日照钢铁慢性裁员的细节，尤其值得注意的是赔偿从2n+1减少到了n*0.8和n*0.75，过程中员工几乎没有话语权，尽管人社局曾对日钢违规裁员进行调查，但显然没有起到任何作用。日钢的状况，在民营钢铁公司中并非个例，自2015年钢铁产能置换启动至今，粗钢产量不降反增。近几年，房地产行业下行引发钢价和原料价格下跌、钢厂亏损，在这股连锁反应中，民营企业首当其冲。在漫长的产能控制期，它变成地方政府的“眼中刺”，由于它的存在，当地钢铁产能受到限制，国营钢铁公司要建新项目也无法获得批准。中央政府、地方政府的需求存在矛盾，国营企业和民营企业之间也存在竞争冲突。不幸的是，这些竞争冲突的后果往往是由基层工人来承担。<a href="https://www.laborfact.com/gantiehandong/">阅读原文</a></p>
+  <h3 id="v-985">V. 镜相工作室｜985硕士进厂做数据标注，自嘲像个「包工头」</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c3931331915." alt="img" /></p>
+  <p>Deepseek的发布引发了赞扬创始人理想主义、自豪中国人AI与创新的风潮，却遮蔽了风光背后无数劳动者的贡献。这篇报道聚焦AI 技术进步的背后，数据标注行业劳动者及其劳动状况的变化。一方面，当大模型公司的竞争重心逐渐转向应用端，市场对专家型数据标注工的需求日益增加；另一方面，对如阿娟一样的普通数据标注工的需求则在减少。但无论是前者还是后者，当AI变得越来越“聪明”，ta们同样面临着失去工作的风险。<a href="https://mp.weixin.qq.com/s/LuEz2HJUC-BNSVJse2eJjQ">阅读原文</a></p>
+  <h3 id="vi">VI.工事有料｜在烟与光中熔掉的寿命：劳保用品、职业病与焊工</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c393134ae1a." alt="img" /></p>
+  <p>焊接产品无处不在，但焊工面临的工伤与职业病风险却甚少进入公众视野。主流媒体常将问题归因于焊工防护意识不足，忽略了焊工职业病实为资本主义生产方式的必然症候。由于焊接需求零散，许多焊工流向小型工厂、成为外包或零工，这意味着合格电焊面罩和防护口罩的配备更难落实：厂方或给工人配备劣质、一次性的面罩（如N95口罩）；或推卸责任，让工人自行购买。这使得焊工长期暴露在高温、高辐射、金属烟尘与有毒气体的环境中，罹患电光性眼炎、金属烟热、尘肺病等职业病，不管是即时性工伤，还是慢性职业病，都对工人的身体机能造成了不可逆转的伤害。<a href="https://www.laborfact.com/hangonglaobao/">阅读原文</a></p>
+  <h3 id="vii-2024">VII. 中国劳工通讯｜2024年中国劳工通讯工人行动地图分析</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c3931362716.png" alt="img" /></p>
+  <p>本文根据中国劳工通讯的工人集体行动地图总结了2024年中国工人行动的状况和趋势。虽然目前主流媒体聚焦新业态就业人员，但就集体行动来看，建筑业仍是抗争活动最多的领域（733起，占48.6%），数量居次的制造业案例（452起，占30%）较2023年（434起）有所增加。其后依次为服务业（148起，占9.81%）、交通运输与物流业（64起，占4.24%）、重工业（21起，占1.39%）、教育行业（15起，占0.99%）和采矿业（12起，占0.80%）。报告主要从工会的视角，分析和探讨工人不得不走上街头、被迫上访乃至形成冲突的原因。<a href="https://clb.org.hk/zh-hans/content/%E4%BC%81%E4%B8%9A%E5%86%B3%E7%AD%96%E6%BC%A0%E8%A7%86%E5%B7%A5%E4%BA%BA%E6%9D%83%E7%9B%8A%EF%BC%8C%E5%B7%A5%E4%BC%9A%E5%BD%A2%E5%BC%8F%E4%B8%BB%E4%B9%89%E8%87%B4%E5%B7%A5%E4%BA%BA%E6%8A%97%E4%BA%89%E9%A2%91%E7%8E%B0-%E2%80%94%E2%80%942024%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%8A%B3%E5%B7%A5%E9%80%9A%E8%AE%AF%E5%B7%A5%E4%BA%BA%E8%A1%8C%E5%8A%A8%E5%9C%B0%E5%9B%BE%E5%88%86%E6%9E%90">阅读原文</a></p>
+  <h3 id="viii-">VIII. 劳动趋势｜中华全国总工会：挂羊头卖狗肉与政府的工会外交</h3>
+  <p><img decoding="async" src="https://chinadigitaltimes.net/chinese/files/2025/03/post-716217-67c39313e1fe2." alt="img" /></p>
+  <p>作者Frank Hoffer准确地描述了中华全国总工会以“工会”之名行镇压工人自主活动之实、以及国际层面上工会对话的两难境况，并批评国际工联的方针为接纳包括全总在内的由非民主政府支持的工会，这并未实际帮助这些国家的工人。遗憾的是，作者最终又落于“霸权东方vs资本主义西方”的二元对立的叙事窠臼，把焦点放在批评权力膨胀的工会机构，而没有进一步分析这种情况给工人和工人运动造成的具体影响，并未探讨工会组织在除了议会民主自由资本主义体制以外的其他可能性，更未涉及工人运动与工会在更广泛的社会变革中有可能充当的角色。<a href="https://www.laodongqushi.com/acftu/">翻译</a>；<a href="https://global-labour-university.org/wp-content/uploads/2024/06/WP-60_Labour-Perspectives-on-China.pdf">原文</a></p>
+  <h2 id="section-13">04 调查与报告</h2>
+  <ol>
+    <li>智联招聘：《<a href="https://view.inews.qq.com/k/20250213A08S5700?web_channel=wap\&amp;openApp=false">2024中国新型灵活就业报告</a>》</li>
+    <li>地铁的真相：《<a href="https://mp.weixin.qq.com/s/ioN9DJWLFwoFk_AWBX235Q">2024年地铁从业者国庆收入</a>》</li>
+    <li>智联招聘：《<a href="https://m.sohu.com/a/851721763_121627717/?pvid=000115_3w_a">2024年职场人满意度指数调研报告</a>》</li>
+    <li>前程无忧：《<a href="https://m.sohu.com/a/851926447_118622/?pvid=000115_3w_a">2025离职与调薪报告</a>》</li>
+  </ol>
+  <hr />
+  <p>本期小报周期（2025/1/17 – 2024/2/18）<br />撰稿：可丽饼、鸡腿堡、汤圆、西兰花</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2025-03-02</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-02/%E5%BB%BA%E8%AE%BE%E6%80%A7%E6%84%8F%E8%A7%81-%E6%81%B0%E6%81%B0%E7%9B%B8%E5%8F%8D-%E4%BD%9C%E4%B8%BA%E5%BC%B1%E5%9B%BD%E7%9A%84%E4%B9%8C%E5%85%8B%E5%85%B0%E6%9C%80%E5%BC%BA%E7%9A%84%E5%B0%B1%E6%98%AF%E5%A4%96%E4%BA%A4">
+          建设性意见｜恰恰相反，作为弱国的乌克兰最强的就是外交
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/CDT%E5%85%B3%E6%B3%A8-%E7%AB%AF%E4%BC%A0%E5%AA%92-%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%92%8C%E7%8E%B0%E5%AE%9E%E4%B9%8B%E9%97%B4-%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E8%8D%AF%E5%A8%98">
+          【CDT关注】端传媒｜在网络和现实之间，成为一个中国药娘
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B">
+          Kongfu Girls｜《娜拉在中国》：娜拉背后的性别政治权力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-03-01</time>
+        <a href="https://nodebe4.github.io/waimei/2025-03-01/%E7%9C%9F%E5%AE%9E%E6%95%85%E4%BA%8B%E8%AE%A1%E5%88%92-%E7%BC%B4%E7%A4%BE%E4%BF%9D%E5%BE%88%E5%A5%BD-%E4%BD%86%E6%9C%89130%E4%B8%87%E8%BE%B9%E7%BC%98%E9%AA%91%E6%89%8B%E8%A2%AB%E6%8A%9B%E4%B8%8B%E4%BA%86">
+          真实故事计划｜缴社保很好，但有130万边缘骑手被抛下了
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-03-01/%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%AF%E6%8C%81%E7%BE%8E%E5%9B%BD%E5%9C%A8%E5%8A%A0%E6%B2%99%E6%9A%82%E6%97%B6%E5%81%9C%E7%81%AB%E7%9A%84%E8%AE%A1%E5%88%92-%E4%BD%86%E5%8D%B4%E8%A2%AB%E5%93%88%E9%A9%AC%E6%96%AF%E6%8B%92%E7%BB%9D">
+            前一篇：以色列支持美国在加沙暂时停火的计划 但却被哈马斯拒绝
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-03-01/VOA%E7%8B%AC%E5%AE%B6-%E4%B8%80%E4%BD%8D%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6%E4%BE%9B%E5%BA%94%E5%95%86%E8%A2%AB-%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E-%E5%92%8C%E9%80%83%E4%BA%A1%E6%B5%B7%E5%A4%96%E7%9A%84%E7%BB%8F%E5%8E%86">
+            后一篇：VOA独家：一位翻墙软件供应商被“远洋捕捞”和逃亡海外的经历
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%AF%E6%8C%81%E7%BE%8E%E5%9B%BD%E5%9C%A8%E5%8A%A0%E6%B2%99%E6%9A%82%E6%97%B6%E5%81%9C%E7%81%AB%E7%9A%84%E8%AE%A1%E5%88%92-%E4%BD%86%E5%8D%B4%E8%A2%AB%E5%93%88%E9%A9%AC%E6%96%AF%E6%8B%92%E7%BB%9D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/VOA%E7%8B%AC%E5%AE%B6-%E4%B8%80%E4%BD%8D%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6%E4%BE%9B%E5%BA%94%E5%95%86%E8%A2%AB-%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E-%E5%92%8C%E9%80%83%E4%BA%A1%E6%B5%B7%E5%A4%96%E7%9A%84%E7%BB%8F%E5%8E%86'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/CDT%E5%85%B3%E6%B3%A8-%E7%AB%AF%E4%BC%A0%E5%AA%92-%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%92%8C%E7%8E%B0%E5%AE%9E%E4%B9%8B%E9%97%B4-%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E8%8D%AF%E5%A8%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-03-01/%E4%BB%A5%E8%89%B2%E5%88%97%E6%94%AF%E6%8C%81%E7%BE%8E%E5%9B%BD%E5%9C%A8%E5%8A%A0%E6%B2%99%E6%9A%82%E6%97%B6%E5%81%9C%E7%81%AB%E7%9A%84%E8%AE%A1%E5%88%92-%E4%BD%86%E5%8D%B4%E8%A2%AB%E5%93%88%E9%A9%AC%E6%96%AF%E6%8B%92%E7%BB%9D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-03-01/VOA%E7%8B%AC%E5%AE%B6-%E4%B8%80%E4%BD%8D%E7%BF%BB%E5%A2%99%E8%BD%AF%E4%BB%B6%E4%BE%9B%E5%BA%94%E5%95%86%E8%A2%AB-%E8%BF%9C%E6%B4%8B%E6%8D%95%E6%8D%9E-%E5%92%8C%E9%80%83%E4%BA%A1%E6%B5%B7%E5%A4%96%E7%9A%84%E7%BB%8F%E5%8E%86">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-03-01/CDT%E5%85%B3%E6%B3%A8-%E7%AB%AF%E4%BC%A0%E5%AA%92-%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%92%8C%E7%8E%B0%E5%AE%9E%E4%B9%8B%E9%97%B4-%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD%E8%8D%AF%E5%A8%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-03-01/Kongfu-Girls-%E5%A8%9C%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-%E5%A8%9C%E6%8B%89%E8%83%8C%E5%90%8E%E7%9A%84%E6%80%A7%E5%88%AB%E6%94%BF%E6%B2%BB%E6%9D%83%E5%8A%9B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

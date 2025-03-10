@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+" />
+    <meta property="og:description" content="
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅" />
+    <meta property="twitter:title" content="中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4943)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7988518.html&t=%E4%B8%AD%E5%9B%BD%E7%A7%91%E4%BC%81%E7%9A%84%E6%98%A5%E5%A4%A9%E7%9C%9F%E7%9A%84%E5%88%B0%E4%BA%86%E5%90%97%EF%BC%9F%E4%B8%80%E6%96%87%E5%9B%9E%E9%A1%BE%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E7%9A%84%E6%94%BF%E7%AD%96%E2%80%9C%E8%BF%87%E5%B1%B1%E8%BD%A6%E2%80%9D%E4%B9%8B%E6%97%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7988518.html&t=%E4%B8%AD%E5%9B%BD%E7%A7%91%E4%BC%81%E7%9A%84%E6%98%A5%E5%A4%A9%E7%9C%9F%E7%9A%84%E5%88%B0%E4%BA%86%E5%90%97%EF%BC%9F%E4%B8%80%E6%96%87%E5%9B%9E%E9%A1%BE%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E7%9A%84%E6%94%BF%E7%AD%96%E2%80%9C%E8%BF%87%E5%B1%B1%E8%BD%A6%E2%80%9D%E4%B9%8B%E6%97%85&d=2025-02-26&e=
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+
+
+  
+Wed, 26 Feb 2025 16:52:03 GMT
+  
+  
+北京某购物中心的一块巨型屏幕播放新闻画面，显示中国领导人习近平在2月17日举行的一次民营企业座谈会上与阿里巴巴创始人马云握手的场景。（2025年2月17日）
+  
+华盛顿 —   “任何单位不得违反法律、法规向民营经济组织收取费用，不得实施没有法律、法规依据的罚款，不得向民营经济组织摊派财物。”继上个星期中国领导人习近平在北京罕见地与蚂蚁集团创始人马云等一众中国科企巨头们举行座谈，高调表达了对民营经济和科技行业的明确支持后，2月24日中国媒体报道，提交给中国全国人大常委会审议的《民营经济促进法》草案二审稿中新增了这一规定，希望从法律上给予民营企业进一步的支持。
+  自去年秋季以来，北京密集出台支持民营经济、提振市场信心的政策和信..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2F7988518.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/7988518.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/7988518.html&text=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/7988518.html&title=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/7988518.html&title=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅&body=
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/7988518.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/7988518.html&title=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅&caption=
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅&url=https://www.voachinese.com/a/7988518.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2025-02-26
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/7988518.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2F7988518.html&t=%E4%B8%AD%E5%9B%BD%E7%A7%91%E4%BC%81%E7%9A%84%E6%98%A5%E5%A4%A9%E7%9C%9F%E7%9A%84%E5%88%B0%E4%BA%86%E5%90%97%EF%BC%9F%E4%B8%80%E6%96%87%E5%9B%9E%E9%A1%BE%E4%B8%AD%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E7%9A%84%E6%94%BF%E7%AD%96%E2%80%9C%E8%BF%87%E5%B1%B1%E8%BD%A6%E2%80%9D%E4%B9%8B%E6%97%85&d=2025-02-26&e=
+中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅
+——
+
+
+  
+Wed, 26 Feb 2025 16:52:03 GMT
+  
+  
+北京某购物中心的一块巨型屏幕播放新闻画面，显示中国领导人习近平在2月17日举行的一次民营企业座谈会上与阿里巴巴创始人马云握手的场景。（2025年2月17日）
+  
+华盛顿 —   “任何单位不得违反法律、法规向民营经济组织收取费用，不得实施没有法律、法规依据的罚款，不得向民营经济组织摊派财物。”继上个星期中国领导人习近平在北京罕见地与蚂蚁集团创始人马云等一众中国科企巨头们举行座谈，高调表达了对民营经济和科技行业的明确支持后，2月24日中国媒体报道，提交给中国全国人大常委会审议的《民营经济促进法》草案二审稿中新增了这一规定，希望从法律上给予民营企业进一步的支持。
+  自去年秋季以来，北京密集出台支持民营经济、提振市场信心的政策和信..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2F7988518.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1740589142000-->
+<p><a href="https://www.voachinese.com/a/7988518.html">中国科企的春天真的到了吗？一文回顾中国科技巨头的政策“过山车”之旅</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 26 Feb 2025 16:52:03 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/592bf979-f088-41d3-0211-08dd4a817621_cx20_cy10_cw69_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">北京某购物中心的一块巨型屏幕播放新闻画面，显示中国领导人习近平在2月17日举行的一次民营企业座谈会上与阿里巴巴创始人马云握手的场景。（2025年2月17日）</small>
+  </div>
+华盛顿 —   <p>“任何单位不得违反法律、法规向民营经济组织收取费用，不得实施没有法律、法规依据的罚款，不得向民营经济组织摊派财物。”继上个星期中国领导人习近平在北京罕见地与蚂蚁集团创始人马云等一众中国科企巨头们举行座谈，高调表达了对民营经济和科技行业的明确支持后，2月24日中国媒体报道，提交给中国全国人大常委会审议的《民营经济促进法》草案二审稿中新增了这一规定，希望从法律上给予民营企业进一步的支持。</p>
+  <p>自去年秋季以来，北京密集出台支持民营经济、提振市场信心的政策和信号。这究竟是包括中国科技巨头在内的民营企业的春天，还是权力的一次回摆而已？</p>
+  <p>本文将为您揭示习近平科技政策变化的原因以及中国政府的施政规律，并带你回顾在中国科技企业在此轮“握手言和”之前的那场长达四年、震动全球市场的监管风暴。四年前，中国政府的一纸公告就让这些企业市值蒸发数万亿美元，业务版图被强行缩减，甚至被迫退出海外资本市场。</p>
+  <p><strong>从整顿到支持，中国科技政策为何急剧回摆？</strong></p>
+  <p>2020年11月，马云曾经创办的蚂蚁集团原计划在上海和香港上市，融资规模预计高达370亿美元，为当时全球最高纪录。然而，就在上市前几日，中国监管部门突然叫停蚂蚁集团IPO，这被广泛视为北京整顿科技企业的第一枪。随后，政府掀起了一场历时近三年的监管风暴。</p>
+  <p>有专家指出，中国的科技政策像一个钟摆，在严厉监管与温和扶持之间剧烈摇摆。摩根士丹利首席中国经济学家邢自强对彭博社<a href="https://www.bloomberg.com/news/articles/2025-02-18/xi-s-embrace-of-china-tech-ceos-spurs-hope-of-big-economic-shift" target="_blank">表示</a>：“在经济和地缘政治逆风的背景下，北京正在重新定位民营企业，将其作为国家竞争力的支柱。”他认为，尽管此前已有迹象表明监管收紧即将结束，但马云的回归“标志着监管调整正式画上句号”。</p>
+  <p>目前，中国国内消费持续疲软，经济对出口的依赖度日益加深。与此同时，美国特朗普政府对中国继续加征关税。在政府刺激措施有限的情况下，中国民营企业被寄予厚望，成为提振市场信心的关键力量。彭博社报道称，DeepSeek在人工智能(AI)领域的突破，直接引发了中国境内外股市1.3万亿美元的上涨，而这一切是在没有政府刺激的情况下实现的。</p>
+  <p>习近平选择此刻与科技企业家会面，被认为是希望抓住这一势头，进一步提振市场信心。自中国房地产业深陷危机以来，中国经济增长放缓，鼓励私营部门投资对习近平推动经济复苏至关重要。</p>
+  <p>这次座谈会不仅仅是向国内企业传递信号，也被外界解读为向华尔街及国际市场释放稳定政策预期的信号。</p>
+  <p>“习近平正在向特朗普释放信号：你有埃隆·马斯克(Elon Musk)，但我在中国也有一支强大的科技领军团队，”美商亚洲集团(The Asia Group)陈澍(George Chen)对彭博社<a href="https://www.bloomberg.com/news/articles/2025-02-18/xi-s-embrace-of-china-tech-ceos-spurs-hope-of-big-economic-shift" target="_blank">表示</a>。他指出，上个月特朗普就职典礼上，硅谷科技界大佬纷纷到场，而习近平的这次高调会晤，看上去像是北京作出的一个对等回应。</p>
+  <p>不同的是，中国官方媒体在报道此次座谈会时，刻意将科技企业家以背影呈现，而媒体摄像机的焦点则牢牢锁定在习近平身上，似乎是反映中国政府依然牢牢掌控着民营经济的话语权。</p>
+  <p><strong>习近平对科技民企的讯息</strong></p>
+  <p>尽管习近平在座谈会上强调“两个毫不动摇”(即既支持公有制经济，也支持私营经济)和“三个没有变”，被中国官方媒体视为给民营企业的“定心丸”，但政府对科技行业的支持仍然有明确的前提：科技企业必须符合国家战略目标。</p>
+  <p>在座谈会上，习近平明确表示，民营企业必须“胸怀报国志”，并“积极履行社会责任”。他同时也强调中国共产党对商业领域的领导权，呼吁民营企业“要把思想和行动统一到党中央对国内外形势的判断上来，统一到党中央对经济工作的决策部署上来”。</p>
+  <p>长期为西方读者解读《人民日报》的印度学者马诺杰·克瓦尔拉马尼(Manoj Kewalramani)对《金融时报》<a href="https://www.ft.com/content/27f062b4-cf1f-4353-8d7f-8690d972f2cf" target="_blank">表示</a>，习近平向企业界传递的信息是：“你们是有价值的参与者，但在更大的格局中，你们的存在并不仅仅是为了满足自身需求。”</p>
+  <p>美商亚洲集团的中国区总监林汉升(Han Shen Lin)对《金融时报》<a href="https://www.ft.com/content/27f062b4-cf1f-4353-8d7f-8690d972f2cf" target="_blank">表示</a>，习近平的关键信息在于“激励创新应服务于国家，而非为了创新本身”，民营经济最终需服从党的战略目标。</p>
+  <p>“习近平持续传达的信息是，如果民营企业想要发展，就必须认同党的叙事，并落实党的政策和指示，”牛津大学中国中心研究员乔治·马格努斯(George Magnus)则对彭博社<a href="https://www.bloomberg.com/news/articles/2025-02-18/xi-s-embrace-of-china-tech-ceos-spurs-hope-of-big-economic-shift" target="_blank">指出</a>，“在一个党领导一切的国家，我们清楚看到了民营企业面临的局限性。”</p>
+  <p><strong>人工智能：政府的新宠？</strong></p>
+  <p>在美中科技竞争日渐激烈的背景下，AI技术被中国政府视为中国实现科技自立和技术领先目标的关键。目前，AI当下正成为中国政府与中国企业利益紧密结合的典范。</p>
+  <p>“在2008年金融危机后，中国曾依靠消费科技初创企业和平台经济来推动新一轮增长，如今AI正在扮演类似的角色。”《麻省理工科技评论》写道。习近平屡屡提及的“新质生产力”，强调的正是通过在新兴产业取得突破以应对当前的经济放缓。AI在近年来是被明确列为重点支持对象的新兴产业和“颠覆性技术”。中国政府是AI政策的制定者，AI初创企业和AI科研的投资者，也是AI应用的大客户。</p>
+  <p>“如今，每一家成功的中国AI公司背后，都有地方政府的支持。”香港大学中国法律中心主任张湖月向《麻省理工科技评论》表示。</p>
+  <p>中国AI行业相对仍处于早期发展阶段，北京深知过度监管可能扼杀本土企业的创新能力。不过，中国政府仍然在加强内容管控，确保生成式AI符合社会主义核心价值观，并防止潜在的社会不稳定风险。</p>
+  <p>张湖月认为，如果中国的AI行业遭遇严重的滥用事件，导致广泛争议并威胁到社会稳定，监管收紧可能会突然到来。</p>
+  <p>张湖月是新书《高空钢丝：中国如何监管科技巨头与管理经济》(High Wire: How China Regulates Big Tech and Governs Its Economy)的作者，她在其中深入解析中国的科技监管政策。</p>
+  <p><strong>科技政策“三阶段循环”</strong></p>
+  <p>张湖月向《麻省理工科技评论》<a href="https://www.technologyreview.com/2024/04/09/1091004/china-tech-regulation-harsh-zhang/" target="_blank">表示</a>，中国科技政策几乎总是遵循三阶段模式：</p>
+  <p>• 宽松阶段：政府允许企业自由扩张和竞争，给予相对灵活的发展环境。</p>
+  <p>• 严厉整顿：在企业规模过大或市场出现混乱时，政府突然大规模出手，以反垄断、数据安全、金融监管等理由突袭式严厉打击，导致企业利润锐减。</p>
+  <p>• 放松管控：经历市场动荡后，政府逐步放松监管，以恢复市场信心、促进经济发展。</p>
+  <p>这套模式在过去十多年里一再重演。以阿里巴巴和腾讯为例，自2000年代以来，这两家科技巨头通过大量并购扩展业务，几乎涵盖了中国数字生活的方方面面。但这种扩张削弱了市场竞争，导致消费者面临更高的价格和更少的选择。然而，监管机构长期默许这种行为。直到2020年，政府突然启动科技行业监管风暴，开始调查企业过去的并购交易，并对违反反垄断规定的企业开出巨额罚单。</p>
+  <p>北京对科技行业的强力整顿，导致中国科技企业数万亿美元市值蒸发，重创了这个世界第二大经济体中最具活力的产业之一，并加速了美中经济的脱钩。</p>
+  <p>2023年7月，在蚂蚁集团上市被叫停两年半后，中国金融监管部门宣布对蚂蚁集团违规行为罚款71亿元人民币。行业专家普遍认为，这标志着中国对科技行业的监管风暴已经结束。随后，中国国务院总理李强在企业座谈会上对大型科技公司表示支持，国家发改委也公开肯定了阿里巴巴、腾讯和美团对国家经济增长与科技进步的贡献。</p>
+  <p>张湖月进一步指出，西方观察者往往只关注中国监管的“打压”阶段，但这些打压行为掩盖了中国政府与科技公司之间的共生关系。</p>
+  <p>她向《麻省理工科技评论》<a href="https://www.technologyreview.com/2024/04/09/1091004/china-tech-regulation-harsh-zhang/" target="_blank">解释</a>说，中国地方政府在税收、就业和创新方面高度依赖科技企业，很多科技公司被称为专精特新“小巨人”企业，因此它们在一定程度上保护这些企业。张湖月举例说，在2016至2021年间，广州的三家地方法院共受理超过13万起金融科技公司拉卡拉提起的网络借贷诉讼，几乎充当了该公司的外包专属仲裁机构。而且，拉卡拉几乎在所有案件中都胜诉。</p>
+  <p><strong>2020年以来的科技监管风暴</strong></p>
+  <p>2020年10月24日，马云在上海举办的外滩金融峰会上发言，抨击了中国的金融监管机构和银行业。他称监管系统扼杀了创新，称银行业依旧是“当铺思想”。他发言的当天离他旗下蚂蚁集团“史上最大IPO”不到几天时间，此上市案规模达到创纪录的370亿美元。</p>
+  <p>路透社援引匿名中国政府官员、企业高管和投资人的消息报道称，正是这次演讲一石激起千层浪，最终导致上市计划夭折。</p>
+  <p><em><strong>2020年：蚂蚁集团上市被叫停，监管风暴序幕拉开</strong></em></p>
+  <ul>
+    <li>2020年11月3日，上交所通告暂停蚂蚁集团上市，该集团原计划于11月5日在上海和香港上市。在此之前，中国监管机构约谈互联网金融巨头蚂蚁集团高管，包括电商巨头阿里巴巴联合创始人、蚂蚁控股股东马云。</li>
+    <li>2020年11月10日，中国国家市场监管总局公布了《关于平台经济领域的反垄断指南》。包括腾讯、美团、字节跳动、阿里巴巴在内的27家大型互联网公司被要求纠正垄断、不公平竞争和假冒伪劣问题。</li>
+    <li>2020年12月24日：中国国家市场监督管理总局就阿里巴巴禁止商家在其他购物平台上销售商品的做法涉嫌垄断行为而立案调查。</li>
+  </ul>
+  <p><br /></p>
+  <p><em><strong>2021年：中国“反垄断”元年</strong></em></p>
+  <ul>
+    <li>2021年4月：阿里巴巴因其“二选一”做法被认定为垄断行为，收到创纪录的182亿元“天价”罚单，占其2019年国内销售额的4%。据《南华早报》报道，市场监管总局随后召集包括阿里、腾讯和美团在内的34家科技公司，要求它们从阿里巴巴案中汲取教训。</li>
+    <li>2021年5月：猿辅导、作业帮因虚假宣传被罚250万元人民币。</li>
+    <li>2021年6月：美团因外卖员待遇问题遭反垄断调查。</li>
+    <li>2021年7月：市场监管部门开始追溯调查科技企业自2000年代初以来的并购交易，并对未依法申报的交易开出罚单。阿里、腾讯和滴滴等22家公司被处以每笔50万元人民币的罚款。</li>
+    <li>2021年7月：滴滴出行在美国上市两天后，被网信办以“数据安全违规”为由下架。随后，看准网、满帮集团等公司亦遭调查。</li>
+    <li>2021年7月：中国全国人大通过《数据安全法》，强化对企业跨境数据流动的监管。</li>
+    <li>2021年7月：中国网信办要求拥有超过100万用户个人信息的企业赴海外上市前需接受安全审查。</li>
+    <li>2021年7月：中国工信部责令25家企业整改数据安全和消费者权益保护问题。</li>
+    <li>2021年7月：国务院发布“双减”政策，教育部禁止公立学校教师进行有偿补课，禁止营利性校外补习，导致新东方、好未来等企业股价暴跌。</li>
+    <li>2021年8月：受“双减”政策影响，美国语言学习应用Duolingo在中国下架。</li>
+    <li>2021年8月：限制未成年人每周仅能玩三小时网络游戏。《经济参考报》批评网络游戏为“精神鸦片”，腾讯、网易等游戏公司市值蒸发数百亿美元。《证券时报》建议取消游戏行业的税收优惠。</li>
+    <li>2021年8月：中国证监会计划禁止数据密集型科技企业赴美上市。</li>
+    <li>2021年8月：中国银保监会整顿在线保险行业。</li>
+    <li>2021年10月：美团因“二选一”垄断行为被罚34亿元人民币。</li>
+    <li>2021年12月：监管风暴逐步降温，中央经济工作会议提出支持数字经济，监管口径有所放松。</li>
+  </ul>
+  <p><br /></p>
+  <p><em><strong>2022年：监管风向开始转变</strong></em></p>
+  <ul>
+    <li>2022年1月：国务院发布《关于促进平台经济健康持续发展的意见》，首次承认大型科技公司对经济发展的积极作用，鼓励其发展。监管风向开始转变。</li>
+    <li>2022年5月：时任国务院副总理刘鹤向科技企业高管表示政府将支持科技企业发展和上市，提振市场信心。</li>
+    <li>2022年7月：网信办对滴滴处以80亿元人民币罚款，结束对滴滴长达一年多的数据安全调查。</li>
+    <li>2022年12月：中央经济工作会议提出鼓励互联网平台企业充分发挥其在经济增长、就业创造和国际竞争中的作用。</li>
+    <li>2022年12月召开的中央经济工作会议将“强化反垄断和防止资本无序扩张”列为次年要抓好的八大重点任务之一。</li>
+  </ul>
+  <p><br /></p>
+  <p><em><strong>2023年：科技监管风暴的收尾</strong></em></p>
+  <ul>
+    <li>2023年1月：滴滴宣布获得网信办批准，恢复新用户注册。蚂蚁集团等14家平台公司宣布在金融监管部门的监督指导下“基本完成业务整改”。</li>
+    <li>2023年7月：在蚂蚁集团上市计划被叫停两年半后，收到71亿元人民币的罚单，被行业专家视为科技监管风暴的收尾。</li>
+    <li>2023年7月：国务院总理李强召集腾讯、阿里、美团等企业座谈，表示政府将支持科技行业发展。国家发改委也公开肯定了阿里巴巴、腾讯和美团对国家经济增长与科技进步的贡献。</li>
+    <li>过去几年，中国科技行业的整顿对中国经济带来了超乎预期的冲击。张湖月对《麻省理工科技评论》<a href="https://www.technologyreview.com/2024/04/09/1091004/china-tech-regulation-harsh-zhang/" target="_blank">指出</a>，科技企业受到的最大惩罚往往不是罚款，而是市场情绪的崩溃。例如，2020年12月，市场监管总局仅在官网发布了一条短短的公告，称正在调查阿里巴巴涉嫌垄断行为，结果阿里巴巴市值在一夜之间蒸发1000亿美元，比最终罚款的282亿元要严重得多。</li>
+  </ul>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E6%AC%A7%E7%9B%9F%E4%B8%BB%E5%B8%AD%E5%86%AF%E5%BE%B7%E8%8E%B1%E6%81%A9%E5%89%8D%E5%BE%80%E5%8D%B0%E5%BA%A6-%E6%95%A6%E4%BF%83%E6%96%B0%E5%BE%B7%E9%87%8C%E9%99%8D%E4%BD%8E%E5%85%B3%E7%A8%8E%E6%89%A9%E5%A4%A7%E5%8F%8C%E8%BE%B9%E8%B4%B8%E6%98%93">
+          欧盟主席冯德莱恩前往印度，敦促新德里降低关税扩大双边贸易
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E5%85%8B%E9%87%8C%E5%A7%86%E6%9E%97%E5%AE%AB%E7%A7%B0%E6%AD%A3%E5%9C%A8%E5%87%86%E5%A4%87%E4%BF%84%E7%BE%8E%E4%B8%93%E5%AE%B6%E7%BA%A7%E4%BC%9A%E8%B0%88-%E4%B8%BA%E7%89%B9%E6%99%AE%E5%B3%B0%E4%BC%9A%E9%93%BA%E8%B7%AF">
+          克里姆林宫称正在准备俄美专家级会谈，为特普峰会铺路
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89">
+          金正恩要求朝鲜军队现代化，有能力应对任何战争
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2025-02-26</time>
+        <a href="https://nodebe4.github.io/waimei/2025-02-26/%E8%8F%B2%E8%AD%A6%E6%96%B9%E8%A7%A3%E6%95%91%E4%B8%80%E5%90%8D%E9%81%AD%E7%BB%91%E6%9E%B6%E5%8F%8A%E6%96%AD%E6%8C%87%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%AD%A6%E7%94%9F-%E4%BB%8D%E5%9C%A8%E8%BF%BD%E6%8D%95%E4%B8%AD%E5%9B%BD%E7%BB%91%E5%8C%AA%E4%B8%BB%E5%AB%8C">
+          菲警方解救一名遭绑架及断指的中国学生，仍在追捕中国绑匪主嫌
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89">
+            前一篇：金正恩要求朝鲜军队现代化，有能力应对任何战争
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2025-02-26/404%E6%96%87%E5%BA%93-%E8%B5%84%E6%B7%B1%E9%87%8E%E6%95%99%E6%8E%88-%E8%B0%B7%E7%88%B1%E5%87%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%94%B6%E5%85%A5%E9%9C%80%E8%A6%81%E4%B8%8A%E4%BA%A4%E5%9B%BD%E5%AE%B6%E5%90%97-%E4%B8%8A%E4%BA%A4%E5%A4%9A%E5%B0%91">
+            后一篇：【404文库】资深野教授｜谷爱凌的商业收入需要上交国家吗？上交多少？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/404%E6%96%87%E5%BA%93-%E8%B5%84%E6%B7%B1%E9%87%8E%E6%95%99%E6%8E%88-%E8%B0%B7%E7%88%B1%E5%87%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%94%B6%E5%85%A5%E9%9C%80%E8%A6%81%E4%B8%8A%E4%BA%A4%E5%9B%BD%E5%AE%B6%E5%90%97-%E4%B8%8A%E4%BA%A4%E5%A4%9A%E5%B0%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E5%85%8B%E9%87%8C%E5%A7%86%E6%9E%97%E5%AE%AB%E7%A7%B0%E6%AD%A3%E5%9C%A8%E5%87%86%E5%A4%87%E4%BF%84%E7%BE%8E%E4%B8%93%E5%AE%B6%E7%BA%A7%E4%BC%9A%E8%B0%88-%E4%B8%BA%E7%89%B9%E6%99%AE%E5%B3%B0%E4%BC%9A%E9%93%BA%E8%B7%AF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2025-02-26/404%E6%96%87%E5%BA%93-%E8%B5%84%E6%B7%B1%E9%87%8E%E6%95%99%E6%8E%88-%E8%B0%B7%E7%88%B1%E5%87%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%94%B6%E5%85%A5%E9%9C%80%E8%A6%81%E4%B8%8A%E4%BA%A4%E5%9B%BD%E5%AE%B6%E5%90%97-%E4%B8%8A%E4%BA%A4%E5%A4%9A%E5%B0%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2025-02-26/%E5%85%8B%E9%87%8C%E5%A7%86%E6%9E%97%E5%AE%AB%E7%A7%B0%E6%AD%A3%E5%9C%A8%E5%87%86%E5%A4%87%E4%BF%84%E7%BE%8E%E4%B8%93%E5%AE%B6%E7%BA%A7%E4%BC%9A%E8%B0%88-%E4%B8%BA%E7%89%B9%E6%99%AE%E5%B3%B0%E4%BC%9A%E9%93%BA%E8%B7%AF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2025-02-26/%E9%87%91%E6%AD%A3%E6%81%A9%E8%A6%81%E6%B1%82%E6%9C%9D%E9%B2%9C%E5%86%9B%E9%98%9F%E7%8E%B0%E4%BB%A3%E5%8C%96-%E6%9C%89%E8%83%BD%E5%8A%9B%E5%BA%94%E5%AF%B9%E4%BB%BB%E4%BD%95%E6%88%98%E4%BA%89">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
