@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX 老实报新闻 少整妖蛾子">
+    <meta property="og:description" content="git.io/JJCxX 老实报新闻 少整妖蛾子" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4453)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage37%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage37%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage37%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page37/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page37/&text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page37/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page37/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page37/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page37/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&url=https://nodebe4.github.io/waimei/page37/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-08/World-%E5%BE%B7%E7%BA%A6%E7%A7%91%E7%BB%B4%E5%A5%87%E5%AF%B9%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E6%9C%89%E5%93%AA%E4%BA%9B%E5%85%AC%E5%BC%80%E8%A1%A8%E6%80%81">
+      
+        [World] 德约科维奇对新冠疫苗有哪些公开表态
+      </a>
+      <time>2022-01-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59897912?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2022-01-06</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/Chinese-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E-%E5%9C%B0%E6%96%B9%E8%B4%A2%E6%94%BF%E9%A2%91%E7%8E%B0%E5%9B%B0%E5%A2%83-%E6%88%96%E8%BF%AB%E4%BD%BF%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%A8%8E%E8%90%BD%E5%9C%B0">
+      
+        [Chinese] 中国经济：地方财政频现困境 或迫使房地产税落地
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59894152?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/World-%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6-%E7%87%83%E6%96%99%E6%B6%A8%E4%BB%B7%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA-%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%A8%BB%E8%8D%89">
+      
+        [World] 哈萨克斯坦：燃料涨价如何成为“最后一根稻草”
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59893508?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/%E5%8F%8D%E5%87%BA%E7%94%9F%E4%B8%BB%E4%B9%89-%E6%B6%8C%E5%8A%A8-%E4%BA%BA%E7%B1%BB%E6%98%AF%E5%90%A6%E5%BA%94%E8%AF%A5%E7%94%9F%E8%82%B2">
+      
+        “反出生主义”涌动，人类是否应该生育？
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/47214-2022-01-07-05-00-26.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/World-%E9%A2%84%E6%B5%8B%E6%9C%AA%E6%9D%A5%E6%88%98%E4%BA%89-%E4%BF%84%E7%BD%97%E6%96%AF%E4%B8%AD%E5%9B%BD%E5%8A%A0%E5%BC%BA%E5%86%9B%E4%BA%8B%E8%81%94%E5%90%88%E4%B8%8E%E7%A7%91%E6%8A%80%E8%BF%BD%E8%B5%B6">
+      
+        [World] 预测未来战争：俄罗斯中国加强军事联合与科技追赶
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59895964?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/Science-%E6%96%B0%E5%86%A0%E7%97%87%E7%8A%B6%E7%9F%A5%E5%A4%9A%E5%B0%91-%E6%B5%81%E9%BC%BB%E6%B0%B4%E6%98%AF%E6%84%9F%E5%86%92%E8%BF%98%E6%98%AF%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E">
+      
+        [Science] 新冠症状知多少：流鼻水是感冒还是奥密克戎
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59682454?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-06/Science-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%A6%82%E4%BD%95%E5%88%A4%E5%AE%9A%E5%92%B3%E5%97%BD-%E6%B5%81%E9%BC%BB%E6%B0%B4%E6%98%AF%E6%84%9F%E5%86%92%E7%97%87%E7%8A%B6%E8%BF%98%E6%98%AF%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E">
+      
+        [Science] 新冠疫情：如何判定咳嗽、流鼻水是感冒症状还是奥密克戎
+      </a>
+      <time>2022-01-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59682454?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2022-01-04</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-04/%E8%A6%81%E6%B1%82%E9%AB%98%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B-%E6%88%90%E4%B8%BA%E6%97%A5%E4%BC%81%E6%8B%9B%E8%81%98%E5%A4%96%E5%9B%BD%E4%BA%BA%E6%89%8D%E9%9A%9C%E7%A2%8D">
+      
+        “要求高日语能力”成为日企招聘外国人才障碍
+      </a>
+      <time>2022-01-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/career/humanresource/47136-2022-01-05-05-00-56.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2022-01-03</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-03/World-%E8%89%BE%E8%9C%9C%E8%8E%89%E5%9C%A8%E5%B7%B4%E9%BB%8E-Netflix%E7%83%AD%E9%97%A8%E5%89%A7%E4%B8%BA%E4%BD%95%E9%81%AD%E5%88%B0%E4%B9%8C%E5%85%8B%E5%85%B0%E6%96%87%E5%8C%96%E9%83%A8%E9%95%BF%E7%82%AE%E8%BD%B0">
+      
+        [World] 艾蜜莉在巴黎：Netflix热门剧为何遭到乌克兰文化部长炮轰
+      </a>
+      <time>2022-01-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59857099?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2022-01-02</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2022-01-02/Science-%E6%B8%B8%E6%88%8F%E5%BF%83%E7%90%86%E5%AD%A6-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E4%BA%9B%E4%BA%BA%E4%BC%9A%E5%BF%8D%E4%B8%8D%E4%BD%8F%E8%A6%81%E4%BD%9C%E5%BC%8A">
+      
+        [Science] 游戏心理学：为什么有些人会忍不住要作弊？
+      </a>
+      <time>2022-01-02</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59825947?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-31</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-31/Science-Metaverse-%E5%A4%A7%E5%AE%B6%E9%83%BD%E5%9C%A8%E8%AF%B4%E7%9A%84%E5%85%83%E5%AE%87%E5%AE%99%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88">
+      
+        [Science] Metaverse：大家都在说的元宇宙到底是什么？
+      </a>
+      <time>2021-12-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59836204?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-30</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-30/%E5%85%BB%E8%80%81%E9%87%91%E9%97%AE%E9%A2%98%E6%98%AF%E4%B8%96%E7%95%8C%E5%90%84%E5%9B%BD%E7%9A%84%E7%83%A6%E6%81%BC">
+      
+        养老金问题是世界各国的烦恼
+      </a>
+      <time>2021-12-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/47146-2021-12-31-05-00-28.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-30/Chinese-%E5%8C%97%E4%BA%AC%E5%87%BA%E5%8F%B0-%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6-%E7%99%BD%E7%9A%AE%E4%B9%A6-%E6%88%96%E4%B8%BA%E5%8F%8D%E5%88%B6%E7%BE%8E%E5%9B%BD%E8%90%A5%E9%80%A0-%E5%B0%8F%E5%9C%88%E5%AD%90">
+      
+        [Chinese] 北京出台《中国的出口管制》白皮书， 或为反制美国营造“小圈子”
+      </a>
+      <time>2021-12-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59827443?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-29</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-29/Chinese-%E7%9C%AF%E7%9C%AF%E7%9C%BC-%E5%B9%BF%E5%91%8A%E5%86%8D%E5%BC%95%E4%BA%89%E8%AE%AE-%E6%B0%91%E6%97%8F%E4%B8%BB%E4%B9%89%E5%85%B4%E8%B5%B7%E4%B8%8B%E7%9A%84-%E5%B8%A6%E8%8A%82%E5%A5%8F-%E8%BF%98%E6%98%AF-%E5%8F%8D%E8%BE%B1%E5%8D%8E">
+      
+        [Chinese] “眯眯眼”广告再引争议，民族主义兴起下的“带节奏”还是“反辱华”？
+      </a>
+      <time>2021-12-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59815600?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-28</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-28/%E6%B2%A1%E6%9C%89%E7%A7%BB%E6%B0%91%E7%9A%84%E6%97%B6%E4%BB%A3-%E4%B8%96%E7%95%8C%E5%A6%82%E4%BD%95%E4%BA%89%E5%A4%BA%E4%BA%BA%E6%89%8D">
+      
+        没有移民的时代，世界如何争夺人才？
+      </a>
+      <time>2021-12-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/47087-2021-12-29-04-59-50.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-27</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-27/Science-%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E-%E6%9C%80%E6%96%B0%E5%8F%98%E5%BC%82%E6%A0%AA%E5%85%A8%E7%90%83%E6%89%A9%E6%95%A3-%E6%88%91%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88">
+      
+        [Science] 奥密克戎：最新变异株全球扩散， 我们已经知道什么？
+      </a>
+      <time>2021-12-27</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59431055?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-27/Science-%E7%96%AB%E8%8B%97-%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%8E%A5%E7%A7%8D%E5%A6%82%E4%BD%95%E5%87%BB%E8%B4%A5%E5%87%A0%E5%A4%A7%E8%87%B4%E5%91%BD%E4%BC%A0%E6%9F%93%E7%97%85">
+      
+        [Science] 疫苗：大规模接种如何击败几大致命传染病
+      </a>
+      <time>2021-12-27</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-55231949?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-27/Chinese-%E6%96%B0%E7%96%86-%E9%93%81%E8%85%95-%E4%B8%80%E6%8A%8A%E6%89%8B%E9%99%88%E5%85%A8%E5%9B%BD%E5%8D%B8%E4%BB%BB-%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%B2%BB%E7%96%86%E6%94%BF%E7%AD%96%E4%BC%9A%E5%87%BA%E7%8E%B0%E6%94%B9%E5%8F%98%E5%90%97">
+      
+        [Chinese] 新疆“铁腕”一把手陈全国卸任，中国的治疆政策会出现改变吗
+      </a>
+      <time>2021-12-27</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59801067?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-26</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-26/World-%E7%BE%8E%E5%9B%BD%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%AD%E4%BF%84-%E6%8A%B1%E5%9B%A2%E5%8F%96%E6%9A%96-%E6%9B%BE%E7%BB%8F%E7%9A%84%E5%AE%BF%E6%95%8C%E8%83%BD%E5%90%A6%E7%9C%9F%E6%AD%A3%E8%81%94%E6%89%8B">
+      
+        [World] 美国压力下中俄“抱团取暖” 曾经的宿敌能否真正联手
+      </a>
+      <time>2021-12-26</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59767056?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-26/World-%E7%94%B5%E5%BD%B1-%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD4-%E5%92%8C%E5%85%B6%E4%BB%96%E9%A2%84%E8%A8%80%E6%88%90%E7%9C%9F%E7%9A%84%E7%A7%91%E5%B9%BB%E6%95%85%E4%BA%8B">
+      
+        [World] 电影《黑客帝国4》和其他预言成真的科幻故事
+      </a>
+      <time>2021-12-26</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59772909?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-25</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-25/Science-%E8%A9%B9%E5%A7%86%E6%96%AF-%E9%9F%A6%E4%BC%AF%E6%9C%9B%E8%BF%9C%E9%95%9C%E5%8D%87%E7%A9%BA-%E5%BC%80%E5%90%AF%E6%8F%AD%E7%A4%BA%E6%9C%80%E5%8F%A4%E8%80%81%E6%81%92%E6%98%9F%E4%B9%8B%E6%97%85">
+      
+        [Science] 詹姆斯·韦伯望远镜升空 开启揭示最古老恒星之旅
+      </a>
+      <time>2021-12-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59217633?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-25/Science-Omicron%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E-%E5%A5%BD%E6%B6%88%E6%81%AF-%E5%9D%8F%E6%B6%88%E6%81%AF-%E5%AE%83%E4%BB%AC%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88">
+      
+        [Science] Omicron奥密克戎：好消息、坏消息，它们意味着什么？
+      </a>
+      <time>2021-12-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59789017?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-24</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-24/Science-%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%8F%AF%E6%9C%9B%E5%85%8D%E6%B3%A8%E5%B0%84%E5%8F%88%E8%83%BD%E6%8A%97%E7%AA%81%E5%8F%98">
+      
+        [Science] 下一代新冠疫苗 可望免注射又能抗突变
+      </a>
+      <time>2021-12-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59772907?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-24/World-%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5-%E6%97%A5%E6%9C%AC%E5%AD%A6%E8%80%85%E5%88%86%E6%9E%90%E4%B8%9C%E4%BA%AC%E5%AF%B9%E4%B8%A4%E5%B2%B8%E6%96%B0%E6%94%BF%E7%AD%96%E5%A6%82-%E9%B8%AD%E5%AD%90%E5%88%92%E6%B0%B4">
+      
+        [World] 北京冬奥：日本学者分析东京对两岸新政策如“鸭子划水”
+      </a>
+      <time>2021-12-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59784188?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-23</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/Chinese-2022%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%B1%95%E6%9C%9B-5%E6%97%B6%E4%BB%A3-%E5%85%83%E5%B9%B4%E7%9A%84%E6%9C%BA%E4%BC%9A%E4%B8%8E%E9%A3%8E%E9%99%A9">
+      
+        [Chinese] 2022中国经济展望： “5时代”元年的机会与风险
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59769563?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/%E8%BD%A6%E4%BC%81%E5%8A%A0%E7%B4%A7%E5%BC%80%E5%8F%91-Level-4-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%8A%80%E6%9C%AF">
+      
+        车企加紧开发“Level 4”自动驾驶技术
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/icar/47112-2021-12-24-09-42-05.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/AI%E6%AD%A3%E5%9C%A8%E6%88%90%E4%B8%BA%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%AE%BE%E8%AE%A1%E5%B8%88">
+      
+        AI正在成为半导体设计师
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/46998-2021-12-24-04-58-53.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/%E6%97%A5%E6%9C%AC%E5%9C%B0%E6%96%B9%E5%9F%8E%E5%B8%82-%E7%9C%8B%E4%B8%8D%E5%88%B0%E5%B9%B4%E8%BD%BB%E5%A5%B3%E6%80%A7%E4%BA%86">
+      
+        日本地方城市“看不到年轻女性了”
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/politicsasociety/47076-2021-12-24-04-55-46.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/World-%E5%BD%93%E4%BB%8A%E7%9A%84%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9B%9E%E9%81%BF%E6%80%A7%E7%88%B1%E5%9C%BA%E6%99%AF">
+      
+        [World] 当今的好莱坞电影为什么回避性爱场景
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59551264?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-23/Chinese-%E7%8E%8B%E5%8A%9B%E5%AE%8F%E6%9D%8E%E9%9D%93%E8%95%BE%E7%A6%BB%E5%A9%9A%E4%BA%8B%E4%BB%B6%E7%89%B5%E5%87%BA%E7%9A%84%E5%8D%8E%E4%BA%BA%E5%85%A8%E8%81%8C-%E5%AE%B6%E5%BA%AD%E4%B8%BB%E5%A6%87-%E5%A4%84%E5%A2%83%E8%AE%A8%E8%AE%BA">
+      
+        [Chinese] 王力宏李靓蕾离婚事件牵出的华人全职“家庭主妇”处境讨论
+      </a>
+      <time>2021-12-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59766596?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-22</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-22/Science-%E8%84%91%E9%80%80%E5%8C%96%E9%A2%84%E9%98%B2-%E8%BF%99%E4%B8%83%E7%A7%8D%E9%A3%9F%E7%89%A9%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E4%BD%A0">
+      
+        [Science] 脑退化预防，这七种食物可以帮助你
+      </a>
+      <time>2021-12-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-48523128?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-22/World-%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%E6%9D%A1%E7%AE%80%E8%AE%AF-%E5%9C%A3%E8%AF%9E%E5%BF%AB%E4%B9%90-%E5%9C%A8%E6%B3%95%E5%9B%BD%E6%8B%8D%E5%8D%96-%E4%BB%A510.7%E4%B8%87%E6%AC%A7%E5%85%83%E6%88%90%E4%BA%A4">
+      
+        [World] 全球第一条简讯“圣诞快乐”在法国拍卖 以10.7万欧元成交
+      </a>
+      <time>2021-12-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59755947?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-22/Chinese-%E4%B8%AD%E5%9B%BD%E6%98%AF%E5%90%A6%E8%83%BD%E5%9C%A8%E6%96%B0%E7%9A%84%E5%85%A8%E7%90%83%E5%86%9B%E5%A4%87%E7%AB%9E%E8%B5%9B%E4%B8%AD%E6%88%90%E4%B8%BA%E8%8E%B7%E8%83%9C%E8%80%85">
+      
+        [Chinese] 中国是否能在新的全球军备竞赛中成为获胜者
+      </a>
+      <time>2021-12-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59743026?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-21</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-21/%E4%B8%AD%E5%9B%BD%E7%B2%AE%E9%A3%9F%E5%82%A8%E5%A4%87%E8%BE%BE%E5%88%B0%E5%85%A8%E7%90%83%E5%BA%93%E5%AD%98%E9%87%8F%E4%B8%80%E5%8D%8A%E4%BB%A5%E4%B8%8A">
+      
+        中国粮食储备达到全球库存量一半以上
+      </a>
+      <time>2021-12-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/commodity/47063-2021-12-22-05-00-10.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-21/%E6%8B%86%E8%A7%A3%E4%B8%AD%E5%9B%BD%E5%AE%8F%E5%85%89MINI-EV%E7%9C%8B%E4%BD%8E%E4%BB%B7%E6%A0%BC%E5%AE%9E%E7%8E%B0">
+      
+        拆解中国宏光MINI EV看低价格实现
+      </a>
+      <time>2021-12-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/china/ccompany/47072-2021-12-22-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-20</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-20/%E6%97%A5%E6%9C%AC%E9%A2%84%E6%B5%8B%E5%8D%83%E5%B2%9B%E6%B5%B7%E6%B2%9F%E5%8F%91%E7%94%9FM9%E7%BA%A7%E5%9C%B0%E9%9C%87%E6%9C%80%E5%A4%9A%E6%AD%BB19.9%E4%B8%87%E4%BA%BA">
+      
+        日本预测千岛海沟发生M9级地震最多死19.9万人
+      </a>
+      <time>2021-12-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/politicsasociety/47070-2021-12-21-13-19-51.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-20/World-%E5%85%AD%E9%A1%B9%E7%89%B9%E8%B4%A8%E8%AF%B4%E6%98%8E%E9%A2%86%E5%AF%BC%E8%80%85%E6%98%AF%E5%A6%82%E4%BD%95%E7%82%BC%E6%88%90%E7%9A%84">
+      
+        [World] 六项特质说明领导者是如何炼成的
+      </a>
+      <time>2021-12-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59551256?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-20/Science-%E5%86%AC%E5%AD%A3%E5%85%BB%E7%94%9F%E4%BF%9D%E5%81%A5-%E8%8B%B1%E5%9B%BD%E4%B8%93%E5%AE%B6%E5%91%8A%E8%AF%89%E4%BD%A0%E6%8F%90%E9%AB%98%E5%85%8D%E7%96%AB%E5%8A%9B%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%85%B3%E9%94%AE">
+      
+        [Science] 冬季养生保健 英国专家告诉你提高免疫力的四个关键
+      </a>
+      <time>2021-12-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-54573820?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-20/Chinese-%E9%A6%99%E6%B8%AF%E7%AB%8B%E6%B3%95%E4%BC%9A%E9%80%89%E4%B8%BE%E5%BB%BA%E5%88%B6%E6%B4%BE%E8%BF%91%E4%B9%8E-%E6%B8%85%E4%B8%80%E8%89%B2-%E5%85%A8%E8%83%9C-%E8%83%9C%E9%80%89%E8%80%85%E8%B4%A5%E9%80%89%E8%80%85%E5%8F%8A%E5%90%84%E6%96%B9%E6%9C%89%E4%BD%95%E5%8F%8D%E5%BA%94">
+      
+        [Chinese] 香港立法会选举建制派近乎“清一色”全胜 胜选者败选者及各方有何反应
+      </a>
+      <time>2021-12-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59723776?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-19</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-19/Chinese-%E4%BA%91%E5%8D%97%E6%98%86%E6%98%8E%E7%9A%84-%E8%8A%B1%E8%8A%B1%E4%B8%96%E7%95%8C-%E7%BD%91%E7%BB%9C%E4%B8%BB%E6%92%AD%E8%B5%B0%E8%BF%9B%E4%BA%9A%E6%B4%B2%E6%9C%80%E5%A4%A7%E9%B2%9C%E8%8A%B1%E5%B8%82%E5%9C%BA">
+      
+        [Chinese] 云南昆明的“花花世界”：网络主播走进亚洲最大鲜花市场
+      </a>
+      <time>2021-12-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59694419?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-19/Chinese-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E-%E7%96%AB%E6%83%85%E9%87%8D%E7%8E%B0-%E5%B2%81%E6%9C%AB%E5%B9%B4%E5%88%9D%E4%B8%89%E9%87%8D%E5%8E%8B%E5%8A%9B%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%89%A7%E7%83%88%E9%9C%87%E8%8D%A1">
+      
+        [Chinese] 中国经济：疫情重现，岁末年初三重压力带来的剧烈震荡
+      </a>
+      <time>2021-12-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59699728?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-19/%E7%BA%A2%E6%97%97-%E6%97%A5%E6%9C%AC%E5%BC%80%E5%BA%97-%E4%B8%AD%E5%9B%BDEV%E6%8A%93%E4%BD%8F%E7%A9%BA%E9%9A%99">
+      
+        “红旗”日本开店 中国EV抓住空隙
+      </a>
+      <time>2021-12-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/china/ccompany/47047-2021-12-20-09-35-13.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-17</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-17/Chinese-%E5%8F%B0%E6%B9%BE-%E5%9B%9B%E5%A4%A7%E5%85%AC%E6%8A%95-%E9%A3%9F%E5%AE%89-%E8%83%BD%E6%BA%90%E8%AE%AE%E9%A2%98%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E7%BE%8E%E5%8F%B0%E6%94%BF%E6%B2%BB%E8%A7%92%E5%8A%9B">
+      
+        [Chinese] 台湾“四大公投”：食安、能源议题背后的中美台政治角力
+      </a>
+      <time>2021-12-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59708424?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-16</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-16/World-%E9%87%91%E6%AD%A3%E6%81%A9%E6%89%A7%E6%94%BF%E5%8D%81%E5%91%A8%E5%B9%B4-%E5%8D%81%E4%B8%AA%E8%84%B1%E5%8C%97%E8%80%85%E7%9A%84%E5%9B%9E%E5%BF%86">
+      
+        [World] 金正恩执政十周年：十个脱北者的回忆
+      </a>
+      <time>2021-12-16</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59693763?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-16/%E5%9C%A8%E4%B8%AD%E5%9B%BD%E7%9A%84%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%AD%A6%E6%A0%A1%E9%99%B7%E5%85%A5%E5%8A%9E%E5%AD%A6%E8%8B%A6%E5%A2%83">
+      
+        在中国的日本人学校陷入办学苦境
+      </a>
+      <time>2021-12-16</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/politicsasociety/47000-2021-12-17-05-00-22.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-16/World-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%99%AE%E4%BA%AC%E8%A7%86%E9%A2%91%E5%B3%B0%E4%BC%9A%E4%B8%89%E5%A4%A7%E7%9C%8B%E7%82%B9-%E4%B8%AD%E4%BF%84%E7%9B%B8%E4%BA%92-%E6%89%93%E6%B0%94-%E8%81%94%E6%89%8B%E5%BA%94%E5%AF%B9%E8%A5%BF%E6%96%B9">
+      
+        [World] 习近平普京视频峰会三大看点：中俄相互“打气”联手应对西方
+      </a>
+      <time>2021-12-16</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59666831?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-15</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-15/%E9%9F%A9%E5%9B%BD%E4%BA%BA%E5%9D%87%E5%90%8D%E4%B9%89GDP%E6%88%962027%E5%B9%B4%E8%B6%85%E6%97%A5%E6%9C%AC">
+      
+        韩国人均名义GDP或2027年超日本
+      </a>
+      <time>2021-12-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/epolitics/47026-2021-12-16-10-09-17.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-15/Science-Omicron%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E-%E4%B8%A4%E5%89%82%E7%96%AB%E8%8B%97%E8%8B%A5%E6%97%A0%E6%95%88-%E4%B8%89%E5%89%82%E4%BC%9A%E6%9C%89%E6%95%88%E7%9A%84%E5%8E%9F%E5%9B%A0">
+      
+        [Science] Omicron奥密克戎：两剂疫苗若无效 三剂会有效的原因
+      </a>
+      <time>2021-12-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59641045?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-14</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-14/%E4%BA%9A%E7%91%9F%E5%A3%AB%E8%BF%90%E5%8A%A8%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E6%96%B0%E7%94%A8%E9%80%94-%E5%85%BB%E7%89%9B">
+      
+        亚瑟士运动数据分析的新用途——养牛
+      </a>
+      <time>2021-12-14</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/46985-2021-12-15-05-00-48.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-14/Sports-%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5-%E5%A4%96%E4%BA%A4%E6%8A%B5%E5%88%B6%E5%88%B0%E5%BA%95%E4%BC%9A%E6%9C%89%E5%A4%9A%E5%A4%A7%E5%BD%B1%E5%93%8D">
+      
+        [Sports] 北京冬奥：外交抵制到底会有多大影响
+      </a>
+      <time>2021-12-14</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/sports-59647665?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-13</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-13/World-%E4%B8%9C%E7%9B%9F-%E4%B8%AD%E7%BE%8E%E7%AB%9E%E7%9B%B8%E6%8B%89%E6%8B%A2-%E5%90%84%E5%9B%BD%E5%A6%82%E4%BD%95%E9%80%89%E8%BE%B9%E7%AB%99%E9%98%9F">
+      
+        [World] 东盟：中美竞相拉拢，各国如何选边站队
+      </a>
+      <time>2021-12-13</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59639063?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-13/World-%E6%99%AE%E4%BA%AC%E5%9B%9E%E5%BF%86%E8%8B%8F%E8%81%94%E8%A7%A3%E4%BD%93-%E6%88%91%E5%9C%A81990%E5%B9%B4%E4%BB%A3%E6%9B%BE%E5%85%BC%E8%81%8C%E5%81%9A%E5%87%BA%E7%A7%9F%E8%BD%A6%E5%8F%B8%E6%9C%BA">
+      
+        [World] 普京回忆苏联解体：“我在1990年代曾兼职做出租车司机”
+      </a>
+      <time>2021-12-13</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59633458?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-12</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-12/%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%8A%A8%E7%94%BB%E5%85%88%E9%94%8B%E8%91%A3%E5%BF%97%E5%87%8C%E5%9C%A8%E6%97%A5%E6%9C%AC%E5%88%9B%E4%B8%9A%E5%86%8D%E6%8C%91%E6%88%98">
+      
+        中国网络动画先锋董志凌在日本创业再挑战
+      </a>
+      <time>2021-12-12</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/x-columnviewpoint/46954-2021-12-13-05-00-05.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-11</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-11/Business-%E4%B8%AD%E5%9B%BD%E5%85%A5%E4%B8%96%E6%94%B9%E5%8F%98%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99-%E8%A5%BF%E6%96%B9%E7%9A%84%E6%9C%9F%E7%9B%BC%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%86%B2%E5%87%BB">
+      
+        [Business] 中国入世改变游戏规则：西方的期盼和中国的冲击
+      </a>
+      <time>2021-12-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-59620392?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-10</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-10/Science-Omicron%E5%A5%A5%E5%AF%86%E5%85%8B%E6%88%8E%E7%9A%84%E5%A8%81%E8%83%81%E6%9C%89%E5%A4%9A%E5%A4%A7">
+      
+        [Science] Omicron奥密克戎的威胁有多大？
+      </a>
+      <time>2021-12-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59591615?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-09</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-09/%E9%9F%A9%E6%B5%81%E5%92%8C%E4%B8%AD%E5%9B%BD%E9%A3%8E%E4%BA%89%E5%A4%BA%E6%97%A5%E6%9C%ACZ%E4%B8%96%E4%BB%A3%E6%9C%8D%E8%A3%85%E5%B8%82%E5%9C%BA">
+      
+        韩流和中国风争夺日本Z世代服装市场
+      </a>
+      <time>2021-12-09</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/46874-2021-12-10-05-00-07.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-09/World-%E9%9D%9E%E6%B4%B2%E4%B8%BA%E4%BD%95%E9%9C%80%E8%A6%81%E4%B8%AD%E5%9B%BD%E5%92%8C%E7%BE%8E%E5%9B%BD%E7%B2%BE%E8%AF%9A%E5%90%88%E4%BD%9C">
+      
+        [World] 非洲为何需要中国和美国精诚合作
+      </a>
+      <time>2021-12-09</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59592471?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-07</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-07/Business-%E9%A6%99%E6%B8%AF%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E6%B7%B1%E9%99%B7-%E6%B0%B8%E4%B9%85%E9%9A%94%E7%A6%BB-%E7%9A%84%E5%9B%BD%E6%B3%B0%E6%9C%BA%E7%BB%84%E4%BA%BA%E5%91%98">
+      
+        [Business] 香港新冠疫情： 深陷“永久隔离”的国泰机组人员
+      </a>
+      <time>2021-12-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-59558891?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-07/World-BBC%E5%B7%BE%E5%B8%BC%E7%99%BE%E5%90%8D2021-%E4%BB%8A%E5%B9%B4%E6%9C%89%E8%B0%81%E4%B8%8A%E6%A6%9C">
+      
+        [World] BBC巾帼百名2021：今年有谁上榜？
+      </a>
+      <time>2021-12-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59552707?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-07/World-%E6%89%80%E7%BD%97%E9%97%A8%E7%BE%A4%E5%B2%9B%E9%AA%9A%E4%B9%B1%E5%90%8E%E6%94%BF%E6%B2%BB%E6%92%95%E8%A3%82%E6%8C%81%E7%BB%AD-%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%AD%E5%9B%BD%E5%9B%A0%E7%B4%A0%E5%92%8C%E6%B7%B1%E5%B1%82%E7%9F%9B%E7%9B%BE">
+      
+        [World] 所罗门群岛骚乱后政治撕裂持续 背后的中国因素和深层矛盾
+      </a>
+      <time>2021-12-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59561725?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-06</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-06/World-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E6%94%AF%E6%8C%81%E5%92%8C%E5%8F%8D%E5%AF%B9%E5%BC%BA%E5%88%B6%E6%8E%A5%E7%A7%8D%E7%9A%84%E4%B8%89%E4%B8%AA%E7%90%86%E7%94%B1">
+      
+        [World] 新冠疫苗：支持和反对强制接种的三个理由
+      </a>
+      <time>2021-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59546686?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-06/%E6%97%A5%E6%9C%AC%E6%B2%A6%E4%B8%BA%E7%BA%AF%E7%94%B5%E5%8A%A8%E8%BD%A6%E8%BF%BD%E9%9A%8F%E8%80%85%E6%98%AF%E5%9B%A0%E5%A4%AA%E8%B6%85%E5%89%8D">
+      
+        日本沦为纯电动车追随者是因太超前？
+      </a>
+      <time>2021-12-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/46872-2021-12-07-08-23-38.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-05</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-05/World-%E5%8F%B0%E6%B9%BE-%E5%9B%9B%E5%A4%A7%E5%85%AC%E6%8A%95-%E5%8D%B3%E5%B0%86%E4%B8%BE%E8%A1%8C-%E4%BD%A0%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9C%8B%E7%82%B9%E6%9C%89%E5%93%AA%E4%BA%9B">
+      
+        [World] 台湾“四大公投”即将举行 你该了解的看点有哪些
+      </a>
+      <time>2021-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59502399?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-05/%E8%BF%99%E5%AE%B6%E6%97%A5%E4%BC%81%E6%8E%8C%E6%8F%A1%E5%85%A8%E7%90%83%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%9D%90%E6%96%997%E6%88%90%E4%BB%BD%E9%A2%9D">
+      
+        这家日企掌握全球半导体材料7成份额
+      </a>
+      <time>2021-12-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/manufacturing/46718-2021-12-06-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-04</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-04/Science-%E7%BE%8E%E5%9B%BD%E5%BF%83%E8%84%8F%E5%8D%8F%E4%BC%9A-%E6%94%B9%E5%96%84%E5%BF%83%E8%84%8F%E5%81%A5%E5%BA%B7%E7%9A%84%E5%8D%81%E5%A4%A7%E9%A5%AE%E9%A3%9F%E6%A8%A1%E5%BC%8F">
+      
+        [Science] 美国心脏协会：改善心脏健康的十大饮食模式
+      </a>
+      <time>2021-12-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59508516?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-03</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-03/World-%E5%BD%AD%E5%B8%85%E4%BA%8B%E4%BB%B6-%E8%B7%9F%E4%B8%AD%E5%9B%BD%E5%8F%AB%E6%9D%BF%E7%9A%84%E4%B8%96%E7%95%8C%E5%A5%B3%E5%AD%90%E7%BD%91%E7%90%83%E5%8D%8F%E4%BC%9A%E4%B8%BB%E5%B8%AD%E8%B5%9B%E9%97%A8%E6%98%AF%E8%B0%81">
+      
+        [World] 彭帅事件：跟中国叫板的世界女子网球协会主席赛门是谁？
+      </a>
+      <time>2021-12-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59518380?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-12-02</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-12-02/World-%E4%B8%AD%E5%9B%BD%E8%80%81%E6%8C%9D%E8%B7%A8%E5%9B%BD%E9%93%81%E8%B7%AF%E9%80%9A%E8%BD%A6-%E6%B3%9B%E4%BA%9A%E9%93%81%E8%B7%AF%E8%AE%A1%E5%88%92%E8%89%B0%E9%9A%BE%E8%B5%B7%E6%AD%A5">
+      
+        [World] 中国老挝跨国铁路通车 泛亚铁路计划艰难起步
+      </a>
+      <time>2021-12-02</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59490386?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-30</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-30/Chinese-%E5%8C%97%E4%BA%AC%E9%A6%96%E6%89%B9%E4%BB%98%E8%B4%B9%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%AE%A1%E7%A8%8B%E8%BD%A6%E8%BD%BD%E5%AE%A2%E4%B8%8A%E8%B7%AF">
+      
+        [Chinese] 北京首批付费自动驾驶计程车载客上路
+      </a>
+      <time>2021-11-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59460192?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-30/World-Omicron%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E5%8F%98%E7%A7%8D-%E4%B8%AD%E5%9B%BD%E5%86%8D%E6%8E%A810%E4%BA%BF%E5%89%82-%E9%9D%9E%E6%B4%B2%E5%8D%97%E9%83%A8%E7%9A%84%E7%96%AB%E8%8B%97%E5%A4%9F%E7%94%A8%E5%90%97">
+      
+        [World] Omicron新冠病毒变种：中国再推10亿剂　非洲南部的疫苗够用吗？
+      </a>
+      <time>2021-11-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59472555?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-30/World-%E4%BC%8A%E6%9C%97%E6%A0%B8%E5%8D%8F%E8%AE%AE-%E5%90%84%E5%9B%BD%E6%83%B3%E4%BB%8E%E8%B0%88%E5%88%A4%E4%B8%AD%E5%BE%97%E5%88%B0%E4%BB%80%E4%B9%88">
+      
+        [World] 伊朗核协议：各国想从谈判中得到什么
+      </a>
+      <time>2021-11-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59473773?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-29</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-29/%E6%97%A5%E6%9C%AC%E6%97%A5%E5%85%B4%E5%B0%86%E5%8A%A0%E9%80%9F%E5%90%91%E6%B5%B7%E5%A4%96%E5%87%BA%E5%8F%A3%E6%B0%B4%E4%BA%A7%E5%8A%A0%E5%B7%A5%E8%AE%BE%E5%A4%87">
+      
+        日本日兴将加速向海外出口水产加工设备
+      </a>
+      <time>2021-11-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/agriculture/46839-2021-11-30-09-24-47.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-28</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-28/%E6%97%A5%E4%BC%81%E7%94%A8%E6%96%B0%E6%9C%8D%E5%8A%A1%E8%A7%A3%E5%86%B3%E5%A4%96%E5%9B%BD%E4%BA%BA%E7%A7%9F%E6%88%BF-%E5%B0%B1%E4%B8%9A%E9%9A%BE%E9%A2%98">
+      
+        日企用新服务解决外国人租房、就业难题
+      </a>
+      <time>2021-11-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/management-strategy/46809-2021-11-29-05-00-30.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-28/World-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%BC%BA%E5%88%B6%E6%8E%A5%E7%A7%8D%E7%96%AB%E8%8B%97%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F">
+      
+        [World] 新冠疫苗：强制接种疫苗的前世今生
+      </a>
+      <time>2021-11-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59350393?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-25</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-25/Chinese-%E4%B8%AD%E5%9B%BD%E6%83%A9%E5%A4%84%E5%8F%B0%E6%B9%BE%E8%BF%9C%E4%B8%9C%E9%9B%86%E5%9B%A2-%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%BF%E6%B2%BB%E5%92%8C%E7%BB%8F%E6%B5%8E%E8%80%83%E9%87%8F">
+      
+        [Chinese] 中国惩处台湾远东集团 背后的政治和经济考量
+      </a>
+      <time>2021-11-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59416392?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-25/%E5%B0%91%E5%AD%90%E5%8C%96%E5%92%8C%E7%96%AB%E6%83%85%E8%AE%A9%E6%97%A5%E6%9C%AC%E5%AD%A6%E8%B4%B9%E4%B8%8A%E6%B6%A8">
+      
+        少子化和疫情让日本学费上涨
+      </a>
+      <time>2021-11-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/career/abroadstudy/46789-2021-11-26-05-00-30.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-25/Science-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E6%B7%B7%E6%90%AD%E6%8E%A5%E7%A7%8D-%E5%89%AF%E4%BD%9C%E7%94%A8%E5%92%8C%E5%85%B6%E4%BB%96%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98">
+      
+        [Science] 新冠疫苗：混搭接种、副作用和其他几个基本问题
+      </a>
+      <time>2021-11-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-56737453?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-24</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-24/Science-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E5%8A%A0%E5%BC%BA%E5%89%82%E6%98%AF%E5%90%A6%E5%BF%85%E8%A6%81-%E7%AA%81%E7%A0%B4%E6%80%A7%E6%84%9F%E6%9F%93%E6%98%AF%E5%90%A6%E5%A0%AA%E5%BF%A7">
+      
+        [Science] 新冠疫苗加强剂是否必要？突破性感染是否堪忧 ？
+      </a>
+      <time>2021-11-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-58320233?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-22</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-22/%E6%97%A5%E6%9C%AC%E4%B8%AD%E9%AB%98%E5%B9%B4%E7%9A%84%E5%B7%A5%E8%B5%84%E5%A4%AA%E9%AB%98">
+      
+        日本中高年的工资太高?
+      </a>
+      <time>2021-11-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/x-columnviewpoint/46732-2021-11-23-05-02-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-22/%E6%97%A5%E4%BC%81%E5%BC%80%E5%8F%91%E6%96%B0%E4%B8%80%E4%BB%A3%E5%9C%B0%E7%83%AD%E5%8F%91%E7%94%B5-%E5%9C%A8%E9%A2%A0%E8%A6%86%E5%B8%B8%E8%AF%86">
+      
+        日企开发新一代地热发电，在颠覆常识
+      </a>
+      <time>2021-11-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/manufacturing/46758-2021-11-23-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-21</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-21/%E5%8D%8E%E6%B5%81%E5%93%81%E7%89%8C%E6%96%B0%E6%97%B6%E4%BB%A3-4-%E4%B8%AD%E5%9B%BDEV%E9%9B%86%E4%BD%93%E5%87%BA%E6%B5%B7">
+      
+        华流品牌新时代（4）中国EV集体出海
+      </a>
+      <time>2021-11-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/x-columnviewpoint/46728-2021-11-22-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-21/Science-%E5%A4%AA%E7%A9%BA%E6%8E%A2%E7%B4%A2-%E6%8C%AF%E8%8D%A1%E5%A4%A9%E6%98%9F-%E5%9C%B0%E7%90%83%E5%85%B1%E8%BD%A8%E5%B0%8F%E8%A1%8C%E6%98%9F%E7%9A%84%E7%A5%9E%E7%A7%98%E8%BA%AB%E4%B8%96">
+      
+        [Science] 太空探索 — 振荡天星：地球共轨小行星的神秘身世
+      </a>
+      <time>2021-11-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59331905?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-20</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-20/World-%E5%8F%91%E6%98%8E-%E8%87%B4%E5%91%BD%E6%AD%A6%E5%99%A8-%E8%80%8C%E8%BF%BD%E6%82%94%E8%8E%AB%E5%8F%8A%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%A7%91%E5%AD%A6%E5%AE%B6%E7%9A%84%E6%95%85%E4%BA%8B">
+      
+        [World] 发明“致命武器”而追悔莫及的四个科学家的故事
+      </a>
+      <time>2021-11-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59307490?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-19</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-19/Chinese-BBC%E4%B8%93%E8%AE%BF-%E7%BA%A2%E8%89%B2%E8%BD%AE%E7%9B%98-%E4%BD%9C%E8%80%85%E6%B2%88%E6%A0%8B-%E6%AE%B5%E4%BC%9F%E7%BA%A2-%E8%8E%B7%E4%B8%80%E5%AE%9A%E7%A8%8B%E5%BA%A6%E8%87%AA%E7%94%B1">
+      
+        [Chinese] BBC专访《红色轮盘》作者沈栋：段伟红“获一定程度自由”
+      </a>
+      <time>2021-11-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59329579?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-19/World-%E5%8F%B0%E6%B9%BE%E9%A9%BB%E7%AB%8B%E9%99%B6%E5%AE%9B%E4%BB%A3%E8%A1%A8%E5%A4%84%E6%8C%82%E7%89%8C-%E5%8C%97%E4%BA%AC%E5%BC%BA%E7%83%88%E6%8A%97%E8%AE%AE%E7%A7%B0-%E5%90%8E%E6%9E%9C%E8%87%AA%E8%B4%9F">
+      
+        [World] 台湾驻立陶宛代表处挂牌：北京强烈抗议称“后果自负”
+      </a>
+      <time>2021-11-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59346775?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-19/World-%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5%E4%BC%9A-%E6%8B%9C%E7%99%BB%E8%80%83%E8%99%91%E7%94%A8%E5%A4%96%E4%BA%A4%E6%89%8B%E6%AE%B5%E6%8A%B5%E5%88%B6">
+      
+        [World] 北京冬奥会：拜登考虑用外交手段抵制
+      </a>
+      <time>2021-11-19</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59344750?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-18</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-18/World-%E4%B8%AD%E5%9B%BD%E7%A0%94%E5%8F%91%E9%AB%98%E8%B6%85%E9%9F%B3%E9%80%9F%E5%AF%BC%E5%BC%B9%E6%8A%80%E6%9C%AF-%E8%83%8C%E5%90%8E%E7%9A%84%E4%B8%89%E5%A4%A7%E7%96%91%E9%97%AE%E5%92%8C%E4%B8%A4%E5%A4%A7%E9%9A%90%E5%BF%A7">
+      
+        [World] 中国研发高超音速导弹技术：背后的三大疑问和两大隐忧
+      </a>
+      <time>2021-11-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59262556?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-18/Chinese-%E4%B8%AD%E5%85%B1%E7%AC%AC%E4%B8%89%E4%BB%BD%E5%8E%86%E5%8F%B2%E5%86%B3%E8%AE%AE%E4%B8%BA%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%9D%83%E5%A8%81-%E5%B0%81%E5%8D%B0-%E7%A1%AE%E7%AB%8B%E4%B8%AD%E5%9B%BD-%E6%96%B0%E6%9E%81%E6%9D%83%E4%B8%BB%E4%B9%89%E4%BD%93%E5%88%B6">
+      
+        [Chinese] 中共第三份历史决议为习近平权威“封印”，确立中国“新极权主义体制”
+      </a>
+      <time>2021-11-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59333887?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-18/World-%E5%A5%B3%E7%94%BB%E5%AE%B6%E8%8A%99%E7%83%88%E8%BE%BE-%E5%8D%A1%E8%90%9D%E5%88%9B%E6%8B%8D%E5%8D%96%E6%96%B0%E7%BA%AA%E5%BD%95-%E6%96%87%E5%8C%96%E5%81%B6%E5%83%8F%E7%9A%84%E5%A6%82%E7%94%BB%E4%BA%BA%E7%94%9F">
+      
+        [World] 女画家芙烈达·卡萝创拍卖新纪录 文化偶像的如画人生
+      </a>
+      <time>2021-11-18</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59321696?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-17</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/Sports-%E5%91%A8%E5%86%A0%E5%AE%87-%E4%B8%AD%E5%9B%BD%E9%A6%96%E4%BD%8D%E4%B8%80%E7%BA%A7%E6%96%B9%E7%A8%8B%E5%BC%8F%E8%B5%9B%E8%BD%A6%E6%AD%A3%E5%BC%8F%E8%BD%A6%E6%89%8B">
+      
+        [Sports] 周冠宇：中国首位一级方程式赛车正式车手
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/sports-59329475?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/Sports-%E4%B8%AD%E5%9B%BD%E5%AE%98%E5%AA%92CGTN%E5%8F%91%E5%B8%83%E5%BD%AD%E5%B8%85-%E6%8A%A5%E5%B9%B3%E5%AE%89-%E7%94%B5%E9%82%AE%E6%B7%BB%E7%96%91%E4%BA%91">
+      
+        [Sports] 中国官媒CGTN发布彭帅“报平安”电邮添疑云
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/sports-59328953?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/%E5%AF%8C%E5%A3%AB%E8%83%B6%E7%89%87%E6%8E%A8%E5%87%BA%E6%9C%80%E9%AB%98%E7%AB%AF%E6%8B%8D%E7%AB%8B%E5%BE%97-%E8%AE%BE%E8%AE%A1%E9%AB%98%E7%BA%A7%E5%A4%8D%E5%8F%A4">
+      
+        富士胶片推出最高端拍立得，设计高级复古
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/product/pdigital/46725-2021-11-18-10-03-27.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/%E5%A4%96%E8%B5%84%E5%B7%A5%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA4%E5%BC%BA%E7%AB%9E%E7%9B%B8%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%A2%9E%E4%BA%A7">
+      
+        外资工业机器人4强竞相在中国增产
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/x-columnviewpoint/46705-2021-11-18-08-29-51.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/World-%E7%99%BD%E4%BF%84%E7%BD%97%E6%96%AF%E4%B8%8E%E6%B3%A2%E5%85%B0%E8%BE%B9%E5%A2%83%E7%A7%BB%E6%B0%91%E5%8D%B1%E6%9C%BA%E7%9A%84%E6%9D%A5%E9%BE%99%E5%8E%BB%E8%84%89">
+      
+        [World] 白俄罗斯与波兰边境移民危机的来龙去脉
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59319409?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/World-COP26-%E6%B0%94%E5%80%99%E5%B3%B0%E4%BC%9A-%E6%B7%98%E6%B1%B0%E7%85%A4%E7%82%AD-%E6%89%BF%E8%AF%BA%E7%BC%A9%E6%B0%B4-%E4%B8%AD%E5%9B%BD%E4%B8%8E%E5%8D%B0%E5%BA%A6%E6%89%80%E6%89%AE%E6%BC%94%E8%A7%92%E8%89%B2%E5%8F%97%E8%B4%A8%E7%96%91">
+      
+        [World] COP26|气候峰会：“淘汰煤炭”承诺缩水 中国与印度所扮演角色受质疑
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59320504?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-17/Chinese-%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E4%BC%A6%E6%95%A6%E4%BC%A0%E6%89%BF%E6%B0%91%E6%97%8F%E6%96%87%E5%8C%96">
+      
+        [Chinese] 维吾尔人在英国伦敦传承民族文化
+      </a>
+      <time>2021-11-17</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59317939?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-16</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-16/World-%E6%8B%9C%E7%99%BB%E5%92%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%BE%E8%A1%8C%E8%A7%86%E5%83%8F%E4%BC%9A%E6%99%A4-%E5%BC%80%E5%9C%BA%E5%8F%8B%E5%A5%BD-%E5%9C%A8%E5%8F%B0%E6%B9%BE%E9%97%AE%E9%A2%98%E4%B8%8A%E5%B1%95%E7%8E%B0%E5%88%86%E6%AD%A7">
+      
+        [World] 拜登和习近平举行视像会晤：开场友好，在台湾问题上展现分歧
+      </a>
+      <time>2021-11-16</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59301487?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2021-11-15</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-15/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%A4%9A%E5%9B%BD%E9%80%89%E6%8B%A9-%E4%B8%8E%E7%97%85%E6%AF%92%E5%85%B1%E5%AD%98-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%AD%E5%9B%BD%E4%BB%8D%E5%9D%9A%E6%8C%81-%E6%B8%85%E9%9B%B6">
+      
+        [Chinese] 新冠疫情：多国选择“与病毒共存” 为什么中国仍坚持“清零”
+      </a>
+      <time>2021-11-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59288673?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-15/Chinese-%E4%B8%AD%E5%9B%BD%E9%98%B2%E7%96%AB%E4%BA%BA%E5%91%98%E5%85%A5%E6%B0%91%E5%AE%85-%E6%97%A0%E5%AE%B3%E5%8C%96%E5%A4%84%E7%BD%AE-%E5%AE%A0%E7%89%A9%E7%8B%97-%E5%BC%95%E5%8F%91%E4%BC%97%E6%80%92">
+      
+        [Chinese] 中国防疫人员入民宅“无害化处置”宠物狗，引发众怒
+      </a>
+      <time>2021-11-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-59289251?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-15/Science-%E4%BA%BA%E6%AD%BB%E5%90%8E%E8%A6%81%E5%A6%82%E4%BD%95%E6%89%8D%E8%83%BD%E5%8F%98%E6%88%90%E5%8C%96%E7%9F%B3">
+      
+        [Science] 人死后要如何才能变成化石
+      </a>
+      <time>2021-11-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-59294383?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2021-11-15/World-%E6%8B%9C%E7%99%BB%E5%92%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E8%A7%86%E9%A2%91%E5%B3%B0%E4%BC%9A-%E4%BB%96%E4%BB%AC%E6%83%B3%E4%BB%8E%E8%B0%88%E5%88%A4%E4%B8%AD%E5%BE%97%E5%88%B0%E4%BB%80%E4%B9%88">
+      
+        [World] 拜登和习近平视频峰会：他们想从谈判中得到什么
+      </a>
+      <time>2021-11-15</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-59288853?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+        
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page36/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page38/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page36/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page38/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page36/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page38/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

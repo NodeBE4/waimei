@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国重要财经新闻一周回顾 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国重要财经新闻一周回顾
+——
+" />
+    <meta property="og:description" content="
+中国重要财经新闻一周回顾
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国重要财经新闻一周回顾" />
+    <meta property="twitter:title" content="中国重要财经新闻一周回顾" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4453)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.reuters.com%2Farticle%2Fweekly-glance-china-finnews-0408-idCNKCS2M00AW&t=%E4%B8%AD%E5%9B%BD%E9%87%8D%E8%A6%81%E8%B4%A2%E7%BB%8F%E6%96%B0%E9%97%BB%E4%B8%80%E5%91%A8%E5%9B%9E%E9%A1%BE" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.reuters.com%2Farticle%2Fweekly-glance-china-finnews-0408-idCNKCS2M00AW&t=%E4%B8%AD%E5%9B%BD%E9%87%8D%E8%A6%81%E8%B4%A2%E7%BB%8F%E6%96%B0%E9%97%BB%E4%B8%80%E5%91%A8%E5%9B%9E%E9%A1%BE&d=2022-04-08&e=
+中国重要财经新闻一周回顾
+——
+
+
+  
+2022-04-08T04:38:24Z
+  
+  以下为路透中文新闻为您整理的一周(4月6日-8日)中国重要财经新闻：
+  【政治/外交】
+  --王毅：美众院议长如访台是对中国主权恶意挑衅，若一意孤行中方必坚决反应
+  针对美国国会众院议长佩洛西将访台，中国国务委员兼外长王毅表示，美国国会众院议长作为一国政要，“如明知故犯窜访台湾”，将是对中国主权的恶意挑衅，对中国内政的粗暴干涉。如果美方一意孤行，中方必将作出坚决反应，一切后果由美方承担。
+  --中国外交部称若美众议长佩洛西访问台湾，将“严重冲击”中美关系的政治基础
+  --《焦点》美国称对俄制裁能让中国“很好的理解”支持俄和武统台湾的后果
+  美国副国务卿舍曼(Wendy Sherman)表示，俄罗斯因乌克兰战争而受到的一系列制裁，应该让中国“很好地理解”，如果中国向俄罗斯提供物质..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.reuters.com%2Farticle%2Fweekly-glance-china-finnews-0408-idCNKCS2M00AW" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW&text=中国重要财经新闻一周回顾&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW&title=中国重要财经新闻一周回顾" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW&title=中国重要财经新闻一周回顾" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国重要财经新闻一周回顾&body=
+中国重要财经新闻一周回顾
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW&title=中国重要财经新闻一周回顾&caption=
+中国重要财经新闻一周回顾
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国重要财经新闻一周回顾&url=https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国重要财经新闻一周回顾</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2022-04-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#路透 ">
+          路透
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="路透的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#路透 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.reuters.com%2Farticle%2Fweekly-glance-china-finnews-0408-idCNKCS2M00AW&t=%E4%B8%AD%E5%9B%BD%E9%87%8D%E8%A6%81%E8%B4%A2%E7%BB%8F%E6%96%B0%E9%97%BB%E4%B8%80%E5%91%A8%E5%9B%9E%E9%A1%BE&d=2022-04-08&e=
+中国重要财经新闻一周回顾
+——
+
+
+  
+2022-04-08T04:38:24Z
+  
+  以下为路透中文新闻为您整理的一周(4月6日-8日)中国重要财经新闻：
+  【政治/外交】
+  --王毅：美众院议长如访台是对中国主权恶意挑衅，若一意孤行中方必坚决反应
+  针对美国国会众院议长佩洛西将访台，中国国务委员兼外长王毅表示，美国国会众院议长作为一国政要，“如明知故犯窜访台湾”，将是对中国主权的恶意挑衅，对中国内政的粗暴干涉。如果美方一意孤行，中方必将作出坚决反应，一切后果由美方承担。
+  --中国外交部称若美众议长佩洛西访问台湾，将“严重冲击”中美关系的政治基础
+  --《焦点》美国称对俄制裁能让中国“很好的理解”支持俄和武统台湾的后果
+  美国副国务卿舍曼(Wendy Sherman)表示，俄罗斯因乌克兰战争而受到的一系列制裁，应该让中国“很好地理解”，如果中国向俄罗斯提供物质..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.reuters.com%2Farticle%2Fweekly-glance-china-finnews-0408-idCNKCS2M00AW" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1649394063000-->
+<p><a href="https://cn.reuters.com/article/weekly-glance-china-finnews-0408-idCNKCS2M00AW">中国重要财经新闻一周回顾</a>
+——</p>
+
+<div>
+  <div>
+<em>2022-04-08T04:38:24Z</em>
+  </div>
+  <p>以下为路透中文新闻为您整理的一周(4月6日-8日)中国重要财经新闻：</p>
+  <p>【政治/外交】</p>
+  <p>--王毅：美众院议长如访台是对中国主权恶意挑衅，若一意孤行中方必坚决反应</p>
+  <p>针对美国国会众院议长佩洛西将访台，中国国务委员兼外长王毅表示，美国国会众院议长作为一国政要，“如明知故犯窜访台湾”，将是对中国主权的恶意挑衅，对中国内政的粗暴干涉。如果美方一意孤行，中方必将作出坚决反应，一切后果由美方承担。</p>
+  <p>--中国外交部称若美众议长佩洛西访问台湾，将“严重冲击”中美关系的政治基础</p>
+  <p>--《焦点》美国称对俄制裁能让中国“很好的理解”支持俄和武统台湾的后果</p>
+  <p>美国副国务卿舍曼(Wendy Sherman)表示，俄罗斯因乌克兰战争而受到的一系列制裁，应该让中国“很好地理解”，如果中国向俄罗斯提供物质支持，可能会面临的后果。</p>
+  <p>--美国贸易代表称寻求重新调整美中商业关系，非分道扬镳--彭博</p>
+  <p>美国贸易代表戴琪(Katherine Tai)表示，美国正在寻求重新调整与中国的商业关系，而不是寻求世界两大经济体“分道扬镳”。</p>
+  <p>--美国国务院批准可能的近1亿美元对台军售案--美国国防部</p>
+  <p>美国国防部表示，美国国务院已经批准可能向台湾出售设备、培训和其他项目以支持爱国者防空系统，交易价值达9,500万美元。</p>
+  <p>--王毅同乌克兰外长通电话，称中国在乌克兰问题上的基本态度就是劝和促谈</p>
+  <p>中国国务委员兼外长王毅应约同乌克兰外长库列巴通电话时表示，中国在乌克兰问题上的基本态度就是劝和促谈。中方欢迎俄乌和谈，困难再大、分歧再多，也要坚持和平谈判大方向，直到谈出停火、谈出和平。</p>
+  <p>--王毅：各方都要做乌克兰问题劝和促谈的“助推器”，而不是煽风点火的“鼓风机”</p>
+  <p>中国国务委员兼外长王毅同法国总统外事顾问博纳通电话，就乌克兰问题交换了意见。王毅表示，各方都应为推进和谈营造必要环境和条件，都要做劝和促谈的“助推器”，而不是煽风点火的“鼓风机”。</p>
+  <p>--王毅同加拿大外长通话，称尊重彼此核心利益不给中加关系设置新障碍</p>
+  <p>中国国务委员兼外长王毅同加拿大外长乔利通电话时表示，两国关系现状不符合双方利益，加方应正视问题，同中方相向而行；并提出尊重彼此核心利益、不给中加关系设置新的障碍，以及坚持独立自主、排除不必要的外部干扰等意见。</p>
+  <p>--联大暂停俄罗斯在人权理事会成员资格，中国投反对票称“无异于火上浇油”</p>
+  <p>联合国大会宣布暂停俄罗斯在联合国人权理事会的成员资格，因有报导称，入侵乌克兰的俄军，“严重且系统性地侵犯和践踏人权”。</p>
+  <p>--香港政务司长李家超辞职获中央批准，正式备战参选特首获四大地产商“祝福”</p>
+  <p>香港政务司司长李家超辞职获中央批准，预料他将正式备战参加下届特首选举。他日前宣布辞职后随即投入准备工作，并已获政界重量级人物--全国人大常委谭耀宗协助竞选。而作为香港商界核心的四大地产商--长江、恒地、新地以及新世界亦齐表态支持。</p>
+  <p>【经济】</p>
+  <p>--《分析》中国国常会再释宽松信号，央行政策工具箱多种子弹随时待发</p>
+  <p>继上周喊话早出台稳增长政策后，本周最新召开的中国国务院常务会议进一步提出“适时灵活运用多种货币政策工具”。分析人士认为，国内新冠疫情阴霾笼罩，经济下行压力之大有目共睹，央行宽松政策或箭在弦上，工具箱内包括结构性宽松及降准降息等子弹随时待发。</p>
+  <p>--中国国务院部际会议：加快实施新减税降费组合政策，加大金融支持经济力度</p>
+  <p>中国国务院减轻企业负担部际联席会议召开，会议指出，聚焦统筹疫情防控和经济社会发展，推动助企纾困政策落地见效，加快实施新的减税降费组合政策，着力降低企业要素成本，加大金融支持实体经济力度。</p>
+  <p>--中国副总理：受疫情等影响就业形势复杂严峻，密切关注苗头性倾向性问题</p>
+  <p>中国国务院副总理胡春华主持召开就业形势座谈会，当前受疫情等因素影响，就业工作面临的形势复杂严峻，要把稳就业放在更加重要位置。</p>
+  <p>--中国副总理：外部环境更趋严峻复杂，实现稳外贸目标需付出更大努力</p>
+  <p>中国国务院副总理胡春华主持召开外贸形势座谈会时表示，今年一季度总体开局良好，为实现全年目标打下了较好基础。但同时要看到，外贸所处的外部环境更趋严峻复杂，发展面临诸多风险挑战，实现稳外贸目标需要付出更大努力。</p>
+  <p>--中国副总理：上海要统筹疫情防控和经济运行，保障核心功能稳定运转</p>
+  <p>中国国务院副总理孙春兰近两日在上海调研指导新冠疫情防控时指出，上海承载着联通国内国际两个市场的重要功能，要统筹疫情防控和经济运行，保障经济、金融、贸易、航运中心核心功能稳定运转。</p>
+  <p>--中国发改委摸底研判首季经济形势，保持工业平稳增长等仍是重中之重--报载</p>
+  <p>中国经济参考报报导，近期国家发展改革委展开密集摸底，地方发展改革委也陆续召开分析座谈会，研判一季度经济运行，部署下一步重点工作；下一阶段，保持工业平稳增长、着力抓项目稳投资、扶企纾困等仍是重中之重。</p>
+  <p>--中国工信部：2025年大宗单产能耗和碳排放明显下降，严控炼油等行业新增产能</p>
+  <p>中国工业和信息化部、国家发改委等部门联合发布“十四五”推动石化化工行业高质量发展的指导意见，提出2025年大宗产品单位产品能耗和碳排放明显下降，挥发性有机物排放总量比“十三五”降低10%以上。</p>
+  <p>--中国楼市政策松绑再添一城，兰州降低房贷首付比例并放松限购限售条件</p>
+  <p>中国甘肃省兰州市日前明确提出降低个人购房门槛、提高公积金贷款额度、放松区域限购以及放宽限售条件，首套房和二套房贷款首付比例分别降至20%和30%，同时对拥有一套住房并已结清购房贷款的家庭，再次申请贷款购买住房的，执行首套房贷款政策。</p>
+  <p>--财新中国3月服务业和综合PMI均降至逾两年低位，疫情冲击下供求同步受限</p>
+  <p>在疫情阴云席卷多地的冲击下，服务业供求两侧同步受限，财新中国3月服务业PMI和综合PMI降至逾两年新低，企业成本加速上扬。中国经济面临滞涨风险，叠加俄乌局势前景不明等外部不确定因素，中国政策层需在防疫与保生产中平衡，并加大对重点行业和小微企业扶持力度，以应对经济下行压力。</p>
+  <p>--中国要发挥投资的关键作用，避免政策掣肘干扰市场主体的投资消费决策--专家</p>
+  <p>中国宏观经济研究院投资研究所所长张长春撰文表示，要发挥投资的关键作用，扩大民生领域投资，满足居民对教育、医疗、养老等领域的民生消费需求；加强部门间政策协调配合，避免因政策规定相互掣肘和政策效应互相抵消而干扰市场主体的投资和消费决策。</p>
+  <p>--中国对俄贸易感受到俄乌战争的刺痛，小出口商表示“伤不起”</p>
+  <p>中国对俄罗斯的出口因卢布贬值而受到冲击，这清楚地表明，中国在外交方面支持俄罗斯之际，西方对俄罗斯入侵乌克兰的制裁已经在中国产生连锁反应。</p>
+  <p>--亚银：俄乌战争将拖慢亚洲经济2022年增长，中国增长预估下修至5%</p>
+  <p>亚洲开发银行(ADB)指出，亚洲发展中国家今年增长速度料将低于先前预估，在新冠疫情冲击尚未完全消除之际，乌克兰战争料将打乱亚洲经济复苏。</p>
+  <p>【金融】</p>
+  <p>--筑牢金融安全网，中国金融稳定法草案明确设立金融稳定保障基金</p>
+  <p>着力构建维护金融稳定的四梁八柱，中国央行公布“金融稳定法”草案征求意见稿，明确建立金融稳定保障基金，作为国家重大金融风险处置后备资金。</p>
+  <p>--中国央行：依法加强平台企业支付业务监管，稳步提升支付普惠水平</p>
+  <p>中国央行周四召开2022年支付结算工作电视会议，要求依法加强平台企业支付业务监管，系统推进跨境赌博、电信网络诈骗和非法支付活动“资金链”治理，完善支付体系建设。</p>
+  <p>--中国央行：新增天津、重庆、广州等地作为数字人民币试点地区</p>
+  <p>中国央行表示，有序扩大数字人民币试点范围，在现有试点地区基础上增加天津市、重庆市、广东省广州市、福建省福州市和厦门市、浙江省承办亚运会的六个城市作为试点地区。</p>
+  <p>--3月新兴市场遭遇一年来首次资本外流，资本从中国撤离呈“前所未有态势”—IIF</p>
+  <p>国际金融协会(IIF)发布的一份报告显示，3月，新兴市场投资组合遭遇一年来首次资金外流，受投资者抛售中国资产，以及对近期地缘政治事件的担忧日益加剧驱动。</p>
+  <p>--中国银保监：确保涉农信贷投入稳定增长，提高进城农民等新市民金融服务水平</p>
+  <p>中国银保监会发布通知，提出确保涉农信贷投入稳定增长总目标，要求各银行机构继续单列涉农和普惠型涉农信贷计划，努力实现同口径涉农贷款余额持续增长；还要提高进城农民等新市民金融服务水平。</p>
+  <p>--中国证监会：完善私募基金监管规则优化监管和服务，稳妥化解行业风险</p>
+  <p>中国证监会表示，要完善私募基金监管规则，优化私募基金监管和服务，稳妥化解行业风险，推动行业健康发展；严厉打击非法证券期货活动，紧盯新形势新动向，加大涉非案件查处力度，切实保护投资者合法权益。</p>
+  <p>--深圳金管局：支持优质金融科技类企业上市、发债融资</p>
+  <p>深圳地方金融监督管理局发文称，支持优质金融科技类企业上市融资；支持金融科技类企业通过发行债券、资产证券化等方式，拓宽融资渠道。</p>
+  <p>【固定收益】</p>
+  <p>--中国央行：外资3月末持有人民币债券规模续降至3.88万亿，占总托管量3.3%</p>
+  <p>中国央行上海总部公布，截至3月末，境外机构持有银行间市场债券3.88万亿元人民币（2月末为3.99万亿），约占银行间债券市场总托管量的3.3%。从券种看，境外机构的主要托管券种是国债，托管量为2.43万亿元（2月末为2.48万亿），占比62.7%。</p>
+  <p>--《图表新闻》2-5年国债中美利差倒挂，中债暂无大碍但短端利率下行料受抑</p>
+  <p>自美联储3月开启加息以来，美债收益率一路走升，最新释放的鹰派信号，令这种势头进一步加剧。而中国债市的相对稳定，则导致中美利差不断被挤压，10年利差最新收窄至20个基点（bp），创近12年新低，两至五年则均出现明显倒挂。</p>
+  <p>【外汇】</p>
+  <p>--《图表新闻》中国3月末外储规模创一年新低，利差收窄或加剧资金流出风险</p>
+  <p>中国3月末外汇储备环比再降258亿美元至31,878亿美元创去年3月以来新低，今年前三月已累计减少622亿美元。3月美联储正式开启加息进程，而且后续可能连续大幅升息，美元指数已升向100大关；短期估值效应料仍会拖累中国外储规模，同时中美利差继续收窄压力亦可能加剧资金流出风险。</p>
+  <p>--跨境资金波动正常可控，人民币资产仍具有良好配置价值--外管局负责人</p>
+  <p>中国国家外汇管理局最新表示，跨境证券投资短期波动，不代表外资投资中国资本市场的长期趋势逆转；证券投资项下跨境资金波动在正常、可控范围内；人民币币值基本稳定，人民币资产具有良好配置价值；从未来趋势看，外资投资人民币资产仍会以增配为主。</p>
+  <p>【证券/行业】</p>
+  <p>--《分析》中国再抛“橄榄枝”欲消跨境监管障碍，惟中概股命运仍扑朔迷离</p>
+  <p>中国证监会最新表示拟修订境内企业赴境外上市相关保密和档案管理规定，并为开展包括联合检查在内的跨境监管合作提供便利。分析人士称，中国正积极主动做出让步以符合美国监管要求，惟主动权仍掌握在对方手中。</p>
+  <p>--《独家新闻》中国国营炼厂避免签订新的俄罗斯石油采购合同--消息</p>
+  <p>六位消息人士告诉路透，中国的国营炼厂将履行现有的俄罗斯石油合同，但将避免签订新的合同，尽管价格十分优惠。这是因为随着西方因俄罗斯入侵乌克兰而实施越来越多的制裁，中国政府呼吁谨慎行事。</p>
+  <p>--京东集团称徐雷接替刘强东首席执行官职务，刘强东继续担任公司主席</p>
+  <p>中国电商龙头--京东集团称，公司总裁徐雷接替刘强东的首席执行官职务，并以执行董事的身份加入京东集团董事会，而刘强东继续担任公司主席，所有任命立即生效。</p>
+  <p>--华为称拟向股东分配股利614亿元，孟晚舟已出任公司轮值董事长</p>
+  <p>中国电信巨头--华为表示，拟向股东分配股利614.04亿元人民币；公司官网显示，公司副董事长、首席财务官（CFO）孟晚舟已出任轮值董事长，该职务期限为六个月，当值期间是公司最高领袖。</p>
+  <p>--腾讯旗下游戏直播平台企鹅电竞宣布退市，6月7日终将停止所有功能</p>
+  <p>腾讯控股旗下游戏直播平台--企鹅电竞周四发布退市公告称，由于业务发展策略的变更，其网页端、App端、微信小程序等，以及企鹅电竞直播助手网页端、App端等相关产品将于2022年6月7日23时59分终止运营。</p>
+  <p>--中国房企富力地产称“16富力04”债券展期兑付方案获持有人会议通过</p>
+  <p>债务重压下的中国房企--广州富力地产最新公告称，其“16富力04”债券展期方案获得持有人会议通过；根据此前方案拟全额付息、本金在一年内分多期兑付，同时为该期债增加两个地产项目的质押。</p>
+  <p>--中国开拓药业称核心产品临床数据结果显示能有效降低新冠患者住院/死亡率</p>
+  <p>中国创新药企业--开拓药业公布其核心产品普克鲁胺临床试验关键数据结果显示，该药物可有效降低新冠患者住院/死亡率，在伴有高风险因素的受试者中（特别是中高年龄组），能显著降低住院/死亡率。</p>
+  <p>--山东首次接收来自卡塔尔的海外天然气资源，20.5万方液化天然气在青岛接卸</p>
+  <p>中国山东青岛董家口经济区称，4月3日，满载20.5万方液化天然气(LNG)、来自卡塔尔港口的超大Q-Flex型LNG轮成功靠妥该经济区青岛LNG接收站码头开始卸货，标志着山东地区首次接收来自卡塔尔的海外天然气资源。（完）</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#路透 的其它文章</h4>
+    
+      <li>
+        <time>2022-04-08</time>
+        <a href="https://nodebe4.github.io/waimei/2022-04-08/%E6%B2%AA%E7%BB%BC%E6%8C%87%E6%97%A9%E7%9B%98%E5%BE%AE%E6%94%B6%E8%B7%8C-%E7%BE%8E%E8%81%94%E5%82%A8%E5%8A%A0%E6%81%AF%E9%A2%84%E6%9C%9F%E7%AD%89%E5%A4%9A%E9%87%8D%E5%88%A9%E7%A9%BA%E4%B8%8B%E5%B8%82%E5%9C%BA%E5%B0%86%E5%8F%8D%E5%A4%8D%E7%A3%A8%E5%BA%95">
+          沪综指早盘微收跌 美联储加息预期等多重利空下市场将反复磨底
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-04-08</time>
+        <a href="https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3">
+          中国网信办回应互联网大厂“裁员潮” 称近半年来用工人数保持平稳
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-04-07</time>
+        <a href="https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F">
+          香港政务司长李家超辞职获中央批准 正式备战参选特首获四大地产商“祝福”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2022-04-07</time>
+        <a href="https://nodebe4.github.io/waimei/2022-04-07/%E7%8B%AC%E5%AE%B6-%E6%89%98%E5%85%8B%E5%87%86%E5%A4%87%E4%BB%8ELME%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%8F%90%E5%8F%96%E9%94%8C%E5%BA%93%E5%AD%98-%E5%BC%95%E5%8F%91%E5%85%B3%E6%B3%A8-%E6%B6%88%E6%81%AF">
+          独家：托克准备从LME系统中提取锌库存 引发关注--消息
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F">
+            前一篇：香港政务司长李家超辞职获中央批准 正式备战参选特首获四大地产商“祝福”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3">
+            后一篇：中国网信办回应互联网大厂“裁员潮” 称近半年来用工人数保持平稳
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<路透>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2022-04-08/%E4%B8%AD%E5%9B%BD%E7%BD%91%E4%BF%A1%E5%8A%9E%E5%9B%9E%E5%BA%94%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%A7%E5%8E%82-%E8%A3%81%E5%91%98%E6%BD%AE-%E7%A7%B0%E8%BF%91%E5%8D%8A%E5%B9%B4%E6%9D%A5%E7%94%A8%E5%B7%A5%E4%BA%BA%E6%95%B0%E4%BF%9D%E6%8C%81%E5%B9%B3%E7%A8%B3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<路透>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2022-04-07/%E9%A6%99%E6%B8%AF%E6%94%BF%E5%8A%A1%E5%8F%B8%E9%95%BF%E6%9D%8E%E5%AE%B6%E8%B6%85%E8%BE%9E%E8%81%8C%E8%8E%B7%E4%B8%AD%E5%A4%AE%E6%89%B9%E5%87%86-%E6%AD%A3%E5%BC%8F%E5%A4%87%E6%88%98%E5%8F%82%E9%80%89%E7%89%B9%E9%A6%96%E8%8E%B7%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86-%E7%A5%9D%E7%A6%8F">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>

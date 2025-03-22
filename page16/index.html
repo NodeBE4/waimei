@@ -1,0 +1,3281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="git.io/JJCxX 老实报新闻 少整妖蛾子">
+    <meta property="og:description" content="git.io/JJCxX 老实报新闻 少整妖蛾子" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4453)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage16%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage16%2F&t=%E5%A4%96%E5%AA%92%E6%8A%A5%E9%81%93-git.io%2FJJCxX+%E8%80%81%E5%AE%9E%E6%8A%A5%E6%96%B0%E9%97%BB+%E5%B0%91%E6%95%B4%E5%A6%96%E8%9B%BE%E5%AD%90&d=&e={% if site.posts.size == 0 %}
+  No post found
+{% endif %}
+
+
+
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      {% assign today = site.time | date: '%Y-%m-%d' %}
+      {% capture month %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+      {% if month != today %}
+        {{ month }}
+      {% endif %}
+    {% else %}
+      {% capture date %}{{ post.date | date: '%Y-%m-%d' }}..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fnodebe4.github.io%2Fwaimei%2Fpage16%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://nodebe4.github.io/waimei/page16/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://nodebe4.github.io/waimei/page16/&text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://nodebe4.github.io/waimei/page16/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://nodebe4.github.io/waimei/page16/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&body=" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://nodebe4.github.io/waimei/page16/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://nodebe4.github.io/waimei/page16/&title=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&caption=&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=外媒报道-git.io/JJCxX 老实报新闻 少整妖蛾子&url=https://nodebe4.github.io/waimei/page16/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+<ul class="archive">
+
+  
+    
+      
+      
+      
+        <h2>2023-09-11</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/Chinese-%E6%97%A5%E6%9C%AC%E6%A0%B8%E7%81%BE%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%B5%B7%E7%9C%9F%E7%9A%84%E5%AE%89%E5%85%A8%E5%90%97-%E4%BA%94%E5%A4%A7%E9%97%AE%E9%A2%98%E4%B8%80%E6%AC%A1%E8%AF%B4%E6%B8%85">
+      
+        [Chinese] 日本核灾废水排海真的安全吗？五大问题一次说清
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66774023?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/%E5%8F%B0%E7%A7%AF%E7%94%B5%E8%A6%81%E5%B0%86AI%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%A7%E8%83%BD%E7%BF%BB%E7%95%AA">
+      
+        台积电要将AI半导体产能翻番
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53489-2023-09-12-09-08-40.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/%E8%A2%AB%E7%A7%B0%E4%B8%BA-%E4%BC%A0%E8%AF%B4-%E7%9A%8492%E5%B2%81%E5%AF%BF%E5%8F%B8%E5%8C%A0%E4%BA%BA-%E6%A3%AE%E7%94%B0%E4%B8%80%E5%A4%AB">
+      
+        被称为“传说”的92岁寿司匠人——森田一夫
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/trend/traditional-culture/53394-2023-09-12-08-34-44.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/%E8%8B%B1%E5%9B%BD%E6%8A%95%E8%B5%84%E5%85%AC%E5%8F%B8%E9%AB%98%E5%B1%82-%E8%AD%A6%E6%83%95%E7%BE%8E%E5%9B%BD%E4%B9%90%E8%A7%82%E8%AE%BA,%E7%9C%8B%E5%A5%BD%E4%B8%AD%E6%97%A5%E5%8D%B0">
+      
+        英国投资公司高层:警惕美国乐观论,看好中日印
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/viewpoint/53435-2023-09-12-05-00-10.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/%E6%9D%BE%E4%B8%8B%E8%A6%81%E5%9C%A8%E4%B8%AD%E5%9B%BD%E9%87%8D%E6%8C%AF%E5%AE%B6%E7%94%B5%E4%B8%9A%E5%8A%A1">
+      
+        松下要在中国重振家电业务
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53469-2023-09-12-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/Uk-%E9%97%B4%E8%B0%8D%E6%8C%87%E6%8E%A7%E4%BF%83%E8%8B%B1%E9%87%8D%E6%96%B0%E6%80%9D%E8%80%83%E5%AF%B9%E5%8D%8E%E7%AB%8B%E5%9C%BA-%E8%8B%B1%E4%B8%AD%E5%85%B3%E7%B3%BB%E6%98%AF%E5%90%A6%E5%86%8D%E8%B5%B7%E6%B3%A2%E6%BE%9C">
+      
+        [Uk] 间谍指控促英重新思考对华立场：英中关系是否再起波澜
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/uk-66772594?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-11/World-%E7%BE%8E%E8%B6%8A%E5%8D%87%E7%BA%A7%E5%85%A8%E9%9D%A2%E6%88%98%E7%95%A5%E4%BC%99%E4%BC%B4%E5%85%B3%E7%B3%BB-%E6%8B%9C%E7%99%BB%E6%80%BB%E7%BB%9F%E5%90%A6%E8%AE%A4%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%86%B7%E6%88%98">
+      
+        [World] 美越升级全面战略伙伴关系，拜登总统否认与中国冷战
+      </a>
+      <time>2023-09-11</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66772582?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-10</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/%E5%8F%B0%E6%B9%BE%E4%BB%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E8%BF%9B%E5%8F%A3%E7%9A%84%E5%95%A4%E9%85%92%E7%8C%9B%E5%A2%9E">
+      
+        台湾从中国大陆进口的啤酒猛增
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/53485-2023-09-11-10-53-05.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/%E4%B8%AD%E5%9B%BD%E8%B5%84%E9%87%91%E5%B8%AD%E5%8D%B7%E6%97%A5%E7%BE%8E-%E5%8F%8B%E5%B2%B8%E5%A4%96%E5%8C%85-%E5%9B%BD%E5%AE%B6">
+      
+        中国资金席卷日美“友岸外包”国家
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/china/ccompany/53259-2023-09-11-08-42-52.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%93%B6%E8%A1%8C%E7%9A%84%E4%BA%8B%E5%8A%A1%E5%8F%8AIT%E4%B8%9A%E5%8A%A1%E5%9C%A8%E5%90%91%E5%8D%B0%E5%BA%A6%E9%9B%86%E7%BA%A6">
+      
+        日本大银行的事务及IT业务在向印度集约
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/efinance/53455-2023-09-11-08-42-29.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/World-%E6%96%B0%E5%BE%B7%E9%87%8CG20%E5%B3%B0%E4%BC%9A-%E9%A6%96%E8%84%91%E5%AE%A3%E8%A8%80%E6%B2%A1%E6%9C%89%E8%B0%B4%E8%B4%A3%E4%BF%84%E7%BD%97%E6%96%AF%E4%BE%B5%E7%95%A5">
+      
+        [World] 新德里G20峰会：首脑宣言没有谴责俄罗斯侵略
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66766565?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/World-%E6%9C%9D%E9%B2%9C%E9%A2%86%E5%AF%BC%E4%BA%BA%E9%87%91%E6%AD%A3%E6%81%A9%E5%A4%96%E8%AE%BF%E7%9C%8B%E7%82%B9-%E8%A3%85%E7%94%B2%E4%B8%93%E5%88%97-%E9%98%B2%E5%BC%B9%E5%BA%A7%E9%A9%BE%E5%92%8C%E8%B4%B4%E8%BA%AB%E6%8A%A4%E5%8D%AB">
+      
+        [World] 朝鲜领导人金正恩外访看点：装甲专列、防弹座驾和贴身护卫
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66767373?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-10/Chinese-%E4%B8%80%E5%B8%A6%E4%B8%80%E8%B7%AF-%E5%80%A1%E8%AE%AE%E5%8D%81%E5%91%A8%E5%B9%B4-%E6%94%B9%E5%8F%98%E4%B8%96%E7%95%8C%E7%9A%84%E6%88%90%E8%B4%A5%E4%B8%8E%E6%9C%AA%E6%9D%A5">
+      
+        [Chinese] “一带一路”倡议十周年 改变世界的成败与未来
+      </a>
+      <time>2023-09-10</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66762882?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-09</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-09/Chinese-%E7%99%BE%E5%BA%A6-%E6%96%87%E5%BF%83%E4%B8%80%E8%A8%80-%E4%B8%AD%E5%9B%BD%E6%96%B0AI%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AE%A1%E6%9F%A5%E6%95%8F%E6%84%9F%E9%97%AE%E9%A2%98">
+      
+        [Chinese] 百度“文心一言”：中国新AI机器人审查敏感问题
+      </a>
+      <time>2023-09-09</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66762219?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-08</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-08/World-%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9B%BE%E5%BC%95%E4%BA%89%E8%AE%AE-%E9%A6%99%E6%B8%AF%E6%94%BF%E6%B2%BB%E9%9A%BE%E6%B0%91%E5%9C%A8%E8%8B%B1%E5%9B%BD-%E6%99%AE%E4%BA%AC%E4%BC%9A%E9%9D%A2%E9%87%91%E6%AD%A3%E6%81%A9%E7%AD%89%E6%9C%AC%E5%91%A8%E9%87%8D%E8%A6%81%E6%95%85%E4%BA%8B">
+      
+        [World] 中国官方地图引争议、香港政治难民在英国、普京会面金正恩等本周重要故事
+      </a>
+      <time>2023-09-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66749032?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-08/World-G20%E6%96%B0%E5%BE%B7%E9%87%8C%E5%B3%B0%E4%BC%9A-%E7%9B%98%E7%82%B9%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%BC%BA%E5%B8%AD%E4%B8%8B%E7%9A%84%E5%85%AB%E5%A4%A7%E7%84%A6%E7%82%B9">
+      
+        [World] G20新德里峰会：盘点习近平缺席下的八大焦点
+      </a>
+      <time>2023-09-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66752566?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-08/Chinese-%E6%9A%B4%E9%9B%A8%E4%B8%8E%E6%9E%81%E7%AB%AF%E5%A4%A9%E6%B0%94-%E9%A6%99%E6%B8%AF%E9%81%AD%E9%81%87%E4%B8%96%E7%BA%AA%E5%A4%A7%E6%9A%B4%E9%9B%A8-%E6%94%BF%E5%BA%9C%E9%A2%84%E8%AD%A6%E5%8F%97%E8%B4%A8%E7%96%91">
+      
+        [Chinese] 暴雨与极端天气：香港遭遇世纪大暴雨，政府预警受质疑
+      </a>
+      <time>2023-09-08</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66749450?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-07</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-07/Chinese-%E4%B8%AD%E5%9B%BD%E6%8B%9F%E5%B0%86-%E4%BC%A4%E5%AE%B3%E6%B0%91%E6%97%8F%E6%84%9F%E6%83%85-%E8%A1%8C%E4%B8%BA%E5%88%97%E5%85%A5%E6%B2%BB%E5%AE%89%E5%A4%84%E7%BD%9A%E6%9D%A1%E4%BE%8B%E5%BC%95%E5%8F%91%E4%BA%89%E8%AE%AE">
+      
+        [Chinese] 中国拟将“伤害民族感情”行为列入治安处罚条例引发争议
+      </a>
+      <time>2023-09-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66739540?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-07/World-%E4%BD%A9%E6%B4%9B%E8%A5%BFBBC%E4%B8%93%E8%AE%BF-%E9%87%8D%E7%94%B3%E5%8D%8E%E7%9B%9B%E9%A1%BF-%E4%B8%80%E4%B8%AD-%E6%94%BF%E7%AD%96-%E4%B8%A4%E5%B2%B8-%E4%BB%BB%E4%BD%95%E4%B8%80%E6%96%B9%E9%83%BD%E4%B8%8D%E5%BA%94%E6%94%B9%E5%8F%98%E7%8E%B0%E7%8A%B6">
+      
+        [World] 佩洛西BBC专访：重申华盛顿“一中”政策 两岸“任何一方都不应改变现状”
+      </a>
+      <time>2023-09-07</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66729861?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-06</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/Sport-%E9%A6%99%E6%B8%AF%E5%AF%BB%E6%B1%82%E5%BA%87%E6%8A%A4%E8%80%85%E5%9C%A8%E8%8B%B1%E5%9B%BD%E9%9D%A2%E4%B8%B4%E7%9A%84%E5%9B%B0%E5%A2%83-%E5%99%A9%E6%A2%A6-%E6%97%A0%E5%8A%A9%E6%84%9F%E4%B8%8E%E7%94%9F%E6%B4%BB%E6%8B%AE%E6%8D%AE">
+      
+        [Sport] 香港寻求庇护者在英国面临的困境： 噩梦，无助感与生活拮据
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/66590302?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/%E6%B2%99%E7%89%B9%E7%BB%A7%E7%BB%AD%E5%87%8F%E4%BA%A7-%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E%E8%BD%AF%E7%9D%80%E9%99%86%E5%8F%88%E5%8D%B1%E9%99%A9%E4%BA%86">
+      
+        沙特继续减产，全球经济软着陆又危险了
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/commodity/53450-2023-09-07-09-51-27.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/%E8%B7%9F%E7%9D%80%E5%A4%A7%E6%95%B0%E6%8D%AE%E8%B5%B0-%E5%8E%BB%E6%A8%AA%E6%BB%A8%E4%B8%AD%E5%8D%8E%E8%A1%97%E8%BF%87%E6%98%A5%E8%8A%82%E5%90%A7">
+      
+        跟着大数据走，去横滨中华街过春节吧！
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/trend/tourism/53429-2023-09-07-05-00-21.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/%E7%89%B9%E6%96%AF%E6%8B%89%E6%98%AF%E4%B8%B0%E7%94%B0%E6%9C%80%E9%9A%BE%E5%BA%94%E4%BB%98%E7%9A%84%E5%AF%B9%E6%89%8B">
+      
+        特斯拉是丰田最难应付的对手
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/53392-2023-09-07-05-00-00.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/World-%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E6%99%AE%E4%BA%AC-%E7%BB%93%E7%9B%9F-%E4%B8%BA%E4%BD%95%E4%BC%9A%E4%BB%A4%E4%BA%BA%E6%8B%85%E5%BF%A7">
+      
+        [World] 金正恩与普京“结盟”为何会令人担忧
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66726909?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-06/%E5%B2%B8%E7%94%B0%E8%A1%A8%E7%A4%BA%E6%97%A5%E6%9C%AC%E5%B0%86%E5%B8%AE%E5%8A%A9%E4%B8%9C%E7%9B%9F%E5%9F%B9%E5%85%BB5000%E5%90%8D%E4%BA%BA%E6%89%8D">
+      
+        岸田表示日本将帮助东盟培养5000名人才
+      </a>
+      <time>2023-09-06</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/politicsasociety/53443-2023-09-06-14-39-24.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-05</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-05/%E6%AC%A7%E6%B4%B2%E8%BD%A6%E4%BC%81%E5%9C%A8%E5%90%91PHV%E5%8F%91%E5%8A%9B-EV%E6%88%98%E7%95%A5%E7%94%9F%E5%8F%98">
+      
+        欧洲车企在向PHV发力，EV战略生变？
+      </a>
+      <time>2023-09-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/icar/53438-2023-09-06-08-47-14.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-05/%E6%97%A5%E6%9C%AC%E7%8F%A0%E5%AE%9D%E6%8B%8D%E5%8D%96%E4%BB%B7%E9%A3%99%E5%8D%87-%E6%B5%B7%E5%A4%96%E4%B9%B0%E5%AE%B6%E7%BB%84%E5%9B%A2-%E6%B7%98%E5%AE%9D">
+      
+        日本珠宝拍卖价飙升，海外买家组团“淘宝”
+      </a>
+      <time>2023-09-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/53252-2023-09-06-05-00-21.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-05/%E5%A4%A7%E9%98%AA%E7%8E%AF%E7%90%83%E5%BD%B1%E5%9F%8E-%E5%85%A8%E7%90%83%E4%B8%BB%E9%A2%98%E5%85%AC%E5%9B%AD%E6%8F%BD%E5%AE%A2%E5%8A%9B%E7%AC%AC%E4%B8%89">
+      
+        大阪环球影城，全球主题公园揽客力第三
+      </a>
+      <time>2023-09-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/tradingretail/53148-2023-09-06-05-00-11.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-05/Business-%E4%B8%AD%E5%9B%BD%E6%98%9F%E5%B7%B4%E5%85%8B-%E7%91%9E%E5%B9%B8%E5%92%96%E5%95%A1%E8%81%94%E5%90%8D%E8%8C%85%E5%8F%B0%E9%85%92%E6%8E%A8%E5%87%BA-%E9%85%B1%E9%A6%99%E6%8B%BF%E9%93%81-%E5%BC%95%E7%83%AD%E8%AE%AE">
+      
+        [Business] “中国星巴克”瑞幸咖啡联名茅台酒推出“酱香拿铁”引热议
+      </a>
+      <time>2023-09-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-66716613?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-05/World-%E4%BF%84%E4%B9%8C%E6%88%98%E4%BA%89-%E9%87%91%E6%AD%A3%E6%81%A9%E4%B8%8E%E6%99%AE%E4%BA%AC%E8%AE%A1%E5%88%92%E4%BC%9A%E9%9D%A2-%E6%88%96%E6%B6%89%E5%8F%8A%E6%AD%A6%E5%99%A8%E8%B0%88%E5%88%A4">
+      
+        [World] 俄乌战争：金正恩与普京计划会面，或涉及武器谈判
+      </a>
+      <time>2023-09-05</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66714623?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-04</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-04/%E5%85%A8%E7%90%83%E6%88%BF%E5%9C%B0%E4%BA%A7%E6%8A%95%E8%B5%84%E4%B8%8A%E5%8D%8A%E5%B9%B4%E9%99%8D54-11%E5%B9%B4%E6%9D%A5%E6%9C%80%E4%BD%8E">
+      
+        全球房地产投资上半年降54%，11年来最低
+      </a>
+      <time>2023-09-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/propertiesconstruction/53428-2023-09-05-09-58-43.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-04/%E6%9C%80%E5%A4%A7%E5%87%BA%E5%8F%A3%E5%9B%BD%E5%8D%B0%E5%BA%A6%E7%A6%81%E8%BF%90%E5%A4%A7%E7%B1%B3-%E6%B3%B0%E5%9B%BD%E7%B1%B3%E4%BB%B7%E5%A4%A7%E4%B9%B1">
+      
+        最大出口国印度禁运大米，泰国米价大乱
+      </a>
+      <time>2023-09-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/agriculture/53342-2023-09-05-05-00-13.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-04/Chinese-%E6%95%99%E5%AE%97%E6%96%B9%E6%B5%8E%E5%90%84%E8%AE%BF%E8%92%99%E5%8F%A4%E5%9B%BD%E4%B8%BB%E6%8C%81%E5%BC%A5%E6%92%92-%E5%90%81%E4%B8%AD%E5%9B%BD%E4%BF%A1%E4%BC%97%E5%81%9A-%E5%A5%BD%E6%95%99%E5%BE%92%E5%92%8C%E5%A5%BD%E5%85%AC%E6%B0%91">
+      
+        [Chinese] 教宗方济各访蒙古国主持弥撒 吁中国信众做“好教徒和好公民”
+      </a>
+      <time>2023-09-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66706953?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-04/World-%E9%9F%A9%E5%9B%BD%E4%B8%8A%E4%B8%87%E5%90%8D%E8%80%81%E5%B8%88%E4%B8%BA%E4%BD%95%E8%B5%B0%E4%B8%8A%E8%A1%97%E5%A4%B4-%E6%8A%97%E8%AE%AE%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF-%E9%9C%B8%E5%87%8C">
+      
+        [World] 韩国上万名老师为何走上街头 抗议学生家长“霸凌”？
+      </a>
+      <time>2023-09-04</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66705439?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-03</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-03/%E5%85%A8%E7%90%83EV%E5%87%BA%E5%8F%A3-%E4%B8%AD%E5%9B%BD%E5%8D%A0%E6%AF%945%E5%B9%B4%E5%A2%9E%E8%87%B38%E5%80%8D">
+      
+        全球EV出口：中国占比5年增至8倍
+      </a>
+      <time>2023-09-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/icar/53412-2023-09-04-09-30-14.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-03/%E4%B8%8D%E6%83%91%E7%9A%84%E7%BA%A2%E7%99%BD%E6%9C%BA-4-%E7%8E%A9%E6%B8%B8%E6%88%8F%E4%B8%8D%E6%98%AF%E5%9D%8F%E4%BA%8B">
+      
+        不惑的红白机（4）玩游戏不是坏事
+      </a>
+      <time>2023-09-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53331-2023-09-04-05-00-21.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-03/%E5%8D%8A%E5%AF%BC%E4%BD%93%E9%9C%80%E6%B1%82%E7%9A%84%E5%9B%9E%E6%9A%96%E8%BF%98%E9%9C%80%E8%A6%81%E5%A4%9A%E9%95%BF%E6%97%B6%E9%97%B4">
+      
+        半导体需求的回暖还需要多长时间？
+      </a>
+      <time>2023-09-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53393-2023-09-04-05-00-02.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-03/World-%E5%A8%81%E8%83%81-%E4%BE%AE%E8%BE%B1%E4%B8%8E-%E8%AF%BB%E7%A8%BF%E6%9C%BA-%E6%99%AE%E4%BA%AC%E5%A6%82%E4%BD%95%E4%B8%80%E6%89%8B%E8%91%AC%E9%80%81%E4%BF%84%E7%BD%97%E6%96%AF%E5%A4%96%E4%BA%A4">
+      
+        [World] 威胁、侮辱与“读稿机”——普京如何一手葬送俄罗斯外交
+      </a>
+      <time>2023-09-03</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66700632?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-02</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-02/World-%E4%BF%84%E4%B9%8C%E6%88%98%E4%BA%89-%E4%BF%84%E7%BD%97%E6%96%AF%E7%BD%91%E7%BA%A2%E5%A6%82%E4%BD%95%E5%B8%AE%E5%8A%A9%E5%AE%A3%E4%BC%A0%E6%99%AE%E4%BA%AC%E7%9A%84%E6%88%98%E4%BA%89%E5%B9%B6%E4%BB%8E%E4%B8%AD%E8%8E%B7%E5%88%A9">
+      
+        [World] 俄乌战争：俄罗斯网红如何帮助宣传普京的战争并从中获利？
+      </a>
+      <time>2023-09-02</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66694048?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-02/World-%E8%8B%B1%E5%9B%BD%E5%AF%B9%E5%8D%8E%E5%85%B3%E7%B3%BB%E5%9B%B0%E5%A2%83-%E8%84%B1%E9%92%A9%E8%BF%98%E6%98%AF%E4%BF%9D%E6%8C%81%E6%8E%A5%E8%A7%A6">
+      
+        [World] 英国对华关系困境：脱钩还是保持接触？
+      </a>
+      <time>2023-09-02</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66694382?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-09-01</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-01/Press-%E4%B8%AD%E5%9B%BD%E6%8A%97%E8%AE%AE%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%A4%84%E7%90%86%E6%B0%B4%E6%8E%92%E6%94%BE-%E9%83%AD%E5%8F%B0%E9%93%AD%E5%8F%82%E9%80%89-%E4%B8%AD%E5%9B%BD%E6%95%91%E5%B8%82%E5%92%8C%E6%9C%AC%E5%91%A8%E6%9B%B4%E5%A4%9A%E9%87%8D%E8%A6%81%E6%95%85%E4%BA%8B">
+      
+        [Press] 中国抗议福岛核处理水排放、郭台铭参选、中国救市和本周更多重要故事
+      </a>
+      <time>2023-09-01</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/press-review-66690367?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-01/Chinese-%E8%B6%85%E5%BC%BA%E5%8F%B0%E9%A3%8E-%E8%8B%8F%E6%8B%89-%E6%AD%A3%E9%9D%A2%E6%9D%A5%E8%A2%AD-%E9%A6%99%E6%B8%AF%E6%97%B6%E9%9A%94%E4%BA%94%E5%B9%B4%E5%86%8D%E6%8C%82-%E5%8D%81%E5%8F%B7%E9%A3%8E%E7%90%83">
+      
+        [Chinese] 超强台风“苏拉”正面来袭 香港时隔五年再挂“十号风球”
+      </a>
+      <time>2023-09-01</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66690166?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-01/World-%E4%B8%AD%E5%8D%B0%E5%86%B2%E7%AA%81%E4%B8%8E%E5%9C%B0%E5%9B%BE%E4%BA%89%E7%AB%AF-%E7%BB%B5%E5%BB%B6%E6%95%B0%E5%8D%81%E5%B9%B4%E7%9A%84%E9%BE%99%E8%B1%A1%E8%BE%B9%E7%95%8C%E4%B9%8B%E4%BA%89">
+      
+        [World] 中印冲突与地图争端：绵延数十年的龙象边界之争
+      </a>
+      <time>2023-09-01</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66684009?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-01/World-%E5%8D%97%E6%B5%B7%E4%BA%89%E7%AB%AF-%E4%B8%AD%E5%9B%BD%E5%BC%BA%E5%8A%BF%E4%B9%8B%E4%B8%8B-%E8%8F%B2%E5%BE%8B%E5%AE%BE%E6%B8%94%E6%B0%91%E6%AD%A3%E9%9D%A2%E5%AF%B9%E4%BB%80%E4%B9%88">
+      
+        [World] 南海争端：中国强势之下，菲律宾渔民正面对什么
+      </a>
+      <time>2023-09-01</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66682015?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-09-01/World-%E6%AC%A7%E7%BE%8E%E6%97%A5%E9%9F%A9%E5%9B%A0%E4%BF%84%E4%B9%8C%E6%88%98%E4%BA%89%E9%80%80%E5%87%BA%E5%B8%82%E5%9C%BA-%E4%B8%AD%E5%9B%BD%E6%B1%BD%E8%BD%A6%E4%BF%84%E7%BD%97%E6%96%AF%E5%B8%82%E5%8D%A0%E7%8E%87%E7%88%AC%E5%8D%87%E8%87%B3%E8%BF%9150">
+      
+        [World] 欧美日韩因俄乌战争退出市场 中国汽车俄罗斯市占率爬升至近50%
+      </a>
+      <time>2023-09-01</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66681150?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-31</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/%E6%B1%87%E6%80%BB%E4%B8%AD%E5%9B%BD11%E5%AE%B6%E6%88%BF%E5%9C%B0%E4%BA%A7%E4%BC%81%E4%B8%9A%E8%B5%84%E4%BA%A7%E8%B4%9F%E5%80%BA%E8%A1%A8%E5%90%8E%E5%8F%91%E7%8E%B0">
+      
+        汇总中国11家房地产企业资产负债表后发现……
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/china/ceconomy/53403-2023-09-01-10-05-25.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/%E4%B8%8D%E6%83%91%E7%9A%84%E7%BA%A2%E7%99%BD%E6%9C%BA-3-%E6%B5%B7%E5%A4%96%E7%8E%A9%E5%AE%B6%E6%8A%A2%E8%B4%AD%E4%BA%8C%E6%89%8B%E6%B8%B8%E6%88%8F">
+      
+        不惑的红白机（3）海外玩家抢购二手游戏
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53332-2023-09-01-05-00-50.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/EV%E5%A4%A7%E5%8E%82%E5%B4%9B%E8%B5%B7%E7%BB%99%E6%97%A5%E6%9C%AC%E8%BD%A6%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%B2%89%E9%87%8D%E7%8E%B0%E5%AE%9E">
+      
+        EV大厂崛起给日本车带来的沉重现实
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/53142-2023-09-01-05-00-07.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/Chinese-%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E9%95%BF%E9%9B%B7%E8%92%99%E5%A4%9A%E9%A6%96%E6%AC%A1%E8%AE%BF%E5%8D%8E%E9%87%8A%E6%94%BE%E4%B8%89%E4%B8%AA%E4%BF%A1%E5%8F%B7-%E7%A4%BA%E5%A5%BD-%E6%8B%85%E5%BF%A7%E5%92%8C%E4%B8%8D%E5%A6%A5%E5%8D%8F">
+      
+        [Chinese] 美国商务部长雷蒙多首次访华释放三个信号：示好、担忧和不妥协
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66672053?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/World-%E8%8B%B1%E5%9B%BD%E5%A4%96%E4%BA%A4%E5%A4%A7%E8%87%A3%E5%85%8B%E8%8E%B1%E5%BC%97%E5%88%A9%E8%AE%BF%E5%8D%8E-%E5%90%8E-%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3-%E6%81%A2%E5%A4%8D%E6%B2%9F%E9%80%9A%E4%BC%9A%E5%90%A6%E5%BC%80%E5%90%AF-%E8%89%AF%E6%80%A7%E5%BE%AA%E7%8E%AF">
+      
+        [World] 英国外交大臣克莱弗利访华：后“黄金时代”恢复沟通会否开启“良性循环”
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66672390?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-31/Business-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E6%98%AF%E4%B8%80%E9%A2%97-%E5%AE%9A%E6%97%B6%E7%82%B8%E5%BC%B9-%E5%90%97">
+      
+        [Business] 中国经济是一颗“定时炸弹”吗？
+      </a>
+      <time>2023-08-31</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-66668559?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-30</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/%E4%B8%8D%E6%83%91%E7%9A%84%E7%BA%A2%E7%99%BD%E6%9C%BA-2-%E4%BB%BB%E5%A4%A9%E5%A0%82%E6%B0%B4%E5%B9%B3%E5%88%86%E5%B7%A5%E5%BC%95%E9%A2%86%E6%97%B6%E4%BB%A3">
+      
+        不惑的红白机（2）任天堂水平分工引领时代
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53303-2023-08-31-05-00-51.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/%E5%96%9D%E5%A8%81%E5%A3%AB%E5%BF%8C%E7%9A%84%E6%97%B6%E5%80%99%E5%9C%A8%E5%96%9D%E4%BB%80%E4%B9%88">
+      
+        喝威士忌的时候在喝什么？
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/columnviewpoint/column/53338-2023-08-31-05-00-20.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/%E5%A4%96%E5%9B%BD%E6%B8%B8%E5%AE%A2%E6%88%90%E7%AE%B1%E8%B4%AD%E4%B9%B0%E9%80%8F%E6%98%8E%E9%85%B1%E6%B2%B9-%E8%83%BD%E5%81%9A%E5%87%BA%E4%BB%80%E4%B9%88%E7%BE%8E%E9%A3%9F">
+      
+        外国游客成箱购买透明酱油，能做出什么美食？
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/product/joke-goods/53225-2023-08-31-05-00-05.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/World-%E8%8B%B1%E5%9B%BD%E5%A4%96%E7%9B%B8%E4%BA%94%E5%B9%B4%E6%9D%A5%E9%A6%96%E6%AC%A1%E8%AE%BF%E5%8D%8E-%E4%B8%8D%E8%AE%A4%E4%B8%BA%E5%92%8C%E4%B8%AD%E5%9B%BD%E8%84%B1%E7%A6%BB%E6%8E%A5%E8%A7%A6%E6%98%AF%E5%8F%AF%E4%BF%A1%E9%80%89%E6%8B%A9">
+      
+        [World] 英国外相五年来首次访华：“不认为和中国脱离接触是可信选择”
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66662337?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/Uk-%E5%A4%A7%E8%8B%B1%E5%8D%9A%E7%89%A9%E9%A6%86%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%96%87%E7%89%A9-%E8%8B%B1%E5%9B%BD%E5%A4%96%E7%9B%B8%E8%AE%BF%E5%8D%8E%E4%B9%8B%E9%99%85-%E7%8E%AF%E7%90%83%E6%97%B6%E6%8A%A5-%E7%A4%BE%E8%AE%BA%E5%96%8A%E8%AF%9D%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B">
+      
+        [Uk] 大英博物馆的中国文物：英国外相访华之际《环球时报》社论喊话是怎么回事
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/uk-66658143?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-30/Chinese-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%B5%B7%E8%87%B4%E4%B8%AD%E6%97%A5%E5%85%B3%E7%B3%BB%E7%B4%A7%E5%BC%A0-%E5%9C%A8%E5%8D%8E%E6%97%A5%E5%BC%8F%E9%A4%90%E5%8E%85%E7%A7%B0%E6%9C%AA%E5%8F%97%E9%AA%9A%E6%89%B0">
+      
+        [Chinese] 福岛核废水排海致中日关系紧张 在华日式餐厅称未受骚扰
+      </a>
+      <time>2023-08-30</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66657785?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-29</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/%E6%97%A5%E6%9C%AC%E5%B0%86%E8%A1%A5%E8%B4%B4%E4%B8%8E%E7%AA%97%E6%88%B7%E5%92%8C%E5%A2%99%E5%A3%81%E8%9E%8D%E4%B8%BA%E4%B8%80%E4%BD%93%E7%9A%84%E5%85%89%E4%BC%8F%E5%8F%91%E7%94%B5">
+      
+        日本将补贴与窗户和墙壁融为一体的光伏发电
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/economic-policy/53378-2023-08-30-13-10-17.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/%E4%B8%8D%E6%83%91%E7%9A%84%E7%BA%A2%E7%99%BD%E6%9C%BA-1-%E8%83%A1%E5%AD%90%E5%A4%A7%E5%8F%94-%E7%9A%84%E5%86%B2%E5%87%BB">
+      
+        不惑的红白机（1）“胡子大叔”的冲击
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53293-2023-08-30-05-00-56.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/%E8%A7%86%E4%B8%AD%E5%9B%BD%E4%B8%BA%E6%9C%80%E9%87%8D%E8%A6%81%E6%B5%B7%E5%A4%96%E9%94%80%E5%94%AE%E5%B8%82%E5%9C%BA%E7%9A%84%E6%97%A5%E4%BC%81%E9%99%8D%E8%87%B319.6">
+      
+        视中国为最重要海外销售市场的日企降至19.6%
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/management-strategy/53355-2023-08-30-05-00-28.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/World-%E5%A5%B3%E8%B6%B3%E4%B8%96%E7%95%8C%E6%9D%AF-%E8%A5%BF%E7%8F%AD%E7%89%99%E8%B6%B3%E5%8D%8F%E4%B8%BB%E5%B8%AD%E5%BC%BA%E5%90%BB%E7%90%83%E5%91%98-%E5%A4%BA%E5%86%A0%E8%83%9C%E5%88%A9%E6%BC%94%E5%8F%98%E6%88%90-MeToo-%E6%97%B6%E5%88%BB">
+      
+        [World] 女足世界杯：西班牙足协主席强吻球员，夺冠胜利演变成“#MeToo”时刻
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66646501?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/World-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%94%BE%E5%BC%95%E9%9F%A9%E5%9B%BD%E9%B1%BC%E8%B4%A9%E4%B8%8D%E5%AE%89-%E6%8B%85%E5%BF%A7%E6%9C%AA%E6%9D%A5%E5%87%A0%E4%B8%AA%E6%9C%88%E8%90%A5%E4%B8%9A%E9%A2%9D%E4%B8%8B%E8%B7%8C">
+      
+        [World] 福岛核废水排放引韩国鱼贩不安 担忧未来几个月营业额下跌
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66646395?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-29/World-%E5%A1%94%E5%88%A9%E7%8F%AD%E9%98%BB%E6%AD%A2%E9%98%BF%E5%AF%8C%E6%B1%97%E5%A5%B3%E5%AD%A6%E7%94%9F%E5%87%BA%E5%9B%BD%E7%95%99%E5%AD%A6">
+      
+        [World] 塔利班阻止阿富汗女学生出国留学
+      </a>
+      <time>2023-08-29</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66644949?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-28</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/%E6%97%A5%E6%9C%AC%E6%88%90%E5%8A%9F%E6%A0%BD%E5%9F%B9-%E9%BA%BB%E9%BB%84-%E6%AD%A4%E5%89%8D%E5%87%A0%E4%B9%8E%E5%85%A8%E4%BB%8E%E4%B8%AD%E5%9B%BD%E8%BF%9B%E5%8F%A3">
+      
+        日本成功栽培“麻黄”，此前几乎全从中国进口
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/manufacturing/53359-2023-08-29-09-31-48.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/%E6%97%A5%E6%9C%AC%E4%BA%BA%E4%B8%8D%E5%90%83%E9%B1%BC%E4%BA%86-%E4%BA%BA%E5%9D%87%E6%B6%88%E8%B4%B920%E5%B9%B4%E5%87%8F%E5%8D%8A">
+      
+        日本人不吃鱼了，人均消费20年减半
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/agriculture/53153-2023-08-29-08-49-30.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/%E4%B8%9C%E4%BA%AC%E9%83%BD%E5%BF%83%E4%BA%8C%E6%89%8B%E6%88%BF6%E4%B8%AA%E6%9C%88%E5%88%9B%E6%96%B0%E9%AB%98,70%E5%B9%B3%E4%BA%BA%E6%B0%91%E5%B8%81515%E4%B8%87">
+      
+        东京都心二手房6个月创新高,70平人民币515万
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/propertiesconstruction/53357-2023-08-29-05-00-56.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/Chinese-%E9%A6%99%E6%B8%AF%E8%AE%AE%E5%91%98%E6%9D%8E%E6%A2%93%E6%95%ACBBC%E4%B8%93%E8%AE%BF-%E5%9B%A0-%E5%9B%BD%E5%AE%89%E6%B3%95-%E7%A7%BB%E6%B0%91%E6%B8%AF%E4%BA%BA%E5%B7%B2%E5%9C%A8%E5%90%8E%E6%82%94%E5%9B%9E%E6%B5%81-%E8%A2%AB%E9%80%9A%E7%BC%89%E6%B4%BB%E5%8A%A8%E4%BA%BA%E5%A3%AB%E8%AF%A5%E8%A2%AB%E7%BB%88">
+      
+        [Chinese] 香港议员李梓敬BBC专访：因《国安法》移民港人已在后悔回流 被通缉活动人士该被终身追责
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66640127?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/Chinese-%E9%83%AD%E5%8F%B0%E9%93%AD%E5%AE%A3%E5%B8%83%E7%8B%AC%E7%AB%8B%E5%8F%82%E9%80%89%E5%8F%B0%E6%B9%BE2024%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89-%E6%98%AF-%E6%95%B4%E5%90%88%E8%93%9D%E7%99%BD-%E8%BF%98%E6%98%AF-%E4%BE%BF%E5%AE%9C%E8%B5%96%E6%B8%85%E5%BE%B7">
+      
+        [Chinese] 郭台铭宣布独立参选台湾2024总统大选，是“整合蓝白”还是“便宜赖清德”？
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66637365?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/Business-%E4%B8%AD%E5%9B%BD%E5%87%8F%E5%8D%8A%E5%BE%81%E6%94%B6%E5%8D%B0%E8%8A%B1%E7%A8%8E-%E6%A5%BC%E5%B8%82-%E8%AE%A4%E6%88%BF%E4%B8%8D%E8%AE%A4%E8%B4%B7-%E8%82%A1%E5%B8%82%E5%86%B2%E9%AB%98%E5%90%8E%E5%BF%AB%E9%80%9F%E5%9B%9E%E8%90%BD">
+      
+        [Business] 中国减半征收印花税、楼市“认房不认贷” 股市冲高后快速回落
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-66638632?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/World-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%94%BE-%E6%97%A5%E6%9C%AC%E5%8F%AC%E8%A7%81%E4%B8%AD%E5%9B%BD%E5%A4%A7%E4%BD%BF%E6%8A%97%E8%AE%AE-%E4%BF%83%E5%A6%A5%E5%96%84%E5%A4%84%E7%90%86%E6%B0%91%E4%BC%97-%E5%8F%8D%E6%97%A5-%E4%B8%BE%E5%8A%A8">
+      
+        [World] 福岛核废水排放：日本召见中国大使抗议 促妥善处理民众“反日”举动
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66637564?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-28/Chinese-BBC%E8%AE%B0%E8%80%85%E6%8E%A2%E8%AE%BF%E4%B8%AD%E5%9B%BD%E5%8D%97%E5%8C%97%E7%81%BE%E5%8C%BA-%E5%85%B3%E6%B3%A8%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%E5%AF%B9%E5%B1%85%E6%B0%91%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E5%93%8D">
+      
+        [Chinese] BBC记者探访中国南北灾区 关注气候变化对居民生活的影响
+      </a>
+      <time>2023-08-28</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66637850?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-27</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-27/%E6%8A%95%E8%B5%84%E6%97%A5%E6%9C%AC%E8%82%A1%E5%B8%82%E7%AC%AC2%E8%BD%AE%E5%BF%AB%E6%9D%A5%E4%BA%86">
+      
+        投资日本股市第2轮快来了？
+      </a>
+      <time>2023-08-27</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/stockforex/53222-2023-08-28-05-00-10.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-26</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-26/World-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%94%BE-%E4%B8%AD%E5%9B%BD%E8%A1%A8%E8%BE%BE%E6%84%A4%E6%80%92%E6%81%90%E6%98%AF-%E6%84%8F%E5%9C%A8%E6%B2%9B%E5%85%AC">
+      
+        [World] 福岛核废水排放：中国表达愤怒恐是“意在沛公”
+      </a>
+      <time>2023-08-26</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66625999?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-25</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/Sport-%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6%E4%BC%9A%E6%88%90%E4%B8%BA%E6%96%B0%E4%B8%96%E7%95%8C%E7%A7%A9%E5%BA%8F%E7%9A%84%E9%87%8D%E5%BF%83%E5%90%97">
+      
+        [Sport] 金砖国家会成为新世界秩序的重心吗？
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/66625849?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/Press-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%94%BE-%E9%87%91%E7%A0%96%E5%B3%B0%E4%BC%9A-%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E5%8F%8D%E8%85%90%E7%AD%89%E6%9C%AC%E5%91%A8%E6%9B%B4%E5%A4%9A%E9%87%8D%E8%A6%81%E6%95%85%E4%BA%8B">
+      
+        [Press] 福岛核废水排放、金砖峰会、中国医疗反腐等本周更多重要故事
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/press-review-66612823?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/Chinese-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4%E6%8E%92%E6%94%BE-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%8E%B0-%E6%8A%A2%E7%9B%90%E6%BD%AE-%E5%B9%B6%E8%94%93%E5%BB%B6%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8-%E5%AE%98%E6%96%B9%E5%8A%9D%E5%96%BB%E5%8B%BF%E5%9B%A4%E7%A7%AF">
+      
+        [Chinese] 福岛核废水排放：中国大陆现“抢盐潮”并蔓延香港澳门 官方劝喻勿囤积
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66615546?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/Chinese-%E9%A6%99%E6%B8%AF%E8%83%BD%E5%90%A6%E8%BF%88%E5%90%91-%E6%97%A0%E7%8E%B0%E9%87%91%E7%A4%BE%E4%BC%9A-%E5%B8%82%E6%B0%91-%E8%AE%BF%E5%AE%A2%E5%A6%82%E6%98%AF%E8%AF%B4">
+      
+        [Chinese] 香港能否迈向“无现金社会”？市民、访客如是说
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66616235?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/World-%E6%99%AE%E4%BA%AC%E4%B8%8E%E6%99%AE%E9%87%8C%E6%88%88%E6%B4%A5-%E4%B8%80%E5%AF%B9%E5%8F%8D%E7%9B%AE%E6%88%90%E4%BB%87%E7%9A%84%E8%80%81%E5%8F%8B">
+      
+        [World] 普京与普里戈津——一对反目成仇的老友
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66602213?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-25/Chinese-%E7%BA%A2%E7%A0%96%E5%B7%B7%E6%B6%82%E9%B8%A6%E4%B8%BB%E5%88%9B%E5%AF%B9%E8%AF%9DBBC-%E5%80%9F%E4%B8%AD%E5%9B%BD%E6%A0%87%E8%AF%AD-%E6%B5%8B%E8%AF%95%E8%A5%BF%E6%96%B9%E6%B0%91%E4%B8%BB%E8%87%AA%E7%94%B1">
+      
+        [Chinese] 红砖巷涂鸦主创对话BBC：借中国标语“测试西方民主自由”
+      </a>
+      <time>2023-08-25</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66613028?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-24</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-24/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E5%87%AD%E5%80%9FAI%E8%8A%AF%E7%89%87%E4%B8%80%E6%9E%9D%E7%8B%AC%E7%A7%80-%E4%BD%86%E4%BE%9B%E8%B4%A7%E6%9C%89%E4%B8%8D%E5%AE%89">
+      
+        英伟达凭借AI芯片一枝独秀，但供货有不安
+      </a>
+      <time>2023-08-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53333-2023-08-25-05-00-31.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-24/%E6%97%A5%E6%9C%AC%E6%8A%8A%E6%B8%94%E4%B8%9A%E5%81%9A%E6%88%90-%E5%B7%A5%E4%B8%9A-,%E9%99%86%E5%9C%B0%E5%85%BB%E6%AE%96%E6%B0%B4%E4%BA%A7">
+      
+        日本把渔业做成“工业”,陆地养殖水产
+      </a>
+      <time>2023-08-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/agriculture/53268-2023-08-25-05-00-01.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-24/Chinese-%E9%87%91%E7%A0%96%E5%B3%B0%E4%BC%9A-14%E5%B9%B4%E5%90%8E%E5%86%8D%E6%89%A9%E5%AE%B9-%E4%B8%AD%E5%9B%BD%E8%A6%81%E6%89%93%E9%80%A0%E8%87%AA%E5%B7%B1%E7%9A%84-G7-%E5%90%97">
+      
+        [Chinese] 金砖峰会：14年后再扩容 中国要打造自己的“G7”吗？
+      </a>
+      <time>2023-08-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66602376?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-24/World-%E7%93%A6%E6%A0%BC%E7%BA%B3%E9%A6%96%E9%A2%86%E6%99%AE%E9%87%8C%E6%88%88%E6%B4%A5%E6%8D%AE%E6%8A%A5%E5%9D%A0%E6%9C%BA%E6%AD%BB%E4%BA%A1-%E6%9C%89%E5%88%86%E6%9E%90%E5%B0%86%E7%9F%9B%E5%A4%B4%E6%8C%87%E5%90%91%E6%99%AE%E4%BA%AC">
+      
+        [World] 瓦格纳首领普里戈津据报坠机死亡 有分析将矛头指向普京
+      </a>
+      <time>2023-08-24</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66602212?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-23</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-23/%E4%B8%AD%E5%9B%BD%E5%9B%A2%E9%98%9F%E6%B8%B8%E5%AE%A2%E6%8A%B5%E6%97%A5-%E7%94%B7%E5%AD%A9-%E6%83%B3%E5%90%83%E5%AF%BF%E5%96%9C%E7%83%A7">
+      
+        中国团队游客抵日，男孩“想吃寿喜烧！”
+      </a>
+      <time>2023-08-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/politicsaeconomy/politicsasociety/53324-2023-08-24-09-52-45.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-23/%E5%8D%B0%E5%BA%A6%E6%88%90%E5%8A%9F%E7%99%BB%E6%9C%88%E4%B9%9F%E8%AE%A9%E6%97%A5%E6%9C%AC%E6%9C%9F%E5%BE%85%E9%AB%98%E6%B6%A8-%E5%8E%9F%E5%9B%A0%E6%98%AF">
+      
+        印度成功登月也让日本期待高涨，原因是……
+      </a>
+      <time>2023-08-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/scienceatechnology/53326-2023-08-24-09-37-14.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-23/Chinese-%E4%B8%AD%E5%9B%BD%E8%A5%BF%E5%AE%89%E5%BD%93%E5%B1%80%E4%B8%83%E5%A4%95%E8%8A%82%E5%90%91%E6%B0%91%E4%BC%97%E7%BE%A4%E5%8F%91-%E5%82%AC%E7%94%9F-%E7%9F%AD%E4%BF%A1-%E9%81%AD%E7%BD%91%E5%8F%8B%E5%A5%9A%E8%90%BD">
+      
+        [Chinese] 中国西安当局七夕节向民众群发“催生”短信 遭网友奚落
+      </a>
+      <time>2023-08-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66568062?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-23/Chinese-%E9%A6%99%E6%B8%AF%E4%BA%BA%E5%8F%A3-%E7%A7%BB%E6%B0%91%E6%BD%AE%E4%B8%8B-%E9%A6%99%E6%B8%AF%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%AD%A2%E8%B7%8C%E5%9B%9E%E5%8D%87%E6%98%AF%E5%90%A6%E7%9C%9F%E6%98%AF-%E5%90%89%E7%A5%A5%E4%B9%8B%E5%85%86">
+      
+        [Chinese] 香港人口：移民潮下，香港统计数止跌回升是否真是“吉祥之兆”
+      </a>
+      <time>2023-08-23</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66591468?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-22</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/World-%E7%94%B7%E5%AD%90%E9%AA%91%E6%91%A9%E6%89%98%E8%89%87%E9%80%83%E7%A6%BB%E4%B8%AD%E5%9B%BD-%E7%A9%BF%E8%B6%8A%E9%BB%84%E6%B5%B7300%E5%85%AC%E9%87%8C%E5%89%8D%E5%BE%80%E9%9F%A9%E5%9B%BD">
+      
+        [World] 男子骑摩托艇逃离中国 穿越黄海300公里前往韩国
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66579103?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/%E4%B9%85%E4%BF%9D%E7%94%B0%E5%B0%86%E5%9C%A8%E6%97%A5%E6%9C%AC%E9%A6%96%E6%AC%A1%E4%BD%BF%E8%BF%9C%E7%A8%8B%E7%9B%91%E6%8E%A7%E6%97%A0%E4%BA%BA%E5%86%9C%E6%9C%BA%E5%AE%9E%E7%94%A8%E5%8C%96">
+      
+        久保田将在日本首次使远程监控无人农机实用化
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/manufacturing/53314-2023-08-23-10-51-16.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/World-%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6%E5%8D%97%E9%9D%9E%E5%B3%B0%E4%BC%9A-%E4%B8%AD%E5%9B%BD%E4%B8%8E%E4%BF%84%E7%BD%97%E6%96%AF%E5%9C%A8%E9%9D%9E%E6%B4%B2%E6%8C%91%E6%88%98%E8%A5%BF%E6%96%B9%E5%BD%B1%E5%93%8D%E5%8A%9B">
+      
+        [World] 金砖国家南非峰会：中国与俄罗斯在非洲挑战西方影响力？
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66582337?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/%E4%B8%80%E5%BC%A0%E7%A5%A8%E6%B8%B8%E9%81%8D%E5%A5%88%E8%89%AF%E5%85%AD%E5%A4%A7%E7%A5%9E%E7%A4%BE%E5%AF%BA%E9%99%A2">
+      
+        一张票游遍奈良六大神社寺院
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/trend/tourism/53265-2023-08-23-05-00-26.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/World-%E7%A6%8F%E5%B2%9B%E6%A0%B8%E5%BA%9F%E6%B0%B4-%E6%97%A5%E6%9C%AC%E5%AE%A3%E5%B8%83%E5%91%A8%E5%9B%9B%E8%B5%B7%E6%8E%92%E6%94%BE-%E5%8C%97%E4%BA%AC%E6%96%A5-%E6%9E%81%E7%AB%AF%E8%87%AA%E7%A7%81-%E9%A6%99%E6%B8%AF%E7%A6%81%E5%8D%81%E9%83%BD%E5%8E%BF%E6%B0%B4%E4%BA%A7%E8%BF%9B%E5%8F%A3">
+      
+        [World] 福岛核废水：日本宣布周四起排放 北京斥“极端自私” 香港禁十都县水产进口
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66582061?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-22/World-%E7%BE%8E%E5%9B%BD%E5%A4%A7%E9%80%892024%E8%A7%82%E5%AF%9F-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AF%B9%E7%89%B9%E6%9C%97%E6%99%AE%E6%9D%A5%E8%AF%B4-%E5%9D%8F%E6%B6%88%E6%81%AF%E5%8F%8D%E8%80%8C%E6%98%AF%E5%A5%BD%E6%B6%88%E6%81%AF">
+      
+        [World] 美国大选2024观察：为什么对特朗普来说，坏消息反而是好消息？
+      </a>
+      <time>2023-08-22</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66579099?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-21</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-21/%E5%85%A8%E7%90%83%E5%8D%8A%E5%AF%BC%E4%BD%93%E8%A1%8C%E4%B8%9A%E6%8A%95%E8%B5%84%E9%A2%9D4%E5%B9%B4%E6%9D%A5%E9%A6%96%E6%AC%A1%E5%87%8F%E5%B0%91">
+      
+        全球半导体行业投资额4年来首次减少
+      </a>
+      <time>2023-08-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/itelectric-appliance/53289-2023-08-22-05-00-15.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-21/%E5%9C%A8%E6%97%A5%E5%A4%96%E5%9B%BD%E4%BA%BA%E5%B0%86%E5%8F%AF%E7%BD%91%E4%B8%8A%E7%94%B3%E8%AF%B7%E6%B0%B8%E4%BD%8F">
+      
+        在日外国人将可网上申请永住
+      </a>
+      <time>2023-08-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/career/humanresource/53287-2023-08-22-05-00-09.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-21/Business-%E7%9F%AD%E8%A7%86%E9%A2%91-%E5%B8%A6%E8%B4%A7-TikTok%E7%BD%91%E7%BA%A2%E4%B8%BA%E4%BD%95%E9%82%A3%E4%B9%88%E6%93%85%E9%95%BF%E8%AF%B4%E6%9C%8D%E4%BD%A0%E4%B9%B0%E4%B8%9C%E8%A5%BF">
+      
+        [Business] 短视频“带货”：TikTok网红为何那么擅长说服你买东西？
+      </a>
+      <time>2023-08-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/business-66569057?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-21/Science-%E6%9C%88%E7%90%8325-%E6%8E%A2%E6%B5%8B%E5%99%A8%E5%9D%A0%E6%AF%81-%E4%BF%84%E7%BD%97%E6%96%AF%E7%9A%84%E5%A4%AA%E7%A9%BA%E9%9B%84%E5%BF%83%E9%9D%A2%E4%B8%B4%E6%8C%91%E6%88%98">
+      
+        [Science] “月球25”探测器坠毁 俄罗斯的太空雄心面临挑战
+      </a>
+      <time>2023-08-21</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/science-66568663?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+        <h2>2023-08-20</h2>
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-20/World-%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6%E9%9B%86%E5%9B%A2-%E8%BF%99%E6%98%AF%E4%BB%80%E4%B9%88%E7%BB%84%E7%BB%87-%E4%B8%BA%E4%BD%95%E6%9C%8940%E5%A4%9A%E4%B8%AA%E5%9B%BD%E5%AE%B6%E6%83%B3%E5%8A%A0%E5%85%A5">
+      
+        [World] 金砖国家集团：这是什么组织，为何有40多个国家想加入？
+      </a>
+      <time>2023-08-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/world-66541099?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-20/Chinese-%E5%8C%BB%E7%96%97%E8%85%90%E8%B4%A5-%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%94%9F%E5%92%8C%E5%8C%BB%E8%8D%AF%E4%BB%A3%E8%A1%A8%E7%9C%8B%E5%8F%8D%E8%85%90%E9%A3%8E%E6%9A%B4-%E4%B8%8D%E6%94%B9%E4%B8%8D%E8%A1%8C-%E7%9A%84%E5%8C%BB%E7%96%97%E7%B3%BB%E7%BB%9F%E8%AF%A5%E6%80%8E%E4%B9%88%E6%94%B9">
+      
+        [Chinese] 医疗腐败：中国医生和医药代表看反腐风暴 “不改不行”的医疗系统该怎么改
+      </a>
+      <time>2023-08-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#BBC" class="tag">
+        BBC
+      </a>
+      
+
+      
+      <a href="https://www.bbc.com/zhongwen/simp/chinese-news-66552855?at_medium=RSS&at_campaign=KARANGA" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+    
+      
+      
+      
+    
+    <li>
+      
+      <a href="/waimei/2023-08-20/%E4%B8%AD%E5%9B%BD%E6%88%BF%E5%9C%B0%E4%BA%A7-%E5%83%B5%E5%B0%B8-%E5%8C%96%E5%8A%A0%E5%89%A7">
+      
+        中国房地产“僵尸”化加剧
+      </a>
+      <time>2023-08-20</time>
+
+      
+      <a href="https://nodebe4.github.io/waimei/categories/#日本経済新聞" class="tag">
+        日本経済新聞
+      </a>
+      
+
+      
+      <a href="https://cn.nikkei.com/industry/propertiesconstruction/53278-2023-08-21-05-00-09.html" style="font-size:14px;">原文</a>
+      
+
+      
+      
+      
+        
+    </li>
+  
+
+</ul>
+
+<div class="pagination">
+  
+    <span class="prev">
+      <a href="/waimei/page15/" class="prev">
+        上一页
+      </a>
+    </span>
+  
+  
+    <span class="next">
+      <a href="/waimei/page17/" class="next">
+        下一页
+      </a>
+    </span>
+  
+
+  <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    <a class="fab-action fab-action-1" title="上一页(热键 &#8594;)" href="/waimei/page15/">
+      <i>上</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一页(热键 &#8592;)" href="/waimei/page17/">
+      <i>下</i>
+    </a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+
+  <script>
+  /* post pagination keyboard shortcuts */
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '/waimei/page15/'; } // left arrow key
+    if (e.keyCode == '39') { window.location = '/waimei/page17/'; } // right arrow key
+  };
+
+  </script>
+
+</div>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
