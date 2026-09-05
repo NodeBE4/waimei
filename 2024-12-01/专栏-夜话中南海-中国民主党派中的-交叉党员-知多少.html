@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+" />
+    <meta property="og:description" content="
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" />
+    <meta property="twitter:title" content="专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4453)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fyehuazhongnanhai%2Fgx-chinese-communists-and-democratic-parties-12022024151543.html&t=%E4%B8%93%E6%A0%8F+%7C+%E5%A4%9C%E8%AF%9D%E4%B8%AD%E5%8D%97%E6%B5%B7%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%B8%BB%E5%85%9A%E6%B4%BE%E4%B8%AD%E7%9A%84%E2%80%9C%E4%BA%A4%E5%8F%89%E5%85%9A%E5%91%98%E2%80%9D%E7%9F%A5%E5%A4%9A%E5%B0%91%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fyehuazhongnanhai%2Fgx-chinese-communists-and-democratic-parties-12022024151543.html&t=%E4%B8%93%E6%A0%8F+%7C+%E5%A4%9C%E8%AF%9D%E4%B8%AD%E5%8D%97%E6%B5%B7%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%B8%BB%E5%85%9A%E6%B4%BE%E4%B8%AD%E7%9A%84%E2%80%9C%E4%BA%A4%E5%8F%89%E5%85%9A%E5%91%98%E2%80%9D%E7%9F%A5%E5%A4%9A%E5%B0%91%EF%BC%9F&d=2024-12-01&e=
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+
+
+ 根据中共内部文件的说法：共产党员一般不能加入民主党派。   
+   路透社图
+  
+  
+  
+  我们本专栏上月25日刊登和播出的《中共反腐败新常态： "党外"再不能"例外"》一文中已经强调了民主党派并非“清水衙门”。本文就先介绍一下今年10月被中共国家监委以“严重职务违法”罪名“开除公职、移送检察机关依法审查起诉”的台盟中央常务副主席、本届全国政协常委李钺锋。笔者注意到，虽然台盟自己的网站上收录了新华社“台盟中央常务副主席李钺锋接受国家监委监察调查”的报导内容，但该网上却查找不到此人被免除或被撤消盟内职务消息。
+  
+    专栏 | 夜话中南海：中共反腐败新常态： "党外"再不能"例外"
+    涉严重违法 台盟中央常务副主席李钺锋被查
+    习近平再造党国体制 —— 中共党与国家权力机关关系的历史演化..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fyehuazhongnanhai%2Fgx-chinese-communists-and-democratic-parties-12022024151543.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html&text=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html&title=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html&title=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？&body=
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html&title=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？&caption=
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？&url=https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+    
+
+
+  
+    
+
+
+
+<article class="post">
+  <h1>专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-12-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fyehuazhongnanhai%2Fgx-chinese-communists-and-democratic-parties-12022024151543.html&t=%E4%B8%93%E6%A0%8F+%7C+%E5%A4%9C%E8%AF%9D%E4%B8%AD%E5%8D%97%E6%B5%B7%EF%BC%9A%E4%B8%AD%E5%9B%BD%E6%B0%91%E4%B8%BB%E5%85%9A%E6%B4%BE%E4%B8%AD%E7%9A%84%E2%80%9C%E4%BA%A4%E5%8F%89%E5%85%9A%E5%91%98%E2%80%9D%E7%9F%A5%E5%A4%9A%E5%B0%91%EF%BC%9F&d=2024-12-01&e=
+专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？
+——
+
+
+ 根据中共内部文件的说法：共产党员一般不能加入民主党派。   
+   路透社图
+  
+  
+  
+  我们本专栏上月25日刊登和播出的《中共反腐败新常态： "党外"再不能"例外"》一文中已经强调了民主党派并非“清水衙门”。本文就先介绍一下今年10月被中共国家监委以“严重职务违法”罪名“开除公职、移送检察机关依法审查起诉”的台盟中央常务副主席、本届全国政协常委李钺锋。笔者注意到，虽然台盟自己的网站上收录了新华社“台盟中央常务副主席李钺锋接受国家监委监察调查”的报导内容，但该网上却查找不到此人被免除或被撤消盟内职务消息。
+  
+    专栏 | 夜话中南海：中共反腐败新常态： "党外"再不能"例外"
+    涉严重违法 台盟中央常务副主席李钺锋被查
+    习近平再造党国体制 —— 中共党与国家权力机关关系的历史演化..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fzhuanlan%2Fyehuazhongnanhai%2Fgx-chinese-communists-and-democratic-parties-12022024151543.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1733068800000-->
+<p><a href="https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html">专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？</a>
+——</p>
+
+<div>
+<img src="https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html/@@images/bb6328be-30c4-4df9-8dab-91634357d15d.jpeg" alt="专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" title="专栏 | 夜话中南海：中国民主党派中的“交叉党员”知多少？" height="413" width="620" referrerpolicy="no-referrer" /> <span class="lead_image_caption">根据中共内部文件的说法：共产党员一般不能加入民主党派。</span>   <div id="zoomattribute">
+<a id="single_image" href="https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-chinese-communists-and-democratic-parties-12022024151543.html/@@images/image/social_media" data-fancybox="" data-caption="根据中共内部文件的说法：共产党员一般不能加入民主党派。" title="根据中共内部文件的说法：共产党员一般不能加入民主党派。"> <img src="https://www.rfa.org/++plone++rfa-resources/img/icon-zoom.png" referrerpolicy="no-referrer" /> </a> <span class="copyright">路透社图</span>
+  </div>
+  <!-- zoomattribute -->
+  <p><span style="font-weight: 400;"></span></p>
+  <p><span style="font-weight: 400;">我们本专栏上月25日刊登和播出的《中共反腐败新常态： "党外"再不能"例外"》一文中已经强调了民主党派并非“清水衙门”。本文就先介绍一下今年10月被中共国家监委以“严重职务违法”罪名“开除公职、移送检察机关依法审查起诉”的台盟中央常务副主席、本届全国政协常委李钺锋。笔者注意到，虽然台盟自己的网站上收录了新华社“台盟中央常务副主席李钺锋接受国家监委监察调查”的报导内容，但该网上却查找不到此人被免除或被撤消盟内职务消息。</span><strong></strong></p>
+  <ul>
+    <li><strong><a href="https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-ccp-anti-corruption-new-normal-11252024145814.html">专栏 | 夜话中南海：中共反腐败新常态： "党外"再不能"例外"</a></strong><strong></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/Xinwen/6-03232024181950.html">涉严重违法 台盟中央常务副主席李钺锋被查</a></strong><strong></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/pinglun/caixia/cx/cx-06192024114418.html">习近平再造党国体制 —— 中共党与国家权力机关关系的历史演化</a></strong></li>
+  </ul>
+  <p><span style="font-weight: 400;"> 既然说到台盟领导人，就先介绍一下该盟的“章程”是如何随着习近平的“武统”计划而“与时俱进”的。</span></p>
+  <p><span style="font-weight: 400;">2012年习近平上台后两个月，台盟章程2012版出台。其中关于“祖国统一”的部分如下：……本盟坚决维护祖国的主权和领土完整，反对“台独”分裂图谋，反对外国势力干涉。中国是两岸同胞的共同家园，两岸同胞同属中华民族，是血脉相连的命运共同体。本盟坚持一个中国原则，遵循“和平统一、一国两制”方针和坚持发展两岸关系、推进祖国和平统一进程的八项主张，全面贯彻两岸关系和平发展重要思想，广泛联系台湾岛内外各界人士，推动两岸同胞的往来……</span></p>
+  <p><span style="font-weight: 400;">五年之后新修订的“章程”中的同一部分基本未改，只加入一句习近平语录：“秉持 ‘两岸一家亲’理念”。</span></p>
+  <p><span style="font-weight: 400;">而到2022年12月两次修订章程时，涉“统”部分变成了：本盟坚持一个中国原则和“九二共识”，坚定捍卫国家主权和领土完整，坚决反对和遏制“台独”，坚决反对和遏制外部势力干涉。本盟坚持贯彻新时代中国共产党解决台湾问题的总体方略和对台大政方针，全面准确、坚定不移贯彻“一个国家、两种制度”方针，践行“两岸一家亲”理念，广泛联系与团结海内外台湾同胞……。</span></p>
+  <p><span style="font-weight: 400;">看明白了吗？“和平统一”的口号已经被彻底放弃了。台湾人民小心了，那些“居住在祖国大陆的台湾省人士”都是中国共产党武装“统一”台湾的坚决支持者。 “留岛不留人”的疯狂主张很可能就是出自他们这群“党的参谋”之口。</span></p>
+  <p><span style="font-weight: 400;">借着台盟的话题，顺便介绍一下被一些人傻傻分不清楚，甚至认为根本就是一个组织的台联和台盟的关系与区别。</span></p>
+  <p><span style="font-weight: 400;">台盟的全称是“台湾民主自治同盟”，是中共建政之前由台湾共产党创始人谢雪红在香港创立的。中共建政之后成为八大民主党派中的老八。</span></p>
+  <p><span style="font-weight: 400;">而中华全国台湾同胞联谊会于1981年12月22日在北京成立，简称全国台联。官方的说法是该组织是 “在祖国大陆居住的台湾籍人士”自发倡议后经中共中央批准成立的。但笔者当年听说的故事是一批在台盟未能谋得一官半职的台盟普通成员私下串联意图“分庭抗礼”，结果被中共统战部趁机利用，批准再成立一个“中国共产党领导的台湾各族同胞的爱国民众团体”。与同样都是“党和人民政府”全资供养的台盟的不同之处在于，台联是“民众团体”，并非“党派”。成立之后很快就成了帮助和吸引台湾人在中国（大陆）谋利益的服务性机构。所以在整个中国除西藏以外的30个省、自治区、直辖市，还有台商比较集中的市、县两级行政区，都建立了地方台联组织。均以“台胞之家”自居。总之是哪里有台商，哪里就有台联。</span></p>
+  <p><span style="font-weight: 400;">另外，台联还担负着吸引和组织台湾游客、留学生等业务。曾经也设想过大规模吸引台湾青年人到中国境内就业的计划。在这方面不知道是否取得过零星的成绩，但近几年肯定是放弃了。</span></p>
+  <p><span style="font-weight: 400;">台联自成立以来，历任会长中只有现任的郑建闽真的是从未加入过中共，依据就是随着他的上任，会内另设了一名党组书记。此人叫纪斌，祖籍台湾台中，是台盟盟员也是中共第二十届中央候补委员。</span></p>
+  <p><span style="font-weight: 400;">郑建闽目前还同时兼任着另外数项职务，十四届全国人大常委会委员、华侨委员会副主任委员，台盟中央副主席和中国侨联副主席。</span></p>
+  <p><span style="font-weight: 400;">虽然郑建闽又是台联会长，又是台盟中央副主席，但并不证明台联和台盟之间互为上下级关系。从组织归属上讲，台盟事实上是中央统战部的“直属单位”，而台联则是寄生于中共国台办（党台办）。</span></p>
+  <p><span style="font-weight: 400;">回过头来继续说李钺锋。此人从2007年开始就已经是被中组部和中统部列为重点培养、选拔的民主党派干部，当年12月他首次“当选”台盟中央委员会常委。2012年12月连任此职。一年后，他就以台盟中央常委、重庆市委主委的身份被依惯例安排为重庆市政协副主席，官至副省部级。</span></p>
+  <p><span style="font-weight: 400;">连任了两届共十年时间的台盟中央常委之后，李钺锋于2017年12月晋升为台盟中央常务副主席,官至正省部级。从此成为台盟中央机关所有专职人员中级别最高的一个。2022年12月，此公连任了这项职务。</span></p>
+  <p><span style="font-weight: 400;">此公被中纪委以国家监委名义宣布进行调查的具体时间是今年3月24日。当月8日，他还在中共全国人大年度例会中的台湾省代表团讨论会上狂赞 “全过程人民民主巨大优势”。但4天后他就缺席了在京召开的台盟十一届六中全会。是次全会上讲话的是全国政协副主席、台盟中央主席苏辉，会议主持人是排名李钺锋之后的女性副主席吴国华。</span></p>
+  <p><span style="font-weight: 400;">说起来这位吴国华进入台盟中央担任全职工作人员的时间比李钺锋首次“当选”该组织（不驻会）常委的2007年12月份还早。此人父亲是生于台湾的客家人。她出生于1961年，比李钺锋年轻不到三岁。2022年3月与李钺锋一同进入中央党校参加了为期四个月的台籍干部（脱产）培训班。培训结束后，吴国华即被安排从黑龙江调入台盟中央机关，第一个职务是中央办公厅副主任，第二个职务是台盟中央副秘书长兼办公厅主任和组织部长。官至正厅级。</span></p>
+  <p><span style="font-weight: 400;">2017年12月，李钺锋成为台湾中央常务副主席的同时，吴国华成为排名李钺锋之后的专职副主席，被明确为副部长级。</span></p>
+  <p><span style="font-weight: 400;">笔者数年前就从一位在重庆投资失败后定居美国的台商口中听说，当时的吴国华本来是有机会成为正部长级的常务副主席的，就因为当时已经担任了12年台盟中央主席的林文漪以时任全国政协副主席身份在时任台盟重庆市主委、重庆市政协副主席李钺锋的全程陪同下在重庆“视察”了一圈，回到北京后即向中央统战部和全国政协党组强烈推荐了李钺锋。</span></p>
+  <p><span style="font-weight: 400;">在中国，人人都知道所谓的民主党派说好听的是“花瓶党”，说难听的是“寄生党”。不过呢，这些民主党派的中央一把手对自己组织内部的干部选拔，还是有一定的建议权的。更何况这些民主党派的中央一把手，都是同届的全国政协副主席或全国人大副委员长，中组部和中统部还是要给他们一些面子的。</span></p>
+  <p><span style="font-weight: 400;">当时的李钺锋的实职还是重庆市检察院的副检察长，是如何被林文漪的“慧眼”识成了“珠”，外界不得而知，不过笔者从中共国家监委开除他公职的通报中读出了端倪。通报中说：经查，李钺锋……违规从事营利性活动，利用职权或者职务上的影响为他人谋取私利；长期投机钻营，大搞新型腐败、隐性腐败……。</span></p>
+  <p><span style="font-weight: 400;">请注意这句“长期投机钻营”。除了他当年在重庆适时利用自己“台籍”身份一夜之间从一个根本不入流的小律师变成了重庆市检察院一分院的副检察长那段经历，应该也还包括他进入台盟系统后靠不断媚上而官运亨通的更见不得人的经历。</span></p>
+  <p><span style="font-weight: 400;">在李钺锋的出生地重庆渝中区里流传的一个说法是，这个李钺峰的父亲是上个世纪四十年代末押一货船到了重庆就再没能够回去的台湾小商贩。中共建政后他一直因为自己的“台籍”身份而饱受政治迫害。担心自己的“出身不好”波及后代，于是在儿子出生时就故意把他的籍贯和出生地混同，报成了重庆市渝中区。后来又被李钺锋要求”组织上”改了回去。</span></p>
+  <p><span style="font-weight: 400;">我们本专栏的前一篇文章已经介绍了曾因为自己的中国农工民主党中央常委和北京市委主委的“党外干部”身份混上了北京市政协副主席的于鲁明居然是个共产党员，而且被中共统战部安排到农工党担任北京市副主任委要职前, 还当过中共基层单位的党委副书记。</span></p>
+  <p><span style="font-weight: 400;">由此推论，这个李钺锋在担任台盟重庆市主委之前，是不是也已经加入了中共党组织呢？对此笔者暂不能十分肯定。但可以肯定的是，该盟的历任盟长全都是中共党员。其创始人谢雪红本人就是台湾共产党创始人和中共党员。其第二任“盟长”蔡啸是“老红军”出身，参加中共的时间是1939年1月。</span></p>
+  <p><span style="font-weight: 400;">第三任盟长苏子衡是1928年1月被中共旅日总部仙台支部书记，当时就读仙台东北帝国大学的留学生庞大恩收纳为共产党员。</span></p>
+  <p><span style="font-weight: 400;">第四任盟长林盛中早在上世纪六十年代初就读台湾大学地质系时就秘密加入了中共在台地下党。日后从美国完成博士学业后“受祖国感召”未回台湾。而他的中共党员身份是在他去世后才对外公开的。</span></p>
+  <p><span style="font-weight: 400;">第五任盟长叫蔡子民，1946年在</span><span style="font-weight: 400;">上海</span><span style="font-weight: 400;">出任台湾旅沪同乡会总干事的同时，秘密加入中共地下党，后于1949年7月被党组织安排加入台盟。</span></p>
+  <p><span style="font-weight: 400;">第六任盟长张克辉也是早年在台湾成为中共地下党成员的。第七任盟长就是前面介绍的关键时刻成功让李钺锋晋升正部长级的林文漪。此人的公开简历中并未提及其入党经历，但上个世纪八十年代在英国利物浦大学留学的一位人士回忆说，林文漪肯定是在留英之前就在清华大学加入了中共。</span></p>
+  <p><span style="font-weight: 400;">至于第八任，也就是现任盟长苏辉也是早在1984年就加入了中共，因为“党的统战工作需要”又加入台盟，2012年12月由普通盟员直接升任中央委员会专职副主席。</span></p>
+  <p><span style="font-weight: 400;">需要特别指出的是，这位苏辉是老盟长蔡啸的女儿。至于父女为何不同姓，中共官方吹捧苏辉的文章里也没有介绍。</span></p>
+  <p><span style="font-weight: 400;">2017年年底，墙内媒体刊登了《父女相隔38年先后当选主席 “双重党籍”引关注》一文。说是民主党派成员兼具中共党员身份成为交叉党员，曾是50年代民主党派内部的争议话题。但在公开资料中，1990年代以后，这个问题几乎没有人提起。</span></p>
+  <p><span style="font-weight: 400;">关于为什么会有那么多的中共党员“当选”为民主党派从中央到地方的领导人，根据中共内部文件的说法：共产党员一般不能加入民主党派。（但是）为了积极帮助民主党派加强领导班子建设，进一步健全、巩固和发展中国共产党领导的多党合作制度，对个别适合做民主党派领导工作的中共党员，在民主党派要求和同意的前提下，也可以加入民主党派组织，调到民主党派工作。</span></p>
+  <p><span style="font-weight: 400;">由此，就有了民主党派里的“交叉党员”一说，既是中共党员又是民主党派党员（成员）。八大民主党派中的三哥中国民主建国会于2002年作出的会员统计数字中披露，该会的“交叉党（会）员“比例是百分之六。</span></p>
+  <p><span style="font-weight: 400;">更荒唐的是，中共政协规定，在计算各级政协的委员和常委里的中共和非中共比例时，所有“交叉党员”一律计算入非中共人士。而且，所有中共民主党派的中央和地方常设领导机关里，都有中共的党支部存在。因为除了这些党派的领导人可能是交叉党员，更因为这些党派的中央和地方领导机关里的工作人员全都是中央和地方统战部直接安排进去的，大部分都是中共党员。</span></p>
+  <p><span style="font-weight: 400;">从相关资料中可以查出，除了前面介绍的历任台盟一把手，原民盟中央主席丁石孙，致公党中央主席罗豪才，原九三学社中央主席韩启德、原全国工商联执委会主席荣毅仁等，有的是在担任民主党派领导人的过程中，不得已公开了自己的中共党员的身份，有的是去世后才被“承认”早就是中共党员。</span></p>
+  <p><span style="font-weight: 400;">（文章只代表特约评论员个人的立场和观点）</span></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+    
+      <li>
+        <time>2024-12-02</time>
+        <a href="https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)">
+          专栏｜五更播客：李老师不是你老师 - 国内的监狱肯定有我一个床位｜白纸两年(2)
+        </a>
+      </li>
+    
+    
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-11-28/%E4%B8%AD%E7%BE%8E%E5%A4%B1%E5%92%8C-%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%B8%94%E7%BF%81%E5%BE%97%E5%88%A9">
+            前一篇：中美失和，东南亚渔翁得利
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-12-01/%E9%9B%85%E9%A9%AC%E5%93%88%E7%9E%84%E5%87%86%E5%8D%B0%E5%BA%A6Z%E4%B8%96%E4%BB%A3%E5%8F%91%E5%8A%9B%E8%BF%90%E5%8A%A8%E5%9E%8B%E6%91%A9%E6%89%98%E8%BD%A6">
+            后一篇：雅马哈瞄准印度Z世代发力运动型摩托车
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-11-28/%E4%B8%AD%E7%BE%8E%E5%A4%B1%E5%92%8C-%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%B8%94%E7%BF%81%E5%BE%97%E5%88%A9'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-12-01/%E9%9B%85%E9%A9%AC%E5%93%88%E7%9E%84%E5%87%86%E5%8D%B0%E5%BA%A6Z%E4%B8%96%E4%BB%A3%E5%8F%91%E5%8A%9B%E8%BF%90%E5%8A%A8%E5%9E%8B%E6%91%A9%E6%89%98%E8%BD%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-11-28/%E4%B8%AD%E7%BE%8E%E5%A4%B1%E5%92%8C-%E4%B8%9C%E5%8D%97%E4%BA%9A%E6%B8%94%E7%BF%81%E5%BE%97%E5%88%A9">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-12-01/%E9%9B%85%E9%A9%AC%E5%93%88%E7%9E%84%E5%87%86%E5%8D%B0%E5%BA%A6Z%E4%B8%96%E4%BB%A3%E5%8F%91%E5%8A%9B%E8%BF%90%E5%8A%A8%E5%9E%8B%E6%91%A9%E6%89%98%E8%BD%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-12-02/%E4%B8%93%E6%A0%8F-%E4%BA%94%E6%9B%B4%E6%92%AD%E5%AE%A2-%E6%9D%8E%E8%80%81%E5%B8%88%E4%B8%8D%E6%98%AF%E4%BD%A0%E8%80%81%E5%B8%88-%E5%9B%BD%E5%86%85%E7%9A%84%E7%9B%91%E7%8B%B1%E8%82%AF%E5%AE%9A%E6%9C%89%E6%88%91%E4%B8%80%E4%B8%AA%E5%BA%8A%E4%BD%8D-%E7%99%BD%E7%BA%B8%E4%B8%A4%E5%B9%B4(2)">
+      <i>左</i>
+    </a>
+    
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
