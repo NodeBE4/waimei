@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+" />
+    <meta property="og:description" content="
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要" />
+    <meta property="twitter:title" content="苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/waimei/assets/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="/waimei/assets/js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (4453)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"><noscript><span style="background-color: #e8e8e8;color: #d10000;font-size: 14px;">开启浏览器JavaScript以获取搜索功能和更好的浏览体验</span></noscript></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E4%25B8%2593%25E6%25A0%258F%25E6%25A3%2580%25E7%25B4%25A2%2F%25E6%25B3%2595%25E5%259B%25BD%25E6%258A%25A5%25E7%25BA%25B8%25E6%2591%2598%25E8%25A6%2581%2F20240420-%25E8%258B%25B9%25E6%259E%259C%25E5%259C%25A8%25E5%258C%2597%25E4%25BA%25AC%25E5%258E%258B%25E5%258A%259B%25E4%25B8%258B%25E4%25B8%258B%25E6%259E%25B6meta%25E4%25B8%25A4%25E6%25AC%25BE%25E7%25A4%25BE%25E4%25BA%25A4%25E8%25BD%25AF%25E4%25BB%25B6whatsapp%25E5%2592%258Cthreads&t=%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6Meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6WhatsApp%E5%92%8CThreads+-+%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E4%25B8%2593%25E6%25A0%258F%25E6%25A3%2580%25E7%25B4%25A2%2F%25E6%25B3%2595%25E5%259B%25BD%25E6%258A%25A5%25E7%25BA%25B8%25E6%2591%2598%25E8%25A6%2581%2F20240420-%25E8%258B%25B9%25E6%259E%259C%25E5%259C%25A8%25E5%258C%2597%25E4%25BA%25AC%25E5%258E%258B%25E5%258A%259B%25E4%25B8%258B%25E4%25B8%258B%25E6%259E%25B6meta%25E4%25B8%25A4%25E6%25AC%25BE%25E7%25A4%25BE%25E4%25BA%25A4%25E8%25BD%25AF%25E4%25BB%25B6whatsapp%25E5%2592%258Cthreads&t=%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6Meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6WhatsApp%E5%92%8CThreads+-+%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81&d=2024-04-21&e=
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+
+
+  
+20/04/2024 - 12:23
+  
+                                                  周六（4月20日）法国主要报纸有关中国的报道主要集中于经济和社会，在北京的压力下，苹果清理在中国的应用程序虚拟商店App Store，删除了Meta旗下社交软件WhatsApp和Threads。权威《世界报》和经济性《回声报》都对此给与报道。                    
+  
+    WhatsApp是拥有30亿用户的世界领先通讯工具，但几天来，它已在中国无法下载，苹果公司周五证实，已从中国的虚拟苹果商店中删除该应有程序，其他已经消失的应用还有同属Meta的社交软件 Threads、以及Telegram 和 Signal。..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E4%25B8%2593%25E6%25A0%258F%25E6%25A3%2580%25E7%25B4%25A2%2F%25E6%25B3%2595%25E5%259B%25BD%25E6%258A%25A5%25E7%25BA%25B8%25E6%2591%2598%25E8%25A6%2581%2F20240420-%25E8%258B%25B9%25E6%259E%259C%25E5%259C%25A8%25E5%258C%2597%25E4%25BA%25AC%25E5%258E%258B%25E5%258A%259B%25E4%25B8%258B%25E4%25B8%258B%25E6%259E%25B6meta%25E4%25B8%25A4%25E6%25AC%25BE%25E7%25A4%25BE%25E4%25BA%25A4%25E8%25BD%25AF%25E4%25BB%25B6whatsapp%25E5%2592%258Cthreads" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads&text=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads&title=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads&title=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要&body=
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads&title=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要&caption=
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要&url=https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2024-04-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#法广 ">
+          法广
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="法广的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#法广 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E4%25B8%2593%25E6%25A0%258F%25E6%25A3%2580%25E7%25B4%25A2%2F%25E6%25B3%2595%25E5%259B%25BD%25E6%258A%25A5%25E7%25BA%25B8%25E6%2591%2598%25E8%25A6%2581%2F20240420-%25E8%258B%25B9%25E6%259E%259C%25E5%259C%25A8%25E5%258C%2597%25E4%25BA%25AC%25E5%258E%258B%25E5%258A%259B%25E4%25B8%258B%25E4%25B8%258B%25E6%259E%25B6meta%25E4%25B8%25A4%25E6%25AC%25BE%25E7%25A4%25BE%25E4%25BA%25A4%25E8%25BD%25AF%25E4%25BB%25B6whatsapp%25E5%2592%258Cthreads&t=%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6Meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6WhatsApp%E5%92%8CThreads+-+%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81&d=2024-04-21&e=
+苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要
+——
+
+
+  
+20/04/2024 - 12:23
+  
+                                                  周六（4月20日）法国主要报纸有关中国的报道主要集中于经济和社会，在北京的压力下，苹果清理在中国的应用程序虚拟商店App Store，删除了Meta旗下社交软件WhatsApp和Threads。权威《世界报》和经济性《回声报》都对此给与报道。                    
+  
+    WhatsApp是拥有30亿用户的世界领先通讯工具，但几天来，它已在中国无法下载，苹果公司周五证实，已从中国的虚拟苹果商店中删除该应有程序，其他已经消失的应用还有同属Meta的社交软件 Threads、以及Telegram 和 Signal。..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfi.fr%2Fcn%2F%25E4%25B8%2593%25E6%25A0%258F%25E6%25A3%2580%25E7%25B4%25A2%2F%25E6%25B3%2595%25E5%259B%25BD%25E6%258A%25A5%25E7%25BA%25B8%25E6%2591%2598%25E8%25A6%2581%2F20240420-%25E8%258B%25B9%25E6%259E%259C%25E5%259C%25A8%25E5%258C%2597%25E4%25BA%25AC%25E5%258E%258B%25E5%258A%259B%25E4%25B8%258B%25E4%25B8%258B%25E6%259E%25B6meta%25E4%25B8%25A4%25E6%25AC%25BE%25E7%25A4%25BE%25E4%25BA%25A4%25E8%25BD%25AF%25E4%25BB%25B6whatsapp%25E5%2592%258Cthreads" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1713683707000-->
+<p><a href="https://www.rfi.fr/cn/%E4%B8%93%E6%A0%8F%E6%A3%80%E7%B4%A2/%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81/20240420-%E8%8B%B9%E6%9E%9C%E5%9C%A8%E5%8C%97%E4%BA%AC%E5%8E%8B%E5%8A%9B%E4%B8%8B%E4%B8%8B%E6%9E%B6meta%E4%B8%A4%E6%AC%BE%E7%A4%BE%E4%BA%A4%E8%BD%AF%E4%BB%B6whatsapp%E5%92%8Cthreads">苹果在北京压力下下架Meta两款社交软件WhatsApp和Threads - 法国报纸摘要</a>
+——</p>
+
+<div>
+  <div>
+20/04/2024 - 12:23
+  </div>
+<img src="https://s.rfi.fr/media/display/de712a84-105a-11ea-a2a3-005056bff430/w:1280/p:16x9/03-revue-de-presse_0.png" />  <p><strong>                                                周六（4月20日）法国主要报纸有关中国的报道主要集中于经济和社会，在北京的压力下，苹果清理在中国的应用程序虚拟商店App Store，删除了Meta旗下社交软件WhatsApp和Threads。权威《世界报》和经济性《回声报》都对此给与报道。                    </strong></p>
+  <div>
+    <p>WhatsApp是拥有30亿用户的世界领先通讯工具，但几天来，它已在中国无法下载，苹果公司周五证实，已从中国的虚拟苹果商店中删除该应有程序，其他已经消失的应用还有同属Meta的社交软件 Threads、以及Telegram 和 Signal。</p>
+    <p>报道指，此举尽管对Meta的经济影响微乎其微，因为在中国，WhatsApp的主要用户是一些外籍人士、留学生及外国游客，而所有的中国人使用的都是微信这一日常生活必不可少的超级应用，WhatsApp此前已被北京封锁多年，通常只能通过付费VPN翻墙软件才能访问和断续使用。</p>
+    <p>《世界报》写道，中国密切监控媒体和互联网，对其有严格的监管和审查，杜绝如何对国家政策可能有负面影响或造成动荡的内容。谷歌、油管等许多外国网站、应用程序和X、Instagram、Facebook等社交网络只有通过VPN才能使用。</p>
+    <p>现在，WhatsApp在中国将不再能下载。报道指，中国似乎希望对应用程序给与更多地控制，而此时这样做的矛盾之处是，中国正在恢复与外部世界的外交、文化和人文交流，并试图安抚外国企业来华投资以重振本国经济。此外，该措施也证实了苹果在中国的困难，以及该品牌在中国长期以来的所具有的标志性地位，相对于当局而言，该品牌可能的议价能力越来越弱。</p>
+    <p>根据苹果公司表示，正是中国国家网信办，出于“国家安全”的原因“命令”其删除这些应用程序。简言之，可能是苹果或Meta拒绝遵守一项新规定：自4月1日起，中国所有应用程序都必须在工信部正式“注册”，否则将停止在中国运营。据一直在分析该法规的律师事务所Dezan Shira称，该措施自2000年以来一直针对于网站实施，用以打击网络欺诈。微信上的“小应用”也受到影响。但为获得通过，应用程序必须提供潜在的敏感技术信息，例如服务器位置、IP 地址等。</p>
+    <p>这是否触及苹果的红线？苹果在一份声明中说，“我们有义务尊重我们经营所在国家的法律，即使我们并不同意”。据路透社报道，为什么苹果只删除了WhatsApp，而其他Meta应用程序，如Facebook、Instagram或Messenger等周五仍然可以下载，对此还有待观察，苹果和Meta目前没有给与置评。</p>
+    <p>无论如何这并不是首次外国应用程序被中国屏蔽，《回声报》提到2021 年，当北京接管火爆的私人在线辅导行业时，语言学习软件Duolingo在中国的应用商店中就被下架了近一年。2017 年，苹果也在其中国应用商店中删除《纽约时报》的应用程序今。</p>
+    <p>《回声报》指，苹果下架两款Meta应用是在该集团首席执行官库克于3月下旬访问中国之后。苹果在中国这一其全球第三大市场正面临困境：消费减弱，数百万公务员不再能公开购买iPhone，而来自中国品牌的本地竞争日益激烈。为重夺优势，最近苹果决定在上海开设第8家苹果店。目前上海的苹果店数量甚至已超过纽约。</p>
+    <p><strong>北京半程马拉松赛“放水”争议 何杰和三名外籍选手被取消成绩</strong></p>
+    <p>上周日北京半程马拉松比赛中国选手何杰夺冠争议是费加罗有关中国报道的另一话题，组织者周五宣布取消何杰和协助其夺冠的其他三名肯尼亚及埃塞俄比亚选手的获奖资格。比赛视频被网络疯传引发巨大争议，促使组织方在赛后展开调查。</p>
+    <p>画面中2023年亚运会马拉松金牌得主、中国运动员何杰在接近终点时一度被三名外籍选手超越，但后者随后似乎放慢速度，并示意何杰加速，这一画面令人惊讶。三名外籍选手之一的姆南加特之后告诉BBC说，他们三人是作为“野兔”参加，即只是负责带跑，但比赛中他们确是佩戴着参赛号码布参加了比赛。组委会在央视援引的声明中说，，三名外籍选手确实是配速员，但负责比赛的合作公司并未这样宣布而实际作为选手参赛。最终何杰和三名外籍选手被宣布取消比赛成绩。组委会对没有及时“发现并纠正”问题表示道歉。</p>
+    <p>此次争议引发了中国网络的巨大震撼，一位微博网民说，“体育精神被毁，这是一种耻辱”。报道回顾近年来多项中国体育赛事饱受争议。包括2019年徐州国际马拉松赛的一名参赛者被发现在比赛时骑自行车代跑，以及中国一支定向运动队因在军运会上“作弊”被取消参赛资格。</p>
+    <div data-selfpromo-newsletter=""></div>
+    <div data-selfpromo-app=""></div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+<span> 作者： </span> <a href="/cn/%E4%BD%9C%E8%80%85/%E6%9E%97%E5%85%B0/" title="林兰"> 林兰 </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#法广 的其它文章</h4>
+    
+      <li>
+        <time>2024-04-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-04-21/%E5%B8%83%E6%9E%97%E8%82%AF%E8%AE%BF%E5%8D%8E%E8%B0%88%E5%85%B3%E5%88%87%E8%AE%AE%E9%A2%98-%E7%BE%8E%E4%BC%97%E9%99%A2%E9%80%9A%E8%BF%87%E4%BA%86%E6%8F%B4%E4%B9%8C%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81">
+          布林肯访华谈关切议题 美众院通过了援乌的新方案 - 法国报纸摘要
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-04-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-04-21/%E4%B8%AD%E5%8D%B0%E8%A7%92%E5%8A%9B%E8%83%8C%E6%99%AF%E4%B8%8B%E7%9A%84%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB%E7%AB%8B%E6%B3%95%E9%80%89%E4%B8%BE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4">
+          中印角力背景下的马尔代夫立法选举 - 要闻解说
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-04-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88">
+          澳防长：当下的任务只有一个 即转变我们未来的军事力量 - 印太纵览
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2024-04-21</time>
+        <a href="https://nodebe4.github.io/waimei/2024-04-21/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E8%8A%B136%E4%B8%87%E6%AC%A7%E5%85%83-%E6%83%B3%E5%9C%A8%E5%BE%B7%E5%9B%BD%E8%8E%B7%E5%BE%97-%E4%B8%96%E7%95%8C%E4%B8%80%E6%B5%81%E7%9A%84%E5%8C%BB%E7%96%97%E7%B3%BB%E7%BB%9F-%E5%AF%8C%E4%BA%BA%E8%B4%A9%E8%BF%90%E5%9B%A2%E4%BC%99%E8%90%BD%E7%BD%91">
+          中国人花36万欧元 想在德国获得“世界一流的医疗系统”：富人贩运团伙落网
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88">
+            前一篇：澳防长：当下的任务只有一个 即转变我们未来的军事力量 - 印太纵览
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2024-04-21/World-%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E6%B3%95%E6%A1%88%E6%8F%90%E5%87%BATikTok%E4%B8%8D%E5%87%BA%E5%94%AE%E5%B0%B1%E7%A6%81%E6%AD%A2-%E6%BD%9C%E5%9C%A8%E4%B9%B0%E5%AE%B6%E6%9C%89%E8%B0%81">
+            后一篇：[World] 美国众议院通过法案提出TikTok不出售就禁止 潜在买家有谁？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2024-04-21/World-%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E6%B3%95%E6%A1%88%E6%8F%90%E5%87%BATikTok%E4%B8%8D%E5%87%BA%E5%94%AE%E5%B0%B1%E7%A6%81%E6%AD%A2-%E6%BD%9C%E5%9C%A8%E4%B9%B0%E5%AE%B6%E6%9C%89%E8%B0%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2024-04-21/%E4%B8%AD%E5%8D%B0%E8%A7%92%E5%8A%9B%E8%83%8C%E6%99%AF%E4%B8%8B%E7%9A%84%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB%E7%AB%8B%E6%B3%95%E9%80%89%E4%B8%BE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2024-04-21/World-%E7%BE%8E%E5%9B%BD%E4%BC%97%E8%AE%AE%E9%99%A2%E9%80%9A%E8%BF%87%E6%B3%95%E6%A1%88%E6%8F%90%E5%87%BATikTok%E4%B8%8D%E5%87%BA%E5%94%AE%E5%B0%B1%E7%A6%81%E6%AD%A2-%E6%BD%9C%E5%9C%A8%E4%B9%B0%E5%AE%B6%E6%9C%89%E8%B0%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<法广>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2024-04-21/%E4%B8%AD%E5%8D%B0%E8%A7%92%E5%8A%9B%E8%83%8C%E6%99%AF%E4%B8%8B%E7%9A%84%E9%A9%AC%E5%B0%94%E4%BB%A3%E5%A4%AB%E7%AB%8B%E6%B3%95%E9%80%89%E4%B8%BE-%E8%A6%81%E9%97%BB%E8%A7%A3%E8%AF%B4">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<法广>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2024-04-21/%E6%BE%B3%E9%98%B2%E9%95%BF-%E5%BD%93%E4%B8%8B%E7%9A%84%E4%BB%BB%E5%8A%A1%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA-%E5%8D%B3%E8%BD%AC%E5%8F%98%E6%88%91%E4%BB%AC%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%86%9B%E4%BA%8B%E5%8A%9B%E9%87%8F-%E5%8D%B0%E5%A4%AA%E7%BA%B5%E8%A7%88">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+    
+    <script id="dsq-count-scr" src="https:///count.js" async></script>
+    
+  </body>
+</html>
